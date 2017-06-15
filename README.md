@@ -1,24 +1,25 @@
-Documentation also on the [wiki](https://github.com/illegitimis/Tutorial/wiki)
-***
-
 # Illegitimis Documentation Landing Page
 
-*  [ASP](ASP.md)
-*  [[C#/.Net|csdotnet]]
-*  [[Continuous Delivery|CD]]
-*  [[Domain Driven Design|DDD]]
-*  [[JavaScript|JS]]
-*  [[Messaging|Messaging]]
-*  [[Mongo|Mongo]]
-*  [[OOP|OOP]]
-*  [[OS|OS]]
-*  [[Parallelism|Parallel]]
-*  [[REST|REST]]
-*  [[SQL|SQL]]
-*  [[SOA|SOA]]
-*  [[TDD|TDD]]
-***
+Documentation also on the [wiki](https://github.com/illegitimis/Tutorial/wiki)
 
-*  [[Github doc reference|GithubDocs]]
-*  [[NuGet|NuGet]]
-*  [[Google API|GAPI]]
+
+__________________________________________________
+*  [ASP](ASP.md)
+*  [[C#/.Net|csdotnet.md]]
+*  [[Continuous Delivery|CD.md]]
+*  [[Domain Driven Design|DDD.md]]
+*  [[JavaScript|JS.md]]
+*  [[Messaging|Messaging.md]]
+*  [[Mongo|Mongo.md]]
+*  [[OOP|OOP.md]]
+*  [[OS|OS.md]]
+*  [[Parallelism|Parallel.md]]
+*  [[REST|REST.md]]
+*  [[SQL|SQL.md]]
+*  [[SOA|SOA.md]]
+*  [[TDD|TDD.md]]
+
+__________________________________________________
+*  [[Github doc reference|GithubDocs.md]]
+*  [[NuGet|NuGet.md]]
+*  [[Google API|GAPI.md]]
