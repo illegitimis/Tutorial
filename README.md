@@ -23,3 +23,5 @@ __________________________________________________
 *  [[Github doc reference|GithubDocs.md]]
 *  [[NuGet|NuGet.md]]
 *  [[Google API|GAPI.md]]
+=======
+Documentation on the [wiki](https://github.com/illegitimis/Tutorial/wiki)
