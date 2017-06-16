@@ -8,7 +8,7 @@
 
 # TOC
 1. [Intro](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#intro)
-2. [Controllers & Markup](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#intro)
+2. [Controllers & Markup](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#controllers--markup)
 3. [Creating & Using Angular Services](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#services)
 
 # Intro
