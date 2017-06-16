@@ -18,5 +18,7 @@
 - [Angular4 notes](Angular4-notes.md)
 - [Angular University all lessons](https://angular-university.io/all-lessons)
 
-[JS](JS.md)
+[JS](JS.md) | [Home](https://github.com/illegitimis/Tutorial/)
+
+
 
