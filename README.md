@@ -1,4 +1,4 @@
-# Illegitimis Documentation Landing Page
+# Illegitimis MDocs
 
 _Documentation also on the_ [wiki](https://github.com/illegitimis/Tutorial/wiki)
 
