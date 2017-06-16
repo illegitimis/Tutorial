@@ -2,8 +2,8 @@
 
 ## TOC
 - [Intro](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#intro)
-- [ASP.NET Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#)
-- [HTML and CSS Basics](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#)
+- [ASP.NET Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#aspnet-core)
+- [HTML and CSS Basics](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#html-and-css-basics)
 - [JavaScript](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
 
 ## Intro
