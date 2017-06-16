@@ -5,6 +5,7 @@
 - [ASP.NET Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#aspnet-core)
 - [HTML and CSS Basics](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#html-and-css-basics)
 - [JavaScript](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
+- [MVC 6](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#mvc-6)
 
 ## Intro
 
@@ -179,4 +180,41 @@ On the css side `#sidebar.hide-sidebar {left: -250px;}` downside is tracking con
 and `#wrapper.hide-sidebar {margin-left: 0;}`. Can add a `transition: left ease .25s;` and `transition: margin-left ease .25s;`. 
 Also add vendor specifics. 
 
+## MVC 6
 
+![](https://hiqm5q.by3302.livefilestore.com/y3m_AmgE7r9P2-ICcLcwrLCE1D9YaGaACjIAVAh81hdYMCPHoXqr1XMvGh__NdOIkPbRww5qAjVq9vZKpfDL_yTQ6UEulOJdo5e9463y0MCbZUhVxikCxttrcKlx_rPyrox5ghZvdS8op0g04d1NtDeyd00nO0d2r3oCzR9Ojeys4E?width=437&height=138&cropmode=none)
+
+Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller` class. That's just a subset of MVC, so better edit `project.json` to add a dependency for `Microsoft.AspNetCore.Mvc`, then add a using namespace. `public IActionResult Index() {return View(); }`. Add a cshtml view for the index `@{ ViewBag.Title = ""}`. In Startup.cs, enable MVC6. 
+```cs
+    public void Configure (IApplicationBuilder app)  { 
+        app.UseStaticFiles(); 
+        app.UseMvc(cfg=>{ 
+            cfg.MapRoute(name: "Default", template: "{controller}/{action}/{id?}"), 
+                defaults: new {controller="App", action="Index"} ); 
+        });
+    }
+    public void ConfigureServices (IServiceCollection services)  { 
+        services.AddMvc(); 
+    }
+```
+Add a _MVC View layout page_ as Views\Shared\_Layout.cshtml. The sidebar, header and footer from index will be moved to the shared layout. Then link the layout to the Razor index view as `@{Layout="Layout.cshtml"}`. Add _MVC View Start Page_ as ViewStart.cshtml in the actual views folder. This will isolate the layout include boilerplate. Obviously, paths to css and js will have to be revised as to site root as **~**. Also use `@RenderBody()` in the layout.
+
+
+Add `app.UseDeveloperExceptionPage()` in Startup.Configure, diagnostics include stack trace, want to hide that from end users, keep it for staging and test servers, instead of `#if DEBUG`, add the `IHostingEnvironment` parameter and check `env.IsProduction()` or `env.IsEnvironment("Development")`. Project properties has environment variables defined, like `ASPNETCORE_ENVIRONMENT`. 
+
+Use **tag helpers** to modify hrefs for main menu, from `<a href="/app/about">About</a>` to something like `<a asp-controller="App" asp-action="About">About</a>`, will generate hrefs programatically while rendering on the server. To enable tag helpers, add a dependency to `Microsoft.AspNet.Mvc.TagHelpers`. Wire it up in _layout.cshtml as `@inject IHostingEnvironment env` or add a _MVC View Imports Page_. `@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"` this will inject tag helpers into all the views needed. Also include common namespaces like `@using ProjectNS.Models`. 
+
+View models. ![](https://jxhreg.by3302.livefilestore.com/y3m_ly-zrpRO_F8uUtQD9BzvOYZi5bddu_KW1cAVLVh1a6-AkKS6s22JQhh3_yYycFDOuf8v0dBps4fjAhtHkz-9OreUSfBSco6IfXBV50-p6l2sAzk3FRBXFAIQBbwmeqZBaNxxjyYpEkaJpo8gX_046d1Wkb8BYOqgzhJdTiYGUM?width=483&height=285&cropmode=none)
+
+Validation attributes. `[Required]`, [[`StringLength`](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute(v=vs.110).aspx)`(MinimumLength=10,MaximumLength=4096)]`. Also add `jquery-validation: "~1.15.0"` and `jquery-validation-unobtrusive: "~3.2.6"` to `bower.json`. Add `@RenderSection("scripts", false)` in the layout. In the contacts page define the scripts section, and use it like `<span asp-validation-for="Name" />` and `<span asp-validation-summary="ModelOnly"></span>`.
+```htm
+    @section scripts {
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    }
+```
+
+_Posts_. `<form method="post">`. Add `[HttpPost]` with a `ContactViewModel` parameter, model binding is automatic through the controller. Services/IMailService.cs. Implement a mock debug object for the service interface. `Debug.WriteLine($"Send mail to {to} from {from} with subject {subject} and body {body}");`. 
+
+Use _dependency injection_ for service implementation. Add _constructor_ to `AppController`. Call the service on the post action. Activation in Startup `ConfigureServices`: `services.AddTransient<IMailService, DebugMailService>();` or `services.AddScoped<IMailService, MockMailService>();`. **Transient** creates on the fly and caches it. **Scoped** creates one for each set of requests. Add a `IHostingEnvironment` parameter to the `Startup` constructor. 
+`var builder = new ConfigurationBuilder().SetBasePath(_env.ContentRootPath).AddJsonFile("config.json").AddEnvironmentVariables(); _config = builder.Build();` returns an `IConfigurationRoute`, a sort of name value bag, like `_config[MailSettings:ToAddress]`. `services.AddSingleton(_config);`. State of the data passed into the view, `ModelState.IsValid`, `ModelState.AddModelError("Email","Message")`, 'ModelState.Clear()' upon successful post. 
