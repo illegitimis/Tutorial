@@ -1,6 +1,10 @@
 # Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular
 
 ## TOC
+- [Intro](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#intro)
+- [ASP.NET Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#)
+- [HTML and CSS Basics](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#)
+- [JavaScript](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
 
 ## Intro
 
@@ -114,6 +118,7 @@ instead provide a class for the small images `.headshot {max-width: 50px;}`
 active list items under menu are bold `.menu li {list-style-type: none;} .menu li.active {font-weight: bold;}`
 
 **the box model**
+
 ![](https://g7xpqg.by3302.livefilestore.com/y3mOEee-RY1i694_H7jb3vb-ErefywwjesKLjsz7w5TpwIA5bMJDNhhNsYXqA3IryvNaJ40UT73Wl8fEkVukICowLAIpx2W8tvg8qjA_yYnxN2aAbsS5e-B2SLax8E-MOjSqQarjrafF9nfj2NYgkTskCdTYnQcPUE3fmwZIi92Jag?width=612&height=347&cropmode=none)
 
 create a sidebar and a wrapper div over main and footer
