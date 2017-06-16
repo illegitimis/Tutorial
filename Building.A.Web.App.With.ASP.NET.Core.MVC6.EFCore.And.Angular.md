@@ -6,6 +6,10 @@
 - [HTML and CSS Basics](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#html-and-css-basics)
 - [JavaScript](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
 - [MVC 6](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#mvc-6)
+- [Bootstrap](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#bootstrap)
+- [EF Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#ef-core)
+- [Creating the API](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#creating-the-api)
+- [AngularJS](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#angularjs)
 
 ## Intro
 
@@ -218,3 +222,93 @@ _Posts_. `<form method="post">`. Add `[HttpPost]` with a `ContactViewModel` para
 
 Use _dependency injection_ for service implementation. Add _constructor_ to `AppController`. Call the service on the post action. Activation in Startup `ConfigureServices`: `services.AddTransient<IMailService, DebugMailService>();` or `services.AddScoped<IMailService, MockMailService>();`. **Transient** creates on the fly and caches it. **Scoped** creates one for each set of requests. Add a `IHostingEnvironment` parameter to the `Startup` constructor. 
 `var builder = new ConfigurationBuilder().SetBasePath(_env.ContentRootPath).AddJsonFile("config.json").AddEnvironmentVariables(); _config = builder.Build();` returns an `IConfigurationRoute`, a sort of name value bag, like `_config[MailSettings:ToAddress]`. `services.AddSingleton(_config);`. State of the data passed into the view, `ModelState.IsValid`, `ModelState.AddModelError("Email","Message")`, 'ModelState.Clear()' upon successful post. 
+
+## Bootstrap
+
++ open source fwk for web apps
++ composed of CSS and LESS, LESS is a language for writing program-like facilities in CSS
++ includes JavaScript components to help you do some common features like carousels, styling of buttons
++ modular and skinnable which means you can use the components you want out of Bootstrap, as well as being able to change the way that Bootstrap looks and feels
++ help you solve the 80% of common design metaphors you're going to see in your web applications. So a bar for navigation through the website, breadcrumbs, panels, thumbnail images
+
+VS add Bootstrap dependency in `bower.json`. Link `bootstrap.min.css` stylesheet site wide and the minified js also. Also `"font-awesome": "~4.4.0"`. Toggle arrow left `<i class="glyphicon glyphicon-chevron-left"></i>`. Refactor to `<i class="fa fa-angle-left"></i>`. Change impl in `site.js` for the auto function hide/show.
+
+_Bootswatch_ is a list of templates that modify look and feel over Bootstrap. Another bower call, `"bootswatch": "3.3.5+2"`, Bootswatch v2 over the Bootstrap release. `<link rel="stylesheet" href="~/lib/bootswatch/spacelab/bootstrap.min.css" />`.
+Navbar: Move `menu` class to `nav` in the sidebar section. `<nav class="navbar navbar-inverse">` over `<button id="sidebarToggle">`. If bar contains a list, style as `<ul class="nav navbar-nav navbar-left">`. 
+
+Default font icon buttons. ![](https://wowstq.by3302.livefilestore.com/y3moDvLNKlEe1vihz_sPW3VS78Ex94xXfKa3BKPt1V1GtbQ82juUxmwZoiVwUWrWEv4JwvtcZy6s2iKR6aZiu02aPN8h1tDuJ1qW7RRarOUKYXa8xTF3GGJU18SEY870_ypftX2EP23cnkpvkRhFmRpQs9X3MFr-D8ZkCHXMOutnU4?width=428&height=317&cropmode=none)
+
+Bootstrap grid system is a world of 12 columns. The label and input group is a form-group and decorate the active ctrl with form-control. ![](https://tcywqq.by3302.livefilestore.com/y3miWlkRKVk5Sq5zubKHWUHsHMnJJlTPD9_SDBno3T1hLj2B16MEuS800Rly16Yv-gzDIcLdH_nJygj0KaYRpDEntmh7KVs3DcvHNn5VU7PUy8lsnCnyXWCqMjbs-jsEYgOKRTosTce_Qtjy8Qoz7-JzQfaDcOjSx5azs1BH8-jrj0?width=660&height=122&cropmode=none)
+
+Bootstrap 4. alpha phase in sep 2015. modest change compared to 2 to 3 transition. Card replaces Panels and Thumbnails.
+
+## EF Core
+
++ build data access without the requirement on relational databases?
++ EF6 will work if you need maturity, work in progress
++ use migrations to build the db for you
++ seeding not built-in, but easily doable
++ repository pattern for testable data access
+
+_Models_ folder has dtos, in comparison with the _ViewModels_ folder. Code first, auto implemented property only classes. Use `ICollection` instead of read-only `IEnumerable` objects. Access to the db, derive from `EFCore.DbContext`. For entities, use `DbSet<TEntity>`. Add `services.AddDbContext<CustomContext>();` in `ConfigureServices`. Additional parameter for controller constructor is the db context. database provider must be configured, override `DbContext.OnConfiguring` by calling `base` and `optionsBuilder.UseSqlServer(_config["CS:CONN"]);`.
+
+
+![](https://6ebyoa.by3302.livefilestore.com/y3mY_5i27ejOmhEw0k_zx0tO0qeVwEtY2n_H-IeHtt3H-_Mbxi2JfVHG9AZ5Cl8f9I9QuwR9SypC-9crnv3HQ7z1uvRGFzy6WkJG6mz7ZFPu2uoLuzBU8JiG6ecUoxMs-FRrfnMQQVdVwVmlMScg4_o-GHaBrpBOk6Sslu2MCV0YMU?width=594&height=450&cropmode=none)
+
+_alt+space_ opens up a console window. `dotnet ef migrations add InitialDatabase`. A new folder appears, `Migrations`. Or `dotnet database ef update` to create the schema. To add sample data, add a `ContextSeedData` db ctx wrapper, with `async Task Ensure() { if(!_ctx.Trips.Any())  {CrUd();}  }`. `services.AddTransient<ContextSeedData>();`, have to explictly call in Configure, `param.EnsureSeedData().Wait()`. 
+
+[Demo repo](http://github.com/shawnwildermuth/BuildingWebASPNETCore).
+
+Repository. `services.AddScoped<WorldRepository, IWorldRepository>();`. Every time a custom context instance is used as a parameter, replace with the repository interface. `services.AddLogging()` and `ILoggerFactory.AddDebug(LogLevel.Information)`. In the controller constructor add `MS.Extentions.ILogger<TController>`.
+
+## Creating the API
+
+_return json_ in a controller 
+```cs
+    [HttpGet("api/trips")]
+    public JsonResult Get() { return Json (new Trip() { Name = "Some trip" }); }
+```
+get _errors_ too 
+```cs
+    [HttpGet("api/trips")]
+    public IActionResult Get() { 
+        // return BadRequest ("404");
+        // return Ok (new Trip() { Name = "Some trip" }); 
+        //return Ok (_repo.GetAllTrips());
+        return Ok(Mapper.Map<IEnumerable<TripViewModel>>(results));
+    }
+ ```
+ 
+Rest Client: [postman](http://getpostman.com).
+
+Move from Pascal to Camel casing
+```cs
+    services.AddMvc()
+        .AddJsonOptions (config => config.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver());
+```
+_post with object model bind_, one can add default class route for controller `[Route("api/trips")]` at class level.  
+```cs
+    [HttpPost("api/trips")]
+    // public IActionResult Post ([FromBody] Trip t) { 
+    public IActionResult Post ([FromBody] TripViewModel tvm) { 
+        var t = Mapper.Map<Trip>(tvm);
+        if (ModelState.IsValid) return Created ($"api/trips/{t.Name}", t);
+        return BadRequest (t.Name);
+    }
+```
+Add validation attributes to the model data classes / view model classes, `[Required]`, `[StringLength]`. 
+
+**AutoMapper**. Add package to `project.json`. Initialize this in _Configure_, and use it like above.
+```cs
+    Mapper.Initialize (config => config.CreateMap<TripViewModel, Trip>() );
+```
+try-ok-catch-log-badrequest. use a `ILogger<TController>`. 
+
+## AngularJS
++ supplies services usable throughout your project
++ add anjular 1.5.7 to bower.json 
++ include in a cshtml view `@section Scripts {<script src="~/lib/angular/angular.min.js"></script>}`
++ NG app attribute `data-ng-*` and `ng-*`, e.g. `<div class="row" ng-app="app-trips" />`
++ evaluate expressions `<div> {{ 1+2 }} </div>`
++ code written in app-controller.js ![](https://hiqk5q.by3302.livefilestore.com/y4mdGJ1ZYH7959oBhZahhETy8vaYGgO6a3Iag_5otBbSB_K7HKnoF2t7XIx9A3SffDyU_ie-IK3jG-cLmCG8IuwYF5p0D7ftsczznGbIQ_JgbD8WKU6WSZYTXuq3AFiFYU23zhgpZ8SzlZk0YBhzyC9bvl33HgcFQZhi3HOdGgLVd4vWLtHcNUvQ6egPYe84VBbe0FVnW5PbRo_4jcxPmpvwA?width=487&height=378&cropmode=none) , use it like `<div ng-controller="tripsController as vm">{{vm.name}}</div>`.
++ table ->` tr ng-repeat="t in vm.trips"` -> `td {{t.created | date:'yyyy-MM-dd'}}`
