@@ -10,4 +10,5 @@
 - [OpenID Connect](OpenIDConnect.md)
 
 ## Courses
-- [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
+- [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md) 
+ [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)]()
