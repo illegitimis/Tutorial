@@ -9,9 +9,7 @@ The multicast feature is available through the `Delegate` class’s static `Comb
     public static Delegate Combine(Delegate a,Delegate b)
     public static Delegate Remove(Delegate source, Delegate value)
 ```
-Or use addition and subtraction operators, delegate combine=add, remove=subtract.
-
-> From <https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077>
+Or use *addition* and *subtraction* operators, delegate combine=add, remove=subtract {[gist](https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077)}.
 
 ## Invocation
 
@@ -63,12 +61,13 @@ Predicate<int> p2 = Comparisons.IsLessThanZero;
 do not necessarily know which method or object you will use until runtime / many overloads
 There are also overloads that accept the reflection API’s _MethodInfo_ object to identify the method instead of a string.
 ```cs
-    var greaterThanZero = (Predicate<int>) Delegate.CreateDelegate(typeof(Predicate<int>), zeroThreshold, "IsGreaterThan");
+    var greaterThanZero = (Predicate<int>) 
+      Delegate.CreateDelegate(typeof(Predicate<int>), zeroThreshold, "IsGreaterThan");
 ```
 
 # Conversion
 ## Delegate conversion and contra variance
-The type parameters for the function’s parameters are all contravariant. [gist](https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8)
+The type parameters for the function’s parameters are all **contravariant**. [gist](https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8)
 
 ## Illegal delegate conversion
 ```cs
@@ -79,8 +78,8 @@ The lack of type compatibility between ‘compatible’ delegate types may seem 
 but structurally identical delegate types don’t necessarily have the same semantics.
 
 ## anonymous function 
-as an alternative name for an inline method with a non-void return type
-an anonymous method is an inline method defined with the `delegate` keyboard
+As an alternative, use an inline method with a non-void return type.
+An anonymous method is an inline method defined with the `delegate` keyword.
 ```cs
     public static int GetIndexOfFirstNonEmptyBin(int[] bins) {
         return Array.FindIndex( bins, delegate (int value) { return value > 0; } ); }
@@ -92,14 +91,13 @@ other form of inline method is called a lambda expression
 ```
 
 # Framework
-```cs
-public delegate bool Predicate<in T>(T obj);
-```
 
 The angle brackets indicate that this is a generic type with a single _contravariant_ type argument T, and the
 method signature has a single parameter of that type. You can use the new keyword to create a delegate, it needs a method with a bool return type.
 
 ```cs
+public delegate bool Predicate<in T>(T obj);
+
 public delegate void Action<in T1, in T2 >(T1 arg1, T2 arg2);
 
 public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
