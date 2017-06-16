@@ -1,15 +1,15 @@
 **Angular Fundamentals** Pluralsight course wiki page
 
-# Links
+# Links 
 + Pluralsight [Course page](https://app.pluralsight.com/library/courses/angularjs-fundamentals/)
 + [Files](https://github.com/joeeames/AngularFundamentalsFiles) from course creator
 + Built for version 1.0.5 and **updated for 1.4**. [Course on Angular 1.5 components](https://app.pluralsight.com/library/courses/building-components-angular-1-5/table-of-contents) is an update
 + ['Angular 2: First Look' course](https://app.pluralsight.com/library/courses/angular-2-first-look/table-of-contents)
 
 # TOC
-1. [[Intro|AngularFundamentalsIntro]]
-2. [[Controllers & Markup|AngularFundamentals]]
-3. [[Creating & Using Angular Services|AngularFundamentals]]
+1. [Intro](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#intro)
+2. [Controllers & Markup](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#intro)
+3. [Creating & Using Angular Services](https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md#services)
 
 # Intro
 
@@ -58,9 +58,220 @@ In this module we started by taking a look at JavaScript MV* frameworks, some of
 ---
 # Controllers & Markup
 
+Download any Angular version [from here](https://code.angularjs.org/). Current stable release of April 2017 is 1.6.4. Small applications should use a single module.
+
+install from root app node where package.json resides
+```sh
+npm install
+```
+individual install, creates a _node_modules_ directory
+```sh
+npm install express@4.13.0 body-parser@1.13.1
+```
+
+**/scripts/web-server.js**
+```js
+var express = require('express');
+var path = require('path');
+var app = express();
+var rootPath = path.normalize(__dirname+'/../');
+app.use (express.static(rootPath+'/app'));
+app.listen(8080);
+```
+
+from the bash shell, run node, serve a static file
+```sh
+server.sh
+```
+
+**iis**, physical path: $PathToDemo/app, site name: DemoApp, port: 8080. When started, uris `http://localhost:8080/img/profile.jpg` and `http://localhost:8080/img/angularjs-logo.png` should display images.
+
+## Scope
+
+We can't talk about controllers without talking about scope. So let's look at the relationship between controllers and scope. **A controller's primary responsibility is to create a scope object**. A _scope object_ is **how we communicate with the view**, and the scope is able to communicate with a few through a **two-way** _communication_. The **view can bind the properties and results of functions on the scope**, and **events on the view can call methods on a scope**. Data passes in this way _from the controller to the scope_, and _from the scope back and forth to the view_. The _scope is used to **expose** the model to the view_, but the scope is not the model. The model is the _data that is put into the scope_. If we want to modify the model, we can either **use methods that are on the scope to modify the model**, perhaps in response to events fired by the view, or using **two-way bindings** we can modify the model. In this way users through the view can make modifications to the model, or in other words can make modifications to the data. Let's review with a quiz. What is the primary responsibility of the controller? _Controllers primary responsibility is to create the scope_. Is the scope the model? No, the scope is not the model. _The scope merely contains the model_. Can the view bind to functions on the scope? _Yes, you can bind your view to both functions and properties on your scope object_.
+
+## Controllers
+
+**EventDetails.html**
+1. Add inside `head` css for bootstrap and app
+````htm
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app.css" />
+````
+2. Add a `<div class="container">` directly to `body`
+3. Add the event controller as `<div ng-controller="EventController">`
+4. Add all necessary scripts to the end of body including `<script src="/js/controllers/EventController.js"></script>`
+5. Angular ref `<script src="/lib/angular/angular.js"></script>`
+6. `img ng-src`, `li ng-repeat="s in main.sessions"`, `ng-click`
+
+**EventController.js** 
+1. inside `{{ }}` evaluation. double curly brace
+2. `$scope.upVoteSession = function(session) { session.upVoteCount++; };`
+
+## Built-in Directives
+
+According to the Angular documentation, directives are a way to teach HTML new tricks. Essentially **directives get HTML a new functionality**. As Angular parses through your HTML, it will look for directives and then take action based on what it finds. So in the case of **NG click**, whenever it encounters an NG click, it will _register a click handler event on that DOM object_. If you remember, that was an attribute of a tag. There are actually four ways to specify directives with Angular. The first one is actually is the tag itself. For example, the _NG form directive is a tag_, `<ng-form />`. The other way is the way that we've seen before with NG click where the directive is an _attribute of a tag_, `<div ng-form />`. And the third way that we can write directives is _as a class_, `<div class="ng-form" />`. Now not all directives can be written out as tags, attributes and as classes. Often times a particular directive could only be written out in one or two of these forms. The fourth way to write a directive is inside of an _HTML comment_. 
+
+| ![](https://wewstq.by3302.livefilestore.com/y4m7bmJFejQc0caig6ev0xh8WWJPf0WpPm-_HusgmwioYUmkut0vBbphlkBx_RVewAk-WWbMF3Hg_lfrzItTcPuqaZ1bbpu6iYswipH9OrHAITANxNj1Pr0nqcjC6cCSZ6Vm222b2ogBli4tsM32jwVA2Rb-_fXoBFnfxkkEp0XyMSDVUSTLHDH0TvUoXDGV5GXljoptxMpBMYMywWcejhsiw?width=256&height=182&cropmode=none) | ![](https://tsywqq.by3302.livefilestore.com/y4macba6ntHzRbwtfFl5wjshPScN3lHc4ZtJ86Dc8eFe9hBqrQcE11usSn5EHXnF2V3HpWXy_sBkGWo_bds-aFsx73W_B0Q5q6M-fNm04njxGa9bC_NsD5nobXV9rQgeYsEgmdaTQLp7IrD2ypEDxNAuunU81i_Hd2eThlnC-guvV5NImQvH8YvuCtsnkGtN-INTlSDt1n_qN6PEbSYZlOKfg?width=192&height=256&cropmode=none) | ![](https://6ubyoa.by3302.livefilestore.com/y4ml8m3Bu8fysKHIALi-HP9ynsUPPCltGiWFtmR0gPlKi8aLmHnqpbAjIEjXjW_JwVB4qGeFg6iyTya8JIUjGOxUQTh2qiFGStsU5yzP-WrAK5wb9uZ9ej56z66QRNTmDezrH5RQVGGGoZ3tY2RKuBfVyNvCjAaY07rzI7PlwmbBM2e1tJTioShZiqr5zDmY_l1PGNgM1S12cEes2bEGU0CJg?width=157&height=256&cropmode=none) |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Instead of using double curly braces, bind to property name(attribute value) using `ng-bind` attribute, or
+`<h2 ng-bind-template="{{event.name}} {{event.date}}"></h2>`
+
+## Event directives
+![](https://jnhreg.by3302.livefilestore.com/y4m44yvgmdMGnjp3HrBS9ahlUaNZnyGakBB3WwCNuKM5atooXAhMcY_624KaFLxuDdlpIDuPBa0zAF1gXH_eRpHTreLnpU8xqAQsj9RFwp0VH1IIend2aTggrYqpXQAGYeUomrQFQe7wXB5G5qAuC8R51mFb3W_hb4p1hZM_Y4raw_Qr8Q-MkeIVytwVvUaTP2VhLjfO1MELR6sn0jP2kHVXA?width=161&height=256&cropmode=none)
+
+ng-model required if ng-change present
+`<input type="checkbox" ng-change="handleChange()" ng-model="property">`
+
+In the controller, add `$scope.buttonDisabled = true;` and in the view `<button class="btn" ng-disabled="buttonDisabled">Disabled</button>`
+
+## Filters
+`{{ expression | filter }}`
+built-in: uppercase, lowercase, for instance `<h3>{{event.name | uppercase}}</h3>`
+number & currency `<div>{{3.14132453 | number:2}}</div>`
+date: `<div>{{jsdate | date:'mediumDate'}}</div>`
+
+````html
+<li ng-repeat "session in event.sessions | orderBy:sortorder | limitTo:2 | filter:query">
+````
+
+two-way binding
+ng-model works with input, select and textarea. `<input type="text" ng-model="object.container.property" />`.
+A property that does not exist will be created automatically on the scope.
+
+## Validation
+The `required` attribute on a html element bound with `ng-model`. You can validate against a regular expression with `ng-pattern`.
+
+
 ---
 # Services
 
+**Creating and Using Angular Services**
+
+- an object that is used to encapsulate some sort of business logic, or just does some sort of work. just a **worker object**
+- **often stateless**, although it isn't unusual for a service to _cache data that is accessed frequently_.
+- It is **not accessed over the wire**, although it may be used to _perform operations that do go over-the-wire_, such as making AJAX calls
+- Just an object that has methods and properties on it that we can **reuse**
+- Registering a service with Angular is simple, and, once **registered**, it now becomes part of the Angular world and it can be used like any other Angular service. It can now be easily injected into your controllers and directives and filters and even into other services.
+- _$scope param_ in controller is a service! do not use dollar sign for your own services.
+- What you pass into the **factory** method is the _name of the service_, and then _a function that returns the object that will become that service_. 
+
+## Built-in
+![](https://gonhua.by3302.livefilestore.com/y4mVAD0zWAKIE_dUnvzChzwjJGmZ9YmB6iUPjBDKI5KQKGekWR4rotfGZiQhQhLQa0HrCYMb7G0Wfm-dJjYNnlTZoex9A2pqyyYyMtIs5Z361lOP70M20x19s-rGn1gL5lXHB9lcwy66gSU621CNUlM424fmQURCbzaN3bVdK4lJXDEHW9avMx321T81NQRcAUMYx3ZbTU0--m1onjRyXaMYg?width=256&height=201&cropmode=none)
+
+### $http
+good for non-restful calls, **raw**, _regardless of endpoint type_
+
+**EventData.js**
+````js
+eventsApp.factory('eventData', function($http) {
+    return {
+        getEvent: function (cb) {
+            $http({method:'GET', url:'/data/event/1'}).
+               success(function(data, status, headers, config) {
+                   cb(data);
+               }).
+               error(function(data, status, headers, config) {
+                   $log.warn (data, status, headers(), config);
+               });
+        }        
+    };
+});
+````
+Controller calls `eventData.getEvent(function(event) {$scope.event=event;});`
+
+**web-server.js** with node server
+````js
+var events = require('./eventsController');
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.get('/data/event/:id', events.get);
+app.post('/data/event/:id', events.save);
+````
+
+**eventController.js**
+````js
+    var fs = require('fs');
+     
+    module.exports.get = function(req, res) {
+        var event = fs.readFileSync('app/data/event/' + req.params.id + '.json', 'utf8');
+        res.setHeader('Content-Type', 'application/json');
+        res.send(event);
+    };
+     
+    module.exports.save = function(req, res) {
+       var event = req.body;
+       fs.writeFileSync('app/data/event/' + req.params.id + '.json', JSON.stringify(event));
+       res.send(event);
+    }
+````
+
+### $promise
+.\app\js\controllers\EditEventController.js 
+
+````js
+'use strict';
+
+eventsApp.controller('EditEventController',
+    function EditEventController($scope, eventData) {
+
+        $scope.event = {};
+
+        $scope.saveEvent = function(event, newEventForm) {
+            if(newEventForm.$valid) {
+                eventData.save(event)
+                    .$promise
+                    .then(function(response) { console.log('success', response)})
+                    .catch(function(response) { console.log('failure', response)});
+            }
+        };
+
+        $scope.cancelEvent = function() {
+          window.location = '/EventDetails.html';
+        }
+
+    }
+);
+````
+
+### $resource
+good for **restful** web apis
+include reference to `angular-resource.js`.
+add to `app.js` the module _.\app\js\services\EventData.js_
+````js
+eventsApp.factory('eventData', function($resource) {
+    var resource = $resource('/data/event/:id', {id:'@id'}, {"getAll": {method: "GET", isArray: true, params: {something: "foo"}}});
+    return {
+        getEvent: function(eventId) {
+            return resource.get({id:eventId});
+        },
+        save: function(event) {
+            event.id = 999;
+            return resource.save(event);
+        },
+        getAllEvents: function() {
+            return resource.query();
+        }
+    };
+});
+````
+
+_.\app\js\services\userResource.js_
+````js
+'use strict';
+
+eventsApp.factory('userResource', ['$resource', function ($resource) {
+    var service = $resource('/data/user/:userName', {userName:'@userName'}, { });
+
+    service.queryAll = function (callback) {
+        return service.query({}, callback)
+    };
+
+    return service;
+}]);
+````
 
 
 [<<](AngularJS.md) | [Home](https://github.com/illegitimis/Tutorial/)
