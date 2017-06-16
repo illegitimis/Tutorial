@@ -1,7 +1,7 @@
 # JavaScript
 
 ## Pages
-+ my [AngularJS]|(AngularJS.md) wiki page
++ my [AngularJS](AngularJS.md) wiki page
 + [You don't know JS](https://github.com/getify/You-Dont-Know-JS#you-dont-know-js-book-series) book series on Git
 
 ## Pens
