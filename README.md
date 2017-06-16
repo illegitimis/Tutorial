@@ -1,11 +1,11 @@
 # Illegitimis Documentation Landing Page
 
-Documentation also on the [wiki](https://github.com/illegitimis/Tutorial/wiki)
+_Documentation also on the_ [wiki](https://github.com/illegitimis/Tutorial/wiki)
 
 
 ___
 *  [ASP](ASP.md)
-*  [C#/.Ne](csdotnet.md)
+*  [C#/.Net](csdotnet.md)
 *  [Continuous Delivery](CD.md)
 *  [Domain Driven Design](DDD.md)
 *  [JavaScript](JS.md)
