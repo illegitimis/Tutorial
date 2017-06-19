@@ -10,7 +10,8 @@
 ## Books
 + [Rangle's](https://www.gitbook.com/book/rangle-io/ngcourse2/details) Angular2 Training Book, [![Google Drive](https://img.shields.io/badge/Google-Drive-yellowgreen.svg)](https://drive.google.com/open?id=0B3eWJTqwGQF1bkJrTWtJeUpHUUU), [![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://1drv.ms/b/s!As0cxZAk26SzjMEwBaqFNKfrJv43ng)
 + Valerio De Sanctis - **ASP.NET Core and Angular 2** - _2016_ 
-[![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://1drv.ms/f/s!AnIyfO51kH7NlUMVGUZpXivklDy9)
+[![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://1drv.ms/f/s!AnIyfO51kH7NlUMVGUZpXivklDy9), 
+[Code Repository for ASP.NET Core and Angular 2, Published by Packt](https://github.com/PacktPublishing/ASPdotNET-Core-and-Angular-2/tree/master_VS2017) works with VS2017
 
 + 2013.**ng-book**.Ari Lerner.The Complete Book on AngularJS 
 [![Google Drive](https://img.shields.io/badge/Google-Drive-yellowgreen.svg)](https://drive.google.com/file/d/0B1MnZ9g9oqoGclJnUU5TY2NEVGc/view)
