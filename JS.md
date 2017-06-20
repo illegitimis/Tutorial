@@ -9,4 +9,10 @@
 + [Function.prototype.call.SpecifyContextForThis](https://codepen.io/illegitimis/pen/MoaVQL)
 + [Function.prototype.call.ChainConstructors ](https://codepen.io/illegitimis/pen/LLpdLV)
 
+## Recipes
++ update **npm** to latest version 
+```cmd
+npm install npm@latest -g
+```
+
 [Home](https://github.com/illegitimis/Tutorial)
