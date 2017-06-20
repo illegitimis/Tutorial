@@ -1,1 +1,1 @@
-+ [https://codepen.io/illegitimis/pen/zzwvRv](Bootstrap3 grid sample)
++ [Bootstrap3 grid sample](https://codepen.io/illegitimis/pen/zzwvRv)
