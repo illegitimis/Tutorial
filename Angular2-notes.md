@@ -26,4 +26,7 @@ ng serve
 npm run lite
 ````
 
+This [wizard](https://github.com/angular-wizard/angular-wizard) should be ported.
+
+
 [<<](AngularJS.md) | [Home](https://github.com/illegitimis/Tutorial/)
