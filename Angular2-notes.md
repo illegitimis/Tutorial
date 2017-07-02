@@ -27,6 +27,6 @@ npm run lite
 ````
 
 This [wizard](https://github.com/angular-wizard/angular-wizard) should be ported.
-
+angular2-wizard: [npm](https://www.npmjs.com/package/angular2-wizard), [demo](https://maiyaporn.github.io/angular2-wizard-demo/)
 
 [<<](AngularJS.md) | [Home](https://github.com/illegitimis/Tutorial/)
