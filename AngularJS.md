@@ -1,9 +1,7 @@
 # AngularJS
 
 ## Courses
-+ AngularJS for ['ASP.Net Core, Mvc6, EF Core, AngularJS'](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#angularjs) 
- [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)]()
-
++ AngularJS for [!['ASP.Net Core, Mvc6, EF Core, AngularJS'](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#angularjs)
 + [![Angular Fundamentals Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](Angular Fundamentals.md)
 
 ## Books
