@@ -26,7 +26,7 @@
 - [Angular2 notes](Angular2-notes.md)
 - [Angular4 notes](Angular4-notes.md)
 - [Angular University all lessons](https://angular-university.io/all-lessons)
-- [Quickstart: Angular2 with TypeScript and Gulp](http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html)
+
 
 [JS](JS.md) | [Home](https://github.com/illegitimis/Tutorial/)
 
