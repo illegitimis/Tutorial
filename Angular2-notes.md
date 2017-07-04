@@ -26,7 +26,11 @@ ng serve
 npm run lite
 ````
 
+**Links**
+
 This [wizard](https://github.com/angular-wizard/angular-wizard) should be ported.
 angular2-wizard: [npm](https://www.npmjs.com/package/angular2-wizard), [demo](https://maiyaporn.github.io/angular2-wizard-demo/)
+
+- [Quickstart: Angular2 with TypeScript and Gulp](http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html)
 
 [<<](AngularJS.md) | [Home](https://github.com/illegitimis/Tutorial/)
