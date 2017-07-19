@@ -24,5 +24,7 @@
 - [host own nuget](https://docs.microsoft.com/ro-ro/nuget/hosting-packages/overview)
 - [Creating a local Nuget cache/repository](https://joshilewis.wordpress.com/2012/01/13/creating-a-local-nuget-cacherepository/)
 - [Local package sources](http://stackoverflow.com/questions/28592693/adding-nuget-package-sources-to-visual-studio-by-script) 
+- [Configure machine wide packages and Visual Studio package sources](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
+
 
 [<<](https://github.com/illegitimis/Tutorial/)
