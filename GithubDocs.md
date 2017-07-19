@@ -1,5 +1,7 @@
 # Git doc how-to
+
 ## Formatting
+
 1. Official [Markdown cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 2. [Markdown tables generator](http://www.tablesgenerator.com/markdown_tables)
 3. [Word to Markdown Converter](http://word-to-markdown.herokuapp.com/)
@@ -20,5 +22,9 @@
 ## mediawiki
 + [Supported MediaWiki formats](https://help.github.com/articles/supported-mediawiki-formats/)
 + [mediawiki Formatting](https://www.mediawiki.org/wiki/Help:Formatting)
+
+## utils
++ [DownGit - Create GitHub Directory Download Link](https://minhaskamal.github.io/DownGit/#/home), and [original SO answer](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo#18194523)
+
 
 [<<](https://github.com/illegitimis/Tutorial/)
