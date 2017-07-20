@@ -20,8 +20,8 @@
 ## Resources 
 - [jmcunningham/AngularJS2-Learning](https://github.com/jmcunningham/AngularJS2-Learning)
 - [latest angular docs](https://angular.io/docs/ts/latest/)
-- [![Angular2 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng2.md)
-- Angular4 notes [![Angular4 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng4.md)
+- _Angular2_ notes [![Angular2 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng2.md)
+- _Angular4_ notes [![Angular4 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng4.md)
 - [Angular University all lessons](https://angular-university.io/all-lessons)
 
 
