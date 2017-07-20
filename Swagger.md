@@ -13,13 +13,12 @@ app.UseSwagger();
 
 app.UseSwaggerUI(c =>
 {
-	c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Shipping API V1.0");
+	c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "API V1.0");
 });
 services.AddSwaggerGen(c => {
-	c.SwaggerDoc("v1.0", new Info { Version = "v1.0", Title = "Shipping API V1.0" });
+	c.SwaggerDoc("v1.0", new Info { Version = "v1.0", Title = "API V1.0" });
 
-	var xmlDocFile = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "esw.Shipping.Api.xml");
-
+	var xmlDocFile = Path.Combine(CurrentDomain.BaseDirectory, "generated.Api.xml");
 	if (System.IO.File.Exists(xmlDocFile)) c.IncludeXmlComments(xmlDocFile); 
 
 	c.DescribeAllEnumsAsStrings();
@@ -43,7 +42,7 @@ public class SwaggerTests
 
         swaggerResult.Should().NotBeNull();
 
-        var obj = JsonConvert.DeserializeObject<Newtonsoft.Json.Linq.JObject>(swaggerResult);
+        var obj = JsonConvert.DeserializeObject<JObject>(swaggerResult);
         var paths = obj["paths"];
         Assert.True(paths.Children().Count() > 1);
     }
