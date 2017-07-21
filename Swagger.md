@@ -50,9 +50,14 @@ public class SwaggerTests
 ```
 
 _autorest batch files_
+
 ```cmd
+npm install -g autorest@1.2.2
 autorest --input-file=http://localhost:51228/swagger/docs/v1 --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI --debug
 autorest --input-file=http://localhost:63300/swagger/v1.0/swagger.json --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI --debug
 autorest --input-file=http://vs-qa1-app1.dev.eshopworld.com:51221/swagger/docs/v1 --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI.Processing --debug
 autorest --input-file=http://vs-qa1-app1.dev.eshopworld.com:51222/swagger/docs/v1 --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI.Routing --debug
 ```
+
+`ProducesResponseType(200)`
+
