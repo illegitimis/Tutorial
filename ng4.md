@@ -23,13 +23,16 @@ ng generate component [name]
 
 ## component inheritance
 
-- [so](https://stackoverflow.com/questions/36475626/how-to-extend-inherit-angular2-component)
-- [plnkr sample ???](https://plnkr.co/edit/TPps03QCGQCWbX6oVKXp?p=preview)
+- extend & inherit Angular component on [SO](https://stackoverflow.com/questions/36475626/how-to-extend-inherit-angular2-component)
 - [New features in Angular 2.3](https://medium.com/@gerard.sans/angular-2-new-features-in-angular-2-3-f2e73f16a09e)
-- [Component Inheritance in Angular 2](https://scotch.io/tutorials/component-inheritance-in-angular-2)
+- [Component Inheritance in Angular 2](https://scotch.io/tutorials/component-inheritance-in-angular-2) 
+with a focus on [ViewContainerRef](https://v2.angular.io/docs/ts/latest/api/core/index/ViewContainerRef-class.html)
+and [TemplateRef](https://v2.angular.io/docs/ts/latest/api/core/index/TemplateRef-class.html)
+with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 - [angular 2 component inheritance plnkr sample](https://embed.plnkr.co/hMgaYPVRiXMCiKBdfqHy/)
 - [plnkr style inheritance sample](http://plnkr.co/edit/bWa1JmH7NaSaJffLsl0x?p=preview)
 - [component decorator metadata](https://medium.com/@amcdnl/inheritance-in-angular2-components-206a167fc259)
+- [plnkr sample](https://plnkr.co/edit/TPps03QCGQCWbX6oVKXp?p=preview) with ComponentMetadata, seems outdated
 
 ## loading components dynamically
 
