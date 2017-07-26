@@ -17,6 +17,10 @@ npm install -g @angular/cli
 ng new my-app
 cd my-app
 npm install
+npm run start:dev /* package.json */
+npm run watch -- --define eswenv=dev
+webpack-dev-server --port=3000 --open
+webpack --watch --progress  --profile
 ng serve --open
 ng generate component [name]
 ```

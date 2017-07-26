@@ -12,8 +12,9 @@ ___
 *  [JavaScript](JS.md)
 *  [Messaging](Messaging.md)
 *  [Mongo](Mongo.md)
-*  [(ASP)NetCore](netcore.md)
+*  [NetCore, ASPNETCore](netcore.md)
 *  [OOP](OOP.md)
+*  [ORMs](ORM.md)
 *  [OS](OS.md)
 *  [Parallelism](Parallel.md)
 *  [REST](REST.md)
@@ -23,6 +24,8 @@ ___
 *  [VCS](VCS.md)
 
 ___
+*  [Acronyms](acronyms.md)
 *  [Github doc reference](GithubDocs.md)
-*  [NuGet](NuGet.md)
 *  [Google API](GAPI.md)
+*  [NuGet](NuGet.md)
+

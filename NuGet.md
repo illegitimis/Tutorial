@@ -1,5 +1,13 @@
 # NuGet
 
+## Recipes
+
++ NuGet feeds sources: _%APPDATA%\NuGet\NuGet.Config_
++ VS package sources: 
+_%ProgramData%\NuGet\Config\VisualStudio\14.0\Microsoft.VisualStudio.config_ and 
+_%Program Files%\NuGet\Config\Microsoft.VisualStudio.Offline.config_
+
+
 ## Commands
 
 |  |  |
