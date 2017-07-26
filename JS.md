@@ -19,7 +19,13 @@
 ```cmd
 npm install npm@latest -g
 ```
+
+## Libraries
 + [markdown.js](https://github.com/evilstreak/markdown-js)
-
-
++ RxJS
+    - [RxJS 5.0](https://github.com/ReactiveX/RxJS), Reactive Extensions Library for JavaScript, git page
+    - [RxJS API document](http://reactivex.io/rxjs/)
+    - [The Reactive Extensions for JavaScript](https://github.com/Reactive-Extensions/RxJS), old git page
+	
+	
 [Home](https://github.com/illegitimis/Tutorial)
