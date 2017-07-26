@@ -44,7 +44,9 @@ Uninstall-Package -RemoveDependencies Hangfire.Mongo -Version 0.2.1 -Force
 Find-Package jquery -AllVersions -ExactMatch
 ``` 
 + detailed relevant package search 
-<code>Find-Package -Id ZeroMQ -AllVersions &#124; Select-Object ID, Version, Description, DownloadCount &#124; Sort-Object -Descending -Property DownloadCount</code> 
+<code>
+Find-Package -Id ZeroMQ -AllVersions &#124; Select-Object ID, Version, Description, DownloadCount &#124; Sort-Object -Descending -Property DownloadCount
+</code> 
 + NUnit inside MSTest, c# 6.0
 ```ps
 Install-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform
