@@ -9,6 +9,7 @@ ___
 *  [Continuous Delivery](CD.md)
 *  [CSS](CSS.md)
 *  [Domain Driven Design](DDD.md)
+*  [Git/VCS](git.md)
 *  [JavaScript](JS.md)
 *  [Messaging](Messaging.md)
 *  [Mongo](Mongo.md)
@@ -21,8 +22,6 @@ ___
 *  [SQL](SQL.md)
 *  [SOA](SOA.md)
 *  [TDD](TDD.md)
-*  [VCS](VCS.md)
-
 ___
 *  [Acronyms](acronyms.md)
 *  [Github doc reference](GithubDocs.md)
