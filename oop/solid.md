@@ -13,4 +13,4 @@ The SOLID Principles of programming are a good set of rules to follow when you a
 > From <http://www.cmjackson.net/2009/09/04/solid-programming-principles/> 
 
 
-[[<<|OOP]]
+[OOP](../OOP.md) | [Home](https://github.com/illegitimis/Tutorial/)
