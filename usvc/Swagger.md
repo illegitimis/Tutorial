@@ -1,3 +1,5 @@
+# Swagger
+
 [Generating clients for your APIs with AutoRest](https://dzimchuk.net/generating-clients-for-your-apis-with-autorest/)
 _packages_
 ```csproj
@@ -61,3 +63,8 @@ autorest --input-file=http://vs-qa1-app1.dev.eshopworld.com:51222/swagger/docs/v
 
 `ProducesResponseType(200)`
 
+[<<](../SOA.md)
+|
+[home](README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki)

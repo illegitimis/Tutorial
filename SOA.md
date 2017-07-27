@@ -1,5 +1,11 @@
-# SOA
+# Service Oriented Architectures
 
-+ [[Microservices Architecture (Pluralsight Course)|Microservices Architecture]]
-+ [[Microservices with .NET (recipes)|Microservices with .NET]], work in progress
-+ [[Docker|Docker]]
++ [Microservices Architecture (Pluralsight Course)](./usvc/Microservices-Architecture.md)
++ [Microservices with .NET (recipes)](./usvc/Microservices-with-.NET.md), work in progress
++ [Docker](./usvc/Docker.md)
++ [Swagger](./usvc/Swagger.md)
+
+
+[home](README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

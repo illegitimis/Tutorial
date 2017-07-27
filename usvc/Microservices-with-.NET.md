@@ -1,7 +1,11 @@
-(Martin Fowler and James Levis, “Microservices”, March 2014.)
-> Microservices architectural style is an approach to developing a **single application as a suite of small services**, _each running in its own process and communicating with lightweight mechanisms_, often an HTTP resource API. These services are _built around business capabilities_ and **independently deployable** by _fully automated deployment machinery_. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies. 
+# Microservices with .NET
 
-### Unvisited queue
+(Martin Fowler and James Levis, “Microservices”, March 2014.)
+> Microservices architectural style is an approach to developing a **single application as a suite of small services**, _each running in its own process and communicating with lightweight mechanisms_, often an HTTP resource API. 
+These services are _built around business capabilities_ and **independently deployable** by _fully automated deployment machinery_. 
+There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies. 
+
+## Unvisited queue
 * [ALEKSI ULKUNIEMI, STAND-ALONE .NET MICROSERVICES WITH CAMERAS AND IMAGE COMPARISON](https://dspace.cc.tut.fi/dpub/bitstream/handle/123456789/23611/ulkuniemi.pdf;sequence=3) Master of Science thesis, May 2015
 * [Daishi.AMQP and RabbitMQ](https://insidethecpu.com/2015/05/22/microservices-with-c-and-rabbitmq/)
 * [FubuMVC](https://fubumvc.github.io/)
@@ -17,6 +21,9 @@
 * [ms enterprise micro svc](https://keyholesoftware.com/2015/10/19/microservices-in-the-microsoft-enterprise/)
 * [golden-service-fabric-hammer](https://keyholesoftware.com/2016/06/14/golden-service-fabric-hammer/)
 
-***
 
-[<< SOA](https://github.com/illegitimis/Tutorial/wiki/SOA)
+[<<](../SOA.md)
+|
+[home](README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki)

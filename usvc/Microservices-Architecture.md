@@ -1,10 +1,12 @@
+# Microservices Architecture
+
 [Microservices Architecture pluralsight](https://app.pluralsight.com/library/courses/microservices-architecture/table-of-contents)
 
-### services
+## services
 + services are **stateless**. No knowledge about previous requests is needed. All info about, customer, client type, previous interaction must be contained into the current request
 + interface contracts and backward compatibility
 
-### Microservices
+## Microservices
 + small service with a **single purpose**
 + **lightweight** communication mechanism, client/service to service
 + **technology agnostic** API, open protocol (like http rest)
@@ -24,7 +26,7 @@ versioning and ownership. each teams owns and is reponsible to make autonomous, 
 Nagios/PRTG/Load balancers/New Relic. **central logging**: log means info/story, monitor means collecting metrics. When to log: startup/shutdown, code path milestones. What: requests, responses and decisions, timeouts, exceptions. Structured logging: level, date and time, **correlation id**, service name and instance. Strongly typed model and traceable distributed transactions. Elastic Log/Log stash/Splunk/Kibana/Graphite. Serilog pushes and raises events against the centralised monitoring tool. 
 + **automation**: manual regression testing, integration feedback on check-in. CI/CD. Each microservice with its own CI build. CD with central control panel and VS integration.
 
-### monolith
+## monolith
 + all modules packed together, no division, tightly coupled, intertwined
 + keeps growing as long as you add app functionality, no restriction in size
 + scaling implies duplication of the whole
@@ -34,7 +36,7 @@ Nagios/PRTG/Load balancers/New Relic. **central logging**: log means info/story,
 | **monolith** | ![](https://vbp2kg.by3302.livefilestore.com/y4maefbFKJEPiUaYXT-nqQiAKoLY2c-jo_T_Vyj5MUm-XuiO7kTlTqXi6J_SPh1bMzJYtF43vpBMVb8Mi2J0vF22hWZiSSENDJ0OPIM8HTPET7te4dmjPujLctCyd2WaRYZo6-PVea1pRtBGiKE5aO0F-nzHD68Lesmut-SLprhAGBL801u6nH1pMKrsZZsDrdXL5dqxbbwlxZBiJmOFGbu2w?width=849&height=595&cropmode=none) |
 | **microservice** | ![](https://uz5oia.by3302.livefilestore.com/y4mwpYOLH51_DGJjNMVJ_LjgFJxw_T4oxelkCQVgCAPYJcHReu4M4CMze0qhfr7DYtcbaL23Bg0YjbZcI4LjLVRAoBGUlLOk6T8fQQmSrll8j32Lw7cNQSjrlFv5gc_cqbqNC9ybP0IzArKRzkObl3g8qeY-1Cf57fy_VwcMLBiOGfTvBc1moE1NmJoeC1SmSPiEcwfkRrDYjhXJIX0Skokdw?width=740&height=530&cropmode=none) |
 
-### Microservices technology
+## Microservices technology
 
 Sync or async? Both. RPC: distributed client server programs. vs Open protocols like REST/JSON, or Stomp? ATOM uses http to propagate events. message queuing protocol for async, decouples service and client, also publisher and subscriber since it's event based. Queue is another point of failure.
 
@@ -48,7 +50,7 @@ Sync or async? Both. RPC: distributed client server programs. vs Open protocols 
 
 ![](https://fpneua.by3302.livefilestore.com/y4mf9rb9J-3DSfOKD6Rd0TVKclfrIXbg1_WAvDt1GkXkbbJnLibsrf3e5PggEboGtdnJEAN9GumFG9surNClVL_msU9yQy0rX8m8jJCVl9g21P1ZArbOn8eaaVNnvTG8j1X2u0syXmBZ83FycclSdAp04-3UQlOh2xS9zx85pRXO1ULonXcr7PbM1mBOLMl37O85Js6KZVZIhG7nIpUk9XX4g?width=554&height=383&cropmode=none)
 
-### Design
+## Design
 
 |  | Brownfield | Greenfield |
 |--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -59,4 +61,8 @@ Sync or async? Both. RPC: distributed client server programs. vs Open protocols 
 | Transactions | Complex if spanning multiple microservices. Example: Orders-Promotions-Accounts-Products + TransactionManager.  Fail options: try again (cache it), abort (create undo transaction) TransactionManager software: delay, two phase commit, potential bottleneck. Distributed transaction compatibility: notify monolith of completion.  | ![pic 3](https://vbpzkg.by3302.livefilestore.com/y4mWzaPsKD43tdoZ4RnodLKtzLL1TrWdZtkf8tqVZzilqSXJh-2DOPkd9CsE27d6u9y-_-1zpc1wOA_NcNfh8lQUZnC82OIgO4eJKBtgr-CbMkDbBRxvYzFVnZIuiGXwYbVtqjkF9FcmOcMUNFqqGzKpjLL44DtMWnlr0HZJII9FU36AN47nKbIIEc5yrHEAQLOwlg0ddXu8H0c7VpvuK0WdQ?width=589&height=591&cropmode=none) |
 | Reporting | No central database. Joins? Data pumps and a specialized ReportingService. Consolidation environment with a nightly job.  | ![pic 4](https://slcgww.by3302.livefilestore.com/y4myXm1Pa64HpHG7IO9QsSOg__pXCAI6GznxzDJHwQxgrcTRwYLcMlYL-8UheJVjdlwxMr_iOr5MqCIAPAZTg5Zu-SafYh_3qALMt5GM57jkwm3sUTZAUYQsnDICoaZVueHzQ_ZAG7UMAx1-h7sE-_dL1zx-RXowsM7eRg0zM2qNAQx7m-WXQRhaV_a4kuFGHHDh1rEWbM32hHyiOiWnjC62A?width=469&height=485&cropmode=none) |
 
-[[<<|SOA]] 
+[<<](../SOA.md)
+|
+[home](README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki)
