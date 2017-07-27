@@ -314,4 +314,8 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 + table ->` tr ng-repeat="t in vm.trips"` -> `td {{t.created | date:'yyyy-MM-dd'}}`
 
 
-[Home](https://github.com/illegitimis/Tutorial) | [<<](https://github.com/illegitimis/Tutorial/blob/v10/ASP.md)
+[<<](../netcore.md)
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
