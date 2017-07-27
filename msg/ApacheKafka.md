@@ -124,3 +124,9 @@ Another factor contributing to Kafka&#39;s performance and scalability is the fa
  ![broker diagram](https://hiqr5q.by3302.livefilestore.com/y3mL2zZ0kKbHelziORap8E_JcGlfWffIRMJ_1YMAyu4FquwOXE6O73jkHMzUzrZqe6WdOLVTJ29Uyn6IL9RQsqclmLgMQieF8yXj5pKbgFHBFNCgVepeppBPCXsJYulzLMreJi5OrHyzwi3aAso5JrtMI-xqfymEfAAs5Qe7kPefac?width=844&height=484&cropmode=none)
 
 For Kafka consumers, keeping track of which messages have been consumed (processed) is simply a matter of keeping track of an Offset, which is a sequential id number that uniquely identifies a message within a partition. Because Kafka retains all messages on disk (for a configurable amount of time), consumers can rewind or skip to any point in a partition simply by supplying an offset value. Finally, this design eliminates the potential for back-pressure when consumers process messages at different rates.
+
+[<<](../Messaging.md) 
+| 
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

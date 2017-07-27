@@ -1,7 +1,9 @@
 # Messaging 
 
-*  [Apache Kafka](ApacheKafka.md)
-*  [MPI](MPI.md)
-*  [ZeroMQ](ZeroMQ.md)
+*  [Apache Kafka](./msg/ApacheKafka.md)
+*  [MPI](./msg/MPI.md), _todo_
+*  [ZeroMQ](./msg/ZeroMQ.md)
 
-[<<](https://github.com/illegitimis/Tutorial)
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
