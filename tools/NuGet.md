@@ -63,4 +63,8 @@ Install-package NUnitTestAdapter -Version 2.0.0
 - [Configure machine wide packages and Visual Studio package sources](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
 
 
-[<<](https://github.com/illegitimis/Tutorial/)
+[<<](../tools.md)
+|
+[home](https://github.com/illegitimis/Tutorial/)
+|
+[wiki](https://github.com/illegitimis/Tutorial/wiki)

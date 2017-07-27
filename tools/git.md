@@ -14,3 +14,10 @@ Git lets you completely ignore files by placing paths in a special file called `
 + [Sync](https://www.atlassian.com/git/tutorials/syncing) with fetch, remote, push, pull
 
 ## Git command line
+(todo)
+
+[<<](../tools.md)
+|
+[home](https://github.com/illegitimis/Tutorial/)
+|
+[wiki](https://github.com/illegitimis/Tutorial/wiki)
