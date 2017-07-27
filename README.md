@@ -1,4 +1,4 @@
-# Illegitimis MDocs
+# Illegitimis Online Docs
 
 _Documentation also on the_ [wiki](https://github.com/illegitimis/Tutorial/wiki)
 
