@@ -27,4 +27,8 @@ git page [![GitHub page](https://img.shields.io/github/tag/expressjs/express.svg
 + [DownGit - Create GitHub Directory Download Link](https://minhaskamal.github.io/DownGit/#/home), and [original SO answer](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo#18194523)
 
 
-[<<](https://github.com/illegitimis/Tutorial/)
+[<<](../tools.md)
+|
+[home](https://github.com/illegitimis/Tutorial/)
+|
+[wiki](https://github.com/illegitimis/Tutorial/wiki)

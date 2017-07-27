@@ -21,9 +21,5 @@ ___
 *  [SQL](SQL.md)
 *  [SOA](SOA.md)
 *  [TDD](TDD.md)
-___
-*  [Acronyms](./tools/acronyms.md)
-*  [Git/VCS](./tools/git.md)
-*  [Github doc reference](./tools/GithubDocs.md)
-*  [Google API](./tools/GAPI.md)
-*  [NuGet](./tools/NuGet.md)
+*  [Tools, VCS, Github Meta, etc..](tools.md)
+
