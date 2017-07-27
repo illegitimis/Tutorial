@@ -24,6 +24,7 @@ OAuth 2.0 _is_ fundamentally _an authorisation protocol_, _not an authentication
 
 > From <http://andrewlock.net/an-introduction-to-openid-connect-in-asp-net-core/>  
 
+![sequence diagram](https://1drv.ms/i/s!As0cxZAk26SzjMAaEByL2Qz0DLP5LA)
 ![sequence diagram](https://g7ucqw.by3302.livefilestore.com/y3mf3_zYz2mPPB2h0Qjk7xv94b29SkaoGo__Xj2UJYS7TmwNCTNfqykyIlZi75yqYTSMpHGYGL6rsLEr6_xo20Yu7ERtYNBojf0sTiDcw_KwNMSpCwxPQxEBFMUU-oFbNDl_HwHmGbonXe5NUmdXKm52ge6QZaIKTxmBsN3iBV9Yjg?width=811&height=801&cropmode=none)
 
 ### OpenID Connect Basic Client Implementer's Guide 1.0 - draft 37 
