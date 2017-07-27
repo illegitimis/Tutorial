@@ -1,3 +1,5 @@
+# Domain Driven Design
+
 ## Books
 
 - 2003 - Eric Evans - Domain-Driven Design - Tackling Complexity in the Heart of Software, [gdrds](https://www.goodreads.com/book/show/179133.Domain_Driven_Design), [1drv](https://1drv.ms/b/s!As0cxZAk26SzjMBp0PF88ubDcye0PA)
@@ -10,8 +12,14 @@
 + [VaughnVernon/IDDD_Samples_NET](https://github.com/VaughnVernon/IDDD_Samples_NET)
 + [naa4e SDD](http://sddconf.com/brands/sdd/library/Architecting_Implementing_DDD_Patterns.pdf)
 + [Master's thesis, CS Department, University of Copenhagen, spring 2009, Domain-driven design in action: Designing an identity provider](http://www.diku.dk/forskning/performance-engineering/Klaus/speciale.pdf)
-
 + [DDD insights blog](http://effective-ddd.blogspot.ro/2015/12/strategic-domain-driven-design.html)
 + [Colorado slides](https://www.cs.colorado.edu/~kena/classes/5448/f12/presentation-materials/roads.pdf)
 + [IDDD excerpt](http://ptgmedia.pearsoncmg.com/images/9780321834577/samplepages/0321834577.pdf)
 + [IDDD excerpt 2](https://books.google.ro/books?id=X7DpD5g3VP8C&pg=PA1&hl=ro&source=gbs_toc_r&cad=4#v=onepage&q&f=false)
+
+[<<](../OOP.md)
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+
