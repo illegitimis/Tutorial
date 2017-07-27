@@ -1,5 +1,7 @@
 # Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular
 
+(todo) fix image links 
+
 ## TOC
 - [Intro](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#intro)
 - [ASP.NET Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#aspnet-core)

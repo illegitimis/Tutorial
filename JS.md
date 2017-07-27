@@ -5,6 +5,9 @@
 + my [Angular2](./js/ng2.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./js/ng2.md)
 + my [Angular Fundamentals course page](./js/AngularFundamentals.md) [![wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./js/AngularFundamentals.md)
 + [You don't know JS](https://github.com/getify/You-Dont-Know-JS#you-dont-know-js-book-series) book series on Git
++ [page](netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript) for 'Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular' course
+[![wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
+
 
 ## Pens
 + [Function.prototype.call.InvokeAnonymousFunction](https://codepen.io/illegitimis/pen/GEpQVZ)
