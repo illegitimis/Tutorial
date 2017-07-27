@@ -7,9 +7,12 @@ Alternate [![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https:
 
 
 ## Technologies
-- [OpenID Connect](OpenIDConnect.md)
+- [OpenID Connect](./asp/OpenIDConnect.md)
 
 ## Courses
-- Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
+- Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular 
+[![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
 
-[Home](https://github.com/illegitimis/Tutorial/)
+[home](https://github.com/illegitimis/Tutorial/)
+|
+[wiki](https://github.com/illegitimis/Tutorial/wiki)
