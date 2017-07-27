@@ -6,7 +6,6 @@ _Documentation also on the_ [wiki](https://github.com/illegitimis/Tutorial/wiki)
 ___
 *  [ASP](ASP.md)
 *  [C#/.Net](csdotnet.md)
-*  [Continuous Delivery](CD.md)
 *  [CSS](CSS.md)
 *  [JavaScript](JS.md)
 *  [Messaging](Messaging.md)
@@ -20,5 +19,5 @@ ___
 *  [SQL](SQL.md)
 *  [SOA](SOA.md)
 *  [TDD](TDD.md)
-*  [Tools, VCS, Github Meta, etc..](tools.md)
+*  [Tools, VCS, Github Meta, CI/CD, etc..](tools.md)
 
