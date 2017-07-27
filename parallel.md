@@ -5,6 +5,7 @@
 + [(.Net) Threads vs. Processes](./parallel/dotnetThreadsProcesses.md)
 + [(.Net) Threads vs. Tasks](./parallel/dotnetThreadsTasks.md)
 + [(.Net) UI Threads](./parallel/dotnetUIThreads.md)
++ [The **thread pool**](./parallel/threadPool.md)
 
 [home](https://github.com/illegitimis/Tutorial) 
 | 

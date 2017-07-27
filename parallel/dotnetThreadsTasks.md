@@ -13,7 +13,8 @@ Computer science literature often refers to this mechanism as futures (“_in th
 Contrast the _data oriented nature of tasks_ with regular threads to see the difference.
 Tasks provide a much nicer abstraction to perform computation in the background, allowing the result to be obtained in a variety of manners at a later point in time.
 
-Tasks should really be thought of as the new threads. Disadvantage inherent to threads: their cost to create. 
+Tasks should really be thought of as the new threads. 
+Disadvantage inherent to threads: _their cost to create_. 
 The _thread pool_ is used to reduce such costs and even to **avoid excessive context switching** by _multiplexing multiple units of work onto the same physical operating system thread_ that gets reused.
 The introduction of tasks makes direct use of threads largely obsolete because they can be used for **both** _long-running_ work and for _short-lived_ operations. 
 The latter case clearly is where you would have been using the thread pool before, although it suffers from limitations such as the ability to return values and compose operations. 
