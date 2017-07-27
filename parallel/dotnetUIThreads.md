@@ -33,3 +33,8 @@ The specific way to check the current thread and use the UI thread may vary depe
 	timer.Start(); }
 ```
 	
+[<<](../parallel.md) 
+| 
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki)
