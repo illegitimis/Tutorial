@@ -1,6 +1,6 @@
 # UI Threads
 
-### WinForms
+## WinForms
 
     void GetNewTweet() {
         var tweet = _twitter.GetTweet(); 
@@ -11,12 +11,15 @@
     }
 
 
-### WPF
-This pattern isn’t limited to Windows Forms. The specific way to check the current thread and use the UI thread may vary depending on the type of application you’re using. (WPF) uses `Dispatcher.CheckAccess` and `Dispatcher.Invoke`.
+## WPF
+This pattern isn’t limited to Windows Forms. 
+The specific way to check the current thread and use the UI thread may vary depending on the type of application you’re using. 
+(WPF) uses `Dispatcher.CheckAccess` and `Dispatcher.Invoke`.
 
-### todo
+## PostSharp
 
-PostSharp has `UIThread, WorkerThread  : MethodInterceptionAspect`
+```cs
+	//UIThread, WorkerThread  : MethodInterceptionAspect
 
     public delegate void UIWorkDelegate();
 
@@ -28,3 +31,5 @@ PostSharp has `UIThread, WorkerThread  : MethodInterceptionAspect`
 		action.DynamicInvoke(null);
 	});
 	timer.Start(); }
+```
+	

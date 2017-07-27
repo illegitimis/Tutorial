@@ -24,4 +24,10 @@ Upon calling `Abort`, the CLR will throw a `ThreadAbortException` in the target 
 
 ![native and managed threads coexisting](https://wowwtq.by3302.livefilestore.com/y3m49V0QN666YktnskCe9_14hLbA45yTDdOTEanwgJYiSXlbwlYIchaez8T27_sKhsfwUF7bC_4UquHlAzYwc7Zly1MfqucWNMUH3N8s3LMd-0Dbx1vmAXeGjXVnvBGRRiUmtJlAQKApuKZoqKfns4UnZtZ826AdbgNCQ0K20A6NPg?width=400&height=232&cropmode=none)
 
+[<<](../parallel.md) 
+| 
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+
 

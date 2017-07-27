@@ -1,3 +1,5 @@
+# Threads vs Processes
+
 Threads are **miniprocesses**.
 
 An _application_ consists of **one or more processes**. A process, in the simplest terms, is an executing program. One or more threads run in the context of the process. A thread is the _basic unit_ to which the operating system _allocates processor time_. A thread can execute any part of the process code, including parts currently being executed by another thread. 
@@ -31,3 +33,8 @@ Reuses physical operating system threads.
 
 ![Thread Pool Work Item Queue](https://tcy0qq.by3302.livefilestore.com/y3m_9fMJVZOgAI1hocCPcUqbFwf62XKAZ17rKjdGX71weEmpnHXDicgiCkwVdzLKQu7Ye7dRIpx4N_HdCT0ypHsxC8zROxZYU7XTRu0Suxq9tEmqf_uQicmNoLVbi2xTV7NHSZGVoekY8wMmp8_rrd9hb1IicXqugXnU3966sfNRas?width=255&height=255&cropmode=none)
 
+[<<](../parallel.md) 
+| 
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

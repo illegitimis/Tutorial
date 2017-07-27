@@ -1,4 +1,4 @@
-#Indices 
+# Indices 
 
 ## Indexes execution plan
 (todo)
