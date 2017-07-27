@@ -274,4 +274,9 @@ eventsApp.factory('userResource', ['$resource', function ($resource) {
 ````
 
 
-[<<](AngularJS.md) | [Home](https://github.com/illegitimis/Tutorial/)
+[<<](../JS.md)
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+

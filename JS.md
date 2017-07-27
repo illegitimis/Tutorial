@@ -1,7 +1,9 @@
 # JavaScript
 
 ## Pages
-+ my [AngularJS](AngularJS.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](AngularJS.md)
++ my [Angular4](./js/ng4.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./js/ng4.md)
++ my [Angular2](./js/ng2.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./js/ng2.md)
++ my [Angular Fundamentals course page](./js/AngularFundamentals.md) [![wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./js/AngularFundamentals.md)
 + [You don't know JS](https://github.com/getify/You-Dont-Know-JS#you-dont-know-js-book-series) book series on Git
 
 ## Pens
@@ -10,9 +12,9 @@
 + [Function.prototype.call.ChainConstructors ](https://codepen.io/illegitimis/pen/LLpdLV)
 
 ## Build tools
-+ webpack-fundamentals [![webpack-fundamentals](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/webpack-fundamentals/table-of-contents) and [Git repo](https://github.com/joeeames/WebpackFundamentalsCourse)
-+ my [webpack](webpack.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](webpack.md)
-
++ webpack-fundamentals [![webpack-fundamentals](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/webpack-fundamentals/table-of-contents) 
+and [Git repo](https://github.com/joeeames/WebpackFundamentalsCourse)
++ my [webpack](./js/webpack.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./js/webpack.md)
 
 ## Recipes
 + update **npm** to latest version 
@@ -34,4 +36,6 @@ npm install npm@latest -g
 	- []()
 	- []()	
 	
-[Home](https://github.com/illegitimis/Tutorial)
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

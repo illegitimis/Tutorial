@@ -25,7 +25,12 @@
 - [Angular University all lessons](https://angular-university.io/all-lessons)
 
 
-[JS](JS.md) | [Home](https://github.com/illegitimis/Tutorial/)
+[<<](../JS.md)
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+
 
 
 

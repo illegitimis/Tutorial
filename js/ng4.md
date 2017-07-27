@@ -53,4 +53,9 @@ with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 	* [ViewContainerRef](https://angular.io/api/core/ViewContainerRef), Represents a container where one or more Views can be attached.
 	
 	
-[<<](AngularJS.md) | [Home](https://github.com/illegitimis/Tutorial/)
+[<<](../JS.md)
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+

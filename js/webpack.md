@@ -61,4 +61,8 @@ plugins: [new etp("styles.css")]
 loader: etp.extract (loader_params)
 ```
 
-[Home](https://github.com/illegitimis/Tutorial) | [JS](JS.md)
+[<<](../JS.md)
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
