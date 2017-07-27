@@ -1,0 +1,17 @@
+# SQL
+
++ [[ACID|ACID]]
++ [[BASE|BASE]]
++ [[DbCommand/SqlCommand|DbCommand/SqlCommand]]
++ [[Connection Pool|Connection Pool]]
++ [[DAO vs. Repository|DAO vs. Repository]]
++ [[Foreign Key Mapping|Foreign Key Mapping]]
++ [[Indexes|Indexes Indices]]
++ [[MySQL|MySQL]]
++ [[Primary Keys|Primary Keys]]
++ [[Referential Integrity|Referential Integrity]]
++ [[Service Broker|Service Broker]]
++ [[String search db stored proc |String search db stored proc]]
++ [[Table schema|Table schema]]
++ [[Temporary Tables|Temporary Tables]]
++ [[SQL Views|SQL Views]]
