@@ -1,6 +1,8 @@
 # OpenID Connect
 
-[OpenID Connect](http://openid.net/connect/) is an interoperable authentication protocol based on the OAuth 2.0 family of specifications. It uses straightforward REST/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”. It’s uniquely easy for developers to integrate, compared to any preceding Identity protocol. 
+[OpenID Connect](http://openid.net/connect/) is an interoperable authentication protocol based on the OAuth 2.0 family of specifications. 
+It uses straightforward REST/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”. 
+It’s uniquely easy for developers to integrate, compared to any preceding Identity protocol. 
 
 An entity has multiple identities. Facebook extends OAuth with 'signed request' does the same thing as OpenID Connect.  
 
@@ -8,7 +10,8 @@ An entity has multiple identities. Facebook extends OAuth with 'signed request' 
 
 [Final OpenID Connect specifications](http://openid.net/2014/02/26/the-openid-foundation-launches-the-openid-connect-standard/) were launched on February 26, 2014.  
 
-[The certification program](http://openid.net/2015/04/17/openid-connect-certification-program/) for OpenID Connect was launched on April 22, 2015.  Google, Microsoft, Ping Identity, ForgeRock, Nomura Research Institute, and PayPal OpenID Connect deployments were the first to self-certify conformance. 
+[The certification program](http://openid.net/2015/04/17/openid-connect-certification-program/) for OpenID Connect was launched on April 22, 2015.  
+Google, Microsoft, Ping Identity, ForgeRock, Nomura Research Institute, and PayPal OpenID Connect deployments were the first to self-certify conformance. 
 
 **IDP** = _identity provider_ = offer authentication as a service 
 
@@ -36,4 +39,9 @@ OAuth 2.0 _is_ fundamentally _an authorisation protocol_, _not an authentication
 ### Safe storage of app secrets during development 
 > From <https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets>
 
-[<<](ASP.md)
+
+[<<](../ASP.md)
+|
+[home](https://github.com/illegitimis/Tutorial/)
+|
+[wiki](https://github.com/illegitimis/Tutorial/wiki)
