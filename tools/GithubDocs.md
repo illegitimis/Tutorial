@@ -1,4 +1,4 @@
-# Git doc how-to
+# GitHub docs/wiki & Markdown how-to
 
 ## Formatting
 
