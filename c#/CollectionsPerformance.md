@@ -14,14 +14,14 @@
 
 > From <http://geekswithblogs.net/BlackRabbitCoder/archive/2011/06/16/c.net-fundamentals-choosing-the-right-collection-class.aspx>
 
-### `Dictionary<TKey, TValue>`
+## `Dictionary<TKey, TValue>`
 * Best for **high performance lookups**.
 * **Fastest** class for _associative lookups/inserts/deletes_ because it uses a hash table under the covers
 * Because the keys are hashed, the key type _should correctly implement_ `GetHashCode()` and `Equals()` appropriately or you should provide an external `IEqualityComparer` to the dictionary on construction
 * The insert/delete/lookup time of items in the dictionary is **amortized constant time** - O(1) - which means no matter how big the dictionary gets, the time it takes to find something remains relatively constant. 
 * The _only downside_ is that the dictionary, by nature of using a hash table, is **unordered**, so you cannot easily traverse the items in a Dictionary in order.
 
-### `SortedDictionary<TKey,TValue>`
+## `SortedDictionary<TKey,TValue>`
 * **keeps items in order by the key**,  `TKey` _must implement_ `IComparable<TKey>`
 * trades lookup time for order
 * insert, delete, lookup is _logarithmic_
@@ -29,12 +29,12 @@
 * Compromise of Dictionary speed and ordering, uses BST, **binary search tree**.
 * `TreeSet` <http://referencesource.microsoft.com/#System/compmod/system/collections/generic/sorteddictionary.cs,1a01ea5555bded49>. `TreeSet` extends a `SortedSet`. Reference to parent node. `SortedSet.Node` is red black.
 
-### `SortedList<TKey,TValue>`
+## `SortedList<TKey,TValue>`
 * Very _similar_ to `SortedDictionary`, except tree is implemented in an **array**, so has _faster lookup on preloaded_ data, but _slower loads_.
 * **insertions and deletions are linear** - O(n) - because deleting or adding an item may involve shifting all items up or down in the list.
 * _use_ when **insertions and deletions are rare**
 
-### `List<T>`
+## `List<T>`
 * Vector, **dynamic array**
 * Essentially it is an contiguous array of items that grow once its current capacity is exceeded
 * Best for smaller lists where direct access required and no sorting.
@@ -42,7 +42,7 @@
 * adding and removing at the end of a List<T> is an amortized constant operation - O(1)
 * prefer array only when you know size fixed
 
-### `LinkedList<T>`
+## `LinkedList<T>`
 * Best for lists where inserting/deleting in middle is common and **no direct access required**.
 * basic implementation of a doubly-linked circular list.
 * use when **a lot of adding and removing** (over list), _no indexer_ 
@@ -55,7 +55,7 @@
 * The LinkedList<T> class does not support chaining, splitting, cycles, or other features that can leave the list in an inconsistent state. 
 * The list remains consistent on a single thread. The only multithreaded scenario supported by LinkedList<T> is multithreaded read operations. 
 
-### `HashSet<T>`
+## `HashSet<T>`
 * **unordered** collection of **unique** items, no duplicates
 * useful for super-quick lookups where order is not important
 * Unique unordered collection, like a Dictionary except key and value are same object.
@@ -63,14 +63,21 @@
 * has `int[] m_buckets` and `Slot[] m_slots`, an array-based implementation similar to `Dictionary<T>`, using a buckets array to map hash values to the Slots array. Items in the Slots array that hash to the same value are chained together through the "next" indices.
 > From <http://referencesource.microsoft.com/#System.Core/System/Collections/Generic/HashSet.cs,d0822f25708256c5>
 
-### `SortedSet<T>`
+## `SortedSet<T>`
 * is to HashSet<T> what the SortedDictionary<TKey,TValue> is to Dictionary<TKey,TValue>.
 * Unique sorted collection, like SortedDictionary except key and value are same object.
 * type T must implement IComparable<T> or you need to supply an external IComparer<T>.
 
-### `Stack<T>`
+## `Stack<T>`
 * Essentially same as List<T> except only process as LIFO
 
-### `Queue<T>`
+## `Queue<T>`
 * Essentially same as List<T> except only process as FIFO
 * <http://referencesource.microsoft.com/#System/compmod/system/collections/generic/stack.cs,c5371bef044c6ab6>
+
+
+[<<](../csdotnet.md) 
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

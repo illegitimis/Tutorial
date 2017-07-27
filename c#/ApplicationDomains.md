@@ -25,3 +25,10 @@ The `ThreadLocal<T>` class acts as a _factory for per-thread state_, using a `Fu
         // What matters is the fact this method will run multiple times  on different threads, initializing that thread’s logger.
         return File.CreateText(name + “.log”);
     });
+
+	
+[<<](../csdotnet.md) 
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

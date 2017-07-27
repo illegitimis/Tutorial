@@ -85,4 +85,12 @@ The second invocation of F causes an ArrayTypeMismatchException to be thrown bec
             G(ref baseArray[7]); // Ok 
             try { G(ref specializedArray[9]); }
             catch (ArrayTypeMismatchException ex) { Console.WriteLine(ex.Message); }
+			
+			
+			
+[<<](../csdotnet.md) 
+|
+[home](https://github.com/illegitimis/Tutorial) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
 
