@@ -1,7 +1,7 @@
-#NoSql
+# No Sql
 
-*  [DocumentDB](DocumentDB.md)
-*  [Mongo](Mongo.md)
+*  [DocumentDB](./nosql/DocumentDB.md)
+*  [**Mongo**](./nosql/Mongo.md)
 
 [home](README.md) 
 | 
