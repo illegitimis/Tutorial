@@ -33,7 +33,8 @@ npm install npm@latest -g
     - [The Reactive Extensions for JavaScript](https://github.com/Reactive-Extensions/RxJS), old git page
 	- [switchmap doc](https://www.learnrxjs.io/operators/transformation/switchmap.html)
 + Redux
-	- []()
+	- [Using Redux to Manage State in Angular](https://app.pluralsight.com/library/courses/angular-2-redux-manage-state/table-of-contents)	
+    [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/angular-2-redux-manage-state/table-of-contents)
 	- []()
 	- []()
 	- []()
