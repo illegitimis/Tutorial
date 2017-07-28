@@ -1,3 +1,5 @@
+# REST
+
 ## Principles
 1. An important principle for (RESTful) API design and usage is Postel's Law, aka the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle) (_RFC 1122_): “**Be liberal in what you accept, be conservative in what you send**.” 
 2. [REST APIs must be hypertext-driven](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven) 
