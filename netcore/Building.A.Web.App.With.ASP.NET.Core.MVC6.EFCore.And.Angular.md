@@ -68,13 +68,15 @@
   </tr>
   
   <tr>    
-    <td rowspan="2" colspan="3">
+    <td rowspan="2">
 <img alt="sln explorer" src="https://uz5nia.by3302.livefilestore.com/y4mIa4uXH2tM0bF3Fc2VCbqOOajnLfQg14Dqca8tFvJjwout4RbMDZJ3X-DYPpOBSWXamsgcpJKQtXwWXT7gXj-DZ43gvIFSedzPC85-Y6c2OFE5tt_3bR0T4e4mJ9gy_jQJXsxlv5NhOKyK15ycfvkW-cgMQ0vNKiFkCs7gwUO_sO5m2nxbtgq228jxG391Kd8oh2xHaMVffrdpSH7ZCj7Yg?width=113&height=256&cropmode=none" width="113" height="256" />
     </td>  
-    <td rowspan="1">
+    <td rowspan="2" colspan="3">
 <img alt="program" src="https://vbp1kg.by3302.livefilestore.com/y4m2oMGxnV09Bzk_iyjuSYpBSDbulZYXgYleKo_DnCby9wWdFdarriGc6JohaqcvapoWp0Z4dDFPTM7Sj4L8eBGv6e7izW4BBp4PpnxI3-7kqM5is2Alj2fWYLVLNHDlZUmIqK54NAhhCGsFOP-6BA0YRMu94On13WINtUCpT-iJMiS933auXvRIdV39E116jQvJMcdLPE-JPtbrx5vjS0geQ?width=660&height=391&cropmode=none" width="660" height="391" />
     </td>
   </tr>
+  
+  <tr></tr>
   
 </table>
 
@@ -91,10 +93,16 @@ For yeoman, node and npm must be installed, nodejs.org. The command line VS code
  yo aspnet
 ```
 
-new project options
-- 452 -> web -> asp.net core web app (.net core) 
-- 452 -> web -> asp.net web app (.net fwk) 
-- 452 -> .net core -> asp.net core web app (.net core)
+new  
+
+
+### new  project  options
+
+web fwk | os fwk | title
+--- | --- | ---
+ASP.NET | .NET Framework 4.5-4.7| ASP.NET WebForms, MVC, WebAPI, classic
+ASP.NET Core | .NET Core | ASP.NET Core web app **multiplatform**
+ASP.NET Core | .NET Framework | ASP.NET Core web app for **Windows**
 
 ## HTML and CSS Basics
 
