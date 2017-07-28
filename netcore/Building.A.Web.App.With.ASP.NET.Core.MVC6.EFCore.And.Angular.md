@@ -15,13 +15,6 @@
 
 ## Intro
 
-<![CDATA[
-<img src="https://6ebaoa.by3302.livefilestore.com/y3mbc7XYRW0pYXbS3mKlUUxgGO2s121EBJwx7KzgUeOv4oOPTD7SBEP6Rmmrv07ZPm-sflblPse3dvuTVOBYhE7lwEfEw01JDxCVEhS2pftkhReBkQBxmclM4r-1zcLBnYM6Prn5gJjWwwvmPNUSJoE9casyiSNFDJE4nMw3gw_y20?width=490&height=287&cropmode=none" alt="1" />
-<img src= "https://1drv.ms/i/s!As0cxZAk26SzjMAzmL_oKXclo--YAA" alt="1" />
-<img src="https://1drv.ms/i/s!As0cxZAk26SzjMA1ZN9Ovq3hBaQ2SQ" alt="3" />    
-https://slclww.by3302.livefilestore.com/y3mXUoEFTWhhF27mk3OFfnr-w9BgW9ydGhphPz6V8XBoRaMsoDuKQla8MsPF69g2YKCN47OIJfkflRfO92KDT8WvudrTsafe1sIo_JUmV1Q5XpwRajxrPpaCrahuqxSiweZbbEkLEFYcJCwFKKhFA5BFvoIZkrFbaFHZoinEi2cdnU?width=314&height=282&cropmode=none	
-]]>
-
 <table>
   <tr>
     <td colspan="2">      
@@ -43,49 +36,41 @@ https://slclww.by3302.livefilestore.com/y3mXUoEFTWhhF27mk3OFfnr-w9BgW9ydGhphPz6V
 <table>
   <tr>
     <td colspan="2">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://g7ubqw.by3302.livefilestore.com/y3m_mJShBdpgbvSHZCazYWNveR_CVTkhyolPusSYOB1bA034XA54sIVPQJqp0I1XqPAR5SfCUV0OvF0LKx_Fsobj-7B0O3_hMMQd4JQQnlyMG3yoEz0tqj6HmCdXEUQe33GIclMGLIAEwf0HIrWPCxetIH-Wczrv1vCj38tArNMcLs?width=669&height=360&cropmode=none" alt="1" />
+	<img src="https://g7ubqw.by3302.livefilestore.com/y4m_mJShBdpgbvSHZCazYWNvU1Pk-1Ih2raSXLpKK83Rjuytxpn94XQwe4H0m3miWLt-wDu6jyRNDQqlf_dsnFO28KWpkSH-qyfPtRCbIpnFBxrfqkjE_nBA6KAmxTtahY-i2klVIBMQGB0dhD0aGiuSKRjogJNxEocms-Ydm2gn7Kyt1onamn84ZveKUFLXzfh1XovN2CcOrMxEIv4fS4kpg?width=660&height=355&cropmode=none" alt="principles" />    
     </td>
     <td colspan="2">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://hiqp5q.by3302.livefilestore.com/y3myUpNQ2rfkSjM65Ti8a2v2gj-3qe76eDHaO_BTCyvgCUki89f6QWubGQbnZWuz2gTfYERg4mNCmVLjURMWv6HEerg8yDaTrnZzgvK_e6FeVa5otRbkMSaQ-ilMMoT5_Vdqu8ZYRUEBaSNvmZtunBUeR5FK36Ea01x88L3rOjV9kM?width=539&height=371&cropmode=none" alt="2" />
+	<img src="https://hiqp5q.by3302.livefilestore.com/y4myUpNQ2rfkSjM65Ti8a2v2i4oDX5u7kX7JgJ2Nq-NTyYf_yVx9ZNdD7Iir4szxfoLeUhFz9b4t1QH-vP_xmeUwZXgx4GL8odsRYNT8zK9yRzmKFUNdryQ2u_g_yjD1br9mGeQfZ5RTiFs_NdRFxUAtiz58V18HEBP5X-eT4fr-SbqD_W8TUVgb5olZRM-aV7LdxlD95YLFbZbeogUnyDWbg?width=660&height=454&cropmode=none" alt="three frameworks" />      
     </td>
   </tr>
   <tr>
     <td colspan="2">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://jxhueg.by3302.livefilestore.com/y3mATGvX7RSE_spEElHWWgo6rnGH_kT5OQeTcGNPUaWBVIFMXCFkYVwgvGV3n5XdU-Fe25AYQO10Np-n955BFfOgHezXuhfbeOsy-fu1i6eUDceksm4SK3qFLrZd763oIC8R4JfcDVGv26aLyz6zZGzspwVpl93EeIq8oIkurEshwQ?width=661&height=264&cropmode=none" alt="3" />
+<img alt="completely composed" src="https://jxhueg.by3302.livefilestore.com/y4mATGvX7RSE_spEElHWWgo6j0ID4e-BGQsVquy2rw83OebFlBte5DkHEwePuikc75q3P5-xjqNXZjZ7I0SghO1Sy5mroSpY19vh1VXs5n8rC1RlLnA-yjIXhpW-5ce2Vv-zNePTI5ukjZh-50MjQNH7cZRN2ssr4aql5FKoADyRLu6r1M6GxNSABckIQNZ_KXBrE4nBAH2xabLLJKQn8DS7w?width=660&height=263&cropmode=none" />
     </td>
     <td colspan="2">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://wowvtq.by3302.livefilestore.com/y3mC721cet5sjCqyDjvmKxO8rDzsjQJnLOT4HVg1LT-Dj8OvLuoxU5aHVWyKxvZ6f2liPwEXZE40Bkd83N8RHJ6qpqaqdcMi4NWvnZolnBZIn29VkFIjaJqD17ATVxIKj4H6h7Hea-MX8A6CLUm1zqyeUQVLr4WG55KdzCsrNVTJAk?width=639&height=341&cropmode=none" alt="4" />
+<img alt="open web" src="https://wowvtq.by3302.livefilestore.com/y4mC721cet5sjCqyDjvmKxO8uftfts1OCdiWE3T-YutvZQrJstXRNLfBiHCC-VXQM7T7nMyRdHRNN5u8XSCywxu3DNuEFeX144hAgBbe-KjJzcr24Z5XtXPfzqLzUX43N59Wc3k2cIpPfIyy4R4xm60gVSUkYaptP9ESyPJ6WGjoh6oaYLRFQwjgsFDeLb2ctxZSaMfXHrNqHea-p4KlQo1Gg?width=660&height=352&cropmode=none" width="660" height="352" />
     </td>
   </tr>
   <tr>
-    <td colspan="4">
-      <img src="https://tcyvqq.by3302.livefilestore.com/y3mgVk7kAGI6FjFxLqcN279AR83dnKYEw2_5JZdkj82iqiUBW-1b8TqUKc8WR8gfdSA_RTghc8Mag-o8CMKSjMxWOwTqio5bfx_gvlL7ENAujfj4u3HHmDAqh5yNi1AezgIPR6wlJXhVbZntyznNzS7yYdRBTld7cWmFog7UgbYxjo?width=637&height=377&cropmode=none" alt="5" />
+    <td colspan="4">   
+<img ALT="OVERVIEW" src="https://6ebxoa.by3302.livefilestore.com/y4mTaHDPP9TjX288dohTvJZ9Q0hmYeCUqHIuEtIYRWLdSp9cPABwamWnh9GTLc7m58-NRUIg3zagEUE4mKSo-FFxGY7Qa5GA-weHumJ9FZLL0_YcacZKHNLBcg-0oDO-3B3jdtGvm0hsnZBWpIa9ks_gpXrUeSMITjJ5E0bR2Z4pqR-6PLa-xKOpqhd4KwntTd0CnPAWbUUbE3cpx9RUZOJDw?width=1024&height=442&cropmode=none" width="1024" height="442" />
     </td>    
   </tr>
   <tr>
-    <td colspan="4">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://6ebxoa.by3302.livefilestore.com/y3mTaHDPP9TjX288dohTvJZ9adf09kMOEN9mypVfJrNQotnZH2sNBPSZmtt92ZbsJaMMweeev37lwaAwMNr5OkQAr8EsSTYo7bL5O_qMX0Mv-1tzB76qAWivWkF9zPFqThHtTT1VazudsWn-fgddZQPL2Tq-jDvZ_ksN5ZdkA4B92Y?width=960&height=414&cropmode=none" alt="6" />
+    <td colspan="4">	
+<img alt="new project" src="https://slciww.by3302.livefilestore.com/y4myljA9gw9YGeNKME513PQSHyNCBYmI8P1C40bvOyHUFslxC5tW1CYtAi32aUA-xc6GPSa4IoYMUl0-lWD_UjbWZ6PxazYn-rTxHK7CGLbWIwTwmqBz4mcz78rWx4q58oMSZcPPFFPorVAb9eCnBeMuqDMen-3Q3RBijfHJquN9_HSqTaULdA0gdFnOQJnxmng1Nw3HQt2hPRxaNlyErj__Q?width=256&height=64&cropmode=none" width="256" height="64" />
     </td>
   </tr>
   <tr>
     <td colspan="3" >
-	<!-- <img src="" alt="" /> -->
-      <img src="https://fpngua.by3302.livefilestore.com/y3mhRs7yoqpBlW7yhLAj0d2apCmXBi54zSgylhiwfOXzRTZCyZwN57ERvKmXyeKPnTKS6jt-zLjpw87xe_G8NkVtUUSeL05ENbB8ZS-KOpo6U02ZWuRjnO6g92_8LYyTTZ2PYHcYnoQHCCiMnNNv2xnDLk0ZCQTlbyvRwL6wIo2jhs?width=440&height=414&cropmode=none" alt="7" />
+<img alt="CLR" src="https://fpngua.by3302.livefilestore.com/y4mhRs7yoqpBlW7yhLAj0d2aj9qNugs4BwYcFLrIkC8YIWKCCroi96_Y-73CZqdw7fwZs_n8MjEIvmYN-6v0oocWuoGqrtNBL9BlZhJMlb9jNdBb_wnPpI_q8UgsU7qgcVagoeW71jvKRuk3qdU5Ms0FnuzvdEgnpkz3kcy9rWaH0sFkaUKu3J-hCgPsGiffH4oWjfTbVDi-Xwpijhfzs5RaQ?width=256&height=96&cropmode=none" width="256" height="96" />
     </td>    
     <td rowspan="2">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://uz5nia.by3302.livefilestore.com/y3mIa4uXH2tM0bF3Fc2VCbqOMEIy1XT8StM0aZZxIcGIvXr3DIZ0h2c33UQx8j-Q7kQ6M4jn6wuboyXhlNoaW_qj4lCLpAQ20OUfzHBBsWdbHOdLL9qpSEm55tJdnm6LA7hY-iUzKK4Toh-fDO1HcIeMHrHAk9Cd8I5FeFDutPtNF8?width=161&height=365&cropmode=none" alt="9" />
+<img alt="sln explorer" src="https://uz5nia.by3302.livefilestore.com/y4mIa4uXH2tM0bF3Fc2VCbqOOajnLfQg14Dqca8tFvJjwout4RbMDZJ3X-DYPpOBSWXamsgcpJKQtXwWXT7gXj-DZ43gvIFSedzPC85-Y6c2OFE5tt_3bR0T4e4mJ9gy_jQJXsxlv5NhOKyK15ycfvkW-cgMQ0vNKiFkCs7gwUO_sO5m2nxbtgq228jxG391Kd8oh2xHaMVffrdpSH7ZCj7Yg?width=113&height=256&cropmode=none" width="113" height="256" />
     </td>
   </tr>
   <tr>
     <td colspan="3">
-	<!-- <img src="" alt="" /> -->
-      <img src="https://slciww.by3302.livefilestore.com/y3myljA9gw9YGeNKME513PQSH4anG9tfSEOWd1qFyNo4bjiD74S_pfAPjCwFrSA5CPLl_Ue17bcyBc9F19aa5qMJb3XBSkM5tokkP7nIbVMmTkWleVqAOEkB8Tpth0KfcpX8ncPVdcVksiRdwXVSJfMVd9CLE38vsPiE56aC_h4u4s?width=440&height=109&cropmode=none" alt="8" />
+<img alt="program" src="https://vbp1kg.by3302.livefilestore.com/y4m2oMGxnV09Bzk_iyjuSYpBSDbulZYXgYleKo_DnCby9wWdFdarriGc6JohaqcvapoWp0Z4dDFPTM7Sj4L8eBGv6e7izW4BBp4PpnxI3-7kqM5is2Alj2fWYLVLNHDlZUmIqK54NAhhCGsFOP-6BA0YRMu94On13WINtUCpT-iJMiS933auXvRIdV39E116jQvJMcdLPE-JPtbrx5vjS0geQ?width=660&height=391&cropmode=none" width="660" height="391" />
     </td>
   </tr>
 </table>
