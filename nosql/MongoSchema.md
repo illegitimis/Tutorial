@@ -18,10 +18,10 @@ _Codeplex shutting down_, [download](https://mssql2mongo.codeplex.com/downloads/
 This is more an art than a science. 
 The Mongo Documentation on Schemas is a good reference, but here are some things to consider:
 1. **Put as much in as possible**
-   The joy of a Document database is that it eliminates lots of Joins. 
-   Your first instinct should be to place as much in a single document as you can. 
-   Because MongoDB documents have structure, and because you can efficiently query within that structure there is _no immediate need to normalize data_ like you would in SQL. 
-   In particular _any data that is not useful apart from its parent document should be part of the same document_.
+    The joy of a Document database is that it eliminates lots of Joins. 
+    Your first instinct should be to place as much in a single document as you can. 
+    Because MongoDB documents have structure, and because you can efficiently query within that structure there is _no immediate need to normalize data_ like you would in SQL. 
+    In particular _any data that is not useful apart from its parent document should be part of the same document_.
 2. **Separate data that can be referred to from multiple places into its own collection**.
    This is not so much a "storage space" issue as it is a "_data consistency_" issue. 
    If many records will refer to the same data it is more efficient and less error prone to update a single record and keep references to it in other places.
@@ -136,5 +136,9 @@ tree-like structure by storing references to “parent” nodes and an array tha
 9. [Model Tree Structures with Nested Sets](https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-nested-sets/)
 optimizes discovering subtrees at the expense of tree mutability.
 
-
+[<<](Mongo.md)
+|
+[home](../README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
 
