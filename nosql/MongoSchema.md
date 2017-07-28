@@ -17,31 +17,31 @@ _Codeplex shutting down_, [download](https://mssql2mongo.codeplex.com/downloads/
 
 This is more an art than a science. 
 The Mongo Documentation on Schemas is a good reference, but here are some things to consider:
-1. **Put as much in as possible**
+1.  **Put as much in as possible**
     The joy of a Document database is that it eliminates lots of Joins. 
     Your first instinct should be to place as much in a single document as you can. 
     Because MongoDB documents have structure, and because you can efficiently query within that structure there is _no immediate need to normalize data_ like you would in SQL. 
     In particular _any data that is not useful apart from its parent document should be part of the same document_.
-2. **Separate data that can be referred to from multiple places into its own collection**.
-   This is not so much a "storage space" issue as it is a "_data consistency_" issue. 
-   If many records will refer to the same data it is more efficient and less error prone to update a single record and keep references to it in other places.
-3. Document size considerations
-   MongoDB imposes a 4MB (16MB with 1.8) size limit on a single document. 
-   In a world of GB of data this sounds small, but it is also 30 million tweets or 250 thousand typical Stack Overflow answers or 20 flicker photos. 
-   On the other hand, this is far more information than one might want to present at one time on a typical web page. 
-   First consider what will make your queries easier. In many cases concern about document sizes will be premature optimization.
-4. Complex data structures:
-   MongoDB can store arbitrary deep nested data structures, but cannot search them efficiently. 
-   If your data forms a tree, forest or graph, you effectively need to store each node and its edges in a separate document. 
-   (Note that there are data stores specifically designed for this type of data that one should consider as well)
-   It has also been pointed out than it is impossible to return a subset of elements in a document. 
-   If you need to pick-and-choose a few bits of each document, it will be easier to separate them out.
-5. Data Consistency
-   MongoDB makes a tradeoff between efficiency and consistency. 
-   The rule is changes to a single document are always atomic, while updates to multiple documents should never be assumed to be atomic. 
-   There is also no way to "lock" a record on the server (you can build this into the client's logic using for example a "lock" field). 
-   When you design your schema consider how you will keep your data consistent. Generally, 
-   the more that you keep in a document the better.
+2.  **Separate data that can be referred to from multiple places into its own collection**.
+    This is not so much a "storage space" issue as it is a "_data consistency_" issue. 
+    If many records will refer to the same data it is more efficient and less error prone to update a single record and keep references to it in other places.
+3.  Document size considerations
+    MongoDB imposes a 4MB (16MB with 1.8) size limit on a single document. 
+    In a world of GB of data this sounds small, but it is also 30 million tweets or 250 thousand typical Stack Overflow answers or 20 flicker photos. 
+    On the other hand, this is far more information than one might want to present at one time on a typical web page. 
+    First consider what will make your queries easier. In many cases concern about document sizes will be premature optimization.
+4.  Complex data structures:
+    MongoDB can store arbitrary deep nested data structures, but cannot search them efficiently. 
+    If your data forms a tree, forest or graph, you effectively need to store each node and its edges in a separate document. 
+    (Note that there are data stores specifically designed for this type of data that one should consider as well)
+    It has also been pointed out than it is impossible to return a subset of elements in a document. 
+    If you need to pick-and-choose a few bits of each document, it will be easier to separate them out.
+5.  Data Consistency
+    MongoDB makes a tradeoff between efficiency and consistency. 
+    The rule is changes to a single document are always atomic, while updates to multiple documents should never be assumed to be atomic. 
+    There is also no way to "lock" a record on the server (you can build this into the client's logic using for example a "lock" field). 
+    When you design your schema consider how you will keep your data consistent. Generally, 
+    the more that you keep in a document the better.
 
 ## linking vs embedding
 
