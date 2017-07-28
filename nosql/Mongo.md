@@ -1,7 +1,7 @@
 # Mongo 
 
-+ todo existing onenote doc
-+ [Mongo Schema](MongoSchema.md) todo
++ todo existing Mongo docs
++ [Mongo Schema](MongoSchema.md), RDBMS to MongoDb
 
 [<<](../nosql.md) 
 |
