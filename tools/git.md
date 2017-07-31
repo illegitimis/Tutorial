@@ -33,7 +33,9 @@ git add tools/git.md
 git status
 # commit everything with message and author overridden
 git commit -a -m 'modified git.md' --author illegitimis
-
+git help push
+git push
+git push origin
 ```
 
 
