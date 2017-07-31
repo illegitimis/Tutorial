@@ -74,3 +74,9 @@ use the GCSettings.LargeObjectHeapCompactionMode > 4.5.1
   - Static data. Static objects in application domains that could be referencing other objects. Each application domain keeps track of its static objects.
   
 _Todo_ Pcs50 bw8 weak ref, reclaiming memory
+
+[<<](../csdotnet.md) 
+|
+[home](../README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 

@@ -144,9 +144,11 @@ public:
 	}
 }; 
 ```
+
 - **CLS-Compliant Primitive Types**
- Type | C# | VB | C++/CLI | F# 
----|---|---|---|---|
+ 
+Type | C# | VB | C++/CLI | F# 
+---|---|---|---|---
 System.Byte | byte | Byte | unsigned char | byte 
 System.Int16 | short | Short | short | int16 
 System.Int32 | int | Integer | int/long | int/int32 
@@ -158,12 +160,12 @@ System.Char | char | Char | wchar_t |  char
 System.Decimal | decimal | Decimal | Decimal | decimal 
 System.String | string | String | String^ |  string
 
-- Topic Details C# C++/CLI 
 
 - **IDisposable Interface Implementation**  
 With C++/CLI the interface IDisposable is implemented as well,  
 but this is done by the compiler if you just write a destructor 
 With C++/CLI, the Dispose() method is invoked by using the delete statement 
++ C++/CLI
 ```cs
 public class Resource : IDisposable 
 { 
@@ -172,6 +174,7 @@ public class Resource : IDisposable
   } 
 }
 ```	
++ C#
 ```cpp
 public ref class Resource { 
   public: 
@@ -184,12 +187,14 @@ The C# using statement implements an acquire/use/release pattern to release a re
 The compiler creates a try/finally statement and invokes the Dispose method inside the finally. 
 C++/CLI has an even more elegant approach to this problem. 
 If a reference type is declared locally, the compiler creates a try/finally statement to invoke the Dispose() method at the end of the block. 
++ C++/CLI
 ```cs
 using (Resource r = new Resource()) 
 { 
   r.Foo(); 
 }
 ```	
++ C#
 ```cpp
 { 
   Resource r; 
@@ -205,6 +210,7 @@ With C++/CLI, it is not necessary to implement this pattern in the code because 
 The C++/CLI destructor implements both Dispose() methods. 
 Writing a destructor with C# overrides the Finalize() method of the base class. 
 A C++/CLI destructor implements the IDisposable interface. 
++ C++/CLI
 ```cs
 public class Resource : IDisposable { 
     // override Finalize
@@ -226,6 +232,7 @@ public class Resource : IDisposable {
 	} 
 } 
 ```	
++ C#
 ```cpp
 public ref class Resource { 
 public: 
@@ -239,3 +246,10 @@ public:
   } 
 };
 ```
+
+
+[<<](../csdotnet.md) 
+|
+[home](../README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
