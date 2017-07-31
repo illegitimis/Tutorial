@@ -24,9 +24,12 @@ Internally, the regular expression is stored as either a sequence of internal re
 This allows you to make a tradeoff between worsened regular expression startup time and memory utilization versus higher raw match performance at runtime.
 
 
+<<<<<<< HEAD
 
 [<<](../csdotnet.md) 
 |
 [home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
+=======
+>>>>>>> e6402521b30387c62131d5f2548233080e21bea1
