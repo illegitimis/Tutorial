@@ -11,6 +11,6 @@ Some of the most important benefits of using C# come from its runtime, which pro
 
 [<<](../csdotnet.md) 
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

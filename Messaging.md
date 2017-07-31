@@ -4,6 +4,6 @@
 *  [MPI](./msg/MPI.md), _todo_
 *  [ZeroMQ](./msg/ZeroMQ.md)
 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

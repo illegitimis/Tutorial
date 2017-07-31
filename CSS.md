@@ -4,4 +4,4 @@
 + [StackOverflow team](https://stackoverflow.com/company/team)
 + [Quick guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-[Home](https://github.com/illegitimis/Tutorial)
+[home](README.md)

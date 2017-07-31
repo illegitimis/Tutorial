@@ -90,7 +90,7 @@ The second invocation of F causes an ArrayTypeMismatchException to be thrown bec
 			
 [<<](../csdotnet.md) 
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
 

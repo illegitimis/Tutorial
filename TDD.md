@@ -46,4 +46,4 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 | Nulls & booleans | `Is.Not.Empty`, `Is.Null`, `Is.True` |
 
 
-[<<](https://github.com/illegitimis/Tutorial) | [wiki](https://github.com/illegitimis/Tutorial/wiki/)
+[<<](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki/)

@@ -16,6 +16,6 @@
 - [Lambdas](./c%23/Lambdas.md)
 - [Managed C++, C++/CLI](ManagedCppCLI.md)
 
-[<<](https://github.com/illegitimis/Tutorial) 
+[<<](README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

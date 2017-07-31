@@ -16,6 +16,6 @@ Similarly, if an unmanaged application calls LoadLibrary to load a managed assem
 
 [<<](../csdotnet.md) 
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

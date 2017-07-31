@@ -24,6 +24,6 @@ Gets a collection of key/value pairs that provide additional user-defined inform
 
 [<<](../csdotnet.md) 
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

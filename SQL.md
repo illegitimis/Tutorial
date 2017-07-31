@@ -19,7 +19,7 @@ ___
 + [Temporary Tables](./sql/TemporaryTables.md)
 + [SQL Views](./sql/SQLViews.md)
 
-[<<](https://github.com/illegitimis/Tutorial) 
+[<<](README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
 

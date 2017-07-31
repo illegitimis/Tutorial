@@ -40,6 +40,6 @@ course [link](https://app.pluralsight.com/library/courses/web-api-design/table-o
 
 
 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](./README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

@@ -8,6 +8,6 @@
 + [(.Net) UI Threads](./parallel/dotnetUIThreads.md)
 + [The **thread pool**](./parallel/threadPool.md)
 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

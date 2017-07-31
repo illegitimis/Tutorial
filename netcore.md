@@ -23,6 +23,6 @@
 - _Migrating HTTP handlers and modules to ASP.NET Core middleware_ [on Github](https://github.com/aspnet/Docs/blob/master/aspnetcore/migration/http-modules.md) and [MsDocs](https://docs.microsoft.com/en-us/aspnet/core/migration/http-modules)
 
 
-[home](https://github.com/illegitimis/Tutorial)
+[home](README.md)
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
