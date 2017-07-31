@@ -55,7 +55,7 @@ with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 	
 [<<](../JS.md)
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
 

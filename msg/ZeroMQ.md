@@ -406,6 +406,6 @@ January 20th, 2016
 
 [<<](../Messaging.md) 
 | 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

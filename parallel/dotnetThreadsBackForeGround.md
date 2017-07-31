@@ -9,6 +9,6 @@ In other words, **a foreground thread can keep a process alive until it exits**,
 
 [<<](../parallel.md) 
 | 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
