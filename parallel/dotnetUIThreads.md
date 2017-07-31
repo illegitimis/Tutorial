@@ -35,6 +35,6 @@ The specific way to check the current thread and use the UI thread may vary depe
 	
 [<<](../parallel.md) 
 | 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki)

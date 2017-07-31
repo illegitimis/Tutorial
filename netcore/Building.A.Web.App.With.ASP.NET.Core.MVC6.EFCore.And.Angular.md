@@ -329,6 +329,6 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 
 [<<](../netcore.md)
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

@@ -19,7 +19,7 @@
 
 [<<](../OOP.md)
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
 

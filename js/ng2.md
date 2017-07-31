@@ -35,7 +35,7 @@ angular2-wizard: [npm](https://www.npmjs.com/package/angular2-wizard), [demo](ht
 
 [<<](../JS.md)
 |
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
 

@@ -24,6 +24,6 @@ The engineering done to the task infrastructure (and the underlying revamped thr
 
 [<<](../parallel.md) 
 | 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 

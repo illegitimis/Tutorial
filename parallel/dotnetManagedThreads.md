@@ -29,7 +29,7 @@ This is often referred to as an **asynchronous exception** because it can occur 
 
 [<<](../parallel.md) 
 | 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
 

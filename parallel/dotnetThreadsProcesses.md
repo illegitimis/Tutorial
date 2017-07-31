@@ -42,6 +42,6 @@ Preemptive / time slice / taken away from the processor forcefully by the kernel
 
 [<<](../parallel.md) 
 | 
-[home](https://github.com/illegitimis/Tutorial) 
+[home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
