@@ -11,11 +11,10 @@
 - [Exceptions](./c%23/Exceptions.md)
 - [Finalize](./c%23/Finalize.md)
 - [Garbage Collection](./c%23/GarbageCollection.md)
+- [Immutable](./c%23/Immutable.md)
+- [Interfaces](./c%23/Interfaces.md)
+- [Lambdas](./c%23/Lambdas.md)
 - [Managed C++, C++/CLI](./c%23/ManagedCppCLI.md)
-
-+ [Immutable](./c%23/Immutable.md)
-+ [Interfaces](./c%23/Interfaces.md)
-+ [Lambdas](./c%23/Lambdas.md)
 
 
 [<<](README.md) 

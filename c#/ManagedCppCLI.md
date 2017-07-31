@@ -165,7 +165,7 @@ System.String | string | String | String^ |  string
 With C++/CLI the interface IDisposable is implemented as well,  
 but this is done by the compiler if you just write a destructor 
 With C++/CLI, the Dispose() method is invoked by using the delete statement 
-+ C++/CLI
+** C++/CLI **
 ```cs
 public class Resource : IDisposable 
 { 
@@ -174,7 +174,7 @@ public class Resource : IDisposable
   } 
 }
 ```	
-+ C#
+** C# **
 ```cpp
 public ref class Resource { 
   public: 
@@ -187,14 +187,14 @@ The C# using statement implements an acquire/use/release pattern to release a re
 The compiler creates a try/finally statement and invokes the Dispose method inside the finally. 
 C++/CLI has an even more elegant approach to this problem. 
 If a reference type is declared locally, the compiler creates a try/finally statement to invoke the Dispose() method at the end of the block. 
-+ C++/CLI
+** C++/CLI **
 ```cs
 using (Resource r = new Resource()) 
 { 
   r.Foo(); 
 }
 ```	
-+ C#
+** C# **
 ```cpp
 { 
   Resource r; 
@@ -210,7 +210,7 @@ With C++/CLI, it is not necessary to implement this pattern in the code because 
 The C++/CLI destructor implements both Dispose() methods. 
 Writing a destructor with C# overrides the Finalize() method of the base class. 
 A C++/CLI destructor implements the IDisposable interface. 
-+ C++/CLI
+** C++/CLI **
 ```cs
 public class Resource : IDisposable { 
     // override Finalize
@@ -232,7 +232,7 @@ public class Resource : IDisposable {
 	} 
 } 
 ```	
-+ C#
+** C# **
 ```cpp
 public ref class Resource { 
 public: 
