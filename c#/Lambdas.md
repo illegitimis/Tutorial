@@ -14,13 +14,9 @@
    Expression<Func<int, bool>> greaterThanZero = Expression.Lambda<Func<int, bool>>(comparison, valueParam);  
   ```
 
-<<<<<<< HEAD
-
 
 [<<](../csdotnet.md) 
 |
 [home](../README.md) 
 | 
 [wiki](https://github.com/illegitimis/Tutorial/wiki) 
-=======
->>>>>>> e6402521b30387c62131d5f2548233080e21bea1
