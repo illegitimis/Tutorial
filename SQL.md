@@ -2,6 +2,7 @@
 
 + [ACID](./sql/ACID.md)
 + [BASE](./sql/BASE.md)
++ [Connection Pool](./sql/ConnectionPool.md)
 + [IDbCommand/DbCommand/SqlCommand](./sql/DbCommand.md)
 + [Indexes/Indices](./sql/indexes.md)
 + [MySQL](./sql/MySQL.md)
@@ -10,7 +11,7 @@ ___
 (todo)
 
 
-+ [Connection Pool](./sql/ConnectionPool.md)
+
 + [DAO vs. Repository](./sql/DAOvsRepository.md)
 + [Foreign Key Mapping](./sql/ForeignKeyMapping.md)
 + [Primary Keys](./sql/PrimaryKeys.md)
