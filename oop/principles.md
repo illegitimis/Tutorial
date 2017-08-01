@@ -89,11 +89,8 @@ b) Changes made in the public parts of an object must remain compatible with the
 c) Larger interfaces increase the complexity of the entire system. Private fields can only be accessed from within the class; public fields can be accessed through any instance of the class
 
 
-## Books
-> todo: move these book links somewhere else
-+ [Code Complete: A Practical Handbook of Software Construction](https://1drv.ms/b/s!As0cxZAk26SzjMBqoNGGDAoyHrlKpQ), Development/Architect, Steve McConnell, 2004, 2ed	
-+ The Pragmatic Programmer: From Journeyman to Master; Andrew Hunt & David Thomas. Publisher: Addison Wesley. First Edition October 13, 1999. ISBN: 0-201-61622-X, 352 pages. [1drv](https://1drv.ms/b/s!As0cxZAk26SzjMBr1XLzUux0-93YYw)
-+ Mike Rother - Toyota Kata. Managing People for Improvement Adaptiveness and Superior Results - 2009 [1drv](https://1drv.ms/b/s!As0cxZAk26SzjMBsyqaVv3J-wNlYcg)
+  
+
 	
 	
 [OOP](../OOP.md) | [Home](https://github.com/illegitimis/Tutorial/)
