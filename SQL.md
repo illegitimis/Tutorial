@@ -1,13 +1,13 @@
 # SQL
 
 + [ACID](./sql/ACID.md)
-
++ [BASE](./sql/BASE.md)
 + [Indexes/Indices](./sql/indexes.md)
 + [MySQL](./sql/MySQL.md)
 
 ___
 (todo)
-+ [BASE](./sql/BASE.md)
+
 + [DbCommand/SqlCommand](./sql/DbCommand.md)
 + [Connection Pool](./sql/ConnectionPool.md)
 + [DAO vs. Repository](./sql/DAOvsRepository.md)
