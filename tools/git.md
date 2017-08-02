@@ -36,12 +36,11 @@ git commit -a -m 'modified git.md' --author illegitimis
 git help push
 git push
 git push origin
-<<<<<<< HEAD
 git reset HEAD^
 git log -1 
 git revert <commit>
-=======
->>>>>>> c0b9a2e4df55ac19e324b969260281f0f6f4a053
+# list local and remote branches verbose
+git branch --list -a -vv
 ```
 
 
