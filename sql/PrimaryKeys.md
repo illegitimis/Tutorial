@@ -23,7 +23,7 @@ FROM sys.objects
 
 
 
-<<](../SQL.md)
+[<<](../SQL.md)
 |
 [home](../README.md)
 |

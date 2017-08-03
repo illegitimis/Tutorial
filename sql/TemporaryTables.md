@@ -88,60 +88,38 @@ However, because global tables aren’t private to the process that created it, 
 You can associate rules, defaults, and indexes with temporary tables, but you cannot create views on temporary tables or associate triggers with them. You can use a user-defined datatype when creating a temporary table only if the datatype exists in TempDB 
 Stored procedures can reference temporary tables that are created during the current session. Within a stored procedure, you cannot create a temporary table, drop it, and then create a new temporary table with the same name. 
 Although this works…. 
-
 ```sql
 CREATE table #Color( 
-
 Color varchar(10) PRIMARY key) 
-
 INSERT INTO #color SELECT 'Red' UNION SELECT 'White' 
-
  UNION SELECT 'green'UNION SELECT'Yellow'UNION SELECT'blue' 
-
 DROP TABLE #color 
-
 go 
-
 CREATE table #Color( 
-
 Color varchar(10) PRIMARY key) 
-
 INSERT INTO #color SELECT 'Red' UNION SELECT 'White' 
-
  UNION SELECT 'green'UNION SELECT'Yellow'UNION SELECT'blue' 
-
 DROP TABLE #color 
-
 …this doesn’t 
-
  
-
 CREATE PROCEDURE MisbehaviourWithTemporaryTables  AS 
-
  CREATE table #Color( 
-
 Color varchar(10) PRIMARY key) 
-
 INSERT INTO #color SELECT 'Red' UNION SELECT 'White' 
-
  UNION SELECT 'green'UNION SELECT'Yellow'UNION SELECT'blue' 
-
 DROP TABLE #color 
-
 CREATE table #Color( 
-
 Color varchar(10) PRIMARY key) 
-
 INSERT INTO #color SELECT 'Red' UNION SELECT 'White' 
-
  UNION SELECT 'green'UNION SELECT'Yellow'UNION SELECT'blue' 
-
 DROP TABLE #color 
-
 go
 ```
-You can, by using local temporary tables, unintentionally  force recompilation on the stored procedure every time it is used. This isn’t good because the stored procedure is unlikely to perform well. To avoid recompilation, avoid referring to a temporary table created in a calling or called stored procedure: If you can’t do so, then put the reference in a string that is then executed using the EXECUTE statement or sp_ExecuteSQL stored procedure. Also, make sure that the temporary table is created in the stored procedure or trigger before it is referenced and dropped after these references. Don’t create a temporary table within a control-of-flow statement such as IF... ELSE or WHILE.  
-
+You can, by using local temporary tables, unintentionally  force recompilation on the stored procedure every time it is used. 
+This isn’t good because the stored procedure is unlikely to perform well. To avoid recompilation, avoid referring to a temporary table created in a calling or called stored procedure: 
+If you can’t do so, then put the reference in a string that is then executed using the EXECUTE statement or sp_ExecuteSQL stored procedure. 
+Also, make sure that the temporary table is created in the stored procedure or trigger before it is referenced and dropped after these references. 
+Don’t create a temporary table within a control-of-flow statement such as IF... ELSE or WHILE.  
 You are allowed to create Global Temporary Stored Procedures, but I’ve yet to find a use for them. Global temporary functions aren’t permitted.
 
 ## Table Variables 
@@ -340,53 +318,29 @@ You can even use sp_help work on temporary tables only if you invoke them from T
 
 ```sql
 USE TempDB 
-
 go 
-
 execute sp_Help #mytemp  
-
 or you can find them in the system views of TempDB without swithching databases. 
-
  
-
 SELECT name, create_date FROM TempDB.sys.tables WHERE name LIKE '#%' 
-
 Or the Information Schema 
-
  
-
 SELECT * FROM TempDB.information_schema.tables 
 
-Even better, you can find out what process, and user, is holding on to enormous temporary tables in TempDB and refusing to give up the space 
-
- 
-
+--Even better, you can find out what process, and user, is holding on to enormous temporary tables in TempDB and refusing to give up the space 
 -- Find out who created the temporary table,and when; the culprit and SPId. 
-
 SELECT DISTINCT te.name, t.Name, t.create_date, SPID, SessionLoginName 
-
 FROM ::fn_trace_gettable(( SELECT LEFT(path, LEN(path)-CHARINDEX('\', REVERSE(path))) + '\Log.trc'  
-
                             FROM    sys.traces -- read all five trace files 
-
                             WHERE   is_default = 1  
-
                           ), DEFAULT) trace 
-
 INNER JOIN sys.trace_events te on trace.EventClass = te.trace_event_id 
-
 INNER JOIN TempDB.sys.tables  AS t ON trace.ObjectID = t.OBJECT_ID  
-
 WHERE trace.DatabaseName = 'TempDB' 
-
   AND t.Name LIKE '#%' 
-
   AND te.name = 'Object:Created'  
-
   AND DATEPART(dy,t.create_date)= DATEPART(Dy,trace.StartTime)  
-
   AND ABS(DATEDIFF(Ms,t.create_date,trace.StartTime))<50 --sometimes slightly out 
-
 ORDER BY t.create_date
 ```
 **You cannot use user-defined datatypes in temporary tables unless the datatypes exist in TempDB; that is, unless the datatypes have been explicitly created.**
@@ -411,34 +365,20 @@ You can, of course, just create an ordinary table in TempDB. You can create thes
 
 ```sql
 USE master 
-
 go 
-
 CREATE PROCEDURE createMyGlobalTables  AS 
-
    CREATE TABLE ##globalTemporary1 
-
       (-- Blah blah (insert DDL here) 
-
    CREATE TABLE ##globalTemporary2 
-
       (-- Blah blah (insert DDL here) 
-
 --and so on.... 
-
    CREATE TABLE ##globalTemporaryn 
-
       (-- Blah blah (insert DDL here) 
-
   
-
 go 
-
 EXEC sp_procoption 'createMyGlobalTables', 'startup', 'true' 
-
 -- A stored procedure that is set to autoexecution runs every time an instance of SQL Server is started
 ``` 
-
 Why use this sort of hybrid table? 
 There are, for example, a number of techniques for passing tables between procedures via ‘persistent’ tables in a multiprocess-safe way, so as to do a series of processing to the data. 
 These are referred to a Process-keyed tables (see ‘How to Share Data Between Stored Procedures: [Process-Keyed table][6] by  Erland Sommarskog). 
