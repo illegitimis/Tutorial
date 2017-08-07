@@ -1,4 +1,4 @@
-# VCS
+# GIT
 
 ## git vs svn
 git | svn
@@ -16,16 +16,19 @@ Git lets you completely ignore files by placing paths in a special file called `
 ## Git command line
 
 1. The common Git guides are:
--   attributes   Defining attributes per path
--   everyday     Everyday Git With 20 Commands Or So
--   glossary     A Git glossary
--   ignore       Specifies intentionally untracked files to ignore
--   modules      Defining submodule properties
--   revisions    Specifying revisions and ranges for Git
--   tutorial     A tutorial introduction to Git (for version 1.5.1 or newer)
--   workflows    An overview of recommended workflows with Git
+guide | description
+---|---
+attributes   |   Defining attributes per path
+everyday     |   Everyday Git With 20 Commands Or So
+glossary     |   A Git glossary
+ignore       |   Specifies intentionally untracked files to ignore
+modules      |   Defining submodule properties
+revisions    |   Specifying revisions and ranges for Git
+tutorial     |   A tutorial introduction to Git (for version 1.5.1 or newer)
+workflows    |   An overview of recommended workflows with Git
+Run like `git help <guide_name>`.
 
-2. 
+2. Git Bash
 ```sh
 git log -10
 git diff HEAD
@@ -37,7 +40,6 @@ git help push
 git push
 git push origin
 git reset HEAD^
-git log -1 
 git revert <commit>
 # list local and remote branches verbose
 git branch --list -a -vv
