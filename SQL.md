@@ -6,6 +6,8 @@
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/BASE.md)
 + [Connection Pool](./sql/ConnectionPool.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/ConnectionPool.md)
++ [DAO vs. Repository](./sql/DAOvsRepository.md)
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/DAOvsRepository.md)
 + [DbCommand/IDbCommand/SqlCommand](./sql/DbCommand.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/DbCommand.md)
 + [Foreign Key Mapping](./sql/ForeignKeyMapping.md)
@@ -34,9 +36,6 @@ registry entries: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft SQL Server\Use
 + [Views](./sql/views.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/views.md)
 
-___
-(todo)
-+ [DAO vs. Repository](./sql/DAOvsRepository.md)
 
 
 [<<](README.md) 
