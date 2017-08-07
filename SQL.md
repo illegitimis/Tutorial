@@ -1,7 +1,9 @@
 # SQL
 
 + [ACID](./sql/ACID.md)
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/ACID.md)
 + [BASE](./sql/BASE.md)
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/BASE.md)
 + [Connection Pool](./sql/ConnectionPool.md)
 + [DbCommand/IDbCommand/SqlCommand](./sql/DbCommand.md)
 + [Foreign Key Mapping](./sql/ForeignKeyMapping.md)
