@@ -60,6 +60,7 @@ Services are often _expensive to invoke_ and _benefit_ from caching strategies t
 
 [As the repository is an abstraction it should aways return whatever the layer above want to work with][6], which in most cases are domain entities, i.e. the objects which will encapsulate the logic in your business code.
 
+db repository interactions | web services repository 
 ---|---
 ![MSDN repository interactions schema](https://i-msdn.sec.s-msft.com/dynimg/IC340233.png) | ![web services repository](https://i-msdn.sec.s-msft.com/dynimg/IC340239.png)
 
