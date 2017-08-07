@@ -20,9 +20,11 @@
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/ReferentialIntegrity.md)
 + [Service Broker](./sql/ServiceBroker.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/ServiceBroker.md)
-+ **SqlLocalDB**: [utility](https://docs.microsoft.com/en-us/sql/tools/sqllocaldb-utility), connection string `(localdb)\MSSQLLocalDB`, 
-registry entries: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft SQL Server\UserInstances\{GUID}`, 
-`HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\RefCount\SqlLocalDB13`, 
++ **SqlLocalDB**: 
+[utility](https://docs.microsoft.com/en-us/sql/tools/sqllocaldb-utility), 
+connection string `(localdb)\MSSQLLocalDB`, 
+[SQL Server 2016 Express LocalDB](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-2016-express-localdb),
+registry entries: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft SQL Server\UserInstances\{GUID}`, `HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\RefCount\SqlLocalDB13`, 
 + [String search db stored proc ](./sql/StringSearchDbStoredProc.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/StringSearchDbStoredProc.md)
 + [Table schema](./sql/TableSchema.md)
