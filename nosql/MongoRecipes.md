@@ -122,11 +122,12 @@ mongoimport.exe --db ImageCache10111145 --collection fs.chunks --file 10.11.11.4
 	using (var cursor = await FsFiles.FindAsync(filter)) { 
              while (cursor.MoveNext()) { 
                  foreach (var bsonDoc in cursor.Current) {
-				 } } }
+					// bsonDoc.DoSomething(); 
+	} } }
 ```
 
 
-[<<](../Mongo.md) 
+[<<](./Mongo.md) 
 |
 [home](../README.md) 
 | 
