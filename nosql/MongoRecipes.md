@@ -124,7 +124,13 @@ mongoimport.exe --db ImageCache10111145 --collection fs.chunks --file 10.11.11.4
                  foreach (var bsonDoc in cursor.Current) {
 				 } } }
 ```
-      
+
+
+[<<](../Mongo.md) 
+|
+[home](../README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki)   
 
 
 

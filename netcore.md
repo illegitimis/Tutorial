@@ -5,6 +5,8 @@
 + [dotnet command ms docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet)
 + [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
 [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
++ [AspNetCore Rest](./netcore/rest.md)
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/rest.md)
 
 ## dotnet commands
 
