@@ -52,6 +52,26 @@ with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 	* [Dynamic View and Components](https://medium.com/nerdlog/angular-2-dynamic-view-and-components-330205fa6896), very nice [sample](http://plnkr.co/edit/wh4VJG?p=preview)
 	* [ViewContainerRef](https://angular.io/api/core/ViewContainerRef), Represents a container where one or more Views can be attached.
 	
+## test
+
+* Testing Angular 2 code with [Jasmine](http://jasmine.github.io/) and [Karma](http://karma-runner.github.io/).
+* Coverage with [Istanbul](https://github.com/gotwarlost/istanbul)
+* End-to-end Angular code using [Protractor](https://angular.github.io/protractor/). 
+  When debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. 
+  You can do this with the element explorer.[Protractor Interactive Mode here](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively).
+* Tests reports with [karma-tfs-reporter](https://github.com/sgbj/karma-tfs-reporter)
+* Test coverage reports with [karma-coverage](https://github.com/karma-runner/karma-coverage)
+* **Unit tests** _single run_: `npm test`, _live mode (TDD style)_: `npm run test-watch`	
+* **End-to-End Tests** (aka. e2e, integration) 
+  + _single run_:
+    
+	in a tab, *if not already running!*: `npm start`
+  
+    in a new tab: `npm run webdriver-start`
+  
+    in another new tab: `npm run e2e`
+  + _interactive mode_: `npm run e2e-live`	
+	
 	
 [<<](../JS.md)
 |
