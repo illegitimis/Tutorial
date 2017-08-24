@@ -45,6 +45,15 @@ git revert <commit>
 git branch --list -a -vv
 ```
 
+3. update fork
+```cmd
+cd <dir_where_i_cloned_my_fork_of_a_repo>
+git remote add bradyholt-cron-expression-descriptor-master https://github.com/bradyholt/cron-expression-descriptor
+git pull bradyholt-cron-expression-descriptor-master master
+# unstage_conflicts
+```
+If using ~SourceTree~ one can pull from remote origin, selecting the dev branch to pull.
+
 
 
 [<<](../tools.md)
