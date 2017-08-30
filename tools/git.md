@@ -43,6 +43,10 @@ git reset HEAD^
 git revert <commit>
 # list local and remote branches verbose
 git branch --list -a -vv
+# file commit history with patches and beyond renames
+# path to file is relative to root
+# -- differentiates revisions from files
+$ git log --follow -p -- ./src/esw.Shipping.Api/Validation/OrderRequestDtoValidator.cs
 ```
 
 3. update fork
