@@ -45,5 +45,10 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 | References | Is.SameAs Is.Not.SameAs |
 | Nulls & booleans | `Is.Not.Empty`, `Is.Null`, `Is.True` |
 
+## xunit
+
+- [Comparing xUnit.net to other frameworks](https://xunit.github.io/docs/comparisons.html)
+- **FluentAssertion** [docs](http://fluentassertions.com/documentation.html#basic-assertions)
+
 
 [<<](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki/)
