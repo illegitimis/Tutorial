@@ -31,8 +31,11 @@ Modify _csproj_.
 		<Version>1.0.0-*</Version>
 	</DotNetCliToolReference>  
 ```
-
-
++ Package Manager Console
+```cmd
+Add-Migration -Name "PackageInfoShipmentPurpose" -OutputDir "Migrations" -Project esw.Shipping.Api
+update-database -Migration "PackageInfoShipmentPurpose" -Project esw.Shipping.Api
+```
 
 
 [<<](../ORM.md)

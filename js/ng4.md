@@ -2,6 +2,10 @@
 
 ## links
 
+- [Rangle's Angular book](https://1drv.ms/b/s!AnIyfO51kH7NlVvjZo4Mwh9jlDvW)
+[![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://1drv.ms/b/s!AnIyfO51kH7NlVvjZo4Mwh9jlDvW)
+- 2016 [Valerio De Sanctis - ASP.NET & Angular 2](https://1drv.ms/b/s!AnIyfO51kH7NlUSD7yLGPHr79BD7)
+[![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://1drv.ms/b/s!AnIyfO51kH7NlUSD7yLGPHr79BD7)
 - Latest [architecture overview](https://angular.io/guide/architecture#architecture-overview)
 - [live hero list sample](https://angular.io/generated/live-examples/toh-pt6/eplnkr.html)
 - [Angular official cheatsheet](https://angular.io/guide/cheatsheet)
