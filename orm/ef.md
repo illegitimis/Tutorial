@@ -31,10 +31,54 @@ Modify _csproj_.
 		<Version>1.0.0-*</Version>
 	</DotNetCliToolReference>  
 ```
-+ Package Manager Console
++ Generate migration from Package Manager Console
 ```cmd
 Add-Migration -Name "PackageInfoShipmentPurpose" -OutputDir "Migrations" -Project esw.Shipping.Api
 update-database -Migration "PackageInfoShipmentPurpose" -Project esw.Shipping.Api
+```
++ Generate migration from Powershell / Git Bash
+```bat
+install-package entityframework.commands -pre
+
+dotnet ef migrations add "Initial" -o "Data\Migrations"
+dotnet ef database update
+```
++ cs MultiKeyIndexEntity
+```cs
+class SomeEntityContext : DbContext {
+	protected override void OnModelCreating(ModelBuilder modelBuilder) {
+		 modelBuilder.Entity<MultiKeyIndexEntity>()
+                .HasIndex(u => new { u.Id1, u.Id2, u.SomeReference})
+                .IsUnique();
+	}
+}
+
+public partial class OrderTableBrandIdMerchantIdOrderReferenceUniqueIndexAdded : Migration {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateIndex(
+                name: "IX",
+                table: "SomeTable",
+                columns: new[] { "Id1", "Id2", "SomeReference" },
+                unique: true);
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropIndex(
+                name: "IX",
+                table: "SomeTable");
+        }
+    }
+
+ [DbContext(typeof(SomeEntityContext))]
+partial class ShippingEntityContextModelSnapshot : ModelSnapshot {
+	protected override void BuildModel(ModelBuilder modelBuilder) {
+		  modelBuilder.Entity("esw.Shipping.Api.Models.BusinessEntities.Order", b => {
+			b.HasIndex("Id1", "Id2", "SomeReference").IsUnique();
+		  });		 
+	}
+}	
 ```
 
 
