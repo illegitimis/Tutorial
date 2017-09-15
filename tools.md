@@ -4,6 +4,7 @@ ___
 *  [Git/VCS](./tools/git.md)
 *  [Github doc reference](./tools/GithubDocs.md)
 *  [Google API](./tools/GAPI.md)
+*  [Mobile](./tools/mobile.md)
 *  [NuGet](./tools/NuGet.md)
 *  [Visual Studio & VSCode](./tools/vs.md)
 
