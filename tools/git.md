@@ -59,6 +59,10 @@ git pull bradyholt-cron-expression-descriptor-master master
 ```
 If using ~SourceTree~ one can pull from remote origin, selecting the dev branch to pull.
 
+4. git push SSL_ERROR_SYSCALL 
+```cmd
+git config http.postBuffer 524288000
+```
 
 
 [<<](../tools.md)
