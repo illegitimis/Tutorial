@@ -1,5 +1,14 @@
 # REST
 
+
+## Links
++ [**Zalando API design principles**](http://zalando.github.io/restful-api-guidelines/design-principles/DesignPrinciples.html)
++ [Thoughts on RESTful API Design](http://restful-api-design.readthedocs.io/en/latest/), _Geert Jansen_, 2012
++ [_The Atom Publishing Protocol_ (RFC text)](https://tools.ietf.org/rfc/rfc5023.txt)  
++ [Registry of link relations](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
++ [Call a REST API](./REST/call.md) from .NET
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./REST/call.md)
+
 ## Principles
 1. An important principle for (RESTful) API design and usage is Postel's Law, aka the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle) (_RFC 1122_): “**Be liberal in what you accept, be conservative in what you send**.” 
 2. [REST APIs must be hypertext-driven](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven) 
@@ -23,12 +32,6 @@
 
 
 + [**REST in Practice**](http://www.slideshare.net/guilhermecaelum/rest-in-practice), The slides for the REST tutorial that Ian Robinson and Jim Webber gave at QCON 
-
-## Links
-+ [**Zalando API design principles**](http://zalando.github.io/restful-api-guidelines/design-principles/DesignPrinciples.html)
-+ [Thoughts on RESTful API Design](http://restful-api-design.readthedocs.io/en/latest/), _Geert Jansen_, 2012
-+ [_The Atom Publishing Protocol_ (RFC text)](https://tools.ietf.org/rfc/rfc5023.txt)  
-+ [Registry of link relations](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
 
 ## COURSES
 + __Web API Design__ by Wildermuth 
