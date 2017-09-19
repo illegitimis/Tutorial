@@ -1,0 +1,25 @@
+# Call a REST API
+
++ [`HttpClient`](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient(v=vs.110).aspx)
+  - [PowerBI Apiary mock tests](https://gist.github.com/illegitimis/de5975b9de77637d6d5f343c37d53273)
+  - [`FormUrlEncodedContent`](https://stackoverflow.com/a/7929084) response on SO  
++ `AutoRest/Swagger`
++ `RestSharp`
+  - [SO example](https://stackoverflow.com/a/33812542)
+  - [home](http://restsharp.org/)
++ `cURL`
+  - [libcurl.NET](https://sourceforge.net/projects/libcurl-net/)
+  - [CurlSharp - .Net binding and object-oriented wrapper for libcurl. ](https://github.com/masroore/CurlSharp)
+  - [CURLE_SSL_CERTPROBLEM](https://curl.haxx.se/mail/lib-2007-01/0156.html)
++ `WebClient`
++ [`HttpWebRequest`](https://msdn.microsoft.com/en-us/library/system.net.httpwebrequest.aspx) / [`HttpWebResponse`](https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx)
+  - [WebRequest & Json.Linq](https://stackoverflow.com/a/30770354)
+
+
+
+
+[<<](../REST.md)
+|
+[home](../README.md) 
+| 
+[wiki](https://github.com/illegitimis/Tutorial/wiki) 
