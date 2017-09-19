@@ -29,7 +29,7 @@ Git lets you completely ignore files by placing paths in a special file called `
 |workflows   | An overview of recommended workflows with Git|
 Run like `git help <guide_name>`.
 
-2. Git Bash
+2. **Git Bash**
 ```sh
 git log -10
 git diff HEAD
@@ -44,13 +44,9 @@ git reset HEAD^
 git revert <commit>
 # list local and remote branches verbose
 git branch --list -a -vv
-# file commit history with patches and beyond renames
-# path to file is relative to root
-# -- differentiates revisions from files
-$ git log --follow -p -- ./src/esw.Shipping.Api/Validation/OrderRequestDtoValidator.cs
 ```
 
-3. update fork
+3. **update fork**
 ```cmd
 cd <dir_where_i_cloned_my_fork_of_a_repo>
 git remote add bradyholt-cron-expression-descriptor-master https://github.com/bradyholt/cron-expression-descriptor
@@ -62,6 +58,16 @@ If using ~SourceTree~ one can pull from remote origin, selecting the dev branch 
 4. git push SSL_ERROR_SYSCALL 
 ```cmd
 git config http.postBuffer 524288000
+```
+
+5. file **history**
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension
+  - file commit history with patches and beyond renames
+```cs
+# 
+# path to file is relative to root
+# -- differentiates revisions from files
+$ git log --follow -p -- ./src/esw.Shipping.Api/Validation/OrderRequestDtoValidator.cs
 ```
 
 
