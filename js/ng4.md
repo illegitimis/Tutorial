@@ -13,6 +13,7 @@
 - PrimeNG: [GitRepo](https://github.com/primefaces/primeng-quickstart-webpack), [Get Started](https://www.primefaces.org/primeng/#/setup)
 - [Angular CLI wiki](https://github.com/angular/angular-cli/wiki)
 - [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
+- [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
 
 ## start
 
