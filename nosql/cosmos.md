@@ -47,6 +47,33 @@ DocumentDB is a **JSON document database** _capable of executing JavaScript dire
 + [todo](https://techcrunch.com/2017/05/10/with-cosmos-db-microsoft-wants-to-build-one-database-to-rule-them-all/)
 + [pdf todo](https://softwareengineeringdaily.com/wp-content/uploads/2017/06/SEDT22-Cosmos-DB.pdf)
 + [default indexing](http://blog.ulriksen.net/default-indexing-in-cosmos-db/)
++ [azure cosmos db api reference](https://docs.microsoft.com/en-us/rest/api/documentdb/)
++ [Azure DocumentDb for the Enterprise Market](https://cloudacademy.com/blog/azure-documentdb-enterprise-market/) very good article on schema 
+
+## Azure Cosmos DB Emulator
+```cs
+// Connect to the Azure Cosmos DB Emulator running locally
+DocumentClient client = new DocumentClient(
+    new Uri("https://localhost:8081"), 
+    "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==");
+```
+auto-generated fields
+```json
+{
+    "id": "a1081e6b-a52b-4601-b352-d3e22722d7e1",
+    "_rid": "kZZ3AN3KKwABAAAAAAAAAA==",
+    "_self": "dbs/kZZ3AA==/colls/kZZ3AN3KKwA=/docs/kZZ3AN3KKwABAAAAAAAAAA==/",
+    "_etag": "\"00000800-0000-0000-0000-59c4e62a0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1506076202
+}
+```
+[Azure Cosmos DB: Getting started with the DocumentDB API and .NET Core](https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-dotnetcore-get-started)
+[Use the Azure Cosmos DB Emulator for local development and testing](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator#command-line)
+[Working with dynamic schema in Azure DocumentDB](http://blogs.perficient.com/microsoft/2015/04/working-with-dynamic-schema-in-azure-documentdb/)
+[.NET samples](https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-dotnet-samples)
+
+
 
 [1]: http://www.databasejournal.com/features/mssql/introduction-to-azure-cosmos-db.html
 [2]: https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-introduction
