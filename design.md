@@ -2,7 +2,7 @@
 
 ## Pages
 
-+ [Design Patterns](./oop/dp.md)
++ [**Design Patterns**](./oop/dp.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./oop/dp.md)
 + [OOP Principles](./oop/principles.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./oop/principles.md)
@@ -10,6 +10,7 @@
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./oop/solid.md)
 + [Domain Driven Design](./oop/DDD.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./oop/DDD.md)
++ [UML](uml.md)
 
 ## Architecture / Management Books
 
