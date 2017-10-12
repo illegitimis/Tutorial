@@ -17,3 +17,8 @@
 
 + [Azure **autorest**](https://github.com/Azure/autorest).  OpenAPI (f.k.a Swagger) Specification code generator. Supports C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP. 
 + [AutoRest Command Line Interface Documentation](https://github.com/Azure/autorest/blob/master/docs/user/cli.md)
++ [Generating a client using AutoRest *Sample*](https://github.com/Azure/autorest/blob/master/docs/generating-a-client.md)
+
+
+
+
