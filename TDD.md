@@ -48,7 +48,11 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 ## xunit
 
 - [Comparing xUnit.net to other frameworks](https://xunit.github.io/docs/comparisons.html)
-- **FluentAssertion** [docs](http://fluentassertions.com/documentation.html#basic-assertions)
-
+- **FluentAssertions** [docs](http://fluentassertions.com/documentation.html#basic-assertions)
+- [Using xUnit with ASP.NET Core ](http://gunnarpeipman.com/2016/10/aspnet-core-xunit/), 2016.10
+- [Unit testing C# in .NET Core using dotnet test and xUnit](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test), 2017.09
+- [Getting started with xUnit.net (.NET Core / ASP.NET Core)](http://xunit.github.io/docs/getting-started-dotnet-core.html)
+- [End to end testing angular js apps with XUnit and Protractor.Net](https://dotnetthoughts.net/end-to-end-testing-angularjs-apps-with-xunit-protractor-net/), 2016.04
+- [Assert.ThrowsAsync](https://github.com/nunit/docs/wiki/Assert.ThrowsAsync)
 
 [<<](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki/)
