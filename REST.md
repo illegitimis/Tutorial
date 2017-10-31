@@ -41,7 +41,11 @@ course [link](https://app.pluralsight.com/library/courses/web-api-design/table-o
 + _Implementing an API in ASP.NET Web API_ by Shawn Wildermuth on [Pluralsight](https://app.pluralsight.com/library/courses/implementing-restful-aspdotnet-web-api/)
 [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/implementing-restful-aspdotnet-web-api/)
 
-
+## http-decision-diagram
+- [readme](https://github.com/for-GET/http-decision-diagram/blob/master/doc/README.md)
+- ![pic](https://raw.githubusercontent.com/for-GET/http-decision-diagram/master/httpdd.png) 3250x2146, v4.0.201410
+- [httpdd](http://for-get.github.io/http-decision-diagram/httpdd.fsm.html) html diagram
+- [RFC2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html), Hypertext Transfer Protocol -- HTTP/1.1
 
 [home](./README.md) 
 | 

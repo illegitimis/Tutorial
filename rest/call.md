@@ -3,6 +3,8 @@
 + [`HttpClient`](https://msdn.microsoft.com/en-us/library/system.net.http.httpclient(v=vs.110).aspx)
   - [PowerBI Apiary mock tests](https://gist.github.com/illegitimis/de5975b9de77637d6d5f343c37d53273)
   - [`FormUrlEncodedContent`](https://stackoverflow.com/a/7929084) response on SO  
+  - [Calling a Web API From a .NET Client (C#)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/advanced/calling-a-web-api-from-a-net-client) 2014
+  - [HttpClientExtensions.PostAsJsonAsync](https://msdn.microsoft.com/en-us/library/system.net.http.httpclientextensions.postasjsonasync.aspx)
 + `AutoRest/Swagger`
   - [AutoRest Command Line Interface Documentation](https://github.com/Azure/autorest/blob/master/docs/user/cli.md)
   - OpenAPI (f.k.a Swagger) [Specification code generator](https://github.com/Azure/autorest). Supports C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP.
@@ -10,7 +12,8 @@
 
 ```shell
 # Install autorest and csharp generator extension 
-npm install -g autorest @microsoft.azure/autorest.csharp
+npm search autorest
+npm install -g autorest @microsoft.azure/autorest.csharp ms-rest ms-rest-azure
 # generate
 autorest --input-file=http://localhost:63300//swagger/v1.0/swagger.json --namespace=Generated --output-folder=Generated --csharp
 ```
