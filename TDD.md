@@ -55,4 +55,24 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 - [End to end testing angular js apps with XUnit and Protractor.Net](https://dotnetthoughts.net/end-to-end-testing-angularjs-apps-with-xunit-protractor-net/), 2016.04
 - [Assert.ThrowsAsync](https://github.com/nunit/docs/wiki/Assert.ThrowsAsync)
 
+## dotnet
+
+Microsoft (R) Test Execution Command Line Tool
+[VS 2017 free coverage](https://stackoverflow.com/questions/32369664/visual-studio-has-code-coverage-for-unit-tests)
+[vs 2017 integrated coverage](https://msdn.microsoft.com/en-us/library/dd537628.aspx)
+```shell
+# run tests for framework and platform
+dotnet test --no-build -v diag -o ./bin/x86/Release/
+dotnet test --framework netcoreapp1.1 --runtime win10-x86
+# new test project with enable pack
+dotnet new xunit -p -lang c#
+# list available project types
+dotnet new -all 
+# An open source code coverage tool (branch and sequence point) for all .NET Frameworks 2 and above (including Silverlight). 
+# Also capable of handling 32 and 64 bit processes. Use ReportGenerator 1.9 for best viewing results (also available via Nuget).
+dotnet add package OpenCover --version 4.6.519
+```
++ [Introduction to integration testing with xUnit and TestServer in ASP.NET Core ](https://andrewlock.net/introduction-to-integration-testing-with-xunit-and-testserver-in-asp-net-core/)
++ [Integration testing in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/testing/integration-testing) with `Microsoft.AspNetCore.TestHost`
+
 [<<](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki/)
