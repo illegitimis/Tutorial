@@ -8,6 +8,7 @@
 + [AspNetCore Rest](./netcore/rest.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/rest.md)
 
+
 ## dotnet commands
 
 - **migrate** _Migrates_ a *project.json* (and _xproj_) based project to a *msbuild* based project.
@@ -15,6 +16,12 @@
 - **add|remove** Adds or Removes a NuGet package.
 - **new console** - Initialize a sample .NET Core console application that can be compiled and run
 - **build** - Build a project and its dependencies in a given directory:
+- **sln** modifies a .Net Core solution file
+  ```cmd
+  dotnet sln toAddToMultipleProjects.sln todo-app/todo-app.csproj back-end/back-end.csproj
+  dotnet sln toRemoveFromWithGlobbingPattern.sln remove **/*.csproj
+  dotnet sln toList.sln list
+  ```
 
 ## middleware
 
@@ -23,6 +30,25 @@
 - [App startup in ASP.NET Core](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/startup.md)
 - [basic middleware samples docs](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/middleware.md)
 - _Migrating HTTP handlers and modules to ASP.NET Core middleware_ [on Github](https://github.com/aspnet/Docs/blob/master/aspnetcore/migration/http-modules.md) and [MsDocs](https://docs.microsoft.com/en-us/aspnet/core/migration/http-modules)
+
+## project
+
++ [Mapping between csproj and project.json](https://docs.microsoft.com/en-us/dotnet/core/tools/project-json-to-csproj)
++ [Setting `EnableDefaultCompileItems` to False doesn't remove the files from solution Explorer](https://github.com/dotnet/sdk/issues/1157)
+
+I created a web api 
+
+    dotnet new webapi 
+
+using .Net 4.6.2 as target framework. 
+
+> "Message: System.TypeLoadException : Inheritance security rules
+> violated by type: 'System.Net.Http.WebRequestHandler'. Derived types
+> must either match the security accessibility of the base type or be
+> less accessible."
+
+https://checkout-test.documents.azure.com/
+
 
 
 [home](README.md)
