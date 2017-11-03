@@ -36,18 +36,9 @@
 + [Mapping between csproj and project.json](https://docs.microsoft.com/en-us/dotnet/core/tools/project-json-to-csproj)
 + [Setting `EnableDefaultCompileItems` to False doesn't remove the files from solution Explorer](https://github.com/dotnet/sdk/issues/1157)
 
-I created a web api 
-
-    dotnet new webapi 
-
-using .Net 4.6.2 as target framework. 
-
-> "Message: System.TypeLoadException : Inheritance security rules
-> violated by type: 'System.Net.Http.WebRequestHandler'. Derived types
-> must either match the security accessibility of the base type or be
-> less accessible."
-
-https://checkout-test.documents.azure.com/
+## misc
++ 
++ [reverse package search](https://packagesearch.azurewebsites.net/)
 
 
 
