@@ -1,5 +1,8 @@
 # Swagger
 
+Rest calls with AutoRest/Swagger [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](../rest/autorest.md).
+
+
 [Generating clients for your APIs with AutoRest](https://dzimchuk.net/generating-clients-for-your-apis-with-autorest/)
 _packages_
 ```csproj

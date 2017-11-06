@@ -1,6 +1,7 @@
 # Microservices Architecture
 
-[Microservices Architecture pluralsight](https://app.pluralsight.com/library/courses/microservices-architecture/table-of-contents)
+Microservices Architecture pluralsight [![Microservices Architecture pluralsight](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/microservices-architecture/table-of-contents)
+
 
 ## services
 + services are **stateless**. No knowledge about previous requests is needed. All info about, customer, client type, previous interaction must be contained into the current request
@@ -16,14 +17,30 @@
 ![](https://g7xqqg.by3302.livefilestore.com/y4mM1Fa_CB3EE-CmgJq3TFUTmXdV3opFhbxt22QZXf6yoC0aEVGTEtMtfMopxrPgyxO6AJpAAnBl_gULXGCC6mCBQza1638iG9nYYiDqI69neYxlRttEMwLXZIql3nu_GpmFIgxpgGX9nCR-YTXgVZtBxN3gkYijNZ-ClkZhgMnXdXOfy3IdHgeMO9NcbeZ44WpzOSt55IgqeJh-z91Xfay8A?width=501&height=260&cropmode=none)
 + **high cohesion**: single responsibility principle and oop encapsulation, single thing done well.
 ![](https://hiqn5q.by3302.livefilestore.com/y4m-4jSFHJrEVLS0UkKEiqqhSH4abhQeJM4KaKdyyyc3RHSjdCRxLyZPQVHLfcDYgOgrPPgdqDf5xhS-WLqKR4E1arX8dngbYp0itlzKAiQst7jcwx-9cHco1ebN8AkLQ4QFt65FigW1gS4upFjcVZMK0oOukOfa4ZWcu94zFD0A64xymp3hnwdwMFw0rP0IexCnrxNLf9a6IZP_bIF-dRi3w?width=968&height=342&cropmode=none)
-+ **autonomous**: a change in one microservice won't force a change in another, loose coupling oop fulfillment, honor contracts from one version to another, independently changeable & deployable. Async communication with events publishing, notify of completion. Focus on technology agnostic and not on client libraries. Fixed and agreed interfaces. Shared models, clear input and output. Avoid chatty services and sharing databases between services.
++ **autonomous**: a change in one microservice won't force a change in another, _loose coupling oop fulfillment_.
+  - Honor contracts from one version to another, independently changeable & deployable.
+  - Async communication with events publishing, notify of completion. 
+  - _Focus on technology agnostic_ and not on client libraries. 
+  - _Fixed and agreed interfaces_.
+  - Shared models, clear input and output.
+  - Avoid _chatty services_ and *sharing databases* between services.
 ![](https://jxhseg.by3302.livefilestore.com/y4m31-GeEimCISRH6m4QhyUNx-s9P_cD7nIbw2MAP9BLXdtrKE-NXi-D1BdO5OMTmi8DOKyfvANcGM2Ilnb8VUBXKctakGrh9AHOUg6ZJFSA9zDJEhln1Dv6kWDFIZy2_oOEfM9qw4JJxj1TOwNHo0qSwYwGp5WzXUbBoFyz2yHwnbgYpYhn0JD3WUnZRNiZ6DYxskFYH7Su0W5oyrvaA03vA?width=744&height=318&cropmode=none)
-versioning and ownership. each teams owns and is reponsible to make autonomous, agree on contracts, maintain long term, communicate data and contract requirements. When breaking changes occur you could have concurrent versions, slowly negotiate migrations. Semantic versioning: major.minor.patch. Patch increase on defect, minor increase if backward compatible, major increase if contract change. ![](https://wowttq.by3302.livefilestore.com/y4ms4cJyQrdMXkzIba3FRP-QdDi_Cr8TseuGdEtHXgP1W0MU9OKxj6JYcsOyQ3sXzrLdEaZnxIhHomULUhvWqCRYdJ0u4fCWVS7YbPpPx7rUnYqdcVYVzZB9JsiQHPwsz1n0bjJ_dZvzz8MUiXaZcHPedDPlut-RZUg0iiOtbTK015v-kGBBdqUz00atmdw4XU-bKKLoDscmUglQRTDdhrwtw?width=446&height=337&cropmode=none)
-+ **business domain centric**: should represent a business function/domain. bounded context from ddd, identify boundaries or seams. responsive to business change. Identify business domains in a coarse manner. Review subgroups of business functions as areas, review benefits of splitting further. Fix incorrect boundaries by merging or splitting. 
++ **versioning and ownership** 
+  - each teams owns and is reponsible to make autonomous, agree on contracts, maintain long term, communicate data and contract requirements. 
+  - When breaking changes occur you could have concurrent versions, slowly negotiate migrations. 
+  - Semantic versioning: `major.minor.patch`. _Patch increase_ on **defect**, _minor increase_ if **backward compatible**, _major increase_ if **contract change**. 
+![](https://wowttq.by3302.livefilestore.com/y4ms4cJyQrdMXkzIba3FRP-QdDi_Cr8TseuGdEtHXgP1W0MU9OKxj6JYcsOyQ3sXzrLdEaZnxIhHomULUhvWqCRYdJ0u4fCWVS7YbPpPx7rUnYqdcVYVzZB9JsiQHPwsz1n0bjJ_dZvzz8MUiXaZcHPedDPlut-RZUg0iiOtbTK015v-kGBBdqUz00atmdw4XU-bKKLoDscmUglQRTDdhrwtw?width=446&height=337&cropmode=none)
++ **business domain centric**: should represent a business function/domain. 
+  - bounded context from ddd, identify boundaries or **seams**. Identify business domains in a coarse manner.
+  - responsive to business change. Review subgroups of business functions as areas, review benefits of splitting further. Fix incorrect boundaries by merging or splitting. 
 ![](https://tcytqq.by3302.livefilestore.com/y4m9LtqiYH1URb0IGJlUooEKCuZH4ZAemUVjucYJZ024CuegKLCTgxTJWYQ-G4831UJIT9oe443FFH2MOxDm6ur4BaSMAgxtvjWeGA2cevugsafaVwE8SGe_gxFskLClfz3Dq7X9jETazX75voCvOe-xdqHoP1lAcxKwUCaDcJ_9wdp9yW1sBwfCiEYO_ISxyBdiwcrYuN0csMdEl--cTRs1A?width=968&height=341&cropmode=none)
-+ **resilience**, embrace failure when it happens, **degrading functionality** or offering **defaults**. Network errors/unavailability, internet delays. Many moving parts, we can't have one bad downstream system influence the whole. Design must be done for _known failures_. Fail and recover fast, no impact for end user. Use timeouts for interconnected systems. Different thresholds for communication type, s2c or s2s. Handle network outages differently.
-+ **observable**: quick deployment requires feedback. data used for planning and scaling. see system health. **central monitoring**: monitor cpu, host memory and disk usage in real time. expose some metrics: svc response times and timeouts, number of exceptions. you can expand to business data like no orders and average time from basket to timeout, collect and aggregate data, compare data across servers, trend visalisation and trigger alerts on some conditions. 
-Nagios/PRTG/Load balancers/New Relic. **central logging**: log means info/story, monitor means collecting metrics. When to log: startup/shutdown, code path milestones. What: requests, responses and decisions, timeouts, exceptions. Structured logging: level, date and time, **correlation id**, service name and instance. Strongly typed model and traceable distributed transactions. Elastic Log/Log stash/Splunk/Kibana/Graphite. Serilog pushes and raises events against the centralised monitoring tool. 
++ **resilience**, embrace failure when it happens, **degrading functionality** or offering **defaults**. Many moving parts, we can't have one bad downstream system influence the whole.  
+  - Design must be done for _known failures_. **Fail and recover fast**, no impact for end user. 
+  - Use timeouts for interconnected systems. Different thresholds for communication type, s2c or s2s. 
+  - Handle network outages differently. Network errors/unavailability, internet delays.
++ **observable**: quick deployment requires feedback. data used for planning and scaling. see system health. 
+  - **central monitoring**: monitor cpu, host memory and disk usage in real time. expose some metrics: svc response times and timeouts, number of exceptions. you can expand to business data like no orders and average time from basket to timeout, collect and aggregate data, compare data across servers, trend visalisation and trigger alerts on some conditions. `Nagios/PRTG/Load balancers/New Relic.` 
+  - **central logging**: log means info/story, monitor means collecting metrics. When to log: startup/shutdown, code path milestones. What: requests, responses and decisions, timeouts, exceptions. Structured logging: level, date and time, **correlation id**, service name and instance. Strongly typed model and traceable distributed transactions. `Elastic Log/Log stash/Splunk/Kibana/Graphite`. Serilog pushes and raises events against the centralised monitoring tool. 
 + **automation**: manual regression testing, integration feedback on check-in. CI/CD. Each microservice with its own CI build. CD with central control panel and VS integration.
 
 ## monolith
