@@ -5,6 +5,7 @@
 + [Microservices with .NET (recipes)](./usvc/Microservices-with-.NET.md), work in progress
 + [Docker](./usvc/Docker.md)
 + test APIs with [Swagger](./usvc/Swagger.md)
++ [Nanoservices](./usvc/nanosvc.md) anti-pattern
 
 
 [home](README.md) 
