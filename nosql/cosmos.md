@@ -73,7 +73,14 @@ auto-generated fields
 [Working with dynamic schema in Azure DocumentDB](http://blogs.perficient.com/microsoft/2015/04/working-with-dynamic-schema-in-azure-documentdb/)
 [.NET samples](https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-dotnet-samples)
 
+## Event-driven architectures with Change Feed Processor library
+Build event-driven architectures and receive a real-time stream of database updates with Azure Cosmos DB change feed. 
+Change feed enables reactive programming models for Internet of Things (IoT) telemetry and e-commerce ordering pipelines. 
+Reading change feed across multiple partitions is easy with the [Change Feed Processor][9] library now available as a [NuGet package][10] for .NET development. 
+This library facilitates distributing change feed event processing across multiple consumers. 
+It also provides a thread-safe, multi-process, safe runtime environment with checkpoint and partition lease management for large-scale distributed event processing applications.
 
+![](https://ukrpqq-db3pap001.files.1drv.com/y4mk2QgJTOGkQlUMjhzZ95RoJmoCEifeJaTJ99y-Jg7M51m22Wv8xQaj3i6zDZoDxC6yVqi5vNcvciEm1lgWmSBdYujMpg0u2pFZy0RvpiJzFujG5IU0NUaDWpKhbfUZnOJs5ns8iG8irmz9vRzFyp8CI6cN2ttg6ln3P9ii8ajKiZGbck_Y8fCBmnR8uBUd7A4PJTeYpZzN375UA0CUvR99g?width=660&height=374&cropmode=none)
 
 [1]: http://www.databasejournal.com/features/mssql/introduction-to-azure-cosmos-db.html
 [2]: https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-introduction
@@ -83,7 +90,8 @@ auto-generated fields
 [6]: https://azure.microsoft.com/en-us/resources/samples/functions-customer-reviews/
 [7]: https://github.com/Azure/azure-documentdb-dotnet/blob/master/samples/code-samples/IndexManagement/Program.cs
 [8]: http://www.zdnet.com/article/inside-cosmos-db/
-
+[9]: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D#change-feed-processor
+[10]: https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D
 
 [<<](../nosql.md)
 |
