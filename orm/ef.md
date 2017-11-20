@@ -10,6 +10,7 @@
 * [NuGet/DNX Commands](https://github.com/aspnet/EntityFramework/wiki/Design-Meeting-Notes---July-23,-2015)
 * [ef-core 4 'Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular'](../netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#ef-core)
 [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](../netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#ef-core)
+* [Seed Database in Code-First](http://www.entityframeworktutorial.net/code-first/seed-database-in-code-first.aspx)
 
 ## Recipes
 
