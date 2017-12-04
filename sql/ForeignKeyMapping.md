@@ -77,6 +77,35 @@ exec SP_FKEYS @pktable_name = 'mpk'
 exec SP_FKEYS @fktable_name = 'mfk
 ```
 
+5. [table hard dependency](https://blog.sqlauthority.com/2016/02/16/sql-server-view-dependencies-on-sql-server-hard-soft-way/)
+```sql
+SELECT 
+	coalesce(OBJECT_SCHEMA_NAME(f.parent_object_id) + '.', '') + OBJECT_NAME(f.parent_object_id) PARENT, 
+	coalesce(OBJECT_SCHEMA_NAME(f.referenced_object_id) + '.', '') + OBJECT_NAME(f.referenced_object_id) REF
+FROM sys.foreign_keys f
+WHERE 1=1 
+--AND f.referenced_object_id = OBJECT_ID('dbo.Orders')
+AND f.parent_object_id != referenced_object_id
+```
+
+6. [sys.sql_expression_dependencies](https://www.red-gate.com/simple-talk/sql/t-sql-programming/dependencies-and-references-in-sql-server/)
+```sql
+	SELECT
+		  coalesce(object_schema_name(Referencing_ID)+'.','')+ --likely schema name
+		    object_name(Referencing_ID)+ --definite entity name
+		    coalesce('.'+col_name(referencing_ID,referencing_minor_id),'')
+		       AS [referencing],
+		  coalesce(Referenced_server_name+'.','')+ --possible server name if cross-server
+		       coalesce(referenced_database_name+'.','')+ --possible database name if cross-database
+		       coalesce(referenced_schema_name+'.','')+ --likely schema name
+		       coalesce(referenced_entity_name,'') + --very likely entity name
+		       coalesce('.'+col_name(referenced_ID,referenced_minor_id),'')AS [referenced]
+		FROM sys.sql_expression_dependencies
+		--WHERE referencing_id =object_id('Categories')
+		ORDER BY [referenced]
+```
+
+
 [<<](../SQL.md)
 |
 [home](../README.md)

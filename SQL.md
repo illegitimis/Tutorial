@@ -35,7 +35,7 @@ registry entries: `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft SQL Server\Use
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/TemporaryTables.md)
 + [Views](./sql/views.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/views.md)
-
++ [Sample databases](./sql/samples.md)
 
 
 [<<](README.md) 
