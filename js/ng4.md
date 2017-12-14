@@ -14,6 +14,9 @@
 - [Angular CLI wiki](https://github.com/angular/angular-cli/wiki)
 - [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
 - [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
+- Angular Botstrap `ngx-bootstrap` by _valor-software_
+  + [Popover](https://valor-software.com/ngx-bootstrap/#/popover)
+  + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
 
 ## start
 
