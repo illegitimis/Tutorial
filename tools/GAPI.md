@@ -14,12 +14,20 @@
 + [C# DOCS](https://developers.google.com/resources/api-libraries/documentation/sheets/v4/csharp/latest/)
 + [apps-script guides rest quickstart dotnet](https://developers.google.com/apps-script/guides/rest/quickstart/dotnet)
 + [Drive.v3 home](https://developers.google.com/drive/v3/web/about-sdk)
++ Get file contents as JSON, `https://docs.google.com/spreadsheets/d/KEY/edit#gid=0`, [sample](https://docs.google.com/spreadsheets/d/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/edit#gid=0), needs to be published. 
+Get all data as JSON, `https://spreadsheets.google.com/feeds/list/KEY/od6/public/values?alt=json`, [sample](https://spreadsheets.google.com/feeds/list/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/od6/public/values?alt=json). [Gdoc](https://developers.google.com/gdata/samples/spreadsheet_sample).
+
 
 ## Sheetsu
 
 * [Sheetsu test sheet](https://docs.google.com/spreadsheets/d/1WTwXrh2ZDXmXATZlQIuapdv4ldyhJGZg7LX8GlzPdZw/edit#gid=0)
 * [Sheetsu api sample](https://sheetsu.com/apis/v1.0/020b2c0f)
 * [Sheetsu docs](https://docs.sheetsu.com/)
+
+## Google Cloud 
++ JSON API [authorize requests](https://cloud.google.com/storage/docs/json_api/v1/how-tos/authorizing)
+   
+
 
 [<<](../tools.md)
 |

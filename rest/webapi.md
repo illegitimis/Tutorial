@@ -1,6 +1,6 @@
 # Web API
 
-# Unvisited Queue / upload & download files
+## upload & download files
 + [ASP.NET Web API file download service with resume support](http://piotrwalat.net/file-download-service-with-resume-support-using-asp-net-web-api/)
    
    _18 October 2012_ on ASP.NET Web API, ASP.NET, file download, HEAD verb, memory mapped files, Range, resume, Accept-Ranges 
@@ -39,3 +39,10 @@
 
   _2014_ · by damienbod · in .NET, MVC, TopHeaderMenu, Web
 + [ASP.NETCore: Create a Web API application](https://social.technet.microsoft.com/wiki/contents/articles/36340.asp-netcore-create-a-web-api-application.aspx) _Nov 2016_
+
+## Unvisited Queue
+
++ [json:api](http://jsonapi.org/) A specification for building APIs in JSON, 2017, v1.0 stable
++ [Implementations](http://jsonapi.org/implementations/) both client & server
+
+

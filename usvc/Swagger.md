@@ -1,9 +1,11 @@
 # Swagger
 
-Rest calls with AutoRest/Swagger [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](../rest/autorest.md).
+- Rest calls with AutoRest/Swagger [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](../rest/autorest.md).
+- [Generating clients for your APIs with AutoRest](https://dzimchuk.net/generating-clients-for-your-apis-with-autorest/)
+- [How to set up Swashbuckle vs Microsoft.AspNetCore.Mvc.Versioning](https://stackoverflow.com/questions/40929916/how-to-set-up-swashbuckle-vs-microsoft-aspnetcore-mvc-versioning)
 
+## Recipes
 
-[Generating clients for your APIs with AutoRest](https://dzimchuk.net/generating-clients-for-your-apis-with-autorest/)
 _packages_
 ```csproj
 <PackageReference Include="Swashbuckle" Version="5.5.3" />
@@ -16,8 +18,7 @@ using Swashbuckle.AspNetCore.Swagger;
 
 app.UseSwagger();
 
-app.UseSwaggerUI(c =>
-{
+app.UseSwaggerUI(c => 
 	c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "API V1.0");
 });
 services.AddSwaggerGen(c => {
@@ -53,18 +54,13 @@ public class SwaggerTests
     }
 }
 ```
+_AutoRest strongly typed API better name generation_
+  
+  Instead of `[ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(void))]` use `[SwaggerResponse(StatusCodes.Status401Unauthorized, null, "Unauthorized")]`.
+  
+  Instead of `[Action("name")]` use `SwaggerOperation("Ping", Schemes = new[] { "http" })]`.
 
-_autorest batch files_
 
-```cmd
-npm install -g autorest@1.2.2
-autorest --input-file=http://localhost:51228/swagger/docs/v1 --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI --debug
-autorest --input-file=http://localhost:63300/swagger/v1.0/swagger.json --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI --debug
-autorest --input-file=http://vs-qa1-app1.dev.eshopworld.com:51221/swagger/docs/v1 --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI.Processing --debug
-autorest --input-file=http://vs-qa1-app1.dev.eshopworld.com:51222/swagger/docs/v1 --csharp --output-folder=./Generated/ --namespace=webApi.ClientAPI.Routing --debug
-```
-
-`ProducesResponseType(200)`
 
 [<<](../SOA.md)
 |
