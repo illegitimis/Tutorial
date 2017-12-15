@@ -17,6 +17,7 @@
 - Angular Botstrap `ngx-bootstrap` by _valor-software_
   + [Popover](https://valor-software.com/ngx-bootstrap/#/popover)
   + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
+- [Angular Custom Form Controls with Reactive Forms and NgModel](https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel)  
 
 ## start
 
@@ -80,11 +81,7 @@ npm run webdriver-start
 npm run e2e
 #interactive mode: 
 npm run e2e-live
-```  
-   
-    
-
-	
+```
 * `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)	
 	
 [<<](../JS.md)
