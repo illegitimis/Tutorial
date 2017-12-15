@@ -7,6 +7,8 @@
 + [Quick guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 + [Sass: Mixin or Placeholder?](https://www.sitepoint.com/sass-mixin-placeholder/)
 + [simplelineicons](http://simplelineicons.com/) preview
++ `list-style` [*](https://css-tricks.com/almanac/properties/l/list-style/)
++ **todo** https://stackoverflow.com/questions/33310216/scss-loader-with-webpack
 
 
 [<<](README.md)

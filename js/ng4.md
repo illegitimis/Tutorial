@@ -71,15 +71,21 @@ with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 * Test coverage reports with [karma-coverage](https://github.com/karma-runner/karma-coverage)
 * **Unit tests** _single run_: `npm test`, _live mode (TDD style)_: `npm run test-watch`	
 * **End-to-End Tests** (aka. e2e, integration) 
-  + _single run_:
+```sh
+#single run, in a tab, if not already running!
+npm start
+#in a new tab:
+npm run webdriver-start
+#in another new tab: 
+npm run e2e
+#interactive mode: 
+npm run e2e-live
+```  
+   
     
-	in a tab, *if not already running!*: `npm start`
-  
-    in a new tab: `npm run webdriver-start`
-  
-    in another new tab: `npm run e2e`
-  + _interactive mode_: `npm run e2e-live`	
+
 	
+* `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)	
 	
 [<<](../JS.md)
 |
