@@ -18,6 +18,7 @@
   + [Popover](https://valor-software.com/ngx-bootstrap/#/popover)
   + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
 - [Angular Custom Form Controls with Reactive Forms and NgModel](https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel)  
+- [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
 
 ## start
 
