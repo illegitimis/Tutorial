@@ -19,6 +19,9 @@
   + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
 - [Angular Custom Form Controls with Reactive Forms and NgModel](https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel)  
 - [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
+- [Angular 4.3 HttpClient](https://medium.com/codingthesmartway-com-blog/angular-4-3-httpclient-accessing-rest-web-services-with-angular-2305b8fd654b) (Accessing REST Web Services With Angular)
+- [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
+ 
 
 ## start
 
@@ -84,7 +87,16 @@ npm run e2e
 npm run e2e-live
 ```
 * `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)	
-	
+
+## internationalization / localization
++ [Angular2 and i18n](https://devblog.dymel.pl/2016/11/03/angular2-and-i18n-translate-your-app/) - translating your application by _Michał Dymel on November 3, 2016_ 
++ [Official guide to *i18n*](https://angular.io/guide/i18n) 	
++ [Making Sense of Angular Internationalization (i18n)](https://medium.com/@t_tsonev/making-sense-of-angular-internationalization-i18n-e7b26fb9c587) Apr 10, 2017
++ [Deploying an i18n Angular app with angular-cli](https://medium.com/@feloy/deploying-an-i18n-angular-app-with-angular-cli-fc788f17e358) Apr 17, and [Angular Translator *app*](http://angular-translator.elol.fr/en/)
+ 
+
+
+
 [<<](../JS.md)
 |
 [home](../README.md) 
