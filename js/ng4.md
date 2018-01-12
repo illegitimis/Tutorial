@@ -11,7 +11,6 @@
 - [Angular official cheatsheet](https://angular.io/guide/cheatsheet)
 - Archwizard: [github repo](https://github.com/madoar/ng2-archwizard-demo), [demo](https://madoar.github.io/ng2-archwizard-demo/), [npm](https://www.npmjs.com/package/ng2-archwizard)
 - PrimeNG: [GitRepo](https://github.com/primefaces/primeng-quickstart-webpack), [Get Started](https://www.primefaces.org/primeng/#/setup)
-- [Angular CLI wiki](https://github.com/angular/angular-cli/wiki)
 - [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
 - [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
 - Angular Botstrap `ngx-bootstrap` by _valor-software_
@@ -21,7 +20,7 @@
 - [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
 - [Angular 4.3 HttpClient](https://medium.com/codingthesmartway-com-blog/angular-4-3-httpclient-accessing-rest-web-services-with-angular-2305b8fd654b) (Accessing REST Web Services With Angular)
 - [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
- 
+
 
 ## start
 
@@ -95,7 +94,12 @@ npm run e2e-live
 + [Deploying an i18n Angular app with angular-cli](https://medium.com/@feloy/deploying-an-i18n-angular-app-with-angular-cli-fc788f17e358) Apr 17, and [Angular Translator *app*](http://angular-translator.elol.fr/en/)
  
 
-
+## Angular CLI
+- [How to use Angular CLI with Visual Studio 2017](http://candordeveloper.com/2017/04/12/how-to-use-angular-cli-with-visual-studio-2017/) Apr17
+- [Angular CLI wiki](https://github.com/angular/angular-cli/wiki)
+- [Angular2 CLI with ASP.NET Core application - tutorial](https://devblog.dymel.pl/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/) oct16
+- [Angular CLI With .NET Core](https://dustinewers.com/angular-cli-with-net-core/) Mar17
+- [.Net Core / Angular CLI - NPM Build Automation (html to cshtml)](https://stackoverflow.com/a/43662823/2239678)
 
 [<<](../JS.md)
 |
