@@ -9,4 +9,6 @@
 
 [home](./README.md)
 |
+[<<](./tools.md)
+|
 [wiki](https://github.com/illegitimis/Tutorial/wiki)
