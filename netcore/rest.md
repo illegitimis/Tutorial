@@ -20,7 +20,9 @@
  public IActionResult Get([FromQuery] int id, [FromQuery] MessageRequest request)
 ```
 
-
++ In-memory caching in ASP.NET Core
+  - add `microsoft.extensions.caching.memory`
+  - [In-memory caching is a service](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/memory) that is referenced from your app using `Dependency Injection`. Call `AddMemoryCache` in `ConfigureServices`
 ```cs
 
 ```
