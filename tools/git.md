@@ -66,7 +66,7 @@ git config http.postBuffer 524288000
 ```bat
 rem path to file is relative to root
 rem differentiates revisions from files
-$ git log --follow -p -- ./src/esw.Shipping.Api/Validation/OrderRequestDtoValidator.cs
+$ git log --follow -p -- ./src/Proj/Validation/OrderRequestDtoValidator.cs
 ```
 
 6. **stashes**
