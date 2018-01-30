@@ -53,7 +53,7 @@ git remote add bradyholt-cron-expression-descriptor-master https://github.com/br
 git pull bradyholt-cron-expression-descriptor-master master
 # unstage_conflicts
 ```
-If using ~SourceTree~ one can pull from remote origin, selecting the dev branch to pull.
+If using _SourceTree_ one can pull from remote origin, selecting the dev branch to pull.
 
 4. git push SSL_ERROR_SYSCALL 
 ```cmd
@@ -63,13 +63,18 @@ git config http.postBuffer 524288000
 5. file **history**
   - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension
   - file commit history with patches and beyond renames
-```cs
-# 
-# path to file is relative to root
-# -- differentiates revisions from files
+```bat
+rem path to file is relative to root
+rem differentiates revisions from files
 $ git log --follow -p -- ./src/esw.Shipping.Api/Validation/OrderRequestDtoValidator.cs
 ```
 
+6. **stashes**
+```sh
+git stash list
+git stash show stash@{0}
+
+```
 
 [<<](../tools.md)
 |
