@@ -34,9 +34,9 @@ Modify _csproj_.
 ```
 + Generate migration from Package Manager Console
 ```cmd
-Add-Migration -Name "PackageInfoShipmentPurpose" -OutputDir "Migrations" -Project esw.Shipping.Api
-Update-Database -Migration "PackageInfoShipmentPurpose" -Project esw.Shipping.Api
-Remove-Migration -Force -Project esw.Shipping.Api
+Add-Migration -Name "PackageInfoShipmentPurpose" -OutputDir "Migrations" -Project EFProj
+Update-Database -Migration "PackageInfoShipmentPurpose" -Project EFProj
+Remove-Migration -Force -Project EFProj
 ```
 + Generate migration from Powershell / Git Bash
 ```bat
@@ -76,7 +76,7 @@ public partial class OrderTableBrandIdMerchantIdOrderReferenceUniqueIndexAdded :
  [DbContext(typeof(SomeEntityContext))]
 partial class ShippingEntityContextModelSnapshot : ModelSnapshot {
 	protected override void BuildModel(ModelBuilder modelBuilder) {
-		  modelBuilder.Entity("esw.Shipping.Api.Models.BusinessEntities.Order", b => {
+		  modelBuilder.Entity("EFProj.Models.BusinessEntities.Order", b => {
 			b.HasIndex("Id1", "Id2", "SomeReference").IsUnique();
 		  });		 
 	}
