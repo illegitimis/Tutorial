@@ -35,7 +35,8 @@ Modify _csproj_.
 + Generate migration from Package Manager Console
 ```cmd
 Add-Migration -Name "PackageInfoShipmentPurpose" -OutputDir "Migrations" -Project esw.Shipping.Api
-update-database -Migration "PackageInfoShipmentPurpose" -Project esw.Shipping.Api
+Update-Database -Migration "PackageInfoShipmentPurpose" -Project esw.Shipping.Api
+Remove-Migration -Force -Project esw.Shipping.Api
 ```
 + Generate migration from Powershell / Git Bash
 ```bat
