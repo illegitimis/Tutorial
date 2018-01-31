@@ -34,8 +34,8 @@ Modify _csproj_.
 ```
 + Generate migration from Package Manager Console
 ```cmd
-Add-Migration -Name "PackageInfoShipmentPurpose" -OutputDir "Migrations" -Project EFProj
-Update-Database -Migration "PackageInfoShipmentPurpose" -Project EFProj
+Add-Migration -Name "MigrationName" -OutputDir "Migrations" -Project EFProj
+Update-Database -Migration "MigrationName" -Project EFProj
 Remove-Migration -Force -Project EFProj
 ```
 + Generate migration from Powershell / Git Bash
