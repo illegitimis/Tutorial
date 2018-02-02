@@ -88,6 +88,15 @@ npm run e2e-live
 * `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)	
 
 ## internationalization / localization
++ [ngx-translate](http://www.ngx-translate.com/) The internationalization (i18n) library for Angular
+  - [ngx-translate/core](https://github.com/ngx-translate/core) 
+  <br>`npm install @ngx-translate/core --save`
+  - [ngx-translate/http-loader](https://github.com/ngx-translate/http-loader/tree/4f95eb6184a3b2316691a6364e742cbe32e72189),
+  <br> a loader for ngx-translate that loads translations with http calls
+  <br> `npm install @ngx-translate/http-loader --save`
+  - [How to translate your Angular app](How to translate your Angular app with ngx-translate ) with ngx-translate, tutorial 
+  - Samples: [demo plnkr](https://embed.plnkr.co/pYo6bFPRRxVPgRR8toDt/), Teradata/covalent [commit](https://github.com/Teradata/covalent/commit/776331bb5bc4098a4264a36e1275b3c83727e61a) and [repo](https://github.com/Teradata/covalent/search?utf8=%E2%9C%93&q=DEMO_ONE.SELECT)
+
 + [Angular2 and i18n](https://devblog.dymel.pl/2016/11/03/angular2-and-i18n-translate-your-app/) - translating your application by _Michał Dymel on November 3, 2016_ 
 + [Official guide to *i18n*](https://angular.io/guide/i18n) 	
 + [Making Sense of Angular Internationalization (i18n)](https://medium.com/@t_tsonev/making-sense-of-angular-internationalization-i18n-e7b26fb9c587) Apr 10, 2017
