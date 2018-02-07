@@ -18,8 +18,7 @@
   + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
 - [Angular Custom Form Controls with Reactive Forms and NgModel](https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel)  
 - [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
-- [Angular 4.3 HttpClient](https://medium.com/codingthesmartway-com-blog/angular-4-3-httpclient-accessing-rest-web-services-with-angular-2305b8fd654b) (Accessing REST Web Services With Angular)
-- [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
+- [TS Playground](http://www.typescriptlang.org/play/index.html) 
 
 
 ## start
@@ -36,6 +35,11 @@ webpack --watch --progress  --profile
 ng serve --open
 ng generate component [name]
 ```
+## http
+
+- latest angular.io [HttpClient](https://angular.io/guide/http) guide
+- [Angular 4.3 HttpClient](https://medium.com/codingthesmartway-com-blog/angular-4-3-httpclient-accessing-rest-web-services-with-angular-2305b8fd654b) (Accessing REST Web Services With Angular)
+- [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
 
 ## component inheritance
 
