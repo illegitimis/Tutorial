@@ -11,8 +11,6 @@
 - [Angular official cheatsheet](https://angular.io/guide/cheatsheet)
 - Archwizard: [github repo](https://github.com/madoar/ng2-archwizard-demo), [demo](https://madoar.github.io/ng2-archwizard-demo/), [npm](https://www.npmjs.com/package/ng2-archwizard)
 - PrimeNG: [GitRepo](https://github.com/primefaces/primeng-quickstart-webpack), [Get Started](https://www.primefaces.org/primeng/#/setup)
-- [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
-- [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
 - Angular Botstrap `ngx-bootstrap` by _valor-software_
   + [Popover](https://valor-software.com/ngx-bootstrap/#/popover)
   + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
@@ -40,6 +38,7 @@ ng generate component [name]
 - latest angular.io [HttpClient](https://angular.io/guide/http) guide
 - [Angular 4.3 HttpClient](https://medium.com/codingthesmartway-com-blog/angular-4-3-httpclient-accessing-rest-web-services-with-angular-2305b8fd654b) (Accessing REST Web Services With Angular)
 - [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
+- [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
 
 ## component inheritance
 
@@ -113,6 +112,14 @@ npm run e2e-live
 - [Angular2 CLI with ASP.NET Core application - tutorial](https://devblog.dymel.pl/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/) oct16
 - [Angular CLI With .NET Core](https://dustinewers.com/angular-cli-with-net-core/) Mar17
 - [.Net Core / Angular CLI - NPM Build Automation (html to cshtml)](https://stackoverflow.com/a/43662823/2239678)
+- [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
+
+## Promise vs Observable
+- [Angular - Promise vs Observable](https://fullstack-developer.academy/angular-promise-vs-observable/) 8 January 2018
+- [Taking advantage of Observables in Angular](https://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html) Nov 2016
+- [Angular2 observables vs. promises](https://stackoverflow.com/questions/39081715/angular2-observables-vs-promises)
+- [rangle.io Observables vs Promises](https://angular-2-training-book.rangle.io/handout/observables/observables_vs_promises.html)
+
 
 [<<](../JS.md)
 |
