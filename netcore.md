@@ -25,10 +25,10 @@
 
 ## middleware
 
-- [Middleware samples from aspnet docs](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/middleware/sample)
+- Middleware samples from aspnet docs [Jan18](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?tabs=aspnetcore2x), [old](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/middleware/sample)
 - [Writing Custom Middleware in ASP.NET Core 1.0](https://www.exceptionnotfound.net/writing-custom-middleware-in-asp-net-core-1-0/)
-- [App startup in ASP.NET Core](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/startup.md)
-- [basic middleware samples docs](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/middleware.md)
+- [App startup in ASP.NET Core](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/startup.md), Aug17
+- basic middleware samples docs [2x](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/middleware/index.md), [old](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/middleware.md)
 - _Migrating HTTP handlers and modules to ASP.NET Core middleware_ [on Github](https://github.com/aspnet/Docs/blob/master/aspnetcore/migration/http-modules.md) and [MsDocs](https://docs.microsoft.com/en-us/aspnet/core/migration/http-modules)
 
 ## project
