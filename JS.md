@@ -7,6 +7,7 @@
 + [You don't know JS](https://github.com/getify/You-Dont-Know-JS#you-dont-know-js-book-series) book series on Git
 + [page](netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript) for 'Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular' course
 [![wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
++ my [npm](./js/npm.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./js/npm.md)
 
 
 ## Pens
@@ -19,12 +20,6 @@
 and [Git repo](https://github.com/joeeames/WebpackFundamentalsCourse)
 + my [webpack](./js/webpack.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./js/webpack.md)
 
-## Recipes
-+ update **npm** to latest version 
-```cmd
-npm install npm@latest -g
-```
-
 ## Libraries
 + [markdown.js](https://github.com/evilstreak/markdown-js)
 + RxJS
@@ -32,11 +27,8 @@ npm install npm@latest -g
     - [RxJS API document](http://reactivex.io/rxjs/)
     - [The Reactive Extensions for JavaScript](https://github.com/Reactive-Extensions/RxJS), old git page
 	- [switchmap doc](https://www.learnrxjs.io/operators/transformation/switchmap.html)
-+ Redux
-	- []()
-	- []()
-	- []()
-	- []()	
++ Redux (**to do**)
+	
 	
 [home](README.md) 
 | 
