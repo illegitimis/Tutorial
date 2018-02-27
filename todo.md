@@ -46,7 +46,7 @@
 - server initial response: `ETag: "01234567890abcdef"`
 - client later request : `If-None-Match: "01234567890abcdef"`
 - server later response : `304 Not Modified`
-## Notes 
+## mvc 
 **project.json**
 ```json
 "commands": {
@@ -54,14 +54,64 @@
 }
 ```
 
-
 ConfigureServices, authorization _before_ mvc
 ```cs
 services.AddAuthorization();
 services.AddMvc();
 ```
 
+## rest api design
+api design actions like translate compute translate (non-resource actions), 
+use verbs instead of nouns (exception)
+http://mybank.com/convert?from=EUR&to=SGD&amount=100
 
+
+bad design (/getAccount, /createFolder, /updateGroup, /verifyEmail, /searchGroupsByName)
+fundamentally two types of resources: collection & instance
+
+media types control format specification, content negotiation, and parsing rules, use headers: 
++ requests `Accept`(Accept:application/json, text/plain, applications/myResourceExtension.csv) 
++ response `Content-Type` (`application/json`, `application/foo+json`)
+
+Versioning  
++ URL (https:.api.stormpath.com/v1)
++ Media Type (`application/foo+json;application&v=1`)
+
+Better linking with hateoas, instead of just resource urls specify media type too
+200 OK GET /accounts/x7y8z9
+```json
+{
+    meta: {
+        href: 'https://api.andrei.com/v1/accounts/x7y8z9',
+        mediaType: 'application/ion+json;version=2&schema='
+    }
+}
+```
+
+reference expansion / entity expansion / link expansion / partial representation
+- `GET /accounts/x7y8z9?expand=someNode`
+- `GET /accounts/x7y8z9?fields=name,surname,directory(name)`
+
+as descriptive as possible, as much info, devs are customers
+POST /dirs 409 CONFLICT
+```json
+{
+    status: 409, 
+    code: 40924,
+    property: 'name',
+    message: 'A directory called "Avengers" already exists',
+    dev: 'A directory called "Avengers" already exists. If you have a stale cache, expire it.',
+    info: 'http://www.andrei.com/docs/api/errors/40924'
+```
+
+ Avoid sessions when possible Authenticate every request if necessary Stateless Authorize based on resource content, NOT URL! Use Existing Protocol: Oauth 1.0a, Oauth2, Basic over SSL only Custom Authentication Scheme: Only if you provide client code / SDK Only if you really, really know what you‟re doing Use API Keys instead of Username/Passwords
+
+ 401 Unauthorized UNAUTHENTICATED no valid credentials
+ 401 Forbidden UNAUTHORIZED no rights
+
+  HTTP Authentication Schemes 
+  • Server response to issue challenge: WWW-Authenticate: <scheme name> realm=“Application Name” 
+  • Client request to submit credentials: Authorization: <scheme name> <data>
 
 
 [<<](./README.md) 
