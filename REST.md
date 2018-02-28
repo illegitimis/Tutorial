@@ -12,6 +12,7 @@
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webapi.md)
 + [Web API upload & download files](./rest/webApiUpDownLoad.md) 
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webApiUpDownLoad.md)
++ [Microsoft REST API Guidelines](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md) 
 
 ## Principles
 1. An important principle for (RESTful) API design and usage is Postel's Law, aka the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle) (_RFC 1122_): “**Be liberal in what you accept, be conservative in what you send**.” 

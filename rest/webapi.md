@@ -2,6 +2,10 @@
 
 ## Recipes
 
++ [Web API Versioning](webApiVersion.md) 
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](webApiVersion.md)
++ [Web API upload & download files](./webApiUpDownLoad.md) 
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./webApiUpDownLoad.md)
 + One _exception_ to the **use nouns instead of verbs** rule when designing routes are actions like: `translate`, `compute`, `convert`. All non-resource actions which remind of some non-rest service should **use verbs instead of nouns**, e.g. 
 `http://mybank.com/convert?from=EUR&to=SGD&amount=100`.
 + samples of _bad design_, `/getAccount`, `/createFolder`, `/updateGroup`, `/verifyEmail`, `/searchGroupsByName`
@@ -42,16 +46,6 @@
   - server initial response: `ETag: "01234567890abcdef"`
   - client later request : `If-None-Match: "01234567890abcdef"`
   - server later response : `304 Not Modified`
-
-## Versioning
-See versioning chapter in Wildermuth's __Web API Design__ [slides](https://onedrive.live.com/embed?cid=B3A4DB2490C51CCD&resid=B3A4DB2490C51CCD%21204889&authkey=AJdXhKx3Nh8gzvo&em=2) 
-[![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://onedrive.live.com/embed?cid=B3A4DB2490C51CCD&resid=B3A4DB2490C51CCD%21204889&authkey=AJdXhKx3Nh8gzvo&em=2)
-  - URL path, `https://api.stormpath.com/v1`, `http://api.tumblr.com/v2/user/`
-  - Uri parameter, `http://api.netflix.com/catalog/titles/series/70023522?v=1.5`
-  - Media Type/Content Negotiation `application/foo+json;application&v=1`, `Content Type: application/vnd.github.1.param+json`
-  - Request/Custom Header, like Azure `x-ms-version: 2011-08-18`, `x-MyApp-Version: 2.1`
-
-
 
 ## Unvisited Queue
 
