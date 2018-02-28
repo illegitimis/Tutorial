@@ -8,7 +8,7 @@
 + [Registry of link relations](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
 + [Call a REST API](./rest/call.md) from .NET
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/call.md)
-+ [Web API](./rest/webapi.md) general
++ [Web API](./rest/webapi.md) general, recipes and design principles
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webapi.md)
 + [Web API upload & download files](./rest/webApiUpDownLoad.md) 
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webApiUpDownLoad.md)

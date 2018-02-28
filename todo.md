@@ -11,8 +11,6 @@
 + [ASP.NET - Use Custom Middleware to Detect and Fix 404s in ASP.NET Core Apps](https://msdn.microsoft.com/en-us/magazine/mt707525.aspx) jun16
 + [Filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) dec16
 + [Exploring Middleware as MVC Filters in ASP.NET Core 1.1](https://andrewlock.net/exploring-middleware-as-mvc-filters-in-asp-net-core-1-1/)
-+ [Tips And Tricks To Improve WEB API Performance](http://www.c-sharpcorner.com/article/important-steps-to-increasing-web-api-performance/) sep16
-+ [Compressing Web API Response Using DotNetZip](http://www.c-sharpcorner.com/article/compressing-web-api-response-to-using-dotnetzip/) jun16
 + [52 tips & tricks to boost .net performance](https://drive.google.com/file/d/0B_u1rzdqYCnzOUdfS3pFeWN2Nkk/view)
 + [EF Core or micro-ORM?](https://docs.microsoft.com/en-us/dotnet/standard/modern-web-apps-azure-architecture/work-with-data-in-asp-net-core-apps#ef-core-or-micro-orm)
 + [Integration Testing for ASP.NET Core Applications](http://www.dotnetcurry.com/aspnet-core/1420/integration-testing-aspnet-core) Feb18
@@ -60,58 +58,7 @@ services.AddAuthorization();
 services.AddMvc();
 ```
 
-## rest api design
-api design actions like translate compute translate (non-resource actions), 
-use verbs instead of nouns (exception)
-http://mybank.com/convert?from=EUR&to=SGD&amount=100
 
-
-bad design (/getAccount, /createFolder, /updateGroup, /verifyEmail, /searchGroupsByName)
-fundamentally two types of resources: collection & instance
-
-media types control format specification, content negotiation, and parsing rules, use headers: 
-+ requests `Accept`(Accept:application/json, text/plain, applications/myResourceExtension.csv) 
-+ response `Content-Type` (`application/json`, `application/foo+json`)
-
-Versioning  
-+ URL (https:.api.stormpath.com/v1)
-+ Media Type (`application/foo+json;application&v=1`)
-
-Better linking with hateoas, instead of just resource urls specify media type too
-200 OK GET /accounts/x7y8z9
-```json
-{
-    meta: {
-        href: 'https://api.andrei.com/v1/accounts/x7y8z9',
-        mediaType: 'application/ion+json;version=2&schema='
-    }
-}
-```
-
-reference expansion / entity expansion / link expansion / partial representation
-- `GET /accounts/x7y8z9?expand=someNode`
-- `GET /accounts/x7y8z9?fields=name,surname,directory(name)`
-
-as descriptive as possible, as much info, devs are customers
-POST /dirs 409 CONFLICT
-```json
-{
-    status: 409, 
-    code: 40924,
-    property: 'name',
-    message: 'A directory called "Avengers" already exists',
-    dev: 'A directory called "Avengers" already exists. If you have a stale cache, expire it.',
-    info: 'http://www.andrei.com/docs/api/errors/40924'
-```
-
- Avoid sessions when possible Authenticate every request if necessary Stateless Authorize based on resource content, NOT URL! Use Existing Protocol: Oauth 1.0a, Oauth2, Basic over SSL only Custom Authentication Scheme: Only if you provide client code / SDK Only if you really, really know what you‟re doing Use API Keys instead of Username/Passwords
-
- 401 Unauthorized UNAUTHENTICATED no valid credentials
- 401 Forbidden UNAUTHORIZED no rights
-
-  HTTP Authentication Schemes 
-  • Server response to issue challenge: WWW-Authenticate: <scheme name> realm=“Application Name” 
-  • Client request to submit credentials: Authorization: <scheme name> <data>
 
 ## angular
 observables and behaviorsubject
