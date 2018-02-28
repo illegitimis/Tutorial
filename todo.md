@@ -113,5 +113,9 @@ POST /dirs 409 CONFLICT
   • Server response to issue challenge: WWW-Authenticate: <scheme name> realm=“Application Name” 
   • Client request to submit credentials: Authorization: <scheme name> <data>
 
+## angular
+observables and behaviorsubject
+https://stackoverflow.com/a/40231605/2239678
+https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md
 
 [<<](./README.md) 
