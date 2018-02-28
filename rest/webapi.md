@@ -4,6 +4,8 @@
 
 + [Web API Versioning](webApiVersion.md) 
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](webApiVersion.md)
++ [ETag](etag.md) 
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](etag.md)
 + [Web API upload & download files](./webApiUpDownLoad.md) 
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./webApiUpDownLoad.md)
 + One _exception_ to the **use nouns instead of verbs** rule when designing routes are actions like: `translate`, `compute`, `convert`. All non-resource actions which remind of some non-rest service should **use verbs instead of nouns**, e.g. 
@@ -42,10 +44,6 @@
 + HTTP Authentication Schemes 
   - Server response to issue challenge: [WWW-Authenticate](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate). Format: `WWW-Authenticate: <scheme name> realm=<application name>`. Schemes: `Basic`, `Bearer`, `Digest`, `OAuth`.     
   - Client request to submit credentials: [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization). Format: `Authorization: <scheme name|type> <data|credentials>`, e.g. `Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l` where string is _base64 encoded_ from the username and the password are combined with a colon (`aladdin:opensesame`).
-+ [ETag](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14\.19)
-  - server initial response: `ETag: "01234567890abcdef"`
-  - client later request : `If-None-Match: "01234567890abcdef"`
-  - server later response : `304 Not Modified`
 
 ## Unvisited Queue
 
