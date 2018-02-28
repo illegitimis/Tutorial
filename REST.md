@@ -8,8 +8,10 @@
 + [Registry of link relations](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
 + [Call a REST API](./rest/call.md) from .NET
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/call.md)
-+ [Web API](./rest/webapi.md) from .NET
++ [Web API](./rest/webapi.md) general
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webapi.md)
++ [Web API upload & download files](./rest/webApiUpDownLoad.md) 
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webApiUpDownLoad.md)
 
 ## Principles
 1. An important principle for (RESTful) API design and usage is Postel's Law, aka the [Robustness Principle](https://en.wikipedia.org/wiki/Robustness_principle) (_RFC 1122_): “**Be liberal in what you accept, be conservative in what you send**.” 
