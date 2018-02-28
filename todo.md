@@ -40,10 +40,6 @@
 - [Authorize](https://www.tutorialspoint.com/asp.net_core/asp.net_core_authorize_attribute.htm)
 - [5](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/limitingidentitybyscheme?tabs=aspnetcore2x)
 
-## ETag
-- server initial response: `ETag: "01234567890abcdef"`
-- client later request : `If-None-Match: "01234567890abcdef"`
-- server later response : `304 Not Modified`
 ## mvc 
 **project.json**
 ```json
