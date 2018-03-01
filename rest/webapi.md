@@ -6,6 +6,8 @@
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](webApiVersion.md)
 + [ETag](etag.md) 
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](etag.md)
++ [Caching](cache.md) 
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](cache.md)
 + [Web API upload & download files](./webApiUpDownLoad.md) 
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./webApiUpDownLoad.md)
 + One _exception_ to the **use nouns instead of verbs** rule when designing routes are actions like: `translate`, `compute`, `convert`. All non-resource actions which remind of some non-rest service should **use verbs instead of nouns**, e.g. 
