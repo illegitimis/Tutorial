@@ -24,8 +24,8 @@
 7. **Stateless Server**: No side effects on the server when calls are made into it. No State Preserved between  requests. Can't lean on older ideas, like _ASP.NET Session State_, or even _Application State_. This would include authentication information on each call.
 8. **Cache and ETags**. There isn't extra work being pushed onto the system for every request. No data store roundtrip unless necessary. Cache also implies that we're going to use some mechanic to version the object that was retrieved from the server, _not just the ID_, _but also the version of that_. 
 9. *Uniform Interface*. Broken down into: the _Identification of Resources_, the Representations that support _modification_, Self-Description, and HATEOAS.
-10.Layered System
-11. Code On-Demand.
+10. _Layered System_: client -> firewall -> gateway (proxy) -> load balancer -> multiple servers.
+11. *Code On-Demand* optional by Fleming, ability to deliver code to be run by client.
 
 ## Books
 + [**Architectural Styles and the Design of Network-based Software Architectures**](http://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf), 
