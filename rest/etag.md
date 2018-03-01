@@ -25,11 +25,15 @@ var cacheHandler = new CachingHandler(new CacheCow.Server.EntityTagStore.XYZEnti
 cacheHandler.AddLastModifiedHeader = true;
 config.MessageHandlers.Add (cacheHandler);
 ```
-- It's going to look for requests that have the `If-Match` and `If-Not-Match`, and do the right thing, and it's going to look for the responses as they go out to Push them into the Cache, and Push those ETags in for us.
-- this ETag is not only weak, but it's going to change every time the server Refreshes, or, more importantly what happens if it hits another load balance server.
+- It's going to look for requests that have the `If-Match` and `If-None-Match`, and do the right thing, and it's going to look for the responses as they go out to Push them into the Cache, and Push those ETags in for us. 
+- this ETag is not only weak, but it's going to change every time the server Refreshes, or, more importantly what happens if it hits another load balance server (`W/`).
 - On rebuild, website restarted and therefore all that Cache and Memory was wiped.
-- `CacheCow.Server.EntityTagStore.SqlServer` use a non-memory data store, something persistent, like SQL Server, RavenDB, Memcache, one of those different facilities for actually caching these responses.
-- ``, `System.Configuration.`
+- `CacheCow.Server.EntityTagStore.SqlServer` use a non-memory data store, something persistent, like SQL Server, RavenDB, Memcache.
+  can't find the stored procedure named `GetCache`. Deploy script included in package.
+- [CacheCow](https://github.com/aliostad/CacheCow/wiki) is a library for implementing HTTP caching on both client and server in ASP.NET Web API. It uses _message handlers on both client and server_ to intercept request and response and apply caching logic and rules.
++ [KevinDockx/HttpCacheHeaders](https://github.com/KevinDockx/HttpCacheHeaders) **ASP.NET Core middleware** that adds `HttpCache` headers to responses (`Cache-Control`, `Expires`, `ETag`, `Last-Modified`), and implements cache expiration & validation models 
++ [Implement HTTP Cache (ETag) in ASP.NET Core Web API](https://stackoverflow.com/questions/35458737/implement-http-cache-etag-in-asp-net-core-web-api/35555544#35555544) on SO
++ And more notably, when you're dealing with a server farm, or even a server garden, this is a good way to have Cache that's stored in sort of a central place. Now, this may feel a lot like having side effects of things like session state. So even though _this Cache system does have some side effects on the server_, the benefit of using Cached objects, and being able to test concurrency using that Cache, for me greatly _outweigh the bending of the rule for a Stateless Server_.
 
 
 [<](./webapi.md)
@@ -37,10 +41,3 @@ config.MessageHandlers.Add (cacheHandler);
 [<<](../REST.md)
 |
 [home](../README.md) 
-
-
-  can't find the stored procedure named GetCache. 
-  
-  So, CacheCow implies that for the SQL Server version we're going to want to have a store procedure, actually a number of store procedures that are going to handle pushing and pulling into the database. It's using store procedures for speed, but at the end of the day, it's going to expect that it's going to have a couple of tables, as well as the store procedures exist in the database you're pointing at. How do we get them in there? Simply by using the cacheHandler it's not going to prebuild those tables and store procedures for you, much like you might expect from something like Entity Framework. Instead, and in my book a little odd, they've included the script. 
-  
-  Let's go ahead and Open this up in File Explorer, inside of the NuGet package. So, if we go to look at Packages, CacheCow, SQL Server, and then a folder called Scripts, there's going to be a SQL script. Let's go ahead and Open this in the editor of your choice. I'm going to use Sublime Text. So, I'm going to go ahead and Copy that out so I have it in my Clipboard, and now we're going to want to actually go over to the SQL Server Object Explorer, or you could do this at the command line, or really any way that you're used to dealing with the SQL Server, but this is the way I prefer. And, I'm going to go look for our database, and right in the database itself, I'm going to go ahead and issue a new query. There's our database, and I'm just going to Execute this code that came with CacheCow in order to put it in our database. The problem here is if you're storing it in some other server for actual production, you're going to need to repeat this process. So, part of your deployment strategy is going to be taking this and also executing it on the server. There isn't any real magic trick to make this work. You may want to put it in the initialization for Entity Framework. You may want to put it as part of Deployment Scripts, that's up to you. But, to get this to work, we're going to go ahead and just Execute it. It executed. I'm not going to bother saving it. And now if we come over here, and we Execute it again, we're going to now see that there's an ETag, but this ETag no longer has the weak prefix. Because this is stored in SQL Server, it knows it's more persistent, and so it's going to give you an ETag that's going to live for quite a while. So until this is cleaned up or timed out inside the Cache, and the way CacheCow works, you're ETag is going to be valid for quite a while. We can still go ahead and use that same value for the If-None-Match, and get our 304 because the object hasn't changed, or has not been modified. We're going to get that same behavior, but we're now storing it in a more persistent store. And more notably, when you're dealing with a server farm, or even a server garden, this is a good way to have Cache that's stored in sort of a central place. Now, this may feel a lot like having side effects of things like session state. So even though this Cache system does have some side effects on the server, the benefit of using Cached objects, and being able to test concurrency using that Cache, for me greatly outweigh the bending of the rule for a Stateless Server.
