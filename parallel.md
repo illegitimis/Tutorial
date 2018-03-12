@@ -15,6 +15,7 @@
 + [Introduction to TPL Dataflow](./TPLDataflow.pdf) Stephen Toub, Microsoft, April 2011 [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](./parallel/TPLDataflow.pdf)
 + [Parallel Programming with Microsoft .NET](https://msdn.microsoft.com/en-us/library/ff963553.aspx) Design Patterns for Decomposition and Coordination on Multicore Architectures
 + [There Is No Thread](http://blog.stephencleary.com/2013/11/there-is-no-thread.html) Nov, 2013
++ [Introduction to RX](http://www.introtorx.com/Content/v1.0.10621.0/02_KeyTypes.html) @ Lee Campbell
 
 [home](README.md)
 |
