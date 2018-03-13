@@ -1,6 +1,6 @@
 # Angular4 notes
 
-## links
+## Links
 
 - [Rangle's Angular book](https://1drv.ms/b/s!AnIyfO51kH7NlVvjZo4Mwh9jlDvW)
 [![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https://1drv.ms/b/s!AnIyfO51kH7NlVvjZo4Mwh9jlDvW)
@@ -16,23 +16,10 @@
   + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
 - [Angular Custom Form Controls with Reactive Forms and NgModel](https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel)  
 - [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
-- [TS Playground](http://www.typescriptlang.org/play/index.html) 
+- [TS Playground](http://www.typescriptlang.org/play/index.html)
+- [wizard](https://github.com/angular-wizard/angular-wizard) should be ported. `angular2-wizard`: [npm](https://www.npmjs.com/package/angular2-wizard), [demo](https://maiyaporn.github.io/angular2-wizard-demo/)
+- [Quickstart: Angular2 with TypeScript and Gulp](http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html)
 
-
-## start
-
-```cmd
-npm install -g @angular/cli
-ng new my-app
-cd my-app
-npm install
-npm run start:dev /* package.json */
-npm run watch -- --define eswenv=dev
-webpack-dev-server --port=3000 --open
-webpack --watch --progress  --profile
-ng serve --open
-ng generate component [name]
-```
 ## http
 
 - latest angular.io [HttpClient](https://angular.io/guide/http) guide
@@ -40,14 +27,40 @@ ng generate component [name]
 - [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
 - [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
 
+## test
+
+- Testing Angular 2 code with [Jasmine](http://jasmine.github.io/) and [Karma](http://karma-runner.github.io/).
+- Coverage with [Istanbul](https://github.com/gotwarlost/istanbul)
+- End-to-end Angular code using [Protractor](https://angular.github.io/protractor/).
+  When debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. 
+  You can do this with the element explorer.[Protractor Interactive Mode here](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively).
+- Tests reports with [karma-tfs-reporter](https://github.com/sgbj/karma-tfs-reporter)
+- Test coverage reports with [karma-coverage](https://github.com/karma-runner/karma-coverage)
+- **Unit tests** _single run_: `npm test`, _live mode (TDD style)_: `npm run test-watch`
+- **End-to-End Tests** (aka. e2e, integration) 
+```sh
+#single run, in a tab, if not already running!
+npm start
+#in a new tab:
+npm run webdriver-start
+#in another new tab: 
+npm run e2e
+#interactive mode: 
+npm run e2e-live
+```
+- `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)
+
+## forms & validation
+
+- [Breeze](http://breeze.github.io/doc-js/breeze-angular.html)
+- [form-validation](https://angular.io/guide/form-validation) official
+- [scotch](https://scotch.io/tutorials/angular-2-form-validation) angular-2-form-validation
+
 ## component inheritance
 
 - extend & inherit Angular component on [SO](https://stackoverflow.com/questions/36475626/how-to-extend-inherit-angular2-component)
 - [New features in Angular 2.3](https://medium.com/@gerard.sans/angular-2-new-features-in-angular-2-3-f2e73f16a09e)
-- [Component Inheritance in Angular 2](https://scotch.io/tutorials/component-inheritance-in-angular-2) 
-with a focus on [ViewContainerRef](https://v2.angular.io/docs/ts/latest/api/core/index/ViewContainerRef-class.html)
-and [TemplateRef](https://v2.angular.io/docs/ts/latest/api/core/index/TemplateRef-class.html)
-with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
+- [Component Inheritance in Angular 2](https://scotch.io/tutorials/component-inheritance-in-angular-2) with a focus on [ViewContainerRef](https://v2.angular.io/docs/ts/latest/api/core/index/ViewContainerRef-class.html) and [TemplateRef](https://v2.angular.io/docs/ts/latest/api/core/index/TemplateRef-class.html) with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 - [angular 2 component inheritance plnkr sample](https://embed.plnkr.co/hMgaYPVRiXMCiKBdfqHy/)
 - [plnkr style inheritance sample](http://plnkr.co/edit/bWa1JmH7NaSaJffLsl0x?p=preview)
 - [component decorator metadata](https://medium.com/@amcdnl/inheritance-in-angular2-components-206a167fc259)
@@ -67,30 +80,8 @@ with a [toggle sample](https://plnkr.co/edit/tSLIxUSTaqEfJK5NAD2D?p=preview)
 	* [Dynamic View and Components](https://medium.com/nerdlog/angular-2-dynamic-view-and-components-330205fa6896), very nice [sample](http://plnkr.co/edit/wh4VJG?p=preview)
 	* [ViewContainerRef](https://angular.io/api/core/ViewContainerRef), Represents a container where one or more Views can be attached.
 	
-## test
-
-* Testing Angular 2 code with [Jasmine](http://jasmine.github.io/) and [Karma](http://karma-runner.github.io/).
-* Coverage with [Istanbul](https://github.com/gotwarlost/istanbul)
-* End-to-end Angular code using [Protractor](https://angular.github.io/protractor/). 
-  When debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. 
-  You can do this with the element explorer.[Protractor Interactive Mode here](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively).
-* Tests reports with [karma-tfs-reporter](https://github.com/sgbj/karma-tfs-reporter)
-* Test coverage reports with [karma-coverage](https://github.com/karma-runner/karma-coverage)
-* **Unit tests** _single run_: `npm test`, _live mode (TDD style)_: `npm run test-watch`	
-* **End-to-End Tests** (aka. e2e, integration) 
-```sh
-#single run, in a tab, if not already running!
-npm start
-#in a new tab:
-npm run webdriver-start
-#in another new tab: 
-npm run e2e
-#interactive mode: 
-npm run e2e-live
-```
-* `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)	
-
 ## internationalization / localization
+
 + [ngx-translate](http://www.ngx-translate.com/) The internationalization (i18n) library for Angular
   - [ngx-translate/core](https://github.com/ngx-translate/core) 
   <br>`npm install @ngx-translate/core --save`
@@ -99,14 +90,13 @@ npm run e2e-live
   <br> `npm install @ngx-translate/http-loader --save`
   - [How to translate your Angular app](How to translate your Angular app with ngx-translate ) with ngx-translate, tutorial 
   - Samples: [demo plnkr](https://embed.plnkr.co/pYo6bFPRRxVPgRR8toDt/), Teradata/covalent [commit](https://github.com/Teradata/covalent/commit/776331bb5bc4098a4264a36e1275b3c83727e61a) and [repo](https://github.com/Teradata/covalent/search?utf8=%E2%9C%93&q=DEMO_ONE.SELECT)
-
 + [Angular2 and i18n](https://devblog.dymel.pl/2016/11/03/angular2-and-i18n-translate-your-app/) - translating your application by _Michał Dymel on November 3, 2016_ 
 + [Official guide to *i18n*](https://angular.io/guide/i18n) 	
 + [Making Sense of Angular Internationalization (i18n)](https://medium.com/@t_tsonev/making-sense-of-angular-internationalization-i18n-e7b26fb9c587) Apr 10, 2017
 + [Deploying an i18n Angular app with angular-cli](https://medium.com/@feloy/deploying-an-i18n-angular-app-with-angular-cli-fc788f17e358) Apr 17, and [Angular Translator *app*](http://angular-translator.elol.fr/en/)
- 
 
 ## Angular CLI
+
 - [How to use Angular CLI with Visual Studio 2017](http://candordeveloper.com/2017/04/12/how-to-use-angular-cli-with-visual-studio-2017/) Apr17
 - [Angular CLI wiki](https://github.com/angular/angular-cli/wiki)
 - [Angular2 CLI with ASP.NET Core application - tutorial](https://devblog.dymel.pl/2016/10/25/angular2-cli-with-aspnet-core-application-tutorial/) oct16
@@ -114,16 +104,26 @@ npm run e2e-live
 - [.Net Core / Angular CLI - NPM Build Automation (html to cshtml)](https://stackoverflow.com/a/43662823/2239678)
 - [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
 
+```cmd
+npm install -g @angular/cli angular-cli typescript
+ng new my-app
+cd my-app
+npm install
+npm run start:dev /* package.json */
+npm run watch -- --define eswenv=dev
+webpack-dev-server --port=3000 --open
+webpack --watch --progress  --profile
+ng serve --open
+ng generate component [name]
+ng serve
+npm run lite
+```
+
 ## Promise vs Observable
+
 - [Angular - Promise vs Observable](https://fullstack-developer.academy/angular-promise-vs-observable/) 8 January 2018
 - [Taking advantage of Observables in Angular](https://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html) Nov 2016
 - [Angular2 observables vs. promises](https://stackoverflow.com/questions/39081715/angular2-observables-vs-promises)
 - [rangle.io Observables vs Promises](https://angular-2-training-book.rangle.io/handout/observables/observables_vs_promises.html)
 
-
-[<<](../JS.md)
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
-
+[<<](../JS.md) | [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
