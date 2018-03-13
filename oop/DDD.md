@@ -9,21 +9,25 @@
 
 ## Videos and other online material
 
-+[TechEd Europe 2014: Architecting and Implementing Domain-Driven Design Patterns with Microsoft .NET](https://channel9.msdn.com/Events/TechEd/Europe/2014/DEV-B211)
-+[VaughnVernon/IDDD_Samples_NET](https://github.com/VaughnVernon/IDDD_Samples_NET)
-+[naa4e SDD](http://sddconf.com/brands/sdd/library/Architecting_Implementing_DDD_Patterns.pdf)
-+[Master's thesis, CS Department, University of Copenhagen, spring 2009, Domain-driven design in action: Designing an identity provider](http://www.diku.dk/forskning/performance-engineering/Klaus/speciale.pdf)
-+[DDD insights blog](http://effective-ddd.blogspot.ro/2015/12/strategic-domain-driven-design.html)
-+[Colorado slides](https://www.cs.colorado.edu/~kena/classes/5448/f12/presentation-materials/roads.pdf)
-+[IDDD excerpt](http://ptgmedia.pearsoncmg.com/images/9780321834577/samplepages/0321834577.pdf)
-+[IDDD excerpt 2](https://books.google.ro/books?id=X7DpD5g3VP8C&pg=PA1&hl=ro&source=gbs_toc_r&cad=4#v=onepage&q&f=false)
-+[Tackling Business Complexity in a Microservice with DDD and CQRS Patterns](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/) msdn
-+[eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering) sample `Ordering API`
-+[jbogard/MediatR](https://github.com/jbogard/MediatR) Simple, unambitious mediator implementation in .NET
+- [TechEd Europe 2014: Architecting and Implementing Domain-Driven Design Patterns with Microsoft .NET](https://channel9.msdn.com/Events/TechEd/Europe/2014/DEV-B211)
+- [VaughnVernon/IDDD_Samples_NET](https://github.com/VaughnVernon/IDDD_Samples_NET)
+- [naa4e SDD](http://sddconf.com/brands/sdd/library/Architecting_Implementing_DDD_Patterns.pdf)
+- [Master's thesis, CS Department, University of Copenhagen, spring 2009, Domain-driven design in action: Designing an identity provider](http://www.diku.dk/forskning/performance-engineering/Klaus/speciale.pdf)
+- [DDD insights blog](http://effective-ddd.blogspot.ro/2015/12/strategic-domain-driven-design.html)
+- [Colorado slides](https://www.cs.colorado.edu/~kena/classes/5448/f12/presentation-materials/roads.pdf)
+- [IDDD excerpt](http://ptgmedia.pearsoncmg.com/images/9780321834577/samplepages/0321834577.pdf)
+- [IDDD excerpt 2](https://books.google.ro/books?id=X7DpD5g3VP8C&pg=PA1&hl=ro&source=gbs_toc_r&cad=4#v=onepage&q&f=false)
+- [Tackling Business Complexity in a Microservice with DDD and CQRS Patterns](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/) msdn
+- [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering) sample `Ordering API`
+- [jbogard/MediatR](https://github.com/jbogard/MediatR) Simple, unambitious mediator implementation in .NET
 
 ## Principles
 
 - model a single sub-domain at a time, focus on autonomous pieces of the domain, resulting software is closer to business understanding, often no side effects
+- It describes _independent_ problem areas as **Bounded Contexts** (each Bounded Context correlates to a microservice)
+- avoid chatty communications between microservices
+- you should create a boundary around things that need cohesion. It is similar to the [Inappropriate Intimacy](https://sourcemaking.com/refactoring/smells/inappropriate-intimacy) code smell when implementing classes. If _two microservices need to collaborate a lot with each other_, they _should probably be the same microservice_.
+
 
 [<<](../OOP.md)
 |
