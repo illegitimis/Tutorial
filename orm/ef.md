@@ -46,7 +46,8 @@ install-package entityframework.commands -pre
 dotnet ef migrations add "Initial" -o "Data\Migrations"
 dotnet ef database update
 ```
-+ cs MultiKeyIndexEntity
++ multiple column index
+**OnModelCreating**
 ```cs
 class SomeEntityContext : DbContext {
 	protected override void OnModelCreating(ModelBuilder modelBuilder) {
@@ -55,10 +56,12 @@ class SomeEntityContext : DbContext {
                 .IsUnique();
 	}
 }
+```
 
+or add a separate migration
+```cs
 public partial class OrderTableBrandIdMerchantIdOrderReferenceUniqueIndexAdded : Migration {
-        protected override void Up(MigrationBuilder migrationBuilder)
-        {
+        protected override void Up(MigrationBuilder migrationBuilder) {
             migrationBuilder.CreateIndex(
                 name: "IX",
                 table: "SomeTable",
@@ -66,28 +69,24 @@ public partial class OrderTableBrandIdMerchantIdOrderReferenceUniqueIndexAdded :
                 unique: true);
         }
 
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
+        protected override void Down(MigrationBuilder migrationBuilder) {
             migrationBuilder.DropIndex(
                 name: "IX",
                 table: "SomeTable");
         }
     }
+```
 
+A Model Snapshot is the current state of the model stored in a class file named _<YourContext>ModelSnapshot.cs_
+```cs
  [DbContext(typeof(SomeEntityContext))]
 partial class ShippingEntityContextModelSnapshot : ModelSnapshot {
 	protected override void BuildModel(ModelBuilder modelBuilder) {
 		  modelBuilder.Entity("EFProj.Models.BusinessEntities.Order", b => {
 			b.HasIndex("Id1", "Id2", "SomeReference").IsUnique();
-		  });		 
+		  });
 	}
 }	
 ```
 
-
-[<<](../ORM.md)
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
-
+[<<](../ORM.md) | [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
