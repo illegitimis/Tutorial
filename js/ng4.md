@@ -12,8 +12,8 @@
 - Archwizard: [github repo](https://github.com/madoar/ng2-archwizard-demo), [demo](https://madoar.github.io/ng2-archwizard-demo/), [npm](https://www.npmjs.com/package/ng2-archwizard)
 - PrimeNG: [GitRepo](https://github.com/primefaces/primeng-quickstart-webpack), [Get Started](https://www.primefaces.org/primeng/#/setup)
 - Angular Botstrap `ngx-bootstrap` by _valor-software_
-  + [Popover](https://valor-software.com/ngx-bootstrap/#/popover)
-  + [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
+  - [Popover](https://valor-software.com/ngx-bootstrap/#/popover)
+  - [TimePicker](https://valor-software.com/ngx-bootstrap/#/timepicker)
 - [Angular Custom Form Controls with Reactive Forms and NgModel](https://coryrylan.com/blog/angular-custom-form-controls-with-reactive-forms-and-ngmodel)  
 - [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
 - [TS Playground](http://www.typescriptlang.org/play/index.html)
@@ -26,6 +26,11 @@
 - [Angular 4.3 HttpClient](https://medium.com/codingthesmartway-com-blog/angular-4-3-httpclient-accessing-rest-web-services-with-angular-2305b8fd654b) (Accessing REST Web Services With Angular)
 - [Introduction to Angular's HttpClient](https://alligator.io/angular/httpclient-intro/) July, 2017.
 - [http](http://www.syntaxsuccess.com/viewarticle/angular-2.0-and-http) simple calls, observables, promises, error handling
+- [httpclient-testing/github-api.model.ts](https://github.com/cironunes/httpclient-testing/blob/master/src/app/shared/github-api.model.ts)
+- [Testing HTTP requests](https://angular.io/guide/http#testing-http-requests)
+- [https://angular.io/api/common/http/testing/HttpTestingController](https://angular.io/api/common/http/testing/HttpTestingController)
+- [httpclient-testing/github-api.service.spec.ts](https://github.com/cironunes/httpclient-testing/blob/master/src/app/shared/github-api.service.spec.ts)
+- [Unit testing services with HttpClient](https://medium.com/netscape/testing-with-the-angular-httpclient-api-648203820712) on Medium
 
 ## test
 
