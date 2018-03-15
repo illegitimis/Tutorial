@@ -34,7 +34,7 @@
 
 ## test
 
-- Testing Angular 2 code with [Jasmine](http://jasmine.github.io/) and [Karma](http://karma-runner.github.io/).
+- Testing Angular 2 code with [Jasmine](http://jasmine.github.io/), [docs](https://jasmine.github.io/tutorials/your_first_suite) and [Karma](http://karma-runner.github.io/).
 - Coverage with [Istanbul](https://github.com/gotwarlost/istanbul)
 - End-to-end Angular code using [Protractor](https://angular.github.io/protractor/).
   When debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. 
@@ -42,18 +42,21 @@
 - Tests reports with [karma-tfs-reporter](https://github.com/sgbj/karma-tfs-reporter)
 - Test coverage reports with [karma-coverage](https://github.com/karma-runner/karma-coverage)
 - **Unit tests** _single run_: `npm test`, _live mode (TDD style)_: `npm run test-watch`
-- **End-to-End Tests** (aka. e2e, integration) 
+- **End-to-End Tests** (aka. e2e, integration)
+
 ```sh
 #single run, in a tab, if not already running!
 npm start
 #in a new tab:
 npm run webdriver-start
-#in another new tab: 
+#in another new tab:
 npm run e2e
-#interactive mode: 
+#interactive mode:
 npm run e2e-live
 ```
+
 - `it`, `fit`, `xit` [link](https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/#_disabled_and_focused_tests)
+- [official test guide](https://angular.io/guide/testing)
 
 ## forms & validation
 
