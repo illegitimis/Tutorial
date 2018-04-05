@@ -25,6 +25,7 @@
 - [https://angular.io/api/common/http/testing/HttpTestingController](https://angular.io/api/common/http/testing/HttpTestingController)
 - [httpclient-testing/github-api.service.spec.ts](https://github.com/cironunes/httpclient-testing/blob/master/src/app/shared/github-api.service.spec.ts)
 - [Unit testing services with HttpClient](https://medium.com/netscape/testing-with-the-angular-httpclient-api-648203820712) on Medium
+- [Angular HttpClient get Example](https://www.concretepage.com/angular-2/angular-httpclient-get-example) with in memory web api, Nov 2017.
 
 ## test
 
@@ -132,6 +133,15 @@ npm run lite
 
 ## PrimeNG
 
-[GitRepo](https://github.com/primefaces/primeng-quickstart-webpack), [Get Started](https://www.primefaces.org/primeng/#/setup), dropdown [showcase](https://www.primefaces.org/showcase/ui/ajax/dropdown.xhtml), & [docs](https://www.primefaces.org/primeng/#/dropdown)
+[GitRepo](https://github.com/primefaces/primeng-quickstart-webpack), [Get Started](https://www.primefaces.org/primeng/#/setup), dropdown [showcase](https://www.primefaces.org/showcase/ui/ajax/dropdown.xhtml), & [docs](https://www.primefaces.org/primeng/#/dropdown), [theming](https://www.primefaces.org/primeng/#/theming), [p-table](https://www.primefaces.org/primeng/#/table)
+
+## misc
+
+- [Understanding Router State](https://vsavkin.com/angular-router-understanding-router-state-7b5b95a12eab)
+- `ActivatedRoute` [docs](https://angular.io/api/router/ActivatedRoute)
+- [User Authentication with Angular and ASP.NET Core](https://fullstackmark.com/post/10/user-authentication-with-angular-and-asp-net-core) Mar _17_
+- [JWT Authentication with ASP.NET Core 2 Web API, Angular 5, .NET Core Identity and Facebook Login](https://fullstackmark.com/post/13/jwt-authentication-with-aspnet-core-2-web-api-angular-5-net-core-identity-and-facebook-login) Jan _18_
+- [Token based authentication in ASP.NET Core](https://dotnetthoughts.net/token-based-authentication-in-aspnet-core/) Oct _17_
+- [AspNetCore identity cookie settings](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?tabs=aspnetcore2x#cookie-settings) 
 
 [<<](../JS.md) | [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
