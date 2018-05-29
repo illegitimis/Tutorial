@@ -1,11 +1,20 @@
 # Nunta
 
+## president
+
++ elena 0763.550.406, 0720.047.541, 0760.087.384, 0766.747.379
++ **pro**: deschis la negociere
++ **con**: roma si milano nu imi plac 
++ contact: [events](www.president-events.ro), [site](www.the-president.ro), [fb](https://www.facebook.com/pages/Centrul-de-Evenimente-the-President/589984981102723)
+
+
 ## Cismigiu
 
 + meniu: [**65**](http://www.crowncismigiu.ro/meniuri/meniu-65-euro-nunta-sambata), [**69**](http://www.crowncismigiu.ro/meniuri/meniu-69-euro-nunta-sambata)
 + [contact](http://www.crowncismigiu.ro/contact) Vasi Vîlcu - Event Manager _0730.008.186_
 + Adresă: str. Ioan Zalomit nr. 6, sector 1, Bucuresti
 + Pro: lobby de 50 mp si _curte interioara_
++ **Disponibilitate: 21, 27 Octombrie 2018.**
 
 ## Crystal Palace
 
@@ -26,6 +35,8 @@
   + [Sala Londra](http://www.crystalpalaceballrooms.ro/salile-noastre/londra/galerie-nunta/)
   + [Sala Atena](http://www.crystalpalaceballrooms.ro/salile-noastre/atena/galerie-nunta/)
   + [Sala Roma](http://www.crystalpalaceballrooms.ro/salile-noastre/roma/galerie-nunta/)
++ Pentru aranjamentele florale, va pot oferi un pret incepand de la **40 lei aranjament / masa** – pretul difera in functie de tipul de flori ales.
++ **Avansul perceput** reprezinta  30% din valoarea totala a contractului. Acest procent de 30% se imparte in 3 transe a cate 10% care se vor achita dupa cum urmeaza: 10% la semnarea contracului, a doua transa de 10% se va achita la o data stabilita de comun acord in functie de bugetul dumneavoastra, iar a treia transa de 10% se va achita cu o luna inainte de eveniment ( sau la o alta data preferata de dvs.). 
 
 ---
 
