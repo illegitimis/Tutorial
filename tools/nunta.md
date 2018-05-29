@@ -1,5 +1,11 @@
 # Nunta
 
+## princess
+
++  gratuit la orice meniu: Aranjamente florale, Aranjamente mese si scaune (diferite modele), Ospatari pe toata durata evenimentului, Nu lucram cu firma de catering, tot ce inseamna partea de preparate din meniu sunt facute in bucataria proprie. Excludere taxa 10% pentru staff, Consultanta gratuita
++ Vizionari de luni pana duminica intre orele 12:00 - 21:00 
++ [Video Meniuri](https://www.youtube.com/watch?v=LJODb7VuwLQ&t=74s)
+
 ## president
 
 + elena 0763.550.406, 0720.047.541, 0760.087.384, 0766.747.379
