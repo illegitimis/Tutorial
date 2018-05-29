@@ -1,5 +1,11 @@
 # Nunta
 
+## Cismigiu
+
++ meniu: [**65**](http://www.crowncismigiu.ro/meniuri/meniu-65-euro-nunta-sambata), [**69**](http://www.crowncismigiu.ro/meniuri/meniu-69-euro-nunta-sambata)
++ [contact](http://www.crowncismigiu.ro/contact) Vasi Vîlcu - Event Manager _0730.008.186_
++ Adresă: str. Ioan Zalomit nr. 6, sector 1, Bucuresti
++ Pro: lobby de 50 mp si _curte interioara_
 
 ## Crystal Palace
 
@@ -25,6 +31,7 @@
 
 ## Reem
 
++ **pica ptr ca zero disponibilitate**
 + Pro: baia, taxa servire inclusa, sonorizare
 + Con: industrial
 + _Sos Progresului 90-100_, Sector 5, Bucuresti, [București 050696](https://goo.gl/maps/d5eQFBNPk4N2), [street view](https://www.google.com/maps/place/Strada+Progresului+90,+Bucure%C8%99ti,+Romania/@44.4203761,26.072352,3a,75y,227.73h,86.83t/data=!3m7!1e1!3m5!1sFKcpbPVzWjANfxuu7VK05A!2e0!6s%2F%2Fgeo2.ggpht.com%2Fmaps%2Fphotothumb%2Ffd%2Fv1%3Fbpb%3DChAKDnNlYXJjaC5UQUNUSUxFEmUKNwkJgT_def-xQBFp3K7KyYqBpBojCxDThbhCGhoSGAoUChIJCYE_3Xn_sUARt4kdfjtJzwcQWgwSCg3WBXoaFYJRig8aEglVObZBfP-xQBFrLrMkR3iuNSoKDdYFehoVglGKDxoECFYQVg%26gl%3DUS!7i13312!8i6656!4m5!3m4!1s0x40b1ff79dd3f8109:0xa4818ac9caaedc69!8m2!3d44.4204502!4d26.0723074?hl=en-US)
@@ -39,6 +46,7 @@
 
 ## Capital Plaza Hotel
 
++ **pica ptr ca e liber doar la inceputul lui noiembrie**
 + Dorobanti, Victoriei, B-dul Iancu de Hunedoara nr. 54, [HARTA](https://goo.gl/maps/C4DHA38thWT2), [street view](https://www.google.ro/maps/@44.4528672,26.0964543,3a,75y,174.85h,92.46t/data=!3m6!1e1!3m4!1suAuZln6Ihrtfmttyn9TI5g!2e0!7i13312!8i6656)
 + [site](https://www.capitalplaza.ro/), [detalii](http://www.locatiinuntabucuresti.ro/detalii/capital-plaza-hotel-358)
 + Telefon: **0733 200 226**, **0372 080 080**
