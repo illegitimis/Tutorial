@@ -1,5 +1,14 @@
 # Nunta
 
+## Jardin des Merveilles/PressHouseBallroom
+
++ Salonul _Victoria_ din locatia _PressHouseBallroom_, din Casa Presei, pe data de **13 si 20 Octombrie**
++ Salonul _Capricci Bianchi_, din locatia _Jardin des Merveilles_ de pe malul lacului Plumbuita, pe data de **6 Octombrie**
++ Toate pachetele noastre includ urmatoarele servicii: stalpisori metalici cu cordon rosu, covor rosu, mese de cocktail exterioare ( unde permite locatia), amenajare salon cu huse pentru scaune si fete masa brocart, casuta de dar, rame pentru numerele de pe mese, suport pentru opisul de primire a invitatilor, boluri cu alune si covrigei ( la nunti si botezuri), suporti lumanari de cununie, degustare meniu (cu eventuale modificari-la nunti si botezuri), bar de limonada pentru doua ore
++ La semnarea contractului se va achita un avans de doar 10% din valoarea totala. 
++ Bogdan Dimitrie, 0740301568
++ [phb-events](http://www.phb-events.ro), [fb](http://www.facebook.com/PressHouseBallroom), [complexjardin](http://complexjardin.ro/), [fb2](https://www.facebook.com/Complex-Jardin-1731301167200505/), [carutacubucate](http://carutacubucate.ro), [fb3](https://www.facebook.com/carutacubucate/)
+
 ## princess
 
 +  gratuit la orice meniu: Aranjamente florale, Aranjamente mese si scaune (diferite modele), Ospatari pe toata durata evenimentului, Nu lucram cu firma de catering, tot ce inseamna partea de preparate din meniu sunt facute in bucataria proprie. Excludere taxa 10% pentru staff, Consultanta gratuita
@@ -15,7 +24,6 @@
 + **pro**: deschis la negociere
 + **con**: roma si milano nu imi plac 
 + contact: [events](www.president-events.ro), [site](www.the-president.ro), [fb](https://www.facebook.com/pages/Centrul-de-Evenimente-the-President/589984981102723)
-
 
 ## Cismigiu
 
