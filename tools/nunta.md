@@ -4,6 +4,9 @@
 
 +  gratuit la orice meniu: Aranjamente florale, Aranjamente mese si scaune (diferite modele), Ospatari pe toata durata evenimentului, Nu lucram cu firma de catering, tot ce inseamna partea de preparate din meniu sunt facute in bucataria proprie. Excludere taxa 10% pentru staff, Consultanta gratuita
 + Vizionari de luni pana duminica intre orele 12:00 - 21:00 
++ meniu: **bautura 17**, **mancare 47**
++ Adresa: Strada Sergent Ghercu Constantin nr. 24-26 , sector 6
++ Contact: 0732545436, [mail](mailto:princessballroomandevents@gmail.com)
 + [Video Meniuri](https://www.youtube.com/watch?v=LJODb7VuwLQ&t=74s)
 
 ## president
