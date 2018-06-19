@@ -13,6 +13,8 @@
 - [Conditionally add styles to an element](https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/) 2016.01, [SO answer](https://stackoverflow.com/a/45816521/2239678)
 - [TS Playground](http://www.typescriptlang.org/play/index.html)
 - [Quickstart: Angular2 with TypeScript and Gulp](http://blog.codeleak.pl/2016/03/quickstart-angular2-with-typescript-and.html)
+- [angular update guide](https://update.angular.io/)
+- [git repos](https://github.com/angular) & official [blog](https://blog.angular.io/) & [resources](https://angular.io/resources)
 
 ## http
 
@@ -102,6 +104,7 @@ npm run e2e-live
 - [Angular CLI With .NET Core](https://dustinewers.com/angular-cli-with-net-core/) Mar17
 - [.Net Core / Angular CLI - NPM Build Automation (html to cshtml)](https://stackoverflow.com/a/43662823/2239678)
 - [Chrome Debugging with Angular CLI](https://github.com/Microsoft/vscode-recipes/tree/master/Angular-CLI) on vscode recipes
+- [quick start](https://angular.io/guide/quickstart)
 
 ```cmd
 npm install -g @angular/cli angular-cli typescript
@@ -142,6 +145,8 @@ npm run lite
 - [User Authentication with Angular and ASP.NET Core](https://fullstackmark.com/post/10/user-authentication-with-angular-and-asp-net-core) Mar _17_
 - [JWT Authentication with ASP.NET Core 2 Web API, Angular 5, .NET Core Identity and Facebook Login](https://fullstackmark.com/post/13/jwt-authentication-with-aspnet-core-2-web-api-angular-5-net-core-identity-and-facebook-login) Jan _18_
 - [Token based authentication in ASP.NET Core](https://dotnetthoughts.net/token-based-authentication-in-aspnet-core/) Oct _17_
-- [AspNetCore identity cookie settings](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?tabs=aspnetcore2x#cookie-settings) 
+- [AspNetCore identity cookie settings](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?tabs=aspnetcore2x#cookie-settings)
+- Material & CDK: [badge](https://material.angular.io/components/badge/examples), [get started](https://material.angular.io/guide/getting-started), [bottom sheet](https://material.angular.io/components/bottom-sheet/overview)
+
 
 [<<](../JS.md) | [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
