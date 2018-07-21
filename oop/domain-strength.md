@@ -4,13 +4,17 @@ _2010_. _Jimmy Bogard._
 
 ## toc
 
++ [aggregate-roots](./domain-strength.md#aggregate-roots)
+
+## article series
+
 + [Services in Domain-Driven Design](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/)
 + [primer](https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/)
 + [Aggregate Construction](https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/)
 + [Encapsulated collections](https://lostechies.com/jimmybogard/2010/03/10/strengthening-your-domain-encapsulated-collections/)
 + [Encapsulating operations](https://lostechies.com/jimmybogard/2010/03/24/strengthening-your-domain-encapsulating-operations/)
 + [The double dispatch pattern](https://lostechies.com/jimmybogard/2010/03/30/strengthening-your-domain-the-double-dispatch-pattern/)
-+ [No silver domain modeling bullets](/jimmybogard/2010/03/11/no-silver-domain-modeling-bullets/)
++ [No silver domain modeling bullets](https://lostechies.com/jimmybogard/2010/03/11/no-silver-domain-modeling-bullets/)
 
 
 ***
@@ -513,5 +517,14 @@ The intent of the `RecordPayment` method remains the same: it records a payment,
 ### Wrapping it up
 
 When a domain object begins to contain _too many_ responsibilities, we start to break out those extra responsibilities into things like value objects and domain services.  This does not mean we have to give up consistency and closure of operations, however.  **With the use of the double dispatch pattern, we can avoid anemic domain models**, as well as the _forlorn attempt to inject services into our domain model_. Our methods stay very intention-revealing, showing exactly what is needed to fulfill a request of recording a payment.
+
+## No silver domain modeling bullets
+
+This past week, I attended a presentation on **Object-Role Modeling** (with the unfortunate acronym ORM) and its application to DDD modeling. The talk itself was interesting, but more interesting were some of the questions from the audience. The gist of the tool is to provide a better modeling tool for domain modeling than traditional ERM tools or UML class diagrams. ORM is a tool for _fact-based analysis of informational models_, information being _data plus semantics_. I’m not an ORM expert, but there are plenty of resources on the web.
+One of the outputs of this tool could be a complete database, with all constraints, relationships, tables, columns and whatnot built and enforced. However, the speaker, Josh Arnold, mentioned repeatedly that it was not a good idea to do so, or at least it doesn’t scale at all. It could be used as a starting point, but that’s about it.
+
+Several times at the end of the talk, the question came up, “can I use this to generate my domain model” or “database”. Tool-generated applications are a lofty, but extremely flawed goal. Code generation is interesting as a one-time, one-way affair. But beyond that, code generation does not work. We’ve seen it time and time again.  Even though the tools get better, the underlying invalid assumption does not change. The fundamental problem is that _visual code design tools can never and will never be as expressive, flexible and powerful as actual code_.  There will always be a mismatch here, and it is a fool’s errand to try to build anything more. Instead, the ORM tool looked quite useful as a modeling tool for generating conversation and validating assumptions about their domain, rather than a domain model builder.
+
+Ultimately, the only validation that our domain is correct is the working code. There is no silver bullet for writing code, as there is always some level of complexity in our applications that requires customization. And there’s nothing that codegen tools hate more than modification of the generated code  However, I’m open to the idea that I’m wrong here, and I would love to be shown otherwise.
 
 [< DDD](./ddd.md) | [<< OOPD](../design.md)
