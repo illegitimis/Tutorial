@@ -442,3 +442,76 @@ The public contour of the Fee object is simplified as well.  We only _expose op
 We again see that a consistent theme in DDD is good OO and attention to code smells. DDD helps us by giving us patterns and direction, towards placing more and more logic inside our domain.  The difference between an intentionally anemic domain model (a [persistence model](https://lostechies.com/blogs/jimmy_bogard/archive/2009/12/03/persistence-model-and-domain-anemia.aspx)) and an anemic domain model is the presence of these code smells.  If you don't have a legion of supporting services propping up the state of your domain model, then there's no problem.
 
 However, it's these external domain services where we are likely to find the bulk of domain model smells.  Through attention to the code smells and refactorings [Fowler laid out](http://www.amazon.com/exec/obidos/ASIN/0201485672), we can move towards the concepts of **self-consistent aggregate roots with strongly-enforced boundaries**.
+
+## The double dispatch pattern
+It looks like there's a pattern emerging here around encapsulation, and **that's not an accident**. Many of the code smells in the Fowler or Kerievsky refactoring books deal with proper encapsulation of both data _and_ behavior. In the previous post, we looked at _closure of operations_, that _when an operation is completed_, the **aggregate root's state is consistent**.
+
+In many anemic domain models, **the behavior is there but in the wrong place**. For the DDD-literate, this is usually in a lot of domain services all poking at the state of the domain model. We can refactor these services to _enforce consistency_ through closed operations on our model, but there are cases where this sort of domain behavior _doesn't_ belong in the model.
+
+This now begins to be difficult to reconcile. We want to have a consistent model, but now we want to bring in services to the mix. Do we now forgo the concept of **Command/Query Separation** in our model, and just expose state? Or can we have our cake and eat it too?
+
+### Bringing in services
+
+The last example looked at fees, payments and customers.  When a payment is recorded against a fee, we re-calculate the balance:
+
+```cs
+public Payment RecordPayment(decimal paymentAmount)
+{
+    var payment = new Payment(paymentAmount, this);
+    _payments.Add(payment);
+    RecalculateBalance();
+    return payment;
+}
+
+private void RecalculateBalance()
+{
+    var totalApplied = _payments.Sum(payment => payment.Amount);
+    Balance = Amount - totalApplied;
+}
+```
+
+The problem comes in when calculating the balance becomes more difficult.  We might have a rather complex method for calculating payments, we might have _recurring payments, transfers, debits, credits_ and so on.  This might become **too much responsibility** for the `Fee` object. In fact, it could be argues that the Fee shouldn't be responsible for _how_ the balance is calculated, but instead only _ensure that when a payment is recorded, the balance is updated_.
+
+We have several options here:
+
+* _Update_ the Balance **outside** the `RecordPayment` method, with the caller "remembering"
+* Use a `BalanceCalculator` service _as part of_ the `RecordPayment` method
+
+**I never like a solution that requires a user of the domain to "remember" to call a method after another one**.  It's not intention-revealing, and tends to leave the domain model in a wacky _in-between state_. For many domains, this might be acceptable. But with more complexity comes the issue of trying to sort out what scenarios are valid or not. When a test breaks because an invariant is not satisfied, that's a clear message that something broke the domain.
+
+But if we leave our domain in half-baked states, it becomes much more difficult to decipher what to do when we change the behavior of our model and tests start to break. Are the existing scenarios supported, or are they just around?  In the case of the latter, that's where you start to see more defensive coding practices, throwing exceptions, gut-check asserts and so on.
+
+So we decide to go with the _Aggregate Root relying on a Domain Service for balance calculation_. Now we have to decide _where_ the service comes from.
+
+For those using a DI container, you might try to inject the dependencies into the aggregate root. That leads to a whole host of problems, which are so numerous I won't derail a perfectly good post by getting into it. Instead, there's another, more intention-revealing option: the double dispatch pattern.
+
+### Services and the double dispatch pattern
+
+The double dispatch pattern is quite simple.  It involves _passing an object to a method_, and the method body _calls another method on the passed in object_, usually _passing in itself as an argument_.  In our case, we'll first create an interface that represents our balance calculator domain service:
+
+```cs
+public interface IBalanceCalculator
+{
+    decimal Calculate(Fee fee);
+}
+```
+
+The signature of the method is important. It accepts a Fee object, but returns the total directly. _It doesn't try to modify the Fee_, allowing for a **side-effect free function**. I can call the calculator as many times as I like with a given Fee, and **I can be assured that the Fee object won't be changed**.  From the Fee side, I now need to use this service as part of recording a payment:
+
+```cs
+public Payment RecordPayment(decimal paymentAmount, IBalanceCalculator balanceCalculator)
+{
+    var payment = new Payment(paymentAmount, this);
+    _payments.Add(payment);
+    Balance = balanceCalculator.Calculate(this);
+    return payment;
+}
+```
+
+The intent of the `RecordPayment` method remains the same: it records a payment, and updates the balance. The balance on the Fee object will always be correct.  The wrinkle we added is that our RecordPayment method now delegates to a domain service, the IBalanceCalculator, for calculation of the balance. However, **the Fee object is still responsible for maintaining a correct balance**. We just call the Calculate method on the balance calculator, passing in "this", to figure out what the actual correct balance can be.
+
+### Wrapping it up
+
+When a domain object begins to contain _too many_ responsibilities, we start to break out those extra responsibilities into things like value objects and domain services.  This does not mean we have to give up consistency and closure of operations, however.  **With the use of the double dispatch pattern, we can avoid anemic domain models**, as well as the _forlorn attempt to inject services into our domain model_. Our methods stay very intention-revealing, showing exactly what is needed to fulfill a request of recording a payment.
+
+[< DDD](./ddd.md) | [<< OOPD](../design.md)
