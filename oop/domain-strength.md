@@ -1,6 +1,6 @@
 # Strengthening your domain
 
-_30 March, 2010_. _Jimmy Bogard._
+_2010_. _Jimmy Bogard._
 
 ## toc
 
@@ -10,19 +10,21 @@ _30 March, 2010_. _Jimmy Bogard._
 + [Encapsulated collections](https://lostechies.com/jimmybogard/2010/03/10/strengthening-your-domain-encapsulated-collections/)
 + [Encapsulating operations](https://lostechies.com/jimmybogard/2010/03/24/strengthening-your-domain-encapsulating-operations/)
 + [The double dispatch pattern](https://lostechies.com/jimmybogard/2010/03/30/strengthening-your-domain-the-double-dispatch-pattern/)
++ [No silver domain modeling bullets](/jimmybogard/2010/03/11/no-silver-domain-modeling-bullets/)
+
 
 ***
 
 ## services
 
-Services are **first-class citizens** of the domain model. When concepts of the model would _distort_ any Entity or Value Object, a Service is appropriate.
+Services are **first-class citizens** of the domain model. When concepts of the model would _distort_ any `Entity` or `Value Object`, a `Service` is _appropriate_.
 
 A good Service has these characteristics:
 + The operation relates to a domain concept that is _not a natural part_ of an Entity or Value Object
 + The interface is defined _in terms of_ other elements in the domain model
 + The operation is **stateless**
 
-Services are always exposed as an interface, not for “swappability”, testability or the like, but to expose a set of cohesive operations in the form of a contract. On a sidenote, it always bothered me when people say that an interface with one implementation is a design smell. No, an interface is used to expose a contract. Interfaces communicate design intent, far better than a class might.
+Services are _always exposed as an interface_, not for “swappability”, testability or the like, but to **expose a set of cohesive operations in the form of a contract**. On a sidenote, it always bothered me when people say that an interface with one implementation is a design smell. No, an interface is used to expose a contract. Interfaces communicate design intent, far better than a class might.
 
 But most examples I see of Services are something trivial, such as `IEmailSender`. But Services exist in most layers of the DDD layered architecture: _Application_, _Domain_, _Infrastructure_.
 
@@ -325,4 +327,118 @@ public class Customer
 
 There are many different ways I could enforce this relationship, from exposing an AddOrder method publicly on Customer or through the approach above. But either way, I'm moving towards an **intention-revealing interface**, and only exposing the operations I intend to support through my application.  Additionally, I'm ensuring that all invariants of my aggregates are satisfied at the completion of the Create Order operation. _When I create an Order, the domain model takes care of the relationship between Customer and Order without any additional manipulation_.
 
-If I publicly expose a collection class, I'm opening the doors for confusion and future bugs as I've now allowed my system to tinker with the implementation details of the relationship. It's my belief that the API of my domain model should explicitly support the operations needed to fulfill the needs of the application and interaction of the UI, **but nothing more**.
+_If I publicly expose a collection class_, I'm opening the doors for confusion and future bugs as I've now allowed my system to tinker with the implementation details of the relationship. It's my belief that the API of my domain model should explicitly support the operations needed to fulfill the needs of the application and interaction of the UI, but nothing more.
+
+## Encapsulating operations
+
+In previous posts, we walked through the journey from an intentionally anemic domain model (one specifically designed with CRUD in mind), towards a design of a stronger domain model design. Many of the comments on twitter and in the posts noted that many of the design techniques are just plain good OO design. Yes! That's the idea.  If we have behavior in our system, it might not be in the right place. The DDD domain design techniques are in place to _help move_ that _behavior from services surrounding the domain_ back into the domain model where it belongs.
+
+Besides managing the creation of aggregates and relationships inside and between aggregate roots, there comes the point where we need to actually..._update information in our domain model_.  One of the _tipping points_ from moving from a CRUD model to a DDD model is **emergent complexity in updating information in our model**.
+
+### Fees and Payments
+
+Let's suppose that in our domain we can levy `Fees` against `Customers`. Later, `Customers` can _make_ `Payments` on those `Fees`.  At any time, I can _look up_ a `Fee` and _determine_ the Fee's **balance**.  Or, I can look up all the Customer's Fees, and see a list of all the Fee's balances. Based on the previous posts, I might end up with something like this:
+
+```cs
+[Test]
+public void Should_apply_the_fee_to_the_customer_when_charging_a_customer_a_fee()
+{
+    var customer = new Customer();
+    var fee = customer.ChargeFee(100m);
+    fee.Amount.ShouldEqual(100m);
+    customer.Fees.ShouldContain(fee);
+}
+```
+
+The ChargeFee method is rather straightforward:
+
+```cs
+public Fee ChargeFee(decimal amount)
+{
+    var fee = new Fee(amount, this);
+    _fees.Add(fee);
+    return fee;
+}
+```
+
+Next, we want to be able to _apply a payment_ to a fee:
+
+```cs
+[Test]
+public void Should_be_able_to_record_a_payment_against_a_fee()
+{
+    var customer = new Customer();
+    var fee = customer.ChargeFee(100m);
+    var payment = fee.AddPayment(25m);
+    fee.RecalculateBalance();
+    payment.Amount.ShouldEqual(25m);
+    fee.Balance.ShouldEqual(75m);
+}
+```
+
+We _store_ a **calculated balance**, as this gives us much _better performance_, _querying abilities_ and so on.  It's rather easy to make this test pass:
+
+```cs
+public Payment AddPayment(decimal paymentAmount)
+{
+    var payment = new Payment(paymentAmount, this);
+    _payments.Add(payment);
+    return payment;
+}
+
+public void RecalculateBalance()
+{
+    var totalApplied = _payments.Sum(payment => payment.Amount);
+    Balance = Amount - totalApplied;
+}
+```
+
+However, our test looks rather strange at this point. We have a method to _establish the relationship_ between `Fee` and `Payment` (the `AddPayment` method), which acts as a _simple facade over the internal list_.  But what's with that extra `RecalculateBalance` method?  In many codebases, that 'RecalculateBalance' method would be in a `BalanceCalculationService`, reinforcing an anemic domain.
+
+But we can do one better. Isn't the act of recording a payment a complete operation?  **In the real physical world, when I give a person money, the entire transaction is completed as a whole**.  Either it all completes successfully, or the transaction is invalid.  In our example, how can I add a payment and the balance _not_ be immediately updated?  It's rather confusing to have to "remember" to use these extra calculation services and helper methods, just because our domain objects are too dumb to handle it themselves.
+
+### Thinking with commands
+
+When we called the `AddPayment` method, we _left_ our `Fee` aggregate root _in an in-between state_. **It had a Payment, yet its balance was incorrect**. If Fees are supposed to act as _consistency boundaries_, we've violated that consistency with this invalid state.  Looking strictly through a code smell standpoint, this is the [Inappropriate Intimacy](http://c2.com/cgi/wiki?InappropriateIntimacy) code smell.  **Inappropriate Intimacy is one of the biggest indicators of an anemic domain model**.  The behavior is there, but just in the wrong place.
+
+But we can help ourselves to enforce those aggregate boundaries with **encapsulation**.  Not just encapsulation like properties encapsulate fields, but **encapsulating the operation** of recording a fee.  Even the name of `AddPayment` could be improved, to `RecordPayment`.  The act of recording a payment in the Real World involves _adding the payment to the ledger_ and _updating the balance book_.  If the accountant solely adds the payment to the ledger, but does not update the balance book, they haven't yet finished recording the payment.  Why don't we do the same?  Here's our modified test:
+
+```cs
+[Test]
+public void Should_be_able_to_record_a_payment_against_a_fee()
+{
+    var customer = new Customer();
+    var fee = customer.ChargeFee(100m);
+    var payment = fee.RecordPayment(25m);
+    payment.Amount.ShouldEqual(25m);
+    fee.Balance.ShouldEqual(75m);
+}
+```
+
+We _got rid of_ that pesky, strange extra `Recalculate` call, and now _encapsulated the entire command of "Record this payment" to our aggregate root_, the `Fee` object.  The `RecordPayment` method now encapsulates the complete operation of recording a payment, ensuring that _the `Fee` root is self-consistent_ at the completion of the operation:
+
+```cs
+public Payment RecordPayment(decimal paymentAmount)
+{
+    var payment = new Payment(paymentAmount, this);
+    _payments.Add(payment);
+    RecalculateBalance();
+    return payment;
+}
+
+private void RecalculateBalance()
+{
+    var totalApplied = _payments.Sum(payment => payment.Amount);
+    Balance = Amount - totalApplied;
+}
+```
+
+Notice that we've also made the Recalculate method _private_, as this is an _implementation detail_ of how the Fee object keeps the balance consistent.  From someone using the `Fee` object, **we don't care how the Fee object keeps itself consistent**, we only want to care that it is consistent.
+
+The public contour of the Fee object is simplified as well.  We only _expose operations that we want to support_, captured in the names of our ubiquitous language.  The "How" is encapsulated behind the aggregate root boundary.
+
+### Wrapping it up
+
+We again see that a consistent theme in DDD is good OO and attention to code smells. DDD helps us by giving us patterns and direction, towards placing more and more logic inside our domain.  The difference between an intentionally anemic domain model (a [persistence model](https://lostechies.com/blogs/jimmy_bogard/archive/2009/12/03/persistence-model-and-domain-anemia.aspx)) and an anemic domain model is the presence of these code smells.  If you don't have a legion of supporting services propping up the state of your domain model, then there's no problem.
+
+However, it's these external domain services where we are likely to find the bulk of domain model smells.  Through attention to the code smells and refactorings [Fowler laid out](http://www.amazon.com/exec/obidos/ASIN/0201485672), we can move towards the concepts of **self-consistent aggregate roots with strongly-enforced boundaries**.
