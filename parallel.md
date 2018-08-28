@@ -12,10 +12,11 @@
 
 + [Asynchronous Programming - Async Performance: Understanding the Costs of Async and Await](https://msdn.microsoft.com/en-us/magazine/hh456402.aspx) By Stephen Toub | October 2011
 + [Task-based Asynchronous Pattern (TAP)](https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) MSDN
-+ [Introduction to TPL Dataflow](./TPLDataflow.pdf) Stephen Toub, Microsoft, April 2011 [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](./parallel/TPLDataflow.pdf)
++ [Introduction to TPL Dataflow](./parallel/TPLDataflow.pdf) Stephen Toub, Microsoft, April 2011 [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](./parallel/TPLDataflow.pdf)
 + [Parallel Programming with Microsoft .NET](https://msdn.microsoft.com/en-us/library/ff963553.aspx) Design Patterns for Decomposition and Coordination on Multicore Architectures
 + [There Is No Thread](http://blog.stephencleary.com/2013/11/there-is-no-thread.html) Nov, 2013
 + [Introduction to RX](http://www.introtorx.com/Content/v1.0.10621.0/02_KeyTypes.html) @ Lee Campbell
++ [Concurrency in C#](https://1drv.ms/b/s!AnIyfO51kH7NwkK3JIjSrZJndzk0) Stephen Cleary, 2014 [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](https://1drv.ms/b/s!AnIyfO51kH7NwkK3JIjSrZJndzk0)
 
 [home](README.md)
 |
