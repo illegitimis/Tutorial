@@ -12,6 +12,9 @@
 [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](../netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#ef-core)
 - [Seed Database in Code-First](http://www.entityframeworktutorial.net/code-first/seed-database-in-code-first.aspx)
 - [Data Annotations versus Fluent API](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core#data-annotations-versus-fluent-api)
+- [Entity Framework Core Tutorial](http://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
+- [ms docs ef core](https://docs.microsoft.com/en-us/ef/core/)
+- [learn ef](https://www.learnentityframeworkcore.com/)
 
 ## Recipes
 
