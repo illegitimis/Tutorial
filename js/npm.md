@@ -1,24 +1,32 @@
-## NPM
+# NPM
 
-+ update **npm** to latest version 
+- update **npm** to latest version 
+
 ```cmd
 npm install npm@latest -g
 ```
-+ find local package 
+
+- **upgrade npm windows**. Elevated PowerShell.
+
+```ps
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+npm install --global --production npm-windows-upgrade
+npm-windows-upgrade
+```
+
+- find local package 
+
 ```sh
 npm list -g | grep 'autorest'
 npm list -g --depth 0
 npm uninstall -g autorest ms-rest-azure @microsoft.azure/autorest-core @microsoft.azure/autorest.csharp @microsoft.azure/autorest.modeler
-``` 
-+ search remote package
+```
+
+- search remote package
+
 ```sh
 npm search autorest
 npm info autorest versions
 ```
 
-[<<](../js.md) 
-| 
-[home](../README.md) 
-
-
-
+[<<](../js.md) | [home](../README.md)
