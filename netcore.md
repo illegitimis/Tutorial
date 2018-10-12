@@ -2,12 +2,11 @@
 
 ## links
 
-+ [dotnet command ms docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet)
-+ [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
+- [dotnet command ms docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet)
+- [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
 [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
-+ [AspNetCore Rest](./netcore/rest.md)
+- [AspNetCore Rest](./netcore/rest.md)
 [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/rest.md)
-
 
 ## dotnet commands
 
@@ -17,6 +16,7 @@
 - **new console** - Initialize a sample .NET Core console application that can be compiled and run
 - **build** - Build a project and its dependencies in a given directory:
 - **sln** modifies a .Net Core solution file
+  
   ```cmd
   dotnet sln toAddToMultipleProjects.sln todo-app/todo-app.csproj back-end/back-end.csproj
   dotnet sln toRemoveFromWithGlobbingPattern.sln remove **/*.csproj
@@ -33,13 +33,13 @@
 
 ## project
 
-+ [Mapping between csproj and project.json](https://docs.microsoft.com/en-us/dotnet/core/tools/project-json-to-csproj)
-+ [Setting `EnableDefaultCompileItems` to False doesn't remove the files from solution Explorer](https://github.com/dotnet/sdk/issues/1157)
+- [Mapping between csproj and project.json](https://docs.microsoft.com/en-us/dotnet/core/tools/project-json-to-csproj)
+- [Setting `EnableDefaultCompileItems` to False doesn't remove the files from solution Explorer](https://github.com/dotnet/sdk/issues/1157)
 
 ## misc
-+ 
-+ [reverse package search](https://packagesearch.azurewebsites.net/)
-
+- [blazor](./netcore/blazor.md)
+[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/blazor.md)
+- [reverse package search](https://packagesearch.azurewebsites.net/)
 
 
 [home](README.md)
