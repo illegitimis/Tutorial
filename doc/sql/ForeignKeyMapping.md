@@ -105,9 +105,4 @@ AND f.parent_object_id != referenced_object_id
 		ORDER BY [referenced]
 ```
 
-
-[<<](../SQL.md)
-|
-[home](../README.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../sql.md) | [home](../../README.md)

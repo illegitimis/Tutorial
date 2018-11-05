@@ -12,7 +12,7 @@
 * [OS](doc/os.md)
 * [Parallelism](doc/parallel.md)
 * [REST](doc/rest.md)
-* [SQL](SQL.md)
+* [SQL](doc/sql.md)
 * [SOA](SOA.md)
 * [TDD](TDD.md)
 * [Tools, VCS, Github Meta, CI/CD, etc..](tools.md)

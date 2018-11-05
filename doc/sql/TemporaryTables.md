@@ -18,7 +18,6 @@ They also tend to cause fewer problems to a hard-working OLTP system.
 Just occasionally, you may need to fine-tune them to get good performance from them in joins.
 However, if you are doing more complex processing on temporary data or likely to use more than reasonably small amounts of data in them, then  local temporary tables are likely to be  a better choice.
 
-
 ## Local temporary tables
 
 _Prefixed_ with a **pound** sign (#). This tells SQL Server that this table is a local temporary table.  
@@ -38,6 +37,7 @@ If you are running scripts through SQL Server Management Studio or Query Analyze
 The _best way_ to use a temporary table is to **create it and then fill it with data**. 
 Temporary tables are usually pretty quick.  
 **Since you are creating and deleting them on the fly, they are usually only cached in memory.**
+
 ```sql
 CREATE TABLE #Yaks (YakID int, YakName char(30))
 select name from tempdb..sysobjects where name like '#yak%'  
@@ -46,7 +46,7 @@ drop table #yaks
 CREATE TABLE #TibetanYaks(YakID int,YakName char(30)) 
 INSERT INTO #TibetanYaks (YakID, YakName) 
 SELECT YakID, YakName FROM dbo.Yaks WHERE YakType = 'Tibetan' 
--- Do some stuff with the table 
+-- Do some stuff with the table
 drop table #TibetanYaks
 ```
 
@@ -403,8 +403,6 @@ I’m always wary of providing over-generalized advice, but I always prefer my d
 
 Always bear in mind that misuse of temporary tables, such as unnecessarily large, or too long-lived,  can have effects on other processes, even on other databases on the server. You are, after all, using a shared resource, and you wouldn’t treat your bathroom  that way would you?
 
-
-
 [1]: http://example.com/  "Optional Title Here"
 [2]: http://www.sqlteam.com/author/bill-graziano
 [3]: http://www.sqlteam.com/article/temporary-tables
@@ -413,8 +411,4 @@ Always bear in mind that misuse of temporary tables, such as unnecessarily large
 [6]: http://www.sommarskog.se/share_data.html#prockeyed
 [7]: https://www.red-gate.com/simple-talk/sql/t-sql-programming/temporary-tables-in-sql-server/
 
-[<<](../SQL.md)
-|
-[home](../README.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../sql.md) | [home](../../README.md)

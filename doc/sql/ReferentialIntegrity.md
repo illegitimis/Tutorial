@@ -46,7 +46,8 @@ The answers to these questions are Yes, they can and No, they don’t.
 **Foreign key constraint improve performance at the time of reading data** but at the same time it **slows down the performance at the time of inserting / modifying / deleting data**. 
 In case of reading the query, the _optimizer can use foreign key constraints to create more efficient query plans_ as foreign key constraints are pre declared rules. 
 This usually involves skipping some part of the query plan because for example the optimizer can see that because of a foreign key constraint, it is unnecessary to execute that particular part of the plan.
-run the following query from Query menu and include _Actual Execution plan_. 
+run the following query from Query menu and include _Actual Execution plan_.
+
 ```sql
 create table Employee(EmployeeID int primary key)  
 create table EmployeeOrder(OrderID int primary key, EmployeeID int not null constraint fkOrderCust references Employee(EmployeeID)) 
@@ -74,7 +75,6 @@ SQL Server 7.0 / 2000 came with '[index tuning wizard](http://gotoanswer.stanfor
 I'd recommend having a look at `select * from sys.dm_db_missing_index_details`. 
 It tells you which indexes are 'missing', it's trivial to look in that table and then create indexes.
 
-
 pro | con 
 ---|---
 They are already implemented within the DBMS  | You are duplicating the work that has already been done. 
@@ -85,7 +85,6 @@ They are [fast][5]. | Even if you have implemented them correctly, you probably 
 They support cascading referential actions (such as ON DELETE CASCADE). | You have to implement cascading yourself. 
 The DBMS knows the data is related, [allowing it to find a better query][7] plan in some cases. | The DBMS doesn't know the data is related, which may produce sub-optimal query plan. 
 If you are using an ORM tool, it can automatically generate references between objects. | You may need to do more manual work in your ORMt ool of choice.
-
 
 ## inner platform effect
 
@@ -105,8 +104,4 @@ Performance and maintainability can be extremely poor.
 [6]: https://stackoverflow.com/a/20777244 "Database FK Constraints vs Programmatic FK Constraints"
 [7]: https://stackoverflow.com/a/8154375 "Do foreign key constraints influence query transformations in Oracle?"
 
-[<<](../SQL.md) 
-| 
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../sql.md) | [home](../../README.md)

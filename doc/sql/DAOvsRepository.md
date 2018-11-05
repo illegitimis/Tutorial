@@ -82,9 +82,4 @@ db repository interactions | web services repository
 [5]: https://martinfowler.com/eaaCatalog/repository.html "martin fowler def"
 [6]: http://blog.gauffin.org/2013/01/repository-pattern-done-right/ "repo done right"
 
-
-[<<](../SQL.md) 
-| 
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../sql.md) | [home](../../README.md)
