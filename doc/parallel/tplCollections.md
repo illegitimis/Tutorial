@@ -12,8 +12,4 @@ It’s worth noting that _purely relying on lock-free techniques_ is _sometimes_
 
 `ConcurrentDictionary<TKey,TValue>` uses **fine-grained locking** when adding to or updating data in the dictionary, but it is **entirely lock-free for read operations**. In this way, it’s _optimized for scenarios where reading from the dictionary is the most frequent operation_.
 
-[home](./README.md)
-|
-[<<](./parallel.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../parallel.md) | [home](../../README.md)

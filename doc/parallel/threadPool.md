@@ -14,10 +14,4 @@ Reuses physical operating system threads.
 _Using the thread pool for long-running work used to be problematic_ because you were stealing away a worker in the thread pool for a long time. 
 The engineering done to the task infrastructure (and the underlying revamped thread pool on top of which the TPL and tasks are built) means that tasks can now be used for long-running work, too.
 
-
-
-[<<](../parallel.md) 
-| 
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../parallel.md) | [home](../../README.md)

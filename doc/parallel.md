@@ -22,6 +22,4 @@
 + [C# Under the Hood: async/await](https://www.markopapic.com/csharp-under-the-hood-async-await/)
 + Behind the .NET 4.5 Async Scene: [The performance impact of Asynchronous programming in C#](https://www.dynatrace.com/news/blog/behind-net-4-5-async-scene-performance-impact-asynchronous-programming-c/)
 
-[home](README.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

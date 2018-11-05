@@ -25,12 +25,4 @@ This is often referred to as an **asynchronous exception** because it can occur 
 ![native and managed threads coexisting](https://wowwtq.by3302.livefilestore.com/y4m49V0QN666YktnskCe9_14nP7ecAfFBClpxWVoRMimn_qcWjhjkEUVdVlBUum-RdFsTORm6Nvx8cpPjpPaKsXcIXo7jhm12NVHZYEDgOMwRr8Vkp_L20iGpJByekm5pRtFvi4V4cIThv1C0ooL5eRWlSjKQtihjQoECXYE_Mehw-fl55g2Y2vnU3PV00lmdZrWVms2ip_Z4S3FeDFw61lLg?width=400&height=232&cropmode=none)
 ![native and managed threads coexisting](https://1drv.ms/i/s!As0cxZAk26SzjMAdXvDFkmDp2NOBnQ)
 
-
-
-[<<](../parallel.md) 
-| 
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
-
-
+[<<](../parallel.md) | [home](../../README.md)

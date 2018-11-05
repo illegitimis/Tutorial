@@ -10,7 +10,7 @@
 * [No SQL](doc/nosql.md)
 * [ORMs](doc/orm.md)
 * [OS](doc/os.md)
-* [Parallelism](parallel.md)
+* [Parallelism](doc/parallel.md)
 * [REST](doc/rest.md)
 * [SQL](SQL.md)
 * [SOA](SOA.md)
