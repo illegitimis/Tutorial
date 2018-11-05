@@ -1,4 +1,4 @@
-# Illegitimis Online Docs
+# Illegitimis' Dev Mnemonics
 
 * [ASP](./doc/ASP.md)
 * [C#/.Net](./doc/csdotnet.md)
@@ -8,7 +8,7 @@
 * [Messaging](doc/messaging.md)
 * [NetCore, ASPNETCore](doc/netcore.md)
 * [No SQL](doc/nosql.md)
-* [ORMs](ORM.md)
+* [ORMs](doc/orm.md)
 * [OS](OS.md)
 * [Parallelism](parallel.md)
 * [REST](doc/rest.md)
