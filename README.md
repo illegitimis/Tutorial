@@ -7,7 +7,7 @@
 * [JavaScript](./doc/JS.md)
 * [Messaging](doc/messaging.md)
 * [NetCore, ASPNETCore](doc/netcore.md)
-* [No SQL](nosql.md)
+* [No SQL](doc/nosql.md)
 * [ORMs](ORM.md)
 * [OS](OS.md)
 * [Parallelism](parallel.md)
