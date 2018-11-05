@@ -11,7 +11,7 @@
 * [ORMs](ORM.md)
 * [OS](OS.md)
 * [Parallelism](parallel.md)
-* [REST](REST.md)
+* [REST](doc/rest.md)
 * [SQL](SQL.md)
 * [SOA](SOA.md)
 * [TDD](TDD.md)

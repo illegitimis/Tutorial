@@ -33,6 +33,7 @@ This need to have both versions in the same code base means you're going to have
 Even more difficult is they may be using the original API you released, but you may be able to actually _forward users_ to the new version of the API, and that'll be fine. And so, the versioning may not be the entire API changes. 
 
 ## Creating A Versioned Controller
+
   ```cs
   // CountingKsAuthorizeAttribute : AuthorizationFilterAttribute 
 #if DEBUG 
@@ -69,8 +70,11 @@ static void CreateMediaTypes (JsonMediaTypeFormatter jsonFormatter)
 jsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue(...))
  ```
 
- ## Packages
-+ SDammann.WebApi.Versioning, 2.8.0, Library for API versioning support in Microsoft ASP.NET Web API  
-+ [Microsoft/aspnet-api-versioning](https://github.com/Microsoft/aspnet-api-versioning) a set of libraries which add service API versioning to ASP.NET Web API, OData with ASP.NET Web API, and ASP.NET Core. 
+## Packages
+
+- SDammann.WebApi.Versioning, 2.8.0, Library for API versioning support in Microsoft ASP.NET Web API  
+- [Microsoft/aspnet-api-versioning](https://github.com/Microsoft/aspnet-api-versioning) a set of libraries which add service API versioning to ASP.NET Web API, OData with ASP.NET Web API, and ASP.NET Core.
   - ASP.NET Core Versioned API Explorer with Swagger [Startup](https://github.com/Microsoft/aspnet-api-versioning/blob/master/samples/aspnetcore/SwaggerSample/Startup.cs) 
   - ASP.NET Web API with OData [quick start](https://github.com/Microsoft/aspnet-api-versioning/wiki/API-Documentation#aspnet-web-api-with-odata)
+
+[<](webapi.md) | [<<](../rest.md) | [home](../../README.md)

@@ -87,8 +87,4 @@ dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
   </ItemGroup>
 ```
 
-[<<](call.md)
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<](call.md) | [<<](../rest.md) | [home](../../README.md)

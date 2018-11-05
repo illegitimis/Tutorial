@@ -18,6 +18,7 @@
 - For PUT and PATCH, this is different. Here we're going to use `If-Match`. So, we're going to say, make this modification only if the ETag matches this If-Match clause. And, if this match fails, it's going to return a **412, or precondition failed**. 
 - standard web Cache Headers, put together usually by IIS to define whether an object is static or not, `Cache-Control: no-cache`, `Pragma: no-cache`
 - `CacheCow.Server` a project started from a WebApiContrib project
+
 ```cs
 // the CacheCow system is going to use an in-memory source for our caching
 var cs = ConfigurationManager.ConnectionStrings["DefaultConnection"]....;
@@ -25,19 +26,15 @@ var cacheHandler = new CachingHandler(new CacheCow.Server.EntityTagStore.XYZEnti
 cacheHandler.AddLastModifiedHeader = true;
 config.MessageHandlers.Add (cacheHandler);
 ```
+
 - It's going to look for requests that have the `If-Match` and `If-None-Match`, and do the right thing, and it's going to look for the responses as they go out to Push them into the Cache, and Push those ETags in for us. 
 - this ETag is not only weak, but it's going to change every time the server Refreshes, or, more importantly what happens if it hits another load balance server (`W/`).
 - On rebuild, website restarted and therefore all that Cache and Memory was wiped.
 - `CacheCow.Server.EntityTagStore.SqlServer` use a non-memory data store, something persistent, like SQL Server, RavenDB, Memcache.
   can't find the stored procedure named `GetCache`. Deploy script included in package.
 - [CacheCow](https://github.com/aliostad/CacheCow/wiki) is a library for implementing HTTP caching on both client and server in ASP.NET Web API. It uses _message handlers on both client and server_ to intercept request and response and apply caching logic and rules.
-+ [KevinDockx/HttpCacheHeaders](https://github.com/KevinDockx/HttpCacheHeaders) **ASP.NET Core middleware** that adds `HttpCache` headers to responses (`Cache-Control`, `Expires`, `ETag`, `Last-Modified`), and implements cache expiration & validation models 
-+ [Implement HTTP Cache (ETag) in ASP.NET Core Web API](https://stackoverflow.com/questions/35458737/implement-http-cache-etag-in-asp-net-core-web-api/35555544#35555544) on SO
-+ And more notably, when you're dealing with a server farm, or even a server garden, this is a good way to have Cache that's stored in sort of a central place. Now, this may feel a lot like having side effects of things like session state. So even though _this Cache system does have some side effects on the server_, the benefit of using Cached objects, and being able to test concurrency using that Cache, for me greatly _outweigh the bending of the rule for a Stateless Server_.
+- [KevinDockx/HttpCacheHeaders](https://github.com/KevinDockx/HttpCacheHeaders) **ASP.NET Core middleware** that adds `HttpCache` headers to responses (`Cache-Control`, `Expires`, `ETag`, `Last-Modified`), and implements cache expiration & validation models 
+- [Implement HTTP Cache (ETag) in ASP.NET Core Web API](https://stackoverflow.com/questions/35458737/implement-http-cache-etag-in-asp-net-core-web-api/35555544#35555544) on SO
+- And more notably, when you're dealing with a server farm, or even a server garden, this is a good way to have Cache that's stored in sort of a central place. Now, this may feel a lot like having side effects of things like session state. So even though _this Cache system does have some side effects on the server_, the benefit of using Cached objects, and being able to test concurrency using that Cache, for me greatly _outweigh the bending of the rule for a Stateless Server_.
 
-
-[<](./webapi.md)
-|
-[<<](../REST.md)
-|
-[home](../README.md) 
+[<](webapi.md) | [<<](../rest.md) | [home](../../README.md)
