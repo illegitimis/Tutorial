@@ -1,4 +1,7 @@
+# OOP principles
+
 ## Abstraction
+
 A class type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Classes are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for dynamically created instances of the class, also known as objects.
 
 A struct type is similar to a class type in that it represents a structure with data members and function members. However, unlike classes, structs are **value** types and **do not require heap allocation**. 
@@ -88,9 +91,4 @@ b) Changes made in the public parts of an object must remain compatible with the
 
 c) Larger interfaces increase the complexity of the entire system. Private fields can only be accessed from within the class; public fields can be accessed through any instance of the class
 
-
-  
-
-	
-	
-[OOP](../OOP.md) | [Home](https://github.com/illegitimis/Tutorial/)
+[<<](../design.md) | [home](../../README.md)

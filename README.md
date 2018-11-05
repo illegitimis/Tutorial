@@ -3,7 +3,7 @@
 * [ASP](./doc/ASP.md)
 * [C#/.Net](./doc/csdotnet.md)
 * [CSS](./doc/CSS.md)
-* [Design](design.md), OOP, SOLID, DDD
+* [Design](./doc/design.md), OOP, SOLID, DDD
 * [JavaScript](JS.md)
 * [Messaging](Messaging.md)
 * [NetCore, ASPNETCore](netcore.md)
