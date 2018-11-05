@@ -1,6 +1,7 @@
 **Angular Fundamentals** Pluralsight course wiki page
 
-# Links 
+# Links
+
 + Pluralsight [Course page](https://app.pluralsight.com/library/courses/angularjs-fundamentals/)
 + [Files](https://github.com/joeeames/AngularFundamentalsFiles) from course creator
 + Built for version 1.0.5 and **updated for 1.4**. [Course on Angular 1.5 components](https://app.pluralsight.com/library/courses/building-components-angular-1-5/table-of-contents) is an update
@@ -273,10 +274,4 @@ eventsApp.factory('userResource', ['$resource', function ($resource) {
 }]);
 ````
 
-
-[<<](../JS.md)
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
-
+[<<](../JS.md) | [home](../../README.md)

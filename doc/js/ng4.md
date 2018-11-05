@@ -148,5 +148,4 @@ npm run lite
 - [AspNetCore identity cookie settings](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?tabs=aspnetcore2x#cookie-settings)
 - Material & CDK: [badge](https://material.angular.io/components/badge/examples), [get started](https://material.angular.io/guide/getting-started), [bottom sheet](https://material.angular.io/components/bottom-sheet/overview)
 
-
-[<<](../JS.md) | [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../JS.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

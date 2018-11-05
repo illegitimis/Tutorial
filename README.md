@@ -4,7 +4,7 @@
 * [C#/.Net](./doc/csdotnet.md)
 * [CSS](./doc/CSS.md)
 * [Design](./doc/design.md), OOP, SOLID, DDD
-* [JavaScript](JS.md)
+* [JavaScript](./doc/JS.md)
 * [Messaging](Messaging.md)
 * [NetCore, ASPNETCore](netcore.md)
 * [No SQL](nosql.md)

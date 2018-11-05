@@ -29,4 +29,4 @@ npm search autorest
 npm info autorest versions
 ```
 
-[<<](../js.md) | [home](../README.md)
+[<<](../JS.md) | [home](../../README.md)
