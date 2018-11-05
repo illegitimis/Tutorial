@@ -68,12 +68,4 @@ _AutoRest strongly typed API better name generation_
   
   Instead of `[Action("name")]` use `SwaggerOperation("Ping", Schemes = new[] { "http" })]`.
 
-
-
-
-
-[<<](../SOA.md)
-|
-[home](README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../soa.md) | [home](../../README.md)

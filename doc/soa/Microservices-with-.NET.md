@@ -33,9 +33,4 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
 * [golden-service-fabric-hammer](https://keyholesoftware.com/2016/06/14/golden-service-fabric-hammer/)
 * [Building microservices with ASP.NET Core (without MVC)](https://www.strathweb.com/2017/01/building-microservices-with-asp-net-core-without-mvc/)
 
-
-[<<](../SOA.md)
-|
-[home](README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../soa.md) | [home](../../README.md)

@@ -1,6 +1,6 @@
 # Docker
 
-The microservices architecture introduces the need for _independent deployment_, _scalability_ and _portability_. 
+The microservices architecture introduces the need for _independent deployment_, _scalability_ and _portability_.
 
 **containers**: as light-weight runtime environments with many of the core components of a virtual machine and isolated services of an operating system, designed to make packaging easy and execution of services smooth.
 
@@ -25,10 +25,4 @@ Kubernetes, an open source project designed for microservices by extending Docke
 - [DockerCon Europe 2017](http://europe-2017.dockercon.com/)
 - [OASIS Topology and Orchestration Specification for Cloud Applications (TOSCA) TC](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca)
 
-
-
-[<<](../SOA.md)
-|
-[home](README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../soa.md) | [home](../../README.md)

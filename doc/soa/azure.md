@@ -40,3 +40,5 @@ az provider show -n Microsoft.ContainerService
 az group create --name MsftEventsAcpopescuGroup --location "West US 2"
 az aks create --resource-group MsftEventsAcpopescuGroup --name MsftEventsAcpopescuCluster --node-count 1 --generate-ssh-keys
 ```
+
+[<<](../soa.md) | [home](../../README.md)

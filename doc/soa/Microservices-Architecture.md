@@ -78,8 +78,4 @@ Sync or async? Both. RPC: distributed client server programs. vs Open protocols 
 | Transactions | Complex if spanning multiple microservices. Example: Orders-Promotions-Accounts-Products + TransactionManager.  Fail options: try again (cache it), abort (create undo transaction) TransactionManager software: delay, two phase commit, potential bottleneck. Distributed transaction compatibility: notify monolith of completion.  | ![pic 3](https://vbpzkg.by3302.livefilestore.com/y4mWzaPsKD43tdoZ4RnodLKtzLL1TrWdZtkf8tqVZzilqSXJh-2DOPkd9CsE27d6u9y-_-1zpc1wOA_NcNfh8lQUZnC82OIgO4eJKBtgr-CbMkDbBRxvYzFVnZIuiGXwYbVtqjkF9FcmOcMUNFqqGzKpjLL44DtMWnlr0HZJII9FU36AN47nKbIIEc5yrHEAQLOwlg0ddXu8H0c7VpvuK0WdQ?width=589&height=591&cropmode=none) |
 | Reporting | No central database. Joins? Data pumps and a specialized ReportingService. Consolidation environment with a nightly job.  | ![pic 4](https://slcgww.by3302.livefilestore.com/y4myXm1Pa64HpHG7IO9QsSOg__pXCAI6GznxzDJHwQxgrcTRwYLcMlYL-8UheJVjdlwxMr_iOr5MqCIAPAZTg5Zu-SafYh_3qALMt5GM57jkwm3sUTZAUYQsnDICoaZVueHzQ_ZAG7UMAx1-h7sE-_dL1zx-RXowsM7eRg0zM2qNAQx7m-WXQRhaV_a4kuFGHHDh1rEWbM32hHyiOiWnjC62A?width=469&height=485&cropmode=none) |
 
-[<<](../SOA.md)
-|
-[home](README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../soa.md) | [home](../../README.md)

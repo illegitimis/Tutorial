@@ -13,7 +13,7 @@
 * [Parallelism](doc/parallel.md)
 * [REST](doc/rest.md)
 * [SQL](doc/sql.md)
-* [SOA](SOA.md)
+* [SOA](doc/soa.md)
 * [TDD](TDD.md)
 * [Tools, VCS, Github Meta, CI/CD, etc..](tools.md)
 * [To do](./todo.md)
