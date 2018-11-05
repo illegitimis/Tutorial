@@ -9,7 +9,7 @@
 * [NetCore, ASPNETCore](doc/netcore.md)
 * [No SQL](doc/nosql.md)
 * [ORMs](doc/orm.md)
-* [OS](OS.md)
+* [OS](doc/os.md)
 * [Parallelism](parallel.md)
 * [REST](doc/rest.md)
 * [SQL](SQL.md)
