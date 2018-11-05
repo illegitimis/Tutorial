@@ -6,7 +6,7 @@
 * [Design](./doc/design.md), OOP, SOLID, DDD
 * [JavaScript](./doc/JS.md)
 * [Messaging](doc/messaging.md)
-* [NetCore, ASPNETCore](netcore.md)
+* [NetCore, ASPNETCore](doc/netcore.md)
 * [No SQL](nosql.md)
 * [ORMs](ORM.md)
 * [OS](OS.md)

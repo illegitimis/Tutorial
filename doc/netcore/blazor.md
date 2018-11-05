@@ -11,3 +11,5 @@
   - Blazor uses JavaScript to _bootstrap the .NET runtime_ (`blazor.webassembly.js`) and configures the runtime (`mono.wasm`) to _load required assembly references_.
   - Document object model (DOM) manipulation and browser API calls are handled by the Blazor runtime via _JavaScript interoperability_.
 - tour of heroes [demo clone](https://blazor-demo.github.io/)
+
+[<<](../netcore.md) | [home](../../README.md)

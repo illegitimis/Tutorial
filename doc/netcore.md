@@ -2,12 +2,9 @@
 
 ## links
 
-- [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
-[![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
-- [AspNetCore Rest](./netcore/rest.md)
-[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/rest.md)
-- [blazor](./netcore/blazor.md)
-[![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/blazor.md)
+- [Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md) [![Pluralsight course wiki page](https://img.shields.io/badge/Pluralsight-wiki-red.svg)](./netcore/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md)
+- [AspNetCore Rest](rest.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](rest.md)
+- [blazor](./netcore/blazor.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/blazor.md)
 - [Northwind Traders](https://github.com/JasonGT/NorthwindTraders) is a sample application built using ASP.NET Core and Entity Framework Core.
 - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) Sample ASP.NET Core 2.1 reference application, powered by Microsoft, demonstrating a layered application architecture with monolithic deployment model.
 
@@ -21,7 +18,6 @@
 - **new console** - Initialize a sample .NET Core console application that can be compiled and run
 - **build** - Build a project and its dependencies in a given directory:
 - **sln** modifies a .Net Core solution file
-
 
 ```bash
 dotnet sln toAddToMultipleProjects.sln todo-app/todo-app.csproj back-end/back-end.csproj
@@ -65,7 +61,7 @@ public async Task<IActionResult> Reject(Guid id, [FromBody] string reason)
 public void UpdateBandwidthChangeHangup([FromRoute] int facilityId, [FromRoute] int bandwidthChange)
 ```
 
--  Microsoft.AspNetCore.Authorization.AuthorizeAttribute
+- Microsoft.AspNetCore.Authorization.AuthorizeAttribute
 
 ```cs
 [Authorize]
@@ -82,4 +78,4 @@ public void UpdateBandwidthChangeHangup([FromRoute] int facilityId, [FromRoute] 
   - add `microsoft.extensions.caching.memory`
   - [In-memory caching is a service](https://docs.microsoft.com/en-us/aspnet/core/performance/caching/memory) that is referenced from your app using `Dependency Injection`. Call `AddMemoryCache` in `ConfigureServices`
 
-[home](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
