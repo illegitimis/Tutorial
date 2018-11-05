@@ -1,8 +1,9 @@
 # Apache Kafka
+
 _Getting Started with Apache Kafka_ by _Ryan Plant_ [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents)
 
-
 ## .Net clients
+
 [List maintained by Apache](https://cwiki.apache.org/confluence/display/KAFKA/Clients#Clients-.NET)
 
 `find-package kafka | Select-Object ID, Version, Description, DownloadCount | Sort-Object -Descending -Property DownloadCount | fl`
@@ -31,20 +32,19 @@ kafka-sharp - High Performance .NET Kafka Driver
 
 ## Background
 
-+ Kafka is a **distributed**, **partitioned**, **replicated** _commit log service_. It provides the functionality of a _messaging system_, but with a unique design. What does all that mean?
-+ Apache™ Kafka is a fast, scalable, durable, and fault-tolerant publish-subscribe messaging system.
-+ Kafka is often used in place of traditional message brokers like JMS and AMQP because of its higher throughput, reliability and replication.
-+ Kafka works in combination with Apache Storm, Apache HBase and Apache Spark for real-time analysis and rendering of streaming data.
-+ Kafka can message geospatial data from a fleet of long-haul trucks or sensor data from heating and cooling equipment in office buildings.
-+ Whatever the industry or use case, Kafka brokers massive message streams for low-latency analysis in Enterprise Apache Hadoop.
+- Kafka is a **distributed**, **partitioned**, **replicated** _commit log service_. It provides the functionality of a _messaging system_, but with a unique design. What does all that mean?
+- Apache™ Kafka is a fast, scalable, durable, and fault-tolerant publish-subscribe messaging system.
+- Kafka is often used in place of traditional message brokers like JMS and AMQP because of its higher throughput, reliability and replication.
+- Kafka works in combination with Apache Storm, Apache HBase and Apache Spark for real-time analysis and rendering of streaming data.
+- Kafka can message geospatial data from a fleet of long-haul trucks or sensor data from heating and cooling equipment in office buildings.
+- Whatever the industry or use case, Kafka brokers massive message streams for low-latency analysis in Enterprise Apache Hadoop.
 
 > From  [_http://hortonworks.com/apache/kafka/_](http://hortonworks.com/apache/kafka/)
-+ **Apache Kafka** is an [open-source](https://en.wikipedia.org/wiki/Open_source) [message broker](https://en.wikipedia.org/wiki/Message_broker) project developed by the [Apache Software Foundation](https://en.wikipedia.org/wiki/Apache_Software_Foundation) written in [Scala](https://en.wikipedia.org/wiki/Scala_%28programming_language%29).
-+ The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. It is, in its essence, **a massively scalable pub/sub message queue** _architected as a distributed transaction log_ [2](https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-2), making it highly valuable for enterprise infrastructures to **process streaming data**.
-+ The design is heavily influenced by [transaction logs](https://en.wikipedia.org/wiki/Transaction_log). [3](https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-3)
+- **Apache Kafka** is an [open-source](https://en.wikipedia.org/wiki/Open_source) [message broker](https://en.wikipedia.org/wiki/Message_broker) project developed by the [Apache Software Foundation](https://en.wikipedia.org/wiki/Apache_Software_Foundation) written in [Scala](https://en.wikipedia.org/wiki/Scala_%28programming_language%29).
+- The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. It is, in its essence, **a massively scalable pub/sub message queue** _architected as a distributed transaction log_ [2](https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-2), making it highly valuable for enterprise infrastructures to **process streaming data**.
+- The design is heavily influenced by [transaction logs](https://en.wikipedia.org/wiki/Transaction_log). [3](https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-3)
 
 >From [_https://en.wikipedia.org/wiki/Apache\_Kafka_](https://en.wikipedia.org/wiki/Apache_Kafka)
-
 
 ***
 
@@ -57,7 +57,7 @@ First let's review some basic messaging terminology:
 
 So, at a high level, producers send messages over the network to the Kafka cluster which in turn serves them up to consumers like this:
 
- ![](https://g7udqw.by3302.livefilestore.com/y3m_iO5d-2s1tGAmB3j_oWs7hffUi0_wTY1WT6dDmB17-gQpGbfqyTHKCuxhMLGw6ZipuN-5QP9VmYDe0Co21SMvJ6XAa2pV1C4edIfTebgNWGb4Cld_TJMWiqGslN0-jP90NaP7EhpotLjvntRQEPf8pCrPLFDmYJEpxC79Yxjl1M?width=258&height=180&cropmode=none)
+ ![alt text](https://g7udqw.by3302.livefilestore.com/y3m_iO5d-2s1tGAmB3j_oWs7hffUi0_wTY1WT6dDmB17-gQpGbfqyTHKCuxhMLGw6ZipuN-5QP9VmYDe0Co21SMvJ6XAa2pV1C4edIfTebgNWGb4Cld_TJMWiqGslN0-jP90NaP7EhpotLjvntRQEPf8pCrPLFDmYJEpxC79Yxjl1M?width=258&height=180&cropmode=none)
 
 Communication between the clients and the servers is done with a simple, high-performance, language agnostic [TCP protocol](https://kafka.apache.org/protocol.html).
 
@@ -73,13 +73,6 @@ You need to have [Gradle](http://www.gradle.org/installation) and [Java](http://
 **The Log: What every software engineer should know about real-time data&#39;s unifying abstraction**
 
 > From [_https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying_](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
-
-### to-do
-
-[Apache Kafka for Beginners](http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/)
-
-
-
 
 ## What Kafka Does
 
@@ -101,7 +94,7 @@ Some of the important characteristics that make Kafka such an attractive option 
 
 _From &lt;_ [_http://hortonworks.com/apache/kafka/#section\_1_](http://hortonworks.com/apache/kafka/#section_1)_&gt;_
 
-**How Kafka Works**
+## How Kafka Works
 
 Kafka&#39;s system design can be thought of as that of a distributed commit log, where incoming data is written sequentially to disk. There are four main components involved in moving data in and out of Kafka:
 
@@ -116,7 +109,6 @@ For Kafka consumers, keeping track of which messages have been consumed (process
 
 > From [_http://hortonworks.com/apache/kafka/#section\_2_](http://hortonworks.com/apache/kafka/#section_2)
 
-
 One of the keys to Kafka&#39;s high performance is the simplicity of the brokers&#39; responsibilities. In Kafka, topics consist of one or more Partitions that are ordered, immutable sequences of messages. Since writes to a partition are sequential, this design greatly reduces the number of hard disk seeks (with their resulting latency).
 
 Another factor contributing to Kafka&#39;s performance and scalability is the fact that Kafka brokers are not responsible for keeping track of what messages have been consumed – that responsibility falls on the consumer. In traditional messaging systems such as JMS, the broker bore this responsibility, severely limiting the system&#39;s ability to scale as the number of consumers increased.
@@ -125,8 +117,8 @@ Another factor contributing to Kafka&#39;s performance and scalability is the fa
 
 For Kafka consumers, keeping track of which messages have been consumed (processed) is simply a matter of keeping track of an Offset, which is a sequential id number that uniquely identifies a message within a partition. Because Kafka retains all messages on disk (for a configurable amount of time), consumers can rewind or skip to any point in a partition simply by supplying an offset value. Finally, this design eliminates the potential for back-pressure when consumers process messages at different rates.
 
-[<<](../Messaging.md) 
-| 
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+## to-do
+
+[Apache Kafka for Beginners](http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/)
+
+[<<](../messaging.md) | [home](../../README.md)
