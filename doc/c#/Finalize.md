@@ -62,65 +62,44 @@ For these and other reasons, classes should implement destructors only when no o
 This name also appears in the garbage collector API—for example, `GC.WaitForPendingFinalizers`. 
 The using statement provides a better approach to object destruction. (VLADIMIR RESHETNIKOV)
 
-
-
 ### dispose pattern
 
 ````csharp
-    /// <summary> 
-    /// Flag: Has Dispose already been called?  
-    /// </summary> 
-    bool disposed = false; 
+    /// <summary>Flag: Has Dispose already been called?</summary>
+    bool disposed = false;
 
-    /// <summary> 
-    /// https://msdn.microsoft.com/en-us/library/b1yfkh5e%28v=vs.110%29.aspx 
-    /// </summary> 
+    /// <summary>https://msdn.microsoft.com/en-us/library/b1yfkh5e%28v=vs.110%29.aspx</summary>
     public void Dispose() 
-    { 
+    {
         Dispose(true); 
         GC.SuppressFinalize(this); 
-    } 
+    }
 
    //https://msdn.microsoft.com/en-us/library/fs2xkftw%28v=vs.110%29.aspx 
     protected override void Dispose(bool disposing) 
-    { 
-        if (disposed) 
-            return; 
+    {
+        if (disposed) return;
 
-        DisposeUnmanaged(); 
+        DisposeUnmanaged();
 
-        if (disposing) 
-        { 
-            DisposeManaged(); 
-        }  
+        if (disposing) DisposeManaged();
 
         disposed = true; 
     }
 
-/// <summary> 
-/// A block that frees unmanaged resources.  
-/// This block executes regardless of the value of the disposing parameter. 
-/// </summary> 
+/// <summary>A block that frees unmanaged resources. This block executes regardless of the value of the disposing parameter.</summary>
 private void DisposeUnmanaged();
 
-/// <summary> 
+/// <summary>
 /// A conditional block that frees managed resources.  
 /// This block executes if the value of disposing is true.  
-/// The managed resources that it frees can include: 
-/// 1) Managed objects that implement IDisposable. 
-/// The conditional block can be used to call their Dispose implementation.  
-/// If you have used a safe handle to wrap your unmanaged resource,  
-/// you should call the SafeHandle.Dispose(Boolean) implementation here.  
-/// 2) Managed objects that consume large amounts of memory or consume scarce resources. 
-/// Freeing these objects explicitly in the Dispose method releases them faster  
-/// than if they were reclaimed non-deterministically by the garbage collector.  
-/// </summary> 
+/// The managed resources that it frees can include:
+/// 1) Managed objects that implement IDisposable. The conditional block can be used to call their Dispose implementation.  
+/// If you have used a safe handle to wrap your unmanaged resource, you should call the SafeHandle.Dispose(Boolean) implementation here.  
+/// 2) Managed objects that consume large amounts of memory or consume scarce resources.
+/// Freeing these objects explicitly in the Dispose method releases them faster than if they were reclaimed non-deterministically by the garbage collector.  
+/// </summary>
     private void DisposeManaged();
 ````
 
-
-[<<](../csdotnet.md) 
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

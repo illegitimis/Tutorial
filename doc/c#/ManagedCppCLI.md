@@ -247,9 +247,4 @@ public:
 };
 ```
 
-
-[<<](../csdotnet.md) 
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

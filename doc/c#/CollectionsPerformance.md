@@ -75,9 +75,4 @@
 * Essentially same as List<T> except only process as FIFO
 * <http://referencesource.microsoft.com/#System/compmod/system/collections/generic/stack.cs,c5371bef044c6ab6>
 
-
-[<<](../csdotnet.md) 
-|
-[home](../README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

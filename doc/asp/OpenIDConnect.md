@@ -38,7 +38,6 @@ OAuth 2.0 _is_ fundamentally ~an authorisation protocol~, _not an authentication
 ![sequence diagram](https://1drv.ms/i/s!As0cxZAk26SzjMAaEByL2Qz0DLP5LA)
 ![sequence diagram](https://g7ucqw.by3302.livefilestore.com/y3mf3_zYz2mPPB2h0Qjk7xv94b29SkaoGo__Xj2UJYS7TmwNCTNfqykyIlZi75yqYTSMpHGYGL6rsLEr6_xo20Yu7ERtYNBojf0sTiDcw_KwNMSpCwxPQxEBFMUU-oFbNDl_HwHmGbonXe5NUmdXKm52ge6QZaIKTxmBsN3iBV9Yjg?width=811&height=801&cropmode=none)
 
-
 [<<](../ASP.md)
 |
 [home](../../README.md)

@@ -1,7 +1,7 @@
 # Illegitimis Online Docs
 
 * [ASP](./doc/ASP.md)
-* [C#/.Net](csdotnet.md)
+* [C#/.Net](./doc/csdotnet.md)
 * [CSS](CSS.md)
 * [Design](design.md), OOP, SOLID, DDD
 * [JavaScript](JS.md)

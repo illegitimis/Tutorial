@@ -1,7 +1,7 @@
 # C# / .NET
 
 - [.NET collections performance](./c%23/CollectionsPerformance.md)
-- [Application Domains](./c%23/ApplicationDomains.md)
+- [Application Domains](./c%23/ApplicationDomains.md) todo
 - [Anonymous Types](./c%23/AnonymousTypes.md)
 - [Assemblies](./c%23/Assemblies.md)
 - [CLR](./c%23/CLR.md)
@@ -16,7 +16,4 @@
 - [Lambdas](./c%23/Lambdas.md)
 - [Managed C++, C++/CLI](./c%23/ManagedCppCLI.md)
 
-
-[<<](README.md) 
-| 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+[<<](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
