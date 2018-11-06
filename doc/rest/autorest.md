@@ -1,5 +1,6 @@
 # AutoRest
 
+- [Generating clients for your APIs with AutoRest](https://dzimchuk.net/generating-clients-for-your-apis-with-autorest/)
 - [AutoRest Command Line Interface Documentation](https://github.com/Azure/autorest/blob/master/docs/user/cli.md)
 - Install autorest and csharp generator extension / generate
 
@@ -12,8 +13,8 @@
 - OpenAPI (f.k.a Swagger) [Specification code generator](https://github.com/Azure/autorest).
   - Supports C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP.
   - Code Generation to consume the API is generated via [**Autorest**](https://github.com/Azure/autorest) and [**Swagger**](https://github.com/swagger-api/swagger-ui). Will be used for *integration* tests.
-  - [ASP.NET Web API **Help Pages** using Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
-  - How to use **Sandcastle** type xml comments in your Swagger generated API documentation: `summary` goes as top right description, `remarks` is listed as _implementation notes_, controller `Produces` attribute mapped to _Response Content Type_, _response messages_ controlled by a combo of `ProducesResponseType` attribute and the `response` xml tag.
+  
+- How to use **Sandcastle** type xml comments in your Swagger generated API documentation: `summary` goes as top right description, `remarks` is listed as _implementation notes_, controller `Produces` attribute mapped to _Response Content Type_, _response messages_ controlled by a combo of `ProducesResponseType` attribute and the `response` xml tag.
 
     ```csharp
     /// <returns>a single feature configuration</returns>
@@ -33,8 +34,7 @@
     public async Task<IActionResult> Get()
     ```
 
-  - [Generating a client using AutoRest *Sample*](https://github.com/Azure/autorest/blob/master/docs/generating-a-client.md)
-  - [Swagger UI - Adding multiple custom header parameters](https://groups.google.com/forum/#!topic/swagger-swaggersocket/ibuoVSYi9dw)
-  - Generating Swagger example [requests](https://mattfrear.com/2016/01/25/generating-swagger-example-requests-with-swashbuckle/) & [responses](https://mattfrear.com/2015/04/21/generating-swagger-example-responses-with-swashbuckle/) with Swashbuckle
+- [Generating a client using AutoRest *Sample*](https://github.com/Azure/autorest/blob/master/docs/generating-a-client.md)
+- Azure/autorest [tracing](https://github.com/Azure/autorest/blob/master/docs/client/tracing.md)
 
 [<](call.md) | [<<](../rest.md) | [home](../../README.md)

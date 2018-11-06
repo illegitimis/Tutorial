@@ -1,6 +1,5 @@
 # Tools
 
-* [Nunta](./tools/nunta.md) [![nunta](https://img.shields.io/badge/wiki-page-green.svg)]
 * [Acronyms](./tools/acronyms.md)
 * [Continuous Delivery](./tools/CD.md)
 * [Git/VCS](./tools/git.md)
@@ -11,6 +10,4 @@
 * [NuGet](./tools/NuGet.md)
 * [Visual Studio & VSCode](./tools/vs.md)
 
-[home](README.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[home](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

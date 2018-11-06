@@ -14,9 +14,9 @@
 * [REST](doc/rest.md)
 * [SQL](doc/sql.md)
 * [SOA](doc/soa.md)
-* [TDD](TDD.md)
-* [Tools, VCS, Github Meta, CI/CD, etc..](tools.md)
-* [To do](./todo.md)
+* [TDD](doc/tdd.md)
+* [Tools, VCS, Github Meta, CI/CD, etc..](doc/tools.md)
+* [To do](doc/todo.md)
 
 ___
 
