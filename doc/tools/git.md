@@ -1,6 +1,7 @@
 # GIT
 
 ## git vs svn
+
 git | svn
 --- | ---
 push | commit
@@ -8,8 +9,8 @@ master | trunk
 pull | update
 
 ## Links
-+ [Inspecting a repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository), 
-Git lets you completely ignore files by placing paths in a special file called `.gitignore`.
+
++ [Inspecting a repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository), Git lets you completely ignore files by placing paths in a special file called `.gitignore`.
 + [Saving changes](https://www.atlassian.com/git/tutorials/saving-changes), add, commit, stash.
 + [Sync](https://www.atlassian.com/git/tutorials/syncing) with fetch, remote, push, pull
 
@@ -30,6 +31,7 @@ Git lets you completely ignore files by placing paths in a special file called `
 Run like `git help <guide_name>`.
 
 2. **Git Bash**
+
 ```sh
 git log -10
 git diff HEAD
@@ -46,16 +48,17 @@ git revert <commit>
 git branch --list -a -vv
 ```
 
-3. **update fork**
+3. **update fork**. If using _SourceTree_ one can pull from remote origin, selecting the dev branch to pull.
+
 ```cmd
 cd <dir_where_i_cloned_my_fork_of_a_repo>
 git remote add bradyholt-cron-expression-descriptor-master https://github.com/bradyholt/cron-expression-descriptor
 git pull bradyholt-cron-expression-descriptor-master master
 # unstage_conflicts
 ```
-If using _SourceTree_ one can pull from remote origin, selecting the dev branch to pull.
 
-4. git push SSL_ERROR_SYSCALL 
+4. git push SSL_ERROR_SYSCALL
+
 ```cmd
 git config http.postBuffer 524288000
 ```
@@ -63,21 +66,19 @@ git config http.postBuffer 524288000
 5. file **history**
   - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension
   - file commit history with patches and beyond renames
-```bat
-rem path to file is relative to root
-rem differentiates revisions from files
-$ git log --follow -p -- ./src/Proj/Validation/OrderRequestDtoValidator.cs
-```
+
+  ```bat
+  rem path to file is relative to root
+  rem differentiates revisions from files
+  $ git log --follow -p -- ./src/Proj/Validation/OrderRequestDtoValidator.cs
+  ```
 
 6. **stashes**
+
 ```sh
 git stash list
 git stash show stash@{0}
 
 ```
 
-[<<](../tools.md)
-|
-[home](../README.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../tools.md) | [home](../../README.md)

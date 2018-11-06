@@ -7,8 +7,4 @@
 + [Crack (ZIP) passwords with John the Ripper](http://www.bytebang.at/Blog/Crack+%28ZIP%29+passwords+with+John+the+Ripper)
 + [Crack zip passwords using John the Ripper](https://securityonline.info/crack-zip-passwords-using-john-ripper/)
 
-[home](./README.md)
-|
-[<<](./tools.md)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../tools.md) | [home](../../README.md)

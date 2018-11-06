@@ -16,20 +16,18 @@ git page [![GitHub page](https://img.shields.io/github/tag/expressjs/express.svg
 11. [nice html basics](http://commonmark.org/help/tutorial/)
 
 ## meta
+
 - [Search a wiki](https://help.github.com/articles/searching-wikis/)
 - [Viewing a wiki's history of changes](https://help.github.com/articles/viewing-a-wiki-s-history-of-changes/)
 - [https://github.com/github/markup](https://github.com/github/markup)
 
 ## mediawiki
+
 + [Supported MediaWiki formats](https://help.github.com/articles/supported-mediawiki-formats/)
 + [mediawiki Formatting](https://www.mediawiki.org/wiki/Help:Formatting)
 
 ## utils
+
 + [DownGit - Create GitHub Directory Download Link](https://minhaskamal.github.io/DownGit/#/home), and [original SO answer](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo#18194523)
 
-
-[<<](../tools.md)
-|
-[home](https://github.com/illegitimis/Tutorial/)
-|
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../tools.md) | [home](../../README.md)

@@ -10,4 +10,4 @@
 * [NuGet](./tools/NuGet.md)
 * [Visual Studio & VSCode](./tools/vs.md)
 
-[home](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
