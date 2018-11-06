@@ -16,7 +16,6 @@
 * [SOA](doc/soa.md)
 * [TDD](doc/tdd.md)
 * [Tools, VCS, Github Meta, CI/CD, etc..](doc/tools.md)
-* [To do](doc/todo.md)
 
 ___
 

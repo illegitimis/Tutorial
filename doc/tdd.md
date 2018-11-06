@@ -49,21 +49,24 @@
 
 ## dotnet
 
-Microsoft (R) Test Execution Command Line Tool
-[VS 2017 free coverage](https://stackoverflow.com/questions/32369664/visual-studio-has-code-coverage-for-unit-tests)
-[vs 2017 integrated coverage](https://msdn.microsoft.com/en-us/library/dd537628.aspx)
+- coverage
+  - [VS 2017 free coverage](https://stackoverflow.com/questions/32369664/visual-studio-has-code-coverage-for-unit-tests)
+  - [vs 2017 integrated coverage](https://msdn.microsoft.com/en-us/library/dd537628.aspx)
+  - OpenCover
 
-```shell
-# run tests for framework and platform
-dotnet test --no-build -v diag -o ./bin/x86/Release/
-dotnet test --framework netcoreapp1.1 --runtime win10-x86
-# new test project with enable pack
-dotnet new xunit -p -lang c#
-# list available project types
-dotnet new -all
-# An open source code coverage tool (branch and sequence point) for all .NET Frameworks 2 and above (including Silverlight). 
-# Also capable of handling 32 and 64 bit processes. Use ReportGenerator 1.9 for best viewing results (also available via Nuget).
-dotnet add package OpenCover --version 4.6.519
-```
+    ```shell
+    # run tests for framework and platform
+    dotnet test --no-build -v diag -o ./bin/x86/Release/
+    dotnet test --framework netcoreapp1.1 --runtime win10-x86
+    # new test project with enable pack
+    dotnet new xunit -p -lang c#
+    # list available project types
+    dotnet new -all
+    # An open source code coverage tool (branch and sequence point) for all .NET Frameworks 2 and above (including Silverlight). 
+    # Also capable of handling 32 and 64 bit processes. Use ReportGenerator 1.9 for best viewing results (also available via Nuget).
+    dotnet add package OpenCover --version 4.6.519
+    ```
+
+  - [Integration Testing for ASP.NET Core Applications](http://www.dotnetcurry.com/aspnet-core/1420/integration-testing-aspnet-core) Feb18
 
 [<<](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki/)

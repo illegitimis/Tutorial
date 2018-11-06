@@ -12,6 +12,7 @@
 - [Swagger UI - Adding multiple custom header parameters](https://groups.google.com/forum/#!topic/swagger-swaggersocket/ibuoVSYi9dw)
 - Generating Swagger example [requests](https://mattfrear.com/2016/01/25/generating-swagger-example-requests-with-swashbuckle/) & [responses](https://mattfrear.com/2015/04/21/generating-swagger-example-responses-with-swashbuckle/) with Swashbuckle
 - [ASP.NET Web API **Help Pages** using Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
+- [Add JWT Bearer Authorization to Swagger and ASP.NET Core](https://ppolyzos.com/2017/10/30/add-jwt-bearer-authorization-to-swagger-and-asp-net-core/) Oct17
 
 ## Recipes
 

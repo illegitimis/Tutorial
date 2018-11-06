@@ -5,6 +5,9 @@
 - [Entity Framework Code First Migrations in Team Environments](https://msdn.microsoft.com/en-us/data/dn481501.aspx)
 - [Entity Framework Core Tutorial](http://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
 - [ms docs ef core](https://docs.microsoft.com/en-us/ef/core/)
+- [Using Azure database for PostgreSQL in ASP.NET Core](http://www.dotnetcurry.com/aspnet/1410/aspnet-core-app-postgresql-azure) (with EF Core) Jan18
+- [EF Core or micro-ORM?](https://docs.microsoft.com/en-us/dotnet/standard/modern-web-apps-azure-architecture/work-with-data-in-asp-net-core-apps#ef-core-or-micro-orm)
+- [Entity Framework Core 2.1 Roadmap](https://blogs.msdn.microsoft.com/dotnet/2018/02/02/entity-framework-core-2-1-roadmap/)
 
 ## recipes
 

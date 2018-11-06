@@ -127,6 +127,7 @@ npm run lite
 - [Taking advantage of Observables in Angular](https://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html) Nov 2016
 - [Angular2 observables vs. promises](https://stackoverflow.com/questions/39081715/angular2-observables-vs-promises)
 - [rangle.io Observables vs Promises](https://angular-2-training-book.rangle.io/handout/observables/observables_vs_promises.html)
+-  [behaviorsubject](https://stackoverflow.com/a/40231605/2239678) an observer in addition to being an observable, Rx.BehaviorSubject [class docs](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md)
 
 ## input debounce
 

@@ -34,7 +34,7 @@ Install-Package Hangfire.Mongo -IgnoreDependencies -Version 0.2.1
 Install-package c:\temp\packages\jQuery.1.10.2.nupkg
 ```
 
-- view local nupkg cache 
+- view local nupkg cache
 
 ```bat
 cd %LOCALAPPDATA%\NuGet\Cache\
@@ -62,7 +62,7 @@ Find-Package jquery -AllVersions -ExactMatch
 - **detailed** relevant package search 
 
 ```ps
-Find-Package -Id ZeroMQ -AllVersions | Select-Object ID, Version, Description, DownloadCount &#124; Sort-Object -Descending -Property DownloadCount
+Find-Package -Id ZeroMQ -AllVersions | Select-Object ID, Version, Description, DownloadCount | Sort-Object -Descending -Property DownloadCount
 ```
 
 - NUnit inside MSTest, c# 6.0

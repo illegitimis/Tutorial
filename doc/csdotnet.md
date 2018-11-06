@@ -1,6 +1,6 @@
 # C# / .NET
 
-- [.NET collections performance](./c%23/CollectionsPerformance.md)
+- [.NET collections performance](./c%23/CollectionsPerformance.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./c%23/CollectionsPerformance.md)
 - [Application Domains](./c%23/ApplicationDomains.md) todo
 - [Anonymous Types](./c%23/AnonymousTypes.md)
 - [Assemblies](./c%23/Assemblies.md)
@@ -15,5 +15,10 @@
 - [Interfaces](./c%23/Interfaces.md)
 - [Lambdas](./c%23/Lambdas.md)
 - [Managed C++, C++/CLI](./c%23/ManagedCppCLI.md)
+
+## misc
+
+- [How Well Do You Know C#?](http://www.dotnetcurry.com/csharp/1417/csharp-common-mistakes) Feb 2018
+- [52 tips & tricks to boost .net performance](https://drive.google.com/file/d/0B_u1rzdqYCnzOUdfS3pFeWN2Nkk/view)
 
 [<<](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
