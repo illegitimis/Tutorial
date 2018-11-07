@@ -13,6 +13,12 @@
 - Generating Swagger example [requests](https://mattfrear.com/2016/01/25/generating-swagger-example-requests-with-swashbuckle/) & [responses](https://mattfrear.com/2015/04/21/generating-swagger-example-responses-with-swashbuckle/) with Swashbuckle
 - [ASP.NET Web API **Help Pages** using Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
 - [Add JWT Bearer Authorization to Swagger and ASP.NET Core](https://ppolyzos.com/2017/10/30/add-jwt-bearer-authorization-to-swagger-and-asp-net-core/) Oct17
+- `AddFileParamTypes` [operation filter](https://github.com/domaindrivendev/Swashbuckle/issues/120) for _file upload_ 
+- [Modify Swagger with Request Context](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/3c91969b10710c961486df4123c69929a669ce7e/README.md#modify-swagger-with-request-context)
+- [Annotations](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/3c91969b10710c961486df4123c69929a669ce7e/README.md#swashbuckleaspnetcoreannotations) enrich operation, response and parameter metadata
+- Extend Generator with [Operation, Schema & Document Filters](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/3c91969b10710c961486df4123c69929a669ce7e/README.md#extend-generator-with-operation-schema--document-filters)
+- Custom operation filters: [AssignOperationVendor](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/c8d8edbf1a04ccf5662ad961fd373adaf0d12e32/test/WebSites/Basic/Swagger/AssignOperationVendorExtensions.cs), [RemoveVersionParameters](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/c8d8edbf1a04ccf5662ad961fd373adaf0d12e32/test/WebSites/MultipleVersions/Swagger/RemoveVersionParameters.cs), [FormDataOperationFilter](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/c8d8edbf1a04ccf5662ad961fd373adaf0d12e32/test/WebSites/Basic/Swagger/FormDataOperationFilter.cs)
+- [Custom UI](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/tree/c8d8edbf1a04ccf5662ad961fd373adaf0d12e32/test/WebSites/CustomUIConfig) website project
 
 ## Recipes
 
@@ -57,6 +63,5 @@ public class SwaggerTests
 - _better name generation_ UI
   - Instead of `[ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(void))]` use `[SwaggerResponse(StatusCodes.Status401Unauthorized, null, "Unauthorized")]`.
   - Instead of `[Action("name")]` use `SwaggerOperation("Ping", Schemes = new[] { "http" })]`.
-
 
 [<<](../soa.md) | [home](../../README.md)

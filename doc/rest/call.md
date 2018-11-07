@@ -1,7 +1,8 @@
 # Call a REST API
 
 - `HttpClient` [![httpclient wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./httpclient.md)
-- **AutoRest / Swagger** [![wiki page autorest](https://img.shields.io/badge/wiki-page-green.svg)](./autorest.md)
+- **AutoRest** [![wiki page autorest](https://img.shields.io/badge/wiki-page-green.svg)](./autorest.md)
+- [Swagger](../soa/swagger.md) [![wiki page swagger](https://img.shields.io/badge/wiki-page-green.svg)](../soa/swagger.md)
 
 - `RestSharp`
   - [home](http://restsharp.org/)
