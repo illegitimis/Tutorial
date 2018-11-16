@@ -21,6 +21,9 @@
 - [Tackling Business Complexity in a Microservice with DDD and CQRS Patterns](https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/) msdn
 - [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering) sample `Ordering API`
 - [jbogard/MediatR](https://github.com/jbogard/MediatR) Simple, unambitious mediator implementation in .NET
+- A [.NET implementation of Domain Driven Design (DDD) sample application](https://github.com/SzymonPobiega/DDDSample.Net) based on Eric Evans' examples included in his great book.
+- [ndddsample](https://code.google.com/archive/p/ndddsample/) on google code
+
 
 ## Principles
 
@@ -28,6 +31,6 @@
 - It describes _independent_ problem areas as **Bounded Contexts** (each Bounded Context correlates to a microservice)
 - _avoid chatty_ communications between microservices
 - you should create a _boundary_ around things that need _cohesion_. It is similar to the [Inappropriate Intimacy](https://sourcemaking.com/refactoring/smells/inappropriate-intimacy) code smell when implementing classes. If _two microservices need to collaborate a lot with each other_, they _should probably be the same microservice_.
-- **Persistence Ignorance** (PI): classes modeling the _business domain_ should not be impacted by how they might be persisted. Thus, their design should reflect as closely as possible the ideal design needed to solve the business problem at hand, and should not be tainted by concerns related to how the objects’ state is saved and later retrieved. Some common violations include domain objects that _must inherit from a particular base class_, or which _must expose certain properties_. Sometimes, the persistence knowledge takes the form of **attributes that must be applied to the class**, or support for only certain types of collections or property visibility levels. There are degrees of persistence ignorance, with the highest degree being described as Plain Old CLR Objects (POCOs) in .NET, and Plain Old Java Objects (POJOs) in the Java world.
+- **Persistence Ignorance** (PI): classes modeling the _business domain_ should not be impacted by how they might be persisted. Thus, their design should reflect as closely as possible the ideal design needed to solve the business problem at hand, and should not be tainted by concerns related to how the objects’ state is saved and later retrieved. Some common violations include domain objects that _must inherit from a particular base class_, or which _must expose certain properties_. Sometimes, the persistence knowledge takes the form of **attributes that must be applied to the class**, or support for only certain types of collections or property visibility levels. There are degrees of persistence ignorance, with the highest degree being described as _Plain Old CLR Objects_ (POCOs) in .NET, and Plain Old Java Objects (POJOs) in the Java world.
 
 [<<](../design.md) | [home](../../README.md)
