@@ -4,7 +4,14 @@ _2010_. _Jimmy Bogard._
 
 ## toc
 
++ [primer](./domain-strength.md#primer)
 + [aggregate-roots](./domain-strength.md#aggregate-roots)
++ [aggregate-construction](./domain-strength.md#aggregate-construction)
++ [encapsulated-collections](./domain-strength.md#encapsulated-collections)
++ [encapsulating-operations](./domain-strength.md#encapsulating-operations)
++ [the-double-dispatch-pattern](./domain-strength.md#the-double-dispatch-pattern)
++ [no-silver-domain-modeling-bullets](./domain-strength.md#no-silver-domain-modeling-bullets)
+
 
 ## article series
 
@@ -15,7 +22,7 @@ _2010_. _Jimmy Bogard._
 + [Encapsulating operations](https://lostechies.com/jimmybogard/2010/03/24/strengthening-your-domain-encapsulating-operations/)
 + [The double dispatch pattern](https://lostechies.com/jimmybogard/2010/03/30/strengthening-your-domain-the-double-dispatch-pattern/)
 + [No silver domain modeling bullets](https://lostechies.com/jimmybogard/2010/03/11/no-silver-domain-modeling-bullets/)
-
++ 10 Lessons from a Long Running DDD Project: [1](https://lostechies.com/jimmybogard/2016/06/13/10-lessons-from-a-long-running-ddd-project-part-1/), [2](https://lostechies.com//jimmybogard/2016/06/20/10-lessons-from-a-long-running-ddd-project-part-2/)
 
 ***
 
@@ -526,5 +533,129 @@ One of the outputs of this tool could be a complete database, with all constrain
 Several times at the end of the talk, the question came up, “can I use this to generate my domain model” or “database”. Tool-generated applications are a lofty, but extremely flawed goal. Code generation is interesting as a one-time, one-way affair. But beyond that, code generation does not work. We’ve seen it time and time again.  Even though the tools get better, the underlying invalid assumption does not change. The fundamental problem is that _visual code design tools can never and will never be as expressive, flexible and powerful as actual code_.  There will always be a mismatch here, and it is a fool’s errand to try to build anything more. Instead, the ORM tool looked quite useful as a modeling tool for generating conversation and validating assumptions about their domain, rather than a domain model builder.
 
 Ultimately, the only validation that our domain is correct is the working code. There is no silver bullet for writing code, as there is always some level of complexity in our applications that requires customization. And there’s nothing that codegen tools hate more than modification of the generated code  However, I’m open to the idea that I’m wrong here, and I would love to be shown otherwise.
+
+## 10 Lessons from a Long Running DDD Project
+
+Round about 7 years ago, I was part of a very large project which rooted its design and architecture around domain-driven design concepts. I've blogged a lot about that experience (and others), but one interesting aspect of the experience is we were afforded more or less a do-over, with a new system in a very similar domain. I presented this topic at NDC Oslo (recorded, I'll post when available).
+
+I had a lot of lessons learned from the code perspective, where things like `AutoMapper`, `MediatR`, `Respawn` and more came out of it. Feature folders, CQRS, conventional HTML with HtmlTags were used as well. But beyond just the code pieces were the broader architectural patterns that we more or less ignored in the first DDD system. We had a number of lessons learned, and quite a few were from decisions made very early in the project.
+
+### Lesson 1: Bounded contexts are a thing
+
+Very early on in the first project, we laid out the [personas](http://www.agilemodeling.com/artifacts/personas.htm) for our application. This was also when Agile and Scrum were really starting to be used in the large, so we were all about using user stories, personas and the like.
+
+![personas](https://lostechies.com/content/jimmybogard/uploads/2016/06/image.png)
+We put all the personas on giant post-it notes on the wall. There was a problem. They didn't fit. There were so many personas, we couldn't look at all of them at one.
+
+So we color coded them and divided them up based on lines of communication, reporting, agency, whatever made sense.
+
+Well, it turned out that those colors (just faked above) were perfect borders for bounded contexts. Also, it turns out that 72 personas for a single application is way, way too many.
+
+### Lesson 2: Ubiquitous language should be...ubiquitous
+
+One of the side effects of cramming too many personas into one application is that we got to the point where some of the core domain objects had very generic names in order to _have a name that everyone agreed upon_.
+
+We had a `Person` object, and everyone agreed what "person" meant. Unfortunately, this was only a name that the product owners agreed upon, no one else that would ever use the system would understand what that term meant. It was the lowest common denominator between all the different contexts, and in order to mean something to everyone, it could not contain behavior that applied to anyone.
+
+When you have very generic names for core models that aren't actually used by any domain expert, _you have something worse than an anemic domain model_ - **a generic domain model**.
+
+### Lesson 3: Core domain needs consensus
+
+We talked to various domain experts in many groups, and all had a very different perspective on what the core domain of the system was. Not what it should be, but what it was. For one group, it was the part that replaced a paper form, another it was the kids the system was intending to help, another it was bringing those kids to trial and another the outcome of those cases. Each has wildly different motivations and workflows, and even different metrics on which they are measured.
+
+Beyond that, we had directly opposed motivations. While one group was focused on keeping kids out of jail, another was managing cases to put them in jail! With such different views, it was quite difficult to build a system that met the needs of both. Even to the point where the conduits to use were completely out of touch with the basic workflow of each group. Unsurprisingly, one group had to win, so the focus of the application was seen mostly through the lens of a single group.
+
+### Lesson 4: Ubiquitous language needs consensus
+
+A slight variation on lesson 2, we had a core entity on our model where at least the name meant something to everyone in the working group. However, that something again varied wildly from group to group.
+
+For one group, the term was in reference to a paper form filed. Another, something as part of a case. Another, an event with a specific legal outcome. And another, it was just something a kid had done wrong and we needed to move past. I'm simplifying and paraphrasing of course, but even in this system, a legal one, there were very explicit legal definitions about what things meant at certain times, and reporting requirements. Effectively we had created one master document that everyone went to to make changes. It wouldn't work in the real world, and it was very difficult to work in ours.
+
+### Lesson 5: Structural patterns are the least important part of DDD
+
+Early on we spent a *ton* of time on getting the design right of the DDD building blocks: entities, aggregates, value objects, repositories, services, and more. But of all the things that would lead to the success or failure of the project, or even just slowing us down/making us go faster, these patterns were by far the least important.
+
+That's not to say that they weren't valuable, they just didn't have a large contribution to the success of the project. _For the vast majority of the domain_, **it only needed very dumb CRUD objects**. _For a dozen or so very particular cases_, we **needed highly behavioral, encapsulated domain objects**. Optimizing your entire system for the complexity of 10% really doesn't make much sense, which is why in subsequent systems we've moved towards a more CQRS model, where each command or query has complete control of how to model the work.
+
+With commands and queries, we can use pretty much whatever system we want – from straight up SQL to event sourcing. In this system, because we focused on the patterns and layers, we pigeonholed ourselves into a singular pattern, system-wide.
+
+In the first project, we targeted everyone that could possibly be involved with the overall process. This wound up to be a dozen state agencies and countless other groups and sub-groups. Quite a lot of contention in the model (also a great reason why you can never have a single master data model for an entire enterprise). We felt good about the software itself – it was modular and easy to extend, but the domain model itself just couldn't satisfy all the users involved, only really a subset.
+
+The second project targeted only a single aspect of the original overall legal process – the prosecution agency. Targeting just a single group, actually a single agency, brought tremendous benefits for us.
+
+### Lesson 6: Cohesiveness brings greater clarity and deeper insight
+
+Our initial conversations in the second project were somewhat colored by our first project. We started with an assumption that the core focus, the core domain would be at least the same as the monolith, but maybe a different view of it. We were wrong.
+
+In the new version of the app, the entire focus of the system revolves around "cases". I know, crazy that an app built for the day-to-day functions of a prosecution agency focuses centrally on a case:
+
+![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb1.png)
+
+Once we settled on the core domain, the possibilities then greatly opened up for modeling around that concept. Because the first app only tangentially dealt with cases (there wasn't even a "Case" in the original model), it was more or less an impedance mismatch for its users in the prosecution agency. It was a bit humbling to hear the feedback from the prosecutors about the first project.
+
+But in the second project, because our core domain was focused, we could spend much more time modeling workflows and behaviors that fit what the prosecution agency actually needed.
+
+### Lesson 7: Be flexible where you need to, rigid in others
+
+Although we were able to come to a consensus amongst prosecution agencies about what a case was, what the key things you could DO with a case were and the like, we couldn't get any consensus about how a case should be managed.
+
+This makes a lot of sense – the state has legal reporting requirements and the courts have a ton of procedural rules, but internal to an agency, they're free to manage the work any way they wanted to.
+
+In the first system, roles were baked in to the system, causing a lot of confusion for counties where one person wore many different hats. In the new system, permissions were hard-coded against tasks, but not roles:
+
+![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb2.png)
+
+The Permission here is an enum, and we tied permissions to tasks like "Approve Case" and "Add Evidence" and "Submit Disposition" etc. Those were directly tied to actions in our application, and you couldn't add new permissions without modifying the code.
+
+Roles (or groups, whatever) were not hardcoded, and left completely up to each agency how they liked to organize their work and decide who can do what.
+
+With DDD it's important to model both the rigid and flexible, they're equally important in the overall model you build.
+
+### Lesson 8: Sometimes you need to invent a model
+
+While we were able to model quite well the actions one can perform with an individual case, it was immediately apparent when visiting different county agencies that their workflows varied significantly inside their departments.
+
+This meant we couldn't do things like implement a workflow internal to a case itself – everyone's workflow was different. The only thing we could really embed were procedural/legal rules in our behaviors, but everything else was up for grabs. But we still wanted to manage workflows for everyone.
+
+In this case, we needed to build consensus for a model that didn't really exist in each county in isolation. If we focused on a single county, we could have baked the rules about how a case is managed into their individual system. But since we were building a system across counties, we needed to build a model that satisfied all agencies:
+
+![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb3.png)
+
+In this model, we explicitly built a configurable workflow, with states and transitions and security roles around who could perform those transitions. While no individual county had this model, it was the meta-model we found while looking across all counties.
+
+### Lesson 9: Don't blindly follow pattern advice
+
+In the new app, I performed an experiment. I would only add tools, patterns, and libraries when the need presented itself but no sooner. This meant I didn't add a repository, unit of work, services, really anything until an actual pain surfaced. Most of the DDD books these days have prescriptive guidance about what your domain model should look like, how you should do repositories and so on, but I wanted to see if I could simply arrive at these patterns by code smells and refactoring.
+
+The funny thing is, I never did. We left out those patterns, and we never found a need to put them back in. Instead, we drove our usage around CQRS and the mediator pattern (something I've used for years but finally extracted our internal usage into [MediatR](https://github.com/jbogard/MediatR). Instead, our controllers were pretty uniform in their appearance:
+![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb4.png)
+
+And the handlers themselves (as I've blogged about many times) were tightly focused on a single action, with no need to abstract anything:
+![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb5.png)
+
+I've extended this to other areas of development too, like front-end development. It's actually kinda crazy how far you can get without jQuery these days, if you just use lodash and the DOM.
+
+### Lesson 10: Microservices and anti-corruption layers are your friend
+
+There is a downside to going to bounded contexts and away from the "majestic monolith", and that's integration. Now that we have an application solely dealing with one agency, we have to communicate between different applications.
+
+This turned out to be a bit easier than we thought, however. This domain existed well before computers, so the interfaces between the prosecution and external parties/agencies/systems was very well established.
+
+This was also the section of the book skipped the most, around anti-corruption layers and bounded contexts. We had to crack open that section of the book, dust it off, smell the smell of pages never before read, and figure out how we should tackle integration.
+
+We've quite a bit of experience in this area it turns out, so it was really just a matter of deciding for each 3rd party what kind of integration would work best.
+
+![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb6.png)
+
+For some 3rd parties, we could create an entirely separate app with no integration. Some needed a special app that performed the translation and anti-corruption layer, and some needed an entirely separately deployed app that communicated to our system via hypermedia-rich REST APIs.
+
+Regardless, we never felt we had to build a single solution for all involved. We instead picked the right integration for the job, with an eye of not reinventing things as we went.
+
+### Conclusion
+
+In both cases, I'd say both our systems were successful, since they shipped and are both being used and extended to this day. With the more tightly focused domain in the second system we were able to achieve that "greater insight" that the DDD book talks about.
+
+In case anyone wonders, I intentionally did not talk about actors or event sourcing in this series – both things we've done and shipped, but found the applicability to be limited to inside a bounded context (or even more typically, a corner of a bounded context). Another post for another day!
+
 
 [< DDD](./ddd.md) | [<< OOPD](../design.md)
