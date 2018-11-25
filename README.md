@@ -1,22 +1,21 @@
-# Illegitimis Online Docs
+# Illegitimis' Dev Mnemonics
 
-* [ASP](ASP.md)
-* [C#/.Net](csdotnet.md)
-* [CSS](CSS.md)
-* [Design](design.md), OOP, SOLID, DDD
-* [JavaScript](JS.md)
-* [Messaging](Messaging.md)
-* [NetCore, ASPNETCore](netcore.md)
-* [No SQL](nosql.md)
-* [ORMs](ORM.md)
-* [OS](OS.md)
-* [Parallelism](parallel.md)
-* [REST](REST.md)
-* [SQL](SQL.md)
-* [SOA](SOA.md)
-* [TDD](TDD.md)
-* [Tools, VCS, Github Meta, CI/CD, etc..](tools.md)
-* [To do](./todo.md)
+* [ASP](./doc/ASP.md)
+* [C#/.Net](./doc/csdotnet.md)
+* [CSS](./doc/CSS.md)
+* [Design](./doc/design.md), OOP, SOLID, DDD
+* [JavaScript](./doc/JS.md)
+* [Messaging](doc/messaging.md)
+* [NetCore, ASPNETCore](doc/netcore.md)
+* [No SQL](doc/nosql.md)
+* [ORMs](doc/orm.md)
+* [OS](doc/os.md)
+* [Parallelism](doc/parallel.md)
+* [REST](doc/rest.md)
+* [SQL](doc/sql.md)
+* [SOA](doc/soa.md)
+* [TDD](doc/tdd.md)
+* [Tools, VCS, Github Meta, CI/CD, etc..](doc/tools.md)
 
 ___
 
