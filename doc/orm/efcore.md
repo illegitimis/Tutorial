@@ -8,6 +8,7 @@
 - [Using Azure database for PostgreSQL in ASP.NET Core](http://www.dotnetcurry.com/aspnet/1410/aspnet-core-app-postgresql-azure) (with EF Core) Jan18
 - [EF Core or micro-ORM?](https://docs.microsoft.com/en-us/dotnet/standard/modern-web-apps-azure-architecture/work-with-data-in-asp-net-core-apps#ef-core-or-micro-orm)
 - [Entity Framework Core 2.1 Roadmap](https://blogs.msdn.microsoft.com/dotnet/2018/02/02/entity-framework-core-2-1-roadmap/)
+- [explicit loading](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/read-related-data?view=aspnetcore-2.0)
 
 ## recipes
 
