@@ -21,8 +21,46 @@ Kubernetes, an open source project designed for microservices by extending Docke
 
 ## Unvisited
 
-- [official website](https://www.docker.com/)
-- [DockerCon Europe 2017](http://europe-2017.dockercon.com/)
-- [OASIS Topology and Orchestration Specification for Cloud Applications (TOSCA) TC](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca)
+* [official website](https://www.docker.com/)
+* [DockerCon Europe 2017](http://europe-2017.dockercon.com/)
+* [OASIS Topology and Orchestration Specification for Cloud Applications (TOSCA) TC](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca)
+
+## courses
+
+[Getting Started with Docker on Windows](https://app.pluralsight.com/library/courses/docker-windows-getting-started/table-of-contents) by Wes Higbee
+
+Hyper-V on windows image location: _C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks\MobyLinuxVM.vhdx_
+
+Windows containers completely separated from Linux containers. Can be _windows server_ containers or _Hyper-V_ containers. Former use **process** isolation, latter use **VM** isolation.
+
+Container has its own network adapter, file system, processes, registry.
+
+```bash
+docker info
+docker version
+docker ps -a # both started and stopped
+docker run hello-world # pull image, create container
+docker run -it ubuntu bash # interactive
+docker run -p 80:80 nginx
+docker stop container_id # or name, or short id
+docker start part_of_identifier
+docker images
+docker rm container_id*
+docker rmi --help
+# interactive + named terminal for docker docs
+# ctrl+c sent to running process
+# ctrl+pq sends to background, enables terminal
+docker run -p 4000:4000 -it --name docs docs/docker.github.io
+# detach from container / background
+docker run -p 81:80 -d --name iis microsoft/iis:nanoserver
+# dispose container on exit process inside it
+docker run --rm -it --isolation=hyperv microsoft/dotnet:nanoserver powershell
+docker save microsoft/iis:nanoserver -o iis.tar
+docker pull alpine # down lightweight alpine linux
+docker run -it alpine sh # run it with a shell
+docker run --rm -v C:/ alpine ls ./ # mount win c drive
+docker run --rm -it -v C:/hw.tar:/media/hw.tar alpine sh
+
+```
 
 [<<](../soa.md) | [home](../../README.md)
