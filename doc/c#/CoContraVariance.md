@@ -3,8 +3,8 @@
 Generic types have special rules for type compatibility, referred to as covariance and contravariance. 
 These rules determine whether _references of certain generic types are implicitly convertible to one another_ when _implicit conversions exist between their type arguments_.
 
-+ generic covariance, introduced in C# 4.0.
-+ delegate variance introduced in 3.0
++ **generic covariance**, introduced in C# 4.0.
++ **delegate variance** introduced in 3.0
 
 If a generic parameter is used only in _input positions_, it becomes **contravariant** (in), and when it only occurs in _output positions_, it becomes **covariant** (out).
 
@@ -95,5 +95,10 @@ G(ref baseArray[7]); // Ok
 try { G(ref specializedArray[9]); }
 catch (ArrayTypeMismatchException ex) { Console.WriteLine(ex.Message); }
 ```
+
+## Interfaces
+
++ gist [interface contravariance](https://gist.github.com/illegitimis/01c2b3cd6bd710c7be38a2cd773a1055)
++ gist [interface covariance](https://gist.github.com/illegitimis/19be12b460e9f46e8e96fea20d5b998d)
 
 [<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
