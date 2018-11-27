@@ -97,5 +97,9 @@ public void UpdateBandwidthChangeHangup([FromRoute] int facilityId, [FromRoute] 
 - [ASP.NET - Use Custom Middleware to Detect and Fix 404s in ASP.NET Core Apps](https://msdn.microsoft.com/en-us/magazine/mt707525.aspx) jun16
 - [Filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) dec16
 - [Exploring Middleware as MVC Filters in ASP.NET Core 1.1](https://andrewlock.net/exploring-middleware-as-mvc-filters-in-asp-net-core-1-1/)
+- [Hot Chocolate](https://github.com/ChilliCream/hotchocolate) is a GraphQL server for .NET Core and .NET Classic
+- An implementation of [GraphQL for .NET](https://github.com/ckimes89/graphql-net) and IQueryable
+- [graphql](https://graphql.org/code/#c-net)
+
 
 [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
