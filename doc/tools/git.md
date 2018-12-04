@@ -21,13 +21,13 @@ pull | update
 | guide | description |
 |------------|------------------------------|
 | attributes | Defining attributes per path |
-|everyday    | Everyday Git With 20 Commands Or So|
-|glossary    | A Git glossary|
-|ignore      | Specifies intentionally untracked files to ignore|
-|modules     | Defining submodule properties|
-|revisions   | Specifying revisions and ranges for Git|
-|tutorial    | A tutorial introduction to Git (for version 1.5.1 or newer)|
-|workflows   | An overview of recommended workflows with Git|
+| everyday   | Everyday Git With 20 Commands Or So|
+| glossary   | A Git glossary|
+| ignore     | Specifies intentionally untracked files to ignore|
+| modules    | Defining submodule properties|
+| revisions  | Specifying revisions and ranges for Git|
+| tutorial   | A tutorial introduction to Git (for version 1.5.1 or newer)|
+| workflows  | An overview of recommended workflows with Git|
 Run like `git help <guide_name>`.
 
 2. **Git Bash**
@@ -78,7 +78,18 @@ git config http.postBuffer 524288000
 ```sh
 git stash list
 git stash show stash@{0}
+```
 
+7. github _update fork_ from master
+
+```sh
+git remote -v
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+git remote -v
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push -v --tags origin master:master
 ```
 
 [<<](../tools.md) | [home](../../README.md)
