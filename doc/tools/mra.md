@@ -1,0 +1,23 @@
+# Movie Review aggregator
+
+- https://en.wikipedia.org/wiki/Review_aggregator
+- https://www.mrqe.com/movie_reviews/le-amiche-m100034193?rev_dir=asc&rev_sort=sort_rating
+- https://film.avclub.com/antonioni-s-le-amiche-is-an-early-gem-that-scarcely-res-1798188014
+- https://flickmetrix.com/
+- https://letterboxd.com/film/the-favourite/
+- https://www.themoviedb.org/movie/375262-the-favourite
+- https://www.themoviedb.org/documentation/api/discover
+- https://duckduckgo.com/?q=favorite+site%3Ahttps%3A%2F%2Fwww.imdb.com&kaf=1&kac=-1&kp=1&kc=-1&kz=1&ia=web
+- https://www.imdb.com/title/tt5083738/reviews?ref_=tt_ov_rt
+- https://www.imdb.com/title/tt5083738/externalreviews?ref_=tt_ov_rt
+- https://www.datasciencecentral.com/profiles/blogs/data-science-with-python-exploratory-analysis-with-movie-ratings
+- https://duckduckgo.com/search_box
+- https://duckduckgo.com/api
+- https://www.thecherrypicks.com/films/basis-sex/
+- https://developer.fandango.com/docs/read/rotten_tomatoes/json/v10/Movies_Search
+- https://www.programmableweb.com/api/rotten-tomatoes
+- http://wiki.dreamfactory.com/DreamFactory/Tutorials/Rotten_Tomatoes_API
+- https://www.rottentomatoes.com/m/the_handmaiden
+- https://www.imdb.com/title/tt0443706/?ref_=fn_al_tt_1
+- https://heavy.com/entertainment/2018/11/narcos-mexico-real-story-photos-4/11/
+- https://html-agility-pack.net/third-party-library
