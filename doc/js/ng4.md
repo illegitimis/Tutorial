@@ -148,5 +148,6 @@ npm run lite
 - [Token based authentication in ASP.NET Core](https://dotnetthoughts.net/token-based-authentication-in-aspnet-core/) Oct _17_
 - [AspNetCore identity cookie settings](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-configuration?tabs=aspnetcore2x#cookie-settings)
 - Material & CDK: [badge](https://material.angular.io/components/badge/examples), [get started](https://material.angular.io/guide/getting-started), [bottom sheet](https://material.angular.io/components/bottom-sheet/overview)
+- Angular Material Data Table: [A Complete Example](https://blog.angular-university.io/angular-material-data-table/): Server Pagination, Filtering, Sorting; [course.component.ts](https://github.com/angular-university/angular-material-course/blob/2-data-table-finished/src/app/course/course.component.ts), [schematics](https://material.angular.io/guide/schematics), [grid list](https://material.angular.io/components/grid-list/examples) samples
 
 [<<](../JS.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
