@@ -9,5 +9,6 @@
 * [Mobile](./tools/mobile.md)
 * [NuGet](./tools/NuGet.md)
 * [Visual Studio & VSCode](./tools/vs.md)
+* [Yaml](tools/yaml.md)
 
 [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
