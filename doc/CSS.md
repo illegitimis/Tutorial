@@ -29,8 +29,12 @@
   - Off Canvas
 - add the [responsive viewport meta tag](http://getbootstrap.com/docs/4.0/getting-started/introduction/#responsive-meta-tag) to your `<head>`.
 - List of [glyph icons](http://glyphicons.bootstrapcheatsheets.com/), v3.2.2
-- _Navigation bar_. [Supported content](https://getbootstrap.com/docs/4.0/components/navbar/#supported-content) like  `.navbar-nav`. navbar forms [sample](http://v4-alpha.getbootstrap.com/components/navbar/#forms).
-- A [fixed header](https://github.com/codrops/AnimatedHeader) that will animate its size on scroll. [ngx2](https://github.com/mvanbeusekom/Angular-2---Animated-Header).
+- _Navigation bar_
+  + [Supported content](https://getbootstrap.com/docs/4.0/components/navbar/#supported-content) like  `.navbar-nav`
+  + navbar forms [sample](http://v4-alpha.getbootstrap.com/components/navbar/#forms)
+  + A [fixed header](https://github.com/codrops/AnimatedHeader) that will animate its size on scroll. [ngx2](https://github.com/mvanbeusekom/Angular-2---Animated-Header).
+  + navigation bar is hidden on small screens and replaced by [a button](https://codepen.io/JohnnyBizzel/pen/QGEapj)  in the top right corner. bootstrap 3.3.7 and jquery 1.9
+  + [fixed to top](https://codepen.io/mmekaiel/pen/ZOPKKR) with bootstrap 4 and jquery 3.
 
 ## Flexbox
 

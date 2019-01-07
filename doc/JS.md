@@ -37,5 +37,10 @@
 - [nativescript](https://www.nativescript.org/). Open source framework for building truly native mobile apps with Angular, Vue.js, TypeScript or JavaScript.
 - ng-conf [Sharing Code Between Web and Native Apps](https://www.youtube.com/watch?v=R3nyG2xtzeQ) - Jen Looper, TJ VanToll, [Angular Material’s Trees](https://www.youtube.com/watch?v=s0Vy3sLbeyA) - Tina Gao
 - [Front-end Application Libraries and Component Architectures](https://developer.telerik.com/featured/front-end-application-frameworks-component-architectures/)
+- [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) is a _low-level API_ for **client-side storage of significant amounts of structured data**, including files/blobs. This API uses indexes to enable high-performance searches of this data. While _Web Storage_ is useful for storing smaller amounts of data, it is less useful for storing larger amounts of structured data.
+- The [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) provides mechanisms by which browsers can **store key/value pairs**, in a much more intuitive fashion than using cookies.
+- [A Simple Trip Meter](https://www.html5rocks.com/en/tutorials/geolocation/trip_meter/), as of May 2010, using the [Geolocation API](https://dev.w3.org/geo/api/) with [wg](https://www.w3.org/2008/geolocation/)
+- **Notifications**: [notify.js](https://alexgibson.github.io/notify.js/) A handy wrapper for the Web Notifications API. [W3C Recommendation](https://www.w3.org/TR/notifications/) October 2015. MDN [notification api](.https://developer.mozilla.org/en-US/docs/Web/API/notification)
+- **web workers** [basics](https://www.html5rocks.com/en/tutorials/workers/basics/) article 2010. [W3C Working Draft](https://www.w3.org/TR/workers/) September 2015. html [living draft](https://html.spec.whatwg.org/multipage/workers.html) dec 2018. NodeJS 11 [worker threads](https://nodejs.org/api/worker_threads.html). MDN [using web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).
 
 [home](README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
