@@ -13,6 +13,16 @@
 - _CSS3 In-Depth_ by Estelle Weyl [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/css3-in-depth/table-of-contents) *Feb 2013*
 - Responsive In-Browser Web Page Design with HTML and CSS [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/responsive-browser-web-page-design-html-css-2262/table-of-contents) by Karen Menezes, _Sep 2015_. In this HTML and CSS tutorial, we'll learn how to create a responsive site from scratch by prototyping directly in the browser.
 - CSS **Grid** Layout (aka "Grid"). [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [estelle/CSS-Workshop](https://github.com/estelle/CSS-Workshop) 6 hours workshop covering almost everything in CSS2 and CSS3 with [demo](http://www.standardista.com/webstock/) and _CSS3 In-Depth_ [![CSS3 In-Depth Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/css3-in-depth/table-of-contents), css selectors [demo](https://estelle.github.io/cssmastery/selectors). [jQuery & CSS3 Selectors](http://standardista.com/jquery/) article. [slides](https://estelle.github.io/cssmastery/selectors/#slide1). 
+- [select[ivizr]](http://selectivizr.com/) is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8.
+- `::after` pseudo-element [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+- https://www.quackit.com/html_5/tags/html_fieldset_tag.cfm
+- `text-align` [qk](https://www.quackit.com/css/css3/properties/css_text-align.cfm)
+- `text-align-last` [qk](https://www.quackit.com/css/css3/properties/css_text-align-last.cfm)
+- https://www.quackit.com/css/properties/css_text-align.cfm
+- `line-height` [qk](https://www.quackit.com/css/properties/css_line-height.cfm), [fun](https://css-tricks.com/fun-line-height/)
+- `nth-child` pseudo-selector [tester](https://css-tricks.com/examples/nth-child-tester/), [std](http://standardista.com/jquery/#slcNthOfTypes)
+- Polyfills. _A shim that mimics a future API providing fallback functionality to older browsers._ [HTML5 Cross Browser](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills). Regressive Enhancement.
 
 ## Bootstrap
 
@@ -30,11 +40,11 @@
 - add the [responsive viewport meta tag](http://getbootstrap.com/docs/4.0/getting-started/introduction/#responsive-meta-tag) to your `<head>`.
 - List of [glyph icons](http://glyphicons.bootstrapcheatsheets.com/), v3.2.2
 - _Navigation bar_
-  + [Supported content](https://getbootstrap.com/docs/4.0/components/navbar/#supported-content) like  `.navbar-nav`
-  + navbar forms [sample](http://v4-alpha.getbootstrap.com/components/navbar/#forms)
-  + A [fixed header](https://github.com/codrops/AnimatedHeader) that will animate its size on scroll. [ngx2](https://github.com/mvanbeusekom/Angular-2---Animated-Header).
-  + navigation bar is hidden on small screens and replaced by [a button](https://codepen.io/JohnnyBizzel/pen/QGEapj)  in the top right corner. bootstrap 3.3.7 and jquery 1.9
-  + [fixed to top](https://codepen.io/mmekaiel/pen/ZOPKKR) with bootstrap 4 and jquery 3.
+  - [Supported content](https://getbootstrap.com/docs/4.0/components/navbar/#supported-content) like  `.navbar-nav`
+  - navbar forms [sample](http://v4-alpha.getbootstrap.com/components/navbar/#forms)
+  - A [fixed header](https://github.com/codrops/AnimatedHeader) that will animate its size on scroll. [ngx2](https://github.com/mvanbeusekom/Angular-2---Animated-Header).
+  - navigation bar is hidden on small screens and replaced by [a button](https://codepen.io/JohnnyBizzel/pen/QGEapj)  in the top right corner. bootstrap 3.3.7 and jquery 1.9
+  - [fixed to top](https://codepen.io/mmekaiel/pen/ZOPKKR) with bootstrap 4 and jquery 3.
 
 ## Flexbox
 
