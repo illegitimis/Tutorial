@@ -3,18 +3,18 @@
 ## Sheets
 
 - Register project
-  - [*Google Developers Console*](https://console.developers.google.com/flows/enableapi?apiid=sheets.googleapis.com&pli=1)
+  - [*Google Developers Console*](https://console.developers.google.com/flows/enableapi?apiid=sheets.googleapis.com&pli=1) & [mine](https://console.developers.google.com/apis/credentials?authuser=1&project=gsheetsapiv4tria-1547050376693)
   - APIs & Services [Credentials](https://console.developers.google.com/apis/credentials?project=pristine-atom-166920)
   - Authorization OAuth 2.0: legacy [v3](https://developers.google.com/sheets/api/v3/authorize)
   - [migration](https://developers.google.com/sheets/api/guides/migration)
   - [ASP MVC OAuth 2.0 guide](https://developers.google.com/api-client-library/dotnet/guide/aaa_oauth#web-applications-aspnet-mvc) This document describes OAuth 2.0, when to use it, how to acquire client IDs, and how to use it with the Google API Client Library for .NET.
 - Sheets API _v4_
-  - [home](https://developers.google.com/sheets/api/)
+  - [home](https://developers.google.com/sheets/api/) & [intro](https://developers.google.com/sheets/api/guides/concepts)
   - [.Net quickstart](https://developers.google.com/sheets/api/quickstart/dotnet)
   - [Google API Client Libraries > .NET](https://developers.google.com/api-client-library/dotnet/get_started) Get Started
   - [Google.Apis.Sheets.v4](https://www.nuget.org/packages/Google.Apis.Sheets.v4/) Client Library
   - [C# DOCS](https://developers.google.com/resources/api-libraries/documentation/sheets/v4/csharp/latest/) Google Sheets API v4
-  - [sheets-api-explorer](https://developers.google.com/apis-explorer/#p/sheets/v4/)
+  - [sheets-api-explorer](https://developers.google.com/apis-explorer/#p/sheets/v4/), sample rest call [batchclear](https://developers.google.com/apis-explorer/#p/sheets/v4/sheets.spreadsheets.values.batchClearByDataFilter)
   - [source code](https://github.com/googleapis/google-api-dotnet-client/blob/master/Src/Generated/Google.Apis.Sheets.v4/Google.Apis.Sheets.v4.cs) for all generated c# strong types
   - [basic writing](https://developers.google.com/sheets/api/samples/writing)
 - Sheets _backend_
@@ -30,6 +30,7 @@
   - _sheet_ [fitness](https://docs.google.com/spreadsheets/d/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/edit#gid=0) sample
   - atom feed [fitness](https://spreadsheets.google.com/feeds/list/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/od6/public/values?alt=json)
   - [Simple example of retrieving JSON feeds from Spreadsheets Data API](https://developers.google.com/gdata/samples/spreadsheet_sample).
+  - sample [feeds cells](https://spreadsheets.google.com/feeds/cells/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/od6/public/values?alt=json)
 
 ## Sheetsu
 
