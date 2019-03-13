@@ -10,6 +10,7 @@ Alternate [![One Drive](https://img.shields.io/badge/One-Drive-blue.svg)](https:
 
 - [OpenID Connect](./asp/OpenIDConnect.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./asp/OpenIDConnect.md)
 - [MVC](./asp/mvc.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./asp/mvc.md)
+- [Razor](./asp/razor.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./asp/razor.md)
 
 ## Courses
 
