@@ -170,6 +170,7 @@ Add _Bower configuration file_, dependencies download to a lib folder in wwroot.
 
 JQuery handles the cross-browser compatibility issues.
 `<script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>`
+
 ```js
     $('#username').text("was innerHtml or InnerHTML");
     $(#main).on("mouseenter", function() {main.style = ""} );
@@ -178,18 +179,19 @@ JQuery handles the cross-browser compatibility issues.
 ```
 
 div, sidebar toggle visibility button, wrapped set of DOM elements
+
 ```js
     var hscn = "hide-sidebar";
     $("#sidebar-toggle").on("click", function () {
-        var sw = $("#sidebar,#wrapper");        
+        var sw = $("#sidebar,#wrapper");
         sw.toggleClass(hscn);
         if (sw.hasClass(hscn)) {
             $(this).text("show sidebar");
         } else {
-            $(this).text("hide sidebar");            
+            $(this).text("hide sidebar");
         }
     });
-```    
+```
 
 On the css side `#sidebar.hide-sidebar {left: -250px;}` downside is tracking const values, 
 and `#wrapper.hide-sidebar {margin-left: 0;}`. Can add a `transition: left ease .25s;` and `transition: margin-left ease .25s;`. 
@@ -199,7 +201,8 @@ Also add vendor specifics.
 
 ![](https://hiqm5q.by3302.livefilestore.com/y3m_AmgE7r9P2-ICcLcwrLCE1D9YaGaACjIAVAh81hdYMCPHoXqr1XMvGh__NdOIkPbRww5qAjVq9vZKpfDL_yTQ6UEulOJdo5e9463y0MCbZUhVxikCxttrcKlx_rPyrox5ghZvdS8op0g04d1NtDeyd00nO0d2r3oCzR9Ojeys4E?width=437&height=138&cropmode=none)
 
-Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller` class. That's just a subset of MVC, so better edit `project.json` to add a dependency for `Microsoft.AspNetCore.Mvc`, then add a using namespace. `public IActionResult Index() {return View(); }`. Add a cshtml view for the index `@{ ViewBag.Title = ""}`. In Startup.cs, enable MVC6. 
+Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller` class. That's just a subset of MVC, so better edit `project.json` to add a dependency for `Microsoft.AspNetCore.Mvc`, then add a using namespace. `public IActionResult Index() {return View(); }`. Add a cshtml view for the index `@{ ViewBag.Title = ""}`. In Startup.cs, enable MVC6.
+
 ```cs
     public void Configure (IApplicationBuilder app)  { 
         app.UseStaticFiles(); 
@@ -212,8 +215,8 @@ Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller`
         services.AddMvc(); 
     }
 ```
-Add a _MVC View layout page_ as Views\Shared\_Layout.cshtml. The sidebar, header and footer from index will be moved to the shared layout. Then link the layout to the Razor index view as `@{Layout="Layout.cshtml"}`. Add _MVC View Start Page_ as ViewStart.cshtml in the actual views folder. This will isolate the layout include boilerplate. Obviously, paths to css and js will have to be revised as to site root as **~**. Also use `@RenderBody()` in the layout.
 
+Add a _MVC View layout page_ as Views\Shared\_Layout.cshtml. The sidebar, header and footer from index will be moved to the shared layout. Then link the layout to the Razor index view as `@{Layout="Layout.cshtml"}`. Add _MVC View Start Page_ as ViewStart.cshtml in the actual views folder. This will isolate the layout include boilerplate. Obviously, paths to css and js will have to be revised as to site root as **~**. Also use `@RenderBody()` in the layout.
 
 Add `app.UseDeveloperExceptionPage()` in Startup.Configure, diagnostics include stack trace, want to hide that from end users, keep it for staging and test servers, instead of `#if DEBUG`, add the `IHostingEnvironment` parameter and check `env.IsProduction()` or `env.IsEnvironment("Development")`. Project properties has environment variables defined, like `ASPNETCORE_ENVIRONMENT`. 
 
