@@ -4,7 +4,6 @@
 
 - [**Zalando API design principles**](http://zalando.github.io/restful-api-guidelines/design-principles/DesignPrinciples.html)
 - [Thoughts on RESTful API Design](http://restful-api-design.readthedocs.io/en/latest/), _Geert Jansen_, 2012
-- [_The Atom Publishing Protocol_ (RFC text)](https://tools.ietf.org/rfc/rfc5023.txt)  
 - [Registry of link relations](http://www.iana.org/assignments/link-relations/link-relations.xhtml)
 - [Microsoft REST API Guidelines](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md)
 
@@ -12,7 +11,7 @@
 
 - [Call a REST API](./rest/call.md) from .NET [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/call.md)
 - [Web API](./rest/webapi.md) general, recipes and design principles [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webapi.md)
-- [Web API upload & download files](./rest/webApiUpDownLoad.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webApiUpDownLoad.md)
+- [http](./rest/http.md) status codes and decision diagram, rfcs
 
 ## Principles / constraints of REST
 
@@ -20,10 +19,10 @@
 2. [REST APIs must be hypertext-driven](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven)
 3. Resource-Oriented Architecture (ROA) Representational State Transfer, or REST
 4. SOAP, WSDL, and the WS-* stack = Big web services. _Big Web Services don’t expose resources_. The Web is based on URIs and links, but a typical Big Web Service exposes one URI and zero links.
-5. [HATEOAS](https://www.crummy.com/writing/speaking/2008-QCon/act2.html) hypermedia-as-the-engine-of-application-state 
+5. [HATEOAS](https://www.crummy.com/writing/speaking/2008-QCon/act2.html) hypermedia-as-the-engine-of-application-state
 6. Client-Server
 7. **Stateless Server**: No side effects on the server when calls are made into it. No State Preserved between  requests. Can't lean on older ideas, like _ASP.NET Session State_, or even _Application State_. This would include authentication information on each call.
-8. **Cache and ETags**. There isn't extra work being pushed onto the system for every request. No data store roundtrip unless necessary. Cache also implies that we're going to use some mechanic to version the object that was retrieved from the server, _not just the ID_, _but also the version of that_. 
+8. **Cache and ETags**. There isn't extra work being pushed onto the system for every request. No data store roundtrip unless necessary. Cache also implies that we're going to use some mechanic to version the object that was retrieved from the server, _not just the ID_, _but also the version of that_.
 9. *Uniform Interface*. Broken down into: the _Identification of Resources_, the Representations that support _modification_, Self-Description, and HATEOAS.
 10. _Layered System_: client -> firewall -> gateway (proxy) -> load balancer -> multiple servers.
 11. *Code On-Demand* optional by Fleming, ability to deliver code to be run by client.
@@ -47,12 +46,5 @@
   - course [link](https://app.pluralsight.com/library/courses/web-api-design/table-of-contents)
 - _Implementing an API in ASP.NET Web API_ by Shawn Wildermuth
   - [Pluralsight](https://app.pluralsight.com/library/courses/implementing-restful-aspdotnet-web-api/) [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/implementing-restful-aspdotnet-web-api/)
-
-## http-decision-diagram
-
-- [readme](https://github.com/for-GET/http-decision-diagram/blob/master/doc/README.md)
-- ![pic](https://raw.githubusercontent.com/for-GET/http-decision-diagram/master/httpdd.png) 3250x2146, v4.0.201410
-- [httpdd](http://for-get.github.io/http-decision-diagram/httpdd.fsm.html) html diagram
-- [RFC2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html), Hypertext Transfer Protocol -- HTTP/1.1
 
 [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

@@ -6,15 +6,15 @@
 - [ETag](etag.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](etag.md)
 - [Caching](cache.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](cache.md)
 - [Web API upload & download files](./webApiUpDownLoad.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./webApiUpDownLoad.md)
-- [Implementing an API in ASP.NET Web API by Shawn Wildermuth](xyz.md) TODO
+- [Implementing an API in ASP.NET Web API by Shawn Wildermuth](./webapi-asp-net-course.md) TODO formatting
 
 ## Recipes
 
 - One _exception_ to the **use nouns instead of verbs** rule when designing routes are actions like: `translate`, `compute`, `convert`. All non-resource actions which remind of some non-rest service should **use verbs instead of nouns**, e.g. `http://mybank.com/convert?from=EUR&to=SGD&amount=100`.
 - samples of _bad design_, `/getAccount`, `/createFolder`, `/updateGroup`, `/verifyEmail`, `/searchGroupsByName`
 - fundamentally there are two types of resources: **collection** & **instance**
-- _media types_ control format specification handles _content negotiation_ and parsing rules, by use of headers: 
-  - requests: [_Accept_](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept). Samples: `Accept:application/json, text/plain, applications/myResourceExtension.csv`, `Accept: application/myapp.v1.customer.json` or `Accept: vnd.myapp.v1.customer` (versioning with content negotiation) 
+- _media types_ control format specification handles _content negotiation_ and parsing rules, by use of headers:
+  - requests: [_Accept_](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept). Samples: `Accept:application/json, text/plain, applications/myResourceExtension.csv`, `Accept: application/myapp.v1.customer.json` or `Accept: vnd.myapp.v1.customer` (versioning with content negotiation)
   - response: [_Content-Type_](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) in the form `<content-type>: <media-type>;<options>`, like `Content-Type: text/html; charset=ISO-8859-4` or `Content-Type: application/json` or `Content-Type: application/foo+json` or `Content-Type: multipart/form-data; boundary=something`
 - Better linking with hateoas, instead of just resource urls specify media type too: `200 OK GET /accounts/x7y8z9`
 

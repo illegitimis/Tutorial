@@ -67,7 +67,7 @@ _ViewStart.cshtml default layout for the razor view engine
 
 ![model binding](./model.binding.png)
 
-![binding.posted.form.data.PNG](binding.posted.form.data.PNG)
+![binding.posted.form.data.PNG](binding.posted.form.data.png)
 
 ## client validation
 
