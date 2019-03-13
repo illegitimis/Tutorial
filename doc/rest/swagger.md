@@ -64,4 +64,4 @@ public class SwaggerTests
   - Instead of `[ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(void))]` use `[SwaggerResponse(StatusCodes.Status401Unauthorized, null, "Unauthorized")]`.
   - Instead of `[Action("name")]` use `SwaggerOperation("Ping", Schemes = new[] { "http" })]`.
 
-[<<](../soa.md) | [home](../../README.md)
+[<<](../rest.md) | [home](../../README.md)

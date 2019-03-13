@@ -30,16 +30,17 @@
 - _reference expansion_ / entity expansion / link expansion / partial representation: `GET /accounts/x7y8z9?expand=someNode`, `GET /accounts/x7y8z9?fields=name,surname,directory(name)`
 - as descriptive as possible, as much info, devs are customers, e.g. `POST /dirs 409 CONFLICT`
 
-    ```json
-    {
-        status: 409,
-        code: 40924,
-        property: 'name',
-        message: 'A directory called "Avengers" already exists',
-        dev: 'A directory called "Avengers" already exists. If you have a stale cache, expire it.',
-        info: 'http://www.andrei.com/docs/api/errors/40924'
-    }
-    ```
+```json
+{
+    status: 409,
+    code: 40924,
+    property: 'name',
+    message: 'A directory called "Avengers" already exists',
+    dev: 'A directory called "Avengers" already exists. If you have a stale cache, expire it.',
+    info: 'http://www.andrei.com/docs/api/errors/40924'
+}
+```
+
 - Avoid sessions when possible. Authenticate every request if necessary. **Stateless Authorize** based on _resource content_, NOT URL! Use Existing Protocol: Oauth 1.0a, Oauth2, Basic over SSL only. Custom Authentication Scheme: Only if you provide client code / SDK Only if you really, really know what you‟re doing. Use _API Keys_ instead of Username/Passwords.
 - **401 Unauthorize** means _UNAUTHENTICATED_ no valid credentials, while **403 Forbidden** means _UNAUTHORIZED_ no rights
 - HTTP Authentication Schemes 
