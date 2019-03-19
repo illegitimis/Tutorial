@@ -74,6 +74,8 @@ _ViewStart.cshtml default layout for the razor view engine
 - `data-val-required` and `data-val-email`. Either use them directly in the razor markup
 - or decorate your view model classes with validation attributes like `[Required]`, `[EmailAddress]`, `[MaxLength]`, `[RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]` for a rating regex, `[StringLength(60, MinimumLength = 3)]`, `[DataType(DataType.Currency)]`, `Range`. In the markup use html helpers only.
 - explicit date format `[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]`
+- friendly display name `[Display(Name = "Last Name")]`
+- `[DataType(DataType.Date)] string Date {get;}`
 - jQuery validation and the browser validation can both operate on the form, which is just confusing to the user. To avoid this problem, you can add the `novalidate` attribute to the `form` element.
 - The MVC client-validation features are built on top of the jQuery Validation library. If you prefer, you can use the Validation library directly and ignore the MVC features.
 - The term **unobtrusive** means that validation rules are expressed using _attributes added to the HTML elements_ that views generate.
@@ -92,5 +94,56 @@ _ViewStart.cshtml default layout for the razor view engine
 - The model binder has a set of _predefined messages_ that it uses for validation errors. These can be replaced with custom messages by assigning functions to the properties defined by the  `IModelBindingMessageProvider` interface. `services.AddMvc().AddMvcOptions(opts => opts.ModelBindingMessageProvider.ValueMustNotBeNullAccessor = value => "Please enter a value");`.
 - The `asp-validation-summary` attribute is applied to a div element, and it _displays_ a list of _validation errors_ when the view is rendered. The value is from an enumeration called `ValidationSummary`. `<div asp-validation-summary="ModelOnly" class="text-danger"></div>`.
 - `public class CustomPropertyValidationAttribute : Attribute, IModelValidator`
+
+## partial views
+
+no associated actoin model. data sent by parent view.
+
+```html
+<div id = "widgets">
+  <div class = "widget-container">
+    @Html.Partial ("FeedbackWidget")
+  </div>
+  <div class = "widget-container">
+    @Html.Partial ("TagCloud", tagModel)
+  </div>
+</div>
+```
+
+## view components
+
+- inherit from `ViewComponent` base class
+- `ViewComponent` class suffix
+- use an attribute on the class
+- `@await Component.InvokeAsync("XVC")`
+- not a direct replacement for child actions, not backed by amy action method
+- child action: `Views/Shared/{ViewName}`
+- view component: `Views/Shared/Components/{ComponentName}/{ViewName}`. Component name is class name, view name is `Default.cshtml`.
+- e.g. param overload `async Task<IViewComponentResult> InvokeAsync(int threshold=10)`
+
+## tag helpers
+
+- lightweight attribute syntax that looks like html
+- input asp-for, link asp-href-include, span asp-validation-for, form asp-controller asp-action
+- div asp-validation-summary="ModelOnly" needs property level validation for each filed
+- the way forward compared to html helpers
+- custom tag helper can be an attribute or html element
+- inherit from `TagHelper`
+- implement `Process (TagHelperContext context, TagHelperOutput output)`
+
+## theming
+
+- `ThemeExpander : IViewLocationExpander`
+
+```cs
+services.Configure<razorViewEngineOptions>(opts => {
+  opts.ViewLocationExpanders.Clear();
+  opts.ViewLocationExpanders.Add(new ThemeExpander());
+});
+```
+
+- instead of `Views` folder, use `Themes` with `Default` and `Alternate` subfolders.
+- `RazorPage<TModel>`
+- custom editor/view templates `Shared\EditorTemplates\Date.cshtml`
 
 [<<](../ASP.md) | [mvc](./mvc.md) | [home](../../README.md)
