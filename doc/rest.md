@@ -13,6 +13,7 @@
 - [Web API](./rest/webapi.md) general, recipes and design principles [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/webapi.md)
 - [http](./rest/http.md) status codes and decision diagram, rfcs
 - test APIs with [Swagger](./soa/Swagger.md) [![page](https://img.shields.io/badge/wiki-page-green.svg)](soa/Swagger.md)
+- [hateoas](./rest/hateoas.md) from .NET [![hateoas wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./rest/hateoas.md)
 
 ## Principles / constraints of REST
 
