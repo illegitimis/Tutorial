@@ -7,6 +7,7 @@
 - [REST](rest.md) [![page](https://img.shields.io/badge/wiki-page-green.svg)](rest.md)
 - [Azure](soa/azure.md) [![page](https://img.shields.io/badge/wiki-page-green.svg)](soa/azure.md)
 - [Websockets](soa/websockets.md) [![page](https://img.shields.io/badge/wiki-page-green.svg)](soa/websockets.md)
+- [SignalR](soa/signalr.md) [![signalr page](https://img.shields.io/badge/wiki-page-green.svg)](soa/signalr.md)
 - [REST vs XML-RPC vs SOAP](https://maxivak.com/rest-vs-xml-rpc-vs-soap/)  – pros and cons
 - [REST vs. RPC](https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis): what problems are you trying to solve with your APIs?
 - [apache/thrift](https://github.com/apache/thrift/tree/master/tutorial), Thrift: Scalable Cross-Language Services Implementation [paper](https://thrift.apache.org/static/files/thrift-20070401.pdf)
@@ -26,9 +27,8 @@
 - [Infrastructure Ignorance](https://ayende.com/blog/3137/infrastructure-ignorance)
 - **Streaming APIs** [gitter.im](https://developer.gitter.im/docs/streaming-api), [http-streaming](https://realtimeapi.io/hub/http-streaming/). HTTP Streaming provides a _long-lived connection_ for _continuous data push_. The client sends a request to the server and the _server holds the response open for an indefinite length_. This connection will stay open until _a client closes it_ or a _server side-side event occurs_.
 - [By 2020, 50% of Managed APIs Projected to be Event-Driven](https://realtimeapi.io/2020-50-percent-managed-apis-projected-event-driven/)
-- [Real-time applications using ASP.NET Core, SignalR & Angular ](https://chsakell.com/2016/10/10/real-time-applications-using-asp-net-core-signalr-angular/) oct 16 & [demo app](https://github.com/chsakell/aspnet-core-signalr-angular)
 - [awesome-dotnet](https://github.com/quozd/awesome-dotnet) A collection of awesome .NET libraries, tools, frameworks and software
 - [.NET/C# Realtime Resources](https://realtimeapi.io/hub/dotnet-c-realtime-resources/)
 - [Getting Started with Building Realtime API Infrastructure](https://realtimeapi.io/getting-started-with-building-realtime-api-infrastructure/)
 
-[home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[home](../README.md)
