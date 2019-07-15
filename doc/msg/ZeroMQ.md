@@ -270,7 +270,6 @@ January 20th, 2016
 ## ZeroMQ and services
 
 - [WebAPI-or-WCF](http://mattmilner.com/Milner/Blog/post/2012/02/28/WebAPI-or-WCF.aspx)
-- [SignalR-plus-RX-Streaming-Data-Demo-App](http://www.codeproject.com/Articles/851437/SignalR-plus-RX-Streaming-Data-Demo-App)
 - [NetMQ-RX-Streaming-Data-Demo-App](http://www.codeproject.com/Articles/853476/NetMQplus-RX-Streaming-Data-Demo-App-of)
 - [Lightweihjt rpc 0mq and proto](http://blogs.mulesoft.com/biz/mule/lightweight-rpc-with-%C3%B8mq-and-protocol-buffers/)
 - [omq and proto](http://www.dotkam.com/2011/09/09/zeromq-and-google-protocol-buffers/)

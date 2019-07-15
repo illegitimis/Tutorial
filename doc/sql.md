@@ -21,5 +21,6 @@
 - [Temporary Tables](./sql/TemporaryTables.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/TemporaryTables.md)
 - [Views](./sql/views.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/views.md)
 - [Sample databases](./sql/samples.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/samples.md)
+- [PostgreSQL](./sql/postgre.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/postgre.md)
 
 [<<](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
