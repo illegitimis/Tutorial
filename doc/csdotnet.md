@@ -20,5 +20,6 @@
 
 - [How Well Do You Know C#?](http://www.dotnetcurry.com/csharp/1417/csharp-common-mistakes) Feb 2018
 - [52 tips & tricks to boost .net performance](https://drive.google.com/file/d/0B_u1rzdqYCnzOUdfS3pFeWN2Nkk/view)
+- [AutoMapper](./c%23/automapper.md)
 
 [<<](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)

@@ -7,35 +7,12 @@
 - [blazor](./netcore/blazor.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/blazor.md)
 - [Northwind Traders](https://github.com/JasonGT/NorthwindTraders) is a sample application built using ASP.NET Core and Entity Framework Core.
 - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb) Sample ASP.NET Core 2.1 reference application, powered by Microsoft, demonstrating a layered application architecture with monolithic deployment model.
-
-## dotnet commands
-
-[dotnet command ms docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet)
-
-- **migrate** _Migrates_ a *project.json* (and _xproj_) based project to a *msbuild* based project.
-- **add|list|remove reference** Adds a project reference, or deletes one, or lists all.
-- **add|remove** Adds or Removes a NuGet package.
-- **new console** - Initialize a sample .NET Core console application that can be compiled and run
-- **build** - Build a project and its dependencies in a given directory:
-- **sln** modifies a .Net Core solution file
-
-```bash
-dotnet sln toAddToMultipleProjects.sln todo-app/todo-app.csproj back-end/back-end.csproj
-dotnet sln toRemoveFromWithGlobbingPattern.sln remove **/*.csproj
-dotnet sln toList.sln list
-```
-
-## middleware
-
-- Middleware samples from aspnet docs [Jan18](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?tabs=aspnetcore2x), [old](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/middleware/sample)
-- [Writing Custom Middleware in ASP.NET Core 1.0](https://www.exceptionnotfound.net/writing-custom-middleware-in-asp-net-core-1-0/)
-- [App startup in ASP.NET Core](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/startup.md), Aug17
-- basic middleware samples docs [2x](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/middleware/index.md), [old](https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/middleware.md)
-- _Migrating HTTP handlers and modules to ASP.NET Core middleware_ [on Github](https://github.com/aspnet/Docs/blob/master/aspnetcore/migration/http-modules.md) and [MsDocs](https://docs.microsoft.com/en-us/aspnet/core/migration/http-modules)
+- [commands](./netcore/commands.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/commands.md)
+- [middleware](./netcore/commands.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./netcore/middleware.md)
 
 ## Authorization
 
-- ASP.NET Core MVC: [Authentication And Role Based Authorization With ASP.NET Core Identity](https://social.technet.microsoft.com/wiki/contents/articles/36804.asp-net-core-mvc-authentication-and-role-based-authorization-with-asp-net-core-identity.aspx) Jan18 
+- ASP.NET Core MVC: [Authentication And Role Based Authorization With ASP.NET Core Identity](https://social.technet.microsoft.com/wiki/contents/articles/36804.asp-net-core-mvc-authentication-and-role-based-authorization-with-asp-net-core-identity.aspx) Jan18
 - [Introduction to authorization in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/introduction)
 - [ASP.NET Core Authorization with Barry Dorrans](https://channel9.msdn.com/Blogs/Seth-Juarez/ASPNET-Core-Authorization-with-Barry-Dorrans) channel9, 2016
 - [blowdart/AspNetAuthorizationWorkshop](https://github.com/blowdart/AspNetAuthorizationWorkshop) github src
@@ -92,14 +69,11 @@ public void UpdateBandwidthChangeHangup([FromRoute] int facilityId, [FromRoute] 
 - [NET Core 2.1 Roadmap](https://blogs.msdn.microsoft.com/dotnet/2018/02/02/net-core-2-1-roadmap/) February 2, 2018 by Rich Lander [MSFT] on .NET Blog
 - [ASP.NET Core 2.1 roadmap](https://blogs.msdn.microsoft.com/webdev/2018/02/02/asp-net-core-2-1-roadmap/) Feb 2018
 - [ASP.NET Core vs Go data ingestion benchmark](https://stefanprodan.com/2016/aspnetcore-vs-golang-data-ingestion-benchmark/)
-- [Middleware Filters in ASP.Net Core](http://www.intstrings.com/ramivemula/articles/middleware-filters-in-asp-net-core/) dec16
-- [Custom ASP.NET Core Middleware Example](https://blogs.msdn.microsoft.com/dotnet/2016/09/19/custom-asp-net-core-middleware-example/) sep16
-- [ASP.NET - Use Custom Middleware to Detect and Fix 404s in ASP.NET Core Apps](https://msdn.microsoft.com/en-us/magazine/mt707525.aspx) jun16
 - [Filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) dec16
-- [Exploring Middleware as MVC Filters in ASP.NET Core 1.1](https://andrewlock.net/exploring-middleware-as-mvc-filters-in-asp-net-core-1-1/)
 - [Hot Chocolate](https://github.com/ChilliCream/hotchocolate) is a GraphQL server for .NET Core and .NET Classic
 - An implementation of [GraphQL for .NET](https://github.com/ckimes89/graphql-net) and IQueryable
 - [graphql](https://graphql.org/code/#c-net)
-
+- How to use the `IOptions` pattern for configuration in ASP.NET Core RC2 [blog](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/) 2016
+- Access services inside `ConfigureServices` using `IConfigureOptions` in ASP.NET Core [blog](https://andrewlock.net/access-services-inside-options-and-startup-using-configureoptions/)
 
 [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
