@@ -1,7 +1,7 @@
 # SQL
 
 - [ACID](./sql/ACID.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/ACID.md)
-- [BASE](./sql/BASE.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/BASE.md)
+- [BASE](./nosql/BASE.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/BASE.md)
 - [Connection Pool](./sql/ConnectionPool.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/ConnectionPool.md)
 - [DAO vs. Repository](./sql/DAOvsRepository.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/DAOvsRepository.md)
 - [DbCommand/IDbCommand/SqlCommand](./sql/DbCommand.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./sql/DbCommand.md)
