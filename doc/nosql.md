@@ -7,6 +7,7 @@
 - [**Mongo**](./nosql/Mongo.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./nosql/Mongo.md)
 - [acid](./sql/ACID.md) vs [base](./nosql/BASE.md) & [CAP](./nosql/CAP.md) theorem
 - [ranking](https://db-engines.com/en/ranking/relational+dbms)
+- relate with [graph](https://neo4j.com/developer/graph-db-vs-nosql/) databases
 
 Type | description | example
 ---|---|---
@@ -25,6 +26,3 @@ sets of information for several records | KV &#x2716; (mapreduce+latency)
 [home](../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
 
 [1]: https://neo4j.com/blog/aggregate-stores-tour/
-
-  - [key-value](https://neo4j.com/developer/graph-db-vs-nosql/#_relate_key_value_stores_with_graph_databases)
-  - and [document stores](https://neo4j.com/developer/graph-db-vs-nosql/#_navigate_document_stores_with_graph_databases)

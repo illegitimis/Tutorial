@@ -8,9 +8,6 @@ acronym | title | description
 **A** | availability | A request will _eventually_ complete _successfully_. A read/write request on any node of the system will never be rejected as long as the particular node is up and running.
 **P** | partition tolerance | (distributed system) [will continue to work unless there is a total network failure](http://www.johndcook.com/blog/2009/07/06/brewer-cap-theorem-base/). A few nodes can fail and the system keeps going. When the network connecting the nodes goes down, the system will still continue to operate even though some/all nodes can NO longer communicate with each other.
 
-
-
-
 [sql](../sql.md) | [nosql](../nosql.md) | [home](../../README.md)
 
 [1]: https://neo4j.com/blog/acid-vs-base-consistency-models-explained/
