@@ -49,3 +49,7 @@
   - https://www.contentful.com/why-contentful/
 - Piranha
   - https://piranhacms.org/
+
+## videos
+
+- [Building modular, multi-tenant ASP.NET Core apps with Orchard Core framework](https://youtu.be/yrQaKv2mxFU)
