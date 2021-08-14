@@ -1,6 +1,7 @@
 # Illegitimis' Dev Mnemonics
 
 * [ASP](./doc/ASP.md)
+* [Azure](./azure/az.md)
 * [C#/.Net](./doc/csdotnet.md)
 * [CMS](./doc/CMS.md)
 * [CSS](./doc/CSS.md)
