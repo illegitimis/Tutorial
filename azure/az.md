@@ -11,7 +11,7 @@ Exam | Microsoft Certified
 ## faq
 
 - [cloud models](tocm.md) public/private/hybrid
-- [_lectures_](lectures.md) TODO
+- [_lectures_](lectures.md)
 - [**legend**](legend.md), glossary of terms
 - [resources](resources.md) TODO
 - [_tour_](tour.md)
