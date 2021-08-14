@@ -21,4 +21,21 @@
 - Remote access to on-premises applications through [Azure AD Application Proxy](https://docs.microsoft.com/en-gb/azure/active-directory/app-proxy/application-proxy)
 - Azure App Service [Hybrid Connections](https://docs.microsoft.com/en-gb/azure/app-service/app-service-hybrid-connections)
 
+## pics
+
+![](./pics/l02/h01.png)
+![](./pics/l02/h02.png)
+![](./pics/l02/h03.png)
+![](./pics/l02/h04.png)
+![](./pics/l02/h05.png)
+![](./pics/l02/h06.png)
+![](./pics/l02/h07.png)
+![](./pics/l02/h08.png)
+![](./pics/l02/h09.png)
+![](./pics/l02/h10.png)
+![](./pics/l02/h11.png)
+![](./pics/l02/h12.png)
+![](./pics/l02/h13.png)
+![](./pics/l02/h14.png)
+
 [<< home](../az.md) | [< back](../lectures.md)
