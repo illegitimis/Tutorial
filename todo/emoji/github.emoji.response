@@ -1,0 +1,26 @@
+HTTP/2 200 OK
+server: GitHub.com
+date: Sat, 28 Aug 2021 11:06:38 GMT
+cache-control: public, max-age=60, s-maxage=60
+vary: Accept, Accept-Encoding, Accept, X-Requested-With
+etag: "8d67a6d25be5271f6d1defa677e563f927cde121195ef0e23d3141c6f0b18711"
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+content-type: application/json; charset=utf-8
+x-github-media-type: github.v3; format=json
+content-encoding: gzip
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+x-ratelimit-reset: 1630152413
+x-ratelimit-resource: core
+x-ratelimit-used: 1
+accept-ranges: bytes
+content-length: 20272
+x-github-request-id: C7CB:CA17:5EC04E1:60B85FF:612A18CD
+X-Firefox-Spdy: h2

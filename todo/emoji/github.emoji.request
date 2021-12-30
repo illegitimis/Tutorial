@@ -1,0 +1,18 @@
+https://awes0mem4n.github.io/emojis-github.html
+
+https://api.github.com/emojis
+
+GET /emojis HTTP/1.1
+Host: api.github.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Origin: https://awes0mem4n.github.io
+Connection: keep-alive
+Referer: https://awes0mem4n.github.io/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-GPC: 1
+DNT: 1
