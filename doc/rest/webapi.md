@@ -43,7 +43,7 @@
 
 - Avoid sessions when possible. Authenticate every request if necessary. **Stateless Authorize** based on _resource content_, NOT URL! Use Existing Protocol: Oauth 1.0a, Oauth2, Basic over SSL only. Custom Authentication Scheme: Only if you provide client code / SDK Only if you really, really know what you‟re doing. Use _API Keys_ instead of Username/Passwords.
 - **401 Unauthorize** means _UNAUTHENTICATED_ no valid credentials, while **403 Forbidden** means _UNAUTHORIZED_ no rights
-- HTTP Authentication Schemes 
+- HTTP Authentication Schemes
   - Server response to issue challenge: [WWW-Authenticate](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate). Format: `WWW-Authenticate: <scheme name> realm=<application name>`. Schemes: `Basic`, `Bearer`, `Digest`, `OAuth`.
   - Client request to submit credentials: [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization). Format: `Authorization: <scheme name|type> <data|credentials>`, e.g. `Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l` where string is _base64 encoded_ from the username and the password are combined with a colon (`aladdin:opensesame`).
 - Content Negotiation in ASP.NET Core 2.0

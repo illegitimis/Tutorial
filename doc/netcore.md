@@ -22,7 +22,6 @@
 - [ASP.NET Core 2.1 roadmap](https://blogs.msdn.microsoft.com/webdev/2018/02/02/asp-net-core-2-1-roadmap/) Feb 2018
 - [ASP.NET Core vs Go data ingestion benchmark](https://stefanprodan.com/2016/aspnetcore-vs-golang-data-ingestion-benchmark/)
 - [Filters](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters) dec16
-- `GraphQL` [cs](https://graphql.org/code/#c-net). An implementation of [GraphQL for .NET](https://github.com/ckimes89/graphql-net) and `IQueryable`. [Hot Chocolate](https://github.com/ChilliCream/hotchocolate) is a _GraphQL server_ for .NET Core and .NET Classic.
 - **Options** _pattern_ in ASP.NET Core
   - official [docs](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2) 2.2
   - How to use the `IOptions` pattern for configuration in ASP.NET Core RC2 [blog](https://andrewlock.net/how-to-use-the-ioptions-pattern-for-configuration-in-asp-net-core-rc2/) 2016
