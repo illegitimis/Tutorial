@@ -6,9 +6,27 @@
 
 as a service
 
+## ADFS
+
+Active Directory Federation Services
+
+## AHB
+
+Azure Hybrid Benefit
+
+## Application Gateway
+
+Build secure, scalable, highly available web front ends in Azure \
+load balancing? \
+[documentation](https://docs.microsoft.com/en-us/azure/application-gateway/), [home](https://azure.microsoft.com/en-us/services/application-gateway/#overview) 
+
 ## App Service
 
 `App Service` is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications developed in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows-based and Linux-based environments.
+
+## APM
+
+Application Performance Management
 
 ## ARM
 
@@ -36,32 +54,88 @@ atom-record-sequence format
 
 *Border Gateway Protocol* works with Azure VPN gateways or ExpressRoute to propagate on-premises BGP routes to Azure virtual networks.
 
+## Blueprints
+
+Enabling quick, repeatable creation of governed environments [*](https://azure.microsoft.com/en-us/services/blueprints/#overview)
+
 ## CapEx
 
 - Capital Expenditure
 - is the up-front spending of money on physical infrastructure, and then deducting that up-front expense over time.
 - The up-front cost from CapEx has a value that reduces over time.
 
+## CCM 
+
+Cloud Controls Matrix
+
 ## CEF
 
 Common Event Format
+
+## CDN
+
+Content Delivery Network
+
+## CJIS
+
+FBI's Criminal Justice Information Services
+
+## COGS
+
+cost of goods sold
 
 ## Compute
 
 https://azure.microsoft.com/en-gb/product-categories/compute/
 
+## CSA
+
+Cloud Security Alliance
+
+## CSF
+
+Cybersecurity Framework
+
+## CSP
+
+Cloud Solution Provider
+
 ## CSV
 
 Cluster Shared Volumes
+
+##  DDoS Protection
+
+protect your Azure resources from distributed denial of service attacks.
+
+## Dedicated Host
+
+ [Azure Dedicated Host]() provides _dedicated_ physical servers to host your Azure VMs for Windows and Linux. Default hardware shared, workloads isolated. A dedicated host is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
+
+ ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
+
+You're charged per dedicated host, independent of how many VMs you deploy to it [*](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/6-host-virtual-machines-dedicated-hosts).
 
 ## DFS
 
 - Distributed File System
 - desktop file sync :(
 
+## DIB
+
+Defense Industrial Base
+
 ## DMZ
 
 perimeter network
+
+## DoD
+
+Department of Defense
+
+## DPA
+
+Data Protection Addendum
 
 ## ExpressRoute
 
@@ -80,6 +154,22 @@ enterprise application integration
 - one server in each rack runs a special piece of software called `fabric controller`
 - `orchestrator` manages links to all fabric controllers, user requests
 
+## FedRAMP
+
+Federal Risk and Authorization Management Program
+
+## Firewall 
+
+control what traffic is allowed on the network.
+
+## FQDN
+
+fully qualified domain names
+
+## front door
+
+Fast, reliable, and more secure cloud content delivery service with intelligent threat protection.
+
 ## FRS
 
 File Replication Service
@@ -92,18 +182,50 @@ File Replication Service
 
 https://docs.microsoft.com/en-us/azure/azure-functions/
 
+## GA
+
+general availability
+
+## GRS
+
+Geo-redundant storage
+
 ## HCI
 
 ???
+
+## HITRUST
+
+Health Information Trust Alliance
 
 ## hypervisor
 
 - abstraction layer OS talks to hardware
 - emulates all functions of a computer and its CPU in a virtual machine
 
+## IAM
+
+Access control pane in portal
+
+## IRS
+
+Internal Revenue Service
+
+## ITAR
+
+International Traffic in Arms Regulations
+
 ## KPI
 
 key performance indicator
+
+## LOB
+
+line of business
+
+## Logic Apps
+
+makes it easy to create a workflow across well-known services with less effort than writing code and manually orchestrating all the steps yourself.
 
 ## LUIS
 
@@ -113,6 +235,18 @@ Language Understanding
 
 micro controller unit
 
+## Monitor Workbooks 
+
+[Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview/) automates responses to threats.
+
+## MTCS
+
+Multi-Tier Cloud Security Certification Body
+
+## NIST
+
+National Institute of Standards and Technology
+
 ## NSG
 
 network security group
@@ -120,6 +254,10 @@ network security group
 ## NVA
 
 Network Virtual Appliance
+
+## OIDC
+
+OpenID Connect
 
 ## OpEx
 
@@ -140,9 +278,21 @@ layers:
 6. Presentation
 7. Application
 
+## OST
+
+Online Services Terms
+
+## PAYG
+
+pay-as-you-go
+
 ## PCI DSS
 
 Payment Card Industry's Data Security Standard
+
+## Policy
+
+Achieve real-time cloud compliance at scale with consistent resource governance [*](https://azure.microsoft.com/en-us/services/azure-policy/#overview)
 
 ## RBAC
 
@@ -155,6 +305,10 @@ root cause analysis
 ## RDVH
 
 remote desktop virtualization host
+
+## redundancy
+
+duplicate components across several regions => ensure high availability
 
 ## Resource group
 
@@ -169,9 +323,34 @@ remote desktop virtualization host
 - Before any resource can be provisioned, you need a resource group for it to be placed in.
 - If you delete a resource group, all resources contained within it are also deleted
 
+## RUS
+
+Request Units per second
+
+## SAML
+
+???
+
+## SAN
+
+storage area network
+
 ## SAS
 
 Shared Access Signature
+
+## Security Center
+
+monitoring [service](https://azure.microsoft.com/services/security-center) that provides visibility of your security posture across all of your services, both on Azure and on-premises.
+
+## Secure score
+
+measurement of an organization's security posture [*](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls/)
+
+## Sentinel
+
+[Azure Sentinel](https://azure.microsoft.com/en-us/services/microsoft-sentinel/#overview) is Microsoft's cloud-based SIEM system. \
+It uses intelligent security analytics and threat analysis.
 
 ## Serverless computing
 
@@ -181,6 +360,7 @@ Shared Access Signature
 - Scaling and performance are handled automatically.
 - You're billed only for the exact resources you use.
 - There's no need to even reserve capacity.
+- Azure Cosmos DB serverless [*](https://docs.microsoft.com/en-us/azure/cosmos-db/serverless)
 
 ## SIEM
 
@@ -189,6 +369,18 @@ security information and event management
 ## Sku
 
 Represents a purchasable *Stock Keeping Unit* (SKU) under a product. These represent the different shapes of the product.
+
+## SLA
+
+service level agreement, uptime, availability
+
+## SLO
+
+Service Level Objective
+
+## SOC
+
+Service Organization Controls
 
 ## TCO
 
@@ -214,7 +406,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/
 
 let you deploy and manage a set of **identical** virtual machines.
 
-## Azure Virtual Network
+## Virtual Network (Azure)
 
 - Isolation and segmentation (named subnet)
 - Internet communications (For VM management, you can connect via the Azure CLI, Remote Desktop Protocol, or Secure Shell.)
@@ -224,6 +416,14 @@ let you deploy and manage a set of **identical** virtual machines.
 - Filter network traffic
 - Connect virtual networks
 
-## Azure VPN Gateway
+## VPN Gateway (Azure)
+
+## WAF
+
+web application firewall
+
+## zone
+
+geographical grouping of Azure regions for billing purposes
 
 [< back](./az.md)

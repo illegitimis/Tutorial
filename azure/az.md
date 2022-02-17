@@ -11,7 +11,7 @@ Exam | Microsoft Certified
 
 ## faq
 
-- [cloud models](tocm.md) public/private/hybrid
+- msft [learning](learn.md)
 - [_lectures_](lectures.md)
 - [**legend**](legend.md), glossary of terms
 - [resources](resources.md) TODO
@@ -19,8 +19,12 @@ Exam | Microsoft Certified
 
 ## pages
 
-- [Subscriptions & management groups](smg.md)
-- [Virtual Network settings](vnet.settings.md)
-- [VPN Gateway fundamentals](vpn.gateway.fndmnt.md)
+- [application insights](./pages/app.insight.md)
+- [Cloud Models](./pages/tocm.md) **public/private/hybrid**
+- [Subscriptions & management groups](./pages/smg.md)
+- [Virtual Network settings](./pages/vnet.settings.md)
+- [VPN Gateway fundamentals](./pages/vpn.gateway.fndmnt.md)
+
+TODO: learning paths 
 
 [< home](../README.md)
