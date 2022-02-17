@@ -25,6 +25,4 @@ Exam | Microsoft Certified
 - [Virtual Network settings](./pages/vnet.settings.md)
 - [VPN Gateway fundamentals](./pages/vpn.gateway.fndmnt.md)
 
-TODO: learning paths 
-
 [< home](../README.md)

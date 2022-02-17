@@ -105,5 +105,3 @@ The VPN is a public cloud resource; however, because the VPN is a private connec
 
 [< back](../az.md)
 
-TODO: service model
-

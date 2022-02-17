@@ -66,4 +66,4 @@ Another scenario where you would use management groups is to provide user access
 - Each management group can have many children.
 - All subscriptions and management groups are within a single hierarchy in each directory.
 
-[< back](./az.md)
+[< back](../az.md)
