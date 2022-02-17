@@ -40,3 +40,5 @@ After completing this module, you'll be able to:
 - Apply **tags** to your Azure resources to help describe their purpose.
 - Control and **audit** how your resources are created by using Azure Policy.
 - Enable governance at scale across multiple Azure subscriptions by using **Azure Blueprints**.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

@@ -46,3 +46,5 @@ The Tailwind Traders team can run queries, for example, from PowerShell or the A
 Keep in mind that you don't need to enforce that a specific tag is present on all of your resources.
 For example, you might decide that only mission-critical resources have the Impact tag.
 All non-tagged resources would then not be considered as mission-critical.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

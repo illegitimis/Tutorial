@@ -47,3 +47,5 @@ To make the protection process more robust, you can combine resource locks with 
 Azure Blueprints enables you to define the set of standard Azure resources that your organization requires.
 For example, you can define a blueprint that specifies that a certain resource lock must exist.
 Azure Blueprints can automatically replace the resource lock if that lock is removed.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

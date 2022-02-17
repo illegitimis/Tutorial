@@ -9,3 +9,5 @@
 - azure government [*](https://azure.microsoft.com/global-infrastructure/government)
 - Azure geographies [*](https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies)
 - Compare Azure Government and global Azure [*](https://docs.microsoft.com/en-us/azure/azure-government/compare-azure-government-global-azure)
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

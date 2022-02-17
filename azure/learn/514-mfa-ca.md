@@ -106,3 +106,5 @@ The What If tool enables you to test your proposed Conditional Access policies b
 
 To use Conditional Access, **you need an Azure AD Premium P1 or P2 license**.
 If you have a **Microsoft 365 Business Premium** license, you also have access to Conditional Access features.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

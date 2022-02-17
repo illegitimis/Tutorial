@@ -41,3 +41,5 @@ That's correct. \
 Tags provide extra information, or metadata, about your resources. \
 The team might create a tag that's named BillingDept whose value would be the name of the billing department. \
 You can use Azure Policy to ensure that the proper tags are assigned when resources are provisioned.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

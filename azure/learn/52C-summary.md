@@ -28,3 +28,5 @@ With these points in mind, you're ready to take the next step toward building a 
 - Azure Policy Samples [*](https://docs.microsoft.com/en-us/azure/governance/policy/samples/)
 - Create a custom policy definition [tuts](https://docs.microsoft.com/en-us/azure/governance/policy/tutorials/create-custom-policy-definition)
 - Implement resource management security in Azure [Learning Path](https://docs.microsoft.com/en-us/learn/paths/implement-resource-mgmt-security/)
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

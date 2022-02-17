@@ -45,3 +45,5 @@ After completing this module, you'll be able to:
 
 - You should be familiar with basic computing concepts and terminology.
 - Familiarity with cloud computing is helpful but isn't necessary.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

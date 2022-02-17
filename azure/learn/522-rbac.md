@@ -77,3 +77,5 @@ In this example, Alain Charon has been assigned the Backup Operator role for thi
 In the Access Control pane, settings and permissions for a user are shown.
 
 ![A screenshot that shows the Access Control Role Assignment pane](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-based-access-control-blade-360b5130.png).
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

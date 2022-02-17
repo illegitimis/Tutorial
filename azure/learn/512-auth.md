@@ -29,3 +29,5 @@ A diagram that shows an identification card and the various kinds of resources t
 The identification card represents the user's credentials.
 
 The identification card represents credentials that the user has to prove their identity (you'll learn more about the types of credentials later in this module.) Once authenticated, authorization defines what kinds of applications, resources, and data that user can access.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

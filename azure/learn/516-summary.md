@@ -38,3 +38,5 @@ Here are more resources to help you go further:
 - bridge between on prem and aad. js to get kerberos ticket
 - aad connect cfg. choose pass-through and enable sso, disable pass hashes (wizard), disable federation (blade)
 - group policy, edit site to zone assignment list
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

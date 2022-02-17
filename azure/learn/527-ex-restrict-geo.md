@@ -9,9 +9,13 @@ Tailwind Traders wants to *limit the location where resources can be deployed to
 
 It has two reasons:
 
-- **Improved cost tracking** To track costs, Tailwind Traders uses different subscriptions to track deployments to each of its regional locations. The policy will ensure that all resources are deployed to the East US region.
-- **Adhere to data residency and security compliance**
-Tailwind Traders must adhere to a compliance rule that states where customer data can be stored.
-Here, customer data must be stored in the East US region.
-Recall that you can assign a policy to a management group, a single subscription, or a resource group.
+- **Improved cost tracking** \
+To track costs, Tailwind Traders uses different subscriptions to track deployments to each of its regional locations. \
+The policy will ensure that all resources are deployed to the East US region.
+- **Adhere to data residency and security compliance** \
+Tailwind Traders must adhere to a compliance rule that states where customer data can be stored. \
+Here, customer data must be stored in the East US region. \
+Recall that you can assign a policy to a management group, a single subscription, or a resource group. \
 Here, you assign the policy to a resource group so that policy doesn't affect any other resources in your Azure subscription.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

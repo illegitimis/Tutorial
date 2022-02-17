@@ -107,3 +107,5 @@ To delete the resource group, you first need to remove the resource lock.
 - When the operation completes, select Home > Resource groups.
 You see that the my-test-rg resource group no longer exists in your account.
 Your storage account is also deleted.
+
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)

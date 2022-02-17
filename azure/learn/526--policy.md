@@ -73,3 +73,4 @@ Like a policy assignment, an initiative assignment is an initiative definition t
 Even if you have only a single policy, an initiative enables you to increase the number of policies over time.
 Because the associated initiative remains assigned, it's easier to add and remove policies without the need to change the policy assignment for your resources.
 
+[< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
