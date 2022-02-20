@@ -2,14 +2,16 @@
 
 [source](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/management-groups-subscriptions)
 
-> An Azure resource is a manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are all examples of resources.
+> An Azure resource is a manageable item that's available through Azure. \
+> Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are all examples of resources.
 
 ## Azure subscriptions
 
 - Using Azure requires an Azure subscription.
 - A subscription provides you with authenticated and authorized access to Azure products and services.
 - It also allows you to provision resources.
-- An Azure subscription is a logical unit of Azure services that links to an Azure account, which is an identity in Azure Active Directory (Azure AD) or in a directory that Azure AD trusts.
+- An Azure subscription is a **logical unit of Azure services that links to an Azure account**, \
+which is an identity in Azure Active Directory (Azure AD) or in a directory that Azure AD trusts.
 
 Diagram showing Azure subscriptions using authentication and authorization to access Azure accounts.
 
@@ -66,4 +68,4 @@ Another scenario where you would use management groups is to provide user access
 - Each management group can have many children.
 - All subscriptions and management groups are within a single hierarchy in each directory.
 
-[< back](../az.md)
+[<< home](../az.md) | [< LP1 AZ900](./1-lp-az-900.md)

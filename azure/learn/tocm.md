@@ -2,7 +2,7 @@
 
 Deployment model | Description | comparison
 ---|---|---
-Public cloud | Services are offered over the public internet and available to anyone who wants to purchase them. Cloud resources, such as servers and storage, are owned and operated by a third-party cloud service provider, and delivered over the internet. | No capital expenditures to scale up. Applications can be quickly provisioned and deprovisioned. Organizations pay only for what they use.
+Public cloud | Services are offered over the _public internet_ and available to anyone who wants to purchase them. Cloud resources, such as servers and storage, are owned and operated by a third-party cloud service provider, and delivered over the internet. | No capital expenditures to scale up. Applications can be quickly provisioned and deprovisioned. Organizations pay only for what they use.
 Private cloud | A private cloud consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization's on-site (on-premises) datacenter, or it can be hosted by a third-party service provider. | Hardware must be purchased for start-up and maintenance. Organizations have complete control over resources and security. Organizations are responsible for hardware maintenance and updates.
 Hybrid cloud | A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them. | Provides the most flexibility. Organizations determine where to run their applications. Organizations control security, compliance, or legal requirements
 
@@ -68,40 +68,5 @@ Regulation requires that the data needs to remain at a physical location.\
 Public cloud can't replicate a legacy operating environment.\
 Migration: Move workloads to the cloud over time.
 
-## Check your knowledge
-
-1. Which cloud deployment model would be the best match for the following situation? \
-A SQL server database is needed for a short-term project. \
-The IT department does not have available hardware that meets the performance requirements or resources to deploy it. \
-The project starts next week. \
-Once the project is over, the database is no longer needed.
-- [X] Public cloud\
-The need for a quick deployment and the short lifecycle of the SQL database make public cloud the best option.
-- [ ] Private cloud
-- [ ] Hybrid cloud
-
-2. Which cloud deployment model is described in the following scenario? \
-You create several virtual machines in the cloud. \
-The VMs are networked together using a virtual network. \
-The VMs have access to x-ray image files in cloud storage. \
-One of the VMs is a web server that host a website exposed to the Internet for customers to access their records. \
-There is a VPN that connects the solution to your on-premises datacenter for customer information to display with the image files.
-- [ ] Public cloud
-- [ ] Private cloud
-- [X] Hybrid cloud\
-This scenario uses both public and private cloud with a connection between the two. \
-Therefore, it is a hybrid cloud deployment.
-
-3. Which cloud deployment model is described in the following scenario? \
-You have two datacenters in your organization.\
-One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement.\
-You want to access the database from the other datacenter.\
-_You create a VPN using a cloud provider to connect the two datacenters_.
-
-- [ ] Public cloud
-- [X] **Private** cloud\
-The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this is a private cloud deployment.
-- [ ] Hybrid cloud
-
-[< back](../az.md)
+[< az home](../az.md) | [LP1 AZ900](./1-lp-az-900.md)
 

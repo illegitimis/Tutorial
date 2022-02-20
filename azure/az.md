@@ -11,16 +11,19 @@ Exam | Microsoft Certified
 
 ## faq
 
-- msft [learning](learn.md)
+- [Cloud Models](./learn/tocm.md) **public/private/hybrid**
+- [**learning**](learn.md) msft
 - [_lectures_](lectures.md)
 - [**legend**](legend.md), glossary of terms
+- [regions](./learn/133-region.md)
 - [resources](resources.md) TODO
-- [_tour_](tour.md)
+- [service models](./learn/service-models.md)
+- [subscriptions and management groups](./learn/smg.md)
+- [_tour_](./learn/114-tour.md) of services 
 
 ## pages
 
 - [application insights](./pages/app.insight.md)
-- [Cloud Models](./pages/tocm.md) **public/private/hybrid**
 - [Subscriptions & management groups](./pages/smg.md)
 - [Virtual Network settings](./pages/vnet.settings.md)
 - [VPN Gateway fundamentals](./pages/vpn.gateway.fndmnt.md)

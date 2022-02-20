@@ -76,6 +76,10 @@ Common Event Format
 
 Content Delivery Network
 
+## CIAM
+
+customer identity access management
+
 ## CJIS
 
 FBI's Criminal Justice Information Services
