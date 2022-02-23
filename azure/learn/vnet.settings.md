@@ -112,4 +112,4 @@ Or, you can create an *automation script* to generate the current virtual networ
 - You can isolate, filter, and route your network traffic.
 - Azure allows you to increase security where you feel you need it.
 
-[<](../az.md)
+[<< home](../az.md) | [< LP2 AZ900](./2-lp-az-900.md)

@@ -56,9 +56,8 @@ VpnGw1/Az|Maximum: 30|650 Mbps|Supported
 VpnGw2/Az|Maximum: 30|1 Gbps|Supported
 VpnGw3/Az|Maximum: 30|1.25 Gbps|Supported
 
-> Note
->> a Basic VPN gateway should only be used for Dev/Test workloads.
->> In addition, it's unsupported to migrate from Basic to the VpnGW1/2/3/Az SKUs at a later time without having to remove the gateway and redeploy.
+> a Basic VPN gateway should only be used for Dev/Test workloads. \
+> In addition, it's unsupported to migrate from Basic to the VpnGW1/2/3/Az SKUs at a later time without having to remove the gateway and redeploy.
 
 ## Deploy VPN gateways
 
@@ -113,4 +112,4 @@ Another high-availability option is to configure a VPN gateway as a secure failo
 
 In regions that support availability zones, VPN gateways and ExpressRoute gateways can be deployed in a zone-redundant configuration. This configuration brings resiliency, scalability, and higher availability to virtual network gateways. *Deploying gateways in Azure availability zones physically and logically separates gateways within a region* while protecting your on-premises network connectivity to Azure from zone-level failures. These gateways require different gateway SKUs and use Standard public IP addresses instead of Basic public IP addresses.
 
-[<](az.md)
+[<< home](../az.md) | [< LP2 AZ900](./2-lp-az-900.md)

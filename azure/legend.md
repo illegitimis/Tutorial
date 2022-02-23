@@ -6,6 +6,17 @@
 
 as a service
 
+## ACI
+
+azure container instances
+
+## ACR
+
+Azure Container Registry. \
+ACR is a service that keeps track of current valid container images. \
+It manages files and artifacts for containers. \
+When your Azure container instances and Kubernetes service need to create a new container, the images come from ACR.
+
 ## ADFS
 
 Active Directory Federation Services
@@ -13,6 +24,10 @@ Active Directory Federation Services
 ## AHB
 
 Azure Hybrid Benefit
+
+## AKS
+
+Azure Kubernetes Service. simplest deployment of a managed Kubernetes cluster in Azure.
 
 ## Application Gateway
 
@@ -43,12 +58,6 @@ atom-record-sequence format
 - An availability zone is set up to be an isolation boundary.
 - If one zone goes down, the other continues working.
 - Availability zones are connected through high-speed, private fiber-optic networks.
-
-## Azure Marketplace
-
-- `Azure Marketplace` is an online store that hosts applications that are certified and optimized to run in Azure.
-- Many types of applications are available, ranging from AI and machine learning to web applications.
-- deployments from the store are done via the Azure portal by using a wizard-style user interface.
 
 ## BGP
 
@@ -223,6 +232,10 @@ International Traffic in Arms Regulations
 
 key performance indicator
 
+## LAMP
+
+stack (Linux, Apache, MySQL, PHP)
+
 ## LOB
 
 line of business
@@ -234,6 +247,12 @@ makes it easy to create a workflow across well-known services with less effort t
 ## LUIS
 
 Language Understanding
+
+## Marketplace
+
+- `Azure Marketplace` is an online store that hosts applications that are certified and optimized to run in Azure.
+- Many types of applications are available, ranging from AI and machine learning to web applications.
+- deployments from the store are done via the Azure portal by using a wizard-style user interface.
 
 ## MCU
 
@@ -382,6 +401,10 @@ service level agreement, uptime, availability
 
 Service Level Objective
 
+## SMB
+
+Server Message Block
+
 ## SOC
 
 Service Organization Controls
@@ -392,7 +415,9 @@ Total Cost of Ownership
 
 ## UDR
 
-user-defined Routing. significant update to Azure’s Virtual Networks as this allows network admins to control the routing tables between subnets within a VNet, as well as between VNets, thereby allowing for greater control over network traffic flow.
+user-defined Routing. \
+significant update to Azure’s Virtual Networks as this allows network admins to control the routing tables between subnets within a VNet, \
+as well as between VNets, thereby allowing for greater control over network traffic flow.
 
 ## VHD
 

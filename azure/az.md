@@ -20,12 +20,11 @@ Exam | Microsoft Certified
 - [service models](./learn/service-models.md)
 - [subscriptions and management groups](./learn/smg.md)
 - [_tour_](./learn/114-tour.md) of services 
+- [Virtual Network settings](./learn/vnet.settings.md)
+- [VPN Gateway fundamentals](./learn/vpn.gateway.fndmnt.md)
 
 ## pages
 
 - [application insights](./pages/app.insight.md)
-- [Subscriptions & management groups](./pages/smg.md)
-- [Virtual Network settings](./pages/vnet.settings.md)
-- [VPN Gateway fundamentals](./pages/vpn.gateway.fndmnt.md)
 
 [< home](../README.md)
