@@ -51,6 +51,10 @@ Azure Resource Manager templates
 
 atom-record-sequence format
 
+## ASG
+
+application security group
+
 ## Availability zones
 
 - physically separate datacenters within an Azure region.
@@ -88,6 +92,10 @@ Content Delivery Network
 ## CIAM
 
 customer identity access management
+
+## CIS
+
+center 4 internet security
 
 ## CJIS
 
@@ -210,6 +218,10 @@ Geo-redundant storage
 ## HITRUST
 
 Health Information Trust Alliance
+
+## HSM
+
+hardware security module
 
 ## hypervisor
 
@@ -407,11 +419,15 @@ Server Message Block
 
 ## SOC
 
-Service Organization Controls
+Service Organization Controls | System and Organization Controls.
 
 ## TCO
 
 Total Cost of Ownership
+
+## TSP
+
+Trust Services Principles 
 
 ## UDR
 

@@ -2,18 +2,9 @@
 
 > entry point for Azure notes
 
-Exam | Microsoft Certified
----|---
-[AZ-204](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204): Developing Solutions for Microsoft Azure | [Azure Developer Associate](https://docs.microsoft.com/en-us/learn/certifications/azure-developer/)
-[AZ-900](https://docs.microsoft.com/en-gb/learn/certifications/exams/az-900): Microsoft Azure Fundamentals | [Azure Fundamentals](https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/)
-[AZ-303](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303) Architect Technologies | need AZ-304
-[AZ-304](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304) Architect Design | [Azure Solutions Architect Expert](https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/)
-
 ## faq
 
 - [Cloud Models](./learn/tocm.md) **public/private/hybrid**
-- [**learning**](learn.md) msft
-- [_lectures_](lectures.md)
 - [**legend**](legend.md), glossary of terms
 - [regions](./learn/133-region.md)
 - [resources](resources.md) TODO
@@ -23,8 +14,16 @@ Exam | Microsoft Certified
 - [Virtual Network settings](./learn/vnet.settings.md)
 - [VPN Gateway fundamentals](./learn/vpn.gateway.fndmnt.md)
 
+## links
+
+- [az900](./learn/az900.md)
+- [**learning**](learn.md) msft
+- [_lectures_](lectures.md)
+
 ## pages
 
 - [application insights](./pages/app.insight.md)
+- key vault [manage password](./learn/akv.pass.md)
+- [OSI](./pages/osi.md) layers
 
 [< home](../README.md)
