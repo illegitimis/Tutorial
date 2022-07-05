@@ -17,6 +17,7 @@
 ## links
 
 - [az900](./learn/az900.md)
+- az900 [Knowledge check](./learn/az900-kc.md)
 - [**learning**](learn.md) msft
 - [_lectures_](lectures.md)
 
