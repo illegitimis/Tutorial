@@ -23,5 +23,5 @@
 title: Dev Docs
 description: Illegitimis' dev documentation, tutorial, memory pointers, inverse oblivion
 # theme: just-the-docs
-remote_theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 url: https://illegitimis.github.io/Tutorial/
