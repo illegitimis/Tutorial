@@ -1,1 +1,29 @@
-theme: jekyll-theme-midnight
+# ##################################
+# About GitHub Pages and Jekyll
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
+# Adding a theme to your GitHub Pages site using Jekyll
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+# ##################################
+# Github Pages supported themes: Architect, Cayman, Dinky, Hacker, Leap day, 
+# Merlot, Midnight, Minima, Minimal, Modernist, Slate, Tactile, Time machine
+# source @ https://github.com/pages-themes/{theme-name}
+# list @ https://pages.github.com/themes/
+# repos @ https://github.com/orgs/pages-themes/repositories
+# theme topic @ https://github.com/topics/jekyll-theme
+# ##################################
+# initial
+# theme: jekyll-theme-midnight
+# theme: minima 
+# remote_theme: THEME-NAME
+# ##################################
+# https://just-the-docs.github.io/just-the-docs/#getting-started 
+# https://github.com/just-the-docs/just-the-docs
+# https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+# https://jekyllthemes.io/theme/just-the-docs
+title: Dev Docs
+description: Illegitimis' dev documentation, memory pointers, inverse oblivion
+theme: just-the-docs
+url: http://illegitimis.github.io/Tutorial/
+theme: just-the-docs
+
+
