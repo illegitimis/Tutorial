@@ -6,8 +6,8 @@
 
 Exam | Microsoft Certified
 ---|---
-[AZ-204](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204): Developing Solutions for Microsoft Azure | [Azure Developer Associate](https://docs.microsoft.com/en-us/learn/certifications/azure-developer/)
 [AZ-900](https://docs.microsoft.com/en-gb/learn/certifications/exams/az-900): Microsoft Azure Fundamentals | [Azure Fundamentals](https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/)
+[AZ-204](https://docs.microsoft.com/en-us/learn/certifications/exams/az-204): Developing Solutions for Microsoft Azure | [Azure Developer Associate](https://docs.microsoft.com/en-us/learn/certifications/azure-developer/)
 [AZ-303](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303) Architect Technologies | need AZ-304
 [AZ-304](https://docs.microsoft.com/en-us/learn/certifications/exams/az-304) Architect Design | [Azure Solutions Architect Expert](https://docs.microsoft.com/en-us/learn/certifications/azure-solutions-architect/)
 
@@ -19,7 +19,7 @@ Exam | Microsoft Certified
 
 ## github
 
-> github issues & project work track 
+> github issues & project work track
 
 - Project [*](https://github.com/illegitimis/Tutorial/projects/1)
 - AZ900 Quick reference Sheet [#12](https://github.com/illegitimis/Tutorial/issues/12)
