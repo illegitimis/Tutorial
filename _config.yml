@@ -27,6 +27,7 @@ remote_theme: just-the-docs/just-the-docs
 url: https://illegitimis.github.io/Tutorial/
 
 # https://github.com/just-the-docs/just-the-docs/blob/main/_config.yml
+# https://github.com/poloclub/diffusiondb/blob/main/_config.yml
 permalink: pretty
 # defaults:
 #   - scope:
