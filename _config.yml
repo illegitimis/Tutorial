@@ -114,11 +114,11 @@ callouts:
 # ga_tracking: UA-2709176-10,G-5FG1HLH3XQ
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-github-metadata
-  - jekyll-include-cache
-  - jekyll-sitemap
+# plugins:
+#   - jekyll-seo-tag
+#   - jekyll-github-metadata
+#   - jekyll-include-cache
+#   - jekyll-sitemap
 
 kramdown:
   syntax_highlighter_opts:
