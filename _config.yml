@@ -28,12 +28,12 @@ url: https://illegitimis.github.io/Tutorial/
 
 # https://github.com/just-the-docs/just-the-docs/blob/main/_config.yml
 permalink: pretty
-defaults:
-  - scope:
-      path: "doc" # an empty string here means all files in the project
-      type: "pages"
-    values:
-      layout: "default"
+# defaults:
+#   - scope:
+#       path: "doc" # an empty string here means all files in the project
+#       type: "pages"
+#     values:
+#       layout: "default"
 search_enabled: true
 search:
   # Supports 1 - 6, default: 2
@@ -73,9 +73,9 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 # Show navigation error report
 nav_error_report: true # default is false/nil.
 
-liquid:
-  error_mode: strict
-  strict_filters: true
+# liquid:
+#   error_mode: strict
+#   strict_filters: true
 
 # Back to top link
 back_to_top: true
@@ -91,22 +91,22 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 color_scheme: dark
 
-callouts_level: quiet # or loud
-callouts:
-  highlight:
-    color: red
-  important:
-    title: Important
-    color: blue
-  new:
-    title: New
-    color: green
-  note:
-    title: Note
-    color: purple
-  warning:
-    title: Warning
-    color: yellow
+# callouts_level: quiet # or loud
+# callouts:
+#   highlight:
+#     color: red
+#   important:
+#     title: Important
+#     color: blue
+#   new:
+#     title: New
+#     color: green
+#   note:
+#     title: Note
+#     color: purple
+#   warning:
+#     title: Warning
+#     color: yellow
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
@@ -120,19 +120,19 @@ callouts:
 #   - jekyll-include-cache
 #   - jekyll-sitemap
 
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
+# kramdown:
+#   syntax_highlighter_opts:
+#     block:
+#       line_numbers: false
 
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
-  # ignore:
-  #   envs: all
+# compress_html:
+#   clippings: all
+#   comments: all
+#   endings: all
+#   startings: []
+#   blanklines: false
+#   profile: false
+#   # ignore:
+#   #   envs: all
 
 
