@@ -106,7 +106,7 @@ We can't talk about controllers without talking about scope. So let's look at th
 6. `img ng-src`, `li ng-repeat="s in main.sessions"`, `ng-click`
 
 **EventController.js** 
-1. inside `{{ }}` evaluation. double curly brace
+1. inside _\{\{ \}\}_ evaluation. double curly brace
 2. `$scope.upVoteSession = function(session) { session.upVoteCount++; };`
 
 ## Built-in Directives
