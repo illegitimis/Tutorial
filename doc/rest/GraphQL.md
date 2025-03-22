@@ -2,22 +2,18 @@
 
 - big issue: overfetching vs new endpoint
 - 1 + n queries => data loaders and batch
+- how it works, and how to use it [graphql.org learn] | [landscape] | Current Working [draft]
 
-> official `GraphQL` C# / .NET server/client [implementations](https://graphql.org/code/#c-net)
+## official C#
+
+`GraphQL` .NET server/client [implementations]
 
 git | package | doc | examples | desc
 ---|---|---|---|---
-[graphql-dotnet] | [GraphQL] | [graphql-dotnet.github.io] | [graphql-dotnet-examples] | continuator of [lmynsberge/graphql-dotnet-netcore] 
+[graphql-dotnet] | [GraphQL] | [graphql-dotnet.github.io] | [graphql-dotnet-examples] | continuator of [lmynsberge/graphql-dotnet-netcore]
 [graphql-client] | [GraphQL.Client] | - | [GraphQL.Client.Example] | A GraphQL Client for .NET Standard 
 [graphql-platform] | [HotChocolate] | [chillicream] | [fetching-from-rest]; [fetching-from-databases]; [dataloader] | Hot Chocolate GraphQL server for .NET, the Strawberry Shake GraphQL client for .NET and Nitro the awesome Monaco based GraphQL IDE. 
 [graphql-net] | [GraphQL.Net] | [chkimes] | - | Convert `GraphQL`  and `IQueryable`. netFx only. obsolete
-
-## Learn
-
-- Introduction to GraphQL. Learn about GraphQL, how it works, and how to use it [graphql.org learn]
-- `GraphQL.NET` Migrating from v3.x to v4.x [graphql-dotnet.github.io-migration4]
-- [landscape]
-- Current Working [draft]
 
 ## courses
 
@@ -59,3 +55,4 @@ git | package | doc | examples | desc
 [explorer]: https://docs.github.com/en/graphql/overview/explorer
 [create-graphless]: https://github.com/simonaco/create-graphless
 [fastify]: https://github.com/fastify/fastify 
+[implementations]: https://graphql.org/code/#c-net
