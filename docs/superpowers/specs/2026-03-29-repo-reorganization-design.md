@@ -327,6 +327,13 @@ Rules:
 | Cloud services/platforms | `code` external, plain in owning doc | `Cosmos DB` in data pages; Cosmos DB in azure pages |
 | Programming languages | plain text | C#, JavaScript, SQL, Python |
 
+### Emoji and Unicode
+
+- Replace GitHub emoji shortcodes (`:shortcode:`) with plain text labels or remove if the surrounding context is sufficient
+- Shortcodes like `:student:`, `:technologist:`, `:notebook_with_decorative_cover:`, `:house:`, `:page_with_curl:` do not render on Jekyll/GitHub Pages
+- Use simple text alternatives: e.g., `:page_with_curl: [link]` becomes just `[link]`
+- Scope: 6 occurrences in `azure/learn.md` and `azure/lectures.md`
+
 ### File Naming
 
 - All file names in kebab-case: `managed-threads.md`, `entity-framework.md`, `angular-fundamentals.md`
