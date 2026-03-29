@@ -17,6 +17,8 @@ v2 .NET Framework with Visual Studio [4].
 - Introduction to integration testing with xUnit and TestServer in ASP.NET Core [13], _2016_
 - Capturing Output [14]
 - Shared Context between Tests [15]
+- Creating strongly typed xUnit theory test data with `TheoryData` [16]
+- `TypedClassData` Typed Class Data Attribute for xUnit Test Framework [17]
 
 ## Deadlock when using parallelization and blocking on async code
 
@@ -28,8 +30,9 @@ VS runner hangs on Run All [#611](https://github.com/xunit/xunit/issues/611)
   }
 ```
 
-_Resolution_ was to: 
+_Resolution_ was to:
 
+> **update test runner related packages** in the HLD template  
 > **update test runner related packages** in the HLD template  
 
 ```xml
@@ -48,8 +51,12 @@ Tests **in the same test collection** will be run **sequentially against each ot
 
 All parallelization within this test assembly is disabled.
 
+> [Configure xUnit](https://xunit.github.io/docs/configuring-with-xml.html) to **not** participate in parallelization with other assemblies. \
+Tests **in the same test collection** will be run **sequentially against each other**, but tests **in different test collections** will be run **in parallel** against each other.
+
+All parallelization within this test assembly is disabled. [18]
+
 ```xml
-  <!--https://xunit.github.io/docs/configuring-with-xml.html-->
   <appSettings>
     <add key="xunit.appDomain" value="ifAvailable" />
     <add key="xunit.diagnosticMessages" value="true" />
@@ -100,3 +107,6 @@ For a .NET Core project, a xUnit configuration would have been done via a `xunit
 [13]: https://andrewlock.net/introduction-to-integration-testing-with-xunit-and-testserver-in-asp-net-core/
 [14]: https://xunit.net/docs/capturing-output
 [15]: https://xunit.net/docs/shared-context
+[16]: https://andrewlock.net/creating-strongly-typed-xunit-theory-test-data-with-theorydata/
+[17]: https://github.com/ielcoro/xunitTypedClassData
+[18]: https://xunit.github.io/docs/configuring-with-xml.html
