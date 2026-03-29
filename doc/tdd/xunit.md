@@ -33,6 +33,7 @@ VS runner hangs on Run All [#611](https://github.com/xunit/xunit/issues/611)
 _Resolution_ was to: 
 
 > **update test runner related packages** in the HLD template  
+> **update test runner related packages** in the HLD template  
 
 ```xml
   <package id="xunit" version="2.3.1" targetFramework="net462" />
@@ -44,6 +45,11 @@ _Resolution_ was to:
   <package id="xunit.extensibility.execution" version="2.3.1" targetFramework="net462" />
   <package id="xunit.runner.visualstudio" version="2.2.0" targetFramework="net462" developmentDependency="true" />
 ```
+
+> [Configure xUnit](https://xunit.github.io/docs/configuring-with-xml.html) to **not** participate in parallelization with other assemblies. \
+Tests **in the same test collection** will be run **sequentially against each other**, but tests **in different test collections** will be run **in parallel** against each other.
+
+All parallelization within this test assembly is disabled.
 
 > [Configure xUnit](https://xunit.github.io/docs/configuring-with-xml.html) to **not** participate in parallelization with other assemblies. \
 Tests **in the same test collection** will be run **sequentially against each other**, but tests **in different test collections** will be run **in parallel** against each other.
@@ -64,7 +70,9 @@ All parallelization within this test assembly is disabled.
   </appSettings>
 ```
 
+
 Classes with a sensible number of tests have been isolated into collections, collection is `Xunit.CollectionAttribute`:
+
 
 ```cs
     [Collection("Some Collection")]
@@ -73,7 +81,10 @@ Classes with a sensible number of tests have been isolated into collections, col
     public class SomeControllerTests {...}
 ```
 
+```
+
 For a .NET Core project, a xUnit configuration would have been done via a `xunit.runner.json` file in the test project root.
+
 
 ```json
 {

@@ -106,7 +106,7 @@ We can't talk about controllers without talking about scope. So let's look at th
 6. `img ng-src`, `li ng-repeat="s in main.sessions"`, `ng-click`
 
 **EventController.js** 
-1. inside `{{ }}` evaluation. double curly brace
+1. inside _\{\{ \}\}_ evaluation. double curly brace
 2. `$scope.upVoteSession = function(session) { session.upVoteCount++; };`
 
 ## Built-in Directives
@@ -128,10 +128,16 @@ ng-model required if ng-change present
 In the controller, add `$scope.buttonDisabled = true;` and in the view `<button class="btn" ng-disabled="buttonDisabled">Disabled</button>`
 
 ## Filters
-`{{ expression | filter }}`
-built-in: uppercase, lowercase, for instance `<h3>{{event.name | uppercase}}</h3>`
-number & currency `<div>{{3.14132453 | number:2}}</div>`
-date: `<div>{{jsdate | date:'mediumDate'}}</div>`
+
+```html
+{{ expression | filter }}
+<!-- built-in: uppercase, lowercase, for instance -->
+<h3>{{event.name | uppercase}}</h3>
+<!-- number & currency -->
+<div>{{3.14132453 | number:2}}</div>
+<!--date -->
+<div>{{jsdate | date:'mediumDate'}}</div>
+```
 
 ````html
 <li ng-repeat "session in event.sessions | orderBy:sortorder | limitTo:2 | filter:query">
