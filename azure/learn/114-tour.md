@@ -1,6 +1,6 @@
 # tour
 
-> [tour-of-azure-services](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
+> tour-of-azure-services [1]
 
 ## diagram
 
@@ -136,3 +136,5 @@ Azure DevOps | Use development collaboration tools such as high-performance pipe
 Azure DevTest Labs | Quickly create on-demand Windows and Linux environments to test or demo applications directly from deployment pipelines.
 
 [<< home](../az.md) | [< LP1 AZ900](./1-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services

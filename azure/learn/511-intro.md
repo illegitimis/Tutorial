@@ -1,6 +1,6 @@
 # Introduction
 
-> https://docs.microsoft.com/en-us/learn/modules/secure-access-azure-identity-services/1-introduction
+> Microsoft Docs: 1 Introduction [1]
 
 Traditionally, protecting access to systems and data involved the on-premises network perimeter and physical access controls.
 
@@ -10,7 +10,7 @@ With people increasingly able to work from anywhere, plus the rise of bring your
 
 ## Meet Tailwind Traders
 
-[Tailwind Traders](https://www.tailwindtraders.com/) is a fictitious home improvement retailer.
+Tailwind Traders [2] is a fictitious home improvement retailer.
 It operates retail hardware stores across the globe and online.
 
 ![The Tailwind Traders logo](https://docs.microsoft.com/en-us/learn/azure-fundamentals/shared/media/tailwind-traders-logo.png)
@@ -47,3 +47,6 @@ After completing this module, you'll be able to:
 - Familiarity with cloud computing is helpful but isn't necessary.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/secure-access-azure-identity-services/1-introduction
+[2]: https://www.tailwindtraders.com/

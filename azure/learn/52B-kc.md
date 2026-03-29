@@ -1,6 +1,6 @@
 # Knowledge check
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/11-knowledge-check
+> Microsoft Docs: 11 Knowledge Check [1]
 
 1. How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
 - [X] Create a **role assignment** through Azure role-based access control (Azure RBAC).  
@@ -33,3 +33,5 @@ The team might create a tag that's named BillingDept whose value would be the na
 You can use `Azure Policy` to ensure that the proper tags are assigned when resources are provisioned.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/11-knowledge-check

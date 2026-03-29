@@ -1,6 +1,6 @@
 # Explore compliance terms and requirements
 
-> https://docs.microsoft.com/en-us/learn/modules/examine-privacy-compliance-data-protection-standards/2-explore-compliance-terms-requirements
+> Microsoft Docs: 2 Explore Compliance Terms Requirements [1]
 
 ## Which compliance categories are available on Azure?
 
@@ -11,5 +11,4 @@ These offerings are grouped under four categories: Global, US Government, Indust
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
 
-
-
+[1]: https://docs.microsoft.com/en-us/learn/modules/examine-privacy-compliance-data-protection-standards/2-explore-compliance-terms-requirements

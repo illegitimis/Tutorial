@@ -1,6 +1,6 @@
 # Exercise - Restrict deployments to a specific location by using Azure Policy
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/7-restrict-location-azure-policy
+> Microsoft Docs: 7 Restrict Location Azure Policy [1]
 
 In this exercise, you create a policy in Azure Policy that restricts the deployment of Azure resources to a specific location.
 You verify the policy by attempting to create a storage account in a location that violates the policy.
@@ -19,3 +19,5 @@ Recall that you can assign a policy to a management group, a single subscription
 Here, you assign the policy to a resource group so that policy doesn't affect any other resources in your Azure subscription.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/7-restrict-location-azure-policy

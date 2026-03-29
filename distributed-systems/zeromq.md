@@ -2,12 +2,12 @@
 
 ## table of contents
 
-- [ZeroMQ base](https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#zeromq-base)
-  - [Socket types and NetMQ counterparts](https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#socket-types-and-netmq-counterpart)s
-  - [Socket pairs](https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#socket-pairs)
-- [NetMQ](https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#netmq)
-  - [Sacha barber demos](https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#sacha-barber-demos)
-  - [ZeroMQ and services](https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#zeromq-and-services)
+- ZeroMQ base [1]
+  - Socket types and NetMQ counterparts [2]s
+  - Socket pairs [3]
+- NetMQ [4]
+  - Sacha barber demos [5]
+  - ZeroMQ and services [6]
 
 ## ZeroMQ base
 
@@ -146,13 +146,13 @@ In the request-reply pattern, the message envelope holds the return address for 
 
 The ŘMQ reply envelope formally consists of zero or more reply addresses, followed by an empty frame (the envelope delimiter), followed by the message body (zero or more frames). The envelope is created by multiple sockets working together in a chain.
 
-- [zguide](http://zguide.zeromq.org/php:all)
-- [cs:hwclient](http://zguide.zeromq.org/cs:hwclient)
-- [cs:hwserver](http://zguide.zeromq.org/cs:hwserver)
-- [hintjens blog](http://hintjens.com/blog:86)
-- [0mq Labs](http://zeromq.org/docs:labs)
-- [0mq Messaging Presentation Slides Pdf](http://zeromq.wdfiles.com/local--files/area%3Awhitepapers/messaging-2010-02-17.pdf)
-- [**(Pieter Hintjens) ZeroMQ: Messaging for Many Applications (ebook)**](http://www.reedbushey.com/89Zeromq.pdf)
+- zguide [7]
+- cs:hwclient [8]
+- cs:hwserver [9]
+- hintjens blog [10]
+- 0mq Labs [11]
+- 0mq Messaging Presentation Slides Pdf [12]
+- **(Pieter Hintjens) ZeroMQ: Messaging for Many Applications (ebook)** [13]
 - [**(Pieter Hintjens) ZeroMQ: Messaging for Many Applications (local)**](../../CARTI/0mq/2013.Zeromq.Messaging.For.many.Applications.pdf )
 
 ## NetMQ
@@ -249,36 +249,73 @@ January 20th, 2016
 
 </div>
 
-- [netmq-asp-net](http://somdoron.com/2014/08/netmq-asp-net/)
-- [netmq-xpub-xsub](http://netmq.readthedocs.org/en/latest/xpub-xsub/)
-- [ZeroMQ-NetMq-Quick-Intro](http://blog.scottlogic.com/2015/03/20/ZeroMQ-Quick-Intro.html)
-- [Comparing OpenDDS and ZeroMQ Usage and Performance](http://mnb.ociweb.com/mnb/MiddlewareNewsBrief-201004.html)
-- [SO tag netmq](http://stackoverflow.com/questions/tagged/netmq)
-- [NetMQ on GitHub](https://github.com/zeromq/netmq)
+- netmq-asp-net [14]
+- netmq-xpub-xsub [15]
+- ZeroMQ-NetMq-Quick-Intro [16]
+- Comparing OpenDDS and ZeroMQ Usage and Performance [17]
+- SO tag netmq [18]
+- NetMQ on GitHub [19]
 
 ## Sacha barber demos
 
-- [**All demos on GitHub**](https://github.com/sachabarber/ZeroMqDemos)
-- [zeromq-1-introduction](https://sachabarbs.wordpress.com/2014/08/19/zeromq-1-introduction/) <label class="lite">request response pattern, single client and server, multiple clients and server in a single process, multiple clients Running In Separate Threads and a server</label>
-- [ZeroMQ #2 : The Socket Types](https://sachabarbs.wordpress.com/2014/08/21/zeromq-2-the-socket-types-2/)
-- [ZeroMQ #3 : Socket Options/Identity And SendMore](https://sachabarbs.wordpress.com/2014/08/26/zeromq-3-socket-optionsidentity-and-sendmore/)
-- [ZeroMQ #4 : Multiple Sockets Polling](https://sachabarbs.wordpress.com/2014/08/27/zeromq-4-multiple-sockets-polling/)
-- [ZeroMQ #5 : Sending From Multiple Sockets](https://sachabarbs.wordpress.com/2014/08/30/zeromq-sending-from-multiple-sockets/)
-- [ZeroMQ #6: Divide And Conquer](https://sachabarbs.wordpress.com/2014/09/01/zeromq-6-divide-and-conquer/)
-- [ZeroMQ #7: A Simple Actor Model](https://sachabarbs.wordpress.com/2014/09/05/zeromq-7-a-simple-actor-model/) <label class="lite">ventilator, sink, workers</label>
+- **All demos on GitHub** [20]
+- zeromq-1-introduction [21] <label class="lite">request response pattern, single client and server, multiple clients and server in a single process, multiple clients Running In Separate Threads and a server</label>
+- ZeroMQ #2 : The Socket Types [22]
+- ZeroMQ #3 : Socket Options/Identity And SendMore [23]
+- ZeroMQ #4 : Multiple Sockets Polling [24]
+- ZeroMQ #5 : Sending From Multiple Sockets [25]
+- ZeroMQ #6: Divide And Conquer [26]
+- ZeroMQ #7: A Simple Actor Model [27] <label class="lite">ventilator, sink, workers</label>
 
 ## ZeroMQ and services
 
-- [WebAPI-or-WCF](http://mattmilner.com/Milner/Blog/post/2012/02/28/WebAPI-or-WCF.aspx)
-- [NetMQ-RX-Streaming-Data-Demo-App](http://www.codeproject.com/Articles/853476/NetMQplus-RX-Streaming-Data-Demo-App-of)
-- [Lightweihjt rpc 0mq and proto](http://blogs.mulesoft.com/biz/mule/lightweight-rpc-with-%C3%B8mq-and-protocol-buffers/)
-- [omq and proto](http://www.dotkam.com/2011/09/09/zeromq-and-google-protocol-buffers/)
-- [rpcz](https://github.com/thesamet/rpcz)
-- [zmqpbexample](https://github.com/joshrotenberg/zmqpbexample)
-- [cpp zmq_protobuf](http://docs.biicode.com/c++/examples/zmq_protobuf.html)
-- [brokerless whitepaper zguide](http://zeromq.org/whitepapers:brokerless)
-- [NetMQRxDemo Sacha](https://github.com/sachabarber/NetMQRxDemo)
+- WebAPI-or-WCF [28]
+- NetMQ-RX-Streaming-Data-Demo-App [29]
+- Lightweihjt rpc 0mq and proto [30]
+- omq and proto [31]
+- rpcz [32]
+- zmqpbexample [33]
+- cpp zmq_protobuf [34]
+- brokerless whitepaper zguide [35]
+- NetMQRxDemo Sacha [36]
 
 </div>
 
 [<<](../messaging.md) | [home](../../README.md)
+
+[1]: https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#zeromq-base
+[2]: https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#socket-types-and-netmq-counterpart
+[3]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#socket-pairs
+[4]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#netmq
+[5]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#sacha-barber-demos
+[6]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#zeromq-and-services
+[7]: http://zguide.zeromq.org/php:all
+[8]: http://zguide.zeromq.org/cs:hwclient
+[9]: http://zguide.zeromq.org/cs:hwserver
+[10]: http://hintjens.com/blog:86
+[11]: http://zeromq.org/docs:labs
+[12]: http://zeromq.wdfiles.com/local--files/area%3Awhitepapers/messaging-2010-02-17.pdf
+[13]: http://www.reedbushey.com/89Zeromq.pdf
+[14]: http://somdoron.com/2014/08/netmq-asp-net/
+[15]: http://netmq.readthedocs.org/en/latest/xpub-xsub/
+[16]: http://blog.scottlogic.com/2015/03/20/ZeroMQ-Quick-Intro.html
+[17]: http://mnb.ociweb.com/mnb/MiddlewareNewsBrief-201004.html
+[18]: http://stackoverflow.com/questions/tagged/netmq
+[19]: https://github.com/zeromq/netmq
+[20]: https://github.com/sachabarber/ZeroMqDemos
+[21]: https://sachabarbs.wordpress.com/2014/08/19/zeromq-1-introduction/
+[22]: https://sachabarbs.wordpress.com/2014/08/21/zeromq-2-the-socket-types-2/
+[23]: https://sachabarbs.wordpress.com/2014/08/26/zeromq-3-socket-optionsidentity-and-sendmore/
+[24]: https://sachabarbs.wordpress.com/2014/08/27/zeromq-4-multiple-sockets-polling/
+[25]: https://sachabarbs.wordpress.com/2014/08/30/zeromq-sending-from-multiple-sockets/
+[26]: https://sachabarbs.wordpress.com/2014/09/01/zeromq-6-divide-and-conquer/
+[27]: https://sachabarbs.wordpress.com/2014/09/05/zeromq-7-a-simple-actor-model/
+[28]: http://mattmilner.com/Milner/Blog/post/2012/02/28/WebAPI-or-WCF.aspx
+[29]: http://www.codeproject.com/Articles/853476/NetMQplus-RX-Streaming-Data-Demo-App-of
+[30]: http://blogs.mulesoft.com/biz/mule/lightweight-rpc-with-%C3%B8mq-and-protocol-buffers/
+[31]: http://www.dotkam.com/2011/09/09/zeromq-and-google-protocol-buffers/
+[32]: https://github.com/thesamet/rpcz
+[33]: https://github.com/joshrotenberg/zmqpbexample
+[34]: http://docs.biicode.com/c++/examples/zmq_protobuf.html
+[35]: http://zeromq.org/whitepapers:brokerless
+[36]: https://github.com/sachabarber/NetMQRxDemo

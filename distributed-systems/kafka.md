@@ -1,33 +1,33 @@
 # Apache Kafka
 
-_Getting Started with Apache Kafka_ by _Ryan Plant_ [![Pluralsight course page](https://img.shields.io/badge/Pluralsight-course-lightgrey.svg)](https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents)
+_Getting Started with Apache Kafka_ by _Ryan Plant_ Pluralsight course page [1]
 
 ## .Net clients
 
-[List maintained by Apache](https://cwiki.apache.org/confluence/display/KAFKA/Clients#Clients-.NET)
+List maintained by Apache [2]
 
 `find-package kafka | Select-Object ID, Version, Description, DownloadCount | Sort-Object -Descending -Property DownloadCount | fl`
 
-**[ExactTargetDev/kafka-net](https://github.com/ExactTargetDev/kafka-net)**
+**ExactTargetDev/kafka-net [3]**
 This is a .NET implementation of a client for Kafka using C# for Kafka 0.8. It provides for an implementation that covers most basic functionalities to include a simple Producer and Consumer.
 
-**[Microsoft/CSharpClient-for-Kafka](https://github.com/Microsoft/CSharpClient-for-Kafka)**
+**Microsoft/CSharpClient-for-Kafka [4]**
 .Net implementation of the Apache Kafka Protocol that provides basic functionality through Producer/Consumer classes. The project also offers balanced consumer implementation. The project is a fork from ExactTarget's Kafka-net Client.
 
-[Jroland/kafka-net](https://github.com/Jroland/kafka-net)
+Jroland/kafka-net [5]
 Pure C# client with full protocol support.  Includes consumer, producer, lower level components and gzip support (no snappy)
-> From [https://cwiki.apache.org/confluence/display/KAFKA/Clients#Clients-.NET](https://cwiki.apache.org/confluence/display/KAFKA/Clients#Clients-.NET)
+> From cwiki.apache.org: Clients [2]
 
-**[https://github.com/ah-/rdkafka-dotnet](https://github.com/ah-/rdkafka-dotnet)**  is a C# client for  [Apache Kafka](http://kafka.apache.org/) based on  [librdkafka](https://github.com/edenhill/librdkafka).
+**ah-/rdkafka-dotnet on GitHub [6]**  is a C# client for  Apache Kafka [7] based on  librdkafka [8].
 
-**[https://github.com/Microsoft/Kafkanet](https://github.com/Microsoft/Kafkanet)**
+**Microsoft/Kafkanet on GitHub [9]**
 .NET implementation of the Apache Kafka Protocol that provides basic functionality through Producer/Consumer classes.
 The project also offers balanced consumer implementation. The project is a fork from ExactTarget's Kafka-net Client. 
 
-**[https://github.com/ntent-ad/kafka4net](https://github.com/ntent-ad/kafka4net)** 
+**ntent-ad/kafka4net on GitHub [10]** 
 C# client, asynchronous, all 3 compressions supported (read and write), tracks leader partition changes transparently, long time in production.
 
-**[https://github.com/criteo/kafka-sharp](https://github.com/criteo/kafka-sharp)**
+**criteo/kafka-sharp on GitHub [11]**
 kafka-sharp - High Performance .NET Kafka Driver
 
 ## Background
@@ -39,12 +39,12 @@ kafka-sharp - High Performance .NET Kafka Driver
 - Kafka can message geospatial data from a fleet of long-haul trucks or sensor data from heating and cooling equipment in office buildings.
 - Whatever the industry or use case, Kafka brokers massive message streams for low-latency analysis in Enterprise Apache Hadoop.
 
-> From  [_http://hortonworks.com/apache/kafka/_](http://hortonworks.com/apache/kafka/)
-- **Apache Kafka** is an [open-source](https://en.wikipedia.org/wiki/Open_source) [message broker](https://en.wikipedia.org/wiki/Message_broker) project developed by the [Apache Software Foundation](https://en.wikipedia.org/wiki/Apache_Software_Foundation) written in [Scala](https://en.wikipedia.org/wiki/Scala_%28programming_language%29).
-- The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. It is, in its essence, **a massively scalable pub/sub message queue** _architected as a distributed transaction log_ [2](https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-2), making it highly valuable for enterprise infrastructures to **process streaming data**.
-- The design is heavily influenced by [transaction logs](https://en.wikipedia.org/wiki/Transaction_log). [3](https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-3)
+> From  _http://hortonworks.com/apache/kafka/_ [12]
+- **Apache Kafka** is an open-source [13] message broker [14] project developed by the Apache Software Foundation [15] written in Scala [16].
+- The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. It is, in its essence, **a massively scalable pub/sub message queue** _architected as a distributed transaction log_ 2 [17], making it highly valuable for enterprise infrastructures to **process streaming data**.
+- The design is heavily influenced by transaction logs [18]. 3 [19]
 
->From [_https://en.wikipedia.org/wiki/Apache\_Kafka_](https://en.wikipedia.org/wiki/Apache_Kafka)
+>From _https://en.wikipedia.org/wiki/Apache\_Kafka_ [20]
 
 ***
 
@@ -59,20 +59,20 @@ So, at a high level, producers send messages over the network to the Kafka clust
 
  ![alt text](https://g7udqw.by3302.livefilestore.com/y3m_iO5d-2s1tGAmB3j_oWs7hffUi0_wTY1WT6dDmB17-gQpGbfqyTHKCuxhMLGw6ZipuN-5QP9VmYDe0Co21SMvJ6XAa2pV1C4edIfTebgNWGb4Cld_TJMWiqGslN0-jP90NaP7EhpotLjvntRQEPf8pCrPLFDmYJEpxC79Yxjl1M?width=258&height=180&cropmode=none)
 
-Communication between the clients and the servers is done with a simple, high-performance, language agnostic [TCP protocol](https://kafka.apache.org/protocol.html).
+Communication between the clients and the servers is done with a simple, high-performance, language agnostic TCP protocol [21].
 
-We provide a Java client for Kafka, but clients are available in [many languages](https://cwiki.apache.org/confluence/display/KAFKA/Clients).
+We provide a Java client for Kafka, but clients are available in many languages [22].
 
->From [_http://kafka.apache.org/documentation.html#introduction_](http://kafka.apache.org/documentation.html#introduction) 
+>From _http://kafka.apache.org/documentation.html#introduction_ [23] 
 
-See our [web site](http://kafka.apache.org) for details on the project.
-You need to have [Gradle](http://www.gradle.org/installation) and [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed. Kafka requires Gradle 2.0 or higher. Java 7 should be used for building in order to support both Java 7 and Java 8 at runtime.
+See our web site [24] for details on the project.
+You need to have Gradle [25] and Java [26] installed. Kafka requires Gradle 2.0 or higher. Java 7 should be used for building in order to support both Java 7 and Java 8 at runtime.
 
->From [_https://github.com/apache/kafka_](https://github.com/apache/kafka)
+>From _https://github.com/apache/kafka_ [27]
 
 **The Log: What every software engineer should know about real-time data&#39;s unifying abstraction**
 
-> From [_https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying_](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+> From _https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying_ [28]
 
 ## What Kafka Does
 
@@ -92,7 +92,7 @@ Some of the important characteristics that make Kafka such an attractive option 
 | Reliability | Replicates data, supports multiple subscribers, and automatically balances consumers in case of failure |
 | Performance | High throughput for both publishing and subscribing, with disk structures that provide constant performance even with many terabytes of stored messages |
 
-_From &lt;_ [_http://hortonworks.com/apache/kafka/#section\_1_](http://hortonworks.com/apache/kafka/#section_1)_&gt;_
+_From &lt;_ _http://hortonworks.com/apache/kafka/#section\_1_ [29]_&gt;_
 
 ## How Kafka Works
 
@@ -107,7 +107,7 @@ Kafka&#39;s system design can be thought of as that of a distributed commit log,
 
 For Kafka consumers, keeping track of which messages have been consumed (processed) is simply a matter of keeping track of an **Offset** , which is a sequential id number that uniquely identifies a message within a partition. Because Kafka retains all messages on disk (for a configurable amount of time), consumers can rewind or skip to any point in a partition simply by supplying an offset value. Finally, this design eliminates the potential for back-pressure when consumers process messages at different rates.
 
-> From [_http://hortonworks.com/apache/kafka/#section\_2_](http://hortonworks.com/apache/kafka/#section_2)
+> From _http://hortonworks.com/apache/kafka/#section\_2_ [30]
 
 One of the keys to Kafka&#39;s high performance is the simplicity of the brokers&#39; responsibilities. In Kafka, topics consist of one or more Partitions that are ordered, immutable sequences of messages. Since writes to a partition are sequential, this design greatly reduces the number of hard disk seeks (with their resulting latency).
 
@@ -119,6 +119,38 @@ For Kafka consumers, keeping track of which messages have been consumed (process
 
 ## to-do
 
-[Apache Kafka for Beginners](http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/)
+Apache Kafka for Beginners [31]
 
 [<<](../messaging.md) | [home](../../README.md)
+
+[1]: https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents
+[2]: https://cwiki.apache.org/confluence/display/KAFKA/Clients#Clients-.NET
+[3]: https://github.com/ExactTargetDev/kafka-net
+[4]: https://github.com/Microsoft/CSharpClient-for-Kafka
+[5]: https://github.com/Jroland/kafka-net
+[6]: https://github.com/ah-/rdkafka-dotnet
+[7]: http://kafka.apache.org/
+[8]: https://github.com/edenhill/librdkafka
+[9]: https://github.com/Microsoft/Kafkanet
+[10]: https://github.com/ntent-ad/kafka4net
+[11]: https://github.com/criteo/kafka-sharp
+[12]: http://hortonworks.com/apache/kafka/
+[13]: https://en.wikipedia.org/wiki/Open_source
+[14]: https://en.wikipedia.org/wiki/Message_broker
+[15]: https://en.wikipedia.org/wiki/Apache_Software_Foundation
+[16]: https://en.wikipedia.org/wiki/Scala_%28programming_language%29
+[17]: https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-2
+[18]: https://en.wikipedia.org/wiki/Transaction_log
+[19]: https://en.wikipedia.org/wiki/Apache_Kafka#cite_note-3
+[20]: https://en.wikipedia.org/wiki/Apache_Kafka
+[21]: https://kafka.apache.org/protocol.html
+[22]: https://cwiki.apache.org/confluence/display/KAFKA/Clients
+[23]: http://kafka.apache.org/documentation.html#introduction
+[24]: http://kafka.apache.org
+[25]: http://www.gradle.org/installation
+[26]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[27]: https://github.com/apache/kafka
+[28]: https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+[29]: http://hortonworks.com/apache/kafka/#section_1
+[30]: http://hortonworks.com/apache/kafka/#section_2
+[31]: http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/

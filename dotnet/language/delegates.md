@@ -11,7 +11,7 @@ The multicast feature is available through the `Delegate` class’s static `Comb
     public static Delegate Remove(Delegate source, Delegate value)
 ```
 
-Or use *addition* and *subtraction* operators, delegate combine=add, remove=subtract {[gist](https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077)}.
+Or use *addition* and *subtraction* operators, delegate combine=add, remove=subtract {gist [1]}.
 
 ## Invocation
 
@@ -75,7 +75,7 @@ There are also overloads that accept the reflection API’s _MethodInfo_ object 
 
 ### Delegate conversion and contra variance
 
-The type parameters for the function’s parameters are all **contravariant**. [gist](https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8)
+The type parameters for the function’s parameters are all **contravariant**. gist [2]
 
 ### Illegal delegate conversion
 
@@ -116,4 +116,8 @@ public delegate void Action<in T1, in T2 >(T1 arg1, T2 arg2);
 public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
 ```
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [3]
+
+[1]: https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077
+[2]: https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8
+[3]: https://github.com/illegitimis/Tutorial/wiki

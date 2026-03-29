@@ -5,17 +5,27 @@
 - [Swagger](../soa/swagger.md) [![wiki page swagger](https://img.shields.io/badge/wiki-page-green.svg)](./swagger.md)
 
 - `RestSharp`
-  - [home](http://restsharp.org/)
-  - [SO example](https://stackoverflow.com/a/33812542)
-  - [projects using it](https://github.com/restsharp/RestSharp/wiki/Projects-Using-RestSharp)
+  - home [1]
+  - SO example [2]
+  - projects using it [3]
   - sample upload `var request = new RestRequest(Method.POST); request.AddHeader("content-type", "application/x-www-form-urlencoded");`
 - `cURL`
-  - [libcurl.NET](https://sourceforge.net/projects/libcurl-net/)
-  - [CurlSharp](https://github.com/masroore/CurlSharp) .Net binding and object-oriented wrapper for libcurl.
-  - [CURLE_SSL_CERTPROBLEM](https://curl.haxx.se/mail/lib-2007-01/0156.html)
+  - libcurl.NET [4]
+  - CurlSharp [5] .Net binding and object-oriented wrapper for libcurl.
+  - CURLE_SSL_CERTPROBLEM [6]
 - `WebClient`
-- [`HttpWebRequest`](https://msdn.microsoft.com/en-us/library/system.net.httpwebrequest.aspx) / [`HttpWebResponse`](https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx)
-  - [WebRequest & Json.Linq](https://stackoverflow.com/a/30770354)
+- `HttpWebRequest` [7] / `HttpWebResponse` [8]
+  - WebRequest & Json.Linq [9]
 - `Flurl` todo
 
 [<<](../rest.md) | [home](../../README.md)
+
+[1]: http://restsharp.org/
+[2]: https://stackoverflow.com/a/33812542
+[3]: https://github.com/restsharp/RestSharp/wiki/Projects-Using-RestSharp
+[4]: https://sourceforge.net/projects/libcurl-net/
+[5]: https://github.com/masroore/CurlSharp
+[6]: https://curl.haxx.se/mail/lib-2007-01/0156.html
+[7]: https://msdn.microsoft.com/en-us/library/system.net.httpwebrequest.aspx
+[8]: https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx
+[9]: https://stackoverflow.com/a/30770354

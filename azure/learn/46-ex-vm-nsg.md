@@ -1,6 +1,6 @@
 # Exercise - Configure network access to a VM by using a network security group
 
-In this [exercise](https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/6-configure-access-network-security-group), you configure network access to a virtual machine (VM) running on Azure.
+In this exercise [1], you configure network access to a virtual machine (VM) running on Azure.
 
 You start by creating a **Linux VM** and installing `Nginx`, a popular web server, on that VM. To make your web server accessible, you then *create a network security group* (NSG) rule that allows _inbound access on port 80_ (HTTP).
 
@@ -59,7 +59,7 @@ az vm extension set \
 
 This command uses the Custom Script Extension to run a Bash script on your VM. The script is stored on GitHub.
 
-While the command runs, you can choose to examine the [Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh) from a separate browser tab.
+While the command runs, you can choose to examine the Bash script [2] from a separate browser tab.
 
 To summarize, the script:
 
@@ -285,3 +285,6 @@ Code: AuthorizationFailed
 ```
 
 `az group delete --name learn-eb451d26-c448-42bd-ae79-2de93ae5bef3`
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/6-configure-access-network-security-group
+[2]: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh

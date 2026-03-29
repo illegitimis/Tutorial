@@ -19,4 +19,6 @@ Examples:
 |
 [home](README.md) 
 | 
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+wiki [1]
+
+[1]: https://github.com/illegitimis/Tutorial/wiki

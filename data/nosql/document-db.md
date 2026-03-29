@@ -2,20 +2,20 @@
 
 - [Online Query Playground](www.documentdb.com/sql/demo)
 - [RU Estimator](www.documentdb.com/capacityplanner) capacity planner
-- [StackOverflow](https://stackoverflow.com/questions/tagged/azure-cosmosdb) tagged questions
+- StackOverflow [1] tagged questions
 
 ## BW-Tree
 
-- [The BW-Tree: A Latch-Free B-Tree for Log-Structured Flash Storage](http://sites.computer.org/debull/A13june/bwtree1.pdf) [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](http://sites.computer.org/debull/A13june/bwtree1.pdf)
-- [The Bw-Tree: A B-tree for New Hardware Platforms](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bw-tree-icde2013-final.pdf) [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bw-tree-icde2013-final.pdf)
-- [**Schema-Agnostic Indexing with Azure DocumentDB**](http://www.vldb.org/pvldb/vol8/p1668-shukla.pdf) [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](http://www.vldb.org/pvldb/vol8/p1668-shukla.pdf)
-- [The Bw-Tree: A B-Tree On Steroids](http://www.hpts.ws/papers/2013/bw-tree-hpts2013.pdf) [![pdf](https://img.shields.io/badge/file-pdf-brightgreen.svg)](http://www.hpts.ws/papers/2013/bw-tree-hpts2013.pdf)
+- The BW-Tree: A Latch-Free B-Tree for Log-Structured Flash Storage [2] pdf [2]
+- The Bw-Tree: A B-tree for New Hardware Platforms [3] pdf [3]
+- **Schema-Agnostic Indexing with Azure DocumentDB** [4] pdf [4]
+- The Bw-Tree: A B-Tree On Steroids [5] pdf [5]
 
 ## SQL queries
 
-- [Query Using DocumentDB SQL](https://www.documentdb.com/sql/tutorial)
-- [SQL queries for Azure Cosmos DB DocumentDB API](https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-sql-query) msdn
-- [Azure Cosmos DB DocumentDB API: SQL syntax reference](https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-sql-query-reference) msdn
+- Query Using DocumentDB SQL [6]
+- SQL queries for Azure Cosmos DB DocumentDB API [7] msdn
+- Azure Cosmos DB DocumentDB API: SQL syntax reference [8] msdn
 
 ## Cheat sheet
 
@@ -67,10 +67,23 @@ _SQL - JavaScript UDF_, use | `SELECT udf.REGEX_MATCH(Families.address.city, ".*
     Request URI: /apps/DocDbApp/services/DocDbServer7/partitions/a4cb4953-38c8-11e6-8106-8cdcd42c33be/replicas/1p/
     ```
 
-- [server side scripts](https://github.com/Azure/azure-documentdb-dotnet/blob/1ff7e836f73b8622f82dee688d4d0541cf54112d/samples/code-samples/ServerSideScripts/Program.cs)
-- [DocumentClientHelper](https://github.com/Azure/azure-documentdb-dotnet/blob/ebb807493ecec06964e1e049b963045fd347a45d/samples/code-samples/Shared/Util/DocumentClientHelper.cs)
+- server side scripts [9]
+- DocumentClientHelper [10]
 - [DocDBClientBulk](DocDBClientBulk)
-- [Calling DocumentDb stored procedures from .net](https://stackoverflow.com/questions/36655455/calling-documentdb-stored-procedures-from-net)
-- [Call DocumentDb stored procedure from .Net with parameters.](https://stackoverflow.com/questions/36626257/call-documentdb-stored-procedure-from-net-with-parameters/36668664#36668664)
+- Calling DocumentDb stored procedures from .net [11]
+- Call DocumentDb stored procedure from .Net with parameters. [12]
 
 [<<](../nosql.md) | [home](../../README.md)
+
+[1]: https://stackoverflow.com/questions/tagged/azure-cosmosdb
+[2]: http://sites.computer.org/debull/A13june/bwtree1.pdf
+[3]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bw-tree-icde2013-final.pdf
+[4]: http://www.vldb.org/pvldb/vol8/p1668-shukla.pdf
+[5]: http://www.hpts.ws/papers/2013/bw-tree-hpts2013.pdf
+[6]: https://www.documentdb.com/sql/tutorial
+[7]: https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-sql-query
+[8]: https://docs.microsoft.com/en-us/azure/cosmos-db/documentdb-sql-query-reference
+[9]: https://github.com/Azure/azure-documentdb-dotnet/blob/1ff7e836f73b8622f82dee688d4d0541cf54112d/samples/code-samples/ServerSideScripts/Program.cs
+[10]: https://github.com/Azure/azure-documentdb-dotnet/blob/ebb807493ecec06964e1e049b963045fd347a45d/samples/code-samples/Shared/Util/DocumentClientHelper.cs
+[11]: https://stackoverflow.com/questions/36655455/calling-documentdb-stored-procedures-from-net
+[12]: https://stackoverflow.com/questions/36626257/call-documentdb-stored-procedure-from-net-with-parameters/36668664#36668664

@@ -2,4 +2,6 @@
 
 TODO
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
+
+[1]: https://github.com/illegitimis/Tutorial/wiki

@@ -98,7 +98,7 @@ With C++/CLI, the _yield_ statement is not available.
   array < int > ^ arr = {1, 2, 3}; 
   for each (int i in arr) 
 ```
-- [/clr:safe](https://msdn.microsoft.com/en-us/library/85344whh%28VS.80%29.aspx?f=255&MSPPError=-2147217396) 
+- /clr:safe [1] 
 verifiable assemblies, guarantee that the code does not violate current security settings. 
 C++ interop features are not available. 
 Verifiable assemblies cannot contain any unmanaged functions or native data types, even if they are not referenced by the managed code.
@@ -247,4 +247,7 @@ public:
 };
 ```
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [2]
+
+[1]: https://msdn.microsoft.com/en-us/library/85344whh%28VS.80%29.aspx?f=255&MSPPError=-2147217396
+[2]: https://github.com/illegitimis/Tutorial/wiki

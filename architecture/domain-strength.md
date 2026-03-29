@@ -15,14 +15,14 @@ _2010_. _Jimmy Bogard._
 
 ## article series
 
-+ [Services in Domain-Driven Design](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/)
-+ [primer](https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/)
-+ [Aggregate Construction](https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/)
-+ [Encapsulated collections](https://lostechies.com/jimmybogard/2010/03/10/strengthening-your-domain-encapsulated-collections/)
-+ [Encapsulating operations](https://lostechies.com/jimmybogard/2010/03/24/strengthening-your-domain-encapsulating-operations/)
-+ [The double dispatch pattern](https://lostechies.com/jimmybogard/2010/03/30/strengthening-your-domain-the-double-dispatch-pattern/)
-+ [No silver domain modeling bullets](https://lostechies.com/jimmybogard/2010/03/11/no-silver-domain-modeling-bullets/)
-+ 10 Lessons from a Long Running DDD Project: [1](https://lostechies.com/jimmybogard/2016/06/13/10-lessons-from-a-long-running-ddd-project-part-1/), [2](https://lostechies.com//jimmybogard/2016/06/20/10-lessons-from-a-long-running-ddd-project-part-2/)
++ Services in Domain-Driven Design [1]
++ primer [2]
++ Aggregate Construction [3]
++ Encapsulated collections [4]
++ Encapsulating operations [5]
++ The double dispatch pattern [6]
++ No silver domain modeling bullets [7]
++ 10 Lessons from a Long Running DDD Project: 1 [8], 2 [9]
 
 ***
 
@@ -86,11 +86,11 @@ Finally, it’s worth noting that there is no “best” design. There is only t
 
 ## Aggregate Construction
 
-Our application complexity has hit its tipping point, and we decide to move past [anemic domain models](http://martinfowler.com/bliki/AnemicDomainModel.html) to rich, behavioral models.  But what is this anemic domain model?  Let's look at Fowler's definition, now over 6 years old:
+Our application complexity has hit its tipping point, and we decide to move past anemic domain models [10] to rich, behavioral models.  But what is this anemic domain model?  Let's look at Fowler's definition, now over 6 years old:
 
 > The basic symptom of an Anemic Domain Model is that at first blush it looks like the real thing. There are objects, many named after the nouns in the domain space, and these objects are connected with the rich relationships and structure that true domain models have. The catch comes when you look at the behavior, and you realize that there is hardly any behavior on these objects, making them little more than bags of getters and setters. Indeed often these models come with design rules that say that you are not to put any domain logic in the the domain objects. Instead there are a set of service objects which capture all the domain logic. These services live on top of the domain model and use the domain model for data.
 
-For CRUD applications, these "domain services" should number very few.  But as the number of domain services begins to grow, it should be a signal to us that we need richer behavior, in the form of Domain-Driven Design.  Building an application with DDD in mind is quite different than [Model-Driven Architecture](http://en.wikipedia.org/wiki/Model-driven_architecture). In MDA, we start with database table diagrams or ERDs, and build objects to match.  In DDD, we start with interactions and behaviors, and build models to match.  But one of the first issues we run into is, how do we create entities in the first place?  Our first unit test needs to create an entity, so where should it come from?
+For CRUD applications, these "domain services" should number very few.  But as the number of domain services begins to grow, it should be a signal to us that we need richer behavior, in the form of Domain-Driven Design.  Building an application with DDD in mind is quite different than Model-Driven Architecture [11]. In MDA, we start with database table diagrams or ERDs, and build objects to match.  In DDD, we start with interactions and behaviors, and build models to match.  But one of the first issues we run into is, how do we create entities in the first place?  Our first unit test needs to create an entity, so where should it come from?
 
 ### Creating Valid Aggregates
 
@@ -182,9 +182,9 @@ If our entity always satisfies its invariants because its design doesn't allow i
 
 But building entities through a constructor isn't the only way to go. We also have:
 
-* [Builder pattern](http://martinfowler.com/bliki/ExpressionBuilder.html)
-* [Creation method](http://www.industriallogic.com/xp/refactoring/constructorCreation.html)
-* [Through existing aggregate roots](http://www.udidahan.com/2009/06/29/dont-create-aggregate-roots/)
+* Builder pattern [12]
+* Creation method [13]
+* Through existing aggregate roots [14]
 
 The bottom line is – if our entity needs certain information for it to be considered an entity in its essence, then don't let it be created without its invariants satisfied!
 
@@ -192,7 +192,7 @@ The bottom line is – if our entity needs certain information for it to be cons
 
 ## Encapsulated collections
 
-One of the common themes throughout the [DDD book](http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) is that much of the nuts and bolts of structural domain-driven design is just plain good use of object-oriented programming.  This is certainly true, but DDD adds some direction to OOP, along with roles, stereotypes and patterns. _Much of the direction for building entities at the class level can, and should, come from test-driven development_. TDD is a great tool for building OO systems, as we incrementally build our design with only the behavior that is needed to pass the test. Our big challenge then is to write good tests.
+One of the common themes throughout the DDD book [15] is that much of the nuts and bolts of structural domain-driven design is just plain good use of object-oriented programming.  This is certainly true, but DDD adds some direction to OOP, along with roles, stereotypes and patterns. _Much of the direction for building entities at the class level can, and should, come from test-driven development_. TDD is a great tool for building OO systems, as we incrementally build our design with only the behavior that is needed to pass the test. Our big challenge then is to write good tests.
 
 To fully harness TDD, we need to be highly attuned to the design that comes out of our tests. For example, suppose we have our traditional Customer and Order objects. In our world, an `Order` has a `Customer`, and a `Customer` can have many `Orders`.  We have this directionality because we can navigate this relationship from both directions in our application. In the last post, we worked to satisfy invariants to prevent an unsupported and nonsensical state for our objects.
 
@@ -410,7 +410,7 @@ But we can do one better. Isn't the act of recording a payment a complete opera
 
 ### Thinking with commands
 
-When we called the `AddPayment` method, we _left_ our `Fee` aggregate root _in an in-between state_. **It had a Payment, yet its balance was incorrect**. If Fees are supposed to act as _consistency boundaries_, we've violated that consistency with this invalid state.  Looking strictly through a code smell standpoint, this is the [Inappropriate Intimacy](http://c2.com/cgi/wiki?InappropriateIntimacy) code smell.  **Inappropriate Intimacy is one of the biggest indicators of an anemic domain model**.  The behavior is there, but just in the wrong place.
+When we called the `AddPayment` method, we _left_ our `Fee` aggregate root _in an in-between state_. **It had a Payment, yet its balance was incorrect**. If Fees are supposed to act as _consistency boundaries_, we've violated that consistency with this invalid state.  Looking strictly through a code smell standpoint, this is the Inappropriate Intimacy [16] code smell.  **Inappropriate Intimacy is one of the biggest indicators of an anemic domain model**.  The behavior is there, but just in the wrong place.
 
 But we can help ourselves to enforce those aggregate boundaries with **encapsulation**.  Not just encapsulation like properties encapsulate fields, but **encapsulating the operation** of recording a fee.  Even the name of `AddPayment` could be improved, to `RecordPayment`.  The act of recording a payment in the Real World involves _adding the payment to the ledger_ and _updating the balance book_.  If the accountant solely adds the payment to the ledger, but does not update the balance book, they haven't yet finished recording the payment.  Why don't we do the same?  Here's our modified test:
 
@@ -450,9 +450,9 @@ The public contour of the Fee object is simplified as well.  We only _expose op
 
 ### Wrapping it up
 
-We again see that a consistent theme in DDD is good OO and attention to code smells. DDD helps us by giving us patterns and direction, towards placing more and more logic inside our domain.  The difference between an intentionally anemic domain model (a [persistence model](https://lostechies.com/blogs/jimmy_bogard/archive/2009/12/03/persistence-model-and-domain-anemia.aspx)) and an anemic domain model is the presence of these code smells.  If you don't have a legion of supporting services propping up the state of your domain model, then there's no problem.
+We again see that a consistent theme in DDD is good OO and attention to code smells. DDD helps us by giving us patterns and direction, towards placing more and more logic inside our domain.  The difference between an intentionally anemic domain model (a persistence model [17]) and an anemic domain model is the presence of these code smells.  If you don't have a legion of supporting services propping up the state of your domain model, then there's no problem.
 
-However, it's these external domain services where we are likely to find the bulk of domain model smells.  Through attention to the code smells and refactorings [Fowler laid out](http://www.amazon.com/exec/obidos/ASIN/0201485672), we can move towards the concepts of **self-consistent aggregate roots with strongly-enforced boundaries**.
+However, it's these external domain services where we are likely to find the bulk of domain model smells.  Through attention to the code smells and refactorings Fowler laid out [18], we can move towards the concepts of **self-consistent aggregate roots with strongly-enforced boundaries**.
 
 ## The double dispatch pattern
 It looks like there's a pattern emerging here around encapsulation, and **that's not an accident**. Many of the code smells in the Fowler or Kerievsky refactoring books deal with proper encapsulation of both data _and_ behavior. In the previous post, we looked at _closure of operations_, that _when an operation is completed_, the **aggregate root's state is consistent**.
@@ -542,7 +542,7 @@ I had a lot of lessons learned from the code perspective, where things like `Aut
 
 ### Lesson 1: Bounded contexts are a thing
 
-Very early on in the first project, we laid out the [personas](http://www.agilemodeling.com/artifacts/personas.htm) for our application. This was also when Agile and Scrum were really starting to be used in the large, so we were all about using user stories, personas and the like.
+Very early on in the first project, we laid out the personas [19] for our application. This was also when Agile and Scrum were really starting to be used in the large, so we were all about using user stories, personas and the like.
 
 ![personas](https://lostechies.com/content/jimmybogard/uploads/2016/06/image.png)
 We put all the personas on giant post-it notes on the wall. There was a problem. They didn't fit. There were so many personas, we couldn't look at all of them at one.
@@ -627,7 +627,7 @@ In this model, we explicitly built a configurable workflow, with states and tran
 
 In the new app, I performed an experiment. I would only add tools, patterns, and libraries when the need presented itself but no sooner. This meant I didn't add a repository, unit of work, services, really anything until an actual pain surfaced. Most of the DDD books these days have prescriptive guidance about what your domain model should look like, how you should do repositories and so on, but I wanted to see if I could simply arrive at these patterns by code smells and refactoring.
 
-The funny thing is, I never did. We left out those patterns, and we never found a need to put them back in. Instead, we drove our usage around CQRS and the mediator pattern (something I've used for years but finally extracted our internal usage into [MediatR](https://github.com/jbogard/MediatR). Instead, our controllers were pretty uniform in their appearance:
+The funny thing is, I never did. We left out those patterns, and we never found a need to put them back in. Instead, we drove our usage around CQRS and the mediator pattern (something I've used for years but finally extracted our internal usage into MediatR [20]. Instead, our controllers were pretty uniform in their appearance:
 ![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb4.png)
 
 And the handlers themselves (as I've blogged about many times) were tightly focused on a single action, with no need to abstract anything:
@@ -659,3 +659,24 @@ In case anyone wonders, I intentionally did not talk about actors or event sourc
 
 
 [< DDD](./ddd.md) | [<< OOPD](../design.md)
+
+[1]: https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/
+[2]: https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/
+[3]: https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/
+[4]: https://lostechies.com/jimmybogard/2010/03/10/strengthening-your-domain-encapsulated-collections/
+[5]: https://lostechies.com/jimmybogard/2010/03/24/strengthening-your-domain-encapsulating-operations/
+[6]: https://lostechies.com/jimmybogard/2010/03/30/strengthening-your-domain-the-double-dispatch-pattern/
+[7]: https://lostechies.com/jimmybogard/2010/03/11/no-silver-domain-modeling-bullets/
+[8]: https://lostechies.com/jimmybogard/2016/06/13/10-lessons-from-a-long-running-ddd-project-part-1/
+[9]: https://lostechies.com//jimmybogard/2016/06/20/10-lessons-from-a-long-running-ddd-project-part-2/
+[10]: http://martinfowler.com/bliki/AnemicDomainModel.html
+[11]: http://en.wikipedia.org/wiki/Model-driven_architecture
+[12]: http://martinfowler.com/bliki/ExpressionBuilder.html
+[13]: http://www.industriallogic.com/xp/refactoring/constructorCreation.html
+[14]: http://www.udidahan.com/2009/06/29/dont-create-aggregate-roots/
+[15]: http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215
+[16]: http://c2.com/cgi/wiki?InappropriateIntimacy
+[17]: https://lostechies.com/blogs/jimmy_bogard/archive/2009/12/03/persistence-model-and-domain-anemia.aspx
+[18]: http://www.amazon.com/exec/obidos/ASIN/0201485672
+[19]: http://www.agilemodeling.com/artifacts/personas.htm
+[20]: https://github.com/jbogard/MediatR

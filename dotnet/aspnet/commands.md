@@ -1,6 +1,6 @@
 # dotnet commands
 
-[dotnet command ms docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet)
+dotnet command ms docs [1]
 
 - **migrate** _Migrates_ a *project.json* (and _xproj_) based project to a *msbuild* based project.
 - **add|list|remove reference** Adds a project reference, or deletes one, or lists all.
@@ -16,3 +16,5 @@ dotnet sln toList.sln list
 ```
 
 [<< home](../../README.md) | [< netcore](../netcore.md)
+
+[1]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet

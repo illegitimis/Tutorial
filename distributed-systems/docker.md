@@ -21,17 +21,17 @@ Kubernetes, an open source project designed for microservices by extending Docke
 
 ## Unvisited
 
-* [official website](https://www.docker.com/)
-* [DockerCon Europe 2017](http://europe-2017.dockercon.com/)
-* [OASIS Topology and Orchestration Specification for Cloud Applications (TOSCA) TC](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca)
-* [Docker Container Overview for Business Leaders](https://blogs.msdn.microsoft.com/allthingscontainer/2016/11/07/docker-container-overview-for-business-leaders/) nov 2016
-* [Building a Docker Container with an ASP.NET MVC Web API application connected to PostGres on Linux](https://blogs.msdn.microsoft.com/allthingscontainer/2016/10/13/building-a-docker-container-with-an-asp-net-mvc-web-api-application-connected-to-postgres-on-linux/) October, 2016
+* official website [1]
+* DockerCon Europe 2017 [2]
+* OASIS Topology and Orchestration Specification for Cloud Applications (TOSCA) TC [3]
+* Docker Container Overview for Business Leaders [4] nov 2016
+* Building a Docker Container with an ASP.NET MVC Web API application connected to PostGres on Linux [5] October, 2016
 
 ## courses
 
-* [Getting Started with Docker on Windows](https://app.pluralsight.com/library/courses/docker-windows-getting-started/table-of-contents) by Wes Higbee
-* [docker deep dive](https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents) by Nigel Poulton
-* several [course notes](https://gist.github.com/g0t4), and 'Getting Started with Docker on Windows' [notes](https://gist.github.com/g0t4/0d97a9595c87736a8a72a2bd21afc0d9)
+* Getting Started with Docker on Windows [6] by Wes Higbee
+* docker deep dive [7] by Nigel Poulton
+* several course notes [8], and 'Getting Started with Docker on Windows' notes [9]
 
 Hyper-V on windows image location: _C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks\MobyLinuxVM.vhdx_
 
@@ -208,3 +208,13 @@ Many at version 1.0 and higher. Commercial support contracts available. Tools fo
 Key players: Datadog, Mesosphere, DCHQ.io, Quay (CoreOS), Portworx, Rancher, ClusterHQ, Sysdig, ContainerX, Logentries, Weaveworks
 
 [<<](../soa.md) | [home](../../README.md)
+
+[1]: https://www.docker.com/
+[2]: http://europe-2017.dockercon.com/
+[3]: https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca
+[4]: https://blogs.msdn.microsoft.com/allthingscontainer/2016/11/07/docker-container-overview-for-business-leaders/
+[5]: https://blogs.msdn.microsoft.com/allthingscontainer/2016/10/13/building-a-docker-container-with-an-asp-net-mvc-web-api-application-connected-to-postgres-on-linux/
+[6]: https://app.pluralsight.com/library/courses/docker-windows-getting-started/table-of-contents
+[7]: https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents
+[8]: https://gist.github.com/g0t4
+[9]: https://gist.github.com/g0t4/0d97a9595c87736a8a72a2bd21afc0d9

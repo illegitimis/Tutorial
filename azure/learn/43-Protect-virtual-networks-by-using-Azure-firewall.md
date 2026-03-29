@@ -1,6 +1,6 @@
 # Protect virtual networks by using Azure Firewall
 
-> 43 [source](https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/3-protect-network-azure-firewall)
+> 43 source [1]
 
 A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules. You can create firewall rules that specify ranges of IP addresses. Only clients granted IP addresses from within those ranges are allowed to access the destination server. Firewall rules can also include specific network protocol and port information.
 
@@ -8,7 +8,7 @@ Tailwind Traders currently runs firewall appliances, which combine hardware and 
 
 ## What's Azure Firewall?
 
-[Azure Firewall](https://azure.microsoft.com/services/azure-firewall) is a managed, cloud-based network security service that helps protect resources in your Azure virtual networks. A virtual network is similar to a traditional network that you'd operate in your own datacenter. It's a fundamental building block for your private network that enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+Azure Firewall [2] is a managed, cloud-based network security service that helps protect resources in your Azure virtual networks. A virtual network is similar to a traditional network that you'd operate in your own datacenter. It's a fundamental building block for your private network that enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
 
 Here's a diagram that shows a basic Azure Firewall implementation:
 
@@ -32,7 +32,7 @@ Azure Firewall provides many features, including:
 You typically deploy Azure Firewall on a central virtual network to control general network access.
 
 This short video explains how Azure Firewall monitors incoming and outgoing network traffic based a defined set of security rules.
-The [video](https://www.microsoft.com/en-us/videoplayer/embed/RWyFpp?postJsllMsg=true) also explains how Azure Firewall compares to traditional firewall appliances.
+The video [3] also explains how Azure Firewall compares to traditional firewall appliances.
 
 ## What can I configure with Azure Firewall?
 
@@ -42,7 +42,14 @@ With Azure Firewall, you can configure:
 - Network rules that define source address, protocol, destination port, and destination address.
 - Network Address Translation (NAT) rules that define destination IP addresses and ports to translate inbound requests.
 
-[Azure Application Gateway](https://azure.microsoft.com/services/application-gateway) also provides a firewall that's called the web application firewall (WAF).
+Azure Application Gateway [4] also provides a firewall that's called the web application firewall (WAF).
 
 - WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities.
-- [Azure Front Door](https://azure.microsoft.com/services/frontdoor/) and [Azure Content Delivery Network](https://azure.microsoft.com/services/cdn/) also provide WAF services.
+- Azure Front Door [5] and Azure Content Delivery Network [6] also provide WAF services.
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/3-protect-network-azure-firewall
+[2]: https://azure.microsoft.com/services/azure-firewall
+[3]: https://www.microsoft.com/en-us/videoplayer/embed/RWyFpp?postJsllMsg=true
+[4]: https://azure.microsoft.com/services/application-gateway
+[5]: https://azure.microsoft.com/services/frontdoor/
+[6]: https://azure.microsoft.com/services/cdn/

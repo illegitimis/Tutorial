@@ -1,6 +1,6 @@
 # Foreign key mappings
 
-1. WITH SQL SERVER 2000 TABLES. [ORIGINAL ANSWER does not ALLOW multiple column relationships](http://stackoverflow.com/questions/1026673/sql-2000-t-sql-to-get-foreign-key-relationships-for-a-table)
+1. WITH SQL SERVER 2000 TABLES. ORIGINAL ANSWER does not ALLOW multiple column relationships [1]
 ```sql
 select  
 C.constid RELATIONSHIP_ID,  
@@ -77,7 +77,7 @@ exec SP_FKEYS @pktable_name = 'mpk'
 exec SP_FKEYS @fktable_name = 'mfk
 ```
 
-5. [table hard dependency](https://blog.sqlauthority.com/2016/02/16/sql-server-view-dependencies-on-sql-server-hard-soft-way/)
+5. table hard dependency [2]
 ```sql
 SELECT 
 	coalesce(OBJECT_SCHEMA_NAME(f.parent_object_id) + '.', '') + OBJECT_NAME(f.parent_object_id) PARENT, 
@@ -88,7 +88,7 @@ WHERE 1=1
 AND f.parent_object_id != referenced_object_id
 ```
 
-6. [sys.sql_expression_dependencies](https://www.red-gate.com/simple-talk/sql/t-sql-programming/dependencies-and-references-in-sql-server/)
+6. sys.sql_expression_dependencies [3]
 ```sql
 	SELECT
 		  coalesce(object_schema_name(Referencing_ID)+'.','')+ --likely schema name
@@ -106,3 +106,7 @@ AND f.parent_object_id != referenced_object_id
 ```
 
 [<<](../sql.md) | [home](../../README.md)
+
+[1]: http://stackoverflow.com/questions/1026673/sql-2000-t-sql-to-get-foreign-key-relationships-for-a-table
+[2]: https://blog.sqlauthority.com/2016/02/16/sql-server-view-dependencies-on-sql-server-hard-soft-way/
+[3]: https://www.red-gate.com/simple-talk/sql/t-sql-programming/dependencies-and-references-in-sql-server/

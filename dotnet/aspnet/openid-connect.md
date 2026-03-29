@@ -1,6 +1,6 @@
 # OpenID Connect
 
-[OpenID Connect](http://openid.net/connect/) is an interoperable authentication protocol based on the OAuth 2.0 family of specifications. 
+OpenID Connect [1] is an interoperable authentication protocol based on the OAuth 2.0 family of specifications. 
 It uses straightforward REST/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”. 
 It’s uniquely easy for developers to integrate, compared to any preceding Identity protocol. 
 **(Identity, Authentication) + OAuth 2.0 = OpenID Connect**
@@ -9,9 +9,9 @@ It’s uniquely easy for developers to integrate, compared to any preceding Iden
 
 An entity has multiple identities. Facebook extends OAuth with 'signed request' does the same thing as OpenID Connect.  
 
-[Final OpenID Connect specifications](http://openid.net/2014/02/26/the-openid-foundation-launches-the-openid-connect-standard/) were launched on February 26, 2014.  
+Final OpenID Connect specifications [2] were launched on February 26, 2014.  
 
-[The certification program](http://openid.net/2015/04/17/openid-connect-certification-program/) for OpenID Connect was launched on April 22, 2015.  
+The certification program [3] for OpenID Connect was launched on April 22, 2015.  
 Google, Microsoft, Ping Identity, ForgeRock, Nomura Research Institute, and PayPal OpenID Connect deployments were the first to self-certify conformance. 
 
 **IDP** = _identity provider_ = offer authentication as a service 
@@ -20,17 +20,17 @@ Google, Microsoft, Ping Identity, ForgeRock, Nomura Research Institute, and PayP
 
 **JWT** = _json web token_ = data structures with signatures 
 
-> From <http://openid.net/connect/faq/>  
+> From <openid.net: Faq [4]>  
 
 OpenID Connect is a _simple identity layer that works over the top of OAuth 2.0_. It uses the same underlying REST protocol, but adds _consistency_ and _additional security_ on top of the OAuth protocol.  
 
 OAuth 2.0 _is_ fundamentally ~an authorisation protocol~, _not an authentication protocol_.
 
-> From <http://andrewlock.net/an-introduction-to-openid-connect-in-asp-net-core/>  
+> From <andrewlock.net: An Introduction To Openid Connect In Asp Net Core [5]>  
 
-+ [OpenID Connect Basic Client Implementer's Guide 1.0 - draft 37](http://openid.net/specs/openid-connect-basic-1_0.html)
-+ [OpenID Connect Implicit Client Implementer's Guide 1.0 - draft 20](http://openid.net/specs/openid-connect-implicit-1_0.html)
-+ [Safe storage of app secrets during development](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets)
++ OpenID Connect Basic Client Implementer's Guide 1.0 - draft 37 [6]
++ OpenID Connect Implicit Client Implementer's Guide 1.0 - draft 20 [7]
++ Safe storage of app secrets during development [8]
 
 ## Sequence diagram
 
@@ -42,4 +42,14 @@ OAuth 2.0 _is_ fundamentally ~an authorisation protocol~, _not an authentication
 |
 [home](../../README.md)
 |
-[wiki](https://github.com/illegitimis/Tutorial/wiki)
+wiki [9]
+
+[1]: http://openid.net/connect/
+[2]: http://openid.net/2014/02/26/the-openid-foundation-launches-the-openid-connect-standard/
+[3]: http://openid.net/2015/04/17/openid-connect-certification-program/
+[4]: http://openid.net/connect/faq/
+[5]: http://andrewlock.net/an-introduction-to-openid-connect-in-asp-net-core/
+[6]: http://openid.net/specs/openid-connect-basic-1_0.html
+[7]: http://openid.net/specs/openid-connect-implicit-1_0.html
+[8]: https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets
+[9]: https://github.com/illegitimis/Tutorial/wiki

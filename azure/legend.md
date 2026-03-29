@@ -33,7 +33,7 @@ Azure Kubernetes Service. simplest deployment of a managed Kubernetes cluster in
 
 Build secure, scalable, highly available web front ends in Azure \
 load balancing? \
-[documentation](https://docs.microsoft.com/en-us/azure/application-gateway/), [home](https://azure.microsoft.com/en-us/services/application-gateway/#overview) 
+documentation [1], home [2] 
 
 ## App Service
 
@@ -69,7 +69,7 @@ application security group
 
 ## Blueprints
 
-Enabling quick, repeatable creation of governed environments [*](https://azure.microsoft.com/en-us/services/blueprints/#overview)
+Enabling quick, repeatable creation of governed environments * [3]
 
 ## CapEx
 
@@ -107,7 +107,7 @@ cost of goods sold
 
 ## Compute
 
-https://azure.microsoft.com/en-gb/product-categories/compute/
+azure.microsoft.com: Compute [4]
 
 ## CSA
 
@@ -135,7 +135,7 @@ protect your Azure resources from distributed denial of service attacks.
 
  ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
 
-You're charged per dedicated host, independent of how many VMs you deploy to it [*](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/6-host-virtual-machines-dedicated-hosts).
+You're charged per dedicated host, independent of how many VMs you deploy to it * [5].
 
 ## DFS
 
@@ -197,11 +197,11 @@ File Replication Service
 
 ## FSLogix
 
-[docs](https://docs.microsoft.com/en-us/fslogix/overview)
+docs [6]
 
 ## functions
 
-https://docs.microsoft.com/en-us/azure/azure-functions/
+Microsoft Docs: Azure Functions [7]
 
 ## GA
 
@@ -272,7 +272,7 @@ micro controller unit
 
 ## Monitor Workbooks 
 
-[Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview/) automates responses to threats.
+Azure Monitor Workbooks [8] automates responses to threats.
 
 ## MTCS
 
@@ -327,7 +327,7 @@ Payment Card Industry's Data Security Standard
 
 ## Policy
 
-Achieve real-time cloud compliance at scale with consistent resource governance [*](https://azure.microsoft.com/en-us/services/azure-policy/#overview)
+Achieve real-time cloud compliance at scale with consistent resource governance * [9]
 
 ## RBAC
 
@@ -376,15 +376,15 @@ Shared Access Signature
 
 ## Security Center
 
-monitoring [service](https://azure.microsoft.com/services/security-center) that provides visibility of your security posture across all of your services, both on Azure and on-premises.
+monitoring service [10] that provides visibility of your security posture across all of your services, both on Azure and on-premises.
 
 ## Secure score
 
-measurement of an organization's security posture [*](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls/)
+measurement of an organization's security posture * [11]
 
 ## Sentinel
 
-[Azure Sentinel](https://azure.microsoft.com/en-us/services/microsoft-sentinel/#overview) is Microsoft's cloud-based SIEM system. \
+Azure Sentinel [12] is Microsoft's cloud-based SIEM system. \
 It uses intelligent security analytics and threat analysis.
 
 ## Serverless computing
@@ -395,7 +395,7 @@ It uses intelligent security analytics and threat analysis.
 - Scaling and performance are handled automatically.
 - You're billed only for the exact resources you use.
 - There's no need to even reserve capacity.
-- Azure Cosmos DB serverless [*](https://docs.microsoft.com/en-us/azure/cosmos-db/serverless)
+- Azure Cosmos DB serverless * [13]
 
 ## SIEM
 
@@ -441,11 +441,11 @@ virtual hard disk
 
 ## Virtual Desktop
 
-https://docs.microsoft.com/en-us/azure/virtual-desktop/
+Microsoft Docs: Virtual Desktop [14]
 
 ## Virtual machines
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/
+Microsoft Docs: Virtual Machines [15]
 
 ## Virtual machine scale sets
 
@@ -472,3 +472,19 @@ web application firewall
 geographical grouping of Azure regions for billing purposes
 
 [< back](./az.md)
+
+[1]: https://docs.microsoft.com/en-us/azure/application-gateway/
+[2]: https://azure.microsoft.com/en-us/services/application-gateway/#overview
+[3]: https://azure.microsoft.com/en-us/services/blueprints/#overview
+[4]: https://azure.microsoft.com/en-gb/product-categories/compute/
+[5]: https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/6-host-virtual-machines-dedicated-hosts
+[6]: https://docs.microsoft.com/en-us/fslogix/overview
+[7]: https://docs.microsoft.com/en-us/azure/azure-functions/
+[8]: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview/
+[9]: https://azure.microsoft.com/en-us/services/azure-policy/#overview
+[10]: https://azure.microsoft.com/services/security-center
+[11]: https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls/
+[12]: https://azure.microsoft.com/en-us/services/microsoft-sentinel/#overview
+[13]: https://docs.microsoft.com/en-us/azure/cosmos-db/serverless
+[14]: https://docs.microsoft.com/en-us/azure/virtual-desktop/
+[15]: https://docs.microsoft.com/en-us/azure/virtual-machines/

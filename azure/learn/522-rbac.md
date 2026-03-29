@@ -1,10 +1,10 @@
 # Control access to cloud resources by using Azure role-based access control
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/2-control-access-azure-rbac
+> Microsoft Docs: 2 Control Access Azure Rbac [1]
 
 When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? It's a good security practice to *grant users only the rights they need to perform their job*, and only to the relevant resources.
 
-Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created, Azure enables you to control access through [Azure role-based access control](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) (Azure RBAC).
+Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created, Azure enables you to control access through Azure role-based access control [2] (Azure RBAC).
 
 Azure provides built-in roles that describe *common access rules for cloud resources*.
 You can also define your own roles. Each role has an associated set of access permissions that relate to that role.
@@ -79,3 +79,6 @@ In the Access Control pane, settings and permissions for a user are shown.
 ![A screenshot that shows the Access Control Role Assignment pane](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-based-access-control-blade-360b5130.png).
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/2-control-access-azure-rbac
+[2]: https://docs.microsoft.com/en-us/azure/role-based-access-control/overview

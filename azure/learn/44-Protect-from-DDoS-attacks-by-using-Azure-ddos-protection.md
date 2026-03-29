@@ -6,7 +6,7 @@ In this part, you learn how Azure DDoS Protection (Standard service tier) helps 
 
 ## What are DDoS attacks?
 
-A [distributed denial of service attack](https://azure.microsoft.com/services/ddos-protection) attempts to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users. DDoS attacks can target any resource that's publicly reachable through the internet, including websites.
+A distributed denial of service attack [1] attempts to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users. DDoS attacks can target any resource that's publicly reachable through the internet, including websites.
 
 ## What is Azure DDoS Protection?
 
@@ -47,3 +47,5 @@ The Standard service tier can help prevent:
 - **Volumetric** attacks. The goal of this attack is to flood the network layer with a substantial amount of *seemingly legitimate traffic*.
 - **Protocol** attacks. These attacks render a target inaccessible by exploiting a weakness in the layer 3 (network) and layer 4 (Transport) protocol stack.
 - **Resource**-layer (application-layer) attacks (only with web application firewall). These attacks target web application packets to disrupt the transmission of data between hosts. You need a web application firewall (WAF) to protect against L7 attacks. DDoS Protection Standard protects the WAF from volumetric and protocol attacks.
+
+[1]: https://azure.microsoft.com/services/ddos-protection

@@ -1,11 +1,11 @@
 # Introduction
 
 > The term governance describes the general process of establishing rules and policies and ensuring that those rules and policies are enforced. \
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/1-introduction
+> Microsoft Docs: 1 Introduction [1]
 
 When running in the cloud, a good governance strategy helps you maintain control over the applications and resources that you manage in the cloud. Maintaining control over your environment ensures that you stay compliant with:
 
-- Industry standards, like [PCI DSS](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-pci-dss).
+- Industry standards, like PCI DSS [2].
 - Corporate or organizational standards, such as ensuring that network data is encrypted.
 
 Governance is most beneficial when you have:
@@ -42,3 +42,6 @@ After completing this module, you'll be able to:
 - Enable governance at scale across multiple Azure subscriptions by using **Azure Blueprints**.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/1-introduction
+[2]: https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-pci-dss

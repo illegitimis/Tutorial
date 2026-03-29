@@ -2,7 +2,7 @@
 
 ## new concurrent collections lock-free?
 
-All of the collections in the new `System.Collections.Concurrent` namespace employ lock-free techniques to some extent in order to achieve general performance benefits, [but traditional locks are used in some cases](https://blogs.msdn.microsoft.com/pfxteam/2010/01/26/faq-are-all-of-the-new-concurrent-collections-lock-free/).
+All of the collections in the new `System.Collections.Concurrent` namespace employ lock-free techniques to some extent in order to achieve general performance benefits, but traditional locks are used in some cases [1].
 
 It’s worth noting that _purely relying on lock-free techniques_ is _sometimes_ **not the most efficient solution**.  When we say “lock-free,” we mean that locks (in .NET, traditional _mutual exclusion_ locks are available via the `System.Threading.Monitor` class, typically via the C# `lock` keyword or the Visual Basic `SyncLock` keyword) have been avoided by using **memory barriers** and **compare-and-swap CPU instructions** (in .NET, “CAS” operations are available via the `System.Threading.Interlocked` class).
 
@@ -13,3 +13,5 @@ It’s worth noting that _purely relying on lock-free techniques_ is _sometimes_
 `ConcurrentDictionary<TKey,TValue>` uses **fine-grained locking** when adding to or updating data in the dictionary, but it is **entirely lock-free for read operations**. In this way, it’s _optimized for scenarios where reading from the dictionary is the most frequent operation_.
 
 [<<](../parallel.md) | [home](../../README.md)
+
+[1]: https://blogs.msdn.microsoft.com/pfxteam/2010/01/26/faq-are-all-of-the-new-concurrent-collections-lock-free/

@@ -1,6 +1,6 @@
 # Azure regions, availability zones, and region pairs
 
-> https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/regions-availability-zones
+> Microsoft Docs: Regions Availability Zones [1]
 
 Resources are created in regions, which are different geographical locations around the globe that contain Azure datacenters. \
 Azure is made up of datacenters located around the globe. \
@@ -55,7 +55,7 @@ Availability zones are *connected through high-speed*, **private fiber-optic net
 ![Diagram showing three datacenters connected in a single Azure region representing an availability zone.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/availability-zones-5c3c490c.png)
 
 Not every region has support for availability zones. \
-For an updated list, see [Regions that support availability zones in Azure](https://docs.microsoft.com/en-us/azure/availability-zones/az-region).
+For an updated list, see Regions that support availability zones in Azure [2].
 
 You can use availability zones to run mission-critical applications and build high-availability into your application architecture \
 by co-locating your compute, storage, networking, and data resources within a zone and replicating in other zones. \
@@ -94,9 +94,14 @@ Additional advantages of region pairs:
 
 Having a broadly distributed set of datacenters allows Azure to provide a high guarantee of availability.
 
-- [Azure geographies](https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies)
-- [Azure cross-region replication pairings for all geographies](https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure)
+- Azure geographies [3]
+- Azure cross-region replication pairings for all geographies [4]
 
 
 
 [<< home](../az.md) | [< LP1 AZ900](./1-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/regions-availability-zones
+[2]: https://docs.microsoft.com/en-us/azure/availability-zones/az-region
+[3]: https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies
+[4]: https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure

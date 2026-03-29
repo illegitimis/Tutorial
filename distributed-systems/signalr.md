@@ -1,9 +1,9 @@
 # signalr
 
-- [signalr](http://signalr.net/) Incredibly simple real-time web for ASP .NET
-- Hub [protocol](https://github.com/aspnet/AspNetCore/blob/master/src/SignalR/docs/specs/HubProtocol.md) specs
-- PS course [Real-time applications using ASP.NET Core, SignalR & Angular](https://chsakell.com/2016/10/10/real-time-applications-using-asp-net-core-signalr-angular/) oct 16 & [demo app](https://github.com/chsakell/aspnet-core-signalr-angular)
-- [SignalR-plus-RX-Streaming-Data-Demo-App](http://www.codeproject.com/Articles/851437/SignalR-plus-RX-Streaming-Data-Demo-App)
+- signalr [1] Incredibly simple real-time web for ASP .NET
+- Hub protocol [2] specs
+- PS course Real-time applications using ASP.NET Core, SignalR & Angular [3] oct 16 & demo app [4]
+- SignalR-plus-RX-Streaming-Data-Demo-App [5]
 - `SSE` (server sent events) is a html5 feature. server response content type `text/event-stream`. js must instantiate an `EventSource` object. Easilt polyfilled for older browsers?
 - web sockets are a standardized way to use a TCP socket through which messages can be sent full duplex
 - lifetime of a web socket: http handshake, data exchange, close. all inside the same TCP socket.
@@ -39,10 +39,23 @@
 - client side signalr libraries?
 - uses RPC for communication.
 - **hub** server side _class_ that sends/receives messages to/from clients.
-- protocol is the serialization format: [msgpack](https://github.com/neuecc/MessagePack-CSharp/#compare-with-protobuf-json-zeroformatter) Compare with protobuf, JSON, ZeroFormatter. `Microsoft.AspNetCore.SignalR.Protocols.[Json|MessagePack|NewtonsoftJson]`. `MessagePackHubProtocol` [src](https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.MessagePack/Protocol/MessagePackHubProtocol.cs), [proj](https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.MessagePack/Microsoft.AspNetCore.SignalR.Protocols.MessagePack.csproj), [DI extensions](https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.Json/JsonProtocolDependencyInjectionExtensions.cs), json hub protocol [impl](https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.Json/Protocol/JsonHubProtocol.cs)
-- configuration [docs](https://github.com/aspnet/AspNetCore.Docs/blob/master/aspnetcore/signalr/configuration.md).
-- Under the Covers of ASP.NET Core SignalR [article may 2018](https://msdn.microsoft.com/en-us/magazine/mt846655.aspx)
+- protocol is the serialization format: msgpack [6] Compare with protobuf, JSON, ZeroFormatter. `Microsoft.AspNetCore.SignalR.Protocols.[Json|MessagePack|NewtonsoftJson]`. `MessagePackHubProtocol` src [7], proj [8], DI extensions [9], json hub protocol impl [10]
+- configuration docs [11].
+- Under the Covers of ASP.NET Core SignalR article may 2018 [12]
 - The client side of a SignalR app needs a SignalR library `@aspnet/signalr-protocol-msgpack`
 - Azure SignalR Service
 
 [<< home](../../README.md) | [< soa](../soa.md)
+
+[1]: http://signalr.net/
+[2]: https://github.com/aspnet/AspNetCore/blob/master/src/SignalR/docs/specs/HubProtocol.md
+[3]: https://chsakell.com/2016/10/10/real-time-applications-using-asp-net-core-signalr-angular/
+[4]: https://github.com/chsakell/aspnet-core-signalr-angular
+[5]: http://www.codeproject.com/Articles/851437/SignalR-plus-RX-Streaming-Data-Demo-App
+[6]: https://github.com/neuecc/MessagePack-CSharp/#compare-with-protobuf-json-zeroformatter
+[7]: https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.MessagePack/Protocol/MessagePackHubProtocol.cs
+[8]: https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.MessagePack/Microsoft.AspNetCore.SignalR.Protocols.MessagePack.csproj
+[9]: https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.Json/JsonProtocolDependencyInjectionExtensions.cs
+[10]: https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.Json/Protocol/JsonHubProtocol.cs
+[11]: https://github.com/aspnet/AspNetCore.Docs/blob/master/aspnetcore/signalr/configuration.md
+[12]: https://msdn.microsoft.com/en-us/magazine/mt846655.aspx

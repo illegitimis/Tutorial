@@ -3,7 +3,7 @@
 ## sysobjects vs sys.objects
 
 `sysobjects` is just a system table in SQL Server 2000. 
-In SQL Server 2005, [there is no such system table](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/a965676e-d4d9-4365-ad0a-58ca26ec4701/differenece-between-sysobjects-and-sysobjects-in-sql-server-2005-?forum=sqlkjmanageability) named `sysobjects`, it is implemented as a system view, just as background compatibility view only.
+In SQL Server 2005, there is no such system table [1] named `sysobjects`, it is implemented as a system view, just as background compatibility view only.
 
 ```sql
 select distinct xtype from sysobjects
@@ -39,3 +39,5 @@ select * from sys.tables t join sys.schemas s on (t.schema_id = s.schema_id)
 ```
 
 [<<](../sql.md) | [home](../../README.md)
+
+[1]: https://social.msdn.microsoft.com/Forums/sqlserver/en-US/a965676e-d4d9-4365-ad0a-58ca26ec4701/differenece-between-sysobjects-and-sysobjects-in-sql-server-2005-?forum=sqlkjmanageability

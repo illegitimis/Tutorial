@@ -6,7 +6,7 @@ An _application_ consists of **one or more processes**.
 A process, in the simplest terms, is an executing program. One or more threads run in the context of the process. 
 A thread is the _basic unit_ to which the operating system _allocates processor time_. 
 A thread can execute any part of the process code, including parts currently being executed by another thread. 
-> From <https://msdn.microsoft.com/en-us/library/windows/desktop/ms684841(v=vs.85).aspx>
+> From <MSDN: Ms684841(V=Vs.85 [1]).aspx>
 
 Each process provides the resources needed to execute a program. 
 A process has a **virtual address space**, **executable code**, **open handles to system objects**, a **security context**, a unique process identifier, **environment variables**, a **priority** class, minimum and maximum working set sizes, and _at least one thread of execution_. Each process is started with a single thread, often called the **primary** thread, but **can create additional threads from any of its threads**.
@@ -18,7 +18,7 @@ The thread context includes the thread's set of _machine registers_, the **kerne
 Threads can also have their own **security context**, which can be used for _impersonating_ clients.
 Microsoft Windows supports **preemptive multitasking**, which creates the effect of simultaneous execution of multiple threads from multiple processes. 
 On a multiprocessor computer, the system can simultaneously execute as many threads as there are processors on the computer.
-> From <https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917(v=vs.85).aspx>
+> From <MSDN: Ms681917(V=Vs.85 [2]).aspx>
 
 A thread is analogous to the operating system process in which your application runs. 
 Just as processes run in parallel on a computer, threads run in parallel within a single process. 
@@ -40,3 +40,6 @@ Preemptive / time slice / taken away from the processor forcefully by the kernel
 **Fiber** = lightweight threads but suffer from quite a few limitations (for example, thread-local storage becomes problematic)
 
 [<<](../parallel.md) | [home](../../README.md)
+
+[1]: https://msdn.microsoft.com/en-us/library/windows/desktop/ms684841(v=vs.85
+[2]: https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917(v=vs.85

@@ -1,10 +1,10 @@
 # Control and audit your resources by using Azure Policy
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/6-control-audit-resources-azure-policy
+> Microsoft Docs: 6 Control Audit Resources Azure Policy [1]
 
 In a previous exercise in this module, you identified your governance and business requirements. How do you ensure that your resources stay compliant? Can you be alerted if a resource's configuration has changed?
 
-[Azure Policy](https://azure.microsoft.com/en-us/services/azure-policy/#overview) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across all of your resource configurations so that those configurations stay compliant with corporate standards.
+Azure Policy [2] is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across all of your resource configurations so that those configurations stay compliant with corporate standards.
 
 ## How does Azure Policy define policies?
 
@@ -74,3 +74,6 @@ Even if you have only a single policy, an initiative enables you to increase the
 Because the associated initiative remains assigned, it's easier to add and remove policies without the need to change the policy assignment for your resources.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/6-control-audit-resources-azure-policy
+[2]: https://azure.microsoft.com/en-us/services/azure-policy/#overview

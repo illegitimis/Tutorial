@@ -1,8 +1,8 @@
 # Prevent accidental changes by using resource locks
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/3-prevent-changes-resource-locks
+> Microsoft Docs: 3 Prevent Changes Resource Locks [1]
 
-A [resource lock](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json) prevents resources from being accidentally deleted or changed.
+A resource lock [2] prevents resources from being accidentally deleted or changed.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Think of a resource lock as a warning system that reminds you that a resource should not be deleted or changed.
 
@@ -49,3 +49,6 @@ For example, you can define a blueprint that specifies that a certain resource l
 Azure Blueprints can automatically replace the resource lock if that lock is removed.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/3-prevent-changes-resource-locks
+[2]: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json

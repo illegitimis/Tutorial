@@ -76,10 +76,16 @@ Install-package NUnitTestAdapter -Version 2.0.0
 
 ## Links
 
-- [Local feeds](https://docs.microsoft.com/ro-ro/nuget/hosting-packages/local-feeds)
-- [host own nuget](https://docs.microsoft.com/ro-ro/nuget/hosting-packages/overview)
-- [Creating a local Nuget cache/repository](https://joshilewis.wordpress.com/2012/01/13/creating-a-local-nuget-cacherepository/)
-- [Local package sources](http://stackoverflow.com/questions/28592693/adding-nuget-package-sources-to-visual-studio-by-script) 
-- [Configure machine wide packages and Visual Studio package sources](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior)
+- Local feeds [1]
+- host own nuget [2]
+- Creating a local Nuget cache/repository [3]
+- Local package sources [4] 
+- Configure machine wide packages and Visual Studio package sources [5]
 
 [<<](../tools.md) | [home](../../README.md)
+
+[1]: https://docs.microsoft.com/ro-ro/nuget/hosting-packages/local-feeds
+[2]: https://docs.microsoft.com/ro-ro/nuget/hosting-packages/overview
+[3]: https://joshilewis.wordpress.com/2012/01/13/creating-a-local-nuget-cacherepository/
+[4]: http://stackoverflow.com/questions/28592693/adding-nuget-package-sources-to-visual-studio-by-script
+[5]: https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior

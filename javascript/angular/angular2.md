@@ -1,7 +1,7 @@
 # Angular 2
 
-+ [ECMAScript6 features comparison](http://es6-features.org)
-+ [Wizards wizard](https://github.com/danielfigueiredo/wizards-wizard) A wizard to build a wizard. Demo application for integrating _forms_ and _redux_, as showcased @ ng-conf 2017 during FormControl Freaks: Redux Edition.
++ ECMAScript6 features comparison [1]
++ Wizards wizard [2] A wizard to build a wizard. Demo application for integrating _forms_ and _redux_, as showcased @ ng-conf 2017 during FormControl Freaks: Redux Edition.
 
 ## diff es6 vs es5 unicorn
 
@@ -20,3 +20,6 @@ typescript is a __superscript__ of ES6.
 `service` | ![component->service->rest api](https://vrp2kg.by3302.livefilestore.com/y4mQ-0_q17WRRu-5rqmW6VYBivyi6UVJ785Xfwi9vOckCpm2UmqOsurWS0hTIaCEIgmnHEvlwywLwNFvN-xbNPzEQkcQnxVIyJAtJHVeJyB2vRQ6-cAeffijFaDuKCdRbQnHscBMV4q6wtrl1D2KykKFdUlllrh_AiBn8Gfy9KJV6jgASKY3hQ-hKHw2fznDlju0OlIO9DrHES16dG1AhRQNw?width=660&height=251&cropmode=none)
 
 [<<](../JS.md) | [home](../../README.md)
+
+[1]: http://es6-features.org
+[2]: https://github.com/danielfigueiredo/wizards-wizard

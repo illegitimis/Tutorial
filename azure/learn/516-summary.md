@@ -1,6 +1,6 @@
 # Summary
 
-Tailwind Traders needs to ensure that [only its workforce can access](https://docs.microsoft.com/en-us/learn/modules/secure-access-azure-identity-services/6-summary) its growing set of cloud applications, both from any location and from any device.
+Tailwind Traders needs to ensure that only its workforce can access [1] its growing set of cloud applications, both from any location and from any device.
 
 In building out its plan, Tailwind Traders learns that:
 
@@ -17,16 +17,16 @@ With these ideas in place, the software development and IT administrator teams c
 
 Here are more resources to help you go further:
 
-- start [free](https://azure.microsoft.com/en-us/free/)
-- Compare Active Directory to Azure Active Directory [docs](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad)
-- Azure Active Directory [*](https://azure.microsoft.com/en-us/services/active-directory/#overview)
-- What is single sign-on (SSO)? [docs](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on)
-- Azure Active Directory [Seamless Single Sign-On](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)
-- What is Azure AD Connect? [docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect)
-- Azure AD Multi-Factor Authentication [docs](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
-- Azure AD Conditional Access [entrypoint](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/)
-- Microsoft identity platform and OpenID Connect protocol [docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc)
-- Single Sign-On SAML protocol [docs](https://docs.microsoft.com/en-us/azure/active-directory/develop/single-sign-on-saml-protocol)
+- start free [2]
+- Compare Active Directory to Azure Active Directory docs [3]
+- Azure Active Directory * [4]
+- What is single sign-on (SSO)? docs [5]
+- Azure Active Directory Seamless Single Sign-On [6]
+- What is Azure AD Connect? docs [7]
+- Azure AD Multi-Factor Authentication docs [8]
+- Azure AD Conditional Access entrypoint [9]
+- Microsoft identity platform and OpenID Connect protocol docs [10]
+- Single Sign-On SAML protocol docs [11]
 
 ## misc sso
 
@@ -40,3 +40,15 @@ Here are more resources to help you go further:
 - group policy, edit site to zone assignment list
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/secure-access-azure-identity-services/6-summary
+[2]: https://azure.microsoft.com/en-us/free/
+[3]: https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad
+[4]: https://azure.microsoft.com/en-us/services/active-directory/#overview
+[5]: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on
+[6]: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso
+[7]: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect
+[8]: https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks
+[9]: https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/
+[10]: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc
+[11]: https://docs.microsoft.com/en-us/azure/active-directory/develop/single-sign-on-saml-protocol

@@ -17,12 +17,12 @@ git | package | doc | examples | desc
 
 ## courses
 
-- Creating GraphQL APIs with ASP.Net Core for Beginners [udemy](https://github.com/mehtanilay10/GraphQL-Demo)
+- Creating GraphQL APIs with ASP.Net Core for Beginners udemy [1]
 - [fiyazhasan] 12 blog posts
-- glenn block _API Development in .NET with GraphQL_ [linkedin](https://www.linkedin.com/learning/api-development-in-dot-net-with-graphql/running-on-mac-and-linux) 2018
-- _GraphQL & Caching_: The Elephant in the Room [blog](https://apisyouwonthate.com/blog/graphql-and-caching-the-elephant-in-the-room) 2019
-- roland guijt _Building GraphQL APIs with ASP.NET Core_ [pluralsight](https://www.pluralsight.com/courses/building-graphql-apis-aspdotnet-core) 2021 [git](https://github.com/RolandGuijt/PluralsightGraphQL)
-- Build Scalable APIs using GraphQL and Serverless [msbuild video](https://azure.microsoft.com/en-us/resources/videos/build-2019-build-scalable-apis-using-graphql-and-serverless/) 2019
+- glenn block _API Development in .NET with GraphQL_ linkedin [2] 2018
+- _GraphQL & Caching_: The Elephant in the Room blog [3] 2019
+- roland guijt _Building GraphQL APIs with ASP.NET Core_ pluralsight [4] 2021 git [5]
+- Build Scalable APIs using GraphQL and Serverless msbuild video [6] 2019
 
 ## tools
 
@@ -56,3 +56,10 @@ git | package | doc | examples | desc
 [create-graphless]: https://github.com/simonaco/create-graphless
 [fastify]: https://github.com/fastify/fastify 
 [implementations]: https://graphql.org/code/#c-net
+
+[1]: https://github.com/mehtanilay10/GraphQL-Demo
+[2]: https://www.linkedin.com/learning/api-development-in-dot-net-with-graphql/running-on-mac-and-linux
+[3]: https://apisyouwonthate.com/blog/graphql-and-caching-the-elephant-in-the-room
+[4]: https://www.pluralsight.com/courses/building-graphql-apis-aspdotnet-core
+[5]: https://github.com/RolandGuijt/PluralsightGraphQL
+[6]: https://azure.microsoft.com/en-us/resources/videos/build-2019-build-scalable-apis-using-graphql-and-serverless/

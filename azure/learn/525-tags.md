@@ -1,6 +1,6 @@
 # Organize your Azure resources by using tags
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/5-organize-resource-tags
+> Microsoft Docs: 5 Organize Resource Tags [1]
 
 As your cloud usage grows, it's increasingly important to stay organized. A good organization strategy helps you understand your cloud usage and can help you manage costs.
 
@@ -48,3 +48,5 @@ For example, you might decide that only mission-critical resources have the Impa
 All non-tagged resources would then not be considered as mission-critical.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/5-organize-resource-tags

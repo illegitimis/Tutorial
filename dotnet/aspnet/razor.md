@@ -46,7 +46,7 @@ _ViewStart.cshtml default layout for the razor view engine
 - `@Html.ActionLink` link text, action & controller names
 - strongly vs loosely typed html form helpers: `@Html`[`TextBox`|`CheckBox`|`RadioButton`|`DropDownList`|`TextArea`][|`For`]
 - `@using (Html.BeginForm(method, controller, FormMethod.Post))`
-- display name [attribute localization](http://adamyan.blogspot.com/2010/02/aspnet-mvc-2-localization-complete.html), annotations with [resource](https://stackoverflow.com/questions/30704121/use-resources-in-a-razor-labelfor-element)
+- display name attribute localization [1], annotations with resource [2]
 - `@Html.ValidationMessageFor` with a model property lambda and optionally a custom error message
 - `@Html.ValidationSummary()` renders model and optionally property level errors, see `excludePropertyErrors`
 - @Html.HiddenFor for `input type="hidden"`
@@ -147,3 +147,6 @@ services.Configure<razorViewEngineOptions>(opts => {
 - custom editor/view templates `Shared\EditorTemplates\Date.cshtml`
 
 [<<](../ASP.md) | [mvc](./mvc.md) | [home](../../README.md)
+
+[1]: http://adamyan.blogspot.com/2010/02/aspnet-mvc-2-localization-complete.html
+[2]: https://stackoverflow.com/questions/30704121/use-resources-in-a-razor-labelfor-element

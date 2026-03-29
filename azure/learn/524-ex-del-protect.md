@@ -1,6 +1,6 @@
 # Exercise - Protect a storage account from accidental deletion by using a resource lock
 
-> https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/4-protect-storage-account-resource-lock \
+> Microsoft Docs: 4 Protect Storage Account Resource Lock [1] \
 > You need your own Azure subscription to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 In this exercise, you see how resource locks help prevent accidental deletion of your Azure resources.
@@ -109,3 +109,5 @@ You see that the my-test-rg resource group no longer exists in your account.
 Your storage account is also deleted.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/4-protect-storage-account-resource-lock

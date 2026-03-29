@@ -1,6 +1,6 @@
 # Garbage Collection
 
-- [Provides memory safety by making sure that an object cannot use the content of another object](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx). (immutable?)
+- Provides memory safety by making sure that an object cannot use the content of another object [1]. (immutable?)
 - _Each process_ has its own, **separate virtual address space**. All processes on the same computer share the same physical memory, and share the page file if there is one. All threads in the process allocate memory for objects on the same heap. (The area of memory reserved for reference data is called the heap)
 - By default, on 32-bit computers, each process has a _2-GB user-mode virtual address space_. 
 - If you are writing native code, you use Win32 functions to work with the virtual address space. These functions allocate and free virtual memory for you on native heaps. 
@@ -33,7 +33,7 @@
   - **Interop** with _COM objects_ can establish root references implicitly, COM wrappers for .Net code
   - Calls into unmanaged code may also involve passing pointers to memory on the heap, which will mean that the relevant heap block needs to be treated as reachable for the duration of the call
   - GC reachability vs COM reference counting, circular references scenario
-- Ordinarily, the **large object heap** is _not compacted_, because copying large objects imposes a [performance penalty](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx). use the `GCSettings.LargeObjectHeapCompactionMode` > 4.5.1
+- Ordinarily, the **large object heap** is _not compacted_, because copying large objects imposes a performance penalty [1]. use the `GCSettings.LargeObjectHeapCompactionMode` > 4.5.1
 - The garbage collector uses the following information to determine whether objects are live:
   - **Stack roots**. Stack variables provided by the just-in-time (JIT) compiler and stack walker.
   - **Garbage collection handles**. Handles that point to managed objects and that can be allocated by user code or by the common language runtime.
@@ -41,4 +41,7 @@
   
 _Todo_ Pcs50 bw8 weak ref, reclaiming memory
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [2]
+
+[1]: https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx
+[2]: https://github.com/illegitimis/Tutorial/wiki

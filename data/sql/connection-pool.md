@@ -1,6 +1,6 @@
 # Connection Pool
 
-[Connection pooling](http://www.techrepublic.com/article/take-advantage-of-adonet-connection-pooling/) maintains a _group_ (or pool) of _active database connections_.  
+Connection pooling [1] maintains a _group_ (or pool) of _active database connections_.  
 When an application tries to open a database connection, an open connection is retrieved from the pool (if available).  
 _Closing_ a connection _returns it to the pool_ for other processes to utilize. 
 Connection pooling is utilized (by default) unless otherwise specified.
@@ -13,22 +13,22 @@ You should be judicious in your use of connection pooling. Here are a few tips w
 - Close user-defined transactions before closing related connections. 
 - To maintain the connection pool, you should keep at least one connection open. Therefore, do not close all your connections in the pool. If server resources become a problem, you may close all connections, and the pool will be recreated with the next request. 
 - Do not use connection pooling if integrated security is utilized. This results in a unique connection string per user, so each user has a connection pool that is not available to other users. The end result is poor performance, so pooling should be avoided in this scenario.
-- [`ClearPool`](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection.clearpool%28v=vs.110%29.aspx) clears/empties the connection pool that is associated with the connection. 
-If additional [connections](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection%28v=vs.110%29.aspx) associated with connection are in use at the time of the call, 
+- `ClearPool` [2] clears/empties the connection pool that is associated with the connection. 
+If additional connections [3] associated with connection are in use at the time of the call, 
 they are marked appropriately and are discarded (instead of being returned to the pool) when `Close` is called on them.
 ```cs
 public static void ClearPool ( SqlConnection connection)
 ```
-+ [ClearAllPools](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection.clearallpools%28v=vs.110%29.aspx) resets (or empties) the connection pool.
++ ClearAllPools [4] resets (or empties) the connection pool.
 If there are connections in use at the time of the call, they are marked appropriately and will be discarded (instead of being returned to the pool) when Close is called on them. 
 ```cs
 public static void SqlConnection.ClearAllPools() 
 ```
-+ [Connection Pooling for OleDb](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-oledb)
-+ [Connection Pooling for Odbc](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-odbc)
-+ [Connection Pooling for OracleClient](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-oracleclient)
-+ [Pooled vs. Non-pooled connections](https://www.sqlskills.com/blogs/bobb/sql-server-and-pooled-vs-non-pooled-connections/) article
-+ [`@@SPID`](https://docs.microsoft.com/en-us/sql/t-sql/functions/spid-transact-sql) Returns the session ID of the current user process
++ Connection Pooling for OleDb [5]
++ Connection Pooling for Odbc [6]
++ Connection Pooling for OracleClient [7]
++ Pooled vs. Non-pooled connections [8] article
++ `@@SPID` [9] Returns the session ID of the current user process
 ```sql
 SELECT @@SPID AS 'ID', SYSTEM_USER AS 'Login Name', USER AS 'User Name'
 ```
@@ -48,3 +48,13 @@ For just listing who is currently connected, sp_who should give you what you nee
 [1]: (https://social.technet.microsoft.com/Forums/sqlserver/en-US/94692d7b-69c6-4c34-a1dd-495c652e7d9d/session-id-of-adonet-connection?forum=sqldataaccess) 
 
 [<<](../sql.md) | [home](../../README.md)
+
+[1]: http://www.techrepublic.com/article/take-advantage-of-adonet-connection-pooling/
+[2]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection.clearpool%28v=vs.110%29.aspx
+[3]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection%28v=vs.110%29.aspx
+[4]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection.clearallpools%28v=vs.110%29.aspx
+[5]: https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-oledb
+[6]: https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-odbc
+[7]: https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-oracleclient
+[8]: https://www.sqlskills.com/blogs/bobb/sql-server-and-pooled-vs-non-pooled-connections/
+[9]: https://docs.microsoft.com/en-us/sql/t-sql/functions/spid-transact-sql

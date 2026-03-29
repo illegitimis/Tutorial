@@ -31,13 +31,13 @@
 	db.fs.files.count({ "metadata.creationTimeUtc": {$exists: false}}) 
 	db.fs.files.count({ "metadata.Width": {$exists: true}, "metadata.Height": {$exists: true}}) 
 ```
-+ [capped collection](https://docs.mongodb.com/manual/core/capped-collections) with a [tailable cursor](https://docs.mongodb.com/manual/tutorial/create-tailable-cursor/)
++ capped collection [1] with a tailable cursor [2]
 ```js
     db.createCollection("log", {capped:true, size:100000, max:5000}) /* { "ok" : 1 } */
     db.log.isCapped() /* true */
 ```
-MongoDb C# driver `CursorType` [enumeration](http://api.mongodb.com/csharp/current/html/T_MongoDB_Driver_CursorType.htm).
-MongoDb C# driver wire protocol [`QueryMessage.TailableCursor`](http://api.mongodb.com/csharp/current/html/P_MongoDB_Driver_Core_WireProtocol_Messages_QueryMessage_TailableCursor.htm).
+MongoDb C# driver `CursorType` enumeration [3].
+MongoDb C# driver wire protocol `QueryMessage.TailableCursor` [4].
 `QueryMessage.AwaitData` Gets a value indicating whether the server should await data (used with tailable cursors). 
 + bulk insert  
 ```js
@@ -53,9 +53,9 @@ MongoDb C# driver wire protocol [`QueryMessage.TailableCursor`](http://api.mongo
 	use OldDb 
 	db.dropDatabase();
 ```  
-+ [db.collection.insertMany()](https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/) new in 3.2
++ db.collection.insertMany() [5] new in 3.2
 
-## [GridFS](https://stackoverflow.com/tags/gridfs/info)
+## GridFS [6]
 
 +  removal
 ```js
@@ -84,17 +84,17 @@ MongoDb C# driver wire protocol [`QueryMessage.TailableCursor`](http://api.mongo
 		} } 
 	])				``````````
 ```
-+ [old c# api v1](http://api.mongodb.com/csharp/1.2/html/0e461cba-c217-b8a4-b03f-cf05cf59ba97.htm)
-+ **upload files** [2.2](http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/uploadingfiles/), [2.4](http://mongodb.github.io/mongo-csharp-driver/2.4/reference/gridfs/)
-+ [Download files](http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/downloadingfiles/)     
-+ [Find files](http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/findingfiles/)      
-+ [Delete and rename](http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/deletingandrenamingfiles/)
++ old c# api v1 [7]
++ **upload files** 2.2 [8], 2.4 [9]
++ Download files [10]     
++ Find files [11]      
++ Delete and rename [12]
     
 
 
 ## CLI
 
-[mongoexport docs](https://docs.mongodb.com/manual/reference/program/mongoexport/), in pairs, export-import, dump-restore 
+mongoexport docs [13], in pairs, export-import, dump-restore 
 connect to powershell ps d:\mongodb\server\3.0\bin>  
 .\mongoexport -d imagesDB -c fs.files -o 10.11.11.45.fs.files.json 
 .\mongoexport -d imagesDB -c fs.chunks -o 10.11.11.45.fs.chunks.json 
@@ -105,18 +105,18 @@ mongoimport.exe --db ImageCache10111145 --collection fs.chunks --file 10.11.11.4
 
 ## C#
 
-+ [driver releases](https://github.com/mongodb/mongo-csharp-driver/releases)
-+ [update](https://docs.mongodb.com/getting-started/csharp/update/)
-+ [old driver cheat sheet](http://www.layerworks.com/blog/2014/11/11/mongodb-shell-csharp-driver-comparison-cheat-cheet)
-+ [Query by a Field in an Embedded Document](https://docs.mongodb.com/getting-started/csharp/query/#query-by-a-field-in-an-embedded-document)
-+ distinct array subdocuments [SO](https://stackoverflow.com/questions/29906247/distinctasync-against-array-sub-documents-with-mongodb-c-sharp-2-0-driver),
-[api](http://api.mongodb.com/csharp/2.0/html/M_MongoDB_Driver_IMongoCollection_1_DistinctAsync__1.htm)
-+ [Using a Tailable Cursor](http://mongodb.github.io/mongo-csharp-driver/2.0/examples/tailable_cursor/)
-+ [Configure GridFS Chunksize in MongoDB](https://stackoverflow.com/questions/10384307/configure-gridfs-chunksize-in-mongodb), todo update
-+ [Mongo DB support for Hangfire](https://github.com/sergeyzwezdin/Hangfire.Mongo) sources
-+ Building MongoDB Applications with Binary Files Using GridFS [1](https://www.mongodb.com/blog/post/building-mongodb-applications-binary-files-using-gridfs-part-1?jmp=docs) and [2](https://www.mongodb.com/blog/post/building-mongodb-applications-binary-files-using-gridfs-part-2)
-+ Driver [v1.11](http://mongodb.github.io/mongo-csharp-driver/1.11/driver/) install tutorial
-+ Getting started with GridFS driver [v2](http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/gettingstarted/)
++ driver releases [14]
++ update [15]
++ old driver cheat sheet [16]
++ Query by a Field in an Embedded Document [17]
++ distinct array subdocuments SO [18],
+api [19]
++ Using a Tailable Cursor [20]
++ Configure GridFS Chunksize in MongoDB [21], todo update
++ Mongo DB support for Hangfire [22] sources
++ Building MongoDB Applications with Binary Files Using GridFS 1 [23] and 2 [24]
++ Driver v1.11 [25] install tutorial
++ Getting started with GridFS driver v2 [26]
 + cursor with filter 
 ```cs
 	using (var cursor = await FsFiles.FindAsync(filter)) { 
@@ -131,7 +131,32 @@ mongoimport.exe --db ImageCache10111145 --collection fs.chunks --file 10.11.11.4
 |
 [home](../README.md) 
 | 
-[wiki](https://github.com/illegitimis/Tutorial/wiki)   
+wiki [27]   
 
-
-
+[1]: https://docs.mongodb.com/manual/core/capped-collections
+[2]: https://docs.mongodb.com/manual/tutorial/create-tailable-cursor/
+[3]: http://api.mongodb.com/csharp/current/html/T_MongoDB_Driver_CursorType.htm
+[4]: http://api.mongodb.com/csharp/current/html/P_MongoDB_Driver_Core_WireProtocol_Messages_QueryMessage_TailableCursor.htm
+[5]: https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/
+[6]: https://stackoverflow.com/tags/gridfs/info
+[7]: http://api.mongodb.com/csharp/1.2/html/0e461cba-c217-b8a4-b03f-cf05cf59ba97.htm
+[8]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/uploadingfiles/
+[9]: http://mongodb.github.io/mongo-csharp-driver/2.4/reference/gridfs/
+[10]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/downloadingfiles/
+[11]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/findingfiles/
+[12]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/deletingandrenamingfiles/
+[13]: https://docs.mongodb.com/manual/reference/program/mongoexport/
+[14]: https://github.com/mongodb/mongo-csharp-driver/releases
+[15]: https://docs.mongodb.com/getting-started/csharp/update/
+[16]: http://www.layerworks.com/blog/2014/11/11/mongodb-shell-csharp-driver-comparison-cheat-cheet
+[17]: https://docs.mongodb.com/getting-started/csharp/query/#query-by-a-field-in-an-embedded-document
+[18]: https://stackoverflow.com/questions/29906247/distinctasync-against-array-sub-documents-with-mongodb-c-sharp-2-0-driver
+[19]: http://api.mongodb.com/csharp/2.0/html/M_MongoDB_Driver_IMongoCollection_1_DistinctAsync__1.htm
+[20]: http://mongodb.github.io/mongo-csharp-driver/2.0/examples/tailable_cursor/
+[21]: https://stackoverflow.com/questions/10384307/configure-gridfs-chunksize-in-mongodb
+[22]: https://github.com/sergeyzwezdin/Hangfire.Mongo
+[23]: https://www.mongodb.com/blog/post/building-mongodb-applications-binary-files-using-gridfs-part-1?jmp=docs
+[24]: https://www.mongodb.com/blog/post/building-mongodb-applications-binary-files-using-gridfs-part-2
+[25]: http://mongodb.github.io/mongo-csharp-driver/1.11/driver/
+[26]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/gettingstarted/
+[27]: https://github.com/illegitimis/Tutorial/wiki

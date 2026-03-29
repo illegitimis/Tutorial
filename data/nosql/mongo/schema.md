@@ -2,18 +2,18 @@
 
 ## state of the art
 
-+ [SQL to MongoDB Mapping Chart](https://docs.mongodb.com/manual/reference/sql-comparison/)
-+ [MSSQL To MongoDB Tool](https://mssql2mongo.codeplex.com/) (SQL2Mongo)is a tool to migrate all schema & data from Microsoft SQL Server to MongoDB. It is easily to set Primary Key column and tables which you want to migrate. 
-_Codeplex shutting down_, [download](https://mssql2mongo.codeplex.com/downloads/get/684290), or [1drv](https://1drv.ms/u/s!As0cxZAk26SzjMEzfosSkRmeiQbzCA), or [source](https://mssql2mongo.codeplex.com/SourceControl/latest).
-+ [prantlf/Northwind.js](https://gist.github.com/prantlf/2afd29c30130c9beef64) Helps obtaining and using a local copy of the Northwind database in MongoDB and testing an OData server with JayData 
-+ [MongoDB SQL Server Importer](https://sql2mongo.codeplex.com/SourceControl/latest#src/MongoSqlImporter/MongoSqlImporter/Program.cs) quick and dirty brute force importer. Duplicated [source on 1drv](https://1drv.ms/u/s!As0cxZAk26SzjME0fHrz5_fMUfpmjw).
-+ [Migrating from Relational Databases to MongoDB](https://www.slideshare.net/matkeep/migrating-from-relational-databases-to-mongodb) slides
-+ [Migration from SQL to MongoDB - A Case Study at TheKnot.com](https://www.slideshare.net/mongodb/migration-from-sql-to-mongodb-a-case-study-at-theknotcom) slides
-+ [Migrating from RDBMS to MongoDB](https://www.slideshare.net/mongodb/migrating-from-rdbms-to-mongodb) slides
-+ [Firehose](https://github.com/breinero/Firehose) An import and work generator for MongoDB. 
-+ [mongomtimport](https://github.com/buzzm/mongomtimport/blob/master/README.md) Multithreaded Java file loader for mongoDB, [fork](https://github.com/mongodb-labs/mongomtimport)
++ SQL to MongoDB Mapping Chart [1]
++ MSSQL To MongoDB Tool [2] (SQL2Mongo)is a tool to migrate all schema & data from Microsoft SQL Server to MongoDB. It is easily to set Primary Key column and tables which you want to migrate. 
+_Codeplex shutting down_, download [3], or 1drv [4], or source [5].
++ prantlf/Northwind.js [6] Helps obtaining and using a local copy of the Northwind database in MongoDB and testing an OData server with JayData 
++ MongoDB SQL Server Importer [7] quick and dirty brute force importer. Duplicated source on 1drv [8].
++ Migrating from Relational Databases to MongoDB [9] slides
++ Migration from SQL to MongoDB - A Case Study at TheKnot.com [10] slides
++ Migrating from RDBMS to MongoDB [11] slides
++ Firehose [12] An import and work generator for MongoDB. 
++ mongomtimport [13] Multithreaded Java file loader for mongoDB, fork [14]
 
-## [MongoDB relationships: embed or reference?](http://stackoverflow.com/questions/5373198/mongodb-relationships-embed-or-reference#5373969)
+## MongoDB relationships: embed or reference? [15]
 
 This is more an art than a science. 
 The Mongo Documentation on Schemas is a good reference, but here are some things to consider:
@@ -45,12 +45,12 @@ The Mongo Documentation on Schemas is a good reference, but here are some things
 
 ## linking vs embedding
 
-Both solutions(_separate collections_ vs. _embedded documents_) have their strengths and weaknesses. Learn to use [both](http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/).
-- [Separate collections offer the greatest querying flexibility](http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#4)
-- [Selecting embedded documents is more limited](http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#5)
+Both solutions(_separate collections_ vs. _embedded documents_) have their strengths and weaknesses. Learn to use both [16].
+- Separate collections offer the greatest querying flexibility [17]
+- Selecting embedded documents is more limited [18]
 - A document, including all its embedded documents and arrays, cannot exceed 16MB
 - Embedded documents are easy and fast (single seek)
-- [Separate collections require more work](http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#7)
+- Separate collections require more work [19]
 - So, separate collections are good if you need to select individual documents, need more control over querying, or have huge documents.
 Embedded documents are good when you want the entire document, the document with a $slice of comments, or with no comments at all.
 - As a general rule, if you have a lot of "comments" or if they are large, a separate collection might be best. 
@@ -58,9 +58,9 @@ Smaller and/or fewer documents tend to be a natural fit for embedding.
 
 ## Embedded / nested / denormalized
 
-1. [better performance for read operations](https://docs.mongodb.com/manual/core/data-model-design/), as well as the ability to request and retrieve related data in a single database operation
+1. better performance for read operations [20], as well as the ability to request and retrieve related data in a single database operation
 2. update related data in a single atomic write operation
-3. [Person-Address pattern **(one to one)**](https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-one-relationships-between-documents/#data-modeling-example-one-to-one)
+3. Person-Address pattern **(one to one)** [21]
 ```js
 {
    _id: "joe",
@@ -73,7 +73,7 @@ Smaller and/or fewer documents tend to be a natural fit for embedding.
             }
 }
 ``` 
-4. [Person-Address pattern **(one to many)**](https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-many-relationships-between-documents/)
+4. Person-Address pattern **(one to many)** [22]
 ```js
 {
    _id: "joe",
@@ -99,7 +99,7 @@ Smaller and/or fewer documents tend to be a natural fit for embedding.
 
 1. when embedding would result in **duplication** of data but would not provide sufficient _read performance advantages to outweigh the implications of the duplication_.
 2. to represent more complex many-to-many relationships
-3. [publisher and book relationship **(one to many)**](https://docs.mongodb.com/manual/tutorial/model-referenced-one-to-many-relationships-between-documents/#data-modeling-publisher-and-books)
+3. publisher and book relationship **(one to many)** [23]
 Avoid repetition of publisher data
 number of books per publisher is small with limited growth, store the book reference inside the publisher document… 
 otherwise in a normal scenario a lot of books, small no publishers => keep a publisher ref inside the book
@@ -124,21 +124,50 @@ if the number of books per publisher is unbounded, this data model would lead to
    publisher_id: "oreilly"
 }
 ```
-5. [Model Tree Structures with Parent References](https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-parent-references/) 
+5. Model Tree Structures with Parent References [24] 
 organizes documents in a tree-like structure by storing references to “parent” nodes in “child” nodes.
-6. [Model Tree Structures with Child References](https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-child-references/)
+6. Model Tree Structures with Child References [25]
 organizes documents in a tree-like structure by storing references to “child” nodes in “parent” nodes.
-7. [Model Tree Structures with an Array of Ancestors](https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-ancestors-array/)
+7. Model Tree Structures with an Array of Ancestors [26]
 tree-like structure by storing references to “parent” nodes and an array that stores all ancestors.
-8. [Model Tree Structures with Materialized Paths](https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-materialized-paths/)
+8. Model Tree Structures with Materialized Paths [27]
    storing full relationship paths between documents. 
    In addition to the tree node, each document stores the _id of the nodes ancestors or path as a string.
-9. [Model Tree Structures with Nested Sets](https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-nested-sets/)
+9. Model Tree Structures with Nested Sets [28]
 optimizes discovering subtrees at the expense of tree mutability.
 
 [<<](Mongo.md)
 |
 [home](../README.md) 
 | 
-[wiki](https://github.com/illegitimis/Tutorial/wiki) 
+wiki [29] 
 
+[1]: https://docs.mongodb.com/manual/reference/sql-comparison/
+[2]: https://mssql2mongo.codeplex.com/
+[3]: https://mssql2mongo.codeplex.com/downloads/get/684290
+[4]: https://1drv.ms/u/s!As0cxZAk26SzjMEzfosSkRmeiQbzCA
+[5]: https://mssql2mongo.codeplex.com/SourceControl/latest
+[6]: https://gist.github.com/prantlf/2afd29c30130c9beef64
+[7]: https://sql2mongo.codeplex.com/SourceControl/latest#src/MongoSqlImporter/MongoSqlImporter/Program.cs
+[8]: https://1drv.ms/u/s!As0cxZAk26SzjME0fHrz5_fMUfpmjw
+[9]: https://www.slideshare.net/matkeep/migrating-from-relational-databases-to-mongodb
+[10]: https://www.slideshare.net/mongodb/migration-from-sql-to-mongodb-a-case-study-at-theknotcom
+[11]: https://www.slideshare.net/mongodb/migrating-from-rdbms-to-mongodb
+[12]: https://github.com/breinero/Firehose
+[13]: https://github.com/buzzm/mongomtimport/blob/master/README.md
+[14]: https://github.com/mongodb-labs/mongomtimport
+[15]: http://stackoverflow.com/questions/5373198/mongodb-relationships-embed-or-reference#5373969
+[16]: http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/
+[17]: http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#4
+[18]: http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#5
+[19]: http://openmymind.net/Multiple-Collections-Versus-Embedded-Documents/#7
+[20]: https://docs.mongodb.com/manual/core/data-model-design/
+[21]: https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-one-relationships-between-documents/#data-modeling-example-one-to-one
+[22]: https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-many-relationships-between-documents/
+[23]: https://docs.mongodb.com/manual/tutorial/model-referenced-one-to-many-relationships-between-documents/#data-modeling-publisher-and-books
+[24]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-parent-references/
+[25]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-child-references/
+[26]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-ancestors-array/
+[27]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-materialized-paths/
+[28]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-nested-sets/
+[29]: https://github.com/illegitimis/Tutorial/wiki

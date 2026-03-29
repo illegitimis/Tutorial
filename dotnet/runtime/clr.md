@@ -8,4 +8,6 @@ Some of the most important benefits of using C# come from its runtime, which pro
 - thread management
 - automated memory management
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
+
+[1]: https://github.com/illegitimis/Tutorial/wiki

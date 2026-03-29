@@ -18,7 +18,7 @@ The _finalization queue_ contains entries for all the objects in the managed hea
 If a `SafeHandle` object is available that wraps your unmanaged resource, the _recommended_ alternative is to **implement the dispose pattern with a safe handle and not override** `Finalize`.
 
 CLR only finalizes reference types. _Every implementation of Finalize must call base class impl of finalizer_. 
-[Unhandled system exceptions](https://msdn.microsoft.com/en-us/library/system.object.finalize%28v=vs.110%29.aspx) such as `OutOfMemoryException` and `StackOverflowException` terminate the finalizer. 
+Unhandled system exceptions [1] such as `OutOfMemoryException` and `StackOverflowException` terminate the finalizer. 
 
 Complicates matters by introducing a twilight zone in which the object has been determined to be unreachable, but has not yet gone. 
 If the finalization thread hasn’t managed to run all extant finalizers _within two seconds_ of the program trying to finish, it just gives up and exits anyway => no guarantees.
@@ -102,4 +102,7 @@ private void DisposeUnmanaged();
     private void DisposeManaged();
 ````
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [2]
+
+[1]: https://msdn.microsoft.com/en-us/library/system.object.finalize%28v=vs.110%29.aspx
+[2]: https://github.com/illegitimis/Tutorial/wiki

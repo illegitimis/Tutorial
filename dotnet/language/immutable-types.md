@@ -17,4 +17,6 @@ string s = "Hello"; s[0] = 'c';
 
 - The `Regex` class is the heart of the FCL regular expression support. Used both as an object instance and a static type, the `Regex` class represents an immutable, _compiled instance of a regular expression_ that can be applied to a string via a matching process. Internally, the regular expression is stored as either a _sequence of internal regular expression bytecodes_ that are **interpreted at match time** or as **compiled MSIL opcodes** that are **JIT-compiled by the CLR at runtime**. This allows you to make a tradeoff between worsened regular expression startup time and memory utilization versus _h_igher raw match performance at runtime_.
 
-[<<](../csdotnet.md) | [home](../../README.md) | [wiki](https://github.com/illegitimis/Tutorial/wiki)
+[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
+
+[1]: https://github.com/illegitimis/Tutorial/wiki

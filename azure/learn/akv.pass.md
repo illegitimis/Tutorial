@@ -3,12 +3,12 @@
 azure portal \
 msft learn sandbox \
 create a resource \
-https://portal.azure.com/#create/Microsoft.KeyVault \
+portal.azure.com [1] \
 Create a key vault \
 Concierge Subscription \
 Resource group: learn-fb9aee48-e576-405d-88a2-65e4d2e8e121 \
 Deployment name:password-key-vault-5 \
-vault uri: https://password-key-vault-5.vault.azure.net/ \
+vault uri: password-key-vault-5.vault.azure.net [2] \
 settings - secrets sidebar \
 Generate/Import \
 Create a secret page
@@ -26,3 +26,6 @@ az keyvault secret [delete|recover] --vault-name password-key-vault-5 --name MyP
 ```
 
 [< LP4](4-lp-az-900.md)
+
+[1]: https://portal.azure.com/#create/Microsoft.KeyVault
+[2]: https://password-key-vault-5.vault.azure.net/

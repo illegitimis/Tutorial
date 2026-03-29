@@ -1,11 +1,18 @@
 # http
 
-- [RFC2616](https://www.w3.org/Protocols/rfc2616/rfc2616.html), Hypertext Transfer Protocol -- HTTP/1.1
-- [rfc7231](https://tools.ietf.org/html/rfc7231#section-6.7) Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
-- [rfc7232](https://tools.ietf.org/html/rfc7232) (HTTP/1.1): Conditional Requests
-- _The Atom Publishing Protocol_ [rfc5023](https://tools.ietf.org/rfc/rfc5023.txt) (RFC text)
-- [httpdd](http://for-get.github.io/http-decision-diagram/httpdd.fsm.html) html diagram
-- `http-decision-diagram` [readme](https://github.com/for-GET/http-decision-diagram/blob/master/doc/README.md)
+- RFC2616 [1], Hypertext Transfer Protocol -- HTTP/1.1
+- rfc7231 [2] Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content
+- rfc7232 [3] (HTTP/1.1): Conditional Requests
+- _The Atom Publishing Protocol_ rfc5023 [4] (RFC text)
+- for-get.github.io: Httpdd.Fsm.Html [5] html diagram
+- `http-decision-diagram` readme [6]
 - _pic_ 3250x2146, v4.0.201410 ![pic](https://raw.githubusercontent.com/for-GET/http-decision-diagram/master/httpdd.png)
 
 [< rest](../rest.md) | [<< home](../../README.md)
+
+[1]: https://www.w3.org/Protocols/rfc2616/rfc2616.html
+[2]: https://tools.ietf.org/html/rfc7231#section-6.7
+[3]: https://tools.ietf.org/html/rfc7232
+[4]: https://tools.ietf.org/rfc/rfc5023.txt
+[5]: http://for-get.github.io/http-decision-diagram/httpdd.fsm.html
+[6]: https://github.com/for-GET/http-decision-diagram/blob/master/doc/README.md

@@ -1,6 +1,6 @@
 # Introduction
 
-> https://docs.microsoft.com/en-us/learn/modules/examine-privacy-compliance-data-protection-standards/1-introduction
+> Microsoft Docs: 1 Introduction [1]
 
 In this module, you'll learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 
@@ -19,3 +19,5 @@ After completing this module, you'll be able to:
 Explain Azure capabilities that are specific to government agencies.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/examine-privacy-compliance-data-protection-standards/1-introduction

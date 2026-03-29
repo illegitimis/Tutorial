@@ -3,11 +3,11 @@
 Constraint model of assertions.
 The logic necessary to carry out each assertion is embedded in the constraint object passed as the second parameter to that method.
 
-- [Constraint model](https://github.com/nunit/docs/wiki/Constraint-Model)
-- [Constraints by category](https://github.com/nunit/docs/wiki/Constraints#constraints-by-category)
-- [Install](https://github.com/nunit/docs/wiki/Installation)
-- [Visual Studio Test Generator](https://github.com/nunit/docs/wiki/Visual-Studio-Test-Generator)
-- [Visual Studio Test Adapter](https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter)
+- Constraint model [1]
+- Constraints by category [2]
+- Install [3]
+- Visual Studio Test Generator [4]
+- Visual Studio Test Adapter [5]
 
 | NUnit | Assert.That |
 |:---:|:---:|
@@ -22,3 +22,9 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 | Nulls & booleans | `Is.Not.Empty`, `Is.Null`, `Is.True` |
 
 [<<](../tdd.md) | [home](../../README.md)
+
+[1]: https://github.com/nunit/docs/wiki/Constraint-Model
+[2]: https://github.com/nunit/docs/wiki/Constraints#constraints-by-category
+[3]: https://github.com/nunit/docs/wiki/Installation
+[4]: https://github.com/nunit/docs/wiki/Visual-Studio-Test-Generator
+[5]: https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter

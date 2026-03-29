@@ -10,9 +10,9 @@ pull | update
 
 ## Links
 
-+ [Inspecting a repository](https://www.atlassian.com/git/tutorials/inspecting-a-repository), Git lets you completely ignore files by placing paths in a special file called `.gitignore`.
-+ [Saving changes](https://www.atlassian.com/git/tutorials/saving-changes), add, commit, stash.
-+ [Sync](https://www.atlassian.com/git/tutorials/syncing) with fetch, remote, push, pull
++ Inspecting a repository [1], Git lets you completely ignore files by placing paths in a special file called `.gitignore`.
++ Saving changes [2], add, commit, stash.
++ Sync [3] with fetch, remote, push, pull
 
 ## Git command line
 
@@ -64,7 +64,7 @@ git config http.postBuffer 524288000
 ```
 
 5. file **history**
-  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension
+  - GitLens [4] extension
   - file commit history with patches and beyond renames
 
   ```bat
@@ -93,3 +93,8 @@ git push -v --tags origin master:master
 ```
 
 [<<](../tools.md) | [home](../../README.md)
+
+[1]: https://www.atlassian.com/git/tutorials/inspecting-a-repository
+[2]: https://www.atlassian.com/git/tutorials/saving-changes
+[3]: https://www.atlassian.com/git/tutorials/syncing
+[4]: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens

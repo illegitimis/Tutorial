@@ -1,15 +1,15 @@
 # Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular
 
 ## TOC
-- [Intro](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#intro)
-- [ASP.NET Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#aspnet-core)
-- [HTML and CSS Basics](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#html-and-css-basics)
-- [JavaScript](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript)
-- [MVC 6](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#mvc-6)
-- [Bootstrap](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#bootstrap)
-- [EF Core](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#ef-core)
-- [Creating the API](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#creating-the-api)
-- [AngularJS](https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#angularjs)
+- Intro [1]
+- ASP.NET Core [2]
+- HTML and CSS Basics [3]
+- JavaScript [4]
+- MVC 6 [5]
+- Bootstrap [6]
+- EF Core [7]
+- Creating the API [8]
+- AngularJS [9]
 
 ## Intro
 
@@ -120,7 +120,7 @@ Package `Microsoft.AspNetCore.StaticFiles` must be added.
 
 ![](https://vbp4kg.by3302.livefilestore.com/y3mLO9GLQ-A5sRP0_dnJbYC69_euaHpfqZUQHJCfM2GyY1z3dXsEOD7D6sWuL_-PxWodBvILgLPIeTKUh3H6dSI4XgdovvQkxJj6xsWf4A72xbkkrK7uNrPzw1dwfk1yE_L0_FrExXGKc_QHu154iI9zmXLfcildPn1LLHO7dpDWCY?width=937&height=234&cropmode=none)
 
-[Web Essentials 2013](http://vswebessentials.com/) has a Surround with tag... feature (**Alt+Shift+W**) that is more fluid than the built-in Surround with.
+Web Essentials 2013 [10] has a Surround with tag... feature (**Alt+Shift+W**) that is more fluid than the built-in Surround with.
 
 overriding input buttons, default is text `input[type=submit] {width: auto;}`
 
@@ -224,7 +224,7 @@ Use **tag helpers** to modify hrefs for main menu, from `<a href="/app/about">Ab
 
 View models. ![](https://jxhreg.by3302.livefilestore.com/y3m_ly-zrpRO_F8uUtQD9BzvOYZi5bddu_KW1cAVLVh1a6-AkKS6s22JQhh3_yYycFDOuf8v0dBps4fjAhtHkz-9OreUSfBSco6IfXBV50-p6l2sAzk3FRBXFAIQBbwmeqZBaNxxjyYpEkaJpo8gX_046d1Wkb8BYOqgzhJdTiYGUM?width=483&height=285&cropmode=none)
 
-Validation attributes. `[Required]`, [[`StringLength`](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute(v=vs.110).aspx)`(MinimumLength=10,MaximumLength=4096)]`. Also add `jquery-validation: "~1.15.0"` and `jquery-validation-unobtrusive: "~3.2.6"` to `bower.json`. Add `@RenderSection("scripts", false)` in the layout. In the contacts page define the scripts section, and use it like `<span asp-validation-for="Name" />` and `<span asp-validation-summary="ModelOnly"></span>`.
+Validation attributes. `[Required]`, [`StringLength` [11]`(MinimumLength=10,MaximumLength=4096)]`. Also add `jquery-validation: "~1.15.0"` and `jquery-validation-unobtrusive: "~3.2.6"` to `bower.json`. Add `@RenderSection("scripts", false)` in the layout. In the contacts page define the scripts section, and use it like `<span asp-validation-for="Name" />` and `<span asp-validation-summary="ModelOnly"></span>`.
 ```htm
     @section scripts {
         <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
@@ -271,7 +271,7 @@ _Models_ folder has dtos, in comparison with the _ViewModels_ folder. Code first
 
 _alt+space_ opens up a console window. `dotnet ef migrations add InitialDatabase`. A new folder appears, `Migrations`. Or `dotnet database ef update` to create the schema. To add sample data, add a `ContextSeedData` db ctx wrapper, with `async Task Ensure() { if(!_ctx.Trips.Any())  {CrUd();}  }`. `services.AddTransient<ContextSeedData>();`, have to explictly call in Configure, `param.EnsureSeedData().Wait()`. 
 
-[Demo repo](http://github.com/shawnwildermuth/BuildingWebASPNETCore).
+Demo repo [12].
 
 Repository. `services.AddScoped<WorldRepository, IWorldRepository>();`. Every time a custom context instance is used as a parameter, replace with the repository interface. `services.AddLogging()` and `ILoggerFactory.AddDebug(LogLevel.Information)`. In the controller constructor add `MS.Extentions.ILogger<TController>`.
 
@@ -293,7 +293,7 @@ get _errors_ too
     }
  ```
  
-Rest Client: [postman](http://getpostman.com).
+Rest Client: postman [13].
 
 Move from Pascal to Camel casing
 ```cs
@@ -328,3 +328,17 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 + table ->` tr ng-repeat="t in vm.trips"` -> `td {{t.created | date:'yyyy-MM-dd'}}`
 
 [<<](../netcore.md) | [home](../../README.md)
+
+[1]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#intro
+[2]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#aspnet-core
+[3]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#html-and-css-basics
+[4]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#javascript
+[5]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#mvc-6
+[6]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#bootstrap
+[7]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#ef-core
+[8]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#creating-the-api
+[9]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#angularjs
+[10]: http://vswebessentials.com/
+[11]: https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute(v=vs.110).aspx
+[12]: http://github.com/shawnwildermuth/BuildingWebASPNETCore
+[13]: http://getpostman.com

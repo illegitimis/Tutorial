@@ -1,6 +1,6 @@
 # What are multifactor authentication and Conditional Access?
 
-> https://docs.microsoft.com/en-us/learn/modules/secure-access-azure-identity-services/4-what-are-mfa-conditional-access
+> Microsoft Docs: 4 What Are Mfa Conditional Access [1]
 
 Tailwind Traders allows delivery drivers to use their own mobile devices to access scheduling and logistics applications. Some delivery drivers are _permanent employees_ of Tailwind Traders. Others work on _short-term contract_. How can the IT department ensure that an access attempt is really from a valid Tailwind Traders worker?
 
@@ -45,7 +45,7 @@ Azure Active Directory **Premium** (P1 or P2 licenses) allows for comprehensive 
 
 A *subset* of Azure AD Multi-Factor Authentication capabilities is part of your Office 365 subscription.
 
-For more information on licenses and Azure AD Multi-Factor Authentication capabilities, see [Available versions of Azure AD Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication) and [How to create a free Azure Active Directory developer tenant](https://docs.microsoft.com/en-us/azure/active-directory/verifiable-credentials/how-to-create-a-free-developer-account).
+For more information on licenses and Azure AD Multi-Factor Authentication capabilities, see Available versions of Azure AD Multi-Factor Authentication [2] and How to create a free Azure Active Directory developer tenant [3].
 
 ## What's Conditional Access?
 
@@ -108,3 +108,7 @@ To use Conditional Access, **you need an Azure AD Premium P1 or P2 license**.
 If you have a **Microsoft 365 Business Premium** license, you also have access to Conditional Access features.
 
 [< 5: Describe identity, governance, privacy, and compliance features](./5-lp-az-900.md)
+
+[1]: https://docs.microsoft.com/en-us/learn/modules/secure-access-azure-identity-services/4-what-are-mfa-conditional-access
+[2]: https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication
+[3]: https://docs.microsoft.com/en-us/azure/active-directory/verifiable-credentials/how-to-create-a-free-developer-account
