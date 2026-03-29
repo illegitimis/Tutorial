@@ -1,6 +1,6 @@
 # Blazor
 
-> Blazor [1] is a client-side web UI .NET framework targeted at `WebAssembly` based on HTML and CSS that runs in the browser using open web standards
+> `Blazor` [1] is a client-side web UI .NET framework targeted at `WebAssembly` based on HTML and CSS that runs in the browser using open web standards
 
 - install Blazor CLI templates `dotnet new -i Microsoft.AspNetCore.Blazor.Templates`
 - in VS install extension `aspnet.blazor`

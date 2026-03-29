@@ -13,7 +13,7 @@ acronym | title | description
 
 - **write-ahead logging** ([WAL][2]) in which any transaction detail is first written to a log that includes both redo and undo information.
 - **shadow-paging** in which a shadow page is created when data is to be modified. The query's updates are written to the shadow page rather than to the real data in the database. The database itself is modified only when the edit is complete.
-- For many domains and use cases, ACID transactions are far more [pessimistic][1] (i.e., they’re more worried about data safety) than the domain actually requires.
+- For many domains and use cases, **ACID** transactions are far more [pessimistic][1] (i.e., they’re more worried about data safety) than the domain actually requires.
 - In the NoSQL world, ACID transactions are less fashionable as [some databases have loosened the requirements][1] for _immediate consistency_, _data freshness_ and _accuracy_ in order to gain other benefits, like **scale** and **resilience**. Notably, the .NET-based RavenDB has [bucked the trend](http://idioms.thefreedictionary.com/buck+the+trend)(_to be noticeably different from the way that a situation is developing generally_) among aggregate stores in supporting ACID transactions.
 
 [< sql](../sql.md) | [> nosql](../nosql.md) | [home](../../README.md)

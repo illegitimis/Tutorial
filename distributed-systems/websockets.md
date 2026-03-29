@@ -3,7 +3,7 @@
 - Full duplex messaging
 - No 6 connection limit
 - Multi data-type support
-- TCP socket upgrade: A standardized way to use one TCP socket through which messages can be sent from server to client and vice versa.
+- **TCP** socket upgrade: A standardized way to use one TCP socket through which messages can be sent from server to client and vice versa.
 - WS protocol
 
 ## Microsoft.AspNetCore.WebSockets
@@ -129,7 +129,7 @@ sequenceDiagram
 
 ## SignalR
 
-[SignalR](signalr.md) [![signalr page](https://img.shields.io/badge/wiki-page-green.svg)](signalr.md)
+[`SignalR`](signalr.md) [![signalr page](https://img.shields.io/badge/wiki-page-green.svg)](signalr.md)
 
 ## misc
 

@@ -10,7 +10,7 @@
   autorest --input-file=http://localhost:63300//swagger/v1.0/swagger.json --namespace=Generated --output-folder=Generated --csharp --client-side-validation=false
   ```
 
-- OpenAPI (f.k.a Swagger) Specification code generator [3].
+- OpenAPI (f.k.a `Swagger`) Specification code generator [3].
   - Supports C#, Go, Java, Node.js, TypeScript, Python, Ruby and PHP.
   - Code Generation to consume the API is generated via **Autorest** [3] and **Swagger** [4] UI. Will be used for *integration* tests.
 - How to use **Sandcastle** type xml comments in your Swagger generated API documentation: `summary` goes as top right description, `remarks` is listed as _implementation notes_, controller `Produces` attribute mapped to _Response Content Type_, _response messages_ controlled by a combo of `ProducesResponseType` attribute and the `response` xml tag.

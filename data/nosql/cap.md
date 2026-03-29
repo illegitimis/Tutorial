@@ -1,6 +1,6 @@
 # cap theorem
 
-> Computer science [theorem][3] that quantifies the _inevitable trade-offs_. [Eric Brewer’s CAP theorem][4] says that if you want _CAP_ you have to settle for two out of three.
+> Computer science [theorem][3] that quantifies the _inevitable trade-offs_. [Eric Brewer’s **CAP theorem**][4] says that if you want _CAP_ you have to settle for two out of three.
 
 acronym | title | description
 ---|---|---

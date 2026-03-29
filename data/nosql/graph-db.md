@@ -14,7 +14,7 @@
 
 > A complete, distributed, parallel graph computing platform supporting web-scale data analytics in real-time.
 
-- doc RESTful API User Guide [11], cors [12], yt playlists [13]
+- doc **REST**ful API User Guide [11], cors [12], yt playlists [13]
 - integrations: REST API server [14], c# connector [15], TigerGraph.NET [16]
 - host tgcloud [17]
 - GSQL Language Reference 3.6 [18]

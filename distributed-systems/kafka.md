@@ -34,7 +34,7 @@ kafka-sharp - High Performance .NET Kafka Driver
 
 - Kafka is a **distributed**, **partitioned**, **replicated** _commit log service_. It provides the functionality of a _messaging system_, but with a unique design. What does all that mean?
 - Apache™ Kafka is a fast, scalable, durable, and fault-tolerant publish-subscribe messaging system.
-- Kafka is often used in place of traditional message brokers like JMS and AMQP because of its higher throughput, reliability and replication.
+- Kafka is often used in place of traditional message brokers like JMS and **AMQP** because of its higher throughput, reliability and replication.
 - Kafka works in combination with Apache Storm, Apache HBase and Apache Spark for real-time analysis and rendering of streaming data.
 - Kafka can message geospatial data from a fleet of long-haul trucks or sensor data from heating and cooling equipment in office buildings.
 - Whatever the industry or use case, Kafka brokers massive message streams for low-latency analysis in Enterprise Apache Hadoop.
@@ -59,7 +59,7 @@ So, at a high level, producers send messages over the network to the Kafka clust
 
  ![alt text](https://g7udqw.by3302.livefilestore.com/y3m_iO5d-2s1tGAmB3j_oWs7hffUi0_wTY1WT6dDmB17-gQpGbfqyTHKCuxhMLGw6ZipuN-5QP9VmYDe0Co21SMvJ6XAa2pV1C4edIfTebgNWGb4Cld_TJMWiqGslN0-jP90NaP7EhpotLjvntRQEPf8pCrPLFDmYJEpxC79Yxjl1M?width=258&height=180&cropmode=none)
 
-Communication between the clients and the servers is done with a simple, high-performance, language agnostic TCP protocol [21].
+Communication between the clients and the servers is done with a simple, high-performance, language agnostic **TCP** protocol [21].
 
 We provide a Java client for Kafka, but clients are available in many languages [22].
 

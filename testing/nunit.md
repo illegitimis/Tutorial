@@ -1,6 +1,6 @@
 # NUnit
 
-Constraint model of assertions.
+`NUnit` uses a constraint model of assertions.
 The logic necessary to carry out each assertion is embedded in the constraint object passed as the second parameter to that method.
 
 - Constraint model [1]

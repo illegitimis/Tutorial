@@ -1,6 +1,6 @@
 # hateoas
 
-hypermedia as the engine of application state
+**HATEOAS** — hypermedia as the engine of application state
 
 - `AspNetCore.Hateoas` nuget [1], git [2]
 - Implementing [3] HATEOAS in your asp.netcore webapi

@@ -165,7 +165,7 @@ events / anonymous function / callback
 Either use very specific names, or use function private scope. 
 The function name though may be leaking other function names, **immediately executing nameless function**.  `(function(){})();`
 
-**Bower** is for js what NuGet is for cs, client side package management. 
+**Bower** is for js what `NuGet` is for cs, client side package management. 
 Add _Bower configuration file_, dependencies download to a lib folder in wwroot. .bowerrc is the config options for bower. 
 
 JQuery handles the cross-browser compatibility issues.
@@ -201,7 +201,7 @@ Also add vendor specifics.
 
 ![](https://hiqm5q.by3302.livefilestore.com/y3m_AmgE7r9P2-ICcLcwrLCE1D9YaGaACjIAVAh81hdYMCPHoXqr1XMvGh__NdOIkPbRww5qAjVq9vZKpfDL_yTQ6UEulOJdo5e9463y0MCbZUhVxikCxttrcKlx_rPyrox5ghZvdS8op0g04d1NtDeyd00nO0d2r3oCzR9Ojeys4E?width=437&height=138&cropmode=none)
 
-Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller` class. That's just a subset of MVC, so better edit `project.json` to add a dependency for `Microsoft.AspNetCore.Mvc`, then add a using namespace. `public IActionResult Index() {return View(); }`. Add a cshtml view for the index `@{ ViewBag.Title = ""}`. In Startup.cs, enable MVC6.
+Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller` class. That's just a subset of **MVC**, so better edit `project.json` to add a dependency for `Microsoft.AspNetCore.Mvc`, then add a using namespace. `public IActionResult Index() {return View(); }`. Add a cshtml view for the index `@{ ViewBag.Title = ""}`. In Startup.cs, enable MVC6.
 
 ```cs
     public void Configure (IApplicationBuilder app)  { 
@@ -262,7 +262,7 @@ Bootstrap 4. alpha phase in sep 2015. modest change compared to 2 to 3 transitio
 + EF6 will work if you need maturity, work in progress
 + use migrations to build the db for you
 + seeding not built-in, but easily doable
-+ repository pattern for testable data access
++ **Repository** pattern for testable data access
 
 _Models_ folder has dtos, in comparison with the _ViewModels_ folder. Code first, auto implemented property only classes. Use `ICollection` instead of read-only `IEnumerable` objects. Access to the db, derive from `EFCore.DbContext`. For entities, use `DbSet<TEntity>`. Add `services.AddDbContext<CustomContext>();` in `ConfigureServices`. Additional parameter for controller constructor is the db context. database provider must be configured, override `DbContext.OnConfiguring` by calling `base` and `optionsBuilder.UseSqlServer(_config["CS:CONN"]);`.
 
@@ -312,7 +312,7 @@ _post with object model bind_, one can add default class route for controller `[
 ```
 Add validation attributes to the model data classes / view model classes, `[Required]`, `[StringLength]`. 
 
-**AutoMapper**. Add package to `project.json`. Initialize this in _Configure_, and use it like above.
+`AutoMapper`. Add package to `project.json`. Initialize this in _Configure_, and use it like above.
 ```cs
     Mapper.Initialize (config => config.CreateMap<TripViewModel, Trip>() );
 ```

@@ -6,7 +6,7 @@
 
 ## Model Binding
 
-The MVC pipeline processes each incoming request through a sequence of stages before executing the action method. Model binding is the stage that populates action method parameters from the request.
+The **MVC** pipeline processes each incoming request through a sequence of stages before executing the action method. Model binding is the stage that populates action method parameters from the request.
 
 ```mermaid
 flowchart LR

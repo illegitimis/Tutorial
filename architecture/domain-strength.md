@@ -15,7 +15,7 @@ _2010_. _Jimmy Bogard._
 
 ## article series
 
-+ Services in Domain-Driven Design [1]
++ Services in _Domain-Driven Design_ [1]
 + primer [2]
 + Aggregate Construction [3]
 + Encapsulated collections [4]
@@ -47,7 +47,7 @@ In many cases, the software we write is replacing or supplementing a human’s j
 
 Finally, we have _Application Services_. In many cases, Application Services are the **interface used by the outside world**, where the outside world can’t communicate via our Entity objects, but may have other representations of them. Application Services could map outside messages to internal operations and processes, communicating with services in the Domain and Infrastructure layers to provide cohesive operations for outside clients. Messaging patterns tend to rule Application Services, as the other service layers don’t have a reference back out to the Application Services. _Business rules are not allowed in an Application Service_, those belong in the Domain layer.
 
-In top-down design, we typically start from the Application or Domain Service, defining the actual interface clients use, then use TDD to drive out the implementation. As we’re always starting from the client perspective with actual client scenarios, we get a high degree of confidence that what we’re building will create success and add value.  When stories are vertical slices of functionality, this is fairly straightforward, at least mechanically so.
+In top-down design, we typically start from the Application or Domain Service, defining the actual interface clients use, then use _Test-Driven Development_ to drive out the implementation. As we’re always starting from the client perspective with actual client scenarios, we get a high degree of confidence that what we’re building will create success and add value.  When stories are vertical slices of functionality, this is fairly straightforward, at least mechanically so.
 
 I used to make the mistake of dismissing Services as a necessary evil, I’ve started to realize the potential the Application and Domain services have in creating a well-designed model.
 
@@ -538,7 +538,7 @@ Ultimately, the only validation that our domain is correct is the working code. 
 
 Round about 7 years ago, I was part of a very large project which rooted its design and architecture around domain-driven design concepts. I've blogged a lot about that experience (and others), but one interesting aspect of the experience is we were afforded more or less a do-over, with a new system in a very similar domain. I presented this topic at NDC Oslo (recorded, I'll post when available).
 
-I had a lot of lessons learned from the code perspective, where things like `AutoMapper`, `MediatR`, `Respawn` and more came out of it. Feature folders, CQRS, conventional HTML with HtmlTags were used as well. But beyond just the code pieces were the broader architectural patterns that we more or less ignored in the first DDD system. We had a number of lessons learned, and quite a few were from decisions made very early in the project.
+I had a lot of lessons learned from the code perspective, where things like `AutoMapper`, `MediatR`, `Respawn` and more came out of it. Feature folders, **CQRS**, conventional HTML with HtmlTags were used as well. But beyond just the code pieces were the broader architectural patterns that we more or less ignored in the first DDD system. We had a number of lessons learned, and quite a few were from decisions made very early in the project.
 
 ### Lesson 1: Bounded contexts are a thing
 

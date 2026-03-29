@@ -1,7 +1,7 @@
 # OpenID Connect
 
-OpenID Connect [1] is an interoperable authentication protocol based on the OAuth 2.0 family of specifications. 
-It uses straightforward REST/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”. 
+OpenID Connect [1] is an interoperable authentication protocol based on the OAuth 2.0 family of specifications.
+It uses straightforward **REST**/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”. 
 It’s uniquely easy for developers to integrate, compared to any preceding Identity protocol. 
 **(Identity, Authentication) + OAuth 2.0 = OpenID Connect**
 

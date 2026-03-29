@@ -1,12 +1,12 @@
 # Docker
 
-The microservices architecture introduces the need for _independent deployment_, _scalability_ and _portability_.
+The _Microservices_ architecture introduces the need for _independent deployment_, _scalability_ and _portability_.
 
 **containers**: as light-weight runtime environments with many of the core components of a virtual machine and isolated services of an operating system, designed to make packaging easy and execution of services smooth.
 
 **Docker** can provide an ideal environment for deployment of these services with respect to speed, isolation management, and lifecycle. Isolates containers to one process or service. This intentional containerization of single service or process makes it very simple to manage and update these services.
 
-Kubernetes, an open source project designed for microservices by extending Docker's capabilities. By describing the characteristics of an image Kubernetes can deploy and manage multiple Docker containers of the same type.
+`Kubernetes`, an open source project designed for microservices by extending `Docker`'s capabilities. By describing the characteristics of an image Kubernetes can deploy and manage multiple Docker containers of the same type.
 
 ## Key points
 

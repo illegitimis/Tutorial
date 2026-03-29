@@ -1,8 +1,8 @@
 # AngularJS
 
 ## Courses
-+ AngularJS for 'ASP.Net Core, Mvc6, EF Core, AngularJS' 'ASP.Net Core, Mvc6, EF Core, AngularJS' [1] 
-+ Angular Fundamentals Angular Fundamentals Pluralsight course wiki page [2]
++ `AngularJS` for 'ASP.Net Core, Mvc6, EF Core, AngularJS' 'ASP.Net Core, Mvc6, EF Core, AngularJS' [1]
++ `Angular` Fundamentals Angular Fundamentals Pluralsight course wiki page [2]
 
 ## Books
 + Rangle's [5] Angular2 Training Book, Google Drive [3], One Drive [4]

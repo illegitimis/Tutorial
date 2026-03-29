@@ -1,11 +1,11 @@
 # signalr
 
-- signalr [1] Incredibly simple real-time web for ASP .NET
+- `SignalR` [1] Incredibly simple real-time web for ASP .NET
 - Hub protocol [2] specs
 - PS course Real-time applications using ASP.NET Core, SignalR & Angular [3] oct 16 & demo app [4]
 - SignalR-plus-RX-Streaming-Data-Demo-App [5]
 - `SSE` (server sent events) is a html5 feature. server response content type `text/event-stream`. js must instantiate an `EventSource` object. Easilt polyfilled for older browsers?
-- web sockets are a standardized way to use a TCP socket through which messages can be sent full duplex
+- web sockets are a standardized way to use a **TCP** socket through which messages can be sent full duplex
 - lifetime of a web socket: http handshake, data exchange, close. all inside the same TCP socket.
 - web socket handshake
   - upgrade request. client sends random string

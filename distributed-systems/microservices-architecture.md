@@ -41,7 +41,7 @@ Microservices Architecture pluralsight Microservices Architecture pluralsight [1
 + **observable**: quick deployment requires feedback. data used for planning and scaling. see system health. 
   - **central monitoring**: monitor cpu, host memory and disk usage in real time. expose some metrics: svc response times and timeouts, number of exceptions. you can expand to business data like no orders and average time from basket to timeout, collect and aggregate data, compare data across servers, trend visalisation and trigger alerts on some conditions. `Nagios/PRTG/Load balancers/New Relic.` 
   - **central logging**: log means info/story, monitor means collecting metrics. When to log: startup/shutdown, code path milestones. What: requests, responses and decisions, timeouts, exceptions. Structured logging: level, date and time, **correlation id**, service name and instance. Strongly typed model and traceable distributed transactions. `Elastic Log/Log stash/Splunk/Kibana/Graphite`. Serilog pushes and raises events against the centralised monitoring tool. 
-+ **automation**: manual regression testing, integration feedback on check-in. CI/CD. Each microservice with its own CI build. CD with central control panel and VS integration.
++ **automation**: manual regression testing, integration feedback on check-in. _Continuous Integration_/_Continuous Delivery_. Each microservice with its own CI build. CD with central control panel and VS integration.
 
 ## monolith
 + all modules packed together, no division, tightly coupled, intertwined
@@ -55,12 +55,12 @@ Microservices Architecture pluralsight Microservices Architecture pluralsight [1
 
 ## Microservices technology
 
-Sync or async? Both. RPC: distributed client server programs. vs Open protocols like REST/JSON, or Stomp? ATOM uses http to propagate events. message queuing protocol for async, decouples service and client, also publisher and subscriber since it's event based. Queue is another point of failure.
+Sync or async? Both. RPC: distributed client server programs. vs Open protocols like **REST**/JSON, or Stomp? ATOM uses **HTTP** to propagate events. message queuing protocol for async, decouples service and client, also publisher and subscriber since it's event based. Queue is another point of failure.
 
 ![](https://6ebvoa.by3302.livefilestore.com/y4mSeeVFYRSCCPf8DeATPpm3crLyd23VzgCm5iillg2XuDOf-5niAf7UoRJ1GiqLdKwgKq8-ZgRn-IozdPyDU5G56SiMeWfJ5o5gCvAjMef_3P36tHEyKFLmbrY3Zb7ym2lhcBo5_j7K4LKUDSAYVmbinpkaI1FuaIoTc0-EGIvDldG39FhIQ77Jnyt4hRS-c4AH_HrbdVqxOYUOboXVcPbvA?width=1000&height=360&cropmode=none)
 
 **Virtualization**: PAAS with Azure/AWS/vSphere/Google Cloud.
-**Containers**: Docker/Rocker/Glassware. Do not run an entire OS, just minimal. Single service per container.
+**Containers**: `Docker`/Rocker/Glassware. Do not run an entire OS, just minimal. Single service per container.
 **Registry and discovery**: host, port and version go to a svc registry db. Register on startup, deregister svc on failure, makes it self heal. Third party registration: man in he middle detects new instances and adds them to the svc registration database. _Client side discovery_: clients connect directly to that db or _Server side discovery_: a gateway or load balancer does the svc reg db queries.
 **Scaling**. How to scale up? Either create multiple instances of the same or add resources to existing. If cloud then PAAS handles automated or on demand scaling options. 
 **API gateway**: single point of entry into the SOA, manages caching and load balancing. Single interface to many services, routes to dynamic locations, may handle security or delegate to some security service or have some sort of security at each service level.

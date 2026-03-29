@@ -2,7 +2,7 @@
 
 ## Abstract
 
-- A **multi-model**, **schema-free**, fully schema agnostic database. ![multi model](https://tctechcrunch2011.files.wordpress.com/2017/05/2017-05-08_1533.png)
+- `Azure Cosmos DB` is a **multi-model**, **schema-free**, fully schema agnostic database. ![multi model](https://tctechcrunch2011.files.wordpress.com/2017/05/2017-05-08_1533.png)
 - A _globally distributed_ database designed for _scalable_, _broadly distributed_, _highly responsive_ and _highly available_ applications.
 - _Superset data service of DocumentDB_. Earlier, Microsoft offered DocumentDB as _Data as a Service_ (*DaaS*), which supported a _limited set of features_ and functionalities. Microsoft’s engineers shared their challenges, _running the company’s cloud-based services_, such as Bing, Azure and Office 365 using DocumentDB. Microsoft understood their engineer’s challenges and marketed the opportunity to take DocumentDB [to the next level][1]. Being geo-distributed across Azure regions/data centers it's already available in all of them, and [will be automatically available in new regions as they come online][8], because it's a foundational service for Microsoft's own properties. Configuring geo-distribution is as simple as clicking on a map to add or drop regions, while the application continues to run. Microsoft aptly calls this feature "**global distribution turnkey**"
 - Azure Cosmos DB also supports _several NoSQL APIs_ including DocumentDB SQL, MongoDB, Apache Gremlin, and Azure Tables/Table Storage.

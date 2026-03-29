@@ -19,7 +19,7 @@
 ## http
 
 - latest angular.io HttpClient [24] guide
-- Angular 4.3 HttpClient [25] (Accessing REST Web Services With Angular)
+- `Angular` 4.3 HttpClient [25] (Accessing **REST** Web Services With Angular)
 - Introduction to Angular's HttpClient [26] July, 2017.
 - syntaxsuccess.com: Angular 2.0 And Http [27] simple calls, observables, promises, error handling
 - cironunes/httpclient-testing github-api.model.ts [28]

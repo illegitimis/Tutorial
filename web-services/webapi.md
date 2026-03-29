@@ -16,7 +16,7 @@
 - _media types_ control format specification handles _content negotiation_ and parsing rules, by use of headers:
   - requests: _Accept_ [2]. Samples: `Accept:application/json, text/plain, applications/myResourceExtension.csv`, `Accept: application/myapp.v1.customer.json` or `Accept: vnd.myapp.v1.customer` (versioning with content negotiation)
   - response: _Content-Type_ [3] in the form `<content-type>: <media-type>;<options>`, like `Content-Type: text/html; charset=ISO-8859-4` or `Content-Type: application/json` or `Content-Type: application/foo+json` or `Content-Type: multipart/form-data; boundary=something`
-- Better linking with hateoas, instead of just resource urls specify media type too: `200 OK GET /accounts/x7y8z9`
+- Better linking with **HATEOAS**, instead of just resource urls specify media type too: `200 OK GET /accounts/x7y8z9`
 
     ```json
     {
@@ -41,7 +41,7 @@
 }
 ```
 
-- Avoid sessions when possible. Authenticate every request if necessary. **Stateless Authorize** based on _resource content_, NOT URL! Use Existing Protocol: Oauth 1.0a, Oauth2, Basic over SSL only. Custom Authentication Scheme: Only if you provide client code / SDK Only if you really, really know what you‟re doing. Use _API Keys_ instead of Username/Passwords.
+- Avoid sessions when possible. Authenticate every request if necessary. **Stateless Authorize** based on _resource content_, NOT URL! Use Existing Protocol: Oauth 1.0a, Oauth2, Basic over **HTTPS** only. Custom Authentication Scheme: Only if you provide client code / SDK Only if you really, really know what you‟re doing. Use _API Keys_ instead of Username/Passwords.
 - **401 Unauthorize** means _UNAUTHENTICATED_ no valid credentials, while **403 Forbidden** means _UNAUTHORIZED_ no rights
 - HTTP Authentication Schemes
   - Server response to issue challenge: WWW-Authenticate [4]. Format: `WWW-Authenticate: <scheme name> realm=<application name>`. Schemes: `Basic`, `Bearer`, `Digest`, `OAuth`.

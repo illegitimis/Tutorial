@@ -12,7 +12,7 @@ core | view components (in place of child actions), tag helpers, html helper cha
 
 ## js
 
-angular | react | polymer | knockout | ember | meteor | vue | aurelia
+`Angular` | `React` | polymer | knockout | ember | meteor | vue | aurelia
 
 `@Scripts.Render`, `@Styles.Render`pointing to resource bundles which are no longer supported.
 
@@ -77,7 +77,7 @@ _ViewStart.cshtml default layout for the razor view engine
 - friendly display name `[Display(Name = "Last Name")]`
 - `[DataType(DataType.Date)] string Date {get;}`
 - jQuery validation and the browser validation can both operate on the form, which is just confusing to the user. To avoid this problem, you can add the `novalidate` attribute to the `form` element.
-- The MVC client-validation features are built on top of the jQuery Validation library. If you prefer, you can use the Validation library directly and ignore the MVC features.
+- The **MVC** client-validation features are built on top of the `jQuery` Validation library. If you prefer, you can use the Validation library directly and ignore the MVC features.
 - The term **unobtrusive** means that validation rules are expressed using _attributes added to the HTML elements_ that views generate.
 - Client-side validation is focused on _validating individual properties_. In fact, it is hard to set up model level client-side validation using the built-in support that comes with MVC. To that end, most MVC applications use **client-side validation for property-level issues** and rely on _server-side validation for the overall model_
 - razor markup `<input asp-for="ClientName" class="form-control" />`. tag helper transform input elements, inspects attributes on cs model classes, and add html attributes like `<input class="form-control" type="text"  data-val="true" data-val-required="The name field is required."  id="ClientName" name="ClientName" value="" />`.

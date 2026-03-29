@@ -2,7 +2,7 @@
 
 ## Books
 
-- 2003 - Eric Evans - Domain-Driven Design - Tackling Complexity in the Heart of Software, gdrds [1], 1drv [2]
+- 2003 - Eric Evans - _Domain-Driven Design_ - Tackling Complexity in the Heart of Software, gdrds [1], 1drv [2]
 - 2013.VaughnVernon.**Implementing Domain-Driven Design**, amazon [3], 1DRV [4]
 - 2015.1ed.Millett.Tune.Patterns, Principles and Practices of Domain-Driven Design 1drv [5]
 - 2016.VaughnVernon.**DomainDrivenDesignDistilled**, 1drv [6]
@@ -18,7 +18,7 @@
 - Colorado slides [12]
 - IDDD excerpt [13]
 - IDDD excerpt 2 [14]
-- Tackling Business Complexity in a Microservice with DDD and CQRS Patterns [15] msdn
+- Tackling Business Complexity in a Microservice with _Domain-Driven Design_ and **CQRS** Patterns [15] msdn
 - eShopOnContainers [16] sample `Ordering API`
 - jbogard/MediatR [17] Simple, unambitious mediator implementation in .NET
 - A .NET implementation of Domain Driven Design (DDD) sample application [18] based on Eric Evans' examples included in his great book.

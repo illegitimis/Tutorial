@@ -17,7 +17,7 @@ __DAL is an architectural term, DAOs are a design detail__.
 
 In computer software, a [data access object (DAO)][2] is an object that provides an abstract interface to some type of database or other persistence mechanism. 
 By mapping application calls to the persistence layer, DAO provide some specific data operations without exposing details of the database. 
-This isolation _supports_ the **Single responsibility principle**. 
+This isolation _supports_ the **SRP** (Single Responsibility Principle). 
 It separates what data accesses the application needs, in terms of _domain-specific objects_ and data types (the public interface of the DAO), 
 from how these needs can be satisfied with a specific DBMS, database schema, etc. (the implementation of the DAO). 
 

@@ -1,6 +1,6 @@
 # xunit
 
-> xUnit.net is a free, open source, community-focused unit testing tool for .NET.
+> `xUnit.net` is a free, open source, community-focused unit testing tool for .NET.
 
 - documentation @github [9]
 - Comparing xUnit.net to other frameworks [1]
