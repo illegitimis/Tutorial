@@ -1,23 +1,14 @@
 # Illegitimis' Dev Mnemonics
 
-* [ASP](./doc/ASP.md)
-* [Azure](./azure/az.md)
-* [C#/.Net](./doc/csdotnet.md)
-* [CMS](./doc/CMS.md)
-* [CSS](./doc/CSS.md)
-* [Design](./doc/design.md), OOP, SOLID, DDD
-* [JavaScript](./doc/JS.md)
-* [Messaging](doc/messaging.md)
-* [NetCore, ASPNETCore](doc/netcore.md)
-* [No SQL](doc/nosql.md)
-* [ORMs](doc/orm.md)
-* [OS](doc/os.md)
-* [Parallelism](doc/parallel.md)
-* [REST](doc/rest.md)
-* [SQL](doc/sql.md)
-* [SOA](doc/soa.md)
-* [TDD](doc/tdd.md)
-* [Tools, VCS, Github Meta, CI/CD, etc..](doc/tools.md)
+- [.NET](./dotnet/index.md) — C#, CLR, ASP.NET, data access, parallelism
+- [JavaScript](./javascript/index.md) — JS, Angular, CSS, frontend tooling
+- [Architecture](./architecture/index.md) — OOP, SOLID, DDD, design patterns
+- [Distributed Systems](./distributed-systems/index.md) — microservices, Docker, messaging
+- [Data](./data/index.md) — SQL, NoSQL, MongoDB
+- [Web Services](./web-services/index.md) — REST, HTTP, GraphQL, APIs
+- [Azure](./azure/index.md) — cloud platform, AZ-900
+- [Testing](./testing/index.md) — NUnit, xUnit, TDD
+- [DevOps](./devops/index.md) — Git, CI/CD, tools
 
 ___
 

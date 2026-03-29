@@ -4,32 +4,77 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Jekyll-based documentation site ("Dev Mnemonics") published on GitHub Pages at https://illegitimis.github.io/Tutorial/. Contains 200+ Markdown files covering software development topics: ASP.NET, C#/.NET, Azure, JavaScript, design patterns, OOP/SOLID/DDD, SQL/NoSQL, REST, SOA, messaging, TDD, CI/CD, and more.
+A Jekyll-based documentation site ("Dev Mnemonics") published on GitHub Pages. Contains 212 Markdown files covering software development topics organized into a 4-level hierarchy.
 
 ## Architecture
 
-- **Static site generator:** Jekyll with the [just-the-docs](https://github.com/just-the-docs/just-the-docs) remote theme
+- **Static site generator:** Jekyll with the just-the-docs remote theme
 - **Deployment:** Automatic via GitHub Pages on push to `master`
-- **No build step, test suite, or linting** — this is a pure documentation repository
+- **No build step, test suite, or linting pipeline** — markdownlint is configured for editor use
+- **Structure map:** See `STRUCTURE.md` for the full directory tree
 
-### Directory Layout
+### Top-Level Categories
 
-- `doc/` — Core technical documentation. Index files (e.g., `ASP.md`, `csdotnet.md`, `JS.md`) link to topic subdirectories (`asp/`, `c#/`, `js/`, `oop/`, `sql/`, etc.)
-- `azure/` — Azure learning materials (AZ-900 path). `az.md` is the entry point; `learn/` has numbered modules and knowledge checks; `lctrs/` has lecture notes; `pages/` has service-specific docs
-- `todo/` — Reference images (Docker diagrams, architecture visuals)
-- `_config.yml` — Jekyll/theme configuration (dark scheme, search enabled with Ctrl+K, copy-code buttons, heading anchors)
+| Directory | Content |
+|-----------|---------|
+| `dotnet/` | C#, CLR, ASP.NET, EF, parallelism |
+| `javascript/` | JS, Angular, CSS, npm, Webpack |
+| `architecture/` | OOP, SOLID, DDD, design patterns, UML |
+| `distributed-systems/` | Microservices, Docker, messaging, SignalR |
+| `data/` | SQL, NoSQL, MongoDB |
+| `web-services/` | REST, HTTP, GraphQL, Swagger |
+| `azure/` | AZ-900 learning paths, Azure services |
+| `testing/` | NUnit, xUnit, TDD |
+| `devops/` | Git, CI/CD, NuGet, Visual Studio, YAML |
+
+### Max Depth
+
+4 levels below `README.md`. Example deepest path: `data/nosql/mongo/articles.md`
 
 ## Local Preview
 
 ```bash
 gem install jekyll bundler
 jekyll serve
-# => http://localhost:4000
 ```
 
 ## Content Conventions
 
-- All content is Markdown with Jekyll front matter where needed for navigation (`title`, `parent`, `nav_order`, `last_modified_date`)
-- Navigation is sorted case-sensitive (capitals before lowercase) per `_config.yml`
-- Pages include breadcrumb-style links back to parent index and `README.md`
-- The site uses dark color scheme by default
+### File Naming
+
+- Kebab-case only: `managed-threads.md`, `entity-framework.md`
+- No PascalCase, no dots (except `.md`)
+
+### Heading Casing
+
+- H1-H3 use American English title case
+
+### Links
+
+- All external URLs use reference-style links at end of file
+- No bare URLs
+- No inline `[text](url)` for external links
+- Relative links (`[<<](../index.md)`) stay inline
+
+### Navigation
+
+- Every folder has an `index.md` hub page
+- Every leaf file ends with `[<<](./index.md) | [home](../../README.md)` (depth-adjusted)
+
+### Semantic Entity Formatting
+
+| Entity Type | Format |
+|-------------|--------|
+| Architectural patterns, protocols, concepts | **bold** |
+| Methodologies/practices | _italic_ |
+| Frameworks/packages/tools | `code` |
+| Cloud services | `code` when external, plain in owning doc |
+| Programming languages | plain text |
+
+### Markdownlint
+
+Config: `.markdownlint.json` — MD013 (line length) and MD033 (inline HTML) disabled; all other rules default enabled.
+
+### Emoji
+
+No GitHub emoji shortcodes — they don't render on Jekyll/GitHub Pages.
