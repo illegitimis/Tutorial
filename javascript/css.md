@@ -1,6 +1,6 @@
 # CSS
 
-## todo
+## Todo
 
 - design steal 8164.org [1]
 - StackOverflow team [2]

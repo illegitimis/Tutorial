@@ -1,4 +1,4 @@
-# Angular4 notes
+# Angular4 Notes
 
 ## Links
 
@@ -16,7 +16,7 @@
 - angular update guide [20]
 - git repos [21] & official blog [22] & resources [23]
 
-## http
+## HTTP
 
 - latest angular.io HttpClient [24] guide
 - `Angular` 4.3 HttpClient [25] (Accessing **REST** Web Services With Angular)
@@ -29,7 +29,7 @@
 - Unit testing services with HttpClient [32] on Medium
 - Angular HttpClient get Example [33] with in memory web api, Nov 2017.
 
-## test
+## Test
 
 - Testing Angular 2 code with Jasmine [34], docs [35] and Karma [36].
 - Coverage with Istanbul [37]
@@ -55,13 +55,13 @@ npm run e2e-live
 - `it`, `fit`, `xit` link [42]
 - official test guide [43]
 
-## forms & validation
+## Forms & Validation
 
 - Breeze [44]
 - form-validation [45] official
 - scotch [46] angular-2-form-validation
 
-## component inheritance
+## Component Inheritance
 
 - extend & inherit Angular component on SO [47]
 - New features in Angular 2.3 [48]
@@ -71,7 +71,7 @@ npm run e2e-live
 - component decorator metadata [55]
 - plnkr sample [56] with ComponentMetadata, seems outdated
 
-## loading components dynamically
+## Loading Components Dynamically
 
 - Loading Components Dynamically in Angular [57], the graph example
 - Dynamic table sample [58] using ElementRef 1 [59], 2 [60], 3 [61] and DynamicComponentLoader [62]
@@ -85,7 +85,7 @@ npm run e2e-live
   - Dynamic View and Components [70], very nice sample [71]
   - ViewContainerRef [72], Represents a container where one or more Views can be attached.
 
-## internationalization / localization
+## Internationalization / Localization
 
 - ngx-translate [73] The internationalization (i18n) library for Angular
   - ngx-translate/core [74] `npm install @ngx-translate/core --save`
@@ -129,7 +129,7 @@ npm run lite
 - rangle.io Observables vs Promises [94]
 -  behaviorsubject [95] an observer in addition to being an observable, Rx.BehaviorSubject class docs [96]
 
-## input debounce
+## Input Debounce
 
 - Debouncing Angular 2 Input Component [97]
 - Angular 2 – Creating a search field with debounce time [98]
@@ -139,7 +139,7 @@ npm run lite
 
 GitRepo [101], Get Started [102], dropdown showcase [103], & docs [104], theming [105], p-table [106]
 
-## misc
+## Misc
 
 - Understanding Router State [107]
 - `ActivatedRoute` docs [108]

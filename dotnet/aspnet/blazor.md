@@ -11,7 +11,7 @@
   - and configures the runtime (`mono.wasm`) to _load required assembly references_.
   - Document object model (DOM) manipulation and browser API calls are handled by the Blazor runtime via _JavaScript interoperability_.
 
-## calendar
+## Calendar
 
 what | when
 ---|---
@@ -20,14 +20,14 @@ webassembly | may 2020
 pwa & electron | .net 5 preview
 native | internal
 
-## links
+## Links
 
 - Blazor home [1]
 - Awesome Blazor [2] community
 - tour of heroes demo clone [3]
 - workshop [4]
 
-## videos
+## Videos
 
 - Blazor: Modern Web development with .NET and WebAssembly [5], Daniel Roth, sep 2018
 - Blazor and Azure Functions for Serverless Websites [6] sep 2019

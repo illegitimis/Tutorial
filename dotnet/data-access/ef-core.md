@@ -11,7 +11,7 @@
 - explicit loading [7]
 - implement infrastructure persistence layer with Entity Framework Core [8]
 
-## recipes
+## Recipes
 
 - use an **in memory db** for _tests_
 

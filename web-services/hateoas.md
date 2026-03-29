@@ -1,4 +1,4 @@
-# hateoas
+# HATEOAS
 
 **HATEOAS** — hypermedia as the engine of application state
 

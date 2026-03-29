@@ -1,8 +1,8 @@
-# azure
+# Azure
 
 > entry point for Azure notes
 
-## faq
+## FAQ
 
 - [Cloud Models](./learn/tocm.md) **public/private/hybrid**
 - [**legend**](legend.md), glossary of terms
@@ -14,14 +14,14 @@
 - [Virtual Network settings](./learn/vnet.settings.md)
 - [VPN Gateway fundamentals](./learn/vpn.gateway.fndmnt.md)
 
-## links
+## Links
 
 - [az900](./learn/az900.md)
 - az900 [Knowledge check](./learn/az900-kc.md)
 - [**learning**](learn.md) msft
 - [_lectures_](lectures.md)
 
-## pages
+## Pages
 
 - [application insights](./pages/app.insight.md)
 - key vault [manage password](./learn/akv.pass.md)

@@ -17,7 +17,7 @@ It operates retail hardware stores across the globe and online.
 
 Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. It's looking at cloud technologies to improve business operations and support growth into new markets. By moving to the cloud, the company plans to enhance its shopping experience to further differentiate itself from competitors.
 
-## How will Tailwind Traders secure access to its cloud applications?
+## How Will Tailwind Traders Secure Access to Its Cloud Applications?
 
 The mobile workforce of Tailwind Traders is increasing, as are the number of applications that the company runs in the cloud.
 
@@ -33,7 +33,7 @@ It also needs to ensure that short-term staff can access these applications only
 
 How can Azure Active Directory (Azure AD) help Tailwind Traders consistently secure all of its applications accessed from the intranet and from public networks?
 
-## Learning objectives
+## Learning Objectives
 
 After completing this module, you'll be able to:
 

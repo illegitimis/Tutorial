@@ -1,4 +1,4 @@
-# Indices 
+# Indices
 
 GetIndices.sql [1] gist.
 
@@ -22,7 +22,7 @@ GetIndices.sql [1] gist.
 
 ![structure of a clustered index in a single partition.](https://i-technet.sec.s-msft.com/dynimg/IC157372.gif "structure of a clustered index in a single partition")
 
-## NONCLUSTERED 
+## NONCLUSTERED
 
 - Creates an index that specifies the logical ordering of a table [5]. With a nonclustered index, the physical order of the data rows is independent of their indexed order. 
 - Each table can have up to 999 nonclustered indexes, regardless of how the indexes are created: either implicitly with PRIMARY KEY and UNIQUE constraints, or explicitly with CREATE INDEX. 

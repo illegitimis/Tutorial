@@ -32,7 +32,7 @@ This need to have both versions in the same code base means you're going to have
 
 Even more difficult is they may be using the original API you released, but you may be able to actually _forward users_ to the new version of the API, and that'll be fine. And so, the versioning may not be the entire API changes.
 
-## Creating A Versioned Controller
+## Creating a Versioned Controller
 
   ```cs
   // CountingKsAuthorizeAttribute : AuthorizationFilterAttribute

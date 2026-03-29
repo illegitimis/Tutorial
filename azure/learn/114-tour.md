@@ -1,12 +1,12 @@
-# tour
+# Tour
 
 > tour-of-azure-services [1]
 
-## diagram
+## Diagram
 
 ![az svc](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/azure-services-6c41a736.png)
 
-## compute
+## Compute
 
 Service name | Service function
 ---|---
@@ -18,7 +18,7 @@ Azure Batch | Managed service for parallel and high-performance computing applic
 Azure Container Instances | Containerized apps run on Azure without provisioning servers or VMs.
 Azure Functions | An event-driven, serverless compute service.
 
-## networking
+## Networking
 
 Service name | Service function
 ---|---
@@ -35,7 +35,7 @@ Azure Network Watcher | Monitors and diagnoses network issues by using scenario-
 Azure Firewall | Implements high-security, high-availability firewall with unlimited scalability.
 Azure Virtual WAN | Creates a unified wide area network (WAN) that connects local and remote sites.
 
-## storage
+## Storage
 
 Service name | Service function
 ---|---
@@ -44,7 +44,7 @@ Azure `File` storage | File shares that can be accessed and managed like a file 
 Azure `Queue` storage | data store for queuing and reliably delivering messages between applications.
 Azure `Table` storage | Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a _key/attribute_ store with a schemaless design.
 
-## databases
+## Databases
 
 Service name | Service function
 ---|---
@@ -58,7 +58,7 @@ Azure Database Migration Service | Service that migrates databases to the cloud 
 Azure Cache for Redis | Fully managed service caches frequently used and static data to reduce data and application latency.
 Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security.
 
-## web
+## Web
 
 Service name | Service function
 ---|---
@@ -77,7 +77,7 @@ IoT Central | Fully managed global IoT software as a service (SaaS) solution tha
 Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices.
 IoT Edge | Fully managed service that allows data analysis models to be pushed directly onto IoT devices, which allows them to react quickly to state changes without needing to consult cloud-based AI models.
 
-## Big data
+## Big Data
 
 Data comes in all formats and sizes. \
 When we talk about big data, we're referring to large volumes of data. \

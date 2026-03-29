@@ -1,8 +1,8 @@
-# Explore compliance terms and requirements
+# Explore Compliance Terms and Requirements
 
 > Microsoft Docs: 2 Explore Compliance Terms Requirements [1]
 
-## Which compliance categories are available on Azure?
+## Which Compliance Categories Are Available on Azure?
 
 Although there are many more, the following image shows some of the more popular compliance offerings that are available on Azure. \
 These offerings are grouped under four categories: Global, US Government, Industry, and Regional.

@@ -1,4 +1,4 @@
-# Knowledge check
+# Knowledge Check
 
 Consider the following scenario. Then choose the best response for each question that follows and select Check your answers.
 
@@ -8,7 +8,7 @@ The web application that runs the website passes order information to virtual ma
 
 Here's a diagram that shows the basic architecture of the company's payment system:
 
-![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/8-architecture.png)
+![Azure payment system network architecture](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-network-connectivity-azure/media/8-architecture.png)
 
 An architecture diagram that shows network traffic flowing into Azure. Azure App Service receives passes public network traffic to virtual machines running on a virtual network.
 

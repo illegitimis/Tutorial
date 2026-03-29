@@ -1,6 +1,6 @@
 # ZeroMQ
 
-## table of contents
+## Table of Contents
 
 - ZeroMQ base [1]
   - Socket types and NetMQ counterparts [2]s
@@ -9,9 +9,9 @@
   - Sacha barber demos [5]
   - ZeroMQ and services [6]
 
-## ZeroMQ base
+## ZeroMQ Base
 
-### Socket types and NetMQ counterparts
+### Socket Types and NetMQ Counterparts
 
 <div id="socketTypes">
 
@@ -83,7 +83,7 @@
 </table>
 </div>
 
-### Socket pairs
+### Socket Pairs
 
 <div id="socketPairs">ROUTER Broker and REQ Workers.
 <table>
@@ -256,7 +256,7 @@ January 20th, 2016
 - SO tag netmq [18]
 - NetMQ on GitHub [19]
 
-## Sacha barber demos
+## Sacha Barber Demos
 
 - **All demos on GitHub** [20]
 - zeromq-1-introduction [21] <label class="lite">request response pattern, single client and server, multiple clients and server in a single process, multiple clients Running In Separate Threads and a server</label>
@@ -267,7 +267,7 @@ January 20th, 2016
 - ZeroMQ #6: Divide And Conquer [26]
 - ZeroMQ #7: A Simple Actor Model [27] <label class="lite">ventilator, sink, workers</label>
 
-## ZeroMQ and services
+## ZeroMQ and Services
 
 - WebAPI-or-WCF [28]
 - NetMQ-RX-Streaming-Data-Demo-App [29]

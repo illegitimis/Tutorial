@@ -1,4 +1,4 @@
-# Exercise - Configure network access to a VM by using a network security group
+# Exercise - Configure Network Access to a VM by Using a Network Security Group
 
 In this exercise [1], you configure network access to a virtual machine (VM) running on Azure.
 
@@ -10,7 +10,7 @@ Here, you use the Azure CLI. The Azure CLI enables you to connect to Azure and r
 
 Here, you access the Azure CLI from Azure Cloud Shell. Cloud Shell is a browser-based shell experience that you use to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
-## Create a Linux virtual machine and install Nginx
+## Create a Linux Virtual Machine and Install Nginx
 
 Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The `Custom Script Extension` is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
@@ -93,7 +93,7 @@ To summarize, the script:
 }
 ```
 
-## Access your web server
+## Access Your Web Server
 
 In this procedure, you get the IP address for your VM and attempt to access your web server's home page.
 
@@ -136,7 +136,7 @@ After a few moments, you see that the connection isn't happening.
 Hmmm… can't reach this page
 104.210.54.131 took too long to respond
 
-## List the current network security group rules
+## List the Current Network Security Group Rules
 
 Your web server wasn't accessible. To find out why, let's examine your current NSG rules.
 
@@ -215,7 +215,7 @@ The priority of this rule is 1000. Rules are processed in priority order, with l
 
 By default, a Linux VM's NSG allows network access only on port 22. This enables administrators to access the system. You need to also allow inbound connections on port 80, which allows access over HTTP.
 
-## Create the network security rule
+## Create the Network Security Rule
 
 Here, you create a network security rule that allows inbound access on port 80 (HTTP).
 
@@ -264,7 +264,7 @@ For learning purposes, here you set the priority to 100. In this case, the prior
 
 ` az network nsg rule list --resource-group learn-eb451d26-c448-42bd-ae79-2de93ae5bef3 --nsg-name my-vmNSG`
 
-## Access your web server again
+## Access Your Web Server Again
 
 Now that you've configured network access to port 80, let's try to access the web server a second time.
 

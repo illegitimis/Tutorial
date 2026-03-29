@@ -1,4 +1,4 @@
-# Managed C++, C++/CLI 
+# Managed C++, C++/CLI
 
 - Microsoft’s first set of .NET extensions for C++ attempted to resemble ordinary C++ more closely.   
 In the end, it turned out to be less confusing to use a distinct syntax for something that is quite different from ordinary C++, 

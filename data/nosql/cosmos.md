@@ -54,7 +54,7 @@ auto-generated fields
 }
 ```
 
-## Event-driven architectures with Change Feed Processor library
+## Event-driven Architectures with Change Feed Processor Library
 
 Build event-driven architectures and receive a real-time stream of database updates with Azure Cosmos DB change feed. 
 Change feed enables reactive programming models for Internet of Things (IoT) telemetry and e-commerce ordering pipelines. 

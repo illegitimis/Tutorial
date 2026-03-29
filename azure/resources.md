@@ -1,4 +1,4 @@
-# resources
+# Resources
 
 > quick links
 
@@ -9,7 +9,7 @@
 - Azure Dev/Test pricing [3]
 - Examples of fiscal outcomes msdocs [4]
 
-## misc
+## Misc
 
 - Azure Services that support Availability Zones msdocs [5]
 - Azure VMs: Availability Sets and Availability Zones technet [6]

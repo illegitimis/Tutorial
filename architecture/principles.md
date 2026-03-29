@@ -1,4 +1,4 @@
-# OOP principles
+# OOP Principles
 
 ## Abstraction
 

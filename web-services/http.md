@@ -1,4 +1,4 @@
-# http
+# HTTP
 
 - RFC2616 [1], Hypertext Transfer Protocol -- HTTP/1.1
 - rfc7231 [2] Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content

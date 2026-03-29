@@ -1,4 +1,4 @@
-# GitHub docs/wiki & Markdown how-to
+# GitHub Docs/wiki & Markdown How-to
 
 ## Formatting
 
@@ -15,19 +15,19 @@ git page GitHub page [2] by Adam Pritchard
 10. Shields.io gist [11]
 11. nice html basics [12]
 
-## meta
+## Meta
 
 - Search a wiki [13]
 - Viewing a wiki's history of changes [14]
 - github/markup on GitHub [15]
 - Topics [16] and language
 
-## mediawiki
+## Mediawiki
 
 + Supported MediaWiki formats [17]
 + mediawiki Formatting [18]
 
-## utils
+## Utils
 
 + DownGit - Create GitHub Directory Download Link [19], and original SO answer [20]
 

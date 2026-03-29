@@ -1,4 +1,4 @@
-# Knowledge check
+# Knowledge Check
 
 Collection of AZ900 Msft learning Knowledge check pages.
 

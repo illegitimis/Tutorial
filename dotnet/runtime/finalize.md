@@ -62,7 +62,7 @@ For these and other reasons, classes should implement destructors only when no o
 This name also appears in the garbage collector API—for example, `GC.WaitForPendingFinalizers`. 
 The using statement provides a better approach to object destruction. (VLADIMIR RESHETNIKOV)
 
-### dispose pattern
+### Dispose Pattern
 
 ````csharp
     /// <summary>Flag: Has Dispose already been called?</summary>

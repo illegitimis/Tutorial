@@ -1,8 +1,8 @@
-# learn
+# Learn
 
 > msft learning
 
-## cert
+## Cert
 
 Exam | Microsoft Certified
 ---|---
@@ -11,13 +11,13 @@ AZ-900 [3]: Microsoft Azure Fundamentals | Azure Fundamentals [4]
 AZ-303 [5] Architect Technologies | need AZ-304
 AZ-304 [6] Architect Design | Azure Solutions Architect Expert [7]
 
-## notes
+## Notes
 
 > msft learning notes organized by certification
 
 - [az900](./learn/az900.md)
 
-## github
+## GitHub
 
 > github issues & project work track 
 
@@ -26,22 +26,22 @@ AZ-304 [6] Architect Design | Azure Solutions Architect Expert [7]
 - AZ900 Technology Workbook #13 [10]
 - AZ900 msft learning material #16 [11]
 
-## links
+## Links
 
-- :student:
+- student
   - profile [12]
   - learning dashboard [13]
-  - :technologist: trainingsupport [14]
-- :notebook_with_decorative_cover:
+  - trainingsupport [14]
+- notebook
   - collections [15]
-  - AZ900 collection [16] 
-  - :house: az-900 [17]
+  - AZ900 collection [16]
+  - az-900 [17]
 - transcript
   - web [18]
   - MCID: 991881605.
   - MCP certificate [19]
-  - transcript old [20] 
-  - :newspaper: transcript [20]
+  - transcript old [20]
+  - transcript [20]
 
 [< back](./az.md)
 

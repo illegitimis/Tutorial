@@ -1,4 +1,4 @@
-# application insights
+# Application Insights
 
 - **Overview** * [1]
 - Monitor availability with URL **ping tests** * [2]

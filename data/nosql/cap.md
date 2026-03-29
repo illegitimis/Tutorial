@@ -1,4 +1,4 @@
-# cap theorem
+# Cap Theorem
 
 > Computer science [theorem][3] that quantifies the _inevitable trade-offs_. [Eric Brewer’s **CAP theorem**][4] says that if you want _CAP_ you have to settle for two out of three.
 
@@ -8,7 +8,7 @@ acronym | title | description
 **A** | availability | A request will _eventually_ complete _successfully_. A read/write request on any node of the system will never be rejected as long as the particular node is up and running. _Every_ request receives a response indicating success or failure. _At least one node must be available to serve data every time_.
 **P** | partition tolerance | (distributed system) _will continue to work unless there is a total network failure_. A few nodes can fail and the system keeps going. When the network connecting the nodes goes down, the system will still continue to operate even though some/all nodes can NO longer communicate with each other. This condition states that the system continues to run, despite the number of messages being delayed by the network between nodes. A system that is partition-tolerant can sustain any amount of network failure that doesn’t result in a failure of the entire network. Data records are **sufficiently replicated** across combinations of nodes and networks to keep the system up through _intermittent outages_. When dealing with modern distributed systems, Partition Tolerance is not an option. It’s a [necessity](5). Hence, we have to trade between Consistency and Availability.
 
-## todo
+## Todo
 
 masterX-masterY setup
 X-Y comm down

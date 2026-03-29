@@ -1,4 +1,4 @@
-# Manage a password in Azure Key Vault
+# Manage a Password in Azure Key Vault
 
 azure portal \
 msft learn sandbox \

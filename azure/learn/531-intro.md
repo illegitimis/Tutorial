@@ -9,7 +9,7 @@ If your organization is a government department or agency, or you need to deploy
 In general, **compliance** means to *adhere to a law, standard, or set of guidelines*. \
 **Regulatory compliance** refers to the *discipline and process of ensuring that a company follows the laws that governing bodies enforce*.
 
-## Learning objectives
+## Learning Objectives
 
 After completing this module, you'll be able to:
 

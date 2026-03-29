@@ -120,7 +120,7 @@ sequenceDiagram
     end
 ```
 
-## browser
+## Browser
 
 - The WebSocket [6] _browser_ API.
 - The WebSocket API is an advanced technology that makes it possible to open a _two-way interactive communication session_ between the user's browser and a server. With this API, you can send messages to a server and _receive event-driven responses_ **without having to poll the server for a reply**.
@@ -131,7 +131,7 @@ sequenceDiagram
 
 [`SignalR`](signalr.md) [![signalr page](https://img.shields.io/badge/wiki-page-green.svg)](signalr.md)
 
-## misc
+## Misc
 
 - SuperWebSocket [9] A .NET server side implementation of WebSocket protocol. repo [10] _SuperWebSocket is a .NET implementation of WebSocket server_. supersocket [11] an extensible socket server framework, telnet example [12]
 - C# Websockets for all platforms using native bridges NVentimiglia/Websockets.PCL [13]
@@ -139,7 +139,7 @@ sequenceDiagram
 - `Microsoft.AspNetCore.Http.WebSocketManager` src [15]
 - `Microsoft.AspNetCore.TestHost.WebSocketClient` src [16]
 
-## radu matei
+## Radu Matei
 
 - Simple middlware for real-time .NET Core samples [17]
 - blog [18]

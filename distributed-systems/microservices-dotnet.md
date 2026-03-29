@@ -17,7 +17,7 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
   
   pdf Google Drive [8] also DOWNLOAD available at aka [9]
 
-## Unvisited queue
+## Unvisited Queue
 * ALEKSI ULKUNIEMI, STAND-ALONE .NET MICROSERVICES WITH CAMERAS AND IMAGE COMPARISON [10] Master of Science thesis, May 2015
 * Daishi.AMQP and RabbitMQ [11]
 * FubuMVC [12]

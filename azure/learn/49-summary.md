@@ -1,4 +1,4 @@
-# summary
+# Summary
 
 > Azure Fundamentals part 4: Describe general security and network security features \
 > Secure network connectivity on Azure

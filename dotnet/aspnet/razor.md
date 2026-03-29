@@ -2,7 +2,7 @@
 
 alternative view engines: default (razor) | custom (spark, nvelocity, brail, bellevue)
 
-## evolution
+## Evolution
 
 version | features
 ---|---
@@ -10,7 +10,7 @@ version | features
 4 | bundling, minification, mobile enhancements?
 core | view components (in place of child actions), tag helpers, html helper changes
 
-## js
+## JS
 
 `Angular` | `React` | polymer | knockout | ember | meteor | vue | aurelia
 
@@ -27,13 +27,13 @@ environment tags to include resources conditionally.
 </environment>
 ```
 
-## structure
+## Structure
 
 Views/Shared not specific to single controller
 _ViewImports.cshtml namespaces for view files and tag helpers
 _ViewStart.cshtml default layout for the razor view engine
 
-## key value
+## Key Value
 
 `ViewData`: pass data from one controller to correponding view. Init to `ViewDataDictionary`. provide access to model binding data.
 
@@ -41,7 +41,7 @@ _ViewStart.cshtml default layout for the razor view engine
 
 `ViewBag` sets and gets value dynamically. dynamic property. Available for _current requests only_, like `ViewData`. If redirection occurs its value becomes null.
 
-## html helpers
+## HTML Helpers
 
 - `@Html.ActionLink` link text, action & controller names
 - strongly vs loosely typed html form helpers: `@Html`[`TextBox`|`CheckBox`|`RadioButton`|`DropDownList`|`TextArea`][|`For`]
@@ -51,7 +51,7 @@ _ViewStart.cshtml default layout for the razor view engine
 - `@Html.ValidationSummary()` renders model and optionally property level errors, see `excludePropertyErrors`
 - @Html.HiddenFor for `input type="hidden"`
 
-## sections
+## Sections
 
 ```cshtml
     @RenderBody()
@@ -63,13 +63,13 @@ _ViewStart.cshtml default layout for the razor view engine
     @section Footer { }
 ```
 
-## model binding
+## Model Binding
 
 ![model binding](./model.binding.png)
 
 ![binding.posted.form.data](./binding.posted.form.data.png)
 
-## client validation
+## Client Validation
 
 - `data-val-required` and `data-val-email`. Either use them directly in the razor markup
 - or decorate your view model classes with validation attributes like `[Required]`, `[EmailAddress]`, `[MaxLength]`, `[RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]` for a rating regex, `[StringLength(60, MinimumLength = 3)]`, `[DataType(DataType.Currency)]`, `Range`. In the markup use html helpers only.
@@ -84,7 +84,7 @@ _ViewStart.cshtml default layout for the razor view engine
 - The JavaScript code looks for elements with the `data-val` attribute and performs local validation in the browser when the user submits the form, _without sending an HTTP request to the server_. submitting the form results in validation error messages displayed even though no HTTP request is sent to the server.
 - if you want to use client-side validation, you need to stick to the built-in attributes
 
-## server validation
+## Server Validation
 
 - either remove javascript jquery import
 - or perform _remote validation_ on the server through a ajax request. illusion of client side validation. use `[Remote(actionName, controllerName)]` on the view model. method should return `Json()`. Remote validation won't work without js includes, especially _unobtrusive_.
@@ -95,7 +95,7 @@ _ViewStart.cshtml default layout for the razor view engine
 - The `asp-validation-summary` attribute is applied to a div element, and it _displays_ a list of _validation errors_ when the view is rendered. The value is from an enumeration called `ValidationSummary`. `<div asp-validation-summary="ModelOnly" class="text-danger"></div>`.
 - `public class CustomPropertyValidationAttribute : Attribute, IModelValidator`
 
-## partial views
+## Partial Views
 
 no associated actoin model. data sent by parent view.
 
@@ -110,7 +110,7 @@ no associated actoin model. data sent by parent view.
 </div>
 ```
 
-## view components
+## View Components
 
 - inherit from `ViewComponent` base class
 - `ViewComponent` class suffix
@@ -121,7 +121,7 @@ no associated actoin model. data sent by parent view.
 - view component: `Views/Shared/Components/{ComponentName}/{ViewName}`. Component name is class name, view name is `Default.cshtml`.
 - e.g. param overload `async Task<IViewComponentResult> InvokeAsync(int threshold=10)`
 
-## tag helpers
+## Tag Helpers
 
 - lightweight attribute syntax that looks like html
 - input asp-for, link asp-href-include, span asp-validation-for, form asp-controller asp-action
@@ -131,7 +131,7 @@ no associated actoin model. data sent by parent view.
 - inherit from `TagHelper`
 - implement `Process (TagHelperContext context, TagHelperOutput output)`
 
-## theming
+## Theming
 
 - `ThemeExpander : IViewLocationExpander`
 

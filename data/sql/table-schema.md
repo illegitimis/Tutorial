@@ -1,6 +1,6 @@
 # Table Schema
 
-## sysobjects vs sys.objects
+## Sysobjects vs Sys.objects
 
 `sysobjects` is just a system table in SQL Server 2000. 
 In SQL Server 2005, there is no such system table [1] named `sysobjects`, it is implemented as a system view, just as background compatibility view only.

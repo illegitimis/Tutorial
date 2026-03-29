@@ -1,4 +1,4 @@
-# Foreground vs Background threads
+# Foreground vs Background Threads
 
 _Thread pool threads are  background threads._
 

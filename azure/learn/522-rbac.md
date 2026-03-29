@@ -1,4 +1,4 @@
-# Control access to cloud resources by using Azure role-based access control
+# Control Access to Cloud Resources by Using Azure Role-based Access Control
 
 > Microsoft Docs: 2 Control Access Azure Rbac [1]
 
@@ -10,13 +10,13 @@ Azure provides built-in roles that describe *common access rules for cloud resou
 You can also define your own roles. Each role has an associated set of access permissions that relate to that role.
 When you assign individuals or groups to one or more roles, they receive all of the associated access permissions.
 
-## How is role-based access control applied to resources?
+## How Is Role-based Access Control Applied to Resources?
 
 Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
 
 Here's a diagram that shows the relationship between roles and scopes.
 
-![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-scope-0223bfae.png)
+![Azure RBAC role and scope diagram](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/4-role-scope-0223bfae.png)
 
 A diagram showing scopes along the Y axis and roles across the X axis. Role and scope combinations each map to a specific kind of user or account, such as an observer or an administrator.
 
@@ -37,7 +37,7 @@ For example:
 - When you assign the Reader role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
 - When you assign the Contributor role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
 
-## When should I use Azure RBAC?
+## When Should I Use Azure RBAC?
 
 Use Azure RBAC when you need to:
 
@@ -48,7 +48,7 @@ Use Azure RBAC when you need to:
 
 These are just a few examples. You'll find the complete list of built-in roles at the end of this module.
 
-## Who does Azure RBAC apply to?
+## Who Does Azure RBAC Apply To?
 
 You can apply Azure RBAC to an individual person or to a group.
 You can also apply Azure RBAC to other special identity types, such as service principals and managed identities.
@@ -66,7 +66,7 @@ in this team track and report on technology-related spend. They also manage the 
 This team monitors and responds to any technology-related security incidents.
 The team requires ongoing access to log files and security alerts.
 
-## How do I manage Azure RBAC permissions?
+## How Do I Manage Azure RBAC Permissions?
 
 You manage access permissions on the Access control (IAM) pane in the Azure portal.
 This pane shows who has access to what scope and what roles apply.

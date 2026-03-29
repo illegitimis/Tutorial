@@ -1,4 +1,4 @@
-# dotnet commands
+# Dotnet Commands
 
 dotnet command ms docs [1]
 

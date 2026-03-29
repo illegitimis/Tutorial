@@ -1,4 +1,4 @@
-# Control and audit your resources by using Azure Policy
+# Control and Audit Your Resources by Using Azure Policy
 
 > Microsoft Docs: 6 Control Audit Resources Azure Policy [1]
 
@@ -6,7 +6,7 @@ In a previous exercise in this module, you identified your governance and busine
 
 Azure Policy [2] is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules across all of your resource configurations so that those configurations stay compliant with corporate standards.
 
-## How does Azure Policy define policies?
+## How Does Azure Policy Define Policies?
 
 Azure Policy enables you to define both individual policies and *groups of related policies*, known as **initiatives**. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
 
@@ -16,7 +16,7 @@ In some cases, Azure Policy can automatically remediate noncompliant resources a
 
 Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that pertain to the pre-deployment and post-deployment phases of your applications.
 
-## Azure Policy in action
+## Azure Policy in Action
 
 Implementing a policy in Azure Policy involves three tasks:
 
@@ -24,7 +24,7 @@ Implementing a policy in Azure Policy involves three tasks:
 - Assign the definition to resources.
 - Review the evaluation results.
 
-### Task 1. Create a policy definition
+### Task 1. Create a Policy Definition
 
 A policy definition expresses what to evaluate and what action to take.
 For example, you could prevent VMs from being deployed in certain Azure regions.
@@ -40,7 +40,7 @@ Here are some example policy definitions:
 - **CORS should not allow every resource to access your web applications** Cross-origin resource sharing (CORS) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
 - **System updates should be installed on your machines** This policy enables Azure Security Center to recommend missing security system updates on your servers.
   
-### Task 2. Assign the definition to resources
+### Task 2. Assign the Definition to Resources
 
 To implement your policy definitions, you assign definitions to resources. A *policy assignment* is a policy definition that takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
 
@@ -48,7 +48,7 @@ Policy assignments are *inherited by all child resources within that scope*.
 If a policy is applied to a resource group, that policy is applied to all resources within that resource group.
 You can exclude a subscope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
-### Task 3. Review the evaluation results
+### Task 3. Review the Evaluation Results
 
 When a condition is evaluated against your existing resources, each resource is marked as compliant or noncompliant.
 You can review the noncompliant policy results and take any action that's needed.
@@ -56,7 +56,7 @@ You can review the noncompliant policy results and take any action that's needed
 *Policy evaluation happens about once per hour*.
 If you make changes to your policy definition and create a policy assignment, that policy is evaluated over your resources within the hour.
 
-## How do I define an initiative?
+## How Do I Define an Initiative?
 
 You define initiatives by using the Azure portal or command-line tools.
 From the Azure portal, you can search the list of built-in initiatives that are built into Azure.
@@ -66,7 +66,7 @@ The following image shows a few example Azure Policy initiatives in the Azure po
 
 ![Screenshot showing Azure portal defining initiatives and definitions.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/3-define-initiatives-a834dde7.png)
 
-## How do I assign an initiative?
+## How Do I Assign an Initiative?
 
 Like a policy assignment, an initiative assignment is an initiative definition that's assigned to a specific scope of a management group, a subscription, or a resource group.
 

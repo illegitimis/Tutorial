@@ -1,4 +1,4 @@
-# Continuous delivery
+# Continuous Delivery
 
 - objective is to get around the **OODA** loop (Observe – Orient - Decide – Act) faster
 - teams should be organised around microservices with a separate platform team exposing an API that all other teams use

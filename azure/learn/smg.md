@@ -1,11 +1,11 @@
-# Azure subscriptions and management groups
+# Azure Subscriptions and Management Groups
 
 source [1]
 
 > An Azure resource is a manageable item that's available through Azure. \
 > Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are all examples of resources.
 
-## Azure subscriptions
+## Azure Subscriptions
 
 - Using Azure requires an Azure subscription.
 - A subscription provides you with authenticated and authorized access to Azure products and services.
@@ -22,7 +22,7 @@ An account can have one subscription or multiple subscriptions that have differe
 - *Billing boundary:* This subscription type determines how an Azure account is billed for using Azure. You can create multiple subscriptions for different types of billing requirements. Azure generates separate billing reports and invoices for each subscription so that you can organize and manage costs.
 - *Access control boundary:* Azure applies access-management policies at the subscription level, and you can create separate subscriptions to reflect different organizational structures. An example is that within a business, you have different departments to which you apply distinct Azure subscription policies. This billing model allows you to manage and control access to the resources that users provision with specific subscriptions.
 
-## Create additional Azure subscriptions
+## Create Additional Azure Subscriptions
 
 You might want to create additional subscriptions for resource or billing management purposes. For example, you might choose to create additional subscriptions to separate:
 
@@ -34,7 +34,7 @@ You might also need additional subscriptions because of:
 
 - *Subscription limits:* Subscriptions are bound to some hard limitations. For example, the maximum number of Azure ExpressRoute circuits per subscription is 10. Those limits should be considered as you create subscriptions on your account. If there's a need to go over those limits in particular scenarios, you might need additional subscriptions.
 
-## Customize billing to meet your needs
+## Customize Billing to Meet Your Needs
 
 If you have multiple subscriptions, you can organize them into invoice sections. Each invoice section is a line item on the invoice that shows the charges incurred that month. For example, you might need a single invoice for your organization but want to organize charges by department, team, or project.
 
@@ -44,13 +44,13 @@ The following diagram shows an overview of how billing is structured. If you've 
 
 ![billing-structure-overview](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/billing-structure-overview-2c81a8ad.png)
 
-## Azure management groups
+## Azure Management Groups
 
 If your organization has many subscriptions, you might need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called management groups and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale no matter what type of subscriptions you might have. All subscriptions within a single management group must trust the same Azure AD tenant.
 
 For example, you can apply policies to a management group that limits the regions available for VM creation. This policy would be applied to all management groups, subscriptions, and resources under that management group by only allowing VMs to be created in that region.
 
-## Hierarchy of management groups and subscriptions
+## Hierarchy of Management Groups and Subscriptions
 
 You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance by using management groups.
 
@@ -60,7 +60,7 @@ You can create a hierarchy that applies a policy. For example, you could limit V
 
 Another scenario where you would use management groups is to provide user access to multiple subscriptions. By moving multiple subscriptions under that management group, you can create one role-based access control (RBAC) assignment on the management group, which will inherit that access to all the subscriptions. One assignment on the management group can enable users to have access to everything they need instead of scripting RBAC over different subscriptions.
 
-## Important facts about management groups
+## Important Facts About Management Groups
 
 - 10,000 management groups can be supported in a single directory.
 - A management group tree can support up to six levels of depth. This limit doesn't include the root level or the subscription level.

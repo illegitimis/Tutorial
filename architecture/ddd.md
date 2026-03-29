@@ -8,7 +8,7 @@
 - 2016.VaughnVernon.**DomainDrivenDesignDistilled**, 1drv [6]
 - [Strengthening your domain](./domain-strength.md) [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./domain-strength.md) series by Jimmy Bogards
 
-## Videos and other online material
+## Videos and Other Online Material
 
 - TechEd Europe 2014: Architecting and Implementing Domain-Driven Design Patterns with Microsoft .NET [7]
 - VaughnVernon/IDDD_Samples_NET [8]

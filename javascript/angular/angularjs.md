@@ -15,7 +15,7 @@ One Drive [9]
 + ng-book 2 [10]. The in-depth, complete, and up-to-date book on Angular 4.
 + Angular 2 Development with TypeScript O'Reilly [11]
 
-## Resources 
+## Resources
 - jmcunningham/AngularJS2-Learning [12]
 - latest angular docs [13]
 - _Angular2_ notes [![Angular2 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng2.md)

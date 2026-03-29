@@ -2,7 +2,7 @@
 
 _Getting Started with Apache Kafka_ by _Ryan Plant_ Pluralsight course page [1]
 
-## .Net clients
+## .Net Clients
 
 List maintained by Apache [2]
 
@@ -117,7 +117,7 @@ Another factor contributing to Kafka&#39;s performance and scalability is the fa
 
 For Kafka consumers, keeping track of which messages have been consumed (processed) is simply a matter of keeping track of an Offset, which is a sequential id number that uniquely identifies a message within a partition. Because Kafka retains all messages on disk (for a configurable amount of time), consumers can rewind or skip to any point in a partition simply by supplying an offset value. Finally, this design eliminates the potential for back-pressure when consumers process messages at different rates.
 
-## to-do
+## To-do
 
 Apache Kafka for Beginners [31]
 

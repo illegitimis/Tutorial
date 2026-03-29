@@ -1,6 +1,6 @@
 # Mobile
 
-## Turn website to a mobile app
+## Turn Website to a Mobile App
 
 - Apps Builder lets you turn your website into an app [1]
 - Web app to IPhone app [2] on SO

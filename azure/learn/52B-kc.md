@@ -1,4 +1,4 @@
-# Knowledge check
+# Knowledge Check
 
 > Microsoft Docs: 11 Knowledge Check [1]
 

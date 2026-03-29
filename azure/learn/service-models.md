@@ -1,4 +1,4 @@
-# cloud services
+# Cloud Services
 
 > levels of shared responsibility that a cloud provider and cloud tenant are responsible for.
 
@@ -8,7 +8,7 @@ IaaS | Infrastructure-as-a-Service | This cloud service model is the _closest to
 PaaS | Platform-as-a-Service | This cloud service model is a _managed hosting_ environment. The cloud provider manages the virtual machines and networking resources, and the cloud _tenant deploys their applications_ into the managed hosting environment. For example, Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about the physical hardware and software requirements.
 SaaS | Software-as-a-Service | In this cloud service model, the _cloud provider manages all aspects of the application environment_, such as virtual machines, networking resources, data storage, and applications. The cloud tenant only needs to provide their data to the application managed by the cloud provider. For example, Microsoft Office 365 provides a fully working version of Microsoft Office that runs in the cloud. All you need to do is create your content, and Office 365 takes care of everything else.
 
-## illustration
+## Illustration
 
 ![The following illustration demonstrates the services that might run in each of the cloud service models](https://docs.microsoft.com/en-us/learn/azure-fundamentals/fundamental-azure-concepts/media/iaas-paas-saas-575a09e9.png)
 
@@ -43,7 +43,7 @@ Productivity | X | Users can focus on application development only, because the 
 Platform limitations | X | There can be some limitations to a cloud platform that might affect how an application runs. When you're evaluating which PaaS platform is best suited for a workload, be sure to consider any limitations in this area. | idem
 Software limitations | X | X | There can be some limitations to a software application that might affect how users work. Because you're using as-is software, you don't have direct control of features. When you're evaluating which SaaS platform is best suited for a workload, be sure to consider any business needs and software limitations.
 
-## Cloud service model comparison
+## Cloud Service Model Comparison
 
 IaaS | PaaS | SaaS
 ---|---|---

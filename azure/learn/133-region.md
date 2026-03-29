@@ -1,4 +1,4 @@
-# Azure regions, availability zones, and region pairs
+# Azure Regions, Availability Zones, and Region Pairs
 
 > Microsoft Docs: Regions Availability Zones [1]
 
@@ -9,7 +9,7 @@ These specific datacenters aren't exposed to users directly. \
 Instead, Azure organizes them into regions. \
 As you'll see later in this unit, some of these regions offer availability zones, which are different Azure datacenters within that region.
 
-## Azure regions
+## Azure Regions
 
 A region is a _geographical area_ on the planet that contains at least one but potentially multiple datacenters that are _nearby and networked together with a low-latency network_. \
 Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced. \
@@ -28,7 +28,7 @@ These regions give you the flexibility to bring applications closer to your user
 Global regions provide _better scalability_ and _redundancy_. \
 They also preserve _data residency_ for your services.
 
-### Special Azure regions
+### Special Azure Regions
 
 Azure has specialized regions that you might want to use when you build out your applications for compliance or legal purposes. \
 A few examples include:
@@ -40,7 +40,7 @@ These regions are available through a unique partnership between Microsoft and 2
 Regions are what you use to identify the location for your resources. \
 There are two other terms you should also be aware of: **geographies** and availability zones.
 
-## Availability zones
+## Availability Zones
 
 You want to ensure your services and data are **redundant** so you can protect your information in case of *failure*. \
 When you host your infrastructure, setting up your own redundancy *requires that you create duplicate hardware environments*. \
@@ -67,7 +67,7 @@ Azure services that support availability zones fall into three categories:
 - **Zone-redundant** services: The platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
 - **Non-regional** services: Services are *always available* from Azure geographies and are *resilient to zone-wide outages* as well as region-wide outages.
 
-## Region pairs
+## Region Pairs
 
 Availability zones are created by using one or more datacenters. \
 There's a **minimum of three zones within a single region**. \

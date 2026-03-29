@@ -1,4 +1,4 @@
-# Azure Virtual Network settings
+# Azure Virtual Network Settings
 
 > from ms learn src [1]
 
@@ -8,7 +8,7 @@ You can create and configure Azure Virtual Network instances from the
 - Azure PowerShell on your local computer
 - Azure Cloud Shell.
 
-## Create a virtual network
+## Create a Virtual Network
 
 When you create an Azure virtual network, you configure a number of basic settings.
 You'll have the option to configure advanced settings, such as:
@@ -19,12 +19,12 @@ You'll have the option to configure advanced settings, such as:
 
 ![create-virtual-network](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/create-virtual-network-286df13c.png)
 
-### Network name
+### Network Name
 
 The network name must be unique in your subscription, but it doesn't need to be globally unique.
 Make the name a descriptive one that's easy to remember and identified from other virtual networks.
 
-### Address space
+### Address Space
 
 When you set up a virtual network, you define the *internal address space* in **Classless Interdomain Routing** (CIDR) format. This address space needs to be unique within your subscription and any other networks that you connect to.
 Let's assume you choose an address space of 10.0.0.0/24 for your first virtual network.
@@ -42,7 +42,7 @@ You can assign these address spaces to your virtual networks because there's no 
 
 This option only applies if you have multiple subscriptions to choose from.
 
-### Resource group
+### Resource Group
 
 Like any other Azure resource, a virtual network needs to exist in a resource group.
 You can either select an existing resource group or create a new one.
@@ -61,12 +61,12 @@ Alternatively, you can define one subnet that encompasses all the virtual networ
 > Subnet names must begin with a letter or number and end with a letter, number, or underscore.
 >> They may contain only letters, numbers, underscores, periods, or hyphens.
 
-### DDoS protection
+### DDoS Protection
 
 You can select either Basic or Standard DDoS protection. *Standard DDoS protection is a premium service.*
 For more information on Standard DDoS protection, see Azure DDoS protection Standard overview.
 
-### Service endpoints
+### Service Endpoints
 
 Here, you enable service endpoints.
 Then you select from the list which Azure service endpoints you want to enable.
@@ -74,15 +74,15 @@ Options include Azure Cosmos DB, Azure Service Bus, Azure Key Vault, and so on.
 
 After you've configured these settings, select `Create`.
 
-## Define additional settings
+## Define Additional Settings
 
 After you create a virtual network, you can then define further settings. These include:
 
-### Network security group
+### Network Security Group
 
 Network security groups have security rules that enable you to filter the *type of network traffic* that can flow in and out of virtual network subnets and network interfaces. You create the network security group *separately.* Then you associate it with the virtual network.
 
-### Route table
+### Route Table
 
 Azure automatically creates a route table for each subnet within an Azure virtual network and adds system default routes to the table.
 You can add *custom route tables* to modify traffic between virtual networks.
@@ -91,7 +91,7 @@ You can also amend the service endpoints.
 
 ![virtual-network-additional-settings](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/virtual-network-additional-settings-faff6cec.png)
 
-## Configure virtual networks
+## Configure Virtual Networks
 
 After you've created a virtual network, you can change any further settings on the Virtual network pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
 

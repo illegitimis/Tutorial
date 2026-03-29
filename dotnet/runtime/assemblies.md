@@ -1,6 +1,6 @@
 # Assemblies
 
-## Combining managed modules into assemblies
+## Combining Managed Modules Into Assemblies
 
 a single PE file that represents the logical grouping of files managed PE files: they always use the 32 bit PE file format, not the 64−bit PE file format. On 64−bit Windows systems, the OS loader detects the managed 32−bit PE file and automatically knows to create a 64−bit address space
 

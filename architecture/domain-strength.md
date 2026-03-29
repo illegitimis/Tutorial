@@ -1,8 +1,8 @@
-# Strengthening your domain
+# Strengthening Your Domain
 
 _2010_. _Jimmy Bogard._
 
-## toc
+## TOC
 
 + [primer](./domain-strength.md#primer)
 + [aggregate-roots](./domain-strength.md#aggregate-roots)
@@ -13,7 +13,7 @@ _2010_. _Jimmy Bogard._
 + [no-silver-domain-modeling-bullets](./domain-strength.md#no-silver-domain-modeling-bullets)
 
 
-## article series
+## Article Series
 
 + Services in _Domain-Driven Design_ [1]
 + primer [2]
@@ -26,7 +26,7 @@ _2010_. _Jimmy Bogard._
 
 ***
 
-## services
+## Services
 
 Services are **first-class citizens** of the domain model. When concepts of the model would _distort_ any `Entity` or `Value Object`, a `Service` is _appropriate_.
 
@@ -53,8 +53,8 @@ I used to make the mistake of dismissing Services as a necessary evil, I’ve st
 
 ***
 
-## primer
-### Code smells
+## Primer
+### Code Smells
 A lot of DDD is just plain good OO programming. Unit tests and code smells are the best indication that our domain is wrong, along with conversations with our domain experts. In systems that start to move beyond merely CRUD, _specific code smells start to surface that should indicate that our system is starting to accumulate behavior_, but it just might not be in the right place. In a behavior-rich, but anemic domain, the domain is surrounded by a multitude of services that do the actual work, and fiddle with state on our domain objects. The domain objects _contain state to be persisted_, but it’s _not the domain objects themselves exposing any operations_. But this is just code smell! Lots of code smells indicate that our domain is not as rich as at could be. The behavior is out there, but just needs to be moved around. Some smells I look for include:
 + Primitive Obsession
 + Data Class
@@ -174,7 +174,7 @@ public class Invariants
 
 And now our test passes!
 
-### Summary and alternatives
+### Summary and Alternatives
 
 Going from a data-driven approach, this will cause pain. If we write our persistence tests first, we run into "why do I need a Customer just to test Order persistence?" Or, why do we need a `Customer` to test order totalling logic? The problem occurs further down the line when you start writing code against a domain model that doesn't enforce its own invariants. _If invariants are only satisfied through domain services, it becomes quite tricky to understand_ what a true `Order` is at any time. Should we always code assuming the Customer is there? Should we code it only when we "need" it?
 
@@ -190,7 +190,7 @@ The bottom line is – if our entity needs certain information for it to be cons
 
 ***
 
-## Encapsulated collections
+## Encapsulated Collections
 
 One of the common themes throughout the DDD book [15] is that much of the nuts and bolts of structural domain-driven design is just plain good use of object-oriented programming.  This is certainly true, but DDD adds some direction to OOP, along with roles, stereotypes and patterns. _Much of the direction for building entities at the class level can, and should, come from test-driven development_. TDD is a great tool for building OO systems, as we incrementally build our design with only the behavior that is needed to pass the test. Our big challenge then is to write good tests.
 
@@ -279,7 +279,7 @@ This is where we have to be a little more judicious in the API we expose for our
 
 Suppose I want to clear a Customer's Orders. It logically follows that each Order's Customer property would be null at that point. But I can't hook in easily to the `List`
 
-### Moving towards intention-revealing interfaces
+### Moving Towards Intention-revealing Interfaces
 
 Let's fix the Customer object first. It exposes a List
 
@@ -340,7 +340,7 @@ There are many different ways I could enforce this relationship, from exposing a
 
 _If I publicly expose a collection class_, I'm opening the doors for confusion and future bugs as I've now allowed my system to tinker with the implementation details of the relationship. It's my belief that the API of my domain model should explicitly support the operations needed to fulfill the needs of the application and interaction of the UI, but nothing more.
 
-## Encapsulating operations
+## Encapsulating Operations
 
 In previous posts, we walked through the journey from an intentionally anemic domain model (one specifically designed with CRUD in mind), towards a design of a stronger domain model design. Many of the comments on twitter and in the posts noted that many of the design techniques are just plain good OO design. Yes! That's the idea.  If we have behavior in our system, it might not be in the right place. The DDD domain design techniques are in place to _help move_ that _behavior from services surrounding the domain_ back into the domain model where it belongs.
 
@@ -408,7 +408,7 @@ However, our test looks rather strange at this point. We have a method to _esta
 
 But we can do one better. Isn't the act of recording a payment a complete operation?  **In the real physical world, when I give a person money, the entire transaction is completed as a whole**.  Either it all completes successfully, or the transaction is invalid.  In our example, how can I add a payment and the balance _not_ be immediately updated?  It's rather confusing to have to "remember" to use these extra calculation services and helper methods, just because our domain objects are too dumb to handle it themselves.
 
-### Thinking with commands
+### Thinking with Commands
 
 When we called the `AddPayment` method, we _left_ our `Fee` aggregate root _in an in-between state_. **It had a Payment, yet its balance was incorrect**. If Fees are supposed to act as _consistency boundaries_, we've violated that consistency with this invalid state.  Looking strictly through a code smell standpoint, this is the Inappropriate Intimacy [16] code smell.  **Inappropriate Intimacy is one of the biggest indicators of an anemic domain model**.  The behavior is there, but just in the wrong place.
 
@@ -448,20 +448,20 @@ Notice that we've also made the Recalculate method _private_, as this is an _imp
 
 The public contour of the Fee object is simplified as well.  We only _expose operations that we want to support_, captured in the names of our ubiquitous language.  The "How" is encapsulated behind the aggregate root boundary.
 
-### Wrapping it up
+### Wrapping It Up
 
 We again see that a consistent theme in DDD is good OO and attention to code smells. DDD helps us by giving us patterns and direction, towards placing more and more logic inside our domain.  The difference between an intentionally anemic domain model (a persistence model [17]) and an anemic domain model is the presence of these code smells.  If you don't have a legion of supporting services propping up the state of your domain model, then there's no problem.
 
 However, it's these external domain services where we are likely to find the bulk of domain model smells.  Through attention to the code smells and refactorings Fowler laid out [18], we can move towards the concepts of **self-consistent aggregate roots with strongly-enforced boundaries**.
 
-## The double dispatch pattern
+## The Double Dispatch Pattern
 It looks like there's a pattern emerging here around encapsulation, and **that's not an accident**. Many of the code smells in the Fowler or Kerievsky refactoring books deal with proper encapsulation of both data _and_ behavior. In the previous post, we looked at _closure of operations_, that _when an operation is completed_, the **aggregate root's state is consistent**.
 
 In many anemic domain models, **the behavior is there but in the wrong place**. For the DDD-literate, this is usually in a lot of domain services all poking at the state of the domain model. We can refactor these services to _enforce consistency_ through closed operations on our model, but there are cases where this sort of domain behavior _doesn't_ belong in the model.
 
 This now begins to be difficult to reconcile. We want to have a consistent model, but now we want to bring in services to the mix. Do we now forgo the concept of **Command/Query Separation** in our model, and just expose state? Or can we have our cake and eat it too?
 
-### Bringing in services
+### Bringing in Services
 
 The last example looked at fees, payments and customers.  When a payment is recorded against a fee, we re-calculate the balance:
 
@@ -496,7 +496,7 @@ So we decide to go with the _Aggregate Root relying on a Domain Service for bala
 
 For those using a DI container, you might try to inject the dependencies into the aggregate root. That leads to a whole host of problems, which are so numerous I won't derail a perfectly good post by getting into it. Instead, there's another, more intention-revealing option: the double dispatch pattern.
 
-### Services and the double dispatch pattern
+### Services and the Double Dispatch Pattern
 
 The double dispatch pattern is quite simple.  It involves _passing an object to a method_, and the method body _calls another method on the passed in object_, usually _passing in itself as an argument_.  In our case, we'll first create an interface that represents our balance calculator domain service:
 
@@ -521,11 +521,11 @@ public Payment RecordPayment(decimal paymentAmount, IBalanceCalculator balanceCa
 
 The intent of the `RecordPayment` method remains the same: it records a payment, and updates the balance. The balance on the Fee object will always be correct.  The wrinkle we added is that our RecordPayment method now delegates to a domain service, the IBalanceCalculator, for calculation of the balance. However, **the Fee object is still responsible for maintaining a correct balance**. We just call the Calculate method on the balance calculator, passing in "this", to figure out what the actual correct balance can be.
 
-### Wrapping it up
+### Wrapping It Up
 
 When a domain object begins to contain _too many_ responsibilities, we start to break out those extra responsibilities into things like value objects and domain services.  This does not mean we have to give up consistency and closure of operations, however.  **With the use of the double dispatch pattern, we can avoid anemic domain models**, as well as the _forlorn attempt to inject services into our domain model_. Our methods stay very intention-revealing, showing exactly what is needed to fulfill a request of recording a payment.
 
-## No silver domain modeling bullets
+## No Silver Domain Modeling Bullets
 
 This past week, I attended a presentation on **Object-Role Modeling** (with the unfortunate acronym ORM) and its application to DDD modeling. The talk itself was interesting, but more interesting were some of the questions from the audience. The gist of the tool is to provide a better modeling tool for domain modeling than traditional ERM tools or UML class diagrams. ORM is a tool for _fact-based analysis of informational models_, information being _data plus semantics_. I’m not an ORM expert, but there are plenty of resources on the web.
 One of the outputs of this tool could be a complete database, with all constraints, relationships, tables, columns and whatnot built and enforced. However, the speaker, Josh Arnold, mentioned repeatedly that it was not a good idea to do so, or at least it doesn’t scale at all. It could be used as a starting point, but that’s about it.
@@ -534,13 +534,13 @@ Several times at the end of the talk, the question came up, “can I use this to
 
 Ultimately, the only validation that our domain is correct is the working code. There is no silver bullet for writing code, as there is always some level of complexity in our applications that requires customization. And there’s nothing that codegen tools hate more than modification of the generated code  However, I’m open to the idea that I’m wrong here, and I would love to be shown otherwise.
 
-## 10 Lessons from a Long Running DDD Project
+## 10 Lessons From a Long Running DDD Project
 
 Round about 7 years ago, I was part of a very large project which rooted its design and architecture around domain-driven design concepts. I've blogged a lot about that experience (and others), but one interesting aspect of the experience is we were afforded more or less a do-over, with a new system in a very similar domain. I presented this topic at NDC Oslo (recorded, I'll post when available).
 
 I had a lot of lessons learned from the code perspective, where things like `AutoMapper`, `MediatR`, `Respawn` and more came out of it. Feature folders, **CQRS**, conventional HTML with HtmlTags were used as well. But beyond just the code pieces were the broader architectural patterns that we more or less ignored in the first DDD system. We had a number of lessons learned, and quite a few were from decisions made very early in the project.
 
-### Lesson 1: Bounded contexts are a thing
+### Lesson 1: Bounded Contexts Are a Thing
 
 Very early on in the first project, we laid out the personas [19] for our application. This was also when Agile and Scrum were really starting to be used in the large, so we were all about using user stories, personas and the like.
 
@@ -551,7 +551,7 @@ So we color coded them and divided them up based on lines of communication, repo
 
 Well, it turned out that those colors (just faked above) were perfect borders for bounded contexts. Also, it turns out that 72 personas for a single application is way, way too many.
 
-### Lesson 2: Ubiquitous language should be...ubiquitous
+### Lesson 2: Ubiquitous Language Should Be...ubiquitous
 
 One of the side effects of cramming too many personas into one application is that we got to the point where some of the core domain objects had very generic names in order to _have a name that everyone agreed upon_.
 
@@ -559,19 +559,19 @@ We had a `Person` object, and everyone agreed what "person" meant. Unfortunately
 
 When you have very generic names for core models that aren't actually used by any domain expert, _you have something worse than an anemic domain model_ - **a generic domain model**.
 
-### Lesson 3: Core domain needs consensus
+### Lesson 3: Core Domain Needs Consensus
 
 We talked to various domain experts in many groups, and all had a very different perspective on what the core domain of the system was. Not what it should be, but what it was. For one group, it was the part that replaced a paper form, another it was the kids the system was intending to help, another it was bringing those kids to trial and another the outcome of those cases. Each has wildly different motivations and workflows, and even different metrics on which they are measured.
 
 Beyond that, we had directly opposed motivations. While one group was focused on keeping kids out of jail, another was managing cases to put them in jail! With such different views, it was quite difficult to build a system that met the needs of both. Even to the point where the conduits to use were completely out of touch with the basic workflow of each group. Unsurprisingly, one group had to win, so the focus of the application was seen mostly through the lens of a single group.
 
-### Lesson 4: Ubiquitous language needs consensus
+### Lesson 4: Ubiquitous Language Needs Consensus
 
 A slight variation on lesson 2, we had a core entity on our model where at least the name meant something to everyone in the working group. However, that something again varied wildly from group to group.
 
 For one group, the term was in reference to a paper form filed. Another, something as part of a case. Another, an event with a specific legal outcome. And another, it was just something a kid had done wrong and we needed to move past. I'm simplifying and paraphrasing of course, but even in this system, a legal one, there were very explicit legal definitions about what things meant at certain times, and reporting requirements. Effectively we had created one master document that everyone went to to make changes. It wouldn't work in the real world, and it was very difficult to work in ours.
 
-### Lesson 5: Structural patterns are the least important part of DDD
+### Lesson 5: Structural Patterns Are the Least Important Part of DDD
 
 Early on we spent a *ton* of time on getting the design right of the DDD building blocks: entities, aggregates, value objects, repositories, services, and more. But of all the things that would lead to the success or failure of the project, or even just slowing us down/making us go faster, these patterns were by far the least important.
 
@@ -583,19 +583,19 @@ In the first project, we targeted everyone that could possibly be involved with 
 
 The second project targeted only a single aspect of the original overall legal process – the prosecution agency. Targeting just a single group, actually a single agency, brought tremendous benefits for us.
 
-### Lesson 6: Cohesiveness brings greater clarity and deeper insight
+### Lesson 6: Cohesiveness Brings Greater Clarity and Deeper Insight
 
 Our initial conversations in the second project were somewhat colored by our first project. We started with an assumption that the core focus, the core domain would be at least the same as the monolith, but maybe a different view of it. We were wrong.
 
 In the new version of the app, the entire focus of the system revolves around "cases". I know, crazy that an app built for the day-to-day functions of a prosecution agency focuses centrally on a case:
 
-![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb1.png)
+![Domain model case-centric diagram](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb1.png)
 
 Once we settled on the core domain, the possibilities then greatly opened up for modeling around that concept. Because the first app only tangentially dealt with cases (there wasn't even a "Case" in the original model), it was more or less an impedance mismatch for its users in the prosecution agency. It was a bit humbling to hear the feedback from the prosecutors about the first project.
 
 But in the second project, because our core domain was focused, we could spend much more time modeling workflows and behaviors that fit what the prosecution agency actually needed.
 
-### Lesson 7: Be flexible where you need to, rigid in others
+### Lesson 7: Be Flexible Where You Need to, Rigid in Others
 
 Although we were able to come to a consensus amongst prosecution agencies about what a case was, what the key things you could DO with a case were and the like, we couldn't get any consensus about how a case should be managed.
 
@@ -603,7 +603,7 @@ This makes a lot of sense – the state has legal reporting requirements and the
 
 In the first system, roles were baked in to the system, causing a lot of confusion for counties where one person wore many different hats. In the new system, permissions were hard-coded against tasks, but not roles:
 
-![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb2.png)
+![Permission and task model diagram](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb2.png)
 
 The Permission here is an enum, and we tied permissions to tasks like "Approve Case" and "Add Evidence" and "Submit Disposition" etc. Those were directly tied to actions in our application, and you couldn't add new permissions without modifying the code.
 
@@ -611,7 +611,7 @@ Roles (or groups, whatever) were not hardcoded, and left completely up to each a
 
 With DDD it's important to model both the rigid and flexible, they're equally important in the overall model you build.
 
-### Lesson 8: Sometimes you need to invent a model
+### Lesson 8: Sometimes You Need to Invent a Model
 
 While we were able to model quite well the actions one can perform with an individual case, it was immediately apparent when visiting different county agencies that their workflows varied significantly inside their departments.
 
@@ -619,23 +619,23 @@ This meant we couldn't do things like implement a workflow internal to a case it
 
 In this case, we needed to build consensus for a model that didn't really exist in each county in isolation. If we focused on a single county, we could have baked the rules about how a case is managed into their individual system. But since we were building a system across counties, we needed to build a model that satisfied all agencies:
 
-![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb3.png)
+![Configurable workflow states diagram](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb3.png)
 
 In this model, we explicitly built a configurable workflow, with states and transitions and security roles around who could perform those transitions. While no individual county had this model, it was the meta-model we found while looking across all counties.
 
-### Lesson 9: Don't blindly follow pattern advice
+### Lesson 9: Don't Blindly Follow Pattern Advice
 
 In the new app, I performed an experiment. I would only add tools, patterns, and libraries when the need presented itself but no sooner. This meant I didn't add a repository, unit of work, services, really anything until an actual pain surfaced. Most of the DDD books these days have prescriptive guidance about what your domain model should look like, how you should do repositories and so on, but I wanted to see if I could simply arrive at these patterns by code smells and refactoring.
 
 The funny thing is, I never did. We left out those patterns, and we never found a need to put them back in. Instead, we drove our usage around CQRS and the mediator pattern (something I've used for years but finally extracted our internal usage into MediatR [20]. Instead, our controllers were pretty uniform in their appearance:
-![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb4.png)
+![CQRS controller handler code](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb4.png)
 
 And the handlers themselves (as I've blogged about many times) were tightly focused on a single action, with no need to abstract anything:
-![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb5.png)
+![Single-action handler code](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb5.png)
 
 I've extended this to other areas of development too, like front-end development. It's actually kinda crazy how far you can get without jQuery these days, if you just use lodash and the DOM.
 
-### Lesson 10: Microservices and anti-corruption layers are your friend
+### Lesson 10: Microservices and Anti-corruption Layers Are Your Friend
 
 There is a downside to going to bounded contexts and away from the "majestic monolith", and that's integration. Now that we have an application solely dealing with one agency, we have to communicate between different applications.
 
@@ -645,7 +645,7 @@ This was also the section of the book skipped the most, around anti-corruption l
 
 We've quite a bit of experience in this area it turns out, so it was really just a matter of deciding for each 3rd party what kind of integration would work best.
 
-![](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb6.png)
+![Anti-corruption layer integration diagram](https://lostechies.com/content/jimmybogard/uploads/2016/06/image_thumb6.png)
 
 For some 3rd parties, we could create an entirely separate app with no integration. Some needed a special app that performed the translation and anti-corruption layer, and some needed an entirely separately deployed app that communicated to our system via hypermedia-rich REST APIs.
 

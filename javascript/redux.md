@@ -10,13 +10,13 @@ diagram [3]
 ![diagram](https://photos-5.dropbox.com/t/2/AAD3e2vMl8kW3ZORleK71JACBDMJW-X6SW8ML9wHTZtrdQ/12/693348804/png/32x32/3/1504184400/0/2/2017-08-28%2009_39_34-Using%20Redux%20to%20Manage%20State%20in%20Angular.png/EMeD9dkFGAogBygH/lB0KbF5QI8KprGcfjnwpqcC8bVRyvU0HeyekZt5EyjA?dl=0&size=2048x1536&size_mode=3)
 
 
-## Core principles
+## Core Principles
 
 1. single source of truth (for state), one big store 
 2. state is read-only, immutable
 3. pure functions drive changes 
 
-## links
+## Links
 
 - course repo [4], a little console app that shows you how to use redux without *React* or *Angular* (used in Pluralsight course).
 - angular2 cli ts app [5]. you may have multiple reducer types updating some root state.

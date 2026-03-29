@@ -11,13 +11,13 @@
 - **Schema-Agnostic Indexing with Azure DocumentDB** [4] pdf [4]
 - The Bw-Tree: A B-Tree On Steroids [5] pdf [5]
 
-## SQL queries
+## SQL Queries
 
 - Query Using DocumentDB SQL [6]
 - SQL queries for Azure Cosmos DB DocumentDB API [7] msdn
 - Azure Cosmos DB DocumentDB API: SQL syntax reference [8] msdn
 
-## Cheat sheet
+## Cheat Sheet
 
  Built-in | functions
 --- | ---

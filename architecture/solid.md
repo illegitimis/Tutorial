@@ -1,4 +1,4 @@
-# SOLID Programming Principles 
+# SOLID Programming Principles
 
 The **SOLID** Principles of programming are a good set of rules to follow when you are designing and developing an object oriented application.
 > From <cmjackson.net: Solid Programming Principles [1]>

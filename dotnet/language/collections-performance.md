@@ -1,4 +1,4 @@
-# .NET collections performance
+# .NET Collections Performance
 
 | Collection | Ordering | Contiguous Storage? | Direct Access? | Lookup Efficiency  | Manipulate Efficiency | Based On |
 |------------------|------------------------------------------------|---------------------|----------------|-------------------------|-----------------------|-------------|

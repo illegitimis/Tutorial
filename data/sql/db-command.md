@@ -1,6 +1,6 @@
 # (I)DbCommand
 
-## hierarchy
+## Hierarchy
 
 - `System.Data.IDbCommand` [1]
   - `System.Data.Common.DbCommand` [2]
@@ -10,7 +10,7 @@
     - System.Data.OracleClient.OracleCommand
     - System.Data.SqlClient.SqlCommand
 
-## methods
+## Methods
 
 1. Executes [3] 
 a Transact-SQL statement against the connection and returns the number of rows affected. 

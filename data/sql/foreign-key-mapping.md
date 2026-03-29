@@ -1,4 +1,4 @@
-# Foreign key mappings
+# Foreign Key Mappings
 
 1. WITH SQL SERVER 2000 TABLES. ORIGINAL ANSWER does not ALLOW multiple column relationships [1]
 ```sql

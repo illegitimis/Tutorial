@@ -1,4 +1,4 @@
-# Exercise - Protect a storage account from accidental deletion by using a resource lock
+# Exercise - Protect a Storage Account From Accidental Deletion by Using a Resource Lock
 
 > Microsoft Docs: 4 Protect Storage Account Resource Lock [1] \
 > You need your own Azure subscription to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
@@ -12,7 +12,7 @@ Then you add a lock to your resource group and verify that you can't delete the 
 You then add a storage account to your resource group and see how the lock from the parent resource group prevents the storage account from being deleted.
 A storage account is a container that groups a set of Azure Storage services together.
 
-## Here you create a resource group that's named my-test-rg.
+## Here You Create a Resource Group That's Named My-test-rg.
 
 - Go to the Azure portal and sign in.
 - At the top of the page, select Resource groups.
@@ -29,9 +29,9 @@ Region | (US) East US. You can also select a region that's closer to you.
 
 - Select Review + create, and then select Create.
 
-![](524-payasyougo.png)
+![Pay-as-you-go subscription selection](524-payasyougo.png)
 
-## Add a lock to the resource group
+## Add a Lock to the Resource Group
 
 Add a resource lock to the resource group. To do so:
 
@@ -45,7 +45,7 @@ Add a resource lock to the resource group. To do so:
 
 ![A screenshot of the Azure portal showing the resource lock. The lock type is Delete, and the scope is the parent resource group.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/7-portal-rg-lock-21f1ce60.png)
 
-## Verify that the resource group is protected from deletion
+## Verify That the Resource Group Is Protected From Deletion
 
 Here, you verify protection by attempting to delete the resource group.
 
@@ -55,7 +55,7 @@ id | desc | pic
 2 | Select Delete resource group. | ![A screenshot of the Azure portal showing the Delete resource group button.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/7-portal-delete-rg-e8bb66bb.png)
 3 | At the prompt, enter my-test-rg, and then select OK. You see a message that tells you that the resource group is locked and can't be deleted. | ![A screenshot of the failure message. The message tells you that the resource can't be deleted because it's locked.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/6-delete-locks-failed-b3e41330.png)
 
-## Protect a storage account from accidental deletion
+## Protect a Storage Account From Accidental Deletion
 
 Here, you add a storage account to your resource group and see how the lock from the parent resource group prevents the storage account from being deleted. To do so:
 
@@ -91,7 +91,7 @@ Here's an example that shows the error message for a storage account that's name
 Although you didn't create a lock specifically for the storage account, the lock you created for the parent resource group prevents you from deleting the resource.
 In other words, the storage account inherits the lock from the parent resource group.
 
-## Delete the resource group and the storage account
+## Delete the Resource Group and the Storage Account
 
 You no longer need your resource group or storage account. Here you remove both.
 

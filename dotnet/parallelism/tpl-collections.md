@@ -1,6 +1,6 @@
 # TPL Collections
 
-## new concurrent collections lock-free?
+## New Concurrent Collections Lock-free?
 
 All of the collections in the new `System.Collections.Concurrent` namespace employ lock-free techniques to some extent in order to achieve general performance benefits, but traditional locks are used in some cases [1].
 

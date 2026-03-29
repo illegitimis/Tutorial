@@ -1,4 +1,4 @@
-# WebApi upload & download files
+# WebApi Upload & Download Files
 
 - ASP.NET Web API file download service with resume support [1] _18 October 2012_ on ASP.NET Web API, ASP.NET, file download, HEAD verb, memory mapped files, Range, resume, Accept-Ranges
 - More about REST: File upload download service with ASP.NET Web API and Windows Phone background file transfer [2] _ms blogs, 2012_ Custom Media-Type Formatter Sample, `BackgroundTransferRequest`, `PartialContent`, `BeginGetRequestStream`

@@ -3,7 +3,7 @@
 + ECMAScript6 features comparison [1]
 + Wizards wizard [2] A wizard to build a wizard. Demo application for integrating _forms_ and _redux_, as showcased @ ng-conf 2017 during FormControl Freaks: Redux Edition.
 
-## diff es6 vs es5 unicorn
+## Diff Es6 vs Es5 Unicorn
 
 ![diff es6 vs es5 unicorn](https://s1cjww.by3302.livefilestore.com/y4mitsFDvsIUrGgDny8CaTRzDnRkZ7xHKjLwQuUMssOFqkFy0NXYCZgNfv_epaMCiUaRUcVbS_VW6gK07CrV72zXTOYJIhfUPu07vehw8xRoW3yXZT80w_WpPVuiq5leIVYKa5FCYNJNVgMV7RV94HeeQJYVMevn0FdJBAki9b_Fwm_hzyRt5uFBGoZsoAIoLOsOv-cRfi_U8U43C1LrjT04Q?width=635&height=397&cropmode=none)
 

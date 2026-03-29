@@ -1,14 +1,14 @@
-# Protect from DDoS attacks by using Azure DDoS Protection
+# Protect From DDoS Attacks by Using Azure DDoS Protection
 
 Any large company can be the target of a large-scale network attack. Tailwind Traders is no exception. Attackers might flood your network to make a statement or simply for the challenge. As Tailwind Traders moves to the cloud, it wants to understand how Azure can help prevent distributed denial of service (DDoS) and other attacks.
 
 In this part, you learn how Azure DDoS Protection (Standard service tier) helps protect your Azure resources from DDoS attacks. First, let's define what a DDoS attack is.
 
-## What are DDoS attacks?
+## What Are DDoS Attacks?
 
 A distributed denial of service attack [1] attempts to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users. DDoS attacks can target any resource that's publicly reachable through the internet, including websites.
 
-## What is Azure DDoS Protection?
+## What Is Azure DDoS Protection?
 
 Azure DDoS Protection (Standard) helps protect your Azure resources from DDoS attacks.
 
@@ -22,7 +22,7 @@ DDoS Protection identifies the attacker's attempt to overwhelm the network and b
 
 DDoS Protection can also help you manage your cloud consumption. When you run on-premises, you have a fixed number of compute resources. But in the cloud, elastic computing means that you can automatically scale out your deployment to meet demand. A cleverly designed DDoS attack can cause you to increase your resource allocation, which incurs unneeded expense. DDoS Protection Standard helps ensure that the network load you process reflects customer usage. You can also receive credit for any costs accrued for scaled-out resources during a DDoS attack.
 
-## What service tiers are available to DDoS Protection?
+## What Service Tiers Are Available to DDoS Protection?
 
 DDoS Protection provides these service tiers:
 
@@ -40,7 +40,7 @@ DDoS Protection provides these service tiers:
   - Policies are applied to public IP addresses, which are associated with resources deployed in virtual networks such as Azure Load Balancer and Application Gateway.
   - The Azure global network is used to distribute and mitigate attack traffic across Azure regions.
 
-## What kinds of attacks can DDoS Protection help prevent?
+## What Kinds of Attacks Can DDoS Protection Help Prevent?
 
 The Standard service tier can help prevent:
 

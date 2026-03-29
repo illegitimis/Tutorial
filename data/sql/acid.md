@@ -1,6 +1,6 @@
 # ACID
 
-## principles
+## Principles
 
 acronym | title | description
 ---|---|---
@@ -9,7 +9,7 @@ acronym | title | description
 **I** | ISOLATION | multiple transactions occurring at the same time not impact each other’s execution. No [interference][2]. Does not ensure their order. Transactions _do not contend_ with one another. _Contentious access_ to data is [moderated by the database][1] so that transactions appear to run sequentially. [If transactions are executed concurrently, the result is equivalent to their serial execution][4].
 **D** | DURABILITY | ensures that any transaction committed to the database will not be lost. [Db backups and transaction logs][2] facilitate restoration. Completed transactions [persist][5], even when servers restart etc. [The results of applying a transaction are permanent, even in the presence of failures][1].
 
-## glossary
+## Glossary
 
 - **write-ahead logging** ([WAL][2]) in which any transaction detail is first written to a log that includes both redo and undo information.
 - **shadow-paging** in which a shadow page is created when data is to be modified. The query's updates are written to the shadow page rather than to the real data in the database. The database itself is modified only when the edit is complete.

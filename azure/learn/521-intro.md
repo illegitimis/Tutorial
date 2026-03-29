@@ -15,7 +15,7 @@ Governance is most beneficial when you have:
 - Regulatory requirements that must be enforced.
 - Standards that must be followed for all cloud resources.
 
-## How will Tailwind Traders improve agility while maintaining control?
+## How Will Tailwind Traders Improve Agility While Maintaining Control?
 
 Tailwind Traders is continuing its migration to the cloud.
 For its existing datacenter, development and test teams must submit support tickets to request access to virtual machines, storage, and networking components.
@@ -30,7 +30,7 @@ How can they enable innovation while still maintaining control?
 
 In this module, you'll help the company explore ways it can enforce standards while still enabling teams to create and manage the cloud resources they need.
 
-## Learning objectives
+## Learning Objectives
 
 After completing this module, you'll be able to:
 

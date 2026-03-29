@@ -1,4 +1,4 @@
-# Protect virtual networks by using Azure Firewall
+# Protect Virtual Networks by Using Azure Firewall
 
 > 43 source [1]
 
@@ -34,7 +34,7 @@ You typically deploy Azure Firewall on a central virtual network to control gene
 This short video explains how Azure Firewall monitors incoming and outgoing network traffic based a defined set of security rules.
 The video [3] also explains how Azure Firewall compares to traditional firewall appliances.
 
-## What can I configure with Azure Firewall?
+## What Can I Configure with Azure Firewall?
 
 With Azure Firewall, you can configure:
 

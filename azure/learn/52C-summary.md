@@ -15,7 +15,7 @@ There are several services and features in Azure to support these efforts:
 
 With these points in mind, you're ready to take the next step toward building a good cloud governance strategy.
 
-## Learn more
+## Learn More
 
 - Control and organize Azure resources with Azure Resource Manager module [2]
 - Cloud Adoption Framework Governance Benchmark Tool * [3]

@@ -8,7 +8,7 @@ The _Microservices_ architecture introduces the need for _independent deployment
 
 `Kubernetes`, an open source project designed for microservices by extending `Docker`'s capabilities. By describing the characteristics of an image Kubernetes can deploy and manage multiple Docker containers of the same type.
 
-## Key points
+## Key Points
 
 * virtual machines aren’t the right unit of work
 * (CEO Docker Golub, ex dotCloud PaaS) 
@@ -27,7 +27,7 @@ The _Microservices_ architecture introduces the need for _independent deployment
 * Docker Container Overview for Business Leaders [4] nov 2016
 * Building a Docker Container with an ASP.NET MVC Web API application connected to PostGres on Linux [5] October, 2016
 
-## courses
+## Courses
 
 * Getting Started with Docker on Windows [6] by Wes Higbee
 * docker deep dive [7] by Nigel Poulton

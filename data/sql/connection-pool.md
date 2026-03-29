@@ -5,7 +5,7 @@ When an application tries to open a database connection, an open connection is r
 _Closing_ a connection _returns it to the pool_ for other processes to utilize. 
 Connection pooling is utilized (by default) unless otherwise specified.
 
-## Pooling advice
+## Pooling Advice
 
 You should be judicious in your use of connection pooling. Here are a few tips when using it: 
 

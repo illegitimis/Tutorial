@@ -1,4 +1,4 @@
-# Exercise - Restrict deployments to a specific location by using Azure Policy
+# Exercise - Restrict Deployments to a Specific Location by Using Azure Policy
 
 > Microsoft Docs: 7 Restrict Location Azure Policy [1]
 

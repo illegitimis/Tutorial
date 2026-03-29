@@ -1,4 +1,4 @@
-# signalr
+# SignalR
 
 - `SignalR` [1] Incredibly simple real-time web for ASP .NET
 - Hub protocol [2] specs

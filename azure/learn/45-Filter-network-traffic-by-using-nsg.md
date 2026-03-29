@@ -1,16 +1,16 @@
-# Filter network traffic by using network security groups
+# Filter Network Traffic by Using Network Security Groups
 
 Although Azure Firewall and Azure DDoS Protection can help control what traffic can come from outside sources, Tailwind Traders also wants to understand how to protect its internal networks on Azure. Doing so will give the company an extra layer of defense against attacks.
 
 In this part, you examine network security groups (NSGs).
 
-## What are network security groups?
+## What Are Network Security Groups?
 
 A network security group enables you to filter network traffic to and from Azure resources within an Azure virtual network.
 You can think of NSGs like an *internal firewall*.
 An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol.
 
-## How do I specify NSG rules?
+## How Do I Specify NSG Rules?
 
 A network security group can contain as many rules as you need, within Azure subscription limits.
 Each rule specifies these properties:

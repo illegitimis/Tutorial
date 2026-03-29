@@ -4,7 +4,7 @@
 - 1 + n queries => data loaders and batch
 - how it works, and how to use it [graphql.org learn] | [landscape] | Current Working [draft]
 
-## official C#
+## Official C#
 
 `GraphQL` .NET server/client [implementations]
 
@@ -15,7 +15,7 @@ git | package | doc | examples | desc
 [graphql-platform] | [HotChocolate] | [chillicream] | [fetching-from-rest]; [fetching-from-databases]; [dataloader] | Hot Chocolate GraphQL server for .NET, the Strawberry Shake GraphQL client for .NET and Nitro the awesome Monaco based GraphQL IDE. 
 [graphql-net] | [GraphQL.Net] | [chkimes] | - | Convert `GraphQL`  and `IQueryable`. netFx only. obsolete
 
-## courses
+## Courses
 
 - Creating GraphQL APIs with ASP.Net Core for Beginners udemy [1]
 - [fiyazhasan] 12 blog posts
@@ -24,7 +24,7 @@ git | package | doc | examples | desc
 - roland guijt _Building GraphQL APIs with ASP.NET Core_ pluralsight [4] 2021 git [5]
 - Build Scalable APIs using GraphQL and Serverless msbuild video [6] 2019
 
-## tools
+## Tools
 
 - GitHub _GraphQL API_ [explorer]
 - [create-graphless] CLI that generates the code you need for running Graphql with Azure Functions

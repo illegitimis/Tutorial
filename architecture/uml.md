@@ -1,6 +1,6 @@
 # UML
 
-## Class diagrams
+## Class Diagrams
 
 **relationships** | **between components**
 ------------ | -------------

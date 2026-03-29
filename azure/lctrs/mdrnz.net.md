@@ -1,6 +1,6 @@
 # Modernize .NET Apps
 
-## q&a
+## Q&a
 
 > What's the difference between the azure region and the geography specified in the azure migrate drop down (when migrating a web app)?
 
@@ -10,19 +10,19 @@ Azure regions are organized into geographies. An Azure geography [1] ensures tha
 
 When you do a data migration, you will select the exact Azure Region where data will be copied. If you want you can run the app in another region, but you need to take into account if you are allowed from the legal/compliancy point of view to have data in that geographical regions / countries.
 
-## web app hosting
+## Web App Hosting
 
 ![web.app.hosting](./pics/l01/web.app.hosting.png)
 
-## migration journey
+## Migration Journey
 
 ![migration.journey.png](./pics/l01/migration.journey.png)
 
-## azure resource manager architecture
+## Azure Resource Manager Architecture
 
 ![arm-arch](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/consistent-management-layer-feef9259.png)
 
-## misc
+## Misc
 
 - Azure migration center [3]
 - `Azure Migrate` is a hub. _azure app service migration assistant_

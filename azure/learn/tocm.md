@@ -1,4 +1,4 @@
-# What are public, private, and hybrid clouds?
+# What Are Public, Private, and Hybrid Clouds?
 
 Deployment model | Description | comparison
 ---|---|---
@@ -13,7 +13,7 @@ Availabilty | anyone who wants to purchase |  | computing resources used exclusi
 Ownership | 3rd party CSP | resources they temporarily use publicly vs owned and needing maintenance | on prem / csp
 Price | free/on-demand | manage which resources are local versus resources in the cloud | hardware
 
-## Why public cloud?
+## Why Public Cloud?
 
 Public clouds can be deployed faster than on-premises infrastructures and with an almost infinitely scalable platform. \
 Every employee of a company can use the same application from any office or branch using their device of choice as long as they can access the internet.
@@ -31,7 +31,7 @@ Quickly provision infrastructure resources using a web portal, scripts, or via a
 Store data near your users, or in desired locations without having to maintain your own datacenters. \
 Reduced hardware maintenance: The service provider is responsible for hardware maintenance.
 
-## Why private cloud?
+## Why Private Cloud?
 
 A private cloud can provide more flexibility to an organization. \
 Your organization can customize its cloud environment to meet specific business needs. \
@@ -51,7 +51,7 @@ Political borders and legal requirements may dictate where data can physically e
 **Regulatory compliance** / certification\
 PCI or HIPAA compliance. Certified on-premises datacenter.
 
-## Why hybrid cloud?
+## Why Hybrid Cloud?
 
 Hybrid cloud allows your organization to control and maintain a private infrastructure for sensitive assets. \
 It also gives you the flexibility to take advantage of additional resources in the public cloud when you need them.\

@@ -1,4 +1,4 @@
-# xunit
+# xUnit
 
 > `xUnit.net` is a free, open source, community-focused unit testing tool for .NET.
 
@@ -20,7 +20,7 @@ v2 .NET Framework with Visual Studio [4].
 - Creating strongly typed xUnit theory test data with `TheoryData` [16]
 - `TypedClassData` Typed Class Data Attribute for xUnit Test Framework [17]
 
-## Deadlock when using parallelization and blocking on async code
+## Deadlock When Using Parallelization and Blocking on Async Code
 
 VS runner hangs on Run All [#611](https://github.com/xunit/xunit/issues/611)
 

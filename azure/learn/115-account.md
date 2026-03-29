@@ -1,4 +1,4 @@
-## Get started with Azure accounts
+## Get Started with Azure Accounts
 
 ![115 account](https://docs.microsoft.com/en-us/learn/azure-fundamentals/intro-to-azure-fundamentals/media/scope-levels-12669ee1.png)
 

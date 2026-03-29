@@ -94,7 +94,7 @@ For yeoman, node and npm must be installed, nodejs.org. The command line VS code
 new  
 
 
-### new  project  options
+### New Project Options
 
 web fwk | os fwk | title
 --- | --- | ---
@@ -104,7 +104,7 @@ ASP.NET Core | .NET Framework | ASP.NET Core web app for **Windows**
 
 ## HTML and CSS Basics
 
-![](https://uz5qia.by3302.livefilestore.com/y3mUV4VSA2B8vDntS_hAwdc4g-UFT5LFic4KkwfGip83DYtdzxHrvRk30etvQU8buYkOIS7oI3V3-etYp_01181vqBYGTHYL4KYXboOpFFqikFHwaSw3KTdy7zEDRHSLtbLA2m35YT2eiGQiFRbQQASzJMRGAuMnYOt5Wk7dpVQ-KM?width=408&height=172&cropmode=none)
+![ASP.NET Core middleware pipeline diagram](https://uz5qia.by3302.livefilestore.com/y3mUV4VSA2B8vDntS_hAwdc4g-UFT5LFic4KkwfGip83DYtdzxHrvRk30etvQU8buYkOIS7oI3V3-etYp_01181vqBYGTHYL4KYXboOpFFqikFHwaSw3KTdy7zEDRHSLtbLA2m35YT2eiGQiFRbQQASzJMRGAuMnYOt5Wk7dpVQ-KM?width=408&height=172&cropmode=none) ⚠
 
 Start Without Debugging - *ctrl + f5*. create new file - *shift + f2*. Content below named middleware. 
 
@@ -118,7 +118,7 @@ Move static html to **www root** folder, similar to the way that Node and Ruby a
 This piece of middleware is called `app.UseDefaultFiles()`. This will add some standard default files so that when looking in a directory, and that includes the root folder of your project, that it's going to automatically look for an index.html. 
 Package `Microsoft.AspNetCore.StaticFiles` must be added.
 
-![](https://vbp4kg.by3302.livefilestore.com/y3mLO9GLQ-A5sRP0_dnJbYC69_euaHpfqZUQHJCfM2GyY1z3dXsEOD7D6sWuL_-PxWodBvILgLPIeTKUh3H6dSI4XgdovvQkxJj6xsWf4A72xbkkrK7uNrPzw1dwfk1yE_L0_FrExXGKc_QHu154iI9zmXLfcildPn1LLHO7dpDWCY?width=937&height=234&cropmode=none)
+![Static files and web essentials screenshot](https://vbp4kg.by3302.livefilestore.com/y3mLO9GLQ-A5sRP0_dnJbYC69_euaHpfqZUQHJCfM2GyY1z3dXsEOD7D6sWuL_-PxWodBvILgLPIeTKUh3H6dSI4XgdovvQkxJj6xsWf4A72xbkkrK7uNrPzw1dwfk1yE_L0_FrExXGKc_QHu154iI9zmXLfcildPn1LLHO7dpDWCY?width=937&height=234&cropmode=none) ⚠
 
 Web Essentials 2013 [10] has a Surround with tag... feature (**Alt+Shift+W**) that is more fluid than the built-in Surround with.
 
@@ -135,7 +135,7 @@ active list items under menu are bold `.menu li {list-style-type: none;} .menu l
 
 **the box model**
 
-![](https://g7xpqg.by3302.livefilestore.com/y3mOEee-RY1i694_H7jb3vb-ErefywwjesKLjsz7w5TpwIA5bMJDNhhNsYXqA3IryvNaJ40UT73Wl8fEkVukICowLAIpx2W8tvg8qjA_yYnxN2aAbsS5e-B2SLax8E-MOjSqQarjrafF9nfj2NYgkTskCdTYnQcPUE3fmwZIi92Jag?width=612&height=347&cropmode=none)
+![CSS box model diagram](https://g7xpqg.by3302.livefilestore.com/y3mOEee-RY1i694_H7jb3vb-ErefywwjesKLjsz7w5TpwIA5bMJDNhhNsYXqA3IryvNaJ40UT73Wl8fEkVukICowLAIpx2W8tvg8qjA_yYnxN2aAbsS5e-B2SLax8E-MOjSqQarjrafF9nfj2NYgkTskCdTYnQcPUE3fmwZIi92Jag?width=612&height=347&cropmode=none) ⚠
 
 create a sidebar and a wrapper div over main and footer
 ```css
@@ -199,7 +199,7 @@ Also add vendor specifics.
 
 ## MVC 6
 
-![](https://hiqm5q.by3302.livefilestore.com/y3m_AmgE7r9P2-ICcLcwrLCE1D9YaGaACjIAVAh81hdYMCPHoXqr1XMvGh__NdOIkPbRww5qAjVq9vZKpfDL_yTQ6UEulOJdo5e9463y0MCbZUhVxikCxttrcKlx_rPyrox5ghZvdS8op0g04d1NtDeyd00nO0d2r3oCzR9Ojeys4E?width=437&height=138&cropmode=none)
+![MVC 6 framework overview](https://hiqm5q.by3302.livefilestore.com/y3m_AmgE7r9P2-ICcLcwrLCE1D9YaGaACjIAVAh81hdYMCPHoXqr1XMvGh__NdOIkPbRww5qAjVq9vZKpfDL_yTQ6UEulOJdo5e9463y0MCbZUhVxikCxttrcKlx_rPyrox5ghZvdS8op0g04d1NtDeyd00nO0d2r3oCzR9Ojeys4E?width=437&height=138&cropmode=none) ⚠
 
 Add package `_Microsoft.AspNet.Mvc.ViewFeatures_` for resolving the `Controller` class. That's just a subset of **MVC**, so better edit `project.json` to add a dependency for `Microsoft.AspNetCore.Mvc`, then add a using namespace. `public IActionResult Index() {return View(); }`. Add a cshtml view for the index `@{ ViewBag.Title = ""}`. In Startup.cs, enable MVC6.
 
@@ -222,7 +222,7 @@ Add `app.UseDeveloperExceptionPage()` in Startup.Configure, diagnostics include 
 
 Use **tag helpers** to modify hrefs for main menu, from `<a href="/app/about">About</a>` to something like `<a asp-controller="App" asp-action="About">About</a>`, will generate hrefs programatically while rendering on the server. To enable tag helpers, add a dependency to `Microsoft.AspNet.Mvc.TagHelpers`. Wire it up in _layout.cshtml as `@inject IHostingEnvironment env` or add a _MVC View Imports Page_. `@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"` this will inject tag helpers into all the views needed. Also include common namespaces like `@using ProjectNS.Models`. 
 
-View models. ![](https://jxhreg.by3302.livefilestore.com/y3m_ly-zrpRO_F8uUtQD9BzvOYZi5bddu_KW1cAVLVh1a6-AkKS6s22JQhh3_yYycFDOuf8v0dBps4fjAhtHkz-9OreUSfBSco6IfXBV50-p6l2sAzk3FRBXFAIQBbwmeqZBaNxxjyYpEkaJpo8gX_046d1Wkb8BYOqgzhJdTiYGUM?width=483&height=285&cropmode=none)
+View models. ![View models screenshot](https://jxhreg.by3302.livefilestore.com/y3m_ly-zrpRO_F8uUtQD9BzvOYZi5bddu_KW1cAVLVh1a6-AkKS6s22JQhh3_yYycFDOuf8v0dBps4fjAhtHkz-9OreUSfBSco6IfXBV50-p6l2sAzk3FRBXFAIQBbwmeqZBaNxxjyYpEkaJpo8gX_046d1Wkb8BYOqgzhJdTiYGUM?width=483&height=285&cropmode=none) ⚠
 
 Validation attributes. `[Required]`, [`StringLength` [11]`(MinimumLength=10,MaximumLength=4096)]`. Also add `jquery-validation: "~1.15.0"` and `jquery-validation-unobtrusive: "~3.2.6"` to `bower.json`. Add `@RenderSection("scripts", false)` in the layout. In the contacts page define the scripts section, and use it like `<span asp-validation-for="Name" />` and `<span asp-validation-summary="ModelOnly"></span>`.
 ```htm
@@ -250,9 +250,9 @@ VS add Bootstrap dependency in `bower.json`. Link `bootstrap.min.css` stylesheet
 _Bootswatch_ is a list of templates that modify look and feel over Bootstrap. Another bower call, `"bootswatch": "3.3.5+2"`, Bootswatch v2 over the Bootstrap release. `<link rel="stylesheet" href="~/lib/bootswatch/spacelab/bootstrap.min.css" />`.
 Navbar: Move `menu` class to `nav` in the sidebar section. `<nav class="navbar navbar-inverse">` over `<button id="sidebarToggle">`. If bar contains a list, style as `<ul class="nav navbar-nav navbar-left">`. 
 
-Default font icon buttons. ![](https://wowstq.by3302.livefilestore.com/y3moDvLNKlEe1vihz_sPW3VS78Ex94xXfKa3BKPt1V1GtbQ82juUxmwZoiVwUWrWEv4JwvtcZy6s2iKR6aZiu02aPN8h1tDuJ1qW7RRarOUKYXa8xTF3GGJU18SEY870_ypftX2EP23cnkpvkRhFmRpQs9X3MFr-D8ZkCHXMOutnU4?width=428&height=317&cropmode=none)
+Default font icon buttons. ![Default font icon buttons screenshot](https://wowstq.by3302.livefilestore.com/y3moDvLNKlEe1vihz_sPW3VS78Ex94xXfKa3BKPt1V1GtbQ82juUxmwZoiVwUWrWEv4JwvtcZy6s2iKR6aZiu02aPN8h1tDuJ1qW7RRarOUKYXa8xTF3GGJU18SEY870_ypftX2EP23cnkpvkRhFmRpQs9X3MFr-D8ZkCHXMOutnU4?width=428&height=317&cropmode=none) ⚠
 
-Bootstrap grid system is a world of 12 columns. The label and input group is a form-group and decorate the active ctrl with form-control. ![](https://tcywqq.by3302.livefilestore.com/y3miWlkRKVk5Sq5zubKHWUHsHMnJJlTPD9_SDBno3T1hLj2B16MEuS800Rly16Yv-gzDIcLdH_nJygj0KaYRpDEntmh7KVs3DcvHNn5VU7PUy8lsnCnyXWCqMjbs-jsEYgOKRTosTce_Qtjy8Qoz7-JzQfaDcOjSx5azs1BH8-jrj0?width=660&height=122&cropmode=none)
+Bootstrap grid system is a world of 12 columns. The label and input group is a form-group and decorate the active ctrl with form-control. ![Bootstrap grid form-group layout](https://tcywqq.by3302.livefilestore.com/y3miWlkRKVk5Sq5zubKHWUHsHMnJJlTPD9_SDBno3T1hLj2B16MEuS800Rly16Yv-gzDIcLdH_nJygj0KaYRpDEntmh7KVs3DcvHNn5VU7PUy8lsnCnyXWCqMjbs-jsEYgOKRTosTce_Qtjy8Qoz7-JzQfaDcOjSx5azs1BH8-jrj0?width=660&height=122&cropmode=none) ⚠
 
 Bootstrap 4. alpha phase in sep 2015. modest change compared to 2 to 3 transition. Card replaces Panels and Thumbnails.
 
@@ -267,7 +267,7 @@ Bootstrap 4. alpha phase in sep 2015. modest change compared to 2 to 3 transitio
 _Models_ folder has dtos, in comparison with the _ViewModels_ folder. Code first, auto implemented property only classes. Use `ICollection` instead of read-only `IEnumerable` objects. Access to the db, derive from `EFCore.DbContext`. For entities, use `DbSet<TEntity>`. Add `services.AddDbContext<CustomContext>();` in `ConfigureServices`. Additional parameter for controller constructor is the db context. database provider must be configured, override `DbContext.OnConfiguring` by calling `base` and `optionsBuilder.UseSqlServer(_config["CS:CONN"]);`.
 
 
-![](https://6ebyoa.by3302.livefilestore.com/y3mY_5i27ejOmhEw0k_zx0tO0qeVwEtY2n_H-IeHtt3H-_Mbxi2JfVHG9AZ5Cl8f9I9QuwR9SypC-9crnv3HQ7z1uvRGFzy6WkJG6mz7ZFPu2uoLuzBU8JiG6ecUoxMs-FRrfnMQQVdVwVmlMScg4_o-GHaBrpBOk6Sslu2MCV0YMU?width=594&height=450&cropmode=none)
+![EF Core data model diagram](https://6ebyoa.by3302.livefilestore.com/y3mY_5i27ejOmhEw0k_zx0tO0qeVwEtY2n_H-IeHtt3H-_Mbxi2JfVHG9AZ5Cl8f9I9QuwR9SypC-9crnv3HQ7z1uvRGFzy6WkJG6mz7ZFPu2uoLuzBU8JiG6ecUoxMs-FRrfnMQQVdVwVmlMScg4_o-GHaBrpBOk6Sslu2MCV0YMU?width=594&height=450&cropmode=none) ⚠
 
 _alt+space_ opens up a console window. `dotnet ef migrations add InitialDatabase`. A new folder appears, `Migrations`. Or `dotnet database ef update` to create the schema. To add sample data, add a `ContextSeedData` db ctx wrapper, with `async Task Ensure() { if(!_ctx.Trips.Any())  {CrUd();}  }`. `services.AddTransient<ContextSeedData>();`, have to explictly call in Configure, `param.EnsureSeedData().Wait()`. 
 
@@ -324,7 +324,7 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 + include in a cshtml view `@section Scripts {<script src="~/lib/angular/angular.min.js"></script>}`
 + NG app attribute `data-ng-*` and `ng-*`, e.g. `<div class="row" ng-app="app-trips" />`
 + evaluate expressions `<div> {{ 1+2 }} </div>`
-+ code written in app-controller.js ![](https://hiqk5q.by3302.livefilestore.com/y4mdGJ1ZYH7959oBhZahhETy8vaYGgO6a3Iag_5otBbSB_K7HKnoF2t7XIx9A3SffDyU_ie-IK3jG-cLmCG8IuwYF5p0D7ftsczznGbIQ_JgbD8WKU6WSZYTXuq3AFiFYU23zhgpZ8SzlZk0YBhzyC9bvl33HgcFQZhi3HOdGgLVd4vWLtHcNUvQ6egPYe84VBbe0FVnW5PbRo_4jcxPmpvwA?width=487&height=378&cropmode=none) , use it like `<div ng-controller="tripsController as vm">{{vm.name}}</div>`.
++ code written in app-controller.js ![AngularJS controller code screenshot](https://hiqk5q.by3302.livefilestore.com/y4mdGJ1ZYH7959oBhZahhETy8vaYGgO6a3Iag_5otBbSB_K7HKnoF2t7XIx9A3SffDyU_ie-IK3jG-cLmCG8IuwYF5p0D7ftsczznGbIQ_JgbD8WKU6WSZYTXuq3AFiFYU23zhgpZ8SzlZk0YBhzyC9bvl33HgcFQZhi3HOdGgLVd4vWLtHcNUvQ6egPYe84VBbe0FVnW5PbRo_4jcxPmpvwA?width=487&height=378&cropmode=none) ⚠ , use it like `<div ng-controller="tripsController as vm">{{vm.name}}</div>`.
 + table ->` tr ng-repeat="t in vm.trips"` -> `td {{t.created | date:'yyyy-MM-dd'}}`
 
 [<<](../netcore.md) | [home](../../README.md)

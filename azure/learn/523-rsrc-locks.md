@@ -1,4 +1,4 @@
-# Prevent accidental changes by using resource locks
+# Prevent Accidental Changes by Using Resource Locks
 
 > Microsoft Docs: 3 Prevent Changes Resource Locks [1]
 
@@ -8,7 +8,7 @@ Even with Azure role-based access control (Azure RBAC) policies in place, there'
 
 For example, at Tailwind Traders, an IT administrator was performing routine cleanup of unused resources in Azure. The admin accidentally deleted resources that appeared to be unused. But these resources were critical to an application that's used for seasonal promotions. How can resource locks help prevent this kind of incident from happening in the future?
 
-## How do I manage resource locks?
+## How Do I Manage Resource Locks?
 
 You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, or from an Azure Resource Manager template.
 
@@ -16,9 +16,9 @@ To view, add, or delete locks in the Azure portal, go to the Settings section of
 
 Here's an example that shows how to add a resource lock from the Azure portal. You'll apply a similar resource lock in the next part.
 
-![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/7-portal-add-lock-ebc3d24c.png)
+![Azure portal add resource lock](https://docs.microsoft.com/en-us/learn/azure-fundamentals/build-cloud-governance-strategy-azure/media/7-portal-add-lock-ebc3d24c.png)
 
-## What levels of locking are available?
+## What Levels of Locking Are Available?
 
 You can apply locks to a subscription, a resource group, or an individual resource.
 You can set the lock level to **CanNotDelete** or **ReadOnly**.
@@ -27,7 +27,7 @@ You can set the lock level to **CanNotDelete** or **ReadOnly**.
 - ReadOnly means authorized people can read a resource, but they can't delete or change the resource.
 Applying this lock is like restricting all authorized users to the permissions granted by the Reader role in Azure RBAC.
 
-## How do I delete or change a locked resource?
+## How Do I Delete or Change a Locked Resource?
 
 Although locking helps prevent accidental changes, you can still make changes by following a two-step process.
 
@@ -38,7 +38,7 @@ This additional step allows the action to be taken, but it helps protect your ad
 Resource locks apply regardless of RBAC permissions.
 Even if you're an owner of the resource, you must still remove the lock before you can perform the blocked activity.
 
-## Combine resource locks with Azure Blueprints
+## Combine Resource Locks with Azure Blueprints
 
 What if a cloud administrator accidentally deletes a resource lock?
 If the resource lock is removed, its associated resources can be changed or deleted.

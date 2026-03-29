@@ -156,7 +156,7 @@ To modify a locked resource, you must first remove the lock. After you remove th
 
 To make the protection process more robust, you can combine resource locks with Azure Blueprints. Azure Blueprints enables you to define the set of standard Azure resources that your organization requires. For example, you can define a blueprint that specifies that a certain resource lock must exist. Azure Blueprints can automatically replace the resource lock if that lock is removed.
 
-### Exercise: Protect a Storage Account from Accidental Deletion
+### Exercise: Protect a Storage Account From Accidental Deletion
 
 This exercise demonstrates resource locks by:
 

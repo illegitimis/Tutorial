@@ -1,4 +1,4 @@
-# Graph databases
+# Graph Databases
 
 - cayley [1] An open-source graph database
 - List of Graph Database Management Systems [2]

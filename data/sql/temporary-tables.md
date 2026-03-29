@@ -18,7 +18,7 @@ They also tend to cause fewer problems to a hard-working OLTP system.
 Just occasionally, you may need to fine-tune them to get good performance from them in joins.
 However, if you are doing more complex processing on temporary data or likely to use more than reasonably small amounts of data in them, then  local temporary tables are likely to be  a better choice.
 
-## Local temporary tables
+## Local Temporary Tables
 
 _Prefixed_ with a **pound** sign (#). This tells SQL Server that this table is a local temporary table.  
 This table is _only visible to this session_ of SQL Server. 
@@ -74,7 +74,7 @@ If the nested procedure references a temporary table and two temporary tables wi
 
 As a curiosity, you can also create Local Temporary Stored Procedures with the same scope and lifetime as a local temporary table. You can’t do the same for other routines.
 
-## Global temporary tables
+## Global Temporary Tables
 
 You can also create global temporary tables. 
 These are named with **two pound signs**. 
@@ -122,7 +122,7 @@ Also, make sure that the temporary table is created in the stored procedure or t
 Don’t create a temporary table within a control-of-flow statement such as IF... ELSE or WHILE.  
 You are allowed to create Global Temporary Stored Procedures, but I’ve yet to find a use for them. Global temporary functions aren’t permitted.
 
-## Table Variables 
+## Table Variables
 
 If you are using SQL Server 2000 or higher, you can take advantage of the new TABLE variable type.  
 These are similar to temporary tables except with more flexibility and _they always stay in memory_.
@@ -345,7 +345,7 @@ ORDER BY t.create_date
 ```
 **You cannot use user-defined datatypes in temporary tables unless the datatypes exist in TempDB; that is, unless the datatypes have been explicitly created.**
 
-### User Tables in TempDB 
+### User Tables in TempDB
 
 In normal use, you will create temporary tables, or table variables without thinking too deeply about it. 
 However, it is interesting, though, that TempDB is there for any sort of sandbox activity. 

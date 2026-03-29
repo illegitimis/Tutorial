@@ -1,4 +1,4 @@
-# Organize your Azure resources by using tags
+# Organize Your Azure Resources by Using Tags
 
 > Microsoft Docs: 5 Organize Resource Tags [1]
 
@@ -15,7 +15,7 @@ One way to organize related resources is to place them in their own subscription
 - **Governance and regulatory compliance** Tags enable you to identify resources that align with governance or regulatory compliance requirements, such as ISO 27001. Tags can also be part of your standards enforcement efforts. For example, you might require that all resources be tagged with an owner or department name.
 - **Workload optimization and automation** Tags can help you visualize all of the resources that participate in complex deployments. For example, you might tag a resource with its associated workload or application name and use software such as Azure DevOps to perform automated tasks on those resources.
 
-## How do I manage resource tags?
+## How Do I Manage Resource Tags?
 
 You can add, modify, or delete resource tags through PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
 

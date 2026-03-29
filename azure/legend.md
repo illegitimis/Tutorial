@@ -1,4 +1,4 @@
-# legend
+# Legend
 
 > glossary
 
@@ -55,7 +55,7 @@ atom-record-sequence format
 
 application security group
 
-## Availability zones
+## Availability Zones
 
 - physically separate datacenters within an Azure region.
 - Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
@@ -77,7 +77,7 @@ Enabling quick, repeatable creation of governed environments * [3]
 - is the up-front spending of money on physical infrastructure, and then deducting that up-front expense over time.
 - The up-front cost from CapEx has a value that reduces over time.
 
-## CCM 
+## CCM
 
 Cloud Controls Matrix
 
@@ -125,7 +125,7 @@ Cloud Solution Provider
 
 Cluster Shared Volumes
 
-##  DDoS Protection
+## DDoS Protection
 
 protect your Azure resources from distributed denial of service attacks.
 
@@ -133,7 +133,7 @@ protect your Azure resources from distributed denial of service attacks.
 
  [Azure Dedicated Host]() provides _dedicated_ physical servers to host your Azure VMs for Windows and Linux. Default hardware shared, workloads isolated. A dedicated host is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
 
- ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
+ ![Azure Dedicated Host physical server diagram](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
 
 You're charged per dedicated host, independent of how many VMs you deploy to it * [5].
 
@@ -167,7 +167,7 @@ Data Protection Addendum
 
 enterprise application integration
 
-## fabric controller
+## Fabric Controller
 
 - data center racks of servers
 - each server has a hypervisor to run multiple VMs
@@ -179,7 +179,7 @@ enterprise application integration
 
 Federal Risk and Authorization Management Program
 
-## Firewall 
+## Firewall
 
 control what traffic is allowed on the network.
 
@@ -187,7 +187,7 @@ control what traffic is allowed on the network.
 
 fully qualified domain names
 
-## front door
+## Front Door
 
 Fast, reliable, and more secure cloud content delivery service with intelligent threat protection.
 
@@ -199,7 +199,7 @@ File Replication Service
 
 docs [6]
 
-## functions
+## Functions
 
 Microsoft Docs: Azure Functions [7]
 
@@ -223,7 +223,7 @@ Health Information Trust Alliance
 
 hardware security module
 
-## hypervisor
+## Hypervisor
 
 - abstraction layer OS talks to hardware
 - emulates all functions of a computer and its CPU in a virtual machine
@@ -270,7 +270,7 @@ Language Understanding
 
 micro controller unit
 
-## Monitor Workbooks 
+## Monitor Workbooks
 
 Azure Monitor Workbooks [8] automates responses to threats.
 
@@ -341,11 +341,11 @@ root cause analysis
 
 remote desktop virtualization host
 
-## redundancy
+## Redundancy
 
 duplicate components across several regions => ensure high availability
 
-## Resource group
+## Resource Group
 
 - A container that holds related resources for an Azure solution.
 - The resource group includes resources that you want to manage as a group.
@@ -378,7 +378,7 @@ Shared Access Signature
 
 monitoring service [10] that provides visibility of your security posture across all of your services, both on Azure and on-premises.
 
-## Secure score
+## Secure Score
 
 measurement of an organization's security posture * [11]
 
@@ -387,7 +387,7 @@ measurement of an organization's security posture * [11]
 Azure Sentinel [12] is Microsoft's cloud-based SIEM system. \
 It uses intelligent security analytics and threat analysis.
 
-## Serverless computing
+## Serverless Computing
 
 - **the abstraction of servers, infrastructure, and operating systems.**
 - Azure takes care of managing the server infrastructure and the allocation and deallocation of resources based on demand.
@@ -443,11 +443,11 @@ virtual hard disk
 
 Microsoft Docs: Virtual Desktop [14]
 
-## Virtual machines
+## Virtual Machines
 
 Microsoft Docs: Virtual Machines [15]
 
-## Virtual machine scale sets
+## Virtual Machine Scale Sets
 
 let you deploy and manage a set of **identical** virtual machines.
 
@@ -467,7 +467,7 @@ let you deploy and manage a set of **identical** virtual machines.
 
 web application firewall
 
-## zone
+## Zone
 
 geographical grouping of Azure regions for billing purposes
 

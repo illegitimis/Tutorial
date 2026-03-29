@@ -32,7 +32,7 @@ Invoking a delegate with a single target method works as though your code had ca
 
 It’s only necessary in cases where the compiler cannot infer the delegate type.
 
-### Implicit delegate construction
+### Implicit Delegate Construction
 
 ```cs
 // When code refers to a method by name like this, the name is technically called a method group, because multiple overloads may exist for a single name.
@@ -41,7 +41,7 @@ Predicate<int> p = IsGreaterThanZero;
 Predicate<int> p2 = Comparisons.IsLessThanZero;
 ```
 
-### Implicit instance delegate
+### Implicit Instance Delegate
 
 Refer to an instance method by name from a context in which that  method is in scope.
 
@@ -53,7 +53,7 @@ Refer to an instance method by name from a context in which that  method is in s
     }
 ```
 
-### Explicit instance delegate
+### Explicit Instance Delegate
 
 Can take any expression that evaluates to an object reference, and then just append .MethodName.
 
@@ -73,11 +73,11 @@ There are also overloads that accept the reflection API’s _MethodInfo_ object 
 
 ## Conversion
 
-### Delegate conversion and contra variance
+### Delegate Conversion and Contra Variance
 
 The type parameters for the function’s parameters are all **contravariant**. gist [2]
 
-### Illegal delegate conversion
+### Illegal Delegate Conversion
 
 The lack of type compatibility between ‘compatible’ delegate types may seem odd, but structurally identical delegate types don’t necessarily have the same semantics.
 
@@ -86,7 +86,7 @@ The lack of type compatibility between ‘compatible’ delegate types may seem 
     Func<string, bool> f = pred; // Will fail with compiler error
 ```
 
-### anonymous function
+### Anonymous Function
 
 As an alternative, use an inline method with a non-void return type.
 An anonymous method is an inline method defined with the `delegate` keyword.
@@ -95,7 +95,7 @@ An anonymous method is an inline method defined with the `delegate` keyword.
     public static int GetIndexOfFirstNonEmptyBin(int[] bins) { return Array.FindIndex( bins, delegate (int value) { return value > 0; } ); }
 ```
 
-### lambda expression
+### Lambda Expression
 
 other form of inline method is called a lambda expression
 

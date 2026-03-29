@@ -1,4 +1,4 @@
-# What are multifactor authentication and Conditional Access?
+# What Are Multifactor Authentication and Conditional Access?
 
 > Microsoft Docs: 4 What Are Mfa Conditional Access [1]
 
@@ -6,7 +6,7 @@ Tailwind Traders allows delivery drivers to use their own mobile devices to acce
 
 In this part, you'll learn about two processes that enable secure authentication: Azure AD Multi-Factor Authentication and Conditional Access. Let's start with a brief look at what multifactor authentication is in general.
 
-## What's multifactor authentication?
+## What's Multifactor Authentication?
 
 Multifactor authentication is a process where a user is _prompted during the sign-in process for an additional form of identification_. Examples include a code on their mobile phone or a fingerprint scan.
 
@@ -65,7 +65,7 @@ During sign-in, Conditional Access collects signals from the user, makes decisio
 
 Here's a diagram that illustrates this flow:
 
-![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/4-conditional-access-signal-decision-enforcement.png)
+![Conditional Access signal decision flow](https://docs.microsoft.com/en-us/learn/azure-fundamentals/secure-access-azure-identity-services/media/4-conditional-access-signal-decision-enforcement.png)
 
 Here, the signal might be
 - the user's location,
@@ -78,7 +78,7 @@ If the user is signing in from an unusual location or a location that's marked a
 Enforcement is the _action that carries out the decision_.
 For example, the action is to allow access or require the user to provide a second form of authentication.
 
-## When can I use Conditional Access?
+## When Can I Use Conditional Access?
 
 Conditional Access is useful when you need to:
 
@@ -102,7 +102,7 @@ Conditional Access comes with a `What If` _tool_, which helps you plan and troub
 You can use this tool to model your proposed Conditional Access policies across recent sign-in attempts from your users to see what the impact would have been if those policies had been enabled.
 The What If tool enables you to test your proposed Conditional Access policies before you implement them.
 
-## Where is Conditional Access available?
+## Where Is Conditional Access Available?
 
 To use Conditional Access, **you need an Azure AD Premium P1 or P2 license**.
 If you have a **Microsoft 365 Business Premium** license, you also have access to Conditional Access features.

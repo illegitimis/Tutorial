@@ -1,6 +1,6 @@
-# GIT
+# Git
 
-## git vs svn
+## Git vs Svn
 
 git | svn
 --- | ---
@@ -14,7 +14,7 @@ pull | update
 + Saving changes [2], add, commit, stash.
 + Sync [3] with fetch, remote, push, pull
 
-## Git command line
+## Git Command Line
 
 1. The common Git guides are:
 

@@ -13,7 +13,7 @@ In building out its plan, Tailwind Traders learns that:
 
 With these ideas in place, the software development and IT administrator teams can begin to replace their existing authentication systems with ones that use multiple factors and allow access to multiple applications.
 
-## Learn more
+## Learn More
 
 Here are more resources to help you go further:
 
@@ -28,7 +28,7 @@ Here are more resources to help you go further:
 - Microsoft identity platform and OpenID Connect protocol docs [10]
 - Single Sign-On SAML protocol docs [11]
 
-## misc sso
+## Misc SSO
 
 - directory sync: only usernames from on prem ad to aad
 - password hash sync: securely sync hashes of passwords to the cloud

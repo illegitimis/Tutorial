@@ -1,4 +1,4 @@
-# middleware
+# Middleware
 
 - Middleware samples from aspnet docs Jan18 [1], old [2]
 - Writing Custom Middleware in ASP.NET Core 1.0 [3]

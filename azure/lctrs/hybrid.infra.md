@@ -1,6 +1,6 @@
 # Implementing Hybrid Infrastructure
 
-## resources
+## Resources
 
 - Azure Stack [1] Build and run hybrid apps across data centres, edge locations, remote offices and the cloud
 - Hybrid Identity [2]
@@ -21,22 +21,22 @@
 - Remote access to on-premises applications through Azure AD Application Proxy [16]
 - Azure App Service Hybrid Connections [17]
 
-## pics
+## Pics
 
-![](./pics/l02/h01.png)
-![](./pics/l02/h02.png)
-![](./pics/l02/h03.png)
-![](./pics/l02/h04.png)
-![](./pics/l02/h05.png)
-![](./pics/l02/h06.png)
-![](./pics/l02/h07.png)
-![](./pics/l02/h08.png)
-![](./pics/l02/h09.png)
-![](./pics/l02/h10.png)
-![](./pics/l02/h11.png)
-![](./pics/l02/h12.png)
-![](./pics/l02/h13.png)
-![](./pics/l02/h14.png)
+![Hybrid infrastructure slide 1](./pics/l02/h01.png)
+![Hybrid infrastructure slide 2](./pics/l02/h02.png)
+![Hybrid infrastructure slide 3](./pics/l02/h03.png)
+![Hybrid infrastructure slide 4](./pics/l02/h04.png)
+![Hybrid infrastructure slide 5](./pics/l02/h05.png)
+![Hybrid infrastructure slide 6](./pics/l02/h06.png)
+![Hybrid infrastructure slide 7](./pics/l02/h07.png)
+![Hybrid infrastructure slide 8](./pics/l02/h08.png)
+![Hybrid infrastructure slide 9](./pics/l02/h09.png)
+![Hybrid infrastructure slide 10](./pics/l02/h10.png)
+![Hybrid infrastructure slide 11](./pics/l02/h11.png)
+![Hybrid infrastructure slide 12](./pics/l02/h12.png)
+![Hybrid infrastructure slide 13](./pics/l02/h13.png)
+![Hybrid infrastructure slide 14](./pics/l02/h14.png)
 
 [<< home](../az.md) | [< back](../lectures.md)
 

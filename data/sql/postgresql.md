@@ -1,4 +1,4 @@
-# Postgre
+# PostgreSQL
 
 - `Npgsql` is the .NET data provider for PostgreSQL. releases [1], home [2]
 - `Npgsql.EntityFrameworkCore.PostgreSQL` home [3]

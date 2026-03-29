@@ -1,4 +1,4 @@
-## Compare authentication and authorization
+## Compare Authentication and Authorization
 
 Recall that Tailwind Traders must ensure that only employees can sign in and access its business applications.
 
@@ -11,15 +11,15 @@ They occur sequentially in the identity and access process.
 
 Let's take a brief look at each.
 
-## What is authentication?
+## What Is Authentication?
 
 Authentication is the process of _establishing the identity_ of a person or service that wants to access a resource. It involves the act of _challenging a party for legitimate credentials_ and provides the basis for creating a security principal for identity and access control. It establishes whether the user is _who they say they are_.
 
-## What is authorization?
+## What Is Authorization?
 
 Authentication establishes the user's identity, but authorization is the process of establishing what _level of access_ an authenticated person or service has. It specifies what data they're allowed to access and what they can do with it.
 
-## How are authentication and authorization related?
+## How Are Authentication and Authorization Related?
 
 Here's a diagram that shows the relationship between authentication and authorization:
 

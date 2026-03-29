@@ -1,6 +1,6 @@
-# Mongo schema
+# Mongo Schema
 
-## state of the art
+## State of the Art
 
 + SQL to MongoDB Mapping Chart [1]
 + MSSQL To MongoDB Tool [2] (SQL2Mongo)is a tool to migrate all schema & data from Microsoft SQL Server to MongoDB. It is easily to set Primary Key column and tables which you want to migrate. 
@@ -13,7 +13,7 @@ _Codeplex shutting down_, download [3], or 1drv [4], or source [5].
 + Firehose [12] An import and work generator for MongoDB. 
 + mongomtimport [13] Multithreaded Java file loader for mongoDB, fork [14]
 
-## MongoDB relationships: embed or reference? [15]
+## MongoDB Relationships: Embed or Reference? [15]
 
 This is more an art than a science. 
 The Mongo Documentation on Schemas is a good reference, but here are some things to consider:
@@ -43,7 +43,7 @@ The Mongo Documentation on Schemas is a good reference, but here are some things
     * When you design your schema consider how you will keep your data consistent. Generally, 
     * the more that you keep in a document the better.
 
-## linking vs embedding
+## Linking vs Embedding
 
 Both solutions(_separate collections_ vs. _embedded documents_) have their strengths and weaknesses. Learn to use both [16].
 - Separate collections offer the greatest querying flexibility [17]
@@ -56,7 +56,7 @@ Embedded documents are good when you want the entire document, the document with
 - As a general rule, if you have a lot of "comments" or if they are large, a separate collection might be best. 
 Smaller and/or fewer documents tend to be a natural fit for embedding.
 
-## Embedded / nested / denormalized
+## Embedded / Nested / Denormalized
 
 1. better performance for read operations [20], as well as the ability to request and retrieve related data in a single database operation
 2. update related data in a single atomic write operation
@@ -95,7 +95,7 @@ Smaller and/or fewer documents tend to be a natural fit for embedding.
  }
 ```
 
-## Normalized / linked / referenced
+## Normalized / Linked / Referenced
 
 1. when embedding would result in **duplication** of data but would not provide sufficient _read performance advantages to outweigh the implications of the duplication_.
 2. to represent more complex many-to-many relationships

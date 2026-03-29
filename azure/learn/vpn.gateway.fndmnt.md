@@ -1,10 +1,10 @@
-# Azure VPN Gateway fundamentals
+# Azure VPN Gateway Fundamentals
 
 VPNs use an *encrypted tunnel* within another network. They're typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
 
 For our Tailwind Traders scenario, VPNs can enable branch offices to share sensitive information between locations. For example, let's say that your offices on the East Coast region of North America need to access your company's private customer data, which is stored on servers that are physically located in a West Coast region. A VPN that connects your East Coast offices to your West Coast servers allows your company to securely access your private customer data.
 
-## VPN gateways
+## VPN Gateways
 
 A VPN gateway is a type of *virtual network gateway.* Azure VPN Gateway instances are deployed in Azure Virtual Network instances and enable the following connectivity:
 
@@ -45,7 +45,7 @@ Key features of route-based VPN gateways in Azure include:
 - Uses any-to-any (wildcard) traffic selectors
 - Can use *dynamic routing protocols,* where routing/forwarding tables direct traffic to different IPSec tunnels In this case, the source and destination networks aren't statically defined as they are in policy-based VPNs or even in route-based VPNs with static routing. Instead, data packets are encrypted based on network routing tables that are created dynamically using routing protocols such as `Border Gateway Protocol` (BGP).
 
-## VPN gateway sizes
+## VPN Gateway Sizes
 
 The capabilities of your VPN gateway are determined by the SKU or size that you deploy. This table shows the main capabilities of each available SKU.
 
@@ -59,11 +59,11 @@ VpnGw3/Az|Maximum: 30|1.25 Gbps|Supported
 > a Basic VPN gateway should only be used for Dev/Test workloads. \
 > In addition, it's unsupported to migrate from Basic to the VpnGW1/2/3/Az SKUs at a later time without having to remove the gateway and redeploy.
 
-## Deploy VPN gateways
+## Deploy VPN Gateways
 
 Before you can deploy a VPN gateway, you'll need some Azure and on-premises resources.
 
-### Required Azure resources
+### Required Azure Resources
 
 You'll need these Azure resources before you can deploy an operational VPN gateway:
 
@@ -81,14 +81,14 @@ The following diagram shows this combination of resources and their relationship
 
 ![Visualization of resource requirements for a VPN gateway.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/resource-requirements-for-vpn-gateway-2518703e.png)
 
-### Required on-premises resources
+### Required On-premises Resources
 
 To connect your datacenter to a VPN gateway, you'll need these on-premises resources:
 
 - A **VPN device** that supports policy-based or route-based VPN gateways
 - A **public-facing** (internet-routable) IPv4 address
 
-## High-availability scenarios
+## High-availability Scenarios
 
 There are several ways to ensure you have a fault-tolerant configuration.
 
@@ -104,11 +104,11 @@ With the introduction of support for the BGP routing protocol, you can also depl
 
 ![Visualization of active active virtual network gateway.](https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-networking-fundamentals/media/dual-redundancy-d76100c9.png)
 
-### ExpressRoute failover
+### ExpressRoute Failover
 
 Another high-availability option is to configure a VPN gateway as a secure failover path for ExpressRoute connections. ExpressRoute circuits have resiliency built in. But they aren't immune to physical problems that affect the cables delivering connectivity or outages that affect the complete ExpressRoute location. In high-availability scenarios, where there's risk associated with an outage of an ExpressRoute circuit, you can also provision a VPN gateway that uses the internet as an alternative method of connectivity. In this way, you can ensure there's always a connection to the virtual networks.
 
-### Zone-redundant gateways
+### Zone-redundant Gateways
 
 In regions that support availability zones, VPN gateways and ExpressRoute gateways can be deployed in a zone-redundant configuration. This configuration brings resiliency, scalability, and higher availability to virtual network gateways. *Deploying gateways in Azure availability zones physically and logically separates gateways within a region* while protecting your on-premises network connectivity to Azure from zone-level failures. These gateways require different gateway SKUs and use Standard public IP addresses instead of Basic public IP addresses.
 

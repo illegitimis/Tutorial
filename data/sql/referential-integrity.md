@@ -1,8 +1,8 @@
 # Referential Integrity
 
-## indices and primary keys
+## Indices and Primary Keys
 
-### Difference between an Index and a Primary Key
+### Difference Between an Index and a Primary Key
 
 Indexes can be used for fast retrieval based on other columns. A primary key must be unique and cannot be nullable.
 A primary key is always indexed, meaning that a primary key is also always an index key.
@@ -25,7 +25,7 @@ An index on the other hand doesn’t define uniqueness.
 An index is used to more quickly find rows in the table based on the values which are part of the index.
 When you create an index within the database, you are creating a physical object which is being saved to disk.
 
-### Difference between Key, Primary Key, Unique Key and Index in MySQL
+### Difference Between Key, Primary Key, Unique Key and Index in MySQL
 
 [Primary key does not allow null value but unique key allows null value](https://stackoverflow.com/questions/3844899/difference-between-key-primary-key-unique-key-and-index-in-mysql).
 We can declare only one primary key in a table but a table can have multiple unique key(column assign).
@@ -37,7 +37,7 @@ A primary key is a column, or a combination of columns, that can uniquely identi
 It is a special case of unique key.
 Also note that columns defined as primary keys or unique keys are automatically indexed in MySQL.
 
-## foreign keys
+## Foreign Keys
 
 You **should** always enforce referential integrity by using [_normal_ foreign keys][1].
 We use referential integrity to validate data. But does that really help or hinder performance?
@@ -85,7 +85,7 @@ They support cascading referential actions (such as ON DELETE CASCADE). | You ha
 The DBMS knows the data is related, [allowing it to find a better query][7] plan in some cases. | The DBMS doesn't know the data is related, which may produce sub-optimal query plan. 
 If you are using an ORM tool, it can automatically generate references between objects. | You may need to do more manual work in your ORMt ool of choice.
 
-## inner platform effect
+## Inner Platform Effect
 
 In the database world, developers are sometimes tempted to [bypass the RDBMS](http://en.wikipedia.org/wiki/Inner-platform_effect), 
 for example by storing everything in one big table with three columns labelled entity ID, key, and value. 

@@ -32,7 +32,7 @@ OAuth 2.0 _is_ fundamentally ~an authorisation protocol~, _not an authentication
 + OpenID Connect Implicit Client Implementer's Guide 1.0 - draft 20 [7]
 + Safe storage of app secrets during development [8]
 
-## Sequence diagram
+## Sequence Diagram
 
 ![open id sequence](https://s6rk0g-ch3302.files.1drv.com/y4mNlGp93qrvJ_Zsh0EZb_q8a5oi5KVzi76opEWIHT_N7coyJXfQCinzEerB7XgEkd7nvesdWUdMkIm95CNm25mULv3en1CVceZ-24JfV-QeJJflUtN6z76Mu5iM_-h4fOTNGhdyabt9jhndBx9CfnN7XXGDC0eztDBZAIRY8GbjX_kUfIba5FOxnQ5ogDEaf4uGxjjKxv5GNWmHdZuSjymEw?width=811&height=801&cropmode=none)
 ![sequence diagram](https://1drv.ms/i/s!As0cxZAk26SzjMAaEByL2Qz0DLP5LA)
