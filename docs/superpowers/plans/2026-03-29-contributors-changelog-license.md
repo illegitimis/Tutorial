@@ -28,148 +28,42 @@ Expected output: File with pipe-delimited fields (hash|ISO date|subject|body) fo
 
 - [ ] **Step 2: Process commits and generate CHANGELOG content**
 
-Using bash to parse commits, extract YYMMDD dates, and clean messages. For each commit:
+Using Python to parse `git_commits.txt`, extract YYMMDD dates, clean messages, and produce a compact table. For each commit:
 - Extract commit hash (first 7 chars)
 - Extract YYMMDD from ISO date (e.g., 2026-03-29 → 260329)
+- Exclude master merge commits (subject starts with `Merge branch 'master'` or `Merge pull request`)
+- Order descending (newest first)
 - If subject ≤ 52 chars: use as-is
 - If subject > 52 chars: truncate to 52 chars intelligently (stop at space boundary)
-- If subject is generic (e.g., "Update X.md", "Fix typo", "Add changes"), inspect diff to infer meaningful summary
 
-Create CHANGELOG.md:
+Create CHANGELOG.md as a compact Markdown table:
 ```markdown
 # Changelog
 
 All notable changes to this project are documented here.
 
-## 260329 — bc9b316
-
-Add emoji/unicode cleanup convention to design spec
-
-## 260329 — 9e2043b
-
-Add repository reorganization design spec
-
-## 260329 — 09a1737
-
-claude init
-
-## 260328 — d1e0225
-
-Feature/xunit 250201 (#24)
-
-## 260328 — 43293a2
-
-Update GraphQL.md
-
-## 260328 — fd9a528
-
-Update GraphQL.md
-
-## 260328 — d63a4a2
-
-Update _config.yml
-
-## 260328 — e943a19
-
-Update _config.yml
-
-## 260328 — de42797
-
-Update AngularFundamentals.md
-
-## 260328 — caa244d
-
-Update AngularFundamentals.md
-
-## 260328 — e037fb1
-
-Update _config.yml
-
-## 260328 — 1cb87af
-
-Update _config.yml
-
-## 260328 — 99af465
-
-xunit dead links, md issues (#23)
-
-## 260328 — be225be
-
-md issues az lrn
-
-## 260317 — 33499bf
-
-graph dbs: neo4j & tiger (#20)
-
-## 260317 — e5bf7ab
-
-Remote Theme just-the-docs is not a valid...
-
-## 260317 — 0ae6641
-
-remote_theme: just-the-docs
-
-## 260317 — 1d97992
-
-Tryout just-the-docs theme
-
-## 260317 — 74d1b71
-
-lp6 kc ol
-
-## 260317 — bfb9096
-
-lp5 kc ol
-
-## 260317 — b030bee
-
-lp4 kc
-
-## 260317 — 5e81ad4
-
-lp3 (Describe core solutions and...
-
-## 260317 — 4b5e5bc
-
-Set theme jekyll-theme-midnight
-
-## 260317 — ca043e4
-
-LP2 Describe core Azure concepts...
-
-## 260317 — b6cf601
-
-LP1 Describe core Azure concepts...
-
-## 260317 — 8ac8770
-
-Knowledge check formatting ini
-
-## 260317 — 7e0d5c8
-
-Microsoft Azure Fundamentals 04:...
-
-## 260317 — 2048d9d
-
-Microsoft Azure Fundamentals 03:...
-
-## 260317 — 322dbed
-
-Microsoft Azure Fundamentals 02:...
-
-## 260317 — b3d636e
-
-learning path 01 Describe core...
+| Date   | Commit  | Description |
+|--------|---------|-------------|
+| 260329 | 1c46e08 | chore: migrate javascript, architecture, |
+| 260329 | 20f4cea | chore: migrate C#, runtime, ASP.NET, ORM, and |
+| 260329 | e97266a | docs: add changelog from git history |
+| 260329 | 858a860 | chore: add markdownlint config and target dir |
+| 260329 | 5baf9be | Add repository reorganization implementation plan |
+| 260329 | bc9b316 | Add emoji/unicode cleanup convention to spec |
+| 260329 | 9e2043b | Add repository reorganization design spec |
+| 260329 | 09a1737 | claude init |
+| 250323 | d1e0225 | Feature/xunit 250201 (#24) |
+| 250323 | 43293a2 | Update GraphQL.md |
 ```
 
-Note: For the initial CHANGELOG, use the commit messages from `git log --oneline` (first 50+ recent), truncating those over 52 chars and inferring descriptions for vague messages (e.g., "Update X.md" → identify what was actually changed in the diff).
+Note: Source data is in `git_commits.txt` (format: `hash|ISO date|subject|body`). The processed version already in CHANGELOG.md can be used directly as input if reformatting only.
 
 - [ ] **Step 3: Verify CHANGELOG.md format**
 
 Check:
 - All commits are in reverse chronological order (newest first)
-- Each entry follows format: `## YYMMDD — hash`
-- Messages are ≤ 52 chars per line
+- Table has three columns: `Date`, `Commit`, `Description`
+- Master merge commits are excluded
 - No placeholders or incomplete entries
 
 - [ ] **Step 4: Commit CHANGELOG.md**
@@ -414,6 +308,33 @@ Expected: Clean working tree (no uncommitted changes).
 
 ---
 
+### Task 6: Write branch implementation report
+
+**Files:**
+- Create: `docs/superpowers/reports/260330-feature-contributors-changelog-license.md`
+
+**Steps:**
+
+- [ ] **Step 1: Gather final stats**
+
+```bash
+git log --oneline master..HEAD
+git diff master --stat | tail -1
+```
+
+- [ ] **Step 2: Write report as a narrative implementation summary**
+
+This is not a filled-in template — it is the actual final-summary output that Claude produces after completing all tasks. Follow the structure of `docs/superpowers/reports/260329-feature-repo-reorganization.md` (branch, date, commit count header; Summary section; Stats section; key decisions or notable details; Commit History). Write it in the same voice as the existing report: factual, concise, past tense. Populate every field with real values from the completed work.
+
+- [ ] **Step 3: Commit report**
+
+```bash
+git add docs/superpowers/reports/260330-feature-contributors-changelog-license.md
+git commit -m "docs: add branch implementation report"
+```
+
+---
+
 ## Self-Review Checklist
 
 ✅ **Spec coverage:**
@@ -421,6 +342,7 @@ Expected: Clean working tree (no uncommitted changes).
 - CONTRIBUTORS.md with commit counts ✓
 - CONTRIBUTING.md with simple guidelines ✓
 - CC BY 4.0 LICENSE ✓
+- Branch implementation report ✓
 
 ✅ **Placeholder scan:** No TBD, TODO, or incomplete sections.
 
