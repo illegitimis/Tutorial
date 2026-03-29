@@ -12,7 +12,6 @@ _2010_. _Jimmy Bogard._
 + [the-double-dispatch-pattern](./domain-strength.md#the-double-dispatch-pattern)
 + [no-silver-domain-modeling-bullets](./domain-strength.md#no-silver-domain-modeling-bullets)
 
-
 ## Article Series
 
 + Services in _Domain-Driven Design_ [1]
@@ -31,6 +30,7 @@ _2010_. _Jimmy Bogard._
 Services are **first-class citizens** of the domain model. When concepts of the model would _distort_ any `Entity` or `Value Object`, a `Service` is _appropriate_.
 
 A good Service has these characteristics:
+
 + The operation relates to a domain concept that is _not a natural part_ of an Entity or Value Object
 + The interface is defined _in terms of_ other elements in the domain model
 + The operation is **stateless**
@@ -54,8 +54,11 @@ I used to make the mistake of dismissing Services as a necessary evil, I’ve st
 ***
 
 ## Primer
+
 ### Code Smells
+
 A lot of DDD is just plain good OO programming. Unit tests and code smells are the best indication that our domain is wrong, along with conversations with our domain experts. In systems that start to move beyond merely CRUD, _specific code smells start to surface that should indicate that our system is starting to accumulate behavior_, but it just might not be in the right place. In a behavior-rich, but anemic domain, the domain is surrounded by a multitude of services that do the actual work, and fiddle with state on our domain objects. The domain objects _contain state to be persisted_, but it’s _not the domain objects themselves exposing any operations_. But this is just code smell! Lots of code smells indicate that our domain is not as rich as at could be. The behavior is out there, but just needs to be moved around. Some smells I look for include:
+
 + Primitive Obsession
 + Data Class
 + Inappropriate Intimacy
@@ -66,7 +69,9 @@ A lot of DDD is just plain good OO programming. Unit tests and code smells are t
 All these are smells between classes, where usually a domain service is waaaay to concerned with a set of entities, when behavior could just be moved down into those entities.
 
 ### Aggregate Roots
+
 One of the most quoted, but most misunderstood ideas in DDD is the concept of `aggregate roots`. But what is this aggregate root? Is it just an entity with a screen in front of it? A row in a database? Evans defined a set of rules for Aggregates:
+
 + The root Entity has **global identity** and is _ultimately responsible for checking invariants_
 + Entities inside the boundary have _local identity_, **unique only within the Aggregate**.
 + _Nothing outside_ the Aggregate boundary can hold a reference to anything inside, except to the root Entity. The root Entity _can hand references to the internal Entities_ to other objects, but they can only use them **transiently** (within a single method or block).
@@ -77,6 +82,7 @@ One of the most quoted, but most misunderstood ideas in DDD is the concept of `a
 + It’s a lot, but I generally think of Aggregate roots as consistency boundaries. **When I interact with an Aggregate, its invariants must always be satisfied**. Keeping invariants satisfied strengthens the design and responsibility of the objects, as the logic that defines the Aggregate is then self-contained.
 
 ### Strategic Design
+
 We may not like it, but not all of our system’s model will ever reach our vision of perfection. Which is fine, as a perfect model across our entire system would be _prohibitively expensive_ with little ROI on all that work.  Instead, we have to focus on specific areas of the core domain that provide the most value to the customer. The better our core domain model, the better our system represents the conceptual model we’ve defined with our customers, and the better we will be able to serve their needs.
 
 Unfortunately, all the interesting _Strategic Design_ chapters are after the basic DDD patterns in the book, so that many folks get lost discussing repositories, entities, aggregates and so on. But in recent interviews, Evans mentions that these later discussions are more important than the earlier ones. The bottom line is that we have to choose carefully where we spend our time refining our domain model. Some areas will not be as refined as others, but that’s perfectly acceptable. The trick is to find which areas will give us the most value for our time spent in refactoring, refinement and modeling.
@@ -182,9 +188,9 @@ If our entity always satisfies its invariants because its design doesn't allow i
 
 But building entities through a constructor isn't the only way to go. We also have:
 
-* Builder pattern [12]
-* Creation method [13]
-* Through existing aggregate roots [14]
++ Builder pattern [12]
++ Creation method [13]
++ Through existing aggregate roots [14]
 
 The bottom line is – if our entity needs certain information for it to be considered an entity in its essence, then don't let it be created without its invariants satisfied!
 
@@ -268,12 +274,12 @@ public void Not_supported_situations()
 
 With the API I just created, I allow a number of rather bizarre scenarios, most of which make absolutely no sense to the domain experts:
 
-* Clearing orders
-* Removing orders
-* Adding an order from one customer to another
-* Inserting orders
-* Re-arranging orders
-* Adding an order without the Order's Customer property being correct
++ Clearing orders
++ Removing orders
++ Adding an order from one customer to another
++ Inserting orders
++ Re-arranging orders
++ Adding an order without the Order's Customer property being correct
 
 This is where we have to be a little more judicious in the API we expose for our system. All of these scenarios are _possible_ in the API we created, but now we have some confusion on whether we should support these scenarios or not. If I'm working in a similar area of the system, and I see that I can do a `Customer.Orders.Remove` operation, it's not immediately clear that this is a scenario not actually coded for.  Worse, I don't have the ability to correctly handle these situations if the collection is exposed directly.
 
@@ -302,8 +308,8 @@ public class Customer
 
 This interface explicitly tells users of Customer two things:
 
-* Orders are **readonly**, and cannot be modified through this aggregate
-* Adding orders are done somewhere else
++ Orders are **readonly**, and cannot be modified through this aggregate
++ Adding orders are done somewhere else
 
 I now have the issue of the Order constructor needing to add itself to the Customer's Order collection. I want to do this:
 
@@ -455,6 +461,7 @@ We again see that a consistent theme in DDD is good OO and attention to code sme
 However, it's these external domain services where we are likely to find the bulk of domain model smells.  Through attention to the code smells and refactorings Fowler laid out [18], we can move towards the concepts of **self-consistent aggregate roots with strongly-enforced boundaries**.
 
 ## The Double Dispatch Pattern
+
 It looks like there's a pattern emerging here around encapsulation, and **that's not an accident**. Many of the code smells in the Fowler or Kerievsky refactoring books deal with proper encapsulation of both data _and_ behavior. In the previous post, we looked at _closure of operations_, that _when an operation is completed_, the **aggregate root's state is consistent**.
 
 In many anemic domain models, **the behavior is there but in the wrong place**. For the DDD-literate, this is usually in a lot of domain services all poking at the state of the domain model. We can refactor these services to _enforce consistency_ through closed operations on our model, but there are cases where this sort of domain behavior _doesn't_ belong in the model.
@@ -485,8 +492,8 @@ The problem comes in when calculating the balance becomes more difficult.  We m
 
 We have several options here:
 
-* _Update_ the Balance **outside** the `RecordPayment` method, with the caller "remembering"
-* Use a `BalanceCalculator` service _as part of_ the `RecordPayment` method
++ _Update_ the Balance **outside** the `RecordPayment` method, with the caller "remembering"
++ Use a `BalanceCalculator` service _as part of_ the `RecordPayment` method
 
 **I never like a solution that requires a user of the domain to "remember" to call a method after another one**.  It's not intention-revealing, and tends to leave the domain model in a wacky _in-between state_. For many domains, this might be acceptable. But with more complexity comes the issue of trying to sort out what scenarios are valid or not. When a test breaks because an invariant is not satisfied, that's a clear message that something broke the domain.
 
@@ -573,7 +580,7 @@ For one group, the term was in reference to a paper form filed. Another, somethi
 
 ### Lesson 5: Structural Patterns Are the Least Important Part of DDD
 
-Early on we spent a *ton* of time on getting the design right of the DDD building blocks: entities, aggregates, value objects, repositories, services, and more. But of all the things that would lead to the success or failure of the project, or even just slowing us down/making us go faster, these patterns were by far the least important.
+Early on we spent a _ton_ of time on getting the design right of the DDD building blocks: entities, aggregates, value objects, repositories, services, and more. But of all the things that would lead to the success or failure of the project, or even just slowing us down/making us go faster, these patterns were by far the least important.
 
 That's not to say that they weren't valuable, they just didn't have a large contribution to the success of the project. _For the vast majority of the domain_, **it only needed very dumb CRUD objects**. _For a dozen or so very particular cases_, we **needed highly behavioral, encapsulated domain objects**. Optimizing your entire system for the complexity of 10% really doesn't make much sense, which is why in subsequent systems we've moved towards a more CQRS model, where each command or query has complete control of how to model the work.
 
@@ -657,7 +664,6 @@ In both cases, I'd say both our systems were successful, since they shipped and 
 
 In case anyone wonders, I intentionally did not talk about actors or event sourcing in this series – both things we've done and shipped, but found the applicability to be limited to inside a bounded context (or even more typically, a corner of a bounded context). Another post for another day!
 
-
 [1]: https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/
 [2]: https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/
 [3]: https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/
@@ -678,6 +684,5 @@ In case anyone wonders, I intentionally did not talk about actors or event sourc
 [18]: http://www.amazon.com/exec/obidos/ASIN/0201485672
 [19]: http://www.agilemodeling.com/artifacts/personas.htm
 [20]: https://github.com/jbogard/MediatR
-
 
 [<<](./index.md) | [home](../README.md)

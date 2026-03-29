@@ -4,10 +4,10 @@
 
 - `Azure Cosmos DB` is a **multi-model**, **schema-free**, fully schema agnostic database. ![multi model](https://tctechcrunch2011.files.wordpress.com/2017/05/2017-05-08_1533.png)
 - A _globally distributed_ database designed for _scalable_, _broadly distributed_, _highly responsive_ and _highly available_ applications.
-- _Superset data service of DocumentDB_. Earlier, Microsoft offered DocumentDB as _Data as a Service_ (*DaaS*), which supported a _limited set of features_ and functionalities. Microsoft’s engineers shared their challenges, _running the company’s cloud-based services_, such as Bing, Azure and Office 365 using DocumentDB. Microsoft understood their engineer’s challenges and marketed the opportunity to take DocumentDB [to the next level][1]. Being geo-distributed across Azure regions/data centers it's already available in all of them, and [will be automatically available in new regions as they come online][8], because it's a foundational service for Microsoft's own properties. Configuring geo-distribution is as simple as clicking on a map to add or drop regions, while the application continues to run. Microsoft aptly calls this feature "**global distribution turnkey**"
+- _Superset data service of DocumentDB_. Earlier, Microsoft offered DocumentDB as _Data as a Service_ (_DaaS_), which supported a _limited set of features_ and functionalities. Microsoft’s engineers shared their challenges, _running the company’s cloud-based services_, such as Bing, Azure and Office 365 using DocumentDB. Microsoft understood their engineer’s challenges and marketed the opportunity to take DocumentDB [to the next level][1]. Being geo-distributed across Azure regions/data centers it's already available in all of them, and [will be automatically available in new regions as they come online][8], because it's a foundational service for Microsoft's own properties. Configuring geo-distribution is as simple as clicking on a map to add or drop regions, while the application continues to run. Microsoft aptly calls this feature "**global distribution turnkey**"
 - Azure Cosmos DB also supports _several NoSQL APIs_ including DocumentDB SQL, MongoDB, Apache Gremlin, and Azure Tables/Table Storage.
 - Can handle a variety of data to store (all four NoSql models), **key-value**, **document**, **columnar**, and **graph** types. This database engine is based on the _atom-record-sequence_ (**ARS**) data model.
--  ?? Cosmos DB provides a method to the user to _distinguish between transactions with high latency_ vs. a database being unavailable ??
+- ?? Cosmos DB provides a method to the user to _distinguish between transactions with high latency_ vs. a database being unavailable ??
 - Azure Cosmos DB engine is _designed to manage_ **elastically scaled throughput**, based on the [application traffic patterns][1] across different geographical regions, to _support fluctuating workloads_ varying both by geography and time.
 - MS advertises **guaranteed single-digit millisecond latency**, SLAs for latency at the 99th percentile, together with five well-defined consistency levels: _strong, bounded staleness, session, consistent-prefix and eventual_. ![different consistency models](https://tctechcrunch2011.files.wordpress.com/2017/05/2017-05-08_1535.png)
 - It's _optimized for low-latency database reads and writes_. It does this through the use of [Solid State Disk storage and with "latchless" and "lockless" data structures][8] which, interestingly, bear some resemblance to those used by SQL Server's In-Memory OLTP model, as well.
@@ -56,8 +56,8 @@ auto-generated fields
 
 ## Event-driven Architectures with Change Feed Processor Library
 
-Build event-driven architectures and receive a real-time stream of database updates with Azure Cosmos DB change feed. 
-Change feed enables reactive programming models for Internet of Things (IoT) telemetry and e-commerce ordering pipelines. 
+Build event-driven architectures and receive a real-time stream of database updates with Azure Cosmos DB change feed.
+Change feed enables reactive programming models for Internet of Things (IoT) telemetry and e-commerce ordering pipelines.
 Reading change feed across multiple partitions is easy with the [Change Feed Processor][9] library now available as a [NuGet package][10] for .NET development.
 This library facilitates distributing change feed event processing across multiple consumers.
 It also provides a thread-safe, multi-process, safe runtime environment with checkpoint and partition lease management for large-scale distributed event processing applications.
@@ -74,6 +74,5 @@ It also provides a thread-safe, multi-process, safe runtime environment with che
 [8]: http://www.zdnet.com/article/inside-cosmos-db/
 [9]: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D#change-feed-processor
 [10]: https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D
-
 
 [<<](./index.md) | [home](../../README.md)

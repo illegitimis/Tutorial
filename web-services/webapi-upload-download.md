@@ -15,7 +15,7 @@
 - Sample [14] uploading an XDocument using `PushStreamContent` and `HttpClient`. Description [15]
 - HTTP Range Request Sample
   - Detailed Description [16]
-  - Source Code [17] 
+  - Source Code [17]
 - ASP.NET Core 2.0 MVC File Upload with MS SQL SERVER FileTable [18], _2015_ · by damienbod · in .NET, ASP.NET Core, ASPNET5, dotnet, Entity Framework, MVC, SQL, Web
 - Web API File Upload, Single or Multiple files [19], _2014_ · by damienbod · in .NET, MVC, TopHeaderMenu, Web
 - ASP.NETCore: Create a Web API application [20] _Nov 2016_
@@ -40,6 +40,5 @@
 [18]: https://damienbod.com/2015/12/05/asp-net-5-mvc-6-file-upload-with-ms-sql-server-filetable/
 [19]: https://damienbod.com/2014/03/28/web-api-file-upload-single-or-multiple-files/
 [20]: https://social.technet.microsoft.com/wiki/contents/articles/36340.asp-netcore-create-a-web-api-application.aspx
-
 
 [<<](./index.md) | [home](../README.md)

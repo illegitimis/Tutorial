@@ -11,12 +11,14 @@ The _Microservices_ architecture introduces the need for _independent deployment
 ## Key Points
 
 * virtual machines aren’t the right unit of work
-* (CEO Docker Golub, ex dotCloud PaaS) 
+* (CEO Docker Golub, ex dotCloud PaaS)
+
 > containerization can be one of the most significant enablers of the next generation of computing
+
 * lightweight containers like Docker offer a nice mix of _encapsulation_ and _interoperability_
 * aims to automate the deployment of applications inside portable containers that are independent of hardware, host operating system, and language
 * In contrast with Virtual Machines, Docker containers **do not include a guest operating system** but _share the operating system with other containers_.
-* What docker provides more than other linux containers do is to package an application and all of its dependencies in a virtual container that can run on any Linux server which docker runs. 
+* What docker provides more than other linux containers do is to package an application and all of its dependencies in a virtual container that can run on any Linux server which docker runs.
 * **Resource Utilization**: Containers comprise just the application and its dependencies, neither more nor less. Each container runs as an isolated process in userspace on the host operating system, sharing the kernel with other containers. Thus, it enjoys the resource isolation and allocation benefits of virtual machines but is much more portable and efficient. This does not mean that containers can run not only on VMs, but also on physical servers. Due to the lightweight nature of containers, you can run more containers on  a physical server than virtual machines. The result is higher resource utilization.
 
 ## Unvisited
@@ -125,7 +127,7 @@ docker compose, teamcity with agent and db deployment, `docker-compose.yml`.
 
 Composing containers is the same thing as composing layers for an image with a dockerfile.
 
-embedded dns server with user defined private networks. 
+embedded dns server with user defined private networks.
 
 ```yml
 version: '2'
@@ -216,6 +218,5 @@ Key players: Datadog, Mesosphere, DCHQ.io, Quay (CoreOS), Portworx, Rancher, Clu
 [7]: https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents
 [8]: https://gist.github.com/g0t4
 [9]: https://gist.github.com/g0t4/0d97a9595c87736a8a72a2bd21afc0d9
-
 
 [<<](./index.md) | [home](../README.md)

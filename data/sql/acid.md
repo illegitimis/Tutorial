@@ -23,5 +23,4 @@ acronym | title | description
 [5]: http://www.johndcook.com/blog/2009/07/06/brewer-cap-theorem-base/
 [6]: https://msdn.microsoft.com/en-us/library/aa480356.aspx
 
-
 [<<](./index.md) | [home](../../README.md)

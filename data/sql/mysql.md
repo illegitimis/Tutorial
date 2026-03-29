@@ -47,5 +47,4 @@
 [17]: http://killspid.blogspot.ro/2006/07/using-fndblog.html
 [18]: http://www.sqlmvp.org/dbcc-log-command-in-sql-server/
 
-
 [<<](./index.md) | [home](../../README.md)

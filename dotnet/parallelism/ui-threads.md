@@ -14,7 +14,7 @@ void GetNewTweet() {
 
 ## WPF
 
-This pattern isn’t limited to Windows Forms. 
+This pattern isn’t limited to Windows Forms.
 The specific way to check the current thread and use the UI thread may vary depending on the type of application you’re using.
 (WPF) uses `Dispatcher.CheckAccess` and `Dispatcher.Invoke`.
 
@@ -35,6 +35,5 @@ timer.Tick += new EventHandler(delegate(object sender, EventArgs e) {
 timer.Start();
 }
 ```
-
 
 [<<](./index.md) | [home](../../README.md)

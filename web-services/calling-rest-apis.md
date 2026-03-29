@@ -28,5 +28,4 @@
 [8]: https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx
 [9]: https://stackoverflow.com/a/30770354
 
-
 [<<](./index.md) | [home](../README.md)

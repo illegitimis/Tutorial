@@ -1,7 +1,7 @@
 # Design Patterns
 
 - 1994.GOF [1]
-  - uml.org.cn [2] 
+  - uml.org.cn [2]
   - 1D_ One Drive [3]
 - 2006.Martin.Agile-_Principles-Patterns-and-Practices_-in-C#
   - amzn [4]
@@ -22,6 +22,5 @@
 [7]: https://1drv.ms/b/s!As0cxZAk26SzjMBlBlVms2yt1BNEmw
 [8]: http://www.zamzar.com/downloadFile.php?uid=5ed5c155d37c9657b52057ef714ecbd8-e8ecc61e6b71891&targetID=2W6cmbYLK6PeQg8I_YVC7YF_Zl9Ha9CEEp&fileID=p1bdlodh7rjcjao1gh719at5hr4.pdf
 [9]: https://1drv.ms/b/s!As0cxZAk26SzjMBkKTmSTUTNMbHu2g
-
 
 [<<](./index.md) | [home](../README.md)

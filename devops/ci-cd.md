@@ -10,5 +10,4 @@
 
 [1]: https://developer.ibm.com/urbancode/docs/continuous-delivery-maturity-model/
 
-
 [<<](./index.md) | [home](../README.md)

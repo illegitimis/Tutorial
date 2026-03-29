@@ -17,5 +17,4 @@
 [6]: https://blog.jeremylikness.com/5-rest-api-designs-in-dot-net-core-1-29a8527e999c
 [7]: https://blog.jeremylikness.com/5-rest-api-designs-in-dot-net-core-2-ad2f204c2d11
 
-
 [<<](./index.md) | [home](../README.md)

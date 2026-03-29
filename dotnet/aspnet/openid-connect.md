@@ -1,8 +1,8 @@
 # OpenID Connect
 
 OpenID Connect [1] is an interoperable authentication protocol based on the OAuth 2.0 family of specifications.
-It uses straightforward **REST**/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”. 
-It’s uniquely easy for developers to integrate, compared to any preceding Identity protocol. 
+It uses straightforward **REST**/JSON message flows with a design goal of “_making simple things simple and complicated things possible_”.
+It’s uniquely easy for developers to integrate, compared to any preceding Identity protocol.
 **(Identity, Authentication) + OAuth 2.0 = OpenID Connect**
 
 ## Specs
@@ -12,13 +12,13 @@ An entity has multiple identities. Facebook extends OAuth with 'signed request' 
 Final OpenID Connect specifications [2] were launched on February 26, 2014.  
 
 The certification program [3] for OpenID Connect was launched on April 22, 2015.  
-Google, Microsoft, Ping Identity, ForgeRock, Nomura Research Institute, and PayPal OpenID Connect deployments were the first to self-certify conformance. 
+Google, Microsoft, Ping Identity, ForgeRock, Nomura Research Institute, and PayPal OpenID Connect deployments were the first to self-certify conformance.
 
-**IDP** = _identity provider_ = offer authentication as a service 
+**IDP** = _identity provider_ = offer authentication as a service
 
-**RP** = _relying party_ = app that outsources its authentication function to an IDP 
+**RP** = _relying party_ = app that outsources its authentication function to an IDP
 
-**JWT** = _json web token_ = data structures with signatures 
+**JWT** = _json web token_ = data structures with signatures
 
 > From <openid.net: Faq [4]>  
 
@@ -51,6 +51,5 @@ wiki [9]
 [7]: http://openid.net/specs/openid-connect-implicit-1_0.html
 [8]: https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets
 [9]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

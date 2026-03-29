@@ -2,7 +2,7 @@
 
 dotnet command ms docs [1]
 
-- **migrate** _Migrates_ a *project.json* (and _xproj_) based project to a *msbuild* based project.
+- **migrate** _Migrates_ a _project.json_ (and _xproj_) based project to a _msbuild_ based project.
 - **add|list|remove reference** Adds a project reference, or deletes one, or lists all.
 - **add|remove** Adds or Removes a NuGet package.
 - **new console** - Initialize a sample .NET Core console application that can be compiled and run
@@ -16,6 +16,5 @@ dotnet sln toList.sln list
 ```
 
 [1]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet
-
 
 [<<](./index.md) | [home](../../README.md)

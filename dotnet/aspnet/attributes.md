@@ -38,5 +38,4 @@ public async Task<IActionResult> Reject(Guid id, [FromBody] string reason)
 public void UpdateBandwidthChangeHangup([FromRoute] int facilityId, [FromRoute] int bandwidthChange)
 ```
 
-
 [<<](./index.md) | [home](../../README.md)

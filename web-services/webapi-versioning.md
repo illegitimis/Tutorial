@@ -3,17 +3,16 @@
 See versioning chapter in Wildermuth's __Web API Design__ slides [1]
 One Drive [1].
 
-Move the version with a 'v' prefix all the way to the left in the URL so that it has the **highest scope** (e.g. /v1/dogs).
+Move the version with a 'v' prefix all the way to the left in the URL so that it has the __highest scope__ (e.g. /v1/dogs).
 
 Use a simple ordinal number - v1, v2, and so on. _Don't use the dot notation like v1.2_ because it implies a granularity of versioning that doesn't work well with APIs, _it's an interface not an implementation_. Make the version _mandatory_.
 
 type | example | info | pro | con
 --- | --- | --- | --- | ---
-URL path | `api.stormpath.com: V1`<Br [2]> `api.tumblr.com: `<Br [3]> `...: Customers [4]> `...: 123` [5] | version embedded in URI path<br> everything after `v` subject to change | Simple to segregate old APIs for backwards compatibility | a lot of client changes on version upgrade<br> increases URI surface to support(tech debt), upgraded v2 and former v1 bug fixes<br>
-Uri parameter | `api.netflix.com: 70023522 [6]> `...: Customers`<Br [7]> `...: Customers [8] | semantically same with URI path versioning | without version => latest<br/> Little client change as versions mature | surprise clients with changes not expected<br/>
+URL path | `api.stormpath.com: V1`<Br [2]> `api.tumblr.com:`<Br [3]> `...: Customers [4]>`...: 123` [5] | version embedded in URI path<br> everything after `v` subject to change | Simple to segregate old APIs for backwards compatibility | a lot of client changes on version upgrade<br> increases URI surface to support(tech debt), upgraded v2 and former v1 bug fixes<br>
+Uri parameter | `api.netflix.com: 70023522 [6]>`...: Customers`<Br [7]>`...: Customers [8] | semantically same with URI path versioning | without version => latest<br/> Little client change as versions mature | surprise clients with changes not expected<br/>
 Media Type/Content Negotiation | `application/foo+json;application&v=1`<br> `Content Type: application/vnd.github.1.param+json`<br/> `Accept: application/myapp.v1.customer.json`<br/> `Accept: vnd.myapp.v1.customer` | Instead of using standard MIME types, use custom.<br/> Can include information in Accept Header<br/> Alternatively can create own MIME type. | Increasingly popular because separated from the surface area of the API itself<br/> Packages API and Resource Versioning in one<br/> Removes versioning from API so clients don't have to change | Can encourage increased versioning which causes more code churning
 Request/Custom Header | Azure `x-ms-version: 2011-08-18`<br> `x-MyApp-Version: 2.1` | Should be a header value that is only of value to your API<br/> Common to use API Date instead of number | Separates Versioning from API call signatures<br/> Not tied to resource versioning (e.g. Content Type) | Adds complexity - adding headers isn't easy on all platforms
-
 
 ## Abstract
 
@@ -80,15 +79,11 @@ jsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue(...))
 [1]: https://onedrive.live.com/embed?cid=B3A4DB2490C51CCD&resid=B3A4DB2490C51CCD%21204889&authkey=AJdXhKx3Nh8gzvo&em=2
 [2]: https://api.stormpath.com/v1`<br
 [3]: http://api.tumblr.com/v2/user/`<br/
-[4]: http://.../api/v1/Customers?type=Current&id=123`<br
 [5]: http://.../api/v2/CurrentCustomers/123`
-[6]: http://api.netflix.com/catalog/titles/series/70023522?v=1.5`<br/
-[7]: http://.../api/Customers`<br/
 [8]: http://.../api/Customers?v=2.1`
 [9]: https://app.pluralsight.com/library/courses/implementing-restful-aspdotnet-web-api/
 [10]: https://github.com/Microsoft/aspnet-api-versioning
 [11]: https://github.com/Microsoft/aspnet-api-versioning/blob/master/samples/aspnetcore/SwaggerSample/Startup.cs
 [12]: https://github.com/Microsoft/aspnet-api-versioning/wiki/API-Documentation#aspnet-web-api-with-odata
-
 
 [<<](./index.md) | [home](../README.md)

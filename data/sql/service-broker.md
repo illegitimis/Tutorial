@@ -33,5 +33,4 @@
 [15]: https://technet.microsoft.com/en-us/library/cc281528(v=sql.105).aspx
 [16]: https://technet.microsoft.com/en-us/library/bb839491(v=sql.105).aspx
 
-
 [<<](./index.md) | [home](../../README.md)

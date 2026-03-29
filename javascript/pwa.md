@@ -17,5 +17,4 @@ progressive web apps
 [8]: https://www.telerik.com/blogs/a-gentle-and-practical-introduction-to-progressive-web-apps
 [9]: https://www.telerik.com/blogs/kendo-ui-conversational-ui-angular-react-vue-components-new-release
 
-
 [<<](./index.md) | [home](../README.md)

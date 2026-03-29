@@ -8,7 +8,7 @@
   - Authorization OAuth 2.0: legacy v3 [4]
   - migration [5]
   - ASP MVC OAuth 2.0 guide [6] This document describes OAuth 2.0, when to use it, how to acquire client IDs, and how to use it with the Google API Client Library for .NET.
-- Sheets API _v4_
+- Sheets API *v4*
   - home [7] & intro [8]
   - .Net quickstart [9]
   - Google API Client Libraries > .NET [10] Get Started
@@ -17,17 +17,17 @@
   - sheets-api-explorer [13], sample rest call batchclear [14]
   - source code [15] for all generated c# strong types
   - basic writing [16]
-- Sheets _backend_
-  - josdeweger/SheetToObjects [17] A simple *fluent* library which aims to provide developers with an easy solution to _map_ sheets (Google Sheets, Microsoft Excel, csv) to a model/_POCO_. `Install-Package SheetToObjects.Adapters.GoogleSheets`.
+- Sheets *backend*
+  - josdeweger/SheetToObjects [17] A simple *fluent* library which aims to provide developers with an easy solution to *map* sheets (Google Sheets, Microsoft Excel, csv) to a model/*POCO*. `Install-Package SheetToObjects.Adapters.GoogleSheets`.
   - KozTv/GoogleSheetsDatabase [18] Use your Google Sheet as a  key-value storage DB. `Install-Package GoogleSheetsDatabase`. Values are serialized to JSON to be human-readable and easily editable using standard Google Sheets web interface.
   - commercial `CData.GoogleSheets`. Read, Write, and Update Google Sheets through easy-to-use bi-directional drivers.
 - Apps Script
   - Advanced Sheets Service [19] lets you access the Sheets API using Apps Script.
   - apps-script guides rest quickstart dotnet [20]
-- Get _file contents_ as JSON
+- Get *file contents* as JSON
   - `docs.google.com: <Spreadsheet Key [21]>/edit#gid=0`
-  - `spreadsheets.google.com: [List|Cells [22]]/<SPREADSHEET_KEY>/public/values?alt=json` gets first sheet _only_
-  - _sheet_ fitness [23] sample
+  - `spreadsheets.google.com: [List|Cells [22]]/<SPREADSHEET_KEY>/public/values?alt=json` gets first sheet *only*
+  - *sheet* fitness [23] sample
   - atom feed fitness [24]
   - Simple example of retrieving JSON feeds from Spreadsheets Data API [25].
   - sample feeds cells [26]
@@ -72,8 +72,6 @@
 [18]: https://github.com/KozTv/GoogleSheetsDatabase
 [19]: https://developers.google.com/apps-script/advanced/sheets
 [20]: https://developers.google.com/apps-script/guides/rest/quickstart/dotnet
-[21]: https://docs.google.com/spreadsheets/d/<SPREADSHEET_KEY
-[22]: https://spreadsheets.google.com/feeds/[list|cells
 [23]: https://docs.google.com/spreadsheets/d/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/edit#gid=0
 [24]: https://spreadsheets.google.com/feeds/list/1kVelhej2C99mIAZmNFxtY9oSL7OaHKCFfD1lfbVL6Rk/od6/public/values?alt=json
 [25]: https://developers.google.com/gdata/samples/spreadsheet_sample
@@ -88,6 +86,5 @@
 [34]: https://cloud.google.com/storage/docs/json_api/v1/how-tos/authorizing
 [35]: https://developers.google.com/drive/v3/web/about-sdk
 [36]: https://github.com/googleapis/google-api-dotnet-client
-
 
 [<<](./index.md) | [home](../README.md)

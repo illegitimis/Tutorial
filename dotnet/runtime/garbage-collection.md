@@ -2,8 +2,8 @@
 
 - Provides memory safety by making sure that an object cannot use the content of another object [1]. (immutable?)
 - _Each process_ has its own, **separate virtual address space**. All processes on the same computer share the same physical memory, and share the page file if there is one. All threads in the process allocate memory for objects on the same heap. (The area of memory reserved for reference data is called the heap)
-- By default, on 32-bit computers, each process has a _2-GB user-mode virtual address space_. 
-- If you are writing native code, you use Win32 functions to work with the virtual address space. These functions allocate and free virtual memory for you on native heaps. 
+- By default, on 32-bit computers, each process has a _2-GB user-mode virtual address space_.
+- If you are writing native code, you use Win32 functions to work with the virtual address space. These functions allocate and free virtual memory for you on native heaps.
 - Virtual memory states: _free_, _reserved_ (for your use only, not any other app request), _committed_ (assigned to physical storage).
 - `OutOfMemoryException`: run out of virtual address space or physical storage to commit
 - 1st time physical memory pressure high => OS makes room in Physical Storage by backing up to page file.
@@ -11,7 +11,7 @@
 - Conditions for GC
   - Low PhStor, physical memory
   - Allocated objects size on managed heap GT process threshold
-  - `GC.Collect` call 
+  - `GC.Collect` call
 - GC initialized by CLR, _allocates a memory segment for each process_, to store and manage objects, which is the **managed heap**
 - GC uses Win32 `VirtualAlloc`/`Free`.
 - 2 heaps, large > 80KB, usually _arrays_, and **small object heap**
@@ -42,7 +42,5 @@
 _Todo_ Pcs50 bw8 weak ref, reclaiming memory
 
 [1]: https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx
-[2]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

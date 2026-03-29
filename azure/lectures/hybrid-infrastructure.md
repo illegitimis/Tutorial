@@ -58,5 +58,4 @@
 [app-proxy]: https://docs.microsoft.com/en-gb/azure/active-directory/app-proxy/application-proxy
 [hybrid-connections]: https://docs.microsoft.com/en-gb/azure/app-service/app-service-hybrid-connections
 
-
 [<<](../index.md) | [home](../../README.md)

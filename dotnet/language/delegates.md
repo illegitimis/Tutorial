@@ -3,7 +3,7 @@
 ## Multicast
 
 Derive from a base type called `MulticastDelegate`.
-As the name suggests, this means delegates can refer to more than one method. 
+As the name suggests, this means delegates can refer to more than one method.
 The multicast feature is available through the `Delegate` class’s static `Combine` method.
 
 ```cs
@@ -16,7 +16,7 @@ Or use *addition* and *subtraction* operators, delegate combine=add, remove=subt
 ## Invocation
 
 Although delegates are special types with runtime-generated code, there is ultimately nothing magical about invoking a delegate.
-The call happens on the _same thread_, and _exceptions propagate_ through methods that were invoked via a delegate in exactly the same way as they would if the method were invoked directly.
+The call happens on the *same thread*, and *exceptions propagate* through methods that were invoked via a delegate in exactly the same way as they would if the method were invoked directly.
 Invoking a delegate with a single target method works as though your code had called the target method in the conventional way.
 **Invoking a multicast delegate is just like calling each of its target methods in turn**.
 
@@ -65,7 +65,7 @@ Can take any expression that evaluates to an object reference, and then just app
 ### CreateDelegate
 
 do not necessarily know which method or object you will use until runtime / many overloads
-There are also overloads that accept the reflection API’s _MethodInfo_ object to identify the method instead of a string.
+There are also overloads that accept the reflection API’s *MethodInfo* object to identify the method instead of a string.
 
 ```cs
     var greaterThanZero = (Predicate<int>)Delegate.CreateDelegate(typeof(Predicate<int>), zeroThreshold, "IsGreaterThan");
@@ -105,7 +105,7 @@ other form of inline method is called a lambda expression
 
 ## Framework
 
-The angle brackets indicate that this is a generic type with a single _contravariant_ type argument T, and the method signature has a single parameter of that type.
+The angle brackets indicate that this is a generic type with a single *contravariant* type argument T, and the method signature has a single parameter of that type.
 You can use the new keyword to create a delegate, it needs a method with a bool return type.
 
 ```cs
@@ -118,7 +118,5 @@ public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
 
 [1]: https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077
 [2]: https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8
-[3]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

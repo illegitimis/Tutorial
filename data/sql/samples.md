@@ -10,5 +10,4 @@
 [2]: https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
 [3]: http://sqlserversamples.codeplex.com/#databases
 
-
 [<<](./index.md) | [home](../../README.md)

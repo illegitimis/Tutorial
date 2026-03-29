@@ -1,6 +1,6 @@
 # NPM
 
-- update **npm** to latest version 
+- update **npm** to latest version
 
 ```cmd
 npm install npm@latest -g
@@ -14,7 +14,7 @@ npm install --global --production npm-windows-upgrade
 npm-windows-upgrade
 ```
 
-- find local package 
+- find local package
 
 ```sh
 npm list -g | grep 'autorest'
@@ -28,6 +28,5 @@ npm uninstall -g autorest ms-rest-azure @microsoft.azure/autorest-core @microsof
 npm search autorest
 npm info autorest versions
 ```
-
 
 [<<](./index.md) | [home](../README.md)

@@ -2,12 +2,13 @@
 
 Microservices Architecture pluralsight Microservices Architecture pluralsight [1]
 
-
 ## Services
+
 + services are **stateless**. No knowledge about previous requests is needed. All info about, customer, client type, previous interaction must be contained into the current request
 + interface contracts and backward compatibility
 
 ## Microservices
+
 + small service with a **single purpose**
 + **lightweight** communication mechanism, client/service to service
 + **technology agnostic** API, open protocol (like http rest)
@@ -18,32 +19,33 @@ Microservices Architecture pluralsight Microservices Architecture pluralsight [1
 + **high cohesion**: single responsibility principle and oop encapsulation, single thing done well.
 ![High cohesion microservice diagram](https://hiqn5q.by3302.livefilestore.com/y4m-4jSFHJrEVLS0UkKEiqqhSH4abhQeJM4KaKdyyyc3RHSjdCRxLyZPQVHLfcDYgOgrPPgdqDf5xhS-WLqKR4E1arX8dngbYp0itlzKAiQst7jcwx-9cHco1ebN8AkLQ4QFt65FigW1gS4upFjcVZMK0oOukOfa4ZWcu94zFD0A64xymp3hnwdwMFw0rP0IexCnrxNLf9a6IZP_bIF-dRi3w?width=968&height=342&cropmode=none) ⚠
 + **autonomous**: a change in one microservice won't force a change in another, _loose coupling oop fulfillment_.
-  - Honor contracts from one version to another, independently changeable & deployable.
-  - Async communication with events publishing, notify of completion. 
-  - _Focus on technology agnostic_ and not on client libraries. 
-  - _Fixed and agreed interfaces_.
-  - Shared models, clear input and output.
-  - Avoid _chatty services_ and *sharing databases* between services.
+  + Honor contracts from one version to another, independently changeable & deployable.
+  + Async communication with events publishing, notify of completion.
+  + _Focus on technology agnostic_ and not on client libraries.
+  + _Fixed and agreed interfaces_.
+  + Shared models, clear input and output.
+  + Avoid _chatty services_ and _sharing databases_ between services.
 ![Autonomous service contracts diagram](https://jxhseg.by3302.livefilestore.com/y4m31-GeEimCISRH6m4QhyUNx-s9P_cD7nIbw2MAP9BLXdtrKE-NXi-D1BdO5OMTmi8DOKyfvANcGM2Ilnb8VUBXKctakGrh9AHOUg6ZJFSA9zDJEhln1Dv6kWDFIZy2_oOEfM9qw4JJxj1TOwNHo0qSwYwGp5WzXUbBoFyz2yHwnbgYpYhn0JD3WUnZRNiZ6DYxskFYH7Su0W5oyrvaA03vA?width=744&height=318&cropmode=none) ⚠
-+ **versioning and ownership** 
-  - each teams owns and is reponsible to make autonomous, agree on contracts, maintain long term, communicate data and contract requirements. 
-  - When breaking changes occur you could have concurrent versions, slowly negotiate migrations. 
-  - Semantic versioning: `major.minor.patch`. _Patch increase_ on **defect**, _minor increase_ if **backward compatible**, _major increase_ if **contract change**. 
++ **versioning and ownership**
+  + each teams owns and is reponsible to make autonomous, agree on contracts, maintain long term, communicate data and contract requirements.
+  + When breaking changes occur you could have concurrent versions, slowly negotiate migrations.
+  + Semantic versioning: `major.minor.patch`. _Patch increase_ on **defect**, _minor increase_ if **backward compatible**, _major increase_ if **contract change**.
 ![Semantic versioning microservices diagram](https://wowttq.by3302.livefilestore.com/y4ms4cJyQrdMXkzIba3FRP-QdDi_Cr8TseuGdEtHXgP1W0MU9OKxj6JYcsOyQ3sXzrLdEaZnxIhHomULUhvWqCRYdJ0u4fCWVS7YbPpPx7rUnYqdcVYVzZB9JsiQHPwsz1n0bjJ_dZvzz8MUiXaZcHPedDPlut-RZUg0iiOtbTK015v-kGBBdqUz00atmdw4XU-bKKLoDscmUglQRTDdhrwtw?width=446&height=337&cropmode=none) ⚠
-+ **business domain centric**: should represent a business function/domain. 
-  - bounded context from ddd, identify boundaries or **seams**. Identify business domains in a coarse manner.
-  - responsive to business change. Review subgroups of business functions as areas, review benefits of splitting further. Fix incorrect boundaries by merging or splitting. 
++ **business domain centric**: should represent a business function/domain.
+  + bounded context from ddd, identify boundaries or **seams**. Identify business domains in a coarse manner.
+  + responsive to business change. Review subgroups of business functions as areas, review benefits of splitting further. Fix incorrect boundaries by merging or splitting.
 ![Business domain centric service diagram](https://tcytqq.by3302.livefilestore.com/y4m9LtqiYH1URb0IGJlUooEKCuZH4ZAemUVjucYJZ024CuegKLCTgxTJWYQ-G4831UJIT9oe443FFH2MOxDm6ur4BaSMAgxtvjWeGA2cevugsafaVwE8SGe_gxFskLClfz3Dq7X9jETazX75voCvOe-xdqHoP1lAcxKwUCaDcJ_9wdp9yW1sBwfCiEYO_ISxyBdiwcrYuN0csMdEl--cTRs1A?width=968&height=341&cropmode=none) ⚠
 + **resilience**, embrace failure when it happens, **degrading functionality** or offering **defaults**. Many moving parts, we can't have one bad downstream system influence the whole.  
-  - Design must be done for _known failures_. **Fail and recover fast**, no impact for end user. 
-  - Use timeouts for interconnected systems. Different thresholds for communication type, s2c or s2s. 
-  - Handle network outages differently. Network errors/unavailability, internet delays.
-+ **observable**: quick deployment requires feedback. data used for planning and scaling. see system health. 
-  - **central monitoring**: monitor cpu, host memory and disk usage in real time. expose some metrics: svc response times and timeouts, number of exceptions. you can expand to business data like no orders and average time from basket to timeout, collect and aggregate data, compare data across servers, trend visalisation and trigger alerts on some conditions. `Nagios/PRTG/Load balancers/New Relic.` 
-  - **central logging**: log means info/story, monitor means collecting metrics. When to log: startup/shutdown, code path milestones. What: requests, responses and decisions, timeouts, exceptions. Structured logging: level, date and time, **correlation id**, service name and instance. Strongly typed model and traceable distributed transactions. `Elastic Log/Log stash/Splunk/Kibana/Graphite`. Serilog pushes and raises events against the centralised monitoring tool. 
+  + Design must be done for _known failures_. **Fail and recover fast**, no impact for end user.
+  + Use timeouts for interconnected systems. Different thresholds for communication type, s2c or s2s.
+  + Handle network outages differently. Network errors/unavailability, internet delays.
++ **observable**: quick deployment requires feedback. data used for planning and scaling. see system health.
+  + **central monitoring**: monitor cpu, host memory and disk usage in real time. expose some metrics: svc response times and timeouts, number of exceptions. you can expand to business data like no orders and average time from basket to timeout, collect and aggregate data, compare data across servers, trend visalisation and trigger alerts on some conditions. `Nagios/PRTG/Load balancers/New Relic.`
+  + **central logging**: log means info/story, monitor means collecting metrics. When to log: startup/shutdown, code path milestones. What: requests, responses and decisions, timeouts, exceptions. Structured logging: level, date and time, **correlation id**, service name and instance. Strongly typed model and traceable distributed transactions. `Elastic Log/Log stash/Splunk/Kibana/Graphite`. Serilog pushes and raises events against the centralised monitoring tool.
 + **automation**: manual regression testing, integration feedback on check-in. _Continuous Integration_/_Continuous Delivery_. Each microservice with its own CI build. CD with central control panel and VS integration.
 
 ## Monolith
+
 + all modules packed together, no division, tightly coupled, intertwined
 + keeps growing as long as you add app functionality, no restriction in size
 + scaling implies duplication of the whole
@@ -62,7 +64,7 @@ Sync or async? Both. RPC: distributed client server programs. vs Open protocols 
 **Virtualization**: PAAS with Azure/AWS/vSphere/Google Cloud.
 **Containers**: `Docker`/Rocker/Glassware. Do not run an entire OS, just minimal. Single service per container.
 **Registry and discovery**: host, port and version go to a svc registry db. Register on startup, deregister svc on failure, makes it self heal. Third party registration: man in he middle detects new instances and adds them to the svc registration database. _Client side discovery_: clients connect directly to that db or _Server side discovery_: a gateway or load balancer does the svc reg db queries.
-**Scaling**. How to scale up? Either create multiple instances of the same or add resources to existing. If cloud then PAAS handles automated or on demand scaling options. 
+**Scaling**. How to scale up? Either create multiple instances of the same or add resources to existing. If cloud then PAAS handles automated or on demand scaling options.
 **API gateway**: single point of entry into the SOA, manages caching and load balancing. Single interface to many services, routes to dynamic locations, may handle security or delegate to some security service or have some sort of security at each service level.
 
 ![API gateway and service registry diagram](https://fpneua.by3302.livefilestore.com/y4mf9rb9J-3DSfOKD6Rd0TVKclfrIXbg1_WAvDt1GkXkbbJnLibsrf3e5PggEboGtdnJEAN9GumFG9surNClVL_msU9yQy0rX8m8jJCVl9g21P1ZArbOn8eaaVNnvTG8j1X2u0syXmBZ83FycclSdAp04-3UQlOh2xS9zx85pRXO1ULonXcr7PbM1mBOLMl37O85Js6KZVZIhG7nIpUk9XX4g?width=554&height=383&cropmode=none) ⚠
@@ -79,6 +81,5 @@ Sync or async? Both. RPC: distributed client server programs. vs Open protocols 
 | Reporting | No central database. Joins? Data pumps and a specialized ReportingService. Consolidation environment with a nightly job.  | ![pic 4](https://slcgww.by3302.livefilestore.com/y4myXm1Pa64HpHG7IO9QsSOg__pXCAI6GznxzDJHwQxgrcTRwYLcMlYL-8UheJVjdlwxMr_iOr5MqCIAPAZTg5Zu-SafYh_3qALMt5GM57jkwm3sUTZAUYQsnDICoaZVueHzQ_ZAG7UMAx1-h7sE-_dL1zx-RXowsM7eRg0zM2qNAQx7m-WXQRhaV_a4kuFGHHDh1rEWbM32hHyiOiWnjC62A?width=469&height=485&cropmode=none) |
 
 [1]: https://app.pluralsight.com/library/courses/microservices-architecture/table-of-contents
-
 
 [<<](./index.md) | [home](../README.md)

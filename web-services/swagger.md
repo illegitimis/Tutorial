@@ -13,7 +13,7 @@
 - Generating Swagger example requests [10] & responses [11] with Swashbuckle
 - ASP.NET Web API **Help Pages** using Swagger [12]
 - Add JWT Bearer Authorization to Swagger and ASP.NET Core [13] Oct17
-- `AddFileParamTypes` operation filter [14] for _file upload_
+- `AddFileParamTypes` operation filter [14] for *file upload*
 - Modify Swagger with Request Context [15]
 - Annotations [16] enrich operation, response and parameter metadata
 - Extend Generator with Operation, Schema & Document Filters [17]
@@ -22,20 +22,20 @@
 
 ## Recipes
 
-- _packages_
+- *packages*
 
 ```csproj
 <PackageReference Include="Swashbuckle" Version="5.5.3" />
 <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0" />
 ```
 
-- _configure swagger middleware_
+- *configure swagger middleware*
   - `ConfigureServices` permalink [22], bearer authorization ConfigureSwaggerGen.Bearer.cs [23]
   - `Configure` link [24]
   - operation filter SwaggerApiOperationIdFilter.cs [25]
   - header parameter [26]
 
-- _test swagger definitions_
+- *test swagger definitions*
 
 ```cs
 public class SwaggerTests
@@ -60,7 +60,7 @@ public class SwaggerTests
 }
 ```
 
-- _better name generation_ UI
+- *better name generation* UI
   - Instead of `[ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(void))]` use `[SwaggerResponse(StatusCodes.Status401Unauthorized, null, "Unauthorized")]`.
   - Instead of `[Action("name")]` use `SwaggerOperation("Ping", Schemes = new[] { "http" })]`.
 
@@ -90,6 +90,5 @@ public class SwaggerTests
 [24]: https://github.com/illegitimis/Qualysoft.Evaluation/blob/9c6d41243e6821ddac2d808351a9186834a19b0d/Qualysoft.Evaluation.Api/Startup.cs#L180
 [25]: https://gist.github.com/illegitimis/d529815d6c1833b2eadf4327b7cdc139
 [26]: https://gist.github.com/illegitimis/95d0929bf2234dc4245986e1b18afb91
-
 
 [<<](./index.md) | [home](../README.md)

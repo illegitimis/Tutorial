@@ -57,41 +57,42 @@ where exists
   where eo.EmployeeID = e.EmployeeID
 )
 ```
-You can notice that ~optimizer did not access Employee table~ and is not shown in execution plan. 
+
+You can notice that ~optimizer did not access Employee table~ and is not shown in execution plan.
 This is because the optimizer knows that it is _not necessary to execute the EXISTS operator_ in this query because the foreign key constraint(Trusted constraint) requires all EmployeeOrders to refer to an existing Employee, which is what the WHERE clause checks.
 
-[Yes, having foreign key constraints in place can improve query performance](http://stackoverflow.com/a/8154375/2239678). 
-There are various transforms that are open to the optimizer when appropriate foreign key constraints exist that are not generally available. 
-For example, if you were to join A and B but only select data from B, the optimizer could eliminate A from the query plan entirely if there was a foreign key constraint in place 
-(this sort of thing comes in very handy when you've got useful views that join in more tables than your current query strictly needs because 
-you don't have to trade the performance costs of the extra joins against the code reuse from using an existing view). 
-They also come in handy when you're doing things like using things like query rewrite to rewrite a query to use a materialized view in a data warehouse/ DSS type system. 
+[Yes, having foreign key constraints in place can improve query performance](http://stackoverflow.com/a/8154375/2239678).
+There are various transforms that are open to the optimizer when appropriate foreign key constraints exist that are not generally available.
+For example, if you were to join A and B but only select data from B, the optimizer could eliminate A from the query plan entirely if there was a foreign key constraint in place
+(this sort of thing comes in very handy when you've got useful views that join in more tables than your current query strictly needs because
+you don't have to trade the performance costs of the extra joins against the code reuse from using an existing view).
+They also come in handy when you're doing things like using things like query rewrite to rewrite a query to use a materialized view in a data warehouse/ DSS type system.
 
-Foreign Keys **are a referential integrity tool, not a performance tool**. 
+Foreign Keys **are a referential integrity tool, not a performance tool**.
 [At least in SQL Server](http://stackoverflow.com/a/507197/2239678), the creation of an FK does not create an associated index, and you should create indexes on all FK fields to improve look up times.  
 
-SQL Server 7.0 / 2000 came with '[index tuning wizard](http://gotoanswer.stanford.edu/?q=Improving+SQL+Server+query+performance)' this functionality has been around for a long time. 
-I'd recommend having a look at `select * from sys.dm_db_missing_index_details`. 
+SQL Server 7.0 / 2000 came with '[index tuning wizard](http://gotoanswer.stanford.edu/?q=Improving+SQL+Server+query+performance)' this functionality has been around for a long time.
+I'd recommend having a look at `select * from sys.dm_db_missing_index_details`.
 It tells you which indexes are 'missing', it's trivial to look in that table and then create indexes.
 
-pro | con 
+pro | con
 ---|---
-They are already implemented within the DBMS  | You are duplicating the work that has already been done. 
-[They are declarative, self-documenting and "obvious"][2]. | It's imperative, probably "buried" deep in your application source code, and harder to maintain. 
-They cannot be bypassed (unless explicitly disabled or dropped). | A single client application that has a bug can break the referential integrity ([and corrupt the data][3]). 
-[They are correct][4]. | You are likely to implement them incorrectly in your application code. It looks simple from the outset, but in a concurrent environment, [it is easy to introduce race conditions][6]. 
-They are [fast][5]. | Even if you have implemented them correctly, you probably used some form of locking to avoid race conditions, which is likely to be slower / less scalable than specially optimized FKs built into the DBMS. 
-They support cascading referential actions (such as ON DELETE CASCADE). | You have to implement cascading yourself. 
-The DBMS knows the data is related, [allowing it to find a better query][7] plan in some cases. | The DBMS doesn't know the data is related, which may produce sub-optimal query plan. 
+They are already implemented within the DBMS  | You are duplicating the work that has already been done.
+[They are declarative, self-documenting and "obvious"][2]. | It's imperative, probably "buried" deep in your application source code, and harder to maintain.
+They cannot be bypassed (unless explicitly disabled or dropped). | A single client application that has a bug can break the referential integrity ([and corrupt the data][3]).
+[They are correct][4]. | You are likely to implement them incorrectly in your application code. It looks simple from the outset, but in a concurrent environment, [it is easy to introduce race conditions][6].
+They are [fast][5]. | Even if you have implemented them correctly, you probably used some form of locking to avoid race conditions, which is likely to be slower / less scalable than specially optimized FKs built into the DBMS.
+They support cascading referential actions (such as ON DELETE CASCADE). | You have to implement cascading yourself.
+The DBMS knows the data is related, [allowing it to find a better query][7] plan in some cases. | The DBMS doesn't know the data is related, which may produce sub-optimal query plan.
 If you are using an ORM tool, it can automatically generate references between objects. | You may need to do more manual work in your ORMt ool of choice.
 
 ## Inner Platform Effect
 
-In the database world, developers are sometimes tempted to [bypass the RDBMS](http://en.wikipedia.org/wiki/Inner-platform_effect), 
-for example by storing everything in one big table with three columns labelled entity ID, key, and value. 
-While this entity-attribute-value model allows the developer to break out from the structure imposed by an SQL database, 
-it loses out on all the benefits, since all of the work that could be done efficiently by the RDBMS is forced onto the application instead. 
-Queries become much more convoluted, the indexes and query optimizer can no longer work effectively, and data validity constraints are not enforced. 
+In the database world, developers are sometimes tempted to [bypass the RDBMS](http://en.wikipedia.org/wiki/Inner-platform_effect),
+for example by storing everything in one big table with three columns labelled entity ID, key, and value.
+While this entity-attribute-value model allows the developer to break out from the structure imposed by an SQL database,
+it loses out on all the benefits, since all of the work that could be done efficiently by the RDBMS is forced onto the application instead.
+Queries become much more convoluted, the indexes and query optimizer can no longer work effectively, and data validity constraints are not enforced.
 Performance and maintainability can be extremely poor.
 
 [1]: https://stackoverflow.com/questions/20842756/sql-indirect-foreign-key "Sql - Indirect Foreign Key"
@@ -101,6 +102,5 @@ Performance and maintainability can be extremely poor.
 [5]: https://stackoverflow.com/questions/3434951/foreign-keys-what-do-they-do-for-me "Foreign Keys - What do they do for me?"
 [6]: https://stackoverflow.com/a/20777244 "Database FK Constraints vs Programmatic FK Constraints"
 [7]: https://stackoverflow.com/a/8154375 "Do foreign key constraints influence query transformations in Oracle?"
-
 
 [<<](./index.md) | [home](../../README.md)

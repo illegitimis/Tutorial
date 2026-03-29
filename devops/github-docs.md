@@ -2,11 +2,11 @@
 
 ## Formatting
 
-1. Markdown cheatsheet pdf [1], 
+1. Markdown cheatsheet pdf [1],
 git page GitHub page [2] by Adam Pritchard
 2. Markdown tables generator [3]
 3. Word to Markdown Converter [4]
-4. html2md [5] 
+4. html2md [5]
 5. Footer [6]
 6. Images [7]
 7. Add pages [8]
@@ -24,12 +24,12 @@ git page GitHub page [2] by Adam Pritchard
 
 ## Mediawiki
 
-+ Supported MediaWiki formats [17]
-+ mediawiki Formatting [18]
+- Supported MediaWiki formats [17]
+- mediawiki Formatting [18]
 
 ## Utils
 
-+ DownGit - Create GitHub Directory Download Link [19], and original SO answer [20]
+- DownGit - Create GitHub Directory Download Link [19], and original SO answer [20]
 
 [1]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 [2]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
@@ -51,6 +51,5 @@ git page GitHub page [2] by Adam Pritchard
 [18]: https://www.mediawiki.org/wiki/Help:Formatting
 [19]: https://minhaskamal.github.io/DownGit/#/home
 [20]: https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo#18194523
-
 
 [<<](./index.md) | [home](../README.md)

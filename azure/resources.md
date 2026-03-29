@@ -21,5 +21,4 @@
 [5]: https://docs.microsoft.com/en-us/azure/availability-zones/az-region
 [6]: https://social.technet.microsoft.com/wiki/contents/articles/51828.azure-vms-availability-sets-and-availability-zones.aspx
 
-
 [<<](./index.md) | [home](../README.md)

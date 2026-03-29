@@ -14,10 +14,12 @@
 Key properties of a good unit test: atomic, deterministic, repeatable, order-independent, fast, and easy to set up.
 
 **Recommended reading:**
+
 - *Growing Object-Oriented Software, Guided by Tests* — Freeman & Pryce (2010)
 - *Test Driven Development By Example* — Kent Beck (2002)
 
 **Mocking and assertion libraries:**
+
 - `MOQ` (Moq) — mocking framework for .NET using lambda-based setup and verification
 - **FluentAssertions** — fluent assertion library for expressive, readable test assertions
 - `Microsoft.AspNetCore.TestHost` — integration testing host for ASP.NET Core applications

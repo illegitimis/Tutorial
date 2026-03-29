@@ -57,5 +57,4 @@ The Model Binder reflects over the `Client` class properties and assigns each ma
 
 [1]: https://docs.microsoft.com/en-us/aspnet/core/mvc/models/formatting
 
-
 [<<](./index.md) | [home](../../README.md)

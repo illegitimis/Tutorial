@@ -34,7 +34,7 @@
 - Testing Angular 2 code with Jasmine [34], docs [35] and Karma [36].
 - Coverage with Istanbul [37]
 - End-to-end Angular code using Protractor [38].
-  When debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. 
+  When debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite.
   You can do this with the element explorer.Protractor Interactive Mode here [39].
 - Tests reports with karma-tfs-reporter [40]
 - Test coverage reports with karma-coverage [41]
@@ -92,9 +92,9 @@ npm run e2e-live
   - ngx-translate/http-loader [75] a loader for ngx-translate that loads translations with http calls `npm install @ngx-translate/http-loader --save`
   - Samples: demo plnkr [76], Teradata/covalent commit [77] and repo [78]
 - Angular2 and i18n [79] translating your application by _Michał Dymel on November 3, 2016_
-- Official guide to *i18n* [80]
+- Official guide to _i18n_ [80]
 - Making Sense of Angular Internationalization (i18n) [81] Apr 10, 2017
-- Deploying an i18n Angular app with angular-cli [82] Apr 17, and Angular Translator *app* [83]
+- Deploying an i18n Angular app with angular-cli [82] Apr 17, and Angular Translator _app_ [83]
 
 ## Angular CLI
 
@@ -127,7 +127,7 @@ npm run lite
 - Taking advantage of Observables in Angular [92] Nov 2016
 - Angular2 observables vs. promises [93]
 - rangle.io Observables vs Promises [94]
--  behaviorsubject [95] an observer in addition to being an observable, Rx.BehaviorSubject class docs [96]
+- behaviorsubject [95] an observer in addition to being an observable, Rx.BehaviorSubject class docs [96]
 
 ## Input Debounce
 
@@ -269,7 +269,5 @@ GitRepo [101], Get Started [102], dropdown showcase [103], & docs [104], theming
 [117]: https://github.com/angular-university/angular-material-course/blob/2-data-table-finished/src/app/course/course.component.ts
 [118]: https://material.angular.io/guide/schematics
 [119]: https://material.angular.io/components/grid-list/examples
-[120]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

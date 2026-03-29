@@ -24,6 +24,7 @@
 ## Scripts
 
 The `scripts/` folder contains sample SQL installation scripts:
+
 - `instnwnd.sql` — Northwind sample database installation script
 - `instpubs.sql` — pubs sample database installation script
 

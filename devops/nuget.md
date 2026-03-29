@@ -3,14 +3,14 @@
 ## Recipes
 
 - NuGet feeds sources: _%APPDATA%\NuGet\NuGet.Config_
-- VS package sources: 
-  - _%ProgramData%\NuGet\Config\VisualStudio\14.0\Microsoft.VisualStudio.config_ 
+- VS package sources:
+  - _%ProgramData%\NuGet\Config\VisualStudio\14.0\Microsoft.VisualStudio.config_
   - _%Program Files%\NuGet\Config\Microsoft.VisualStudio.Offline.config_
 - To prevent NuGet from restoring packages during build, open the Visual Studio Options dialog, click on the Package Manager node uncheck '_Allow NuGet to download missing packages during build._'
 
 ## Commands
 
-- deprecated, returns a paged list of packages available online, with a search term and version history 
+- deprecated, returns a paged list of packages available online, with a search term and version history
 
 ```ps
 Get-Package -ListAvailable -Filter Hangfire.Mongo -AllVersions -PageSize 5
@@ -28,7 +28,7 @@ Get-Package -Updates
 Install-Package Hangfire.Mongo -IgnoreDependencies -Version 0.2.1
 ```
 
-- Installs jquery 1.10.2 package, using the .nupkg file under local path of c:\temp\packages. 
+- Installs jquery 1.10.2 package, using the .nupkg file under local path of c:\temp\packages.
 
 ```ps
 Install-package c:\temp\packages\jQuery.1.10.2.nupkg
@@ -44,7 +44,7 @@ cd %LOCALAPPDATA%\NuGet\Cache\
 
 ```ps
 Uninstall-Package -RemoveDependencies Hangfire.Mongo -Version 0.2.1 -Force
-``` 
+```
 
 - display tabular / list details
 
@@ -59,7 +59,7 @@ Uninstall-Package -RemoveDependencies Hangfire.Mongo -Version 0.2.1 -Force
 Find-Package jquery -AllVersions -ExactMatch
 ```
 
-- **detailed** relevant package search 
+- **detailed** relevant package search
 
 ```ps
 Find-Package -Id ZeroMQ -AllVersions | Select-Object ID, Version, Description, DownloadCount | Sort-Object -Descending -Property DownloadCount
@@ -79,7 +79,7 @@ Install-package NUnitTestAdapter -Version 2.0.0
 - Local feeds [1]
 - host own nuget [2]
 - Creating a local Nuget cache/repository [3]
-- Local package sources [4] 
+- Local package sources [4]
 - Configure machine wide packages and Visual Studio package sources [5]
 
 [1]: https://docs.microsoft.com/ro-ro/nuget/hosting-packages/local-feeds
@@ -87,6 +87,5 @@ Install-package NUnitTestAdapter -Version 2.0.0
 [3]: https://joshilewis.wordpress.com/2012/01/13/creating-a-local-nuget-cacherepository/
 [4]: http://stackoverflow.com/questions/28592693/adding-nuget-package-sources-to-visual-studio-by-script
 [5]: https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior
-
 
 [<<](./index.md) | [home](../README.md)

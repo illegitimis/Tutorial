@@ -15,5 +15,4 @@
 [5]: http://for-get.github.io/http-decision-diagram/httpdd.fsm.html
 [6]: https://github.com/for-GET/http-decision-diagram/blob/master/doc/README.md
 
-
 [<<](./index.md) | [home](../README.md)

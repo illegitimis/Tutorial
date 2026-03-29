@@ -7,13 +7,13 @@
 - Sass: Mixin or Placeholder? [3]
 - simplelineicons [4] preview
 - node-sass vs sass-loader [5]
-- _Responsive Websites With Bootstrap 3_ by Mark Zamoyta Pluralsight course page [6] *Jan 2015*. Learn to create a modern, responsive website using Bootstrap 3.
-- _CSS3 In-Depth_ by Estelle Weyl Pluralsight course page [7] *Feb 2013*
-- Modern Web Layout with Flexbox and CSS Grid Pluralsight course page [8] by Brian Treese, *Jan 2016*. Explore the modern world of web layout with the Flexible Box Module and CSS Grid Layout.
-- _CSS3 In-Depth_ by Estelle Weyl Pluralsight course page [7] *Feb 2013*
+- _Responsive Websites With Bootstrap 3_ by Mark Zamoyta Pluralsight course page [6] _Jan 2015_. Learn to create a modern, responsive website using Bootstrap 3.
+- _CSS3 In-Depth_ by Estelle Weyl Pluralsight course page [7] _Feb 2013_
+- Modern Web Layout with Flexbox and CSS Grid Pluralsight course page [8] by Brian Treese, _Jan 2016_. Explore the modern world of web layout with the Flexible Box Module and CSS Grid Layout.
+- _CSS3 In-Depth_ by Estelle Weyl Pluralsight course page [7] _Feb 2013_
 - Responsive In-Browser Web Page Design with HTML and CSS Pluralsight course page [9] by Karen Menezes, _Sep 2015_. In this HTML and CSS tutorial, we'll learn how to create a responsive site from scratch by prototyping directly in the browser.
 - CSS **Grid** Layout (aka "Grid"). Complete Guide to Grid [10]
-- estelle/CSS-Workshop [11] 6 hours workshop covering almost everything in CSS2 and CSS3 with demo [12] and _CSS3 In-Depth_ CSS3 In-Depth Pluralsight course page [7], css selectors demo [13]. jQuery & CSS3 Selectors [14] article. slides [15]. 
+- estelle/CSS-Workshop [11] 6 hours workshop covering almost everything in CSS2 and CSS3 with demo [12] and _CSS3 In-Depth_ CSS3 In-Depth Pluralsight course page [7], css selectors demo [13]. jQuery & CSS3 Selectors [14] article. slides [15].
 - [select[ivizr]](http://selectivizr.com/) is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8.
 - `::after` pseudo-element mdn [16]
 - quackit.com: Html Fieldset Tag.Cfm [17]
@@ -28,7 +28,7 @@
 
 - **mobile-first**, wroblewski site [26] and online book [27]
 - _Bootstrap 4_ overview [28] and samples [29]
-- _Responsive Websites With Bootstrap 3_ by Mark Zamoyta Pluralsight course page [6] *Jan 2015*. Learn to create a modern, responsive website using Bootstrap 3.
+- _Responsive Websites With Bootstrap 3_ by Mark Zamoyta Pluralsight course page [6] _Jan 2015_. Learn to create a modern, responsive website using Bootstrap 3.
 - my Bootstrap3 grid sample [30] on codepen
 - Multi-Device Layout Patterns [31] March, 2012. by Luke Wroblewski
   - _Mostly Fluid_: multi-column layout, stacks columns vertically
@@ -48,7 +48,7 @@
 
 ## Flexbox
 
-- Modern Web Layout with Flexbox and CSS Grid Pluralsight course page [8] by Brian Treese, *Jan 2016*. Explore the modern world of web layout with the Flexible Box Module and CSS Grid Layout.
+- Modern Web Layout with Flexbox and CSS Grid Pluralsight course page [8] by Brian Treese, _Jan 2016_. Explore the modern world of web layout with the Flexible Box Module and CSS Grid Layout.
 - Quick guide to flexbox [40]
 
 ## Almanac
@@ -98,7 +98,5 @@
 [40]: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 [41]: https://css-tricks.com/almanac/properties/l/list-style/
 [42]: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
-[43]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../README.md)

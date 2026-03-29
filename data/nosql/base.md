@@ -18,5 +18,4 @@ acronym | title | description
 [2]: https://people.eecs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
 [3]: https://neo4j.com/blog/aggregate-stores-tour/
 
-
 [<<](./index.md) | [home](../../README.md)

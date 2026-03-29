@@ -19,29 +19,12 @@ report the system as unavailable: keep C lose A
 
 ## 2pc
 
-- http://dbmsmusings.blogspot.com/2019/01/its-time-to-move-on-from-two-phase.html
-- https://docs.mongodb.com/v3.4/tutorial/perform-two-phase-commits/
-- https://www.kamilgrzybek.com/design/the-outbox-pattern/
-- https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/subscribe-events
+- <http://dbmsmusings.blogspot.com/2019/01/its-time-to-move-on-from-two-phase.html>
+- <https://docs.mongodb.com/v3.4/tutorial/perform-two-phase-commits/>
+- <https://www.kamilgrzybek.com/design/the-outbox-pattern/>
+- <https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/subscribe-events>
 
-
-[1]: https://neo4j.com/blog/acid-vs-base-consistency-models-explained/
-[2]: https://people.eecs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
 [3]: https://www.quora.com/What-Is-CAP-Theorem-1
 [4]: http://www.julianbrowne.com/article/viewer/brewers-cap-theorem
-[5]: https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e
-[6]: https://www.innoarchitech.com/blog/how-choose-right-database-system-relational-rdbms-vs-nosql-vs-newsql
-[7]: http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf
-[8]: https://www.quora.com/q/ebzrgpkirtzpthyb/Distributed-Systems-Part-2-Consistency-versus-Availability-A-Pragmatic-Example
-[9]: https://fenix.tecnico.ulisboa.pt/downloadFile/1126518382178117/10.e-CAP-3.pdf
-[10]: http://ksat.me/a-plain-english-introduction-to-cap-theorem/
-[11]: https://github.com/dotnetcore/CAP
-[12]: http://cap.dotnetcore.xyz/user-guide/en/getting-started/quick-start/
-[13]: https://stackoverflow.com/questions/11292215/where-does-mongodb-stand-in-the-cap-theorem
-[14]: https://aphyr.com/posts/322-call-me-maybe-mongodb-stale-reads
-[15]: https://gist.github.com/armon/11059431
-[16]: https://github.com/etcd-io/etcd/issues/741
-[17]: https://blog.nahurst.com/visual-guide-to-nosql-systems
-
 
 [<<](./index.md) | [home](../../README.md)

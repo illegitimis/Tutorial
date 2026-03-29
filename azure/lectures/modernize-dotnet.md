@@ -41,5 +41,4 @@ When you do a data migration, you will select the exact Azure Region where data 
 [sql-features-comparison]: https://docs.microsoft.com/en-us/azure/azure-sql/database/features-comparison
 [service-broker]: https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-service-broker?view=sql-server-ver15
 
-
 [<<](../index.md) | [home](../../README.md)

@@ -318,5 +318,4 @@ January 20th, 2016
 [35]: http://zeromq.org/whitepapers:brokerless
 [36]: https://github.com/sachabarber/NetMQRxDemo
 
-
 [<<](./index.md) | [home](../README.md)

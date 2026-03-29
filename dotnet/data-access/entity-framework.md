@@ -34,6 +34,7 @@
     ```
 
 - **multiple column index** by _adding a separate migration_
+
     ```cs
     public partial class OrderTableBrandIdMerchantIdOrderReferenceUniqueIndexAdded : Migration {
             protected override void Up(MigrationBuilder migrationBuilder) {
@@ -72,6 +73,5 @@
 [5]: http://www.entityframeworktutorial.net/code-first/seed-database-in-code-first.aspx
 [6]: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core#data-annotations-versus-fluent-api
 [7]: https://www.learnentityframeworkcore.com/
-
 
 [<<](./index.md) | [home](../../README.md)

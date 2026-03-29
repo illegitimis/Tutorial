@@ -1,6 +1,6 @@
 # Primary Keys
 
-- INFORMATION_SCHEMA 
+- INFORMATION_SCHEMA
 
 ```sql
 SELECT DISTINCT 
@@ -20,6 +20,5 @@ SELECT
   type_desc AS ConstraintType
 FROM sys.objects  
 ```
-
 
 [<<](./index.md) | [home](../../README.md)

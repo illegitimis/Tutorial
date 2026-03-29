@@ -14,5 +14,4 @@
 [ai-sampling]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/sampling
 [ai-profiler]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/profiler
 
-
 [<<](./index.md) | [home](../README.md)

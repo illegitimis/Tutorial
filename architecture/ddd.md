@@ -24,7 +24,6 @@
 - A .NET implementation of Domain Driven Design (DDD) sample application [18] based on Eric Evans' examples included in his great book.
 - ndddsample [19] on google code
 
-
 ## Principles
 
 - model _a single sub-domain at a time_, focus on _autonomous pieces_ of the domain, resulting software is closer to business understanding, often no side effects
@@ -53,6 +52,5 @@
 [18]: https://github.com/SzymonPobiega/DDDSample.Net
 [19]: https://code.google.com/archive/p/ndddsample/
 [20]: https://sourcemaking.com/refactoring/smells/inappropriate-intimacy
-
 
 [<<](./index.md) | [home](../README.md)

@@ -1,6 +1,6 @@
 # Co/Contra Variance
 
-Generic types have special rules for type compatibility, referred to as covariance and contravariance. 
+Generic types have special rules for type compatibility, referred to as covariance and contravariance.
 These rules determine whether _references of certain generic types are implicitly convertible to one another_ when _implicit conversions exist between their type arguments_.
 
 + **generic covariance**, introduced in C# 4.0.
@@ -55,7 +55,7 @@ class Test
 
 ## Delegates Parameter Type Contra-Variance
 
-The term parameter type contra-variance means that the parameters defined by the delegate might differ in the method that is called by the delegate. Here it’s different from the return type because the method might use a parameter type that derives from the type defined by the delegate. In the code sample the delegate uses the parameter type `DelegateParam2`, and the method that is assigned to the delegate instance d2 uses the parameter type `DelegateParam` that is the base type of DelegateParam2. 
+The term parameter type contra-variance means that the parameters defined by the delegate might differ in the method that is called by the delegate. Here it’s different from the return type because the method might use a parameter type that derives from the type defined by the delegate. In the code sample the delegate uses the parameter type `DelegateParam2`, and the method that is assigned to the delegate instance d2 uses the parameter type `DelegateParam` that is the base type of DelegateParam2.
 
 daca tipul parametrului revine la baza in definitia delegatului => polimorfism.
 
@@ -73,7 +73,7 @@ void LoggingHandler(object sender, EventArgs e) {}
 The array co-variance rules permit a value of an array type A[] to be a reference to an instance of an array type B[], _provided an implicit reference conversion exists from B to A_.
 Because of these rules, when an array element of a reference-type is passed as a reference or output parameter, a **run-time check is required to ensure that the actual element type of the array is identical to that of the parameter**.
 The second invocation of F causes an ArrayTypeMismatchException to be thrown because the actual element type of b is string and not object.
-Array covariance specifically does not extend to arrays of value-types. 
+Array covariance specifically does not extend to arrays of value-types.
 For example, no conversion exists that permits an int[] to be treated as an object[].
 
 ```cs
@@ -103,7 +103,5 @@ catch (ArrayTypeMismatchException ex) { Console.WriteLine(ex.Message); }
 
 [1]: https://gist.github.com/illegitimis/01c2b3cd6bd710c7be38a2cd773a1055
 [2]: https://gist.github.com/illegitimis/19be12b460e9f46e8e96fea20d5b998d
-[3]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

@@ -17,5 +17,4 @@ so [4]
 [6]: http://codebuckets.com/2016/09/24/passing-parameters-with-automapper/
 [7]: https://github.com/AutoMapper/AutoMapper/issues/1310
 
-
 [<<](./index.md) | [home](../../README.md)

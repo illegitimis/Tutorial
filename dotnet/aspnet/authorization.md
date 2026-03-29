@@ -19,5 +19,4 @@
 [7]: https://www.tutorialspoint.com/asp.net_core/asp.net_core_authorize_attribute.htm
 [8]: https://docs.microsoft.com/en-us/aspnet/core/security/authorization/limitingidentitybyscheme?tabs=aspnetcore2x
 
-
 [<<](./index.md) | [home](../../README.md)

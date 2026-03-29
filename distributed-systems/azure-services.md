@@ -1,6 +1,6 @@
 # Azure
 
-+ [Azure Cosmos DB](./nosql/cosmos.md) 
++ [Azure Cosmos DB](./nosql/cosmos.md)
   [![wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./nosql/cosmos.md)
 + Azure Stack: An extension of Azure [1] white paper
 + Modern Muse. Migrating an open source PaaS solution to Azure [2] pdf, June 2017
@@ -57,6 +57,5 @@ az aks create --resource-group MsftEventsAcpopescuGroup --name MsftEventsAcpopes
 [14]: https://www.microsoftazurepass.com/Redeemed
 [15]: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x3795346abcd
 [16]: https://portal.azure.com/#@msfteventsacpopescuoutlook.onmicrosoft.com/blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups
-
 
 [<<](./index.md) | [home](../README.md)

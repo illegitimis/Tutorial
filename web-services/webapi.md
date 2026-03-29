@@ -90,5 +90,4 @@
 [21]: http://www.c-sharpcorner.com/article/compressing-web-api-response-to-using-dotnetzip/
 [22]: http://www.c-sharpcorner.com/article/important-steps-to-increasing-web-api-performance/
 
-
 [<<](./index.md) | [home](../README.md)

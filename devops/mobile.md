@@ -4,7 +4,7 @@
 
 - Apps Builder lets you turn your website into an app [1]
 - Web app to IPhone app [2] on SO
-- How to turn webpages/website into an iPhone or iPad app [3] 
+- How to turn webpages/website into an iPhone or iPad app [3]
 - Website to App Converter [4]
 - Best Places to Turn Your Website Into an App for Android and iPhone [5]
 - Convert a website to an android application [6] on SO
@@ -23,6 +23,5 @@
 [8]: http://www.telerik.com/platform/appbuilder
 [9]: http://ionicframework.com/
 [10]: http://www.hanselman.com/blog/CreateAGreatMobileExperienceForYourWebsiteTodayPlease.aspx
-
 
 [<<](./index.md) | [home](../README.md)

@@ -22,9 +22,9 @@ Pure C# client with full protocol support.  Includes consumer, producer, lower l
 
 **Microsoft/Kafkanet on GitHub [9]**
 .NET implementation of the Apache Kafka Protocol that provides basic functionality through Producer/Consumer classes.
-The project also offers balanced consumer implementation. The project is a fork from ExactTarget's Kafka-net Client. 
+The project also offers balanced consumer implementation. The project is a fork from ExactTarget's Kafka-net Client.
 
-**ntent-ad/kafka4net on GitHub [10]** 
+**ntent-ad/kafka4net on GitHub [10]**
 C# client, asynchronous, all 3 compressions supported (read and write), tracks leader partition changes transparently, long time in production.
 
 **criteo/kafka-sharp on GitHub [11]**
@@ -39,12 +39,13 @@ kafka-sharp - High Performance .NET Kafka Driver
 - Kafka can message geospatial data from a fleet of long-haul trucks or sensor data from heating and cooling equipment in office buildings.
 - Whatever the industry or use case, Kafka brokers massive message streams for low-latency analysis in Enterprise Apache Hadoop.
 
-> From  _http://hortonworks.com/apache/kafka/_ [12]
+> From  _<http://hortonworks.com/apache/kafka/>_ [12]
+
 - **Apache Kafka** is an open-source [13] message broker [14] project developed by the Apache Software Foundation [15] written in Scala [16].
 - The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. It is, in its essence, **a massively scalable pub/sub message queue** _architected as a distributed transaction log_ 2 [17], making it highly valuable for enterprise infrastructures to **process streaming data**.
 - The design is heavily influenced by transaction logs [18]. 3 [19]
 
->From _https://en.wikipedia.org/wiki/Apache\_Kafka_ [20]
+>From _<https://en.wikipedia.org/wiki/Apache\_Kafka>_ [20]
 
 ***
 
@@ -63,16 +64,16 @@ Communication between the clients and the servers is done with a simple, high-pe
 
 We provide a Java client for Kafka, but clients are available in many languages [22].
 
->From _http://kafka.apache.org/documentation.html#introduction_ [23] 
+>From _<http://kafka.apache.org/documentation.html#introduction>_ [23]
 
 See our web site [24] for details on the project.
 You need to have Gradle [25] and Java [26] installed. Kafka requires Gradle 2.0 or higher. Java 7 should be used for building in order to support both Java 7 and Java 8 at runtime.
 
->From _https://github.com/apache/kafka_ [27]
+>From _<https://github.com/apache/kafka>_ [27]
 
 **The Log: What every software engineer should know about real-time data&#39;s unifying abstraction**
 
-> From _https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying_ [28]
+> From _<https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying>_ [28]
 
 ## What Kafka Does
 
@@ -92,7 +93,7 @@ Some of the important characteristics that make Kafka such an attractive option 
 | Reliability | Replicates data, supports multiple subscribers, and automatically balances consumers in case of failure |
 | Performance | High throughput for both publishing and subscribing, with disk structures that provide constant performance even with many terabytes of stored messages |
 
-_From &lt;_ _http://hortonworks.com/apache/kafka/#section\_1_ [29]_&gt;_
+_From &lt;_ _<http://hortonworks.com/apache/kafka/#section\_1>_ [29]_&gt;_
 
 ## How Kafka Works
 
@@ -107,7 +108,7 @@ Kafka&#39;s system design can be thought of as that of a distributed commit log,
 
 For Kafka consumers, keeping track of which messages have been consumed (processed) is simply a matter of keeping track of an **Offset** , which is a sequential id number that uniquely identifies a message within a partition. Because Kafka retains all messages on disk (for a configurable amount of time), consumers can rewind or skip to any point in a partition simply by supplying an offset value. Finally, this design eliminates the potential for back-pressure when consumers process messages at different rates.
 
-> From _http://hortonworks.com/apache/kafka/#section\_2_ [30]
+> From _<http://hortonworks.com/apache/kafka/#section\_2>_ [30]
 
 One of the keys to Kafka&#39;s high performance is the simplicity of the brokers&#39; responsibilities. In Kafka, topics consist of one or more Partitions that are ordered, immutable sequences of messages. Since writes to a partition are sequential, this design greatly reduces the number of hard disk seeks (with their resulting latency).
 
@@ -152,6 +153,5 @@ Apache Kafka for Beginners [31]
 [29]: http://hortonworks.com/apache/kafka/#section_1
 [30]: http://hortonworks.com/apache/kafka/#section_2
 [31]: http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/
-
 
 [<<](./index.md) | [home](../README.md)

@@ -163,5 +163,4 @@ sequenceDiagram
 [17]: https://github.com/radu-matei/websocket-manager/tree/master/samples
 [18]: https://radu-matei.com/blog/aspnet-core-websockets-middleware/
 
-
 [<<](./index.md) | [home](../README.md)

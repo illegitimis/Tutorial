@@ -10,5 +10,4 @@
 [3]: https://msdn.microsoft.com/en-us/library/cc293623.aspx
 [4]: http://stackoverflow.com/questions/439056/is-a-view-faster-than-a-simple-query
 
-
 [<<](./index.md) | [home](../../README.md)

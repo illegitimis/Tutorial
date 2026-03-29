@@ -30,5 +30,4 @@ static ThreadLocal<TextWriter> s_log = new ThreadLocal<TextWriter>(() => {
 });
 ```
 
-
 [<<](./index.md) | [home](../../README.md)

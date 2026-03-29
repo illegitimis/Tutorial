@@ -33,7 +33,6 @@
   Sec-WebSockets-Extensions: deflate-stream
   ```
 
-
 - message is composed out of multiple frames with header bits to determine last frame. text msg converted to binary
 - realtime web apps: polling, long polling, sse and signalr. named _transports_, fallback mechanism integrated from most efficient to polling.
 - client side signalr libraries?
@@ -57,6 +56,5 @@
 [10]: https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.Json/Protocol/JsonHubProtocol.cs
 [11]: https://github.com/aspnet/AspNetCore.Docs/blob/master/aspnetcore/signalr/configuration.md
 [12]: https://msdn.microsoft.com/en-us/magazine/mt846655.aspx
-
 
 [<<](./index.md) | [home](../README.md)

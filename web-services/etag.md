@@ -42,5 +42,4 @@ config.MessageHandlers.Add (cacheHandler);
 [3]: https://github.com/KevinDockx/HttpCacheHeaders
 [4]: https://stackoverflow.com/questions/35458737/implement-http-cache-etag-in-asp-net-core-web-api/35555544#35555544
 
-
 [<<](./index.md) | [home](../README.md)

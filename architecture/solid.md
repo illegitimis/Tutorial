@@ -18,5 +18,4 @@ The **SOLID** Principles of programming are a good set of rules to follow when y
 [5]: http://www.oodesign.com/interface-segregation-principle.html
 [6]: http://www.oodesign.com/dependency-inversion-principle.html
 
-
 [<<](./index.md) | [home](../README.md)
