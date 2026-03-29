@@ -18,19 +18,20 @@ pull | update
 
 1. The common Git guides are:
 
-| guide | description |
-|------------|------------------------------|
-| attributes | Defining attributes per path |
-| everyday   | Everyday Git With 20 Commands Or So|
-| glossary   | A Git glossary|
-| ignore     | Specifies intentionally untracked files to ignore|
-| modules    | Defining submodule properties|
-| revisions  | Specifying revisions and ranges for Git|
-| tutorial   | A tutorial introduction to Git (for version 1.5.1 or newer)|
-| workflows  | An overview of recommended workflows with Git|
+guide | description
+------------|------------------------------
+attributes | Defining attributes per path
+everyday   | Everyday Git With 20 Commands Or So
+glossary   | A Git glossary
+ignore     | Specifies intentionally untracked files to ignore
+modules    | Defining submodule properties
+revisions  | Specifying revisions and ranges for Git
+tutorial   | A tutorial introduction to Git (for version 1.5.1 or newer)
+workflows  | An overview of recommended workflows with Git
+
 Run like `git help <guide_name>`.
 
-2. **Git Bash**
+1. **Git Bash**
 
 ```sh
 git log -10
@@ -48,7 +49,7 @@ git revert <commit>
 git branch --list -a -vv
 ```
 
-3. **update fork**. If using _SourceTree_ one can pull from remote origin, selecting the dev branch to pull.
+1. **update fork**. If using _SourceTree_ one can pull from remote origin, selecting the dev branch to pull.
 
 ```cmd
 cd <dir_where_i_cloned_my_fork_of_a_repo>
@@ -57,15 +58,16 @@ git pull bradyholt-cron-expression-descriptor-master master
 # unstage_conflicts
 ```
 
-4. git push SSL_ERROR_SYSCALL
+1. git push SSL_ERROR_SYSCALL
 
 ```cmd
 git config http.postBuffer 524288000
 ```
 
-5. file **history**
-  - GitLens [4] extension
-  - file commit history with patches and beyond renames
+1. file **history**
+
++ GitLens [4] extension
++ file commit history with patches and beyond renames
 
   ```bat
   rem path to file is relative to root
@@ -73,14 +75,14 @@ git config http.postBuffer 524288000
   $ git log --follow -p -- ./src/Proj/Validation/OrderRequestDtoValidator.cs
   ```
 
-6. **stashes**
+1. **stashes**
 
 ```sh
 git stash list
 git stash show stash@{0}
 ```
 
-7. github _update fork_ from master
+1. github _update fork_ from master
 
 ```sh
 git remote -v
@@ -96,6 +98,5 @@ git push -v --tags origin master:master
 [2]: https://www.atlassian.com/git/tutorials/saving-changes
 [3]: https://www.atlassian.com/git/tutorials/syncing
 [4]: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
-
 
 [<<](./index.md) | [home](../README.md)

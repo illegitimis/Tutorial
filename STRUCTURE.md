@@ -2,7 +2,7 @@
 
 > Full directory tree of the documentation repository. Max depth: 4 levels below README.
 
-```
+```text
 Tutorial/
 ├── architecture/
 │   ├── ddd.md

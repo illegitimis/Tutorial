@@ -125,25 +125,4 @@ Key concepts:
 4. What approach might the company take in adding an augmented reality (AR) preview service to its architecture?
    - Correct: **The development team can create a prototype version of the app that includes the AR service that it tests out with select retail employees.** After the AR service reaches general availability (GA), the team can roll it out to production.
 
-[tco-calculator]: https://azure.microsoft.com/pricing/tco/calculator
-[pricing-calculator]: https://azure.microsoft.com/en-us/pricing/calculator/
-[free-account-faq]: https://azure.microsoft.com/en-us/free/free-account-faq/
-[purchase-options]: https://azure.microsoft.com/en-us/pricing/purchase-options/
-[understand-invoice]: https://docs.microsoft.com/en-us/azure/cost-management-billing/understand/understand-invoice
-[dev-test-pricing]: https://azure.microsoft.com/pricing/dev-test/
-[azure-reservations]: https://docs.microsoft.com/en-us/azure/billing/billing-save-compute-costs-reservations
-[billing-cost-mgmt]: https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/getting-started
-[spending-limit]: https://docs.microsoft.com/en-us/azure/billing/billing-spending-limit
-[start-stop-vms]: https://docs.microsoft.com/en-us/azure/automation/automation-solution-vm-management
-[hybrid-benefit]: https://azure.microsoft.com/pricing/hybrid-benefit/
-[bandwidth-pricing]: https://azure.microsoft.com/en-us/pricing/details/bandwidth/
-[sla-cosmos]: https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/v1_4/
-[azure-status]: https://status.azure.com/status
-[sla-index]: https://azure.microsoft.com/en-us/support/legal/sla/
-[preview-terms]: https://azure.microsoft.com/en-us/support/legal/preview-supplemental-terms/
-[azure-preview]: https://preview.portal.azure.com/
-[azure-updates]: https://azure.microsoft.com/updates
-[software-assurance]: https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-default
-
-
 [<<](./index.md) | [home](../README.md)

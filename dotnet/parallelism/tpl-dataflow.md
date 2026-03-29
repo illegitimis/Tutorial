@@ -593,7 +593,4 @@ By correctly implementing one or more of the **dataflow** interfaces, custom blo
 
 ---
 
-[1]: https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/dataflow-task-parallel-library
-
-
 [<<](./index.md) | [home](../../README.md)

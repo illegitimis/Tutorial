@@ -1,15 +1,17 @@
 # HttpClient
 
-  - `HttpClient` msdn [1]
-  - PowerBI Apiary mock tests [2]
-  - `FormUrlEncodedContent` [3] response on SO  
-  - Calling a Web API From a .NET Client (C#) [4] 2014
-  - HttpClientExtensions.PostAsJsonAsync [5]
-  - `HttpRuntime.Cache` and HttpClient.GetAsync: The underlying connection was closed [6]
-  - System.Net.Http.HttpRequestException Error while copying content to a stream [7] on SO
-  - *scalability* with `ServicePointManager` on SO [8]
-  - `using Microsoft.AspNetCore.TestHost`
-      
+<!-- markdownlint-disable MD046 -->
+
+- `HttpClient` msdn [1]
+- PowerBI Apiary mock tests [2]
+- `FormUrlEncodedContent` [3] response on SO  
+- Calling a Web API From a .NET Client (C#) [4] 2014
+- HttpClientExtensions.PostAsJsonAsync [5]
+- `HttpRuntime.Cache` and HttpClient.GetAsync: The underlying connection was closed [6]
+- System.Net.Http.HttpRequestException Error while copying content to a stream [7] on SO
+- *scalability* with `ServicePointManager` on SO [8]
+- `using Microsoft.AspNetCore.TestHost`
+
       ```cs
         // test class inherits from IDisposable
         //private TestServer _server;
@@ -60,25 +62,31 @@
 
         #endregion
       ```
-  - `System.Net.Http` issues
+
+- `System.Net.Http` issues
 
     `System.TypeLoadException`: Inheritance security rules violated by type: 'System.Net.Http.WebRequestHandler'. Derived types must either match the security accessibility of the base type or be less accessible. [9]
-    
+
     dependency on a library that uses `System.Net.Http` [10]
-    
+
     direct dependency on types in `System.Net.Http` [11]
-    
+
     I had to:
     1. Package Manager Console for ASP.NET Core project over `net462`
+
 ```cmd
 Update-Package System.Net.Http -Version 4.4.0-beta-24913-02 -Source https://dotnet.myget.org/F/dotnet-core
 ```
+
     2. Command line for ASP.NET Core project targetting `netcoreapp2.0`, `netstandard2.0`
+
 ```cmd
 dotnet remove package System.Net.Http -v 4.3.3
 dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
 ```
+
     3. For a standard .Net csproj with .NET framework 4.6.2 removed:
+
 ```xml
 <ItemGroup>
     <Reference Include="System.Net.Http">
@@ -98,6 +106,5 @@ dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
 [9]: https://github.com/dotnet/corefx/issues/11100
 [10]: https://github.com/dotnet/corefx/issues/11100#issuecomment-276066197
 [11]: https://github.com/dotnet/corefx/issues/11100#issuecomment-275960251
-
 
 [<<](./index.md) | [home](../README.md)

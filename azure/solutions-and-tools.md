@@ -103,12 +103,4 @@ Azure provides tools for managing, configuring, and monitoring your environment:
 17. Q: Which service is the platform that powers Application Insights, monitoring for VMs, containers, and Kubernetes?
     A: **Azure Monitor**.
 
-[1]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/
-[2]: https://docs.microsoft.com/en-us/learn/modules/iot-fundamentals/
-[3]: https://docs.microsoft.com/en-us/learn/modules/ai-machine-learning-fundamentals/
-[4]: https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/
-[5]: https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/
-[6]: https://docs.microsoft.com/en-us/learn/modules/management-fundamentals/
-
-
 [<<](./index.md) | [home](../README.md)

@@ -21,7 +21,7 @@
 
  Built-in | functions
 --- | ---
-Mathematical | ABS, CEILING, EXP, FLOOR, LOG, LOG10, POWER, ROUND, SIGN, SQRT, SQUARE, TRUNC, ACOS, ASIN, ATAN, ATN2, COS, COT, DEGREES, PI, RADIANS, SIN, TAN 
+Mathematical | ABS, CEILING, EXP, FLOOR, LOG, LOG10, POWER, ROUND, SIGN, SQRT, SQUARE, TRUNC, ACOS, ASIN, ATAN, ATN2, COS, COT, DEGREES, PI, RADIANS, SIN, TAN
 Type checking | IS_ARRAY, IS_BOOL, IS_NULL, IS_NUMBER, IS_OBJECT, IS_STRING, IS_DEFINED, IS_PRIMITIVE
 String | CONCAT, CONTAINS, ENDSWITH, INDEX_OF, LEFT, LENGTH, LOWER, LTRIM, REPLACE, REPLICATE, REVERSE, RIGHT, RTRIM, STARTSWITH, SUBSTRING, UPPER
 Array | ARRAY_CONCAT, ARRAY_CONTAINS, ARRAY_LENGTH,  ARRAY_SLICE
@@ -30,10 +30,10 @@ Geospatial | ST_WITHIN, ST_DISTANCE, ST_INTERSECTS, ST_ISVALID, ST_ISVALIDDETAIL
 Operators | _
 --- | ---
 arithmetic | +, -, *, /, %
-bitwise | `|`, &, ^, <,>>, >>> (zero-fill right shift)
+bitwise | `&#124;`, &, ^, <,>>, >>> (zero-fill right shift)
 logical | AND, OR, NOT
 comparison | =, !=, >, >=, <, <=, <>, ??
-string | || (concatenate)
+string | `&#124;&#124;` (concatenate)
 ternary | ?
 
 Sample | queries
@@ -85,6 +85,5 @@ _SQL - JavaScript UDF_, use | `SELECT udf.REGEX_MATCH(Families.address.city, ".*
 [10]: https://github.com/Azure/azure-documentdb-dotnet/blob/ebb807493ecec06964e1e049b963045fd347a45d/samples/code-samples/Shared/Util/DocumentClientHelper.cs
 [11]: https://stackoverflow.com/questions/36655455/calling-documentdb-stored-procedures-from-net
 [12]: https://stackoverflow.com/questions/36626257/call-documentdb-stored-procedure-from-net-with-parameters/36668664#36668664
-
 
 [<<](./index.md) | [home](../../README.md)

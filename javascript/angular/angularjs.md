@@ -1,27 +1,30 @@
 # AngularJS
 
 ## Courses
+
 + `AngularJS` for 'ASP.Net Core, Mvc6, EF Core, AngularJS' 'ASP.Net Core, Mvc6, EF Core, AngularJS' [1]
 + `Angular` Fundamentals Angular Fundamentals Pluralsight course wiki page [2]
 
 ## Books
+
 + Rangle's [5] Angular2 Training Book, Google Drive [3], One Drive [4]
-+ Valerio De Sanctis - **ASP.NET Core and Angular 2** - _2016_ 
-One Drive [6], 
++ Valerio De Sanctis - **ASP.NET Core and Angular 2** - _2016_
+One Drive [6],
 Code Repository for ASP.NET Core and Angular 2, Published by Packt [7] works with VS2017
-+ 2013.**ng-book**.Ari Lerner.The Complete Book on AngularJS 
++ 2013.**ng-book**.Ari Lerner.The Complete Book on AngularJS
 Google Drive [8]
 One Drive [9]
 + ng-book 2 [10]. The in-depth, complete, and up-to-date book on Angular 4.
 + Angular 2 Development with TypeScript O'Reilly [11]
 
 ## Resources
-- jmcunningham/AngularJS2-Learning [12]
-- latest angular docs [13]
-- _Angular2_ notes [![Angular2 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng2.md)
-- _Angular4_ notes [![Angular4 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng4.md)
-- Angular University all lessons [14]
-- style guide [15]
+
++ jmcunningham/AngularJS2-Learning [12]
++ latest angular docs [13]
++ _Angular2_ notes [![Angular2 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng2.md)
++ _Angular4_ notes [![Angular4 notes](https://img.shields.io/badge/wiki-page-green.svg)](ng4.md)
++ Angular University all lessons [14]
++ style guide [15]
 
 ## Articles
 
@@ -67,6 +70,5 @@ wiki [28]
 [26]: https://www.telerik.com/whitepapers/kendo-ui/planning-an-angular-application
 [27]: https://www.telerik.com/campaigns/kendo-ui/wp-functional-programming-with-js-cheat-sheet?utm_source=eloqua&utm_campaign=kendo-ui-jquery-whitepaper-funcwithjs-fiddler-web
 [28]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

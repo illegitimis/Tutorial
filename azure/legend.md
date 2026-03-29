@@ -33,7 +33,7 @@ Azure Kubernetes Service. simplest deployment of a managed Kubernetes cluster in
 
 Build secure, scalable, highly available web front ends in Azure \
 load balancing? \
-documentation [1], home [2] 
+documentation [1], home [2]
 
 ## App Service
 
@@ -131,7 +131,7 @@ protect your Azure resources from distributed denial of service attacks.
 
 ## Dedicated Host
 
- [Azure Dedicated Host]() provides _dedicated_ physical servers to host your Azure VMs for Windows and Linux. Default hardware shared, workloads isolated. A dedicated host is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
+ Azure Dedicated Host provides *dedicated* physical servers to host your Azure VMs for Windows and Linux. Default hardware shared, workloads isolated. A dedicated host is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
 
  ![Azure Dedicated Host physical server diagram](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
 
@@ -350,11 +350,11 @@ duplicate components across several regions => ensure high availability
 - A container that holds related resources for an Azure solution.
 - The resource group includes resources that you want to manage as a group.
 - You decide which resources belong in a resource group based on what makes the most sense for your organization.
-- A resource group is a _logical container_ for resources deployed on Azure.
+- A resource group is a *logical container* for resources deployed on Azure.
 - These resources are anything you create in an Azure subscription like VMs, Azure Application Gateway instances, and Azure Cosmos DB instances.
 - All resources must be in a resource group, and a resource can only be a member of a single resource group.
 - Many resources can be moved between resource groups with some services having specific limitations or requirements to move.
-- Resource groups _can't be nested_.
+- Resource groups *can't be nested*.
 - Before any resource can be provisioned, you need a resource group for it to be placed in.
 - If you delete a resource group, all resources contained within it are also deleted
 
@@ -427,7 +427,7 @@ Total Cost of Ownership
 
 ## TSP
 
-Trust Services Principles 
+Trust Services Principles
 
 ## UDR
 
@@ -486,6 +486,5 @@ geographical grouping of Azure regions for billing purposes
 [13]: https://docs.microsoft.com/en-us/azure/cosmos-db/serverless
 [14]: https://docs.microsoft.com/en-us/azure/virtual-desktop/
 [15]: https://docs.microsoft.com/en-us/azure/virtual-machines/
-
 
 [<<](./index.md) | [home](../README.md)

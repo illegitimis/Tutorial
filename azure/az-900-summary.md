@@ -146,13 +146,4 @@ Knowledge checks covered in [security.md](./security.md) (modules 417, 428).
 4. What approach might the company take in adding an augmented reality (AR) preview service?
    - Correct: **The development team can create a prototype version of the app that includes the AR service that it tests out with select retail employees.** After the AR service reaches general availability (GA), the team can roll it out to production.
 
-[az900-ms-learn]: https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/
-[lp1]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/
-[lp2]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/
-[lp3]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/
-[lp4]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-general-security-network-security-features/
-[lp5]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/
-[lp6]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/
-
-
 [<<](./index.md) | [home](../README.md)

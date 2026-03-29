@@ -4,15 +4,15 @@
 - 1 + n queries => data loaders and batch
 - how it works, and how to use it [graphql.org learn] | [landscape] | Current Working [draft]
 
-## Official C#
+## Official C# Implementations
 
 `GraphQL` .NET server/client [implementations]
 
 git | package | doc | examples | desc
 ---|---|---|---|---
 [graphql-dotnet] | [GraphQL] | [graphql-dotnet.github.io] | [graphql-dotnet-examples] | continuator of [lmynsberge/graphql-dotnet-netcore]
-[graphql-client] | [GraphQL.Client] | - | [GraphQL.Client.Example] | A GraphQL Client for .NET Standard 
-[graphql-platform] | [HotChocolate] | [chillicream] | [fetching-from-rest]; [fetching-from-databases]; [dataloader] | Hot Chocolate GraphQL server for .NET, the Strawberry Shake GraphQL client for .NET and Nitro the awesome Monaco based GraphQL IDE. 
+[graphql-client] | [GraphQL.Client] | - | [GraphQL.Client.Example] | A GraphQL Client for .NET Standard
+[graphql-platform] | [HotChocolate] | [chillicream] | [fetching-from-rest]; [fetching-from-databases]; [dataloader] | Hot Chocolate GraphQL server for .NET, the Strawberry Shake GraphQL client for .NET and Nitro the awesome Monaco based GraphQL IDE.
 [graphql-net] | [GraphQL.Net] | [chkimes] | - | Convert `GraphQL`  and `IQueryable`. netFx only. obsolete
 
 ## Courses
@@ -48,13 +48,12 @@ git | package | doc | examples | desc
 [fetching-from-databases]: https://chillicream.com/docs/hotchocolate/v15/fetching-data/fetching-from-databases
 [dataloader]: https://chillicream.com/docs/hotchocolate/v14/fetching-data/dataloader
 [graphql.org learn]: https://graphql.org/learn/
-[graphql-dotnet.github.io-migration4]: https://graphql-dotnet.github.io/docs/migrations/migration4
 [landscape]: https://landscape.graphql.org/
 [draft]: https://spec.graphql.org/draft/
 [fiyazhasan]: https://fiyazhasan.me/tag/graphql/
 [explorer]: https://docs.github.com/en/graphql/overview/explorer
 [create-graphless]: https://github.com/simonaco/create-graphless
-[fastify]: https://github.com/fastify/fastify 
+[fastify]: https://github.com/fastify/fastify
 [implementations]: https://graphql.org/code/#c-net
 
 [1]: https://github.com/mehtanilay10/GraphQL-Demo
@@ -63,6 +62,5 @@ git | package | doc | examples | desc
 [4]: https://www.pluralsight.com/courses/building-graphql-apis-aspdotnet-core
 [5]: https://github.com/RolandGuijt/PluralsightGraphQL
 [6]: https://azure.microsoft.com/en-us/resources/videos/build-2019-build-scalable-apis-using-graphql-and-serverless/
-
 
 [<<](./index.md) | [home](../README.md)

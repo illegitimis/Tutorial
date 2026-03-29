@@ -299,28 +299,4 @@ Services and features in Azure supporting governance:
 3. Where can the IT department find reference blueprints that it can apply directly to its Azure subscriptions?
    - Correct: **Azure compliance documentation** — provides reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription.
 
-[aad-free]: https://azure.microsoft.com/en-us/free/
-[aad-compare]: https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad
-[aad-overview]: https://azure.microsoft.com/en-us/services/active-directory/#overview
-[sso-what]: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on
-[sso-seamless]: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso
-[aad-connect]: https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect
-[mfa-docs]: https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks
-[conditional-access]: https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/
-[mfa-licensing]: https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication
-[rbac-overview]: https://docs.microsoft.com/en-us/azure/role-based-access-control/overview
-[resource-locks]: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json
-[azure-policy]: https://azure.microsoft.com/en-us/services/azure-policy/#overview
-[privacy-statement]: https://privacy.microsoft.com/en-US/privacystatement
-[online-services]: https://www.microsoft.com/licensing/terms/product/ForallOnlineServices
-[trust-center]: https://www.microsoft.com/ro-ro/trust-center
-[compliance-offerings]: https://docs.microsoft.com/en-us/compliance/regulatory/offering-home
-[azure-compliance]: https://docs.microsoft.com/en-us/azure/compliance/
-[azure-government]: https://azure.microsoft.com/global-infrastructure/government
-[azure-geographies]: https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies
-[built-in-roles]: https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
-[tag-policies]: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-policies
-[policy-samples]: https://docs.microsoft.com/en-us/azure/governance/policy/samples/
-
-
 [<<](./index.md) | [home](../README.md)

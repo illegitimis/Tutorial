@@ -12,7 +12,7 @@ Then you add a lock to your resource group and verify that you can't delete the 
 You then add a storage account to your resource group and see how the lock from the parent resource group prevents the storage account from being deleted.
 A storage account is a container that groups a set of Azure Storage services together.
 
-## Here You Create a Resource Group That's Named My-test-rg.
+## Here You Create a Resource Group That's Named My-test-rg
 
 - Go to the Azure portal and sign in.
 - At the top of the page, select Resource groups.
@@ -21,10 +21,10 @@ A storage account is a container that groups a set of Azure Storage services tog
 
 Setting | Value
 ---|---
-Project details | 
+Project details | (section)
 Subscription | Your Azure subscription
 Resource group | my-test-rg
-Resource details | 
+Resource details | (section)
 Region | (US) East US. You can also select a region that's closer to you.
 
 - Select Review + create, and then select Create.

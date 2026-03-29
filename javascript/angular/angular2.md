@@ -10,17 +10,16 @@
 directive change, ng2 eliminates _scope_, _restrict_, _link_, module has a **component method** instead
 ![my-narwhal](https://up5oia.by3302.livefilestore.com/y4msRTsm9lXTA6Y2Rvik59s982Q1wMFSsvzFPUzipbN0Yc1eyeeX_A6Bx8OiJESh5qOgC9Me9M0-csOLKszNjWP8ESaAoo2kwjLn0a1kBiXyPs3HY2A8HvyDPRS02F41MmeWeXCSIvcxEmSu99_hU9gGWBGLZ8utjS2HxdaeqwwUY5NqqO_ve_rd4YNGmHu_F062T4puuhKQVmQxCyVBB7fPQ?width=743&height=490&cropmode=none)
 
-typescript is a __superscript__ of ES6.
+typescript is a **superscript** of ES6.
 
 |  |  |
 |---|---|
-`component` | **encapsulates** the _template_, _data_ and _behavior_ of a view. components can be _nested_, in a tree like structure, and reusable. is a ts class. _completely decoupled from the DOM_, binding used instead. facilitates unit testing.
-`router` | responsible for _navigation_
-`directive` | _modify DOM elements_ so as to modify their behavior
-`service` | ![component->service->rest api](https://vrp2kg.by3302.livefilestore.com/y4mQ-0_q17WRRu-5rqmW6VYBivyi6UVJ785Xfwi9vOckCpm2UmqOsurWS0hTIaCEIgmnHEvlwywLwNFvN-xbNPzEQkcQnxVIyJAtJHVeJyB2vRQ6-cAeffijFaDuKCdRbQnHscBMV4q6wtrl1D2KykKFdUlllrh_AiBn8Gfy9KJV6jgASKY3hQ-hKHw2fznDlju0OlIO9DrHES16dG1AhRQNw?width=660&height=251&cropmode=none)
+| `component` | **encapsulates** the _template_, _data_ and _behavior_ of a view. components can be _nested_, in a tree like structure, and reusable. is a ts class. _completely decoupled from the DOM_, binding used instead. facilitates unit testing. |
+| `router` | responsible for _navigation_ |
+| `directive` | _modify DOM elements_ so as to modify their behavior |
+| `service` | ![component->service->rest api](https://vrp2kg.by3302.livefilestore.com/y4mQ-0_q17WRRu-5rqmW6VYBivyi6UVJ785Xfwi9vOckCpm2UmqOsurWS0hTIaCEIgmnHEvlwywLwNFvN-xbNPzEQkcQnxVIyJAtJHVeJyB2vRQ6-cAeffijFaDuKCdRbQnHscBMV4q6wtrl1D2KykKFdUlllrh_AiBn8Gfy9KJV6jgASKY3hQ-hKHw2fznDlju0OlIO9DrHES16dG1AhRQNw?width=660&height=251&cropmode=none) |
 
 [1]: http://es6-features.org
 [2]: https://github.com/danielfigueiredo/wizards-wizard
-
 
 [<<](./index.md) | [home](../../README.md)

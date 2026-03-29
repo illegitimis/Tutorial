@@ -2,7 +2,7 @@
 
 ```cs
 public interface IComparable {int  CompareTo(object obj );} 
-public interface IComparable<in T> { int CompareTo(	T other ); }
+public interface IComparable<in T> { int CompareTo( T other ); }
 
 public interface IComparer { int Compare( object x, object y); } 
 public interface IComparer<in T> { int Compare( T x, T y); }
@@ -19,8 +19,5 @@ public interface IEnumerator<out T> : IDisposable, IEnumerator  {
   T Current { get; }
 }
 ```
-
-[1]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

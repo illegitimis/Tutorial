@@ -257,7 +257,4 @@ WHERE ST_Distance(f.location, {"type": "Point", "coordinates": [31.9, -4.8]}) < 
 
 ---
 
-[1]: https://docs.microsoft.com/en-us/azure/cosmos-db/sql-query-getting-started
-
-
 [<<](./index.md) | [home](../../README.md)

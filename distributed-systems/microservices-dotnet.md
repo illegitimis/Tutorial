@@ -1,16 +1,17 @@
 # Microservices with .NET
 
 (Martin Fowler and James Levis, “Microservices”, March 2014.)
-> Microservices architectural style is an approach to developing a **single application as a suite of small services**, _each running in its own process and communicating with lightweight mechanisms_, often an HTTP resource API. 
-These services are _built around business capabilities_ and **independently deployable** by _fully automated deployment machinery_. 
-There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies. 
+> Microservices architectural style is an approach to developing a **single application as a suite of small services**, _each running in its own process and communicating with lightweight mechanisms_, often an HTTP resource API.
+These services are _built around business capabilities_ and **independently deployable** by _fully automated deployment machinery_.
+There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.
 
 ## Resources
-+ microservices-aspnetcore [1] **Samples and Utility Code** for the O'Reilly Book, "_Building Microservices with ASP.NET Core_" [2], 
+
++ microservices-aspnetcore [1] **Samples and Utility Code** for the O'Reilly Book, "_Building Microservices with ASP.NET Core_" [2],
 Release Date: September 2017, Pages: 232, By Kevin Hoffman
-+ *Building Microservices* [3], Designing Fine-Grained Systems [4], February 2015, by Sam Newman, 282 pages.
++ _Building Microservices_ [3], Designing Fine-Grained Systems [4], February 2015, by Sam Newman, 282 pages.
   
-  git pdf file git pdf file [5] or 
+  git pdf file git pdf file [5] or
   Google Drive [6]
 
 + .NET Microservices – Architecture for Containerized .NET Applications [7], msft 2017, de la Torre & co
@@ -18,20 +19,21 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
   pdf Google Drive [8] also DOWNLOAD available at aka [9]
 
 ## Unvisited Queue
-* ALEKSI ULKUNIEMI, STAND-ALONE .NET MICROSERVICES WITH CAMERAS AND IMAGE COMPARISON [10] Master of Science thesis, May 2015
-* Daishi.AMQP and RabbitMQ [11]
-* FubuMVC [12]
-* Live presentation for a MicroServices Architecture for Microsoft .Net [13]
+
++ ALEKSI ULKUNIEMI, STAND-ALONE .NET MICROSERVICES WITH CAMERAS AND IMAGE COMPARISON [10] Master of Science thesis, May 2015
++ Daishi.AMQP and RabbitMQ [11]
++ FubuMVC [12]
++ Live presentation for a MicroServices Architecture for Microsoft .Net [13]
  by Rob Scaduto from Third Wave Technology. Nancy and Rake.
-* Pattern: Microservice Architecture [14]
-* Microservices with Steeltoe and Cloud Foundry: A .NET App Using MS Face API [15]
-* Azure Service Fabric and the Microservices Architecture [16], dec 2015
-* VS mag, 2015, Deploying Microservices Architecture with C# [17]
-* [Microservices in .NET Core]() with _examples in Nancy_, Christian Horsdal Gammelgaard, January 2017, ISBN 9781617293375, 344 pages
-* [Building Microservices with Open Source Technologies], sep 2014 (http://www.developer.com/open/building-microservices-with-open-source-technologies.html)
-* ms enterprise micro svc [18]
-* golden-service-fabric-hammer [19]
-* Building microservices with ASP.NET Core (without MVC) [20]
++ Pattern: Microservice Architecture [14]
++ Microservices with Steeltoe and Cloud Foundry: A .NET App Using MS Face API [15]
++ Azure Service Fabric and the Microservices Architecture [16], dec 2015
++ VS mag, 2015, Deploying Microservices Architecture with C# [17]
++ Microservices in .NET Core with _examples in Nancy_, Christian Horsdal Gammelgaard, January 2017, ISBN 9781617293375, 344 pages
++ [Building Microservices with Open Source Technologies], sep 2014 (<http://www.developer.com/open/building-microservices-with-open-source-technologies.html>)
++ ms enterprise micro svc [18]
++ golden-service-fabric-hammer [19]
++ Building microservices with ASP.NET Core (without MVC) [20]
 
 [1]: https://github.com/microservices-aspnetcore
 [2]: http://shop.oreilly.com/product/0636920052074.do
@@ -53,6 +55,5 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
 [18]: https://keyholesoftware.com/2015/10/19/microservices-in-the-microsoft-enterprise/
 [19]: https://keyholesoftware.com/2016/06/14/golden-service-fabric-hammer/
 [20]: https://www.strathweb.com/2017/01/building-microservices-with-asp-net-core-without-mvc/
-
 
 [<<](./index.md) | [home](../README.md)

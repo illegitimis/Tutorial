@@ -12,12 +12,10 @@ string s = "Hello"; s[0] = 'c';
 ```
 
 - All simple types are immutable. Any structs you create should also be immutable.
-- ERIC LIPPERT 
+- ERIC LIPPERT
+
 > This is yet another reason why value types should be immutable: If a change is impossible, then the fact that changes made to an `unboxed struct` are not reflected in the `boxed struct` becomes irrelevant. Rather than dealing with the unexpected and confusing semantics, avoid them altogether.
 
 - The `Regex` class is the heart of the FCL regular expression support. Used both as an object instance and a static type, the `Regex` class represents an immutable, _compiled instance of a regular expression_ that can be applied to a string via a matching process. Internally, the regular expression is stored as either a _sequence of internal regular expression bytecodes_ that are **interpreted at match time** or as **compiled MSIL opcodes** that are **JIT-compiled by the CLR at runtime**. This allows you to make a tradeoff between worsened regular expression startup time and memory utilization versus _h_igher raw match performance at runtime_.
-
-[1]: https://github.com/illegitimis/Tutorial/wiki
-
 
 [<<](./index.md) | [home](../../README.md)

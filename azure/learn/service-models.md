@@ -34,12 +34,12 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 ---|---|---|---
 No CapEx | Users have no up-front costs. | idem | idem
 Agility | Applications can be made accessible quickly, and deprovisioned whenever needed. | PaaS is more agile than IaaS, and users don't need to configure servers for running applications. | Users can provide staff with access to the latest software quickly and easily.
-Management | The shared responsibility model applies; the user manages and maintains the services they have provisioned, and the cloud provider manages and maintains the cloud infrastructure. | X
+Management | The shared responsibility model applies; the user manages and maintains the services they have provisioned, and the cloud provider manages and maintains the cloud infrastructure. | X | X
 Pricing model | **Consumption**-based. Organizations pay only for what they use and operate under an Operational Expenditure (OpEx) model. | Consumption-based / Users, idem | **Pay-as-you-go** pricing model. Users pay for the software they use on a subscription model, typically monthly or yearly, regardless of how much they use the software.
-Skills | No deep technical skills are required to deploy, use, and gain the benefits of a public cloud. | idem | idem 
-Cloud benefits | Organizations can use the skills and expertise of the cloud provider to ensure workloads are made secure and highly available. | In addition, users can gain access to more cutting-edge development tools. They can then apply these tools across an application's lifecycle. |
+Skills | No deep technical skills are required to deploy, use, and gain the benefits of a public cloud. | idem | idem
+Cloud benefits | Organizations can use the skills and expertise of the cloud provider to ensure workloads are made secure and highly available. | In addition, users can gain access to more cutting-edge development tools. They can then apply these tools across an application's lifecycle. | idem
 Flexibility | IaaS is the most flexible cloud service because you have control to configure and manage the hardware running your application. | X | Users can access the same application data from anywhere.
-Productivity | X | Users can focus on application development only, because the cloud provider handles all platform management. Working with distributed teams as services is easier because the platform is accessed over the internet. You can make the platform available globally more easily.
+Productivity | X | Users can focus on application development only, because the cloud provider handles all platform management. Working with distributed teams as services is easier because the platform is accessed over the internet. You can make the platform available globally more easily. | X
 Platform limitations | X | There can be some limitations to a cloud platform that might affect how an application runs. When you're evaluating which PaaS platform is best suited for a workload, be sure to consider any limitations in this area. | idem
 Software limitations | X | X | There can be some limitations to a software application that might affect how users work. Because you're using as-is software, you don't have direct control of features. When you're evaluating which SaaS platform is best suited for a workload, be sure to consider any business needs and software limitations.
 
@@ -56,4 +56,3 @@ Like PaaS, serverless computing enables developers to build applications faster 
 It's important to note that servers are still running the code. The "serverless" name comes from the fact that the tasks associated with infrastructure provisioning and management are invisible to the developer. This approach enables developers to increase their focus on the business logic, and deliver more value to the core of the business. Serverless computing helps teams increase their productivity and bring products to market faster, and it allows organizations to better optimize resources and stay focused on innovation.
 
 [<< home](../az.md) | [< LP1 AZ900](./1-lp-az-900.md)
-

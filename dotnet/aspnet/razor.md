@@ -44,7 +44,7 @@ _ViewStart.cshtml default layout for the razor view engine
 ## HTML Helpers
 
 - `@Html.ActionLink` link text, action & controller names
-- strongly vs loosely typed html form helpers: `@Html`[`TextBox`|`CheckBox`|`RadioButton`|`DropDownList`|`TextArea`][|`For`]
+- strongly vs loosely typed html form helpers: `@Html.TextBox` / `@Html.CheckBox` / `@Html.RadioButton` / `@Html.DropDownList` / `@Html.TextArea` and `For` variants
 - `@using (Html.BeginForm(method, controller, FormMethod.Post))`
 - display name attribute localization [1], annotations with resource [2]
 - `@Html.ValidationMessageFor` with a model property lambda and optionally a custom error message
@@ -148,6 +148,5 @@ services.Configure<razorViewEngineOptions>(opts => {
 
 [1]: http://adamyan.blogspot.com/2010/02/aspnet-mvc-2-localization-complete.html
 [2]: https://stackoverflow.com/questions/30704121/use-resources-in-a-razor-labelfor-element
-
 
 [<<](./index.md) | [home](../../README.md)

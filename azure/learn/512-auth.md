@@ -1,4 +1,4 @@
-## Compare Authentication and Authorization
+# Compare Authentication and Authorization
 
 Recall that Tailwind Traders must ensure that only employees can sign in and access its business applications.
 

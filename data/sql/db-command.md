@@ -12,11 +12,12 @@
 
 ## Methods
 
-1. Executes [3] 
-a Transact-SQL statement against the connection and returns the number of rows affected. 
-Perform catalog operations (for example, querying the structure of a database or creating database objects such as tables), 
-or to change the data in a database without using a DataSet [4] 
-by executing UPDATE, INSERT, or DELETE statements. 
+1. Executes [3]
+a Transact-SQL statement against the connection and returns the number of rows affected.
+Perform catalog operations (for example, querying the structure of a database or creating database objects such as tables),
+or to change the data in a database without using a DataSet [4]
+by executing UPDATE, INSERT, or DELETE statements.
+
 ```cs
 ExecuteNonQuery 
 BeginExecuteNonQuery 
@@ -24,12 +25,13 @@ EndExecuteNonQuery
 BeginExecuteNonQueryAsync
 ```
 
-2. Sends the `CommandText` [5] 
-to the `Connection` [6] 
+1. Sends the `CommandText` [5]
+to the `Connection` [6]
 and builds a `SqlDataReader` [7].  
-Executes commands that return rows [8]. 
-For increased performance, ExecuteReader invokes commands using the Transact-SQL `sp_executesql` system stored procedure. 
-Therefore, ExecuteReader might not have the effect that you want if used to execute commands such as Transact-SQL SET statements 
+Executes commands that return rows [8].
+For increased performance, ExecuteReader invokes commands using the Transact-SQL `sp_executesql` system stored procedure.
+Therefore, ExecuteReader might not have the effect that you want if used to execute commands such as Transact-SQL SET statements
+
 ```cs
 ExecuteReader
 BeginExecuteReader
@@ -37,17 +39,18 @@ EndExecuteReader(IAsyncResult)
 ExecuteReaderAsync
 ```
 
-3. Executes the query, and returns the first column of the first row in the result set returned by the query. 
+1. Executes the query, and returns the first column of the first row in the result set returned by the query.
 Additional columns or rows are ignored.
-Retrieves a single value [8] 
+Retrieves a single value [8]
 (for example, an aggregate value) from a database.
+
 ```cs
 ExecuteScalar
 ExecuteScalarAsync()
 [Begin|End]ExecuteScalar
 ```
 
-4. Sends the CommandText to the Connection and builds an `XmlReader` [9] object. Use `SqlDbType.Xml` for parameters.
+1. Sends the CommandText to the Connection and builds an `XmlReader` [9] object. Use `SqlDbType.Xml` for parameters.
 
 ```cs
 ExecuteXmlReader  
@@ -55,11 +58,12 @@ BeginExecuteXmlReader
 EndExecuteXmlReader  
 ExecuteXmlReaderAsync()
 ```
-5. ADO.NET 2 also provides **true asynchronous operations**. 
-Unlike creating a background thread and blocking, ADO.NET 2 implements asynchronous operations by using ~IO Completion ports~, 
-which are built into the .NET Framework but are truly asynchronous, _with no secondary thread being created_ and blocked while the UI continues on. 
-The ADO.NET 2 solution follows the general look-and-feel for the other asynchronous commands within the .NET Framework, 
-as the method names use the standard calling syntax of BeginABC/EndABC. 
+
+1. ADO.NET 2 also provides **true asynchronous operations**.
+Unlike creating a background thread and blocking, ADO.NET 2 implements asynchronous operations by using ~IO Completion ports~,
+which are built into the .NET Framework but are truly asynchronous, _with no secondary thread being created_ and blocked while the UI continues on.
+The ADO.NET 2 solution follows the general look-and-feel for the other asynchronous commands within the .NET Framework,
+as the method names use the standard calling syntax of BeginABC/EndABC.
 The `SqlCommand` class provides support for asynchronous commands through the following methods:
 
 ```cs
@@ -77,6 +81,5 @@ BeginExecuteXmlReader/EndExecuteXmlReader
 [7]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqldatareader%28v=vs.110%29.aspx
 [8]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlcommand(v=vs.110).aspx
 [9]: https://msdn.microsoft.com/en-us/library/system.xml.xmlreader%28v=vs.110%29.aspx
-
 
 [<<](./index.md) | [home](../../README.md)

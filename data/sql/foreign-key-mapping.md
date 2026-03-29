@@ -1,6 +1,7 @@
 # Foreign Key Mappings
 
 1. WITH SQL SERVER 2000 TABLES. ORIGINAL ANSWER does not ALLOW multiple column relationships [1]
+
 ```sql
 select  
 C.constid RELATIONSHIP_ID,  
@@ -17,7 +18,9 @@ join sysobjects F on F.id = C.id                                     -- target t
 JOIN syscolumns G ON G.id = F.id and G.colid =  K.fkey               -- target column 
 where P.xtype = 'U' and F.type='U'
 ```
-2. with >2005 views
+
+1. with >2005 views
+
 ```sql
 DECLARE @Intermediate TABLE (PRIMARY_KEY_NAME sysname, FOREIGN_KEY_NAME sysname, PRIMARY_TABLE sysname, PRIMARY_COLUMN sysname, FOREIGN_TABLE sysname, FOREIGN_COLUMN sysname, COLINDEX int) 
 insert into @Intermediate 
@@ -49,7 +52,9 @@ COUNT(I.COLINDEX) AS CARDINALITY
 FROM @Intermediate I 
 group by I.PRIMARY_KEY_NAME, I.FOREIGN_KEY_NAME, I.PRIMARY_TABLE, I.FOREIGN_TABLE
 ```
-3. with information schema
+
+1. with information schema
+
 ```sql
 SELECT  
      KCU1.CONSTRAINT_NAME AS 'FK_CONSTRAINT_NAME' 
@@ -71,43 +76,46 @@ ON KCU2.CONSTRAINT_CATALOG =  RC.UNIQUE_CONSTRAINT_CATALOG
    AND KCU2.CONSTRAINT_NAME =  RC.UNIQUE_CONSTRAINT_NAME 
    AND KCU2.ORDINAL_POSITION = KCU1.ORDINAL_POSITION
 ```
-4. SQL Server 2012
+
+1. SQL Server 2012
+
 ```sql
 exec SP_FKEYS @pktable_name = 'mpk' 
 exec SP_FKEYS @fktable_name = 'mfk
 ```
 
-5. table hard dependency [2]
+1. table hard dependency [2]
+
 ```sql
 SELECT 
-	coalesce(OBJECT_SCHEMA_NAME(f.parent_object_id) + '.', '') + OBJECT_NAME(f.parent_object_id) PARENT, 
-	coalesce(OBJECT_SCHEMA_NAME(f.referenced_object_id) + '.', '') + OBJECT_NAME(f.referenced_object_id) REF
+ coalesce(OBJECT_SCHEMA_NAME(f.parent_object_id) + '.', '') + OBJECT_NAME(f.parent_object_id) PARENT, 
+ coalesce(OBJECT_SCHEMA_NAME(f.referenced_object_id) + '.', '') + OBJECT_NAME(f.referenced_object_id) REF
 FROM sys.foreign_keys f
 WHERE 1=1 
 --AND f.referenced_object_id = OBJECT_ID('dbo.Orders')
 AND f.parent_object_id != referenced_object_id
 ```
 
-6. sys.sql_expression_dependencies [3]
+1. sys.sql_expression_dependencies [3]
+
 ```sql
-	SELECT
-		  coalesce(object_schema_name(Referencing_ID)+'.','')+ --likely schema name
-		    object_name(Referencing_ID)+ --definite entity name
-		    coalesce('.'+col_name(referencing_ID,referencing_minor_id),'')
-		       AS [referencing],
-		  coalesce(Referenced_server_name+'.','')+ --possible server name if cross-server
-		       coalesce(referenced_database_name+'.','')+ --possible database name if cross-database
-		       coalesce(referenced_schema_name+'.','')+ --likely schema name
-		       coalesce(referenced_entity_name,'') + --very likely entity name
-		       coalesce('.'+col_name(referenced_ID,referenced_minor_id),'')AS [referenced]
-		FROM sys.sql_expression_dependencies
-		--WHERE referencing_id =object_id('Categories')
-		ORDER BY [referenced]
+ SELECT
+    coalesce(object_schema_name(Referencing_ID)+'.','')+ --likely schema name
+      object_name(Referencing_ID)+ --definite entity name
+      coalesce('.'+col_name(referencing_ID,referencing_minor_id),'')
+         AS [referencing],
+    coalesce(Referenced_server_name+'.','')+ --possible server name if cross-server
+         coalesce(referenced_database_name+'.','')+ --possible database name if cross-database
+         coalesce(referenced_schema_name+'.','')+ --likely schema name
+         coalesce(referenced_entity_name,'') + --very likely entity name
+         coalesce('.'+col_name(referenced_ID,referenced_minor_id),'')AS [referenced]
+  FROM sys.sql_expression_dependencies
+  --WHERE referencing_id =object_id('Categories')
+  ORDER BY [referenced]
 ```
 
 [1]: http://stackoverflow.com/questions/1026673/sql-2000-t-sql-to-get-foreign-key-relationships-for-a-table
 [2]: https://blog.sqlauthority.com/2016/02/16/sql-server-view-dependencies-on-sql-server-hard-soft-way/
 [3]: https://www.red-gate.com/simple-talk/sql/t-sql-programming/dependencies-and-references-in-sql-server/
-
 
 [<<](./index.md) | [home](../../README.md)

@@ -1,18 +1,21 @@
+# Angular Fundamentals
+
 **Angular Fundamentals** Pluralsight course wiki page
 
-# Links
+## Links
 
 + Pluralsight Course page [1]
 + Files [2] from course creator
 + Built for version 1.0.5 and **updated for 1.4**. Course on Angular 1.5 components [3] is an update
 + 'Angular 2: First Look' course [4]
 
-# TOC
+## TOC
+
 1. Intro [5]
 2. Controllers & Markup [6]
 3. Creating & Using Angular Services [7]
 
-# Intro
+## Intro
 
 ## Course Introduction
 
@@ -20,19 +23,19 @@ Client-side JavaScript used to be simple enough that we could get away with very
 
 ## Introduction to Angular
 
-So what is Angular and why would you want to use it? The simplest answer to that question is that Angular is a **JavaScript library**, but it's so much more than that. It's probably more accurate to categorize it as an **MV* framework**. If saying that doesn't tell us everything about it, at least we have some context since we can compare and contrast it to some other popular MV* frameworks, such as **Knockout** or **Backbone**. Although we won't really make any direct comparisons to other MV* frameworks, we will discuss things it has in common with other frameworks, and the things that set it apart from the crowd. Angular isn't just an MV* framework, it's an **opinionated MV* framework**. What is opinionated software? Well, _opinionated software guides you into certain ways of doing things_. Opinionated software has a _vision_. It may limit itself to solving fewer problems, but generally, software with opinions solves those problems with less fuss. That doesn't mean that there isn't more than one way to solve a problem with Angular. For example, take DOM manipulation. _Angular wants you to_ **only** _manipulate your DOM inside of directives_, but with Angular inside of a directive you can use jQuery, Zepto, any other library, or even just raw JavaScript, to manipulate your DOM. That doesn't mean that you can't manipulate the DOM from within any other piece of an Angular application, but Angular definitely has an opinion about whether or not you should, and it gently guides you into doing things a certain way. So why should you use opinionated software? There are many reasons. At first glance it may seem like a lack of freedom is a bad thing, but that's really not true. The guys at 37signals, the company which invented Ruby on Rails, have written a great article on the benefits of opinionated software [8]. In essence, they say, the best software has a vision, the best software takes sides. This is quite true. You will find that using opinionated software will make it faster to do things that fall within the vision of the software. When it comes to Angular, that vision is extremely broad. It is well-suited to building anything from line-of-business applications to video players. In fact, if you are watching this video on your computer, then you are using an Angular application. But first, let's make sure that we understand exactly what an MV* framework is. The M in MV* stands for Model. **The model is where you store the data and state of your application**. The V in MV* stands for View. **The view is where you actually render to the user** the information that you want them to see, and the view is where your receive input from the user. The * in MV* stands for, well, something else. In many common MV* frameworks, the * is either a **controller**, or a **presenter**, or a **ViewModel**, or even something different besides those three. In fact, some frameworks even allow you to choose one of those three, and don't necessarily prescribe which one. Now you may be asking yourself, which one of those does Angular use? Well, **Angular uses a controller**. So some people may call Angular an MVC framework that would definitely be true, but in the web world there are so many frameworks that fall within this categorization, but don't necessarily fit into just MVC, that this term MV* is commonly used. Angular is an _open source library_ built by the folks at _Google_. This gives us the best of both worlds. It is maintained by a team of highly-skilled professionals whose employment is based around building Angular. That means that you won't have to worry about it stagnating because the primary contributors get bored or busy, but because it's open source, it can benefit from the contributions of the entire JavaScript community. In fact, at the time of this recording, Angular has over 100 unique contributors to its GitHub repository. Angular is also comprehensive. What makes Angular comprehensive? Let's take a look at a diagram. Angular **handles the Ajax communication with your server** so that you can _both send and receive_ data from your backend. This data is **stored as plain JavaScript objects**, so you won't have to make any special calls like get and set when you to update your data. Angular handles showing that data on the page, which you can do using **partial templates** or just _modify the HTML DOM that already exists_. Angular also **handles updating the data or model based on user interaction**, so when a user types into a text field, that new value can automatically be copied into your model. You don't have to wait for certain events, you can just tell Angular that a certain textbox owns a certain piece of data, and it will keep them in sync. This feature is called **two-way binding**. And lastly, Angular handles routing, or moving from one view to another. This is the key piece in building single-age applications or SPAs. This way you can completely change your view based on user interaction with your page. Angular will also update the URL in the browser so that the new view can be bookmarked for later. The next important aspect of Angular is its _testability_. Angular was built from the ground up with testing in mind. When the Angular team built the first versions of Angular, testability was a primary consideration. That means that Angular not only **supports isolated unit tests**, but it also **supports integrated end to end tests**. Also, a lot of the built-in objects that Angular provides have special versions that you can use to make your testing easier. In fact, testing is so critical to Angular, that while building the framework the team created a fantastic testing tool which used to be called **Testacular**, and is now called **Karma**. This tool is used by lots of development shops to test their code, and many of them aren't even using Angular. Perhaps the one attribute of Angular that sets it most apart from the rest of MV* frameworks is the fact that it **extends HTML** by _providing its own elements and properties_ called **directives**, that are used to interact with your HTML DOM. Basically, Angular lets you teach your HTML new tricks. Imagine if HTML had been **designed for applications** and not for documents. That is how Angular thinks of HTML and the ability it gives you to teach your HTML new tricks is a result of this thinking. 
+So what is Angular and why would you want to use it? The simplest answer to that question is that Angular is a **JavaScript library**, but it's so much more than that. It's probably more accurate to categorize it as an __MV_ framework_*. If saying that doesn't tell us everything about it, at least we have some context since we can compare and contrast it to some other popular MV* frameworks, such as **Knockout** or **Backbone**. Although we won't really make any direct comparisons to other MV*frameworks, we will discuss things it has in common with other frameworks, and the things that set it apart from the crowd. Angular isn't just an MV* framework, it's an __opinionated MV_ framework_*. What is opinionated software? Well, _opinionated software guides you into certain ways of doing things_. Opinionated software has a _vision_. It may limit itself to solving fewer problems, but generally, software with opinions solves those problems with less fuss. That doesn't mean that there isn't more than one way to solve a problem with Angular. For example, take DOM manipulation. _Angular wants you to_ **only** _manipulate your DOM inside of directives_, but with Angular inside of a directive you can use jQuery, Zepto, any other library, or even just raw JavaScript, to manipulate your DOM. That doesn't mean that you can't manipulate the DOM from within any other piece of an Angular application, but Angular definitely has an opinion about whether or not you should, and it gently guides you into doing things a certain way. So why should you use opinionated software? There are many reasons. At first glance it may seem like a lack of freedom is a bad thing, but that's really not true. The guys at 37signals, the company which invented Ruby on Rails, have written a great article on the benefits of opinionated software [8]. In essence, they say, the best software has a vision, the best software takes sides. This is quite true. You will find that using opinionated software will make it faster to do things that fall within the vision of the software. When it comes to Angular, that vision is extremely broad. It is well-suited to building anything from line-of-business applications to video players. In fact, if you are watching this video on your computer, then you are using an Angular application. But first, let's make sure that we understand exactly what an MV* framework is. The M in MV*stands for Model. **The model is where you store the data and state of your application**. The V in MV* stands for View. **The view is where you actually render to the user** the information that you want them to see, and the view is where your receive input from the user. The _in MV_ stands for, well, something else. In many common MV*frameworks, the* is either a **controller**, or a **presenter**, or a **ViewModel**, or even something different besides those three. In fact, some frameworks even allow you to choose one of those three, and don't necessarily prescribe which one. Now you may be asking yourself, which one of those does Angular use? Well, **Angular uses a controller**. So some people may call Angular an MVC framework that would definitely be true, but in the web world there are so many frameworks that fall within this categorization, but don't necessarily fit into just MVC, that this term MV*is commonly used. Angular is an _open source library_ built by the folks at _Google_. This gives us the best of both worlds. It is maintained by a team of highly-skilled professionals whose employment is based around building Angular. That means that you won't have to worry about it stagnating because the primary contributors get bored or busy, but because it's open source, it can benefit from the contributions of the entire JavaScript community. In fact, at the time of this recording, Angular has over 100 unique contributors to its GitHub repository. Angular is also comprehensive. What makes Angular comprehensive? Let's take a look at a diagram. Angular **handles the Ajax communication with your server** so that you can _both send and receive_ data from your backend. This data is **stored as plain JavaScript objects**, so you won't have to make any special calls like get and set when you to update your data. Angular handles showing that data on the page, which you can do using **partial templates** or just _modify the HTML DOM that already exists_. Angular also **handles updating the data or model based on user interaction**, so when a user types into a text field, that new value can automatically be copied into your model. You don't have to wait for certain events, you can just tell Angular that a certain textbox owns a certain piece of data, and it will keep them in sync. This feature is called **two-way binding**. And lastly, Angular handles routing, or moving from one view to another. This is the key piece in building single-age applications or SPAs. This way you can completely change your view based on user interaction with your page. Angular will also update the URL in the browser so that the new view can be bookmarked for later. The next important aspect of Angular is its _testability_. Angular was built from the ground up with testing in mind. When the Angular team built the first versions of Angular, testability was a primary consideration. That means that Angular not only **supports isolated unit tests**, but it also **supports integrated end to end tests**. Also, a lot of the built-in objects that Angular provides have special versions that you can use to make your testing easier. In fact, testing is so critical to Angular, that while building the framework the team created a fantastic testing tool which used to be called **Testacular**, and is now called **Karma**. This tool is used by lots of development shops to test their code, and many of them aren't even using Angular. Perhaps the one attribute of Angular that sets it most apart from the rest of MV* frameworks is the fact that it **extends HTML** by _providing its own elements and properties_ called **directives**, that are used to interact with your HTML DOM. Basically, Angular lets you teach your HTML new tricks. Imagine if HTML had been **designed for applications** and not for documents. That is how Angular thinks of HTML and the ability it gives you to teach your HTML new tricks is a result of this thinking.
 `<input id="id1" type="text" focus>`
-Here I have a simple input tag, but look at this last property. This is a custom attribute that I might build that tells Angular to make the element have focus when the page loads. What some of you may recognize is that HTML5 already has an attribute like this, it's called `auto-focus`. So HTML5 is already thinking along these lines. The problem is that that property only works in newer browsers. A custom directive like this one can work in a much wider range of browsers through the magic of Angular. Here's another example. This time I'm being a little more ambitious. 
+Here I have a simple input tag, but look at this last property. This is a custom attribute that I might build that tells Angular to make the element have focus when the page loads. What some of you may recognize is that HTML5 already has an attribute like this, it's called `auto-focus`. So HTML5 is already thinking along these lines. The problem is that that property only works in newer browsers. A custom directive like this one can work in a much wider range of browsers through the magic of Angular. Here's another example. This time I'm being a little more ambitious.
 `<multiStateButton id="btn1" />`
-This is maybe a toggle button or possibly even a button that cycles through several states, but here I can create some kind of a multiStateButton that works the way I want it to work in my application. In my HTML, all I see is this, but after Angular gets done processing this element, the browser will see the HTML that it needs in order to accomplish what I want. And finally, something even more ambitious. 
+This is maybe a toggle button or possibly even a button that cycles through several states, but here I can create some kind of a multiStateButton that works the way I want it to work in my application. In my HTML, all I see is this, but after Angular gets done processing this element, the browser will see the HTML that it needs in order to accomplish what I want. And finally, something even more ambitious.
 `<userTile id="ut1" user="currentUser">`
-This is, perhaps, a display widget customized to a particular application that displays users in a specific manner. I just have to pass in a user object using the user property that I created on my custom tag, and Angular knows how to turn this custom HTML element into HTML that my browser can render. Think of how this keeps so much of your view logic where it belongs, in your view. The last important attribute of Angular that we will discuss is how it is forward thinking. Angular is basically supporting the future of what we will see in web technology in the coming years, and as that technology becomes more widespread, our Angular applications will already be built to take advantage of that technology. Let's look at a couple specific technologies that apply here. Remember when I talked about what HTML would be if it had been designed for applications and not for documents? Well that's what web components are. **Web components allow you to make truly encapsulated components and widgets for your page, encapsulating HTML, JavaScript, and CSS**. You can look at this article for more information about web components [9]. Another up and coming feature that will soon be supported by some browsers is `Object.observe`. This technology lets you watch an object or a property on a JavaScript object for changes and react to those changes. Most MV* frameworks make you stick your data into special structures and call methods whenever you want to read or write to that data. Because Angular doesn't do that, it can support Object.observe when it becomes widely available, and Angular will simply benefit from the performance improvements of having things handled by faster, lower-level code. You can read more about Object.observe at this URL here [10]. 
+This is, perhaps, a display widget customized to a particular application that displays users in a specific manner. I just have to pass in a user object using the user property that I created on my custom tag, and Angular knows how to turn this custom HTML element into HTML that my browser can render. Think of how this keeps so much of your view logic where it belongs, in your view. The last important attribute of Angular that we will discuss is how it is forward thinking. Angular is basically supporting the future of what we will see in web technology in the coming years, and as that technology becomes more widespread, our Angular applications will already be built to take advantage of that technology. Let's look at a couple specific technologies that apply here. Remember when I talked about what HTML would be if it had been designed for applications and not for documents? Well that's what web components are. **Web components allow you to make truly encapsulated components and widgets for your page, encapsulating HTML, JavaScript, and CSS**. You can look at this article for more information about web components [9]. Another up and coming feature that will soon be supported by some browsers is `Object.observe`. This technology lets you watch an object or a property on a JavaScript object for changes and react to those changes. Most MV* frameworks make you stick your data into special structures and call methods whenever you want to read or write to that data. Because Angular doesn't do that, it can support Object.observe when it becomes widely available, and Angular will simply benefit from the performance improvements of having things handled by faster, lower-level code. You can read more about Object.observe at this URL here [10].
 
 Now one of the last things I want to do is take a quick look at Angular's official site. On the home page there's a lot of introductory text about it. There's this Learn section which has links to videos, and tutorials, and case studies, and a link to the Seed project template, which we will cover later on, but a key piece of the Angular site I want to show you that you're going to use and refer to a lot is under this Develop link, and it's these two links right here, the Developer Guide [11] and the API Reference [12]. Let's look at the Developer Guide first. This page has a list of all of the concepts that are part of Angular, so anytime you have any questions about something specific to Angular, you can come in here, look for the concept, say we have a question about modules, come in here, click on Modules, and look at Angular's official documentation on modules. Now let's look at the API Reference. This page has a list of a lot of the very specific pieces of Angular, for example, a list of all the directives that Angular provides is given right here. If we scroll down a little bit we can see a list of all the filters that Angular provides, and a list of all the services that it provides, and a lot of other stuff. So those are two pieces of Angular's official site that you ought to be comfortable with and visit frequently. Let's review with a quiz. _Angular thinks of HTML as if it had been designed to do what? Angular thinks of HTML as if it had been designed to build applications instead of documents. What kinds of tests does Angular support? Angular supports both unit tests and integrated end to end tests. Name one of the ways that Angular is forward thinking. Angular is forward thinking because of its future support for web components and Object.observe._
 
 ## Angular Architecture
 
-Let's take a look at some of the architectural choices that Angular has made. First, Angular supports **two-way binding**. This means the user input into form fields is instantly updated in your Angular models. That means that in most cases you don't need to watch for specific events and respond to them, and then manually update your HTML. Instead, Angular will handle that for you. Angular also employs a technique called **dirty checking**. The net result of this is that you don't have to put your data into special structures and call getter and setter methods to read and write to your data. you can simply put your model data into plain old JavaScript objects and Angular will respond whenever your data changes and automatically update your view. Lastly, Angular is **built on dependency injection**. This lets you encapsulate pieces of your application better and also improves testability. You can read more about dependency injection here. 
+Let's take a look at some of the architectural choices that Angular has made. First, Angular supports **two-way binding**. This means the user input into form fields is instantly updated in your Angular models. That means that in most cases you don't need to watch for specific events and respond to them, and then manually update your HTML. Instead, Angular will handle that for you. Angular also employs a technique called **dirty checking**. The net result of this is that you don't have to put your data into special structures and call getter and setter methods to read and write to your data. you can simply put your model data into plain old JavaScript objects and Angular will respond whenever your data changes and automatically update your view. Lastly, Angular is **built on dependency injection**. This lets you encapsulate pieces of your application better and also improves testability. You can read more about dependency injection here.
 
 Now let's take a look at the primary components of Angular and their relationship to each other. With Angular, _everything starts with the controller_. The **controller** is the **central player** in an Angular application. Controllers contain both _logic_ and _state_. Next we have the View. **Views are made up of bindings and directives**. This is how Angular talks to and listens to the user. _Controllers can communicate with views through both one-way and two-way binding_. _Directives_, which are a heavily talked about piece of Angular, are _really just part of the view_. And the last major piece is Services. **Services give you a place to contain the real logic and state of your application**. If you think about what is the essential tasks of your application, this would likely happen in your Services. Complex business logic, important application state, etc., Services are the place to house all that. Also, _Services are the place where you will want to communicate with the server_. Alright, let's review. What is the central component in an Angular application? The _central component_ in an angular application is the **controller**. _Directives_ are a part of which component? **Directives are part of the View**. In which component should you put your complex _business logic_? You should put your **core business logic** in the _Services_.
 
@@ -57,20 +60,25 @@ In this course, you will see a lot of work done from the command line. Although 
 In this module we started by taking a look at JavaScript MV* frameworks, some of the various options there, and how Angular fits into that world. Then we looked at some of the benefits of AngularJS such as it being forward thinking and very testable. After that we took a brief look at the application that we will be building throughout this course, the EventReg application.
 
 ---
-# Controllers & Markup
+
+## Controllers & Markup
 
 Download any Angular version from here [13]. Current stable release of April 2017 is 1.6.4. Small applications should use a single module.
 
 install from root app node where package.json resides
+
 ```sh
 npm install
 ```
+
 individual install, creates a _node_modules_ directory
+
 ```sh
 npm install express@4.13.0 body-parser@1.13.1
 ```
 
 **/scripts/web-server.js**
+
 ```js
 var express = require('express');
 var path = require('path');
@@ -81,6 +89,7 @@ app.listen(8080);
 ```
 
 from the bash shell, run node, serve a static file
+
 ```sh
 server.sh
 ```
@@ -94,24 +103,28 @@ We can't talk about controllers without talking about scope. So let's look at th
 ## Controllers
 
 **EventDetails.html**
+
 1. Add inside `head` css for bootstrap and app
+
 ````htm
 <link rel="stylesheet" href="/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/css/app.css" />
 ````
-2. Add a `<div class="container">` directly to `body`
-3. Add the event controller as `<div ng-controller="EventController">`
-4. Add all necessary scripts to the end of body including `<script src="/js/controllers/EventController.js"></script>`
-5. Angular ref `<script src="/lib/angular/angular.js"></script>`
-6. `img ng-src`, `li ng-repeat="s in main.sessions"`, `ng-click`
 
-**EventController.js** 
+1. Add a `<div class="container">` directly to `body`
+2. Add the event controller as `<div ng-controller="EventController">`
+3. Add all necessary scripts to the end of body including `<script src="/js/controllers/EventController.js"></script>`
+4. Angular ref `<script src="/lib/angular/angular.js"></script>`
+5. `img ng-src`, `li ng-repeat="s in main.sessions"`, `ng-click`
+
+**EventController.js**
+
 1. inside _\{\{ \}\}_ evaluation. double curly brace
 2. `$scope.upVoteSession = function(session) { session.upVoteCount++; };`
 
 ## Built-in Directives
 
-According to the Angular documentation, directives are a way to teach HTML new tricks. Essentially **directives get HTML a new functionality**. As Angular parses through your HTML, it will look for directives and then take action based on what it finds. So in the case of **NG click**, whenever it encounters an NG click, it will _register a click handler event on that DOM object_. If you remember, that was an attribute of a tag. There are actually four ways to specify directives with Angular. The first one is actually is the tag itself. For example, the _NG form directive is a tag_, `<ng-form />`. The other way is the way that we've seen before with NG click where the directive is an _attribute of a tag_, `<div ng-form />`. And the third way that we can write directives is _as a class_, `<div class="ng-form" />`. Now not all directives can be written out as tags, attributes and as classes. Often times a particular directive could only be written out in one or two of these forms. The fourth way to write a directive is inside of an _HTML comment_. 
+According to the Angular documentation, directives are a way to teach HTML new tricks. Essentially **directives get HTML a new functionality**. As Angular parses through your HTML, it will look for directives and then take action based on what it finds. So in the case of **NG click**, whenever it encounters an NG click, it will _register a click handler event on that DOM object_. If you remember, that was an attribute of a tag. There are actually four ways to specify directives with Angular. The first one is actually is the tag itself. For example, the _NG form directive is a tag_, `<ng-form />`. The other way is the way that we've seen before with NG click where the directive is an _attribute of a tag_, `<div ng-form />`. And the third way that we can write directives is _as a class_, `<div class="ng-form" />`. Now not all directives can be written out as tags, attributes and as classes. Often times a particular directive could only be written out in one or two of these forms. The fourth way to write a directive is inside of an _HTML comment_.
 
 | ![Angular directive syntax examples](https://wewstq.by3302.livefilestore.com/y4m7bmJFejQc0caig6ev0xh8WWJPf0WpPm-_HusgmwioYUmkut0vBbphlkBx_RVewAk-WWbMF3Hg_lfrzItTcPuqaZ1bbpu6iYswipH9OrHAITANxNj1Pr0nqcjC6cCSZ6Vm222b2ogBli4tsM32jwVA2Rb-_fXoBFnfxkkEp0XyMSDVUSTLHDH0TvUoXDGV5GXljoptxMpBMYMywWcejhsiw?width=256&height=182&cropmode=none) ⚠ | ![Angular directive attribute form](https://tsywqq.by3302.livefilestore.com/y4macba6ntHzRbwtfFl5wjshPScN3lHc4ZtJ86Dc8eFe9hBqrQcE11usSn5EHXnF2V3HpWXy_sBkGWo_bds-aFsx73W_B0Q5q6M-fNm04njxGa9bC_NsD5nobXV9rQgeYsEgmdaTQLp7IrD2ypEDxNAuunU81i_Hd2eThlnC-guvV5NImQvH8YvuCtsnkGtN-INTlSDt1n_qN6PEbSYZlOKfg?width=192&height=256&cropmode=none) ⚠ | ![Angular directive class form](https://6ubyoa.by3302.livefilestore.com/y4ml8m3Bu8fysKHIALi-HP9ynsUPPCltGiWFtmR0gPlKi8aLmHnqpbAjIEjXjW_JwVB4qGeFg6iyTya8JIUjGOxUQTh2qiFGStsU5yzP-WrAK5wb9uZ9ej56z66QRNTmDezrH5RQVGGGoZ3tY2RKuBfVyNvCjAaY07rzI7PlwmbBM2e1tJTioShZiqr5zDmY_l1PGNgM1S12cEes2bEGU0CJg?width=157&height=256&cropmode=none) ⚠ |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -120,6 +133,7 @@ Instead of using double curly braces, bind to property name(attribute value) usi
 `<h2 ng-bind-template="{{event.name}} {{event.date}}"></h2>`
 
 ## Event Directives
+
 ![Angular event directives reference](https://jnhreg.by3302.livefilestore.com/y4m44yvgmdMGnjp3HrBS9ahlUaNZnyGakBB3WwCNuKM5atooXAhMcY_624KaFLxuDdlpIDuPBa0zAF1gXH_eRpHTreLnpU8xqAQsj9RFwp0VH1IIend2aTggrYqpXQAGYeUomrQFQe7wXB5G5qAuC8R51mFb3W_hb4p1hZM_Y4raw_Qr8Q-MkeIVytwVvUaTP2VhLjfO1MELR6sn0jP2kHVXA?width=161&height=256&cropmode=none) ⚠
 
 ng-model required if ng-change present
@@ -148,29 +162,33 @@ ng-model works with input, select and textarea. `<input type="text" ng-model="ob
 A property that does not exist will be created automatically on the scope.
 
 ## Validation
+
 The `required` attribute on a html element bound with `ng-model`. You can validate against a regular expression with `ng-pattern`.
 
-
 ---
-# Services
+
+## Services
 
 **Creating and Using Angular Services**
 
-- an object that is used to encapsulate some sort of business logic, or just does some sort of work. just a **worker object**
-- **often stateless**, although it isn't unusual for a service to _cache data that is accessed frequently_.
-- It is **not accessed over the wire**, although it may be used to _perform operations that do go over-the-wire_, such as making AJAX calls
-- Just an object that has methods and properties on it that we can **reuse**
-- Registering a service with Angular is simple, and, once **registered**, it now becomes part of the Angular world and it can be used like any other Angular service. It can now be easily injected into your controllers and directives and filters and even into other services.
-- _$scope param_ in controller is a service! do not use dollar sign for your own services.
-- What you pass into the **factory** method is the _name of the service_, and then _a function that returns the object that will become that service_. 
++ an object that is used to encapsulate some sort of business logic, or just does some sort of work. just a **worker object**
++ **often stateless**, although it isn't unusual for a service to _cache data that is accessed frequently_.
++ It is **not accessed over the wire**, although it may be used to _perform operations that do go over-the-wire_, such as making AJAX calls
++ Just an object that has methods and properties on it that we can **reuse**
++ Registering a service with Angular is simple, and, once **registered**, it now becomes part of the Angular world and it can be used like any other Angular service. It can now be easily injected into your controllers and directives and filters and even into other services.
++ _$scope param_ in controller is a service! do not use dollar sign for your own services.
++ What you pass into the **factory** method is the _name of the service_, and then _a function that returns the object that will become that service_.
 
 ## Built-in
+
 ![Angular built-in services overview](https://gonhua.by3302.livefilestore.com/y4mVAD0zWAKIE_dUnvzChzwjJGmZ9YmB6iUPjBDKI5KQKGekWR4rotfGZiQhQhLQa0HrCYMb7G0Wfm-dJjYNnlTZoex9A2pqyyYyMtIs5Z361lOP70M20x19s-rGn1gL5lXHB9lcwy66gSU621CNUlM424fmQURCbzaN3bVdK4lJXDEHW9avMx321T81NQRcAUMYx3ZbTU0--m1onjRyXaMYg?width=256&height=201&cropmode=none) ⚠
 
 ### $http
+
 good for non-restful calls, **raw**, _regardless of endpoint type_
 
 **EventData.js**
+
 ````js
 eventsApp.factory('eventData', function($http) {
     return {
@@ -186,9 +204,11 @@ eventsApp.factory('eventData', function($http) {
     };
 });
 ````
+
 Controller calls `eventData.getEvent(function(event) {$scope.event=event;});`
 
 **web-server.js** with node server
+
 ````js
 var events = require('./eventsController');
 var bodyParser = require('body-parser');
@@ -199,6 +219,7 @@ app.post('/data/event/:id', events.save);
 ````
 
 **eventController.js**
+
 ````js
     var fs = require('fs');
      
@@ -216,7 +237,8 @@ app.post('/data/event/:id', events.save);
 ````
 
 ### $promise
-.\app\js\controllers\EditEventController.js 
+
+.\app\js\controllers\EditEventController.js
 
 ````js
 'use strict';
@@ -244,9 +266,11 @@ eventsApp.controller('EditEventController',
 ````
 
 ### $resource
+
 good for **restful** web apis
 include reference to `angular-resource.js`.
 add to `app.js` the module _.\app\js\services\EventData.js_
+
 ````js
 eventsApp.factory('eventData', function($resource) {
     var resource = $resource('/data/event/:id', {id:'@id'}, {"getAll": {method: "GET", isArray: true, params: {something: "foo"}}});
@@ -266,6 +290,7 @@ eventsApp.factory('eventData', function($resource) {
 ````
 
 _.\app\js\services\userResource.js_
+
 ````js
 'use strict';
 
@@ -295,6 +320,5 @@ eventsApp.factory('userResource', ['$resource', function ($resource) {
 [13]: https://code.angularjs.org/
 [14]: http://localhost:8080/img/profile.jpg`
 [15]: http://localhost:8080/img/angularjs-logo.png`
-
 
 [<<](./index.md) | [home](../../README.md)
