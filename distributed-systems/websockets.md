@@ -35,9 +35,90 @@
     }
   ```
 
-![send.events.async.png](send.events.async.png)
+**`SendEvents` — server-side async loop (C#)**
 
-- javascript ![js.fetch.listen.PNG ](js.fetch.listen.png)
+```csharp
+private async Task SendEvents(WebSocket webSocket, int orderNo)
+{
+    CheckResult result;
+
+    do
+    {
+        result = _orderChecker.GetUpdate(orderNo);
+        Thread.Sleep(2000);
+
+        if (!result.New) continue;
+
+        var jsonMessage = $"\"{result.Update}\"";
+        await webSocket.SendAsync(
+            buffer: new ArraySegment<byte>(
+                array: Encoding.ASCII.GetBytes(jsonMessage),
+                offset: 0,
+                count: jsonMessage.Length),
+            messageType: WebSocketMessageType.Text,
+            endOfMessage: true,
+            cancellationToken: CancellationToken.None);
+
+    } while (!result.Finished);
+}
+```
+
+```mermaid
+sequenceDiagram
+    participant S as Server (SendEvents)
+    participant C as Client (WebSocket)
+
+    loop until result.Finished
+        S->>S: _orderChecker.GetUpdate(orderNo)
+        S->>S: Thread.Sleep(2000)
+        alt result.New
+            S->>C: SendAsync(jsonMessage, Text)
+        end
+    end
+```
+
+- javascript — the client opens a WebSocket to receive updates, then POSTs via `fetch` and pipes the response into the listener:
+
+```js
+const listen = (id) => {
+    const socket = new WebSocket(`ws://localhost:60907/Coffee/${id}`);
+
+    socket.onmessage = event => {
+        const statusDiv = document.getElementById("status");
+        statusDiv.innerHTML = JSON.parse(event.data);
+    };
+};
+
+document.getElementById("submit").addEventListener("click", e => {
+    e.preventDefault();
+    const product = document.getElementById("product").value;
+    const size    = document.getElementById("size").value;
+
+    fetch("/Coffee", {
+        method: "POST",
+        body: { product, size }
+    })
+    .then(response => response.text())
+    .then(text => listen(text));
+});
+```
+
+```mermaid
+sequenceDiagram
+    participant U as User (click)
+    participant B as Browser
+    participant API as Server (/Coffee POST)
+    participant WS as WebSocket (ws://.../Coffee/{id})
+
+    U->>B: submit click
+    B->>API: POST /Coffee {product, size}
+    API-->>B: orderId (text)
+    B->>WS: new WebSocket(ws://.../Coffee/{orderId})
+    loop server pushes updates
+        WS-->>B: onmessage(event.data)
+        B->>B: statusDiv.innerHTML = JSON.parse(event.data)
+    end
+```
 
 ## browser
 
