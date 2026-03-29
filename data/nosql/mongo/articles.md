@@ -9,9 +9,7 @@
  
 
 
-[<<](../nosql.md) 
 |
-[home](../README.md) 
 | 
 wiki [4]
 
@@ -19,3 +17,6 @@ wiki [4]
 [2]: https://webassets.mongodb.com/serverless_architectures_the_evolution_of_cloud_computing.pdf
 [3]: https://webassets.mongodb.com/microservices_white_paper.pdf
 [4]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../../README.md)

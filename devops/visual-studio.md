@@ -6,9 +6,7 @@
 * Visual Studio Code [3]
 
 
-[<<](../tools.md)
 |
-[home](../README.md)
 |
 wiki [4]
 
@@ -16,3 +14,6 @@ wiki [4]
 [2]: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 [3]: https://code.visualstudio.com/
 [4]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../README.md)

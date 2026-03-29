@@ -8,6 +8,7 @@
 
 ![maturity model](https://res.infoq.com/articles/Continuous-Delivery-Maturity-Model/en/resources/fig1large.jpg)
 
-[<<](../tools.md) | [home](../../README.md)
-
 [1]: https://developer.ibm.com/urbancode/docs/continuous-delivery-maturity-model/
+
+
+[<<](./index.md) | [home](../README.md)

@@ -31,8 +31,6 @@ git page GitHub page [2] by Adam Pritchard
 
 + DownGit - Create GitHub Directory Download Link [19], and original SO answer [20]
 
-[<<](../tools.md) | [home](../../README.md)
-
 [1]: https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 [2]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [3]: http://www.tablesgenerator.com/markdown_tables
@@ -53,3 +51,6 @@ git page GitHub page [2] by Adam Pritchard
 [18]: https://www.mediawiki.org/wiki/Help:Formatting
 [19]: https://minhaskamal.github.io/DownGit/#/home
 [20]: https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo#18194523
+
+
+[<<](./index.md) | [home](../README.md)

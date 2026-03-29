@@ -13,8 +13,6 @@
 - How to use in-memory caching in ASP.Net Core [8] oct17
 - Detect changes with change tokens in ASP.NET Core [9] oct17
 
-[<](webapi.md) | [<<](../rest.md) | [home](../../README.md)
-
 [1]: https://wildermuth.com/2016/04/14/Using-Cache-in-ASP-NET-Core-1-0-RC1
 [2]: https://docs.microsoft.com/en-us/aspnet/core/performance/caching/middleware#conditions-for-caching
 [3]: https://www.devtrends.co.uk/blog/custom-response-caching-in-asp.net-core-with-cache-invalidation
@@ -24,3 +22,6 @@
 [7]: http://www.dotnetcurry.com/aspnet-mvc/1246/inmemory-caching-aspnet-mvc-6-core
 [8]: https://www.infoworld.com/article/3230129/application-development/how-to-use-in-memory-caching-in-aspnet-core.html
 [9]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/primitives/change-tokens
+
+
+[<<](./index.md) | [home](../README.md)

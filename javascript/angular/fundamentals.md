@@ -280,8 +280,6 @@ eventsApp.factory('userResource', ['$resource', function ($resource) {
 }]);
 ````
 
-[<<](../JS.md) | [home](../../README.md)
-
 [1]: https://app.pluralsight.com/library/courses/angularjs-fundamentals/
 [2]: https://github.com/joeeames/AngularFundamentalsFiles
 [3]: https://app.pluralsight.com/library/courses/building-components-angular-1-5/table-of-contents
@@ -297,3 +295,6 @@ eventsApp.factory('userResource', ['$resource', function ($resource) {
 [13]: https://code.angularjs.org/
 [14]: http://localhost:8080/img/profile.jpg`
 [15]: http://localhost:8080/img/angularjs-logo.png`
+
+
+[<<](./index.md) | [home](../../README.md)

@@ -18,8 +18,6 @@
   - WebRequest & Json.Linq [9]
 - `Flurl` todo
 
-[<<](../rest.md) | [home](../../README.md)
-
 [1]: http://restsharp.org/
 [2]: https://stackoverflow.com/a/33812542
 [3]: https://github.com/restsharp/RestSharp/wiki/Projects-Using-RestSharp
@@ -29,3 +27,6 @@
 [7]: https://msdn.microsoft.com/en-us/library/system.net.httpwebrequest.aspx
 [8]: https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx
 [9]: https://stackoverflow.com/a/30770354
+
+
+[<<](./index.md) | [home](../README.md)

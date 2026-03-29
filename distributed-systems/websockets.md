@@ -144,8 +144,6 @@ sequenceDiagram
 - Simple middlware for real-time .NET Core samples [17]
 - blog [18]
 
-[<< home](../../README.md) | [< soa](../soa.md)
-
 [1]: https://github.com/aspnet/AspNetCore/blob/7fb3d57f54bc8351e725fb936f15c5fec8dca06c/src/Middleware/WebSockets/test/UnitTests/WebSocketMiddlewareTests.cs
 [2]: https://github.com/aspnet/AspNetCore/blob/7fb3d57f54bc8351e725fb936f15c5fec8dca06c/src/Middleware/WebSockets/src/WebSocketMiddleware.cs
 [3]: https://dotnetthoughts.net/using-websockets-in-aspnet-core/
@@ -164,3 +162,6 @@ sequenceDiagram
 [16]: https://github.com/aspnet/AspNetCore/blob/1f892d798d3163b4bd9d3c4e900f6bb5c2310f9c/src/Hosting/TestHost/src/WebSocketClient.cs
 [17]: https://github.com/radu-matei/websocket-manager/tree/master/samples
 [18]: https://radu-matei.com/blog/aspnet-core-websockets-middleware/
+
+
+[<<](./index.md) | [home](../README.md)

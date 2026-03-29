@@ -16,8 +16,6 @@
 + Lesson 2: Beginning a Conversation and Transmitting Messages [14], * [15]  
 + Lesson 3: Dropping the Conversation Objects [16]  
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: http://blog.apexsql.com/6-cases-when-you-really-need-a-sql-server-transaction-log-reader/
 [2]: https://technet.microsoft.com/en-us/library/ms345108(v=sql.90).aspx#sqlsvcbr_topic11
 [3]: https://technet.microsoft.com/en-us/library/ms166049(v=sql.105).aspx
@@ -34,3 +32,6 @@
 [14]: https://technet.microsoft.com/en-us/library/bb839499(v=sql.105).aspx
 [15]: https://technet.microsoft.com/en-us/library/cc281528(v=sql.105).aspx
 [16]: https://technet.microsoft.com/en-us/library/bb839491(v=sql.105).aspx
+
+
+[<<](./index.md) | [home](../../README.md)

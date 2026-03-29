@@ -28,8 +28,6 @@
 - Using fn_dblog [17]
 - Working with DBCC LOG Command In SQL Server [18]
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: https://dev.mysql.com/downloads/installer/
 [2]: https://dev.mysql.com/downloads/connector/net/
 [3]: https://www.nuget.org/profiles/MySQL/
@@ -48,3 +46,6 @@
 [16]: https://solutioncenter.apexsql.com/read-a-sql-server-transaction-log/
 [17]: http://killspid.blogspot.ro/2006/07/using-fndblog.html
 [18]: http://www.sqlmvp.org/dbcc-log-command-in-sql-server/
+
+
+[<<](./index.md) | [home](../../README.md)

@@ -20,8 +20,6 @@
 - Web API File Upload, Single or Multiple files [19], _2014_ · by damienbod · in .NET, MVC, TopHeaderMenu, Web
 - ASP.NETCore: Create a Web API application [20] _Nov 2016_
 
-[<](webapi.md) | [<<](../rest.md) | [home](../../README.md)
-
 [1]: http://piotrwalat.net/file-download-service-with-resume-support-using-asp-net-web-api/
 [2]: https://blogs.msdn.microsoft.com/codefx/2012/02/23/more-about-rest-file-upload-download-service-with-asp-net-web-api-and-windows-phone-background-file-transfer/
 [3]: https://stackoverflow.com/questions/24080018/download-file-from-an-asp-net-web-api-method-using-angularjs
@@ -42,3 +40,6 @@
 [18]: https://damienbod.com/2015/12/05/asp-net-5-mvc-6-file-upload-with-ms-sql-server-filetable/
 [19]: https://damienbod.com/2014/03/28/web-api-file-upload-single-or-multiple-files/
 [20]: https://social.technet.microsoft.com/wiki/contents/articles/36340.asp-netcore-create-a-web-api-application.aspx
+
+
+[<<](./index.md) | [home](../README.md)

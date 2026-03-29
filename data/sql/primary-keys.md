@@ -21,4 +21,5 @@ SELECT
 FROM sys.objects  
 ```
 
-[<<](../sql.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

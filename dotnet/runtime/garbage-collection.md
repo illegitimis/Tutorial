@@ -41,7 +41,8 @@
   
 _Todo_ Pcs50 bw8 weak ref, reclaiming memory
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [2]
-
 [1]: https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx
 [2]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

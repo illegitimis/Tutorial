@@ -65,8 +65,6 @@
     }
     ```
 
-[<<](../orm.md) | [home](../../README.md)
-
 [1]: https://www.pluralsight.com/courses/entity-framework-7-looking-ahead
 [2]: https://docs.microsoft.com/en-us/ef/efcore-and-ef6/features
 [3]: https://msdn.microsoft.com/magazine/mt614250
@@ -74,3 +72,6 @@
 [5]: http://www.entityframeworktutorial.net/code-first/seed-database-in-code-first.aspx
 [6]: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core#data-annotations-versus-fluent-api
 [7]: https://www.learnentityframeworkcore.com/
+
+
+[<<](./index.md) | [home](../../README.md)

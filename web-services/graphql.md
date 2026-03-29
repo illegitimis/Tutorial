@@ -63,3 +63,6 @@ git | package | doc | examples | desc
 [4]: https://www.pluralsight.com/courses/building-graphql-apis-aspdotnet-core
 [5]: https://github.com/RolandGuijt/PluralsightGraphQL
 [6]: https://azure.microsoft.com/en-us/resources/videos/build-2019-build-scalable-apis-using-graphql-and-serverless/
+
+
+[<<](./index.md) | [home](../README.md)

@@ -43,8 +43,6 @@ GetIndices.sql [1] gist.
 
 ![heap structures](https://i-technet.sec.s-msft.com/dynimg/IC22444.gif "heap structures")
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: https://gist.github.com/illegitimis/0dbc3373a8386c12bfc72ae26102cc2f
 [2]: https://docs.microsoft.com/en-us/sql/relational-databases/indexes/enable-indexes-and-constraints
 [3]: https://docs.microsoft.com/en-us/sql/relational-databases/indexes/disable-indexes-and-constraints
@@ -52,3 +50,6 @@ GetIndices.sql [1] gist.
 [5]: https://technet.microsoft.com/en-us/library/ms177484(v=sql.105).aspx
 [6]: https://technet.microsoft.com/en-us/library/ms188270(v=sql.105).aspx
 [7]: https://technet.microsoft.com/en-us/library/ms175012%28v=sql.105%29.aspx
+
+
+[<<](./index.md) | [home](../../README.md)

@@ -75,11 +75,12 @@
 * Essentially same as List<T> except only process as FIFO
 * <referencesource.microsoft.com [5]>
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [6]
-
 [1]: http://geekswithblogs.net/BlackRabbitCoder/archive/2011/06/16/c.net-fundamentals-choosing-the-right-collection-class.aspx
 [2]: http://referencesource.microsoft.com/#System/compmod/system/collections/generic/sorteddictionary.cs,1a01ea5555bded49
 [3]: http://referencesource.microsoft.com/#System/compmod/system/collections/generic/linkedlist.cs,df5a6c7b6b60da4f
 [4]: http://referencesource.microsoft.com/#System.Core/System/Collections/Generic/HashSet.cs,d0822f25708256c5
 [5]: http://referencesource.microsoft.com/#System/compmod/system/collections/generic/stack.cs,c5371bef044c6ab6
 [6]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

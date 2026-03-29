@@ -269,10 +269,11 @@ Additional advantages of region pairs:
 14. Q: Which is a valid statement about an Azure subscription?
     A: An Azure subscription is a logical unit of Azure services, bundled together for tracking and billing purposes.
 
-[<<](./index.md) | [home](../README.md)
-
 [1]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-cloud-concepts/
 [2]: https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services
 [3]: https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/regions-availability-zones
 [4]: https://azure.microsoft.com/en-us/global-infrastructure/geographies/#geographies
 [5]: https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure
+
+
+[<<](./index.md) | [home](../README.md)

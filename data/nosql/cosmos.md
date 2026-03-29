@@ -75,4 +75,5 @@ It also provides a thread-safe, multi-process, safe runtime environment with che
 [9]: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D#change-feed-processor
 [10]: https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D
 
-[<<](../nosql.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

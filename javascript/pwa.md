@@ -7,8 +7,6 @@ progressive web apps
 + @ google devs: base [3], service workers [4], check list [5], 1st app [6]
 + pwa @ telerik 1 [7], 2 [8], Progressive Web Applications and Kendo UI [9]
 
-[<<](../JS.md) | [home](../../README.md)
-
 [1]: https://angular.io/guide/service-worker-getting-started
 [2]: https://jakearchibald.github.io/isserviceworkerready/
 [3]: https://developers.google.com/web/progressive-web-apps/
@@ -18,3 +16,6 @@ progressive web apps
 [7]: https://www.telerik.com/progressive-web-apps
 [8]: https://www.telerik.com/blogs/a-gentle-and-practical-introduction-to-progressive-web-apps
 [9]: https://www.telerik.com/blogs/kendo-ui-conversational-ui-angular-react-vue-components-new-release
+
+
+[<<](./index.md) | [home](../README.md)

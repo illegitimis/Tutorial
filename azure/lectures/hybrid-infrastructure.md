@@ -40,8 +40,6 @@
 - Diagram 13: `lctrs/pics/l02/h13.png`
 - Diagram 14: `lctrs/pics/l02/h14.png`
 
-[<<](../index.md) | [home](../../README.md)
-
 [azure-stack]: https://azure.microsoft.com/en-gb/overview/azure-stack/
 [hybrid-identity]: https://docs.microsoft.com/en-gb/azure/architecture/solution-ideas/articles/hybrid-identity
 [virtual-wan]: https://docs.microsoft.com/en-gb/azure/virtual-wan/virtual-wan-about
@@ -59,3 +57,6 @@
 [arc-k8s]: https://docs.microsoft.com/en-gb/azure/azure-arc/kubernetes/overview
 [app-proxy]: https://docs.microsoft.com/en-gb/azure/active-directory/app-proxy/application-proxy
 [hybrid-connections]: https://docs.microsoft.com/en-gb/azure/app-service/app-service-hybrid-connections
+
+
+[<<](../index.md) | [home](../../README.md)

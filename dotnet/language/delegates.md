@@ -116,8 +116,9 @@ public delegate void Action<in T1, in T2 >(T1 arg1, T2 arg2);
 public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
 ```
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [3]
-
 [1]: https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077
 [2]: https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8
 [3]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

@@ -105,8 +105,9 @@ AND f.parent_object_id != referenced_object_id
 		ORDER BY [referenced]
 ```
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: http://stackoverflow.com/questions/1026673/sql-2000-t-sql-to-get-foreign-key-relationships-for-a-table
 [2]: https://blog.sqlauthority.com/2016/02/16/sql-server-view-dependencies-on-sql-server-hard-soft-way/
 [3]: https://www.red-gate.com/simple-talk/sql/t-sql-programming/dependencies-and-references-in-sql-server/
+
+
+[<<](./index.md) | [home](../../README.md)

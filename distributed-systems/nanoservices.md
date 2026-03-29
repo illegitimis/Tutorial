@@ -15,10 +15,11 @@ Examples:
 - send notifications to users via SMS througjh a svc, better encapsulate as a package
 - 3-Tier **SOA** anti-pattern: trying to dress up 3-tier architectures of yore in SOA clothing
 
-[<<](../SOA.md)
 |
-[home](README.md) 
 | 
 wiki [1]
 
 [1]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../README.md)

@@ -247,7 +247,8 @@ public:
 };
 ```
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [2]
-
 [1]: https://msdn.microsoft.com/en-us/library/85344whh%28VS.80%29.aspx?f=255&MSPPError=-2147217396
 [2]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

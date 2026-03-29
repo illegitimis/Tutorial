@@ -150,8 +150,6 @@ GitRepo [101], Get Started [102], dropdown showcase [103], & docs [104], theming
 - Material & CDK: badge [113], get started [114], bottom sheet [115]
 - Angular Material Data Table: A Complete Example [116]: Server Pagination, Filtering, Sorting; course.component.ts [117], schematics [118], grid list [119] samples
 
-[<<](../JS.md) | [home](../../README.md) | wiki [120]
-
 [1]: https://1drv.ms/b/s!AnIyfO51kH7NlVvjZo4Mwh9jlDvW
 [2]: https://angular-2-training-book.rangle.io/
 [3]: https://1drv.ms/b/s!AnIyfO51kH7NlUSD7yLGPHr79BD7
@@ -272,3 +270,6 @@ GitRepo [101], Get Started [102], dropdown showcase [103], & docs [104], theming
 [118]: https://material.angular.io/guide/schematics
 [119]: https://material.angular.io/components/grid-list/examples
 [120]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

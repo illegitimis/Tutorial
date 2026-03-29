@@ -12,6 +12,6 @@
 | 2 | data link | data format over network, establishes and terminates a connection between two physically-connected nodes on a network. Breaks up packets into **frames** and sends them from source to destination. Composed of two parts: Logical Link Control (LLC), which identifies network protocols, performs error checking and synchronizes frames; and Media Access Control (MAC), which uses MAC addresses to connect devices and define permissions to transmit and receive data. |
 | 1 | physical | physical cable or wireless connection between network nodes |
 
-[<<](./index.md) | [home](../README.md)
-
 [osi-imperva]: https://www.imperva.com/learn/application-security/osi-model/
+
+[<<](./index.md) | [home](../README.md)

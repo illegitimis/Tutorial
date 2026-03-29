@@ -13,6 +13,7 @@ Similarly, if an unmanaged application calls LoadLibrary to load a managed assem
 
 ![2](https://fpnlua.by3302.livefilestore.com/y3mzvjADQSazTtbUSSZ1fr4NVUlrfjwjgcXUCb79t_wNoohxRx8SjrNrqbSdqFwR3jEmz7NGih7vXqwWHMndDFHs6XzF9C4FWRftCE0zA-SMBykCQDMUvpvKNepAhPyo29p1czf4x17Hd21CxPBWQM3il2QYEu3WcotBPaIGbJ3nyQ?width=819&height=644&cropmode=none)
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
-
 [1]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

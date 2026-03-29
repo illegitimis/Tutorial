@@ -5,6 +5,7 @@
 - How should you support _unsubscribing_ from notifications?
 - From the outside, the only things you can do to an event are to attach a handler using `+=` and to remove one using `-=`
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
-
 [1]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

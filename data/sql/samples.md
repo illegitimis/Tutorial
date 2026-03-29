@@ -6,8 +6,9 @@
 - [Instnwnd.sql](scripts/instpubs.sql) creates the Northwind sample database.
 - codeplex [3]
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: https://www.microsoft.com/en-us/download/details.aspx?id=23654
 [2]: https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
 [3]: http://sqlserversamples.codeplex.com/#databases
+
+
+[<<](./index.md) | [home](../../README.md)

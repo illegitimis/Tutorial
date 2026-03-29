@@ -281,8 +281,6 @@ January 20th, 2016
 
 </div>
 
-[<<](../messaging.md) | [home](../../README.md)
-
 [1]: https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#zeromq-base
 [2]: https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#socket-types-and-netmq-counterpart
 [3]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#socket-pairs
@@ -319,3 +317,6 @@ January 20th, 2016
 [34]: http://docs.biicode.com/c++/examples/zmq_protobuf.html
 [35]: http://zeromq.org/whitepapers:brokerless
 [36]: https://github.com/sachabarber/NetMQRxDemo
+
+
+[<<](./index.md) | [home](../README.md)

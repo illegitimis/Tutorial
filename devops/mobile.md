@@ -13,8 +13,6 @@
 - Ionic [9]
 - hanselman [10]
 
-[<<](../tools.md) | [home](../../README.md)
-
 [1]: http://www.ubergizmo.com/2012/02/apps-builder/
 [2]: https://stackoverflow.com/questions/11888856/convert-web-application-to-iphone-application
 [3]: https://hubpages.com/technology/How-to-turn-a-web-page-into-an-iPhone-app
@@ -25,3 +23,6 @@
 [8]: http://www.telerik.com/platform/appbuilder
 [9]: http://ionicframework.com/
 [10]: http://www.hanselman.com/blog/CreateAGreatMobileExperienceForYourWebsiteTodayPlease.aspx
+
+
+[<<](./index.md) | [home](../README.md)

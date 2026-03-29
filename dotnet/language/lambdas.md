@@ -12,6 +12,7 @@ BinaryExpression comparison = Expression.GreaterThan(valueParam, constantZero);
 Expression<Func<int, bool>> greaterThanZero = Expression.Lambda<Func<int, bool>>(comparison, valueParam);  
 ```
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
-
 [1]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

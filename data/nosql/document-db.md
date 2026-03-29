@@ -73,8 +73,6 @@ _SQL - JavaScript UDF_, use | `SELECT udf.REGEX_MATCH(Families.address.city, ".*
 - Calling DocumentDb stored procedures from .net [11]
 - Call DocumentDb stored procedure from .Net with parameters. [12]
 
-[<<](../nosql.md) | [home](../../README.md)
-
 [1]: https://stackoverflow.com/questions/tagged/azure-cosmosdb
 [2]: http://sites.computer.org/debull/A13june/bwtree1.pdf
 [3]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bw-tree-icde2013-final.pdf
@@ -87,3 +85,6 @@ _SQL - JavaScript UDF_, use | `SELECT udf.REGEX_MATCH(Families.address.city, ".*
 [10]: https://github.com/Azure/azure-documentdb-dotnet/blob/ebb807493ecec06964e1e049b963045fd347a45d/samples/code-samples/Shared/Util/DocumentClientHelper.cs
 [11]: https://stackoverflow.com/questions/36655455/calling-documentdb-stored-procedures-from-net
 [12]: https://stackoverflow.com/questions/36626257/call-documentdb-stored-procedure-from-net-with-parameters/36668664#36668664
+
+
+[<<](./index.md) | [home](../../README.md)

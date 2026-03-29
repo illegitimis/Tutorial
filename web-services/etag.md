@@ -37,9 +37,10 @@ config.MessageHandlers.Add (cacheHandler);
 - Implement HTTP Cache (ETag) in ASP.NET Core Web API [4] on SO
 - And more notably, when you're dealing with a server farm, or even a server garden, this is a good way to have Cache that's stored in sort of a central place. Now, this may feel a lot like having side effects of things like session state. So even though _this Cache system does have some side effects on the server_, the benefit of using Cached objects, and being able to test concurrency using that Cache, for me greatly _outweigh the bending of the rule for a Stateless Server_.
 
-[<](webapi.md) | [<<](../rest.md) | [home](../../README.md)
-
 [1]: https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14\.19
 [2]: https://github.com/aliostad/CacheCow/wiki
 [3]: https://github.com/KevinDockx/HttpCacheHeaders
 [4]: https://stackoverflow.com/questions/35458737/implement-http-cache-etag-in-asp-net-core-web-api/35555544#35555544
+
+
+[<<](./index.md) | [home](../README.md)

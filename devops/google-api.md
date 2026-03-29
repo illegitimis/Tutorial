@@ -52,8 +52,6 @@
 - `Install-Package Google.Apis.Drive.v3`
 - googleapis/google-api-dotnet-client [36]
 
-[<<](../tools.md) | [home](../../README.md)
-
 [1]: https://console.developers.google.com/flows/enableapi?apiid=sheets.googleapis.com&pli=1
 [2]: https://console.developers.google.com/apis/credentials?authuser=1&project=gsheetsapiv4tria-1547050376693
 [3]: https://console.developers.google.com/apis/credentials?project=pristine-atom-166920
@@ -90,3 +88,6 @@
 [34]: https://cloud.google.com/storage/docs/json_api/v1/how-tos/authorizing
 [35]: https://developers.google.com/drive/v3/web/about-sdk
 [36]: https://github.com/googleapis/google-api-dotnet-client
+
+
+[<<](./index.md) | [home](../README.md)

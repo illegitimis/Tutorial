@@ -68,8 +68,6 @@ BeginExecuteReader/EndExecuteReader
 BeginExecuteXmlReader/EndExecuteXmlReader
 ```
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: https://msdn.microsoft.com/en-us/library/system.data.idbcommand(v=vs.110).aspx
 [2]: https://msdn.microsoft.com/en-us/library/system.data.common.dbcommand(v=vs.110).aspx
 [3]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlcommand.executenonquery(v=vs.110).aspx
@@ -79,3 +77,6 @@ BeginExecuteXmlReader/EndExecuteXmlReader
 [7]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqldatareader%28v=vs.110%29.aspx
 [8]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlcommand(v=vs.110).aspx
 [9]: https://msdn.microsoft.com/en-us/library/system.xml.xmlreader%28v=vs.110%29.aspx
+
+
+[<<](./index.md) | [home](../../README.md)

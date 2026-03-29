@@ -127,9 +127,7 @@ api [19]
 ```
 
 
-[<<](./Mongo.md) 
 |
-[home](../README.md) 
 | 
 wiki [27]   
 
@@ -160,3 +158,6 @@ wiki [27]
 [25]: http://mongodb.github.io/mongo-csharp-driver/1.11/driver/
 [26]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/gettingstarted/
 [27]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../../README.md)

@@ -10,8 +10,6 @@
 - Custom ASP.NET Core Middleware Example [11] sep16
 - ASP.NET - Use Custom Middleware to Detect and Fix 404s in ASP.NET Core Apps [12] jun16
 
-[<< home](../../README.md) | [< netcore](../netcore.md)
-
 [1]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?tabs=aspnetcore2x
 [2]: https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/middleware/sample
 [3]: https://www.exceptionnotfound.net/writing-custom-middleware-in-asp-net-core-1-0/
@@ -24,3 +22,6 @@
 [10]: http://www.intstrings.com/ramivemula/articles/middleware-filters-in-asp-net-core/
 [11]: https://blogs.msdn.microsoft.com/dotnet/2016/09/19/custom-asp-net-core-middleware-example/
 [12]: https://msdn.microsoft.com/en-us/magazine/mt707525.aspx
+
+
+[<<](./index.md) | [home](../../README.md)

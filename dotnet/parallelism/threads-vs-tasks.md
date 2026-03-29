@@ -7,4 +7,5 @@ A better way to think about tasks is to see them as __representations of future 
 
 Tasks should really be thought of as the new threads. Disadvantage inherent to threads: _their cost to create_. The _thread pool_ is used to reduce such costs and even to **avoid excessive context switching** by _multiplexing multiple units of work onto the same physical operating system thread_ that gets reused. The introduction of tasks makes direct use of threads largely obsolete because they can be used for **both** _long-running_ work and for _short-lived_ operations. The latter case clearly is where you would have been using the thread pool before, although it suffers from limitations such as the ability to return values and compose operations. Tasks are a much better abstraction. _Using the thread pool for long-running work used to be problematic_ because you were stealing away a worker in the thread pool for a long time. The engineering done to the task infrastructure (and the underlying revamped thread pool on top of which it’s built) means that tasks can now be used for long-running work, too.
 
-[<<](../parallel.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

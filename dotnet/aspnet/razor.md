@@ -146,7 +146,8 @@ services.Configure<razorViewEngineOptions>(opts => {
 - `RazorPage<TModel>`
 - custom editor/view templates `Shared\EditorTemplates\Date.cshtml`
 
-[<<](../ASP.md) | [mvc](./mvc.md) | [home](../../README.md)
-
 [1]: http://adamyan.blogspot.com/2010/02/aspnet-mvc-2-localization-complete.html
 [2]: https://stackoverflow.com/questions/30704121/use-resources-in-a-razor-labelfor-element
+
+
+[<<](./index.md) | [home](../../README.md)

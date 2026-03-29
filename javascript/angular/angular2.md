@@ -19,7 +19,8 @@ typescript is a __superscript__ of ES6.
 `directive` | _modify DOM elements_ so as to modify their behavior
 `service` | ![component->service->rest api](https://vrp2kg.by3302.livefilestore.com/y4mQ-0_q17WRRu-5rqmW6VYBivyi6UVJ785Xfwi9vOckCpm2UmqOsurWS0hTIaCEIgmnHEvlwywLwNFvN-xbNPzEQkcQnxVIyJAtJHVeJyB2vRQ6-cAeffijFaDuKCdRbQnHscBMV4q6wtrl1D2KykKFdUlllrh_AiBn8Gfy9KJV6jgASKY3hQ-hKHw2fznDlju0OlIO9DrHES16dG1AhRQNw?width=660&height=251&cropmode=none)
 
-[<<](../JS.md) | [home](../../README.md)
-
 [1]: http://es6-features.org
 [2]: https://github.com/danielfigueiredo/wizards-wizard
+
+
+[<<](./index.md) | [home](../../README.md)

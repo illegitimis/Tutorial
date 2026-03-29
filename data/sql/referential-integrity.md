@@ -102,4 +102,5 @@ Performance and maintainability can be extremely poor.
 [6]: https://stackoverflow.com/a/20777244 "Database FK Constraints vs Programmatic FK Constraints"
 [7]: https://stackoverflow.com/a/8154375 "Do foreign key constraints influence query transformations in Oracle?"
 
-[<<](../sql.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

@@ -36,11 +36,12 @@
 - Generating a client using AutoRest *Sample* [5]
 - Azure/autorest tracing [6]
 
-[<](call.md) | [<<](../rest.md) | [home](../../README.md)
-
 [1]: https://dzimchuk.net/generating-clients-for-your-apis-with-autorest/
 [2]: https://github.com/Azure/autorest/blob/master/docs/user/cli.md
 [3]: https://github.com/Azure/autorest
 [4]: https://github.com/swagger-api/swagger-ui
 [5]: https://github.com/Azure/autorest/blob/master/docs/generating-a-client.md
 [6]: https://github.com/Azure/autorest/blob/master/docs/client/tracing.md
+
+
+[<<](./index.md) | [home](../README.md)

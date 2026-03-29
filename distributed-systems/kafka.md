@@ -121,8 +121,6 @@ For Kafka consumers, keeping track of which messages have been consumed (process
 
 Apache Kafka for Beginners [31]
 
-[<<](../messaging.md) | [home](../../README.md)
-
 [1]: https://app.pluralsight.com/library/courses/apache-kafka-getting-started/table-of-contents
 [2]: https://cwiki.apache.org/confluence/display/KAFKA/Clients#Clients-.NET
 [3]: https://github.com/ExactTargetDev/kafka-net
@@ -154,3 +152,6 @@ Apache Kafka for Beginners [31]
 [29]: http://hortonworks.com/apache/kafka/#section_1
 [30]: http://hortonworks.com/apache/kafka/#section_2
 [31]: http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/
+
+
+[<<](./index.md) | [home](../README.md)

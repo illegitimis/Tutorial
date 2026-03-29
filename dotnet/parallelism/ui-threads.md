@@ -36,4 +36,5 @@ timer.Start();
 }
 ```
 
-[<<](../parallel.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

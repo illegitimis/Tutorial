@@ -101,8 +101,9 @@ catch (ArrayTypeMismatchException ex) { Console.WriteLine(ex.Message); }
 + gist interface contravariance [1]
 + gist interface covariance [2]
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [3]
-
 [1]: https://gist.github.com/illegitimis/01c2b3cd6bd710c7be38a2cd773a1055
 [2]: https://gist.github.com/illegitimis/19be12b460e9f46e8e96fea20d5b998d
 [3]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

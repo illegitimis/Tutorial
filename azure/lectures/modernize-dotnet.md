@@ -33,8 +33,6 @@ When you do a data migration, you will select the exact Azure Region where data 
 - [SQL Server Service Broker][service-broker] — provides native support for messaging and queuing in the SQL Server Database Engine and Azure SQL Managed Instance. Developers can use Database Engine components to communicate between disparate databases and build distributed and reliable applications.
 - .NET Core Portability Analyzer (extension)
 
-[<<](../index.md) | [home](../../README.md)
-
 [azure-geographies]: https://azure.microsoft.com/en-us/global-infrastructure/geographies/
 [data-residency]: https://azure.microsoft.com/en-us/global-infrastructure/data-residency/#overview
 [arm-arch]: https://docs.microsoft.com/en-us/learn/azure-fundamentals/azure-architecture-fundamentals/media/consistent-management-layer-feef9259.png
@@ -42,3 +40,6 @@ When you do a data migration, you will select the exact Azure Region where data 
 [migrate-physical]: https://docs.microsoft.com/en-us/azure/migrate/tutorial-migrate-physical-virtual-machines
 [sql-features-comparison]: https://docs.microsoft.com/en-us/azure/azure-sql/database/features-comparison
 [service-broker]: https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-service-broker?view=sql-server-ver15
+
+
+[<<](../index.md) | [home](../../README.md)

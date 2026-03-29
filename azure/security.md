@@ -136,9 +136,10 @@ You can combine Azure networking and security services for increased layered pro
 7. Q: How can Tailwind Traders most easily implement a deny by default policy so that VMs cannot connect to each other?
    A: **Create a network security group rule** that prevents access from another VM on the same network.
 
-[<<](./index.md) | [home](../README.md)
-
 [1]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-general-security-network-security-features/
 [2]: https://azure.microsoft.com/services/azure-firewall
 [3]: https://azure.microsoft.com/services/ddos-protection
 [4]: https://azure.microsoft.com/services/application-gateway
+
+
+[<<](./index.md) | [home](../README.md)

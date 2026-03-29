@@ -41,8 +41,6 @@ az group create --name MsftEventsAcpopescuGroup --location "West US 2"
 az aks create --resource-group MsftEventsAcpopescuGroup --name MsftEventsAcpopescuCluster --node-count 1 --generate-ssh-keys
 ```
 
-[<<](../soa.md) | [home](../../README.md)
-
 [1]: https://azure.microsoft.com/mediahandler/files/resourcefiles/643b5d13-a28f-46e1-a215-4cde55435f97/Azure-Stack-white-paper-v3.pdf
 [2]: https://1drv.ms/b/s!AnIyfO51kH7NlWAMoBEvw8wNJOmZ
 [3]: https://store.docker.com/editions/community/docker-ce-desktop-windows
@@ -59,3 +57,6 @@ az aks create --resource-group MsftEventsAcpopescuGroup --name MsftEventsAcpopes
 [14]: https://www.microsoftazurepass.com/Redeemed
 [15]: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x3795346abcd
 [16]: https://portal.azure.com/#@msfteventsacpopescuoutlook.onmicrosoft.com/blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups
+
+
+[<<](./index.md) | [home](../README.md)

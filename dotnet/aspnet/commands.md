@@ -15,6 +15,7 @@ dotnet sln toRemoveFromWithGlobbingPattern.sln remove **/*.csproj
 dotnet sln toList.sln list
 ```
 
-[<< home](../../README.md) | [< netcore](../netcore.md)
-
 [1]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet
+
+
+[<<](./index.md) | [home](../../README.md)

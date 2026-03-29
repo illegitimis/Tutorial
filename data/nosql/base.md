@@ -14,8 +14,9 @@ acronym | title | description
   - [always consistent][1] but only for certain processed past _snapshots_ (e.g., `Datomic`)
 - The BASE consistency model is primarily used by [aggregate stores][3]
 
-[sql](../sql.md) | [nosql](../nosql.md) | [home](../../README.md)
-
 [1]: https://neo4j.com/blog/acid-vs-base-consistency-models-explained/
 [2]: https://people.eecs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
 [3]: https://neo4j.com/blog/aggregate-stores-tour/
+
+
+[<<](./index.md) | [home](../../README.md)

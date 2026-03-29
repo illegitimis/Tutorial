@@ -38,8 +38,6 @@
     dotnet ef database update
     ```
 
-[<<](../orm.md) | [home](../../README.md)
-
 [1]: https://msdn.microsoft.com/en-us/data/dn481501.aspx
 [2]: http://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx
 [3]: https://docs.microsoft.com/en-us/ef/core/
@@ -48,3 +46,6 @@
 [6]: https://blogs.msdn.microsoft.com/dotnet/2018/02/02/entity-framework-core-2-1-roadmap/
 [7]: https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/read-related-data?view=aspnetcore-2.0
 [8]: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core
+
+
+[<<](./index.md) | [home](../../README.md)

@@ -91,4 +91,5 @@ b) Changes made in the public parts of an object must remain compatible with the
 
 c) Larger interfaces increase the complexity of the entire system. Private fields can only be accessed from within the class; public fields can be accessed through any instance of the class
 
-[<<](../design.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../README.md)

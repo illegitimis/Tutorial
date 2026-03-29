@@ -77,8 +77,6 @@ jsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue(...))
   - ASP.NET Core Versioned API Explorer with Swagger Startup [11]
   - ASP.NET Web API with OData quick start [12]
 
-[<](webapi.md) | [<<](../rest.md) | [home](../../README.md)
-
 [1]: https://onedrive.live.com/embed?cid=B3A4DB2490C51CCD&resid=B3A4DB2490C51CCD%21204889&authkey=AJdXhKx3Nh8gzvo&em=2
 [2]: https://api.stormpath.com/v1`<br
 [3]: http://api.tumblr.com/v2/user/`<br/
@@ -91,3 +89,6 @@ jsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue(...))
 [10]: https://github.com/Microsoft/aspnet-api-versioning
 [11]: https://github.com/Microsoft/aspnet-api-versioning/blob/master/samples/aspnetcore/SwaggerSample/Startup.cs
 [12]: https://github.com/Microsoft/aspnet-api-versioning/wiki/API-Documentation#aspnet-web-api-with-odata
+
+
+[<<](./index.md) | [home](../README.md)

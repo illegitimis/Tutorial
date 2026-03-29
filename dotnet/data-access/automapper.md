@@ -9,8 +9,6 @@ so [4]
 - Passing Parameters with Automapper blog [6]
 - Cannot resolve top level service constructor issue [7]
 
-[<< home](../../README.md) | [< c#](../csdotnet.md)
-
 [1]: https://docs.automapper.org/en/stable/Nested-mappings.html?highlight=inline%20map
 [2]: https://jimmybogard.com/automapper-usage-guidelines/
 [3]: https://kevsoft.net/2015/09/14/getting-along-with-automapper-and-autofac.html
@@ -18,3 +16,6 @@ so [4]
 [5]: https://www.paraesthesia.com/archive/2014/03/25/automapper-autofac-web-api-and-per-request-dependency-lifetime-scopes.aspx/
 [6]: http://codebuckets.com/2016/09/24/passing-parameters-with-automapper/
 [7]: https://github.com/AutoMapper/AutoMapper/issues/1310
+
+
+[<<](./index.md) | [home](../../README.md)

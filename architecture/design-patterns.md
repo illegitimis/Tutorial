@@ -13,8 +13,6 @@
 - 2014.GaryMcLeanHall.**AdaptiveCodeViaC#** Agile Coding With Design Patterns & SOLID Principles
   - _1drv_ One Drive [9]
 
-[<<](../design.md) | [home](../../README.md)
-
 [1]: https://en.wikipedia.org/wiki/Design_Patterns
 [2]: http://www.uml.org.cn/c%2B%2B/pdf/DesignPatterns.pdf
 [3]: https://onedrive.live.com/embed?cid=B3A4DB2490C51CCD&resid=B3A4DB2490C51CCD%21204872&authkey=AKfwgSPY2ruy_fE&em=2
@@ -24,3 +22,6 @@
 [7]: https://1drv.ms/b/s!As0cxZAk26SzjMBlBlVms2yt1BNEmw
 [8]: http://www.zamzar.com/downloadFile.php?uid=5ed5c155d37c9657b52057ef714ecbd8-e8ecc61e6b71891&targetID=2W6cmbYLK6PeQg8I_YVC7YF_Zl9Ha9CEEp&fileID=p1bdlodh7rjcjao1gh719at5hr4.pdf
 [9]: https://1drv.ms/b/s!As0cxZAk26SzjMBkKTmSTUTNMbHu2g
+
+
+[<<](./index.md) | [home](../README.md)

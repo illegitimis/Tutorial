@@ -56,8 +56,6 @@
 - `list-style` * [41]
 - media queries [42] on MDN
 
-[<<](../README.md) | wiki [43]
-
 [1]: http://www.8164.org/
 [2]: https://stackoverflow.com/company/team
 [3]: https://www.sitepoint.com/sass-mixin-placeholder/
@@ -101,3 +99,6 @@
 [41]: https://css-tricks.com/almanac/properties/l/list-style/
 [42]: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 [43]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../README.md)

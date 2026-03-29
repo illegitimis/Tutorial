@@ -79,4 +79,5 @@ plugins: [new etp("styles.css")]
 loader: etp.extract (loader_params)
 ```
 
-[<<](../JS.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../README.md)

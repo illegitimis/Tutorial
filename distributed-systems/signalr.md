@@ -45,8 +45,6 @@
 - The client side of a SignalR app needs a SignalR library `@aspnet/signalr-protocol-msgpack`
 - Azure SignalR Service
 
-[<< home](../../README.md) | [< soa](../soa.md)
-
 [1]: http://signalr.net/
 [2]: https://github.com/aspnet/AspNetCore/blob/master/src/SignalR/docs/specs/HubProtocol.md
 [3]: https://chsakell.com/2016/10/10/real-time-applications-using-asp-net-core-signalr-angular/
@@ -59,3 +57,6 @@
 [10]: https://github.com/aspnet/SignalR/blob/master/src/Microsoft.AspNetCore.SignalR.Protocols.Json/Protocol/JsonHubProtocol.cs
 [11]: https://github.com/aspnet/AspNetCore.Docs/blob/master/aspnetcore/signalr/configuration.md
 [12]: https://msdn.microsoft.com/en-us/magazine/mt846655.aspx
+
+
+[<<](./index.md) | [home](../README.md)

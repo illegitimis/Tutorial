@@ -327,8 +327,6 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 + code written in app-controller.js ![AngularJS controller code screenshot](https://hiqk5q.by3302.livefilestore.com/y4mdGJ1ZYH7959oBhZahhETy8vaYGgO6a3Iag_5otBbSB_K7HKnoF2t7XIx9A3SffDyU_ie-IK3jG-cLmCG8IuwYF5p0D7ftsczznGbIQ_JgbD8WKU6WSZYTXuq3AFiFYU23zhgpZ8SzlZk0YBhzyC9bvl33HgcFQZhi3HOdGgLVd4vWLtHcNUvQ6egPYe84VBbe0FVnW5PbRo_4jcxPmpvwA?width=487&height=378&cropmode=none) ⚠ , use it like `<div ng-controller="tripsController as vm">{{vm.name}}</div>`.
 + table ->` tr ng-repeat="t in vm.trips"` -> `td {{t.created | date:'yyyy-MM-dd'}}`
 
-[<<](../netcore.md) | [home](../../README.md)
-
 [1]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#intro
 [2]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#aspnet-core
 [3]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#html-and-css-basics
@@ -342,3 +340,6 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 [11]: https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute(v=vs.110).aspx
 [12]: http://github.com/shawnwildermuth/BuildingWebASPNETCore
 [13]: http://getpostman.com
+
+
+[<<](./index.md) | [home](../../README.md)

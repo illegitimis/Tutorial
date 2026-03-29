@@ -60,8 +60,6 @@ Guide [31]: Example Datasets \
 Managing Multiple Databases [32] in Neo4j \
 Built-in Movie Graph Example home [33], src [34]
 
-[<< home](../../README.md) | [< nosql](../nosql.md)
-
 [1]: https://github.com/cayleygraph/cayley
 [2]: https://database.guide/list-of-graph-database-management-systems/
 [3]: http://www.hypergraphdb.org/?project=hypergraphdb&page=LearnHyperGraphDB
@@ -96,3 +94,6 @@ Built-in Movie Graph Example home [33], src [34]
 [32]: https://neo4j.com/developer/manage-multiple-databases/
 [33]: https://github.com/neo4j-graph-examples/movies
 [34]: https://github.com/neo4j-graph-examples/movies/blob/main/code/csharp/Example.cs
+
+
+[<<](./index.md) | [home](../../README.md)

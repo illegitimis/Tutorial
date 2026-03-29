@@ -87,4 +87,5 @@ FROM    @TempStringSearchDb
 WHERE   DataFound = 1
 ```
 
-[<<](../sql.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

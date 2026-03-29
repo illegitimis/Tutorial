@@ -299,8 +299,6 @@ Services and features in Azure supporting governance:
 3. Where can the IT department find reference blueprints that it can apply directly to its Azure subscriptions?
    - Correct: **Azure compliance documentation** — provides reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription.
 
-[<<](./index.md) | [home](../README.md)
-
 [aad-free]: https://azure.microsoft.com/en-us/free/
 [aad-compare]: https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad
 [aad-overview]: https://azure.microsoft.com/en-us/services/active-directory/#overview
@@ -323,3 +321,6 @@ Services and features in Azure supporting governance:
 [built-in-roles]: https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
 [tag-policies]: https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-policies
 [policy-samples]: https://docs.microsoft.com/en-us/azure/governance/policy/samples/
+
+
+[<<](./index.md) | [home](../README.md)

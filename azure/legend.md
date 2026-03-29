@@ -471,8 +471,6 @@ web application firewall
 
 geographical grouping of Azure regions for billing purposes
 
-[< back](./az.md)
-
 [1]: https://docs.microsoft.com/en-us/azure/application-gateway/
 [2]: https://azure.microsoft.com/en-us/services/application-gateway/#overview
 [3]: https://azure.microsoft.com/en-us/services/blueprints/#overview
@@ -488,3 +486,6 @@ geographical grouping of Azure regions for billing purposes
 [13]: https://docs.microsoft.com/en-us/azure/cosmos-db/serverless
 [14]: https://docs.microsoft.com/en-us/azure/virtual-desktop/
 [15]: https://docs.microsoft.com/en-us/azure/virtual-machines/
+
+
+[<<](./index.md) | [home](../README.md)

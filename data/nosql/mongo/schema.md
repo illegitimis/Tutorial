@@ -136,9 +136,7 @@ tree-like structure by storing references to “parent” nodes and an array tha
 9. Model Tree Structures with Nested Sets [28]
 optimizes discovering subtrees at the expense of tree mutability.
 
-[<<](Mongo.md)
 |
-[home](../README.md) 
 | 
 wiki [29] 
 
@@ -171,3 +169,6 @@ wiki [29]
 [27]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-materialized-paths/
 [28]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-nested-sets/
 [29]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../../README.md)

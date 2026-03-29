@@ -20,6 +20,7 @@ public interface IEnumerator<out T> : IDisposable, IEnumerator  {
 }
 ```
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [1]
-
 [1]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

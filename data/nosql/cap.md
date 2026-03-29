@@ -25,8 +25,6 @@ report the system as unavailable: keep C lose A
 - https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/subscribe-events
 
 
-[sql](../sql.md) | [nosql](../nosql.md) | [home](../../README.md)
-
 [1]: https://neo4j.com/blog/acid-vs-base-consistency-models-explained/
 [2]: https://people.eecs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
 [3]: https://www.quora.com/What-Is-CAP-Theorem-1
@@ -44,3 +42,6 @@ report the system as unavailable: keep C lose A
 [15]: https://gist.github.com/armon/11059431
 [16]: https://github.com/etcd-io/etcd/issues/741
 [17]: https://blog.nahurst.com/visual-guide-to-nosql-systems
+
+
+[<<](./index.md) | [home](../../README.md)

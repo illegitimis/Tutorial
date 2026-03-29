@@ -43,8 +43,6 @@ AZ-304 [6] Architect Design | Azure Solutions Architect Expert [7]
   - transcript old [20]
   - transcript [20]
 
-[< back](./az.md)
-
 [1]: https://docs.microsoft.com/en-us/learn/certifications/exams/az-204
 [2]: https://docs.microsoft.com/en-us/learn/certifications/azure-developer/
 [3]: https://docs.microsoft.com/en-gb/learn/certifications/exams/az-900
@@ -65,3 +63,6 @@ AZ-304 [6] Architect Design | Azure Solutions Architect Expert [7]
 [18]: https://docs.microsoft.com/en-us/users/andreiciprianpopescu-8552/transcript
 [19]: https://mcptnc.microsoft.com/certificate?AttemptMsaSilentAuth=true&wa=wsignin1.0
 [20]: https://mcptnc.microsoft.com/transcript
+
+
+[<<](./index.md) | [home](../README.md)

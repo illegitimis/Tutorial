@@ -27,4 +27,5 @@
 - key vault [manage password](./learn/akv.pass.md)
 - [OSI](./pages/osi.md) layers
 
-[< home](../README.md)
+
+[<<](./index.md) | [home](../README.md)

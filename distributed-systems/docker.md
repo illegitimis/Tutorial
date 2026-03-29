@@ -207,8 +207,6 @@ Many at version 1.0 and higher. Commercial support contracts available. Tools fo
 
 Key players: Datadog, Mesosphere, DCHQ.io, Quay (CoreOS), Portworx, Rancher, ClusterHQ, Sysdig, ContainerX, Logentries, Weaveworks
 
-[<<](../soa.md) | [home](../../README.md)
-
 [1]: https://www.docker.com/
 [2]: http://europe-2017.dockercon.com/
 [3]: https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=tosca
@@ -218,3 +216,6 @@ Key players: Datadog, Mesosphere, DCHQ.io, Quay (CoreOS), Portworx, Rancher, Clu
 [7]: https://app.pluralsight.com/library/courses/docker-deep-dive-update/table-of-contents
 [8]: https://gist.github.com/g0t4
 [9]: https://gist.github.com/g0t4/0d97a9595c87736a8a72a2bd21afc0d9
+
+
+[<<](./index.md) | [home](../README.md)

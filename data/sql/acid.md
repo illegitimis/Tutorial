@@ -16,11 +16,12 @@ acronym | title | description
 - For many domains and use cases, **ACID** transactions are far more [pessimistic][1] (i.e., they’re more worried about data safety) than the domain actually requires.
 - In the NoSQL world, ACID transactions are less fashionable as [some databases have loosened the requirements][1] for _immediate consistency_, _data freshness_ and _accuracy_ in order to gain other benefits, like **scale** and **resilience**. Notably, the .NET-based RavenDB has [bucked the trend](http://idioms.thefreedictionary.com/buck+the+trend)(_to be noticeably different from the way that a situation is developing generally_) among aggregate stores in supporting ACID transactions.
 
-[< sql](../sql.md) | [> nosql](../nosql.md) | [home](../../README.md)
-
 [1]: https://neo4j.com/blog/acid-vs-base-consistency-models-explained/
 [2]: http://databases.about.com/od/specificproducts/a/acid.htm
 [3]: https://www.techopedia.com/definition/23949/atomicity-consistency-isolation-durability-acid
 [4]: https://dzone.com/articles/how-acid-mongodb
 [5]: http://www.johndcook.com/blog/2009/07/06/brewer-cap-theorem-base/
 [6]: https://msdn.microsoft.com/en-us/library/aa480356.aspx
+
+
+[<<](./index.md) | [home](../../README.md)

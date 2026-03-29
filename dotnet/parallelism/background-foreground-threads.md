@@ -7,4 +7,5 @@ Concerning exception behavior, no difference exists between background and foreg
 The only altered behavior of a background thread is that _it won’t keep the process from being terminated after all foreground threads have quit_.
 In other words, **a foreground thread can keep a process alive until it exits**, whereas a background thread can’t.
 
-[<<](../parallel.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

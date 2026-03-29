@@ -47,8 +47,6 @@ For just listing who is currently connected, sp_who should give you what you nee
 
 [1]: (https://social.technet.microsoft.com/Forums/sqlserver/en-US/94692d7b-69c6-4c34-a1dd-495c652e7d9d/session-id-of-adonet-connection?forum=sqldataaccess) 
 
-[<<](../sql.md) | [home](../../README.md)
-
 [1]: http://www.techrepublic.com/article/take-advantage-of-adonet-connection-pooling/
 [2]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection.clearpool%28v=vs.110%29.aspx
 [3]: https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection%28v=vs.110%29.aspx
@@ -58,3 +56,6 @@ For just listing who is currently connected, sp_who should give you what you nee
 [7]: https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling#connection-pooling-for-oracleclient
 [8]: https://www.sqlskills.com/blogs/bobb/sql-server-and-pooled-vs-non-pooled-connections/
 [9]: https://docs.microsoft.com/en-us/sql/t-sql/functions/spid-transact-sql
+
+
+[<<](./index.md) | [home](../../README.md)

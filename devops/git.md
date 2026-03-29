@@ -92,9 +92,10 @@ git merge upstream/master
 git push -v --tags origin master:master
 ```
 
-[<<](../tools.md) | [home](../../README.md)
-
 [1]: https://www.atlassian.com/git/tutorials/inspecting-a-repository
 [2]: https://www.atlassian.com/git/tutorials/saving-changes
 [3]: https://www.atlassian.com/git/tutorials/syncing
 [4]: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
+
+[<<](./index.md) | [home](../README.md)

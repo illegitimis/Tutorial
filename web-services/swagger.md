@@ -64,8 +64,6 @@ public class SwaggerTests
   - Instead of `[ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(void))]` use `[SwaggerResponse(StatusCodes.Status401Unauthorized, null, "Unauthorized")]`.
   - Instead of `[Action("name")]` use `SwaggerOperation("Ping", Schemes = new[] { "http" })]`.
 
-[<<](../rest.md) | [home](../../README.md)
-
 [1]: https://stackoverflow.com/questions/40929916/how-to-set-up-swashbuckle-vs-microsoft-aspnetcore-mvc-versioning
 [2]: http://www.itkeyword.com/doc/5841486711643521478/adding-basic-authorization-for-swagger-ui
 [3]: http://stevemichelotti.com/customize-authentication-header-in-swaggerui-using-swashbuckle/
@@ -92,3 +90,6 @@ public class SwaggerTests
 [24]: https://github.com/illegitimis/Qualysoft.Evaluation/blob/9c6d41243e6821ddac2d808351a9186834a19b0d/Qualysoft.Evaluation.Api/Startup.cs#L180
 [25]: https://gist.github.com/illegitimis/d529815d6c1833b2eadf4327b7cdc139
 [26]: https://gist.github.com/illegitimis/95d0929bf2234dc4245986e1b18afb91
+
+
+[<<](./index.md) | [home](../README.md)

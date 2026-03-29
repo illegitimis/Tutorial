@@ -10,8 +10,6 @@
 - Authorize with a specific scheme in ASP.NET Core [8]
 - Microsoft.AspNetCore.Authorization.`AuthorizeAttribute` see [attributes](attrib.md)
 
-[<< home](../../README.md) | [< netcore](../netcore.md)
-
 [1]: https://social.technet.microsoft.com/wiki/contents/articles/36804.asp-net-core-mvc-authentication-and-role-based-authorization-with-asp-net-core-identity.aspx
 [2]: https://docs.microsoft.com/en-us/aspnet/core/security/authorization/introduction
 [3]: https://channel9.msdn.com/Blogs/Seth-Juarez/ASPNET-Core-Authorization-with-Barry-Dorrans
@@ -20,3 +18,6 @@
 [6]: https://docs.microsoft.com/en-us/aspnet/core/security/authorization/claims?view=aspnetcore-2.1
 [7]: https://www.tutorialspoint.com/asp.net_core/asp.net_core_authorize_attribute.htm
 [8]: https://docs.microsoft.com/en-us/aspnet/core/security/authorization/limitingidentitybyscheme?tabs=aspnetcore2x
+
+
+[<<](./index.md) | [home](../../README.md)

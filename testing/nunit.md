@@ -21,10 +21,11 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 | References | Is.SameAs Is.Not.SameAs |
 | Nulls & booleans | `Is.Not.Empty`, `Is.Null`, `Is.True` |
 
-[<<](../tdd.md) | [home](../../README.md)
-
 [1]: https://github.com/nunit/docs/wiki/Constraint-Model
 [2]: https://github.com/nunit/docs/wiki/Constraints#constraints-by-category
 [3]: https://github.com/nunit/docs/wiki/Installation
 [4]: https://github.com/nunit/docs/wiki/Visual-Studio-Test-Generator
 [5]: https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter
+
+
+[<<](./index.md) | [home](../README.md)

@@ -102,7 +102,8 @@ private void DisposeUnmanaged();
     private void DisposeManaged();
 ````
 
-[<<](../csdotnet.md) | [home](../../README.md) | wiki [2]
-
 [1]: https://msdn.microsoft.com/en-us/library/system.object.finalize%28v=vs.110%29.aspx
 [2]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

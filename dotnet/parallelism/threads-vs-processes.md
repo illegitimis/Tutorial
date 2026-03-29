@@ -39,7 +39,8 @@ Preemptive / time slice / taken away from the processor forcefully by the kernel
 **Context switch** = The mechanism of storing one thread’s state and restoring another one’s to give the latter a chance to execute.
 **Fiber** = lightweight threads but suffer from quite a few limitations (for example, thread-local storage becomes problematic)
 
-[<<](../parallel.md) | [home](../../README.md)
-
 [1]: https://msdn.microsoft.com/en-us/library/windows/desktop/ms684841(v=vs.85
 [2]: https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917(v=vs.85
+
+
+[<<](./index.md) | [home](../../README.md)

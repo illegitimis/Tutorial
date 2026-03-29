@@ -34,8 +34,6 @@ native | internal
 - Building Full-stack C# Web Apps with Blazor in .NET Core 3.0 [7] sep 2019
 - The Future of Blazor on the Client [8] sep 2019
 
-[< netcore](../netcore.md) | [<< home](../../README.md)
-
 [1]: https://blazor.net
 [2]: https://aka.ms/awesomeblazor
 [3]: https://blazor-demo.github.io/
@@ -44,3 +42,6 @@ native | internal
 [6]: https://youtu.be/noG3rxt38VI
 [7]: https://youtu.be/MetcuX1OHD0
 [8]: https://youtu.be/qF6ixMjCzHA
+
+
+[<<](./index.md) | [home](../../README.md)

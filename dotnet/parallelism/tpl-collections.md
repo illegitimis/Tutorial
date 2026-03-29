@@ -12,6 +12,7 @@ It’s worth noting that _purely relying on lock-free techniques_ is _sometimes_
 
 `ConcurrentDictionary<TKey,TValue>` uses **fine-grained locking** when adding to or updating data in the dictionary, but it is **entirely lock-free for read operations**. In this way, it’s _optimized for scenarios where reading from the dictionary is the most frequent operation_.
 
-[<<](../parallel.md) | [home](../../README.md)
-
 [1]: https://blogs.msdn.microsoft.com/pfxteam/2010/01/26/faq-are-all-of-the-new-concurrent-collections-lock-free/
+
+
+[<<](./index.md) | [home](../../README.md)

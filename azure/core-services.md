@@ -121,7 +121,7 @@ Azure SQL Database and Azure SQL Managed Instance provide a [features comparison
 12. Q: Tailwind Traders has millions of log entries to analyze. Which option is ideal?
     A: **Azure Synapse Analytics**.
 
-[<<](./index.md) | [home](../README.md)
-
 [1]: https://docs.microsoft.com/en-us/azure/azure-sql/database/features-comparison
 [2]: https://docs.microsoft.com/en-us/learn/paths/az-900-describe-core-azure-services/
+
+[<<](./index.md) | [home](../README.md)

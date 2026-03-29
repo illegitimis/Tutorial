@@ -35,9 +35,7 @@ One Drive [9]
 + first look on ivy [23], is ivy ready [24] firebase app
 + by telerik, 1 [25], 2 [26], 3 [27]
 
-[<<](../JS.md)
 |
-[home](../README.md)
 |
 wiki [28]
 
@@ -69,3 +67,6 @@ wiki [28]
 [26]: https://www.telerik.com/whitepapers/kendo-ui/planning-an-angular-application
 [27]: https://www.telerik.com/campaigns/kendo-ui/wp-functional-programming-with-js-cheat-sheet?utm_source=eloqua&utm_campaign=kendo-ui-jquery-whitepaper-funcwithjs-fiddler-web
 [28]: https://github.com/illegitimis/Tutorial/wiki
+
+
+[<<](./index.md) | [home](../../README.md)

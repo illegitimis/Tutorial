@@ -11,6 +11,7 @@
 8. Virtual memory to Physical memory mapping 
 ![Virtual memory to Physical memory mapping](http://slideplayer.com/slide/5352359/17/images/18/Virtual-to-Physical+Memory+Address+Mapping.jpg)
 
-[<<](../os.md) | [home](../../README.md)
-
 [1]: http://cseweb.ucsd.edu/classes/wi11/cse141/Slides/19_VirtualMemory.key.pdf
+
+
+[<<](../index.md) | [home](../../README.md)

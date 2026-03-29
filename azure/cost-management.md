@@ -125,8 +125,6 @@ Key concepts:
 4. What approach might the company take in adding an augmented reality (AR) preview service to its architecture?
    - Correct: **The development team can create a prototype version of the app that includes the AR service that it tests out with select retail employees.** After the AR service reaches general availability (GA), the team can roll it out to production.
 
-[<<](./index.md) | [home](../README.md)
-
 [tco-calculator]: https://azure.microsoft.com/pricing/tco/calculator
 [pricing-calculator]: https://azure.microsoft.com/en-us/pricing/calculator/
 [free-account-faq]: https://azure.microsoft.com/en-us/free/free-account-faq/
@@ -146,3 +144,6 @@ Key concepts:
 [azure-preview]: https://preview.portal.azure.com/
 [azure-updates]: https://azure.microsoft.com/updates
 [software-assurance]: https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-default
+
+
+[<<](./index.md) | [home](../README.md)

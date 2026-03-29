@@ -33,8 +33,6 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
 * golden-service-fabric-hammer [19]
 * Building microservices with ASP.NET Core (without MVC) [20]
 
-[<<](../soa.md) | [home](../../README.md)
-
 [1]: https://github.com/microservices-aspnetcore
 [2]: http://shop.oreilly.com/product/0636920052074.do
 [3]: https://www.safaribooksonline.com/library/view/building-microservices/9781491950340/#toc-start
@@ -55,3 +53,6 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
 [18]: https://keyholesoftware.com/2015/10/19/microservices-in-the-microsoft-enterprise/
 [19]: https://keyholesoftware.com/2016/06/14/golden-service-fabric-hammer/
 [20]: https://www.strathweb.com/2017/01/building-microservices-with-asp-net-core-without-mvc/
+
+
+[<<](./index.md) | [home](../README.md)

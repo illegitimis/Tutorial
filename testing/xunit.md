@@ -110,3 +110,6 @@ For a .NET Core project, a xUnit configuration would have been done via a `xunit
 [16]: https://andrewlock.net/creating-strongly-typed-xunit-theory-test-data-with-theorydata/
 [17]: https://github.com/ielcoro/xunitTypedClassData
 [18]: https://xunit.github.io/docs/configuring-with-xml.html
+
+
+[<<](./index.md) | [home](../README.md)

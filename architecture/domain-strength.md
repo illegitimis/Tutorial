@@ -658,8 +658,6 @@ In both cases, I'd say both our systems were successful, since they shipped and 
 In case anyone wonders, I intentionally did not talk about actors or event sourcing in this series – both things we've done and shipped, but found the applicability to be limited to inside a bounded context (or even more typically, a corner of a bounded context). Another post for another day!
 
 
-[< DDD](./ddd.md) | [<< OOPD](../design.md)
-
 [1]: https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/
 [2]: https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/
 [3]: https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/
@@ -680,3 +678,6 @@ In case anyone wonders, I intentionally did not talk about actors or event sourc
 [18]: http://www.amazon.com/exec/obidos/ASIN/0201485672
 [19]: http://www.agilemodeling.com/artifacts/personas.htm
 [20]: https://github.com/jbogard/MediatR
+
+
+[<<](./index.md) | [home](../README.md)

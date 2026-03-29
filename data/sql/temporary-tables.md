@@ -411,4 +411,5 @@ Always bear in mind that misuse of temporary tables, such as unnecessarily large
 [6]: http://www.sommarskog.se/share_data.html#prockeyed
 [7]: https://www.red-gate.com/simple-talk/sql/t-sql-programming/temporary-tables-in-sql-server/
 
-[<<](../sql.md) | [home](../../README.md)
+
+[<<](./index.md) | [home](../../README.md)

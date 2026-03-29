@@ -55,6 +55,7 @@ flowchart LR
 
 The Model Binder reflects over the `Client` class properties and assigns each matching form field value, producing a fully-populated object passed directly into the controller action.
 
-[<<](../ASP.md) | [home](../../README.md)
-
 [1]: https://docs.microsoft.com/en-us/aspnet/core/mvc/models/formatting
+
+
+[<<](./index.md) | [home](../../README.md)

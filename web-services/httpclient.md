@@ -87,8 +87,6 @@ dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
   </ItemGroup>
 ```
 
-[<](call.md) | [<<](../rest.md) | [home](../../README.md)
-
 [1]: https://msdn.microsoft.com/en-us/library/system.net.http.httpclient(v=vs.110).aspx
 [2]: https://gist.github.com/illegitimis/de5975b9de77637d6d5f343c37d53273
 [3]: https://stackoverflow.com/a/7929084
@@ -100,3 +98,6 @@ dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
 [9]: https://github.com/dotnet/corefx/issues/11100
 [10]: https://github.com/dotnet/corefx/issues/11100#issuecomment-276066197
 [11]: https://github.com/dotnet/corefx/issues/11100#issuecomment-275960251
+
+
+[<<](./index.md) | [home](../README.md)

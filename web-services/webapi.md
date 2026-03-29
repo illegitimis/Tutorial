@@ -67,8 +67,6 @@
 - Compressing Web API Response Using DotNetZip [21] jun16
 - Tips And Tricks To Improve WEB API Performance [22] sep16
 
-[<<](../rest.md) | [home](../../README.md)
-
 [1]: http://mybank.com/convert?from=EUR&to=SGD&amount=100`
 [2]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept
 [3]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type
@@ -91,3 +89,6 @@
 [20]: https://www.iana.org/assignments/media-types/application/vnd.api+json
 [21]: http://www.c-sharpcorner.com/article/compressing-web-api-response-to-using-dotnetzip/
 [22]: http://www.c-sharpcorner.com/article/important-steps-to-increasing-web-api-performance/
+
+
+[<<](./index.md) | [home](../README.md)
