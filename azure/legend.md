@@ -1,4 +1,4 @@
-# legend
+# Legend
 
 > glossary
 
@@ -33,7 +33,7 @@ Azure Kubernetes Service. simplest deployment of a managed Kubernetes cluster in
 
 Build secure, scalable, highly available web front ends in Azure \
 load balancing? \
-[documentation](https://docs.microsoft.com/en-us/azure/application-gateway/), [home](https://azure.microsoft.com/en-us/services/application-gateway/#overview) 
+documentation [1], home [2]
 
 ## App Service
 
@@ -55,7 +55,7 @@ atom-record-sequence format
 
 application security group
 
-## Availability zones
+## Availability Zones
 
 - physically separate datacenters within an Azure region.
 - Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
@@ -69,7 +69,7 @@ application security group
 
 ## Blueprints
 
-Enabling quick, repeatable creation of governed environments [*](https://azure.microsoft.com/en-us/services/blueprints/#overview)
+Enabling quick, repeatable creation of governed environments * [3]
 
 ## CapEx
 
@@ -77,7 +77,7 @@ Enabling quick, repeatable creation of governed environments [*](https://azure.m
 - is the up-front spending of money on physical infrastructure, and then deducting that up-front expense over time.
 - The up-front cost from CapEx has a value that reduces over time.
 
-## CCM 
+## CCM
 
 Cloud Controls Matrix
 
@@ -107,7 +107,7 @@ cost of goods sold
 
 ## Compute
 
-https://azure.microsoft.com/en-gb/product-categories/compute/
+azure.microsoft.com: Compute [4]
 
 ## CSA
 
@@ -125,17 +125,17 @@ Cloud Solution Provider
 
 Cluster Shared Volumes
 
-##  DDoS Protection
+## DDoS Protection
 
 protect your Azure resources from distributed denial of service attacks.
 
 ## Dedicated Host
 
- [Azure Dedicated Host]() provides _dedicated_ physical servers to host your Azure VMs for Windows and Linux. Default hardware shared, workloads isolated. A dedicated host is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
+ Azure Dedicated Host provides *dedicated* physical servers to host your Azure VMs for Windows and Linux. Default hardware shared, workloads isolated. A dedicated host is mapped to a physical server in an Azure datacenter. A *host group* is a collection of dedicated hosts.
 
- ![](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
+ ![Azure Dedicated Host physical server diagram](https://docs.microsoft.com/en-us/learn/azure-fundamentals/protect-against-security-threats-azure/media/6-dedicated-hosts-cab8e670.png)
 
-You're charged per dedicated host, independent of how many VMs you deploy to it [*](https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/6-host-virtual-machines-dedicated-hosts).
+You're charged per dedicated host, independent of how many VMs you deploy to it * [5].
 
 ## DFS
 
@@ -167,7 +167,7 @@ Data Protection Addendum
 
 enterprise application integration
 
-## fabric controller
+## Fabric Controller
 
 - data center racks of servers
 - each server has a hypervisor to run multiple VMs
@@ -179,7 +179,7 @@ enterprise application integration
 
 Federal Risk and Authorization Management Program
 
-## Firewall 
+## Firewall
 
 control what traffic is allowed on the network.
 
@@ -187,7 +187,7 @@ control what traffic is allowed on the network.
 
 fully qualified domain names
 
-## front door
+## Front Door
 
 Fast, reliable, and more secure cloud content delivery service with intelligent threat protection.
 
@@ -197,11 +197,11 @@ File Replication Service
 
 ## FSLogix
 
-[docs](https://docs.microsoft.com/en-us/fslogix/overview)
+docs [6]
 
-## functions
+## Functions
 
-https://docs.microsoft.com/en-us/azure/azure-functions/
+Microsoft Docs: Azure Functions [7]
 
 ## GA
 
@@ -223,7 +223,7 @@ Health Information Trust Alliance
 
 hardware security module
 
-## hypervisor
+## Hypervisor
 
 - abstraction layer OS talks to hardware
 - emulates all functions of a computer and its CPU in a virtual machine
@@ -270,9 +270,9 @@ Language Understanding
 
 micro controller unit
 
-## Monitor Workbooks 
+## Monitor Workbooks
 
-[Azure Monitor Workbooks](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview/) automates responses to threats.
+Azure Monitor Workbooks [8] automates responses to threats.
 
 ## MTCS
 
@@ -327,7 +327,7 @@ Payment Card Industry's Data Security Standard
 
 ## Policy
 
-Achieve real-time cloud compliance at scale with consistent resource governance [*](https://azure.microsoft.com/en-us/services/azure-policy/#overview)
+Achieve real-time cloud compliance at scale with consistent resource governance * [9]
 
 ## RBAC
 
@@ -341,20 +341,20 @@ root cause analysis
 
 remote desktop virtualization host
 
-## redundancy
+## Redundancy
 
 duplicate components across several regions => ensure high availability
 
-## Resource group
+## Resource Group
 
 - A container that holds related resources for an Azure solution.
 - The resource group includes resources that you want to manage as a group.
 - You decide which resources belong in a resource group based on what makes the most sense for your organization.
-- A resource group is a _logical container_ for resources deployed on Azure.
+- A resource group is a *logical container* for resources deployed on Azure.
 - These resources are anything you create in an Azure subscription like VMs, Azure Application Gateway instances, and Azure Cosmos DB instances.
 - All resources must be in a resource group, and a resource can only be a member of a single resource group.
 - Many resources can be moved between resource groups with some services having specific limitations or requirements to move.
-- Resource groups _can't be nested_.
+- Resource groups *can't be nested*.
 - Before any resource can be provisioned, you need a resource group for it to be placed in.
 - If you delete a resource group, all resources contained within it are also deleted
 
@@ -376,18 +376,18 @@ Shared Access Signature
 
 ## Security Center
 
-monitoring [service](https://azure.microsoft.com/services/security-center) that provides visibility of your security posture across all of your services, both on Azure and on-premises.
+monitoring service [10] that provides visibility of your security posture across all of your services, both on Azure and on-premises.
 
-## Secure score
+## Secure Score
 
-measurement of an organization's security posture [*](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls/)
+measurement of an organization's security posture * [11]
 
 ## Sentinel
 
-[Azure Sentinel](https://azure.microsoft.com/en-us/services/microsoft-sentinel/#overview) is Microsoft's cloud-based SIEM system. \
+Azure Sentinel [12] is Microsoft's cloud-based SIEM system. \
 It uses intelligent security analytics and threat analysis.
 
-## Serverless computing
+## Serverless Computing
 
 - **the abstraction of servers, infrastructure, and operating systems.**
 - Azure takes care of managing the server infrastructure and the allocation and deallocation of resources based on demand.
@@ -395,7 +395,7 @@ It uses intelligent security analytics and threat analysis.
 - Scaling and performance are handled automatically.
 - You're billed only for the exact resources you use.
 - There's no need to even reserve capacity.
-- Azure Cosmos DB serverless [*](https://docs.microsoft.com/en-us/azure/cosmos-db/serverless)
+- Azure Cosmos DB serverless * [13]
 
 ## SIEM
 
@@ -427,7 +427,7 @@ Total Cost of Ownership
 
 ## TSP
 
-Trust Services Principles 
+Trust Services Principles
 
 ## UDR
 
@@ -441,13 +441,13 @@ virtual hard disk
 
 ## Virtual Desktop
 
-https://docs.microsoft.com/en-us/azure/virtual-desktop/
+Microsoft Docs: Virtual Desktop [14]
 
-## Virtual machines
+## Virtual Machines
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/
+Microsoft Docs: Virtual Machines [15]
 
-## Virtual machine scale sets
+## Virtual Machine Scale Sets
 
 let you deploy and manage a set of **identical** virtual machines.
 
@@ -467,8 +467,24 @@ let you deploy and manage a set of **identical** virtual machines.
 
 web application firewall
 
-## zone
+## Zone
 
 geographical grouping of Azure regions for billing purposes
 
-[< back](./az.md)
+[1]: https://docs.microsoft.com/en-us/azure/application-gateway/
+[2]: https://azure.microsoft.com/en-us/services/application-gateway/#overview
+[3]: https://azure.microsoft.com/en-us/services/blueprints/#overview
+[4]: https://azure.microsoft.com/en-gb/product-categories/compute/
+[5]: https://docs.microsoft.com/en-us/learn/modules/protect-against-security-threats-azure/6-host-virtual-machines-dedicated-hosts
+[6]: https://docs.microsoft.com/en-us/fslogix/overview
+[7]: https://docs.microsoft.com/en-us/azure/azure-functions/
+[8]: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview/
+[9]: https://azure.microsoft.com/en-us/services/azure-policy/#overview
+[10]: https://azure.microsoft.com/services/security-center
+[11]: https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls/
+[12]: https://azure.microsoft.com/en-us/services/microsoft-sentinel/#overview
+[13]: https://docs.microsoft.com/en-us/azure/cosmos-db/serverless
+[14]: https://docs.microsoft.com/en-us/azure/virtual-desktop/
+[15]: https://docs.microsoft.com/en-us/azure/virtual-machines/
+
+[<<](./index.md) | [home](../README.md)

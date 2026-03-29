@@ -42,3 +42,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 todo/aspdotnet-core-signalr-getting-started/
+
+# Claude Code local settings
+.claude/settings.local.json
