@@ -17,6 +17,8 @@ v2 .NET Framework with Visual Studio [4].
 - Introduction to integration testing with xUnit and TestServer in ASP.NET Core [13], _2016_
 - Capturing Output [14]
 - Shared Context between Tests [15]
+- Creating strongly typed xUnit theory test data with `TheoryData` [16]
+- `TypedClassData` Typed Class Data Attribute for xUnit Test Framework [17]
 
 ## Deadlock when using parallelization and blocking on async code
 
@@ -100,3 +102,5 @@ For a .NET Core project, a xUnit configuration would have been done via a `xunit
 [13]: https://andrewlock.net/introduction-to-integration-testing-with-xunit-and-testserver-in-asp-net-core/
 [14]: https://xunit.net/docs/capturing-output
 [15]: https://xunit.net/docs/shared-context
+[16]: https://andrewlock.net/creating-strongly-typed-xunit-theory-test-data-with-theorydata/
+[17]: https://github.com/ielcoro/xunitTypedClassData
