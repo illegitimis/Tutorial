@@ -152,4 +152,59 @@ docker-compose exec postgres bash
 docker-compose down
 ```
 
+## Automated Workflow
+
+```mermaid
+flowchart LR
+    A[App] --> B[SW Repo]
+    B --> C[Testing]
+    C --> D[Container Registry]
+    D --> E[Deployment]
+    E --> F[Cloud / On-Prem]
+```
+
+## Docker Content Trust
+
+`Docker Content Trust` provides cryptographic verification of image tags — verify content and publisher.
+
+## Docker Ecosystem
+
+| Startups    | Big Names           |
+|-------------|---------------------|
+| Portworx    | IBM                 |
+| ClusterHQ   | Microsoft           |
+| Rancher     | HPE                 |
+| Codenvy     | Dell                |
+| Weaveworks  | VMware              |
+| Sysdig      | NetApp              |
+| hyper_      | Red Hat             |
+| Quay.io     | Amazon Web Services |
+| Twistlock   | Cisco               |
+| Shippable   | Intel               |
+| CircleCI    |                     |
+
+## Docker Inc. Build, Ship, Run
+
+|              | Build          | Ship                      | Run   |
+|--------------|----------------|---------------------------|-------|
+| In the Cloud | Engine, Swarm  | `Docker Hub`              | Tutum |
+| On Prem      | Engine, Swarm  | `Docker Trusted Registry` |       |
+
+## Docker Inc. Products
+
+| Product                          | Description                     |
+|----------------------------------|---------------------------------|
+| `Docker Engine`                  | Core container runtime          |
+| `Docker Machine`                 | Provisions Docker hosts/engines |
+| `Docker Compose`                 | Compose multi-container apps    |
+| `Docker Swarm`                   | Native Docker clustering        |
+| `Docker Trusted Registry`        | On-prem image registry          |
+| `Docker Universal Control Plane` | Management UI                   |
+
+Many at version 1.0 and higher. Commercial support contracts available. Tools for cloud and on premises.
+
+## The Wider Ecosystem
+
+Key players: Datadog, Mesosphere, DCHQ.io, Quay (CoreOS), Portworx, Rancher, ClusterHQ, Sysdig, ContainerX, Logentries, Weaveworks
+
 [<<](../soa.md) | [home](../../README.md)
