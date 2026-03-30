@@ -135,7 +135,7 @@ def build_hierarchy(md_files):
             parent_dir = str(Path(file_dir).parent).replace('\\', '/')
             if parent_dir == '.':
                 parent_dir = ''
-            parent_title = dir_titles.get(parent_dir)
+            parent_title = dir_titles.get(parent_dir) if parent_dir else None
 
             # grand_parent: only if parent_dir itself has a parent with an index
             grand_parent_title = None
