@@ -21,6 +21,8 @@ HTML unicode decimal: `&#UnicodeDecimal;`
 | U+1FA9F | windows key | &#x1FA9F; | Window |
 | U+1FA97 | bandoneon | &#x1FA97; | accordion |
 | U+1F5D4 | - | &#x1F5D4; | Desktop Window |
+| U+2191 | &uarr; | &#x2191; | up arrow |
+| U+1F44C | - | &#x1F44C; | ok hand sign |
 
 &LeftTeeArrow; | &Rightarrow; | &RightArrow; | &rightarrow; | &ShortRightArrow;
 

@@ -34,5 +34,7 @@ AZ-900 Azure Fundamentals exam preparation:
 - [Modernize .NET Apps](./lectures/modernize-dotnet.md) — migrating and modernizing .NET applications with Azure Migrate
 - [Azure Dev Box](./dev-box.md) — Microsoft Dev Box cloud development environments and customization
 - [Table Storage](./table-storage.md) — Azure Table storage design patterns, entity sizing, and `Azure.Data.Tables` SDK
+- [AZ-303](./az-303.md) — AZ-303 Azure Architecture Technologies exam resources and architecture reference
+- [Durable Functions](./durable-functions.md) — Azure Durable Functions orchestrator patterns, DTFx backends, and bindings
 
 [<<](/index.md)

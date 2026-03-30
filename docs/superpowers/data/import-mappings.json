@@ -135,6 +135,69 @@
       "actions": [
         {"type": "new_file", "target": "devops/handle-sysinternals.md", "heading": "# Handle (Sysinternals)"}
       ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "az303.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/az-303.md", "heading": "# AZ-303"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "charts.md",
+      "actions": [
+        {"type": "insert", "target": "azure/resources.md", "heading": "## Charts"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "context.switch.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/parallelism/async-await.md", "heading": "# Async and Await"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "df.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/durable-functions.md", "heading": "# Durable Functions"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "markdown.chars.md",
+      "actions": [
+        {"type": "insert", "target": "devops/markdown-unicode.md", "heading": "# Markdown Unicode"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "mslibrary.md",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": "# ms library"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "service.fabric.md",
+      "actions": [
+        {"type": "new_file", "target": "distributed-systems/service-fabric.md", "heading": "# Service Fabric"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "swagger.contract.1st.md",
+      "actions": [
+        {"type": "insert", "target": "web-services/swagger.md", "heading": "## Contract-First Development"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "windows-11-shortcuts.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/os/windows-11-shortcuts.md", "heading": "# Windows 11 Shortcuts"}
+      ]
     }
   ]
 }

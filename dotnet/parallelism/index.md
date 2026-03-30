@@ -24,5 +24,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [TPL Dataflow](./tpl-dataflow.md) — **TPL Dataflow** actor/agent model: in-process message passing, dataflow pipelines, and `C#` async integration
 - [CorrelationManager](./correlation-manager.md) — `CorrelationManager`, `ExecutionContext`, `AsyncLocal<T>`, and `System.Diagnostics.Activity`
 - [Thread Synchronization](./thread-synchronization.md) — `Interlocked` operations, `CompareExchange`, memory barriers, and reentrance guards
+- [Async and Await](./async-await.md) — asynchronous programming patterns, deadlock avoidance, async locks, context switching, and **TAP**
 
 [<](../index.md) | [<<](/index.md)

@@ -23,6 +23,7 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Azure Services](./azure-services.md) — Azure distributed services: Cosmos DB, Azure Stack, and cloud integrations
 - [Distributed Tracing](./distributed-tracing.md) — **distributed tracing** with `OpenTelemetry`, W3C **Trace Context**, and `System.Diagnostics.Activity`
 - [Kubernetes](./kubernetes.md) — `Kubernetes` container orchestration: courses, resources, and architecture origins
+- [Service Fabric](./service-fabric.md) — `Service Fabric` distributed platform for stateless and stateful applications at scale
 
 ## Messaging Patterns
 

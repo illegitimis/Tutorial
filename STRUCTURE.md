@@ -42,11 +42,13 @@ Tutorial/
 │   │   ├── hybrid-infrastructure.md
 │   │   └── modernize-dotnet.md
 │   ├── app-insights.md
+│   ├── az-303.md
 │   ├── az-900-summary.md
 │   ├── cloud-concepts.md
 │   ├── core-services.md
 │   ├── cost-management.md
 │   ├── dev-box.md
+│   ├── durable-functions.md
 │   ├── identity-and-governance.md
 │   ├── index.md
 │   ├── legend.md
@@ -95,7 +97,8 @@ Tutorial/
 │   └── index.md
 ├── devops/
 │   ├── os/
-│   │   └── virtual-memory.md
+│   │   ├── virtual-memory.md
+│   │   └── windows-11-shortcuts.md
 │   ├── acronyms.md
 │   ├── ci-cd.md
 │   ├── docfx.md
@@ -121,6 +124,7 @@ Tutorial/
 │   ├── microservices-architecture.md
 │   ├── microservices-dotnet.md
 │   ├── nanoservices.md
+│   ├── service-fabric.md
 │   ├── signalr.md
 │   ├── websockets.md
 │   └── zeromq.md
@@ -155,6 +159,7 @@ Tutorial/
 │   │   ├── managed-cpp-cli.md
 │   │   └── rx.md
 │   ├── parallelism/
+│   │   ├── async-await.md
 │   │   ├── background-foreground-threads.md
 │   │   ├── correlation-manager.md
 │   │   ├── index.md

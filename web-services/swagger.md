@@ -147,4 +147,27 @@ SwaggerConfig sample — all possible options .NET 4 [32] \
 [37]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Application/HttpConfigurationExtensions.cs
 [38]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Swagger/ISwaggerProvider.cs
 
+## Contract-First Development
+
+> **API/contract first** — OpenAPI-Driven API Design
+
+Contract first OpenAPI development (but still use `Swagger` UI with ASP.NET Core) [39]
+
+### Code Generation
+
+`Swagger Codegen` — generate server stubs and client SDKs from **OpenAPI** specifications [40]
+
+### NSwag
+
+Get started with `NSwag` and ASP.NET Core [41]
+
+### Documentation
+
+Enriched Web API Documentation using Swagger/OpenAPI in ASP.NET Core [42]
+
+[39]: https://blog.codingmilitia.com/2023/04/02/contract-first-openapi-development-but-still-use-swagger-ui-with-asp.net-core/
+[40]: https://swagger.io/tools/swagger-codegen/
+[41]: https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-8.0&tabs=visual-studio
+[42]: https://www.dotnetnakama.com/blog/enriched-web-api-documentation-using-swagger-openapi-in-asp-dotnet-core/
+
 [<](./index.md) | [<<](/index.md)

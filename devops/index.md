@@ -27,5 +27,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [DocFX](./docfx.md) — `DocFX` API documentation generator
 - [Markdown Unicode](./markdown-unicode.md) — HTML named characters, unicode hex/decimal, and mathematical symbols
 - [Handle (Sysinternals)](./handle-sysinternals.md) — `Handle` tool for diagnosing locked file handles
+- [OS: Windows 11 Shortcuts](./os/windows-11-shortcuts.md) — Windows 11 virtual desktop and window management keyboard shortcuts
 
 [<<](/index.md)
