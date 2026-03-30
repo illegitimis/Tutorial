@@ -179,8 +179,13 @@ Tutorial/
 │   │   ├── finalize.md
 │   │   ├── garbage-collection.md
 │   │   └── index.md
-│   ├── build-configuration.md
-│   ├── editorconfig.md
+│   ├── build/
+│   │   ├── editorconfig.md
+│   │   ├── global-json.md
+│   │   ├── index.md
+│   │   ├── msbuild.md
+│   │   ├── nuget.md
+│   │   └── tfms.md
 │   ├── frameworks-and-libraries.md
 │   ├── index.md
 │   └── polly.md

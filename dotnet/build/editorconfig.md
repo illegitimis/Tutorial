@@ -1,8 +1,8 @@
 ---
 title: EditorConfig
 layout: default
-nav_order: 9
-parent: .NET
+nav_order: 5
+parent: .NET Build
 last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
