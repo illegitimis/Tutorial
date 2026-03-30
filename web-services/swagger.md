@@ -3,7 +3,7 @@ title: Swagger
 layout: default
 nav_order: 11
 parent: Web Services
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Swagger
@@ -98,5 +98,53 @@ public class SwaggerTests
 [24]: https://github.com/illegitimis/Qualysoft.Evaluation/blob/9c6d41243e6821ddac2d808351a9186834a19b0d/Qualysoft.Evaluation.Api/Startup.cs#L180
 [25]: https://gist.github.com/illegitimis/d529815d6c1833b2eadf4327b7cdc139
 [26]: https://gist.github.com/illegitimis/95d0929bf2234dc4245986e1b18afb91
+
+## OpenAPI Specification
+
+> Source of truth is YML / JSON OAS
+
+`Swagger` editor (Petstore v2) [27] \
+`Swagger` Petstore 2.0 [28]
+
+### .NET Core
+
+`Swashbuckle.AspNetCore.SwaggerUI` \
+SwaggerEndpoint \
+`IApplicationBuilder.UseOpenApiSwagger` \
+`app.UseSwaggerUI(c => c.SwaggerEndpoint(x, "title"))` \
+x: /local yml or json in www root \
+default is /swagger/v1/swagger.json
+
+### .NET Framework 4.0 (Swashbuckle.Core 5.6.0)
+
+`SwaggerConfig.cs` \
+`HttpConfiguration.EnableSwagger` \
+`CustomProvider` and/or `RootUrl`
+
+`Swashbuckle.Core` [29] — not updated since Oct 2016 \
+`Swashbuckle.WebApi` ISwaggerProvider search [30]
+
+Swagger repositories at GitHub [31]
+
+SwaggerConfig sample — all possible options .NET 4 [32] \
+`CachingSwaggerProvider` [33] \
+`SwaggerUiHandler` [34] \
+`SwaggerDocsHandler` [35] \
+`SwaggerGenerator` (official) [36] \
+`HttpConfigurationExtensions` (OWIN) [37] \
+`ISwaggerProvider` [38]
+
+[27]: https://editor-next.swagger.io/
+[28]: https://editor.swagger.io/
+[29]: https://www.nuget.org/packages/Swashbuckle.Core#versions-body-tab
+[30]: https://github.com/domaindrivendev/Swashbuckle.WebApi/search?q=%3A+ISwaggerProvider
+[31]: https://github.com/orgs/swagger-api/repositories?type=all
+[32]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Dummy.Core/App_Start/SwaggerConfig.cs
+[33]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Dummy.Core/App_Start/CachingSwaggerProvider.cs
+[34]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Application/SwaggerUiHandler.cs
+[35]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Application/SwaggerDocsHandler.cs
+[36]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Swagger/SwaggerGenerator.cs
+[37]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Application/HttpConfigurationExtensions.cs
+[38]: https://github.com/domaindrivendev/Swashbuckle.WebApi/blob/master/Swashbuckle.Core/Swagger/ISwaggerProvider.cs
 
 [<](./index.md) | [<<](/index.md)

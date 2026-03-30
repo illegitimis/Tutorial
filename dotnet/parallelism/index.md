@@ -4,7 +4,7 @@ layout: minimal
 nav_order: 5
 has_children: true
 parent: .NET
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Parallelism
@@ -22,5 +22,7 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [Thread Local Storage](./thread-local-storage.md) — per-thread state isolation using `ThreadLocal<T>` and `[ThreadStatic]`
 - [TPL Collections](./tpl-collections.md) — `System.Collections.Concurrent` lock-free concurrent collections
 - [TPL Dataflow](./tpl-dataflow.md) — **TPL Dataflow** actor/agent model: in-process message passing, dataflow pipelines, and `C#` async integration
+- [CorrelationManager](./correlation-manager.md) — `CorrelationManager`, `ExecutionContext`, `AsyncLocal<T>`, and `System.Diagnostics.Activity`
+- [Thread Synchronization](./thread-synchronization.md) — `Interlocked` operations, `CompareExchange`, memory barriers, and reentrance guards
 
 [<](../index.md) | [<<](/index.md)

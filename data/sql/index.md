@@ -4,7 +4,7 @@ layout: minimal
 nav_order: 2
 has_children: true
 parent: Data
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # SQL
@@ -29,6 +29,7 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 - [Samples](./samples.md) — Microsoft sample databases: Northwind and pubs for SQL Server 2000
 - [MySQL](./mysql.md) — `MySQL` setup, configuration, and .NET integration
 - [PostgreSQL](./postgresql.md) — `PostgreSQL` with `Npgsql` and `Npgsql.EntityFrameworkCore.PostgreSQL`
+- [SQL LocalDB](./localdb.md) — SQL Server Express `LocalDB` instances, firewall configuration, and Azure Storage Emulator
 
 ## Scripts
 

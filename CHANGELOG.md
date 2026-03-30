@@ -9,6 +9,7 @@ All notable changes to this project are documented here.
 
 | Date   | Commit  | Description |
 |--------|---------|-------------|
+| 260330 | pending | import 16 msft/ notes into documentation tree |
 | 260330 | pending | import github-pages and modular-monolith notes |
 | 260330 | pending | import structurizr notes into architecture/ |
 | 260330 | 62b8f14 | manual move of ai byproducts |

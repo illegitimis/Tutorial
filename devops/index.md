@@ -24,5 +24,8 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Acronyms](./acronyms.md) — developer acronyms reference: SCM and common abbreviations
 - [OS: Virtual Memory](./os/virtual-memory.md) — virtual memory pages, page tables, and address space management
 - [GitHub Pages](./github-pages.md) — `GitHub Pages` and `Jekyll` deployment with `Just the Docs` theme configuration
+- [DocFX](./docfx.md) — `DocFX` API documentation generator
+- [Markdown Unicode](./markdown-unicode.md) — HTML named characters, unicode hex/decimal, and mathematical symbols
+- [Handle (Sysinternals)](./handle-sysinternals.md) — `Handle` tool for diagnosing locked file handles
 
 [<<](/index.md)
