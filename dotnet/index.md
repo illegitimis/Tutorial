@@ -18,8 +18,7 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Data Access](./data-access/index.md) — **Entity Framework**, `EF Core`, and `AutoMapper`
 - [Parallelism](./parallelism/index.md) — managed threads, the **Task Parallel Library**, concurrent collections, and dataflow
 - [Build and Configuration](./build-configuration.md) — `global.json`, `MSBuild`, project files, and .NET SDK configuration
-- [Frameworks and Libraries](./frameworks-and-libraries.md) — .NET runtime source references, target frameworks, and SDK versioning
-- [Polly](./polly.md) — `Polly` resilience library: retry, circuit breaker, timeout, and bulkhead policies
+- [Frameworks and Libraries](./fwks-libs/index.md) — `Polly` resilience library and third-party framework integrations
 - [EditorConfig](./editorconfig.md) — `.editorconfig` reference for .NET/C#: style rules, naming conventions, analyzer severities
 
 [<<](/index.md)

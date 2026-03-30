@@ -226,6 +226,16 @@
       "actions": [
         {"type": "skip_dup", "target": null, "heading": null}
       ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "nunit.md",
+      "actions": [
+        {"type": "insert", "target": "testing/nunit.md", "heading": "## Official"},
+        {"type": "insert", "target": "testing/nunit.md", "heading": "## Data-Driven Tests"},
+        {"type": "insert", "target": "testing/nunit.md", "heading": "## Samples"},
+        {"type": "skip_dup", "target": "testing/nunit.md", "heading": "Constraint Model link"}
+      ]
     }
   ]
 }

@@ -1,8 +1,8 @@
 ---
 title: Polly
 layout: default
-nav_order: 8
-parent: .NET
+nav_order: 1
+parent: Frameworks and Libraries
 last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
