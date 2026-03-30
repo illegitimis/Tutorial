@@ -300,6 +300,13 @@
         {"type": "insert", "target": "devops/git.md", "heading": "## Merge"},
         {"type": "insert", "target": "devops/git.md", "heading": "## File History"}
       ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "dotnet-spa.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/aspnet/spa.md", "heading": "# Single Page Apps"}
+      ]
     }
   ]
 }

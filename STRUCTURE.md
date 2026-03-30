@@ -145,6 +145,7 @@ Tutorial/
 │   │   ├── mvc.md
 │   │   ├── openid-connect.md
 │   │   ├── razor.md
+│   │   ├── spa.md
 │   │   └── web-app-mvc6-efcore-angular.md
 │   ├── data-access/
 │   │   ├── automapper.md
