@@ -9,7 +9,8 @@ All notable changes to this project are documented here.
 
 | Date   | Commit  | Description |
 |--------|---------|-------------|
-| 260330 | pending | import 9 E:\msft-docs\md notes (8 placed, 1 skipped) |
+| 260330 | pending | import 4 msft-docs/technical notes (1 placed, 3 skipped) |
+| 260330 | pending | import 9 msft-docs/md notes (8 placed, 1 skipped) |
 | 260330 | pending | import 16 msft/ notes into documentation tree |
 | 260330 | pending | import github-pages and modular-monolith notes |
 | 260330 | pending | import structurizr notes into architecture/ |

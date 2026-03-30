@@ -198,6 +198,34 @@
       "actions": [
         {"type": "new_file", "target": "devops/os/windows-11-shortcuts.md", "heading": "# Windows 11 Shortcuts"}
       ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "editorconfig.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/editorconfig.md", "heading": "# EditorConfig Reference"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "github-pages.md",
+      "actions": [
+        {"type": "skip_dup", "target": "devops/github-pages.md", "heading": "# GitHub Pages"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "modular-monolith.md",
+      "actions": [
+        {"type": "skip_dup", "target": "architecture/modular-monolith.md", "heading": "# Modular Monoliths"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "resume-templates-240816.md",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": null}
+      ]
     }
   ]
 }

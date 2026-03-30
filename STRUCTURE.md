@@ -180,6 +180,7 @@ Tutorial/
 │   │   ├── garbage-collection.md
 │   │   └── index.md
 │   ├── build-configuration.md
+│   ├── editorconfig.md
 │   ├── frameworks-and-libraries.md
 │   ├── index.md
 │   └── polly.md

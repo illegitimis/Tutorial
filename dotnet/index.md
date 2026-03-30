@@ -20,5 +20,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Build and Configuration](./build-configuration.md) — `global.json`, `MSBuild`, project files, and .NET SDK configuration
 - [Frameworks and Libraries](./frameworks-and-libraries.md) — .NET runtime source references, target frameworks, and SDK versioning
 - [Polly](./polly.md) — `Polly` resilience library: retry, circuit breaker, timeout, and bulkhead policies
+- [EditorConfig](./editorconfig.md) — `.editorconfig` reference for .NET/C#: style rules, naming conventions, analyzer severities
 
 [<<](/index.md)
