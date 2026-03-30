@@ -1,3 +1,12 @@
+---
+title: TemporaryTables
+layout: default
+nav_order: 15
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # TemporaryTables
 
 Temporary tables are used by every DB developer, but they're not likely to be too adventurous with their use, [or exploit all their advantages][4].  
@@ -414,4 +423,4 @@ Always bear in mind that misuse of temporary tables, such as unnecessarily large
 [4]: https://www.red-gate.com/simple-talk/author/phil-factor/
 [6]: http://www.sommarskog.se/share_data.html#prockeyed
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

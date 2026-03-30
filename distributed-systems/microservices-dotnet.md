@@ -1,3 +1,11 @@
+---
+title: Microservices with .NET
+layout: default
+nav_order: 5
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Microservices with .NET
 
 (Martin Fowler and James Levis, “Microservices”, March 2014.)
@@ -56,4 +64,4 @@ Release Date: September 2017, Pages: 232, By Kevin Hoffman
 [19]: https://keyholesoftware.com/2016/06/14/golden-service-fabric-hammer/
 [20]: https://www.strathweb.com/2017/01/building-microservices-with-asp-net-core-without-mvc/
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

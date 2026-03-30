@@ -1,3 +1,11 @@
+---
+title: SOLID Programming Principles
+layout: default
+nav_order: 4
+parent: Architecture
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # SOLID Programming Principles
 
 The **SOLID** Principles of programming are a good set of rules to follow when you are designing and developing an object oriented application.
@@ -18,4 +26,4 @@ The **SOLID** Principles of programming are a good set of rules to follow when y
 [5]: http://www.oodesign.com/interface-segregation-principle.html
 [6]: http://www.oodesign.com/dependency-inversion-principle.html
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

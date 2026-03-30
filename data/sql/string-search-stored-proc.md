@@ -1,3 +1,12 @@
+---
+title: StringSearchDb
+layout: default
+nav_order: 13
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # StringSearchDb
 
 ```sql
@@ -87,4 +96,4 @@ FROM    @TempStringSearchDb
 WHERE   DataFound = 1
 ```
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

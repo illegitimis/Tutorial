@@ -1,3 +1,12 @@
+---
+title: ASP.NET
+layout: minimal
+nav_order: 2
+has_children: true
+parent: .NET
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # ASP.NET
 
 > ASP.NET Core web framework: MVC, Razor views, middleware pipeline, security, Blazor, and CMS platforms.
@@ -28,4 +37,4 @@ ASP.NET Core-based content management systems:
 - **Blogifier** — simple, lightweight open-source blog engine in ASP.NET Core
 - **Contentful** — hosted headless CMS with .NET SDK support
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

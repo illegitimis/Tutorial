@@ -1,3 +1,11 @@
+---
+title: Resources
+layout: default
+nav_order: 11
+parent: Azure
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Resources
 
 > quick links
@@ -21,4 +29,4 @@
 [5]: https://docs.microsoft.com/en-us/azure/availability-zones/az-region
 [6]: https://social.technet.microsoft.com/wiki/contents/articles/51828.azure-vms-availability-sets-and-availability-zones.aspx
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

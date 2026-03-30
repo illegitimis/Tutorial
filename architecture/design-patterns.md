@@ -1,3 +1,11 @@
+---
+title: Design Patterns
+layout: default
+nav_order: 1
+parent: Architecture
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Design Patterns
 
 - 1994.GOF [1]
@@ -23,4 +31,4 @@
 [8]: http://www.zamzar.com/downloadFile.php?uid=5ed5c155d37c9657b52057ef714ecbd8-e8ecc61e6b71891&targetID=2W6cmbYLK6PeQg8I_YVC7YF_Zl9Ha9CEEp&fileID=p1bdlodh7rjcjao1gh719at5hr4.pdf
 [9]: https://1drv.ms/b/s!As0cxZAk26SzjMBkKTmSTUTNMbHu2g
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

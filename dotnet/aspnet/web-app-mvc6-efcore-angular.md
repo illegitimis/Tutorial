@@ -1,3 +1,12 @@
+---
+title: "Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular"
+layout: default
+nav_order: 4
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Building a Web App with ASP.NET Core, MVC 6, EF Core, and Angular
 
 ## TOC
@@ -353,4 +362,4 @@ try-ok-catch-log-badrequest. use a `ILogger<TController>`.
 [12]: http://github.com/shawnwildermuth/BuildingWebASPNETCore
 [13]: http://getpostman.com
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

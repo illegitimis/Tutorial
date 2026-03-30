@@ -1,3 +1,12 @@
+---
+title: Middleware
+layout: default
+nav_order: 6
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Middleware
 
 - Middleware samples from aspnet docs Jan18 [1], old [2]
@@ -23,4 +32,4 @@
 [11]: https://blogs.msdn.microsoft.com/dotnet/2016/09/19/custom-asp-net-core-middleware-example/
 [12]: https://msdn.microsoft.com/en-us/magazine/mt707525.aspx
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

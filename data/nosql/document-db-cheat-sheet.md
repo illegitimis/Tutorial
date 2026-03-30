@@ -1,3 +1,12 @@
+---
+title: DocumentDB SQL Query Cheat Sheet
+layout: default
+nav_order: 5
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # DocumentDB SQL Query Cheat Sheet
 
 Quick reference for writing Azure DocumentDB (Cosmos DB) queries. All examples use two sample `Families` documents — `AndersenFamily` (WA) and `WakefieldFamily` (NY).
@@ -257,4 +266,4 @@ WHERE ST_Distance(f.location, {"type": "Point", "coordinates": [31.9, -4.8]}) < 
 
 ---
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

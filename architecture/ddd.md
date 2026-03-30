@@ -1,3 +1,11 @@
+---
+title: Domain Driven Design
+layout: default
+nav_order: 2
+parent: Architecture
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Domain Driven Design
 
 ## Books
@@ -53,4 +61,4 @@
 [19]: https://code.google.com/archive/p/ndddsample/
 [20]: https://sourcemaking.com/refactoring/smells/inappropriate-intimacy
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

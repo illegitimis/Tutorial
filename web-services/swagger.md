@@ -1,3 +1,11 @@
+---
+title: Swagger
+layout: default
+nav_order: 11
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Swagger
 
 - How to set up Swashbuckle vs Microsoft.AspNetCore.Mvc.Versioning [1]
@@ -91,4 +99,4 @@ public class SwaggerTests
 [25]: https://gist.github.com/illegitimis/d529815d6c1833b2eadf4327b7cdc139
 [26]: https://gist.github.com/illegitimis/95d0929bf2234dc4245986e1b18afb91
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

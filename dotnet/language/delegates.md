@@ -1,3 +1,12 @@
+---
+title: Delegates
+layout: default
+nav_order: 4
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Delegates
 
 ## Multicast
@@ -119,4 +128,4 @@ public delegate TResult Func<in T1, in T2, out TResult>(T1 arg1, T2 arg2);
 [1]: https://gist.github.com/illegitimis/ed2aae068f24835776a57f99a9792077
 [2]: https://gist.github.com/illegitimis/0b352a8ea439cd0135123697575217b8
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

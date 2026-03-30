@@ -1,3 +1,12 @@
+---
+title: Connection Pool
+layout: default
+nav_order: 3
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Connection Pool
 
 Connection pooling [1] maintains a _group_ (or pool) of _active database connections_.  
@@ -62,4 +71,4 @@ For just listing who is currently connected, sp_who should give you what you nee
 [8]: https://www.sqlskills.com/blogs/bobb/sql-server-and-pooled-vs-non-pooled-connections/
 [9]: https://docs.microsoft.com/en-us/sql/t-sql/functions/spid-transact-sql
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,12 @@
+---
+title: Authorization
+layout: default
+nav_order: 2
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Authorization
 
 - ASP.NET Core MVC: Authentication And Role Based Authorization With ASP.NET Core Identity [1] Jan18
@@ -19,4 +28,4 @@
 [7]: https://www.tutorialspoint.com/asp.net_core/asp.net_core_authorize_attribute.htm
 [8]: https://docs.microsoft.com/en-us/aspnet/core/security/authorization/limitingidentitybyscheme?tabs=aspnetcore2x
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

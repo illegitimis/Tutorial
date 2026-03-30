@@ -1,3 +1,11 @@
+---
+title: Cost Management
+layout: default
+nav_order: 5
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Cost Management
 
 ## Pricing Models
@@ -125,4 +133,4 @@ Key concepts:
 4. What approach might the company take in adding an augmented reality (AR) preview service to its architecture?
    - Correct: **The development team can create a prototype version of the app that includes the AR service that it tests out with select retail employees.** After the AR service reaches general availability (GA), the team can roll it out to production.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

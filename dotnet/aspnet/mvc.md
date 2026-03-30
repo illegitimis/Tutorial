@@ -1,3 +1,12 @@
+---
+title: MVC
+layout: default
+nav_order: 7
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # MVC
 
 - Introduction to formatting response data in ASP.NET Core MVC [1]
@@ -57,4 +66,4 @@ The Model Binder reflects over the `Client` class properties and assigns each ma
 
 [1]: https://docs.microsoft.com/en-us/aspnet/core/mvc/models/formatting
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

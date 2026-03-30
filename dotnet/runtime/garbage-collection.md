@@ -1,3 +1,12 @@
+---
+title: Garbage Collection
+layout: default
+nav_order: 5
+parent: .NET Runtime
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Garbage Collection
 
 - Provides memory safety by making sure that an object cannot use the content of another object [1]. (immutable?)
@@ -43,4 +52,4 @@ _Todo_ Pcs50 bw8 weak ref, reclaiming memory
 
 [1]: https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

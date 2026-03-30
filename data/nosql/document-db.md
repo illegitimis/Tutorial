@@ -1,3 +1,12 @@
+---
+title: DocumentDB
+layout: default
+nav_order: 4
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # DocumentDB
 
 - [Online Query Playground](www.documentdb.com/sql/demo)
@@ -86,4 +95,4 @@ _SQL - JavaScript UDF_, use | `SELECT udf.REGEX_MATCH(Families.address.city, ".*
 [11]: https://stackoverflow.com/questions/36655455/calling-documentdb-stored-procedures-from-net
 [12]: https://stackoverflow.com/questions/36626257/call-documentdb-stored-procedure-from-net-with-parameters/36668664#36668664
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

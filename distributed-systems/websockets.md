@@ -1,3 +1,11 @@
+---
+title: Websockets
+layout: default
+nav_order: 8
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Websockets
 
 - Full duplex messaging
@@ -163,4 +171,4 @@ sequenceDiagram
 [17]: https://github.com/radu-matei/websocket-manager/tree/master/samples
 [18]: https://radu-matei.com/blog/aspnet-core-websockets-middleware/
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

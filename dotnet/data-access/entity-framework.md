@@ -1,3 +1,12 @@
+---
+title: Entity Framework
+layout: default
+nav_order: 2
+parent: Data Access
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Entity Framework
 
 ## Links
@@ -74,4 +83,4 @@
 [6]: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core#data-annotations-versus-fluent-api
 [7]: https://www.learnentityframeworkcore.com/
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,12 @@
+---
+title: AngularJS
+layout: default
+nav_order: 4
+parent: Angular
+grand_parent: JavaScript
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # AngularJS
 
 ## Courses
@@ -71,4 +80,4 @@ wiki [28]
 [27]: https://www.telerik.com/campaigns/kendo-ui/wp-functional-programming-with-js-cheat-sheet?utm_source=eloqua&utm_campaign=kendo-ui-jquery-whitepaper-funcwithjs-fiddler-web
 [28]: https://github.com/illegitimis/Tutorial/wiki
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

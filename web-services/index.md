@@ -1,3 +1,11 @@
+---
+title: Web Services
+layout: minimal
+nav_order: 4
+has_children: true
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # Web Services
 
 > HTTP protocol, REST API design, GraphQL, API tooling, caching strategies, and ASP.NET Web API.
@@ -18,4 +26,4 @@
 - [Web API Upload/Download](./webapi-upload-download.md) — file upload and download with resume support, range requests, and Angular integration
 - [Web API Versioning](./webapi-versioning.md) — API versioning strategies from Wildermuth's Web API Design
 
-[<<](../README.md) | [home](../README.md)
+[<<](/index.md)

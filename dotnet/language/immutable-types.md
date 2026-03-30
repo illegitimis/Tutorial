@@ -1,3 +1,12 @@
+---
+title: Immutable
+layout: default
+nav_order: 7
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Immutable
 
 - _immutable_, meaning that it **sets all of its fields during initialization** and then never modifies them again. compiler will generate an error if you attempt to modify that field from outside of a constructor.
@@ -18,4 +27,4 @@ string s = "Hello"; s[0] = 'c';
 
 - The `Regex` class is the heart of the FCL regular expression support. Used both as an object instance and a static type, the `Regex` class represents an immutable, _compiled instance of a regular expression_ that can be applied to a string via a matching process. Internally, the regular expression is stored as either a _sequence of internal regular expression bytecodes_ that are **interpreted at match time** or as **compiled MSIL opcodes** that are **JIT-compiled by the CLR at runtime**. This allows you to make a tradeoff between worsened regular expression startup time and memory utilization versus _h_igher raw match performance at runtime_.
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

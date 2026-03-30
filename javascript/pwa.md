@@ -1,3 +1,11 @@
+---
+title: PWA
+layout: default
+nav_order: 4
+parent: JavaScript
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # PWA
 
 progressive web apps
@@ -17,4 +25,4 @@ progressive web apps
 [8]: https://www.telerik.com/blogs/a-gentle-and-practical-introduction-to-progressive-web-apps
 [9]: https://www.telerik.com/blogs/kendo-ui-conversational-ui-angular-react-vue-components-new-release
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

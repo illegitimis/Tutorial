@@ -1,3 +1,11 @@
+---
+title: API Versioning
+layout: default
+nav_order: 1
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # API Versioning
 
 See versioning chapter in Wildermuth's __Web API Design__ slides [1]
@@ -86,4 +94,4 @@ jsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue(...))
 [11]: https://github.com/Microsoft/aspnet-api-versioning/blob/master/samples/aspnetcore/SwaggerSample/Startup.cs
 [12]: https://github.com/Microsoft/aspnet-api-versioning/wiki/API-Documentation#aspnet-web-api-with-odata
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

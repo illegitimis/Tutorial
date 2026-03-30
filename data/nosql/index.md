@@ -1,3 +1,12 @@
+---
+title: NoSQL
+layout: minimal
+nav_order: 1
+has_children: true
+parent: Data
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # NoSQL
 
 > Non-relational database theory, Azure cloud databases, document stores, and graph databases.
@@ -13,4 +22,4 @@
 - [MongoDB](./mongo/index.md) — `MongoDB` articles, recipes, and schema design patterns
 - [M101N](./m101n.md) — MongoDB for .NET Developers (M101N) course syllabus and notes
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

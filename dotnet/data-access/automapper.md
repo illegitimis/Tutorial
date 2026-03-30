@@ -1,3 +1,12 @@
+---
+title: AutoMapper
+layout: default
+nav_order: 1
+parent: Data Access
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # AutoMapper
 
 - nested mappings docs [1]
@@ -17,4 +26,4 @@ so [4]
 [6]: http://codebuckets.com/2016/09/24/passing-parameters-with-automapper/
 [7]: https://github.com/AutoMapper/AutoMapper/issues/1310
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

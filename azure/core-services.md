@@ -1,3 +1,11 @@
+---
+title: Core Azure Services
+layout: default
+nav_order: 4
+parent: Azure
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Core Azure Services
 
 ## Compute Services
@@ -123,4 +131,4 @@ Azure SQL Database and Azure SQL Managed Instance provide a [features comparison
 
 [1]: https://docs.microsoft.com/en-us/azure/azure-sql/database/features-comparison
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

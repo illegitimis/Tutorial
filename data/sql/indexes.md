@@ -1,3 +1,12 @@
+---
+title: Indices
+layout: default
+nav_order: 6
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Indices
 
 GetIndices.sql [1] gist.
@@ -51,4 +60,4 @@ GetIndices.sql [1] gist.
 [6]: https://technet.microsoft.com/en-us/library/ms188270(v=sql.105).aspx
 [7]: https://technet.microsoft.com/en-us/library/ms175012%28v=sql.105%29.aspx
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

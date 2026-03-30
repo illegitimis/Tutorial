@@ -1,3 +1,11 @@
+---
+title: HATEOAS
+layout: default
+nav_order: 7
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # HATEOAS
 
 **HATEOAS** — hypermedia as the engine of application state
@@ -17,4 +25,4 @@
 [6]: https://blog.jeremylikness.com/5-rest-api-designs-in-dot-net-core-1-29a8527e999c
 [7]: https://blog.jeremylikness.com/5-rest-api-designs-in-dot-net-core-2-ad2f204c2d11
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

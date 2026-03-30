@@ -1,3 +1,12 @@
+---
+title: Foreign Key Mappings
+layout: default
+nav_order: 5
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Foreign Key Mappings
 
 1. WITH SQL SERVER 2000 TABLES. ORIGINAL ANSWER does not ALLOW multiple column relationships [1]
@@ -118,4 +127,4 @@ AND f.parent_object_id != referenced_object_id
 [2]: https://blog.sqlauthority.com/2016/02/16/sql-server-view-dependencies-on-sql-server-hard-soft-way/
 [3]: https://www.red-gate.com/simple-talk/sql/t-sql-programming/dependencies-and-references-in-sql-server/
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

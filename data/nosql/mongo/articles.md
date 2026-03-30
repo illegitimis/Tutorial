@@ -1,3 +1,12 @@
+---
+title: Mongo Articles
+layout: default
+nav_order: 8
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Mongo Articles
 
 + Building Entreprise Grade Blockchain databases with MongoDb [1], March 2017
@@ -13,4 +22,4 @@ wiki [4]
 [3]: https://webassets.mongodb.com/microservices_white_paper.pdf
 [4]: https://github.com/illegitimis/Tutorial/wiki
 
-[<<](./index.md) | [home](../../../README.md)
+[<](./index.md) | [<<](/index.md)

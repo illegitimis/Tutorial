@@ -1,3 +1,12 @@
+---
+title: Entity Framework Core
+layout: default
+nav_order: 3
+parent: Data Access
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Entity Framework Core
 
 ## Links
@@ -47,4 +56,4 @@
 [7]: https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/read-related-data?view=aspnetcore-2.0
 [8]: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,12 @@
+---
+title: Thread Pool
+layout: default
+nav_order: 4
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Thread Pool
 
 The _thread pool_ is used to reduce such costs and even to **avoid excessive context switching** by _multiplexing multiple units of work onto the same physical operating system thread_ that gets reused.
@@ -14,4 +23,4 @@ Reuses physical operating system threads.
 _Using the thread pool for long-running work used to be problematic_ because you were stealing away a worker in the thread pool for a long time.
 The engineering done to the task infrastructure (and the underlying revamped thread pool on top of which the TPL and tasks are built) means that tasks can now be used for long-running work, too.
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

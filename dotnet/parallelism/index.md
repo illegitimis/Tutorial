@@ -1,3 +1,12 @@
+---
+title: Parallelism
+layout: minimal
+nav_order: 5
+has_children: true
+parent: .NET
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # Parallelism
 
 > Managed threading model, task-based asynchrony, thread pool, concurrent collections, and TPL Dataflow.
@@ -14,4 +23,4 @@
 - [TPL Collections](./tpl-collections.md) — `System.Collections.Concurrent` lock-free concurrent collections
 - [TPL Dataflow](./tpl-dataflow.md) — **TPL Dataflow** actor/agent model: in-process message passing, dataflow pipelines, and `C#` async integration
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

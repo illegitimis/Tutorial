@@ -1,3 +1,11 @@
+---
+title: Web API
+layout: default
+nav_order: 12
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Web API
 
 ## Pages
@@ -90,4 +98,4 @@
 [21]: http://www.c-sharpcorner.com/article/compressing-web-api-response-to-using-dotnetzip/
 [22]: http://www.c-sharpcorner.com/article/important-steps-to-increasing-web-api-performance/
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

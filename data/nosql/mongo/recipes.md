@@ -1,3 +1,12 @@
+---
+title: MongoRecipes
+layout: default
+nav_order: 11
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # MongoRecipes
 
 ## JS
@@ -182,4 +191,4 @@ wiki [27]
 [26]: http://mongodb.github.io/mongo-csharp-driver/2.2/reference/gridfs/gettingstarted/
 [27]: https://github.com/illegitimis/Tutorial/wiki
 
-[<<](./index.md) | [home](../../../README.md)
+[<](./index.md) | [<<](/index.md)

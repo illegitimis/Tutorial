@@ -1,3 +1,11 @@
+---
+title: Implementing Hybrid Infrastructure
+layout: default
+nav_order: 7
+parent: Azure
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Implementing Hybrid Infrastructure
 
 ## Resources
@@ -58,4 +66,4 @@
 [app-proxy]: https://docs.microsoft.com/en-gb/azure/active-directory/app-proxy/application-proxy
 [hybrid-connections]: https://docs.microsoft.com/en-gb/azure/app-service/app-service-hybrid-connections
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

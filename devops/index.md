@@ -1,3 +1,11 @@
+---
+title: DevOps
+layout: minimal
+nav_order: 9
+has_children: true
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # DevOps
 
 > Version control, CI/CD pipelines, package management, IDE tooling, and developer utilities.
@@ -16,4 +24,4 @@
 - [Acronyms](./acronyms.md) — developer acronyms reference: SCM and common abbreviations
 - [OS: Virtual Memory](./os/virtual-memory.md) — virtual memory pages, page tables, and address space management
 
-[<<](../README.md) | [home](../README.md)
+[<<](/index.md)

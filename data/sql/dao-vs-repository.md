@@ -1,3 +1,12 @@
+---
+title: DAO vs Repository
+layout: default
+nav_order: 4
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # DAO vs Repository
 
 ## DAO
@@ -82,4 +91,4 @@ db repository interactions | web services repository
 [5]: https://martinfowler.com/eaaCatalog/repository.html "martin fowler def"
 [6]: http://blog.gauffin.org/2013/01/repository-pattern-done-right/ "repo done right"
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

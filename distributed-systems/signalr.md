@@ -1,3 +1,11 @@
+---
+title: SignalR
+layout: default
+nav_order: 7
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # SignalR
 
 - `SignalR` [1] Incredibly simple real-time web for ASP .NET
@@ -57,4 +65,4 @@
 [11]: https://github.com/aspnet/AspNetCore.Docs/blob/master/aspnetcore/signalr/configuration.md
 [12]: https://msdn.microsoft.com/en-us/magazine/mt846655.aspx
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,11 @@
+---
+title: HttpClient
+layout: default
+nav_order: 9
+parent: Web Services
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # HttpClient
 
 <!-- markdownlint-disable MD046 -->
@@ -107,4 +115,4 @@ dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
 [10]: https://github.com/dotnet/corefx/issues/11100#issuecomment-276066197
 [11]: https://github.com/dotnet/corefx/issues/11100#issuecomment-275960251
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

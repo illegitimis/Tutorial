@@ -1,3 +1,11 @@
+---
+title: Application Insights
+layout: default
+nav_order: 1
+parent: Azure
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Application Insights
 
 - **Overview** [*][ai-overview]
@@ -14,4 +22,4 @@
 [ai-sampling]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/sampling
 [ai-profiler]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/profiler
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

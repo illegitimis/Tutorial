@@ -1,3 +1,11 @@
+---
+title: ZeroMQ
+layout: default
+nav_order: 9
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # ZeroMQ
 
 ## Table of Contents
@@ -318,4 +326,4 @@ January 20th, 2016
 [35]: http://zeromq.org/whitepapers:brokerless
 [36]: https://github.com/sachabarber/NetMQRxDemo
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

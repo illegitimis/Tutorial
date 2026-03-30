@@ -1,3 +1,11 @@
+---
+title: NUnit
+layout: default
+nav_order: 1
+parent: Testing
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # NUnit
 
 `NUnit` uses a constraint model of assertions.
@@ -27,4 +35,4 @@ The logic necessary to carry out each assertion is embedded in the constraint ob
 [4]: https://github.com/nunit/docs/wiki/Visual-Studio-Test-Generator
 [5]: https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

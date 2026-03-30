@@ -1,3 +1,11 @@
+---
+title: Identity and Governance
+layout: default
+nav_order: 6
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Identity and Governance
 
 ## Azure Active Directory
@@ -299,4 +307,4 @@ Services and features in Azure supporting governance:
 3. Where can the IT department find reference blueprints that it can apply directly to its Azure subscriptions?
    - Correct: **Azure compliance documentation** — provides reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

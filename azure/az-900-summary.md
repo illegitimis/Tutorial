@@ -1,3 +1,11 @@
+---
+title: AZ-900 Summary
+layout: default
+nav_order: 2
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # AZ-900 Summary
 
 > Azure Fundamentals — AZ-900 exam learning paths overview and knowledge check collection.
@@ -146,4 +154,4 @@ Knowledge checks covered in [security.md](./security.md) (modules 417, 428).
 4. What approach might the company take in adding an augmented reality (AR) preview service?
    - Correct: **The development team can create a prototype version of the app that includes the AR service that it tests out with select retail employees.** After the AR service reaches general availability (GA), the team can roll it out to production.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

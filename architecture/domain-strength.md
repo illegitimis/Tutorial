@@ -1,3 +1,11 @@
+---
+title: Strengthening Your Domain
+layout: default
+nav_order: 5
+parent: Architecture
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Strengthening Your Domain
 
 _2010_. _Jimmy Bogard._
@@ -685,4 +693,4 @@ In case anyone wonders, I intentionally did not talk about actors or event sourc
 [19]: http://www.agilemodeling.com/artifacts/personas.htm
 [20]: https://github.com/jbogard/MediatR
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

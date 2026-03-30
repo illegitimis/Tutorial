@@ -1,3 +1,11 @@
+---
+title: Implementing an API in ASP.NET Web API by Shawn Wildermuth
+layout: default
+nav_order: 10
+parent: Web Services
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Implementing an API in ASP.NET Web API by Shawn Wildermuth
 
 Released1 Oct 2013
@@ -198,4 +206,4 @@ Summary
 
 So, we've taken a look at Web API 2 and looked at some of the key features that are important to building your own APIs. Hopefully, you've seen that the Framework is maturing at a pretty steady pace. It's adding some key features that are going to make your code more readable, give you more flexibility about Routing, as well as enable common features like CORS. Attribute Routing is pretty simple to use, and certainly easy, and will get you over the first hump with defining Routes at either a method level or allowing you to specify with some other features, like RoutePrefix, that you want common Route paths for entire controllers. You do have to remember that Attribute Routes are treated differently, so any lower code you're dealing with, you're going to have to remember to dig into the subroutes to find the Routes that are using attributes. We've also seen that the CORS support is certainly simple. It's easy to opt-in, and it's becoming a pretty major use-case where you want to be able to expose in API the other websites used. It's now just a couple lines of code to enable that, whereas before it was finding and writing code. We've also seen that the IHttpActionResult changes can certainly make your code more readable and more testable, so that you can go ahead and write code that is easier for people to follow, and certainly more self-describing than it used to be. We've also seen that we can build our own action results to solve common structural problems, where we want to return standard headers, where we want to be able to manipulate the results of what we're doing. It's pretty easy to build these action result handlers, and just simply wrap them when we return a result inside of our controllers. Well, this has been Module 6 of Implementing an API Using Web API. My name is Shawn Wildermuth of Wilder Minds. Thank you.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

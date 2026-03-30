@@ -1,3 +1,12 @@
+---
+title: Graph Databases
+layout: default
+nav_order: 6
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Graph Databases
 
 - cayley [1] An open-source graph database
@@ -95,4 +104,4 @@ Built-in Movie Graph Example home [33], src [34]
 [33]: https://github.com/neo4j-graph-examples/movies
 [34]: https://github.com/neo4j-graph-examples/movies/blob/main/code/csharp/Example.cs
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

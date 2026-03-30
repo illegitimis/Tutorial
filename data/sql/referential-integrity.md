@@ -1,3 +1,12 @@
+---
+title: Referential Integrity
+layout: default
+nav_order: 11
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Referential Integrity
 
 ## Indices and Primary Keys
@@ -103,4 +112,4 @@ Performance and maintainability can be extremely poor.
 [6]: https://stackoverflow.com/a/20777244 "Database FK Constraints vs Programmatic FK Constraints"
 [7]: https://stackoverflow.com/a/8154375 "Do foreign key constraints influence query transformations in Oracle?"
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

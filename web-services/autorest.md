@@ -1,3 +1,11 @@
+---
+title: AutoRest
+layout: default
+nav_order: 2
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # AutoRest
 
 - Generating clients for your APIs with AutoRest [1]
@@ -43,4 +51,4 @@
 [5]: https://github.com/Azure/autorest/blob/master/docs/generating-a-client.md
 [6]: https://github.com/Azure/autorest/blob/master/docs/client/tracing.md
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

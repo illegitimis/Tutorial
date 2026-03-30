@@ -1,3 +1,11 @@
+---
+title: Azure
+layout: minimal
+nav_order: 5
+has_children: true
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # Azure
 
 > Microsoft Azure cloud platform: AZ-900 fundamentals, reference material, and lecture notes.
@@ -25,4 +33,4 @@ AZ-900 Azure Fundamentals exam preparation:
 - [Implementing Hybrid Infrastructure](./lectures/hybrid-infrastructure.md) — Azure Stack for hybrid apps across data centers, edge locations, and cloud
 - [Modernize .NET Apps](./lectures/modernize-dotnet.md) — migrating and modernizing .NET applications with Azure Migrate
 
-[<<](../README.md) | [home](../README.md)
+[<<](/index.md)
