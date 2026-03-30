@@ -63,7 +63,9 @@ jekyll serve
 ### Navigation
 
 - Every folder has an `index.md` hub page
-- Every leaf file ends with `[<<](./index.md) | [home](../../README.md)` (depth-adjusted)
+- Every leaf file ends with backlinks: \
+`[<](./index.md)` for the index in the same folder \
+(depth-adjusted) `[<<]({path-to-root-level-index.md})` 
 
 ### Semantic Entity Formatting
 
@@ -82,3 +84,10 @@ Config: `.markdownlint.json` — MD013 (line length) and MD033 (inline HTML) dis
 ### Emoji
 
 No GitHub emoji shortcodes — they don't render on Jekyll/GitHub Pages.
+
+### incremental updates
+
+- update STRUCTURE.md ascii art file tree when files are added or deleted
+- update `last_modified_date` in content mds when changed
+- do not include co-authored by claude in commit messages
+- keep CHANGELOG.md in sync with new commits
