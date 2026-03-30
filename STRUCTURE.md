@@ -34,6 +34,7 @@ Tutorial/
 │   ├── index.md
 │   ├── principles.md
 │   ├── solid.md
+│   ├── structurizr.md
 │   └── uml.md
 ├── azure/
 │   ├── lectures/
