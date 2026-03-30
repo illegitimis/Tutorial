@@ -65,7 +65,7 @@ jekyll serve
 - Every folder has an `index.md` hub page
 - Every leaf file ends with backlinks: \
 `[<](./index.md)` for the index in the same folder \
-(depth-adjusted) `[<<]({path-to-root-level-index.md})` 
+(depth-adjusted) `[<<]({path-to-root-level-index.md})`
 
 ### Semantic Entity Formatting
 
