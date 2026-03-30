@@ -34,6 +34,7 @@ Tutorial/
 │   ├── ddd.md
 │   ├── design-patterns.md
 │   ├── domain-strength.md
+│   ├── event-sourcing.md
 │   ├── index.md
 │   ├── modular-monolith.md
 │   ├── principles.md

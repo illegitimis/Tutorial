@@ -20,5 +20,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [UML](./uml.md) — UML class diagrams: relationships, components, and notation
 - [Structurizr](./structurizr.md) — `Structurizr` **C4 model** architecture-as-code tooling and static site generators
 - [Modular Monoliths](./modular-monolith.md) — **modular monolith** architecture: blog series on _DDD_, migration to microservices, and bounded contexts
+- [Event Sourcing](./event-sourcing.md) — `Marten` document DB and event store on PostgreSQL, **CQRS** command handler workflow, and the Critter Stack
 
 [<<](/index.md)
