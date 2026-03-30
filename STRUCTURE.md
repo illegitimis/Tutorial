@@ -33,6 +33,7 @@ Tutorial/
 │   ├── domain-strength.md
 │   ├── index.md
 │   ├── principles.md
+│   ├── modular-monolith.md
 │   ├── solid.md
 │   ├── structurizr.md
 │   └── uml.md
@@ -96,6 +97,7 @@ Tutorial/
 │   ├── ci-cd.md
 │   ├── git.md
 │   ├── github-docs.md
+│   ├── github-pages.md
 │   ├── google-api.md
 │   ├── index.md
 │   ├── john-the-ripper.md

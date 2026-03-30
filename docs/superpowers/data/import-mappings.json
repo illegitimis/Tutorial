@@ -9,6 +9,20 @@
       "actions": [
         {"type": "new_file", "target": "architecture/structurizr.md", "heading": "# Structurizr"}
       ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "github-pages.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/github-pages.md", "heading": "# GitHub Pages"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "modular-monolith.md",
+      "actions": [
+        {"type": "new_file", "target": "architecture/modular-monolith.md", "heading": "# Modular Monoliths"}
+      ]
     }
   ]
 }
