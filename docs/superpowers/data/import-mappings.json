@@ -236,6 +236,70 @@
         {"type": "insert", "target": "testing/nunit.md", "heading": "## Samples"},
         {"type": "skip_dup", "target": "testing/nunit.md", "heading": "Constraint Model link"}
       ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "canary.md",
+      "actions": [
+        {"type": "insert", "target": "devops/ci-cd.md", "heading": "## Deployment Strategies"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "slms.md",
+      "actions": [
+        {"type": "new_file", "target": "ai/slms.md", "heading": "# Small Language Models"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "auth0.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/aspnet/auth0.md", "heading": "# Auth0"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "azure-pipelines.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/azure-pipelines.md", "heading": "# Azure Pipelines"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "nuget.md",
+      "actions": [
+        {"type": "insert", "target": "dotnet/build/nuget.md", "heading": "## CLI Commands"},
+        {"type": "insert", "target": "dotnet/build/nuget.md", "heading": "## Cache Paths"},
+        {"type": "insert", "target": "dotnet/build/nuget.md", "heading": "## Pipeline Error NETSDK1005"},
+        {"type": "skip_dup", "target": "dotnet/build/nuget.md", "heading": "dotnet nuget locals all --list"},
+        {"type": "skip_dup", "target": null, "heading": "nuget.config (credentials)"},
+        {"type": "skip_dup", "target": null, "heading": "restore-ng-packages.bat (project-specific)"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "wsl.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/os/wsl.md", "heading": "# WSL"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "dotnet.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/build/dotnet-cli.md", "heading": "# .NET CLI"}
+      ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "github.md",
+      "actions": [
+        {"type": "insert", "target": "devops/github-docs.md", "heading": "## Code Search"},
+        {"type": "insert", "target": "devops/git.md", "heading": "## Configuration"},
+        {"type": "insert", "target": "devops/git.md", "heading": "## Merge"},
+        {"type": "insert", "target": "devops/git.md", "heading": "## File History"}
+      ]
     }
   ]
 }

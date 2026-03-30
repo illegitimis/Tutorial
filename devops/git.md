@@ -3,7 +3,7 @@ title: Git
 layout: default
 nav_order: 3
 parent: DevOps
-last_modified_date: 2026-03-29 21:15:03 +00:00
+last_modified_date: 2026-03-31 00:00:00 +00:00
 ---
 
 # Git
@@ -100,6 +100,46 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 git push -v --tags origin master:master
+```
+
+## Configuration
+
+```sh
+git config --global core.autocrlf true  # Windows
+git config --global core.autocrlf input # Linux
+git config --global --edit
+```
+
+`.gitattributes` line endings:
+
+```ini
+* text=auto
+* text eol=crlf
+* text eol=lf
+```
+
+## Merge
+
+```sh
+git fetch origin
+git merge origin/develop
+git log develop..HEAD --oneline --no-merges
+git rm --cached <file>
+```
+
+## File History
+
+```sh
+# Basic history
+git log -- path/to/file.txt
+# One-line summary per commit
+git log --oneline -- path/to/file.txt
+# With diffs (what changed in each commit)
+git log -p -- path/to/file.txt
+# Last N commits
+git log -5 -- path/to/file.txt
+# Follow renames
+git log --follow -- path/to/file.txt
 ```
 
 [1]: https://www.atlassian.com/git/tutorials/inspecting-a-repository

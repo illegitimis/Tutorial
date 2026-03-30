@@ -18,3 +18,4 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Testing](./testing/index.md) — NUnit, xUnit, TDD
 - [JavaScript](./javascript/index.md) — JS, Angular, CSS, frontend tooling
 - [DevOps](./devops/index.md) — Git, CI/CD, tools
+- [AI](./ai/index.md) — language models, machine learning

@@ -22,6 +22,7 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [Blazor](./blazor.md) — `Blazor` client-side UI framework targeting `WebAssembly` running in the browser
 - [Commands](./commands.md) — `dotnet` CLI commands including migrate, build, and project tooling
 - [Web App (MVC6 + EF Core + Angular)](./web-app-mvc6-efcore-angular.md) — full-stack course: ASP.NET Core MVC 6, `EF Core`, and `Angular`
+- [Auth0](./auth0.md) — `Auth0` identity platform: universal/embedded login, **SSO**, **OAuth 2.0**, and **OIDC** glossary
 
 ## CMS Platforms
 

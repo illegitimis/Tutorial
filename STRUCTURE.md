@@ -27,6 +27,9 @@ Tutorial/
 ├── LICENSE
 ├── README.md
 ├── STRUCTURE.md
+├── ai/
+│   ├── index.md
+│   └── slms.md
 ├── architecture/
 │   ├── ddd.md
 │   ├── design-patterns.md
@@ -98,8 +101,10 @@ Tutorial/
 ├── devops/
 │   ├── os/
 │   │   ├── virtual-memory.md
-│   │   └── windows-11-shortcuts.md
+│   │   ├── windows-11-shortcuts.md
+│   │   └── wsl.md
 │   ├── acronyms.md
+│   ├── azure-pipelines.md
 │   ├── ci-cd.md
 │   ├── docfx.md
 │   ├── git.md
@@ -130,6 +135,7 @@ Tutorial/
 │   └── zeromq.md
 ├── dotnet/
 │   ├── aspnet/
+│   │   ├── auth0.md
 │   │   ├── attributes.md
 │   │   ├── authorization.md
 │   │   ├── blazor.md
@@ -180,6 +186,7 @@ Tutorial/
 │   │   ├── garbage-collection.md
 │   │   └── index.md
 │   ├── build/
+│   │   ├── dotnet-cli.md
 │   │   ├── editorconfig.md
 │   │   ├── global-json.md
 │   │   ├── index.md
