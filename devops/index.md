@@ -30,5 +30,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [OS: Windows 11 Shortcuts](./os/windows-11-shortcuts.md) — Windows 11 virtual desktop and window management keyboard shortcuts
 - [Azure Pipelines](./azure-pipelines.md) — Azure DevOps pipelines: build .NET Core apps, PR triggers, branch policies, and Azure CLI
 - [OS: WSL](./os/wsl.md) — Windows Subsystem for Linux commands, distro management, and `Claude Code` install
+- [GitHub Repository Practices](./github-practices.md) — essential files, governance conventions, **Conventional Commits**, branch strategy, and ADRs
 
 [<<](/index.md)

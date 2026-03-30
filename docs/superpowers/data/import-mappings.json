@@ -322,6 +322,13 @@
       "actions": [
         {"type": "new_file", "target": "architecture/event-sourcing.md", "heading": "# Event Sourcing"}
       ]
+    },
+    {
+      "date": "2026-03-31",
+      "source": "github-root-practices.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/github-practices.md", "heading": "# GitHub Repository Practices"}
+      ]
     }
   ]
 }
