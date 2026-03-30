@@ -3,7 +3,7 @@ title: Websockets
 layout: default
 nav_order: 8
 parent: Distributed Systems
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-31 00:00:00 +00:00
 ---
 
 # Websockets
@@ -170,5 +170,175 @@ sequenceDiagram
 [16]: https://github.com/aspnet/AspNetCore/blob/1f892d798d3163b4bd9d3c4e900f6bb5c2310f9c/src/Hosting/TestHost/src/WebSocketClient.cs
 [17]: https://github.com/radu-matei/websocket-manager/tree/master/samples
 [18]: https://radu-matei.com/blog/aspnet-core-websockets-middleware/
+
+## Echo Sample
+
+Official ASP.NET Core WebSocket echo sample [19].
+
+### wwwroot/index.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table { border: 0 }
+        .commslog-data { font-family: Consolas, Courier New, Courier, monospace; }
+        .commslog-server { background-color: red; color: white }
+        .commslog-client { background-color: green; color: white }
+    </style>
+</head>
+<body>
+    <h1>WebSocket Sample Application</h1>
+    <p id="stateLabel">Ready to connect...</p>
+    <div>
+        <label for="connectionUrl">WebSocket Server URL:</label>
+        <input id="connectionUrl" />
+        <button id="connectButton" type="submit">Connect</button>
+    </div>
+    <p></p>
+    <div>
+        <label for="sendMessage">Message to send:</label>
+        <input id="sendMessage" disabled />
+        <button id="sendButton" type="submit" disabled>Send</button>
+        <button id="closeButton" disabled>Close Socket</button>
+    </div>
+    <h2>Communication Log</h2>
+    <table style="width: 800px">
+        <thead><tr><td style="width: 100px">From</td><td style="width: 100px">To</td><td>Data</td></tr></thead>
+        <tbody id="commsLog"></tbody>
+    </table>
+    <script>
+        var connectionUrl = document.getElementById("connectionUrl");
+        var connectButton = document.getElementById("connectButton");
+        var stateLabel    = document.getElementById("stateLabel");
+        var sendMessage   = document.getElementById("sendMessage");
+        var sendButton    = document.getElementById("sendButton");
+        var commsLog      = document.getElementById("commsLog");
+        var closeButton   = document.getElementById("closeButton");
+        var socket;
+
+        var scheme = document.location.protocol === "https:" ? "wss" : "ws";
+        var port   = document.location.port ? (":" + document.location.port) : "";
+        connectionUrl.value = scheme + "://" + document.location.hostname + port + "/ws";
+
+        function updateState() {
+            function disable() { sendMessage.disabled = sendButton.disabled = closeButton.disabled = true; }
+            function enable()  { sendMessage.disabled = sendButton.disabled = closeButton.disabled = false; }
+            connectionUrl.disabled = connectButton.disabled = true;
+            if (!socket) { disable(); return; }
+            switch (socket.readyState) {
+                case WebSocket.CLOSED:    stateLabel.innerHTML = "Closed";      disable(); connectionUrl.disabled = connectButton.disabled = false; break;
+                case WebSocket.CLOSING:   stateLabel.innerHTML = "Closing...";  disable(); break;
+                case WebSocket.CONNECTING:stateLabel.innerHTML = "Connecting...";disable(); break;
+                case WebSocket.OPEN:      stateLabel.innerHTML = "Open";        enable();  break;
+                default: stateLabel.innerHTML = "Unknown: " + htmlEscape(socket.readyState); disable();
+            }
+        }
+
+        closeButton.onclick = function () { socket.close(1000, "Closing from client"); };
+
+        sendButton.onclick = function () {
+            var data = sendMessage.value;
+            socket.send(data);
+            commsLog.innerHTML += '<tr><td class="commslog-client">Client</td><td class="commslog-server">Server</td><td class="commslog-data">' + htmlEscape(data) + '</td></tr>';
+        };
+
+        connectButton.onclick = function () {
+            stateLabel.innerHTML = "Connecting";
+            socket = new WebSocket(connectionUrl.value);
+            socket.onopen  = function (e) { updateState(); commsLog.innerHTML += '<tr><td colspan="3" class="commslog-data">Connection opened</td></tr>'; };
+            socket.onclose = function (e) { updateState(); commsLog.innerHTML += '<tr><td colspan="3" class="commslog-data">Connection closed. Code: ' + htmlEscape(e.code) + '. Reason: ' + htmlEscape(e.reason) + '</td></tr>'; };
+            socket.onerror   = updateState;
+            socket.onmessage = function (e) { commsLog.innerHTML += '<tr><td class="commslog-server">Server</td><td class="commslog-client">Client</td><td class="commslog-data">' + htmlEscape(e.data) + '</td></tr>'; };
+        };
+
+        function htmlEscape(str) {
+            return str.toString().replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+    </script>
+</body>
+</html>
+```
+
+### WebSocketController.cs
+
+High-performance logging with `LoggerMessage.Define` and `[LoggerMessage]` source generator [20]:
+
+```csharp
+// High-perf structured logging via LoggerMessage.Define
+internal static class HighPerfLog
+{
+    private static readonly Action<ILogger, Exception?> s_ctor =
+        LoggerMessage.Define(LogLevel.Debug, new EventId(0, "WebSocketController ctor"),
+            "The WebSocket class allows applications to send and receive data after the WebSocket upgrade has completed.");
+
+    public static void Ctor(this ILogger logger) => s_ctor(logger, null!);
+
+    private static readonly Action<ILogger, WebSocketCloseStatus?, string?, TimeSpan, WebSocketState, string?, Exception?>
+        s_acceptWebSocketAsync = LoggerMessage.Define<WebSocketCloseStatus?, string?, TimeSpan, WebSocketState, string?>(
+            LogLevel.Information, new EventId(1, "AcceptWebSocketAsync"),
+            "[{CloseStatus}], Description: {CloseStatusDescription}, KeepAlive: {DefaultKeepAliveInterval}, State: {State}, SubProtocol: {SubProtocol}");
+
+    public static void AcceptWebSocketAsync(this ILogger logger, WebSocket ws) =>
+        s_acceptWebSocketAsync(logger, ws.CloseStatus, ws.CloseStatusDescription,
+            WebSocket.DefaultKeepAliveInterval, ws.State, ws.SubProtocol, null!);
+}
+
+// Source-generator approach ([LoggerMessage] attribute)
+public static partial class HighPerfCodeGenLog
+{
+    [LoggerMessage(EventId = 10, Level = LogLevel.Critical,
+        Message = "Closing web socket [{CloseStatus}], Description: {CloseStatusDescription}")]
+    public static partial void CompileTime(ILogger logger,
+        WebSocketCloseStatus? closeStatus, string? closeStatusDescription);
+}
+
+// Controller
+public class WebSocketController : ControllerBase
+{
+    readonly ILogger _logger;
+
+    public WebSocketController(ILoggerFactory loggerFactory)
+    {
+        _logger = loggerFactory.CreateLogger("WS");
+        _logger.Ctor();
+    }
+
+    [Route("/ws")]
+    public async Task Get()
+    {
+        if (HttpContext.WebSockets.IsWebSocketRequest)
+        {
+            using var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync();
+            _logger.AcceptWebSocketAsync(webSocket);
+            await Echo(webSocket);
+        }
+        else HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
+    }
+
+    async Task Echo(WebSocket webSocket)
+    {
+        var buffer = new byte[1024 * 4];
+        var receiveResult = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+
+        while (!receiveResult.CloseStatus.HasValue)
+        {
+            await webSocket.SendAsync(new ArraySegment<byte>(buffer, 0, receiveResult.Count),
+                receiveResult.MessageType, receiveResult.EndOfMessage, CancellationToken.None);
+            receiveResult = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+        }
+
+        await webSocket.CloseAsync(receiveResult.CloseStatus.Value,
+            receiveResult.CloseStatusDescription, CancellationToken.None);
+        HighPerfCodeGenLog.CompileTime(_logger, receiveResult.CloseStatus, receiveResult.CloseStatusDescription);
+    }
+}
+```
+
+[19]: https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/fundamentals/websockets/samples/8.x/WebSocketsSample/Controllers/WebSocketController.cs
+[20]: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-10.0
 
 [<](./index.md) | [<<](/index.md)
