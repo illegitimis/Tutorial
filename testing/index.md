@@ -3,7 +3,7 @@ title: Testing
 layout: minimal
 nav_order: 7
 has_children: true
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Testing
@@ -14,6 +14,7 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 
 - [NUnit](./nunit.md) — `NUnit` constraint-based assertion model and test framework for .NET
 - [xUnit](./xunit.md) — `xUnit.net` free, open-source, community-focused unit testing tool for .NET
+- [MSTest](./mstest.md) — `MSTest` unit testing framework for Visual Studio
 
 ## TDD and Supporting Tools
 

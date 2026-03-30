@@ -1,0 +1,140 @@
+{
+  "category_rules": [],
+  "heading_aliases": [],
+  "rejected_placements": [],
+  "import_log": [
+    {
+      "date": "2026-03-30",
+      "source": "structurizr.md",
+      "actions": [
+        {"type": "new_file", "target": "architecture/structurizr.md", "heading": "# Structurizr"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "github-pages.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/github-pages.md", "heading": "# GitHub Pages"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "modular-monolith.md",
+      "actions": [
+        {"type": "new_file", "target": "architecture/modular-monolith.md", "heading": "# Modular Monoliths"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Build & Configuration.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/build-configuration.md", "heading": "# Build and Configuration"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Frameworks & Libraries.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/frameworks-and-libraries.md", "heading": "# Frameworks and Libraries"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "correlation-manager.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/parallelism/correlation-manager.md", "heading": "# CorrelationManager"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "KnockoutJS.md",
+      "actions": [
+        {"type": "new_file", "target": "javascript/knockoutjs.md", "heading": "# KnockoutJS"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Polly.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/polly.md", "heading": "# Polly"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Thread Synchronization.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/parallelism/thread-synchronization.md", "heading": "# Thread Synchronization"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "DocFX.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/docfx.md", "heading": "# DocFX"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Swagger-OpenAPI.md",
+      "actions": [
+        {"type": "insert", "target": "web-services/swagger.md", "heading": "## OpenAPI Specification"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Azure Dev Box.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/dev-box.md", "heading": "# Azure Dev Box"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Distributed-tracing.md",
+      "actions": [
+        {"type": "new_file", "target": "distributed-systems/distributed-tracing.md", "heading": "# Distributed Tracing"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Kubernetes.md",
+      "actions": [
+        {"type": "new_file", "target": "distributed-systems/kubernetes.md", "heading": "# Kubernetes"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "SQL LocalDB.md",
+      "actions": [
+        {"type": "new_file", "target": "data/sql/localdb.md", "heading": "# SQL LocalDB"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Table Storage.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/table-storage.md", "heading": "# Table Storage"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "MSTest.md",
+      "actions": [
+        {"type": "new_file", "target": "testing/mstest.md", "heading": "# MSTest"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Markdown Unicode.md",
+      "actions": [
+        {"type": "new_file", "target": "devops/markdown-unicode.md", "heading": "# Markdown Unicode"}
+      ]
+    },
+    {
+      "date": "2026-03-30",
+      "source": "Handle (Sysinternals).md",
+      "actions": [
+        {"type": "new_file", "target": "devops/handle-sysinternals.md", "heading": "# Handle (Sysinternals)"}
+      ]
+    }
+  ]
+}

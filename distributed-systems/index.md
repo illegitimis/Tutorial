@@ -3,7 +3,7 @@ title: Distributed Systems
 layout: minimal
 nav_order: 6
 has_children: true
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Distributed Systems
@@ -21,6 +21,8 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [Kafka](./kafka.md) — `Apache Kafka` distributed event streaming: .NET clients and Pluralsight course notes
 - [ZeroMQ](./zeromq.md) — `ZeroMQ` high-performance asynchronous messaging library
 - [Azure Services](./azure-services.md) — Azure distributed services: Cosmos DB, Azure Stack, and cloud integrations
+- [Distributed Tracing](./distributed-tracing.md) — **distributed tracing** with `OpenTelemetry`, W3C **Trace Context**, and `System.Diagnostics.Activity`
+- [Kubernetes](./kubernetes.md) — `Kubernetes` container orchestration: courses, resources, and architecture origins
 
 ## Messaging Patterns
 

@@ -3,7 +3,7 @@ title: .NET
 layout: minimal
 nav_order: 1
 has_children: true
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # .NET
@@ -17,5 +17,8 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [ASP.NET](./aspnet/index.md) — MVC, Razor, middleware, authorization, Blazor, and CMS platforms
 - [Data Access](./data-access/index.md) — **Entity Framework**, `EF Core`, and `AutoMapper`
 - [Parallelism](./parallelism/index.md) — managed threads, the **Task Parallel Library**, concurrent collections, and dataflow
+- [Build and Configuration](./build-configuration.md) — `global.json`, `MSBuild`, project files, and .NET SDK configuration
+- [Frameworks and Libraries](./frameworks-and-libraries.md) — .NET runtime source references, target frameworks, and SDK versioning
+- [Polly](./polly.md) — `Polly` resilience library: retry, circuit breaker, timeout, and bulkhead policies
 
 [<<](/index.md)

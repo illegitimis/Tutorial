@@ -3,7 +3,7 @@ title: Architecture
 layout: minimal
 nav_order: 2
 has_children: true
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Architecture
@@ -18,5 +18,7 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [Strengthening Your Domain](./domain-strength.md) — *Jimmy Bogard's* techniques for building rich domain models
 - [Design Patterns](./design-patterns.md) — **GoF** (Gang of Four) design patterns: creational, structural, and behavioral
 - [UML](./uml.md) — UML class diagrams: relationships, components, and notation
+- [Structurizr](./structurizr.md) — `Structurizr` **C4 model** architecture-as-code tooling and static site generators
+- [Modular Monoliths](./modular-monolith.md) — **modular monolith** architecture: blog series on _DDD_, migration to microservices, and bounded contexts
 
 [<<](/index.md)

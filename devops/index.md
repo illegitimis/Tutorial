@@ -3,7 +3,7 @@ title: DevOps
 layout: minimal
 nav_order: 9
 has_children: true
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # DevOps
@@ -23,5 +23,9 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [John the Ripper](./john-the-ripper.md) — `John the Ripper` password security tool: incremental configuration and examples
 - [Acronyms](./acronyms.md) — developer acronyms reference: SCM and common abbreviations
 - [OS: Virtual Memory](./os/virtual-memory.md) — virtual memory pages, page tables, and address space management
+- [GitHub Pages](./github-pages.md) — `GitHub Pages` and `Jekyll` deployment with `Just the Docs` theme configuration
+- [DocFX](./docfx.md) — `DocFX` API documentation generator
+- [Markdown Unicode](./markdown-unicode.md) — HTML named characters, unicode hex/decimal, and mathematical symbols
+- [Handle (Sysinternals)](./handle-sysinternals.md) — `Handle` tool for diagnosing locked file handles
 
 [<<](/index.md)

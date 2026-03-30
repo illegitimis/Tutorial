@@ -32,8 +32,10 @@ Tutorial/
 │   ├── design-patterns.md
 │   ├── domain-strength.md
 │   ├── index.md
+│   ├── modular-monolith.md
 │   ├── principles.md
 │   ├── solid.md
+│   ├── structurizr.md
 │   └── uml.md
 ├── azure/
 │   ├── lectures/
@@ -44,13 +46,15 @@ Tutorial/
 │   ├── cloud-concepts.md
 │   ├── core-services.md
 │   ├── cost-management.md
+│   ├── dev-box.md
 │   ├── identity-and-governance.md
 │   ├── index.md
 │   ├── legend.md
 │   ├── osi.md
 │   ├── resources.md
 │   ├── security.md
-│   └── solutions-and-tools.md
+│   ├── solutions-and-tools.md
+│   └── table-storage.md
 ├── data/
 │   ├── nosql/
 │   │   ├── mongo/
@@ -77,6 +81,7 @@ Tutorial/
 │   │   ├── foreign-key-mapping.md
 │   │   ├── index.md
 │   │   ├── indexes.md
+│   │   ├── localdb.md
 │   │   ├── mysql.md
 │   │   ├── postgresql.md
 │   │   ├── primary-keys.md
@@ -93,20 +98,26 @@ Tutorial/
 │   │   └── virtual-memory.md
 │   ├── acronyms.md
 │   ├── ci-cd.md
+│   ├── docfx.md
 │   ├── git.md
 │   ├── github-docs.md
+│   ├── github-pages.md
 │   ├── google-api.md
+│   ├── handle-sysinternals.md
 │   ├── index.md
 │   ├── john-the-ripper.md
+│   ├── markdown-unicode.md
 │   ├── mobile.md
 │   ├── nuget.md
 │   ├── visual-studio.md
 │   └── yaml.md
 ├── distributed-systems/
 │   ├── azure-services.md
+│   ├── distributed-tracing.md
 │   ├── docker.md
 │   ├── index.md
 │   ├── kafka.md
+│   ├── kubernetes.md
 │   ├── microservices-architecture.md
 │   ├── microservices-dotnet.md
 │   ├── nanoservices.md
@@ -145,10 +156,12 @@ Tutorial/
 │   │   └── rx.md
 │   ├── parallelism/
 │   │   ├── background-foreground-threads.md
+│   │   ├── correlation-manager.md
 │   │   ├── index.md
 │   │   ├── managed-threads.md
 │   │   ├── thread-local-storage.md
 │   │   ├── thread-pool.md
+│   │   ├── thread-synchronization.md
 │   │   ├── threads-vs-processes.md
 │   │   ├── threads-vs-tasks.md
 │   │   ├── tpl-collections.md
@@ -161,7 +174,10 @@ Tutorial/
 │   │   ├── finalize.md
 │   │   ├── garbage-collection.md
 │   │   └── index.md
-│   └── index.md
+│   ├── build-configuration.md
+│   ├── frameworks-and-libraries.md
+│   ├── index.md
+│   └── polly.md
 ├── javascript/
 │   ├── angular/
 │   │   ├── angular2.md
@@ -171,12 +187,14 @@ Tutorial/
 │   │   └── index.md
 │   ├── css.md
 │   ├── index.md
+│   ├── knockoutjs.md
 │   ├── npm.md
 │   ├── pwa.md
 │   ├── redux.md
 │   └── webpack.md
 ├── testing/
 │   ├── index.md
+│   ├── mstest.md
 │   ├── nunit.md
 │   └── xunit.md
 └── web-services/
