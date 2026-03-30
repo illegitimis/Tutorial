@@ -1,3 +1,11 @@
+---
+title: Virtual Memory
+layout: default
+nav_order: 9
+parent: DevOps
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Virtual Memory
 
 1. We will break both address spaces up into “**pages**”.  
@@ -15,4 +23,4 @@
 
 [1]: http://cseweb.ucsd.edu/classes/wi11/cse141/Slides/19_VirtualMemory.key.pdf
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

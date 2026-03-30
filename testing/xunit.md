@@ -1,3 +1,11 @@
+---
+title: xUnit
+layout: default
+nav_order: 2
+parent: Testing
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # xUnit
 
 > `xUnit.net` is a free, open source, community-focused unit testing tool for .NET.
@@ -111,4 +119,4 @@ For a .NET Core project, a xUnit configuration would have been done via a `xunit
 [17]: https://github.com/ielcoro/xunitTypedClassData
 [18]: https://xunit.github.io/docs/configuring-with-xml.html
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

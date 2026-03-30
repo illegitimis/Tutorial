@@ -1,3 +1,12 @@
+---
+title: Assemblies
+layout: default
+nav_order: 2
+parent: .NET Runtime
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Assemblies
 
 ## Combining Managed Modules Into Assemblies
@@ -12,4 +21,4 @@ Similarly, if an unmanaged application calls LoadLibrary to load a managed assem
 
 ![2](https://fpnlua.by3302.livefilestore.com/y3mzvjADQSazTtbUSSZ1fr4NVUlrfjwjgcXUCb79t_wNoohxRx8SjrNrqbSdqFwR3jEmz7NGih7vXqwWHMndDFHs6XzF9C4FWRftCE0zA-SMBykCQDMUvpvKNepAhPyo29p1czf4x17Hd21CxPBWQM3il2QYEu3WcotBPaIGbJ3nyQ?width=819&height=644&cropmode=none)
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

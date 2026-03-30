@@ -1,3 +1,12 @@
+---
+title: Dotnet Commands
+layout: default
+nav_order: 5
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Dotnet Commands
 
 dotnet command ms docs [1]
@@ -17,4 +26,4 @@ dotnet sln toList.sln list
 
 [1]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

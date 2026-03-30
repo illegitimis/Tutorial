@@ -1,3 +1,11 @@
+---
+title: Modernize .NET Apps
+layout: default
+nav_order: 9
+parent: Azure
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Modernize .NET Apps
 
 ## Q&A
@@ -41,4 +49,4 @@ When you do a data migration, you will select the exact Azure Region where data 
 [sql-features-comparison]: https://docs.microsoft.com/en-us/azure/azure-sql/database/features-comparison
 [service-broker]: https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-service-broker?view=sql-server-ver15
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

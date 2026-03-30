@@ -1,3 +1,12 @@
+---
+title: Rx
+layout: default
+nav_order: 11
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Rx
 
 + tuple deconstruction [1]
@@ -16,4 +25,4 @@
 [6]: http://reactivex.io
 [7]: https://msdn.microsoft.com/en-us/library/hh242977(v=vs.103).aspx
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,12 @@
+---
+title: .NET Collections Performance
+layout: default
+nav_order: 1
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # .NET Collections Performance
 
 | Collection | Ordering | Contiguous Storage? | Direct Access? | Lookup Efficiency  | Manipulate Efficiency | Based On |
@@ -91,4 +100,4 @@
 [4]: http://referencesource.microsoft.com/#System.Core/System/Collections/Generic/HashSet.cs,d0822f25708256c5
 [5]: http://referencesource.microsoft.com/#System/compmod/system/collections/generic/stack.cs,c5371bef044c6ab6
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

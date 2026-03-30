@@ -1,3 +1,12 @@
+---
+title: Co/Contra Variance
+layout: default
+nav_order: 3
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Co/Contra Variance
 
 Generic types have special rules for type compatibility, referred to as covariance and contravariance.
@@ -104,4 +113,4 @@ catch (ArrayTypeMismatchException ex) { Console.WriteLine(ex.Message); }
 [1]: https://gist.github.com/illegitimis/01c2b3cd6bd710c7be38a2cd773a1055
 [2]: https://gist.github.com/illegitimis/19be12b460e9f46e8e96fea20d5b998d
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

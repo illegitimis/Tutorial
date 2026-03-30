@@ -1,3 +1,11 @@
+---
+title: Cloud Concepts
+layout: default
+nav_order: 3
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Cloud Concepts
 
 ## Tour of Azure Services
@@ -269,4 +277,4 @@ Additional advantages of region pairs:
 14. Q: Which is a valid statement about an Azure subscription?
     A: An Azure subscription is a logical unit of Azure services, bundled together for tracking and billing purposes.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

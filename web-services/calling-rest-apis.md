@@ -1,3 +1,11 @@
+---
+title: Call a REST API
+layout: default
+nav_order: 4
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Call a REST API
 
 - `HttpClient` [![httpclient wiki page](https://img.shields.io/badge/wiki-page-green.svg)](./httpclient.md)
@@ -28,4 +36,4 @@
 [8]: https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx
 [9]: https://stackoverflow.com/a/30770354
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

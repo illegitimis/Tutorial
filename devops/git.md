@@ -1,3 +1,11 @@
+---
+title: Git
+layout: default
+nav_order: 3
+parent: DevOps
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Git
 
 ## Git vs Svn
@@ -99,4 +107,4 @@ git push -v --tags origin master:master
 [3]: https://www.atlassian.com/git/tutorials/syncing
 [4]: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,8 @@
+---
+nav_exclude: true
+search_exclude: true
+---
+
 # Repository Structure
 
 > Full directory tree of the documentation repository. Max depth: 4 levels below README.

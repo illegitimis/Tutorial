@@ -1,3 +1,11 @@
+---
+title: Redux
+layout: default
+nav_order: 5
+parent: JavaScript
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Redux
 
 Using Redux to Manage State in Angular [1]
@@ -30,4 +38,4 @@ diagram [3]
 [6]: https://github.com/zalmoxisus/redux-devtools-extension
 [7]: https://github.com/angular-redux/ng-redux
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

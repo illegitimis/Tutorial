@@ -1,3 +1,11 @@
+---
+title: Legend
+layout: default
+nav_order: 8
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Legend
 
 > glossary
@@ -487,4 +495,4 @@ geographical grouping of Azure regions for billing purposes
 [14]: https://docs.microsoft.com/en-us/azure/virtual-desktop/
 [15]: https://docs.microsoft.com/en-us/azure/virtual-machines/
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

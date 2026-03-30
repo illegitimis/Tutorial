@@ -1,3 +1,11 @@
+---
+title: Solutions and Management Tools
+layout: default
+nav_order: 13
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Solutions and Management Tools
 
 ## IoT Solutions
@@ -103,4 +111,4 @@ Azure provides tools for managing, configuring, and monitoring your environment:
 17. Q: Which service is the platform that powers Application Insights, monitoring for VMs, containers, and Kubernetes?
     A: **Azure Monitor**.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

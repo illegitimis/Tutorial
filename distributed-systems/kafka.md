@@ -1,3 +1,11 @@
+---
+title: Apache Kafka
+layout: default
+nav_order: 1
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Apache Kafka
 
 _Getting Started with Apache Kafka_ by _Ryan Plant_ Pluralsight course page [1]
@@ -154,4 +162,4 @@ Apache Kafka for Beginners [31]
 [30]: http://hortonworks.com/apache/kafka/#section_2
 [31]: http://blog.cloudera.com/blog/2014/09/apache-kafka-for-beginners/
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

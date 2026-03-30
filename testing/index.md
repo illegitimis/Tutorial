@@ -1,3 +1,11 @@
+---
+title: Testing
+layout: minimal
+nav_order: 7
+has_children: true
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Testing
 
 > Unit testing frameworks, assertion libraries, mocking, and test-driven development methodology.
@@ -25,4 +33,4 @@ Key properties of a good unit test: atomic, deterministic, repeatable, order-ind
 - `Microsoft.AspNetCore.TestHost` — integration testing host for ASP.NET Core applications
 - `OpenCover` — open-source code coverage tool for all .NET frameworks
 
-[<<](../README.md) | [home](../README.md)
+[<<](/index.md)

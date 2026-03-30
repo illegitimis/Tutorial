@@ -1,3 +1,11 @@
+---
+title: ETag
+layout: default
+nav_order: 5
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # ETag
 
 - ETag on w3 [1]
@@ -42,4 +50,4 @@ config.MessageHandlers.Add (cacheHandler);
 [3]: https://github.com/KevinDockx/HttpCacheHeaders
 [4]: https://stackoverflow.com/questions/35458737/implement-http-cache-etag-in-asp-net-core-web-api/35555544#35555544
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

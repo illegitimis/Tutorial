@@ -1,3 +1,12 @@
+---
+title: Angular4 Notes
+layout: default
+nav_order: 3
+parent: Angular
+grand_parent: JavaScript
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Angular4 Notes
 
 ## Links
@@ -270,4 +279,4 @@ GitRepo [101], Get Started [102], dropdown showcase [103], & docs [104], theming
 [118]: https://material.angular.io/guide/schematics
 [119]: https://material.angular.io/components/grid-list/examples
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

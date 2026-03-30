@@ -1,3 +1,12 @@
+---
+title: OpenID Connect
+layout: default
+nav_order: 8
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # OpenID Connect
 
 OpenID Connect [1] is an interoperable authentication protocol based on the OAuth 2.0 family of specifications.
@@ -52,4 +61,4 @@ wiki [9]
 [8]: https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets
 [9]: https://github.com/illegitimis/Tutorial/wiki
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,12 @@
+---
+title: TPL Dataflow
+layout: default
+nav_order: 8
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # TPL Dataflow
 
 **TPL** Dataflow (TDF) is a .NET library for building concurrent applications. It promotes actor/agent-oriented designs through primitives for in-process message passing, **dataflow**, and pipelining. TDF builds upon the APIs and scheduling infrastructure provided by the Task Parallel Library (`TPL`) in .NET 4, and integrates with the language support for asynchrony provided by C#, Visual Basic, and F#.
@@ -593,4 +602,4 @@ By correctly implementing one or more of the **dataflow** interfaces, custom blo
 
 ---
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

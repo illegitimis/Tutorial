@@ -1,3 +1,12 @@
+---
+title: Service Broker
+layout: default
+nav_order: 12
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Service Broker
 
 + 6 cases when you really need a SQL Server transaction log reader [1]  
@@ -33,4 +42,4 @@
 [15]: https://technet.microsoft.com/en-us/library/cc281528(v=sql.105).aspx
 [16]: https://technet.microsoft.com/en-us/library/bb839491(v=sql.105).aspx
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

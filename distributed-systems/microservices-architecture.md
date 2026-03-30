@@ -1,3 +1,11 @@
+---
+title: Microservices Architecture
+layout: default
+nav_order: 4
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Microservices Architecture
 
 Microservices Architecture pluralsight Microservices Architecture pluralsight [1]
@@ -82,4 +90,4 @@ Sync or async? Both. RPC: distributed client server programs. vs Open protocols 
 
 [1]: https://app.pluralsight.com/library/courses/microservices-architecture/table-of-contents
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

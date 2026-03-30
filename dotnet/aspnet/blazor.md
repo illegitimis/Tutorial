@@ -1,3 +1,12 @@
+---
+title: Blazor
+layout: default
+nav_order: 3
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Blazor
 
 > `Blazor` [1] is a client-side web UI .NET framework targeted at `WebAssembly` based on HTML and CSS that runs in the browser using open web standards
@@ -43,4 +52,4 @@ native | internal
 [7]: https://youtu.be/MetcuX1OHD0
 [8]: https://youtu.be/qF6ixMjCzHA
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

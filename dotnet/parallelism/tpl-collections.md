@@ -1,3 +1,12 @@
+---
+title: TPL Collections
+layout: default
+nav_order: 7
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # TPL Collections
 
 ## New Concurrent Collections Lock-free?
@@ -14,4 +23,4 @@ It’s worth noting that _purely relying on lock-free techniques_ is _sometimes_
 
 [1]: https://blogs.msdn.microsoft.com/pfxteam/2010/01/26/faq-are-all-of-the-new-concurrent-collections-lock-free/
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

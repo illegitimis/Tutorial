@@ -1,3 +1,12 @@
+---
+title: Angular Fundamentals
+layout: default
+nav_order: 2
+parent: Angular
+grand_parent: JavaScript
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Angular Fundamentals
 
 **Angular Fundamentals** Pluralsight course wiki page
@@ -321,4 +330,4 @@ eventsApp.factory('userResource', ['$resource', function ($resource) {
 [14]: http://localhost:8080/img/profile.jpg`
 [15]: http://localhost:8080/img/angularjs-logo.png`
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

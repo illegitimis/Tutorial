@@ -1,3 +1,12 @@
+---
+title: "Managed C++, C++/CLI"
+layout: default
+nav_order: 10
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Managed C++, C++/CLI
 
 - Microsoft’s first set of .NET extensions for C++ attempted to resemble ordinary C++ more closely.
@@ -274,4 +283,4 @@ public:
 
 [1]: https://msdn.microsoft.com/en-us/library/85344whh%28VS.80%29.aspx?f=255&MSPPError=-2147217396
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

@@ -1,3 +1,11 @@
+---
+title: NPM
+layout: default
+nav_order: 3
+parent: JavaScript
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # NPM
 
 - update **npm** to latest version
@@ -29,4 +37,4 @@ npm search autorest
 npm info autorest versions
 ```
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

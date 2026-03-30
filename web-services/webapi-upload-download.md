@@ -1,3 +1,11 @@
+---
+title: "WebApi Upload & Download Files"
+layout: default
+nav_order: 13
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # WebApi Upload & Download Files
 
 - ASP.NET Web API file download service with resume support [1] _18 October 2012_ on ASP.NET Web API, ASP.NET, file download, HEAD verb, memory mapped files, Range, resume, Accept-Ranges
@@ -41,4 +49,4 @@
 [19]: https://damienbod.com/2014/03/28/web-api-file-upload-single-or-multiple-files/
 [20]: https://social.technet.microsoft.com/wiki/contents/articles/36340.asp-netcore-create-a-web-api-application.aspx
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

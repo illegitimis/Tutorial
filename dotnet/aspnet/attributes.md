@@ -1,3 +1,12 @@
+---
+title: Attributes
+layout: default
+nav_order: 1
+parent: ASP.NET
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Attributes
 
 ## Microsoft.AspNetCore.Authorization.`AuthorizeAttribute`
@@ -38,4 +47,4 @@ public async Task<IActionResult> Reject(Guid id, [FromBody] string reason)
 public void UpdateBandwidthChangeHangup([FromRoute] int facilityId, [FromRoute] int bandwidthChange)
 ```
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

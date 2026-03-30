@@ -1,3 +1,12 @@
+---
+title: Angular 2
+layout: default
+nav_order: 1
+parent: Angular
+grand_parent: JavaScript
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Angular 2
 
 + ECMAScript6 features comparison [1]
@@ -22,4 +31,4 @@ typescript is a **superscript** of ES6.
 [1]: http://es6-features.org
 [2]: https://github.com/danielfigueiredo/wizards-wizard
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

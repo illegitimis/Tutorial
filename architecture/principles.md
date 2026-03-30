@@ -1,3 +1,11 @@
+---
+title: OOP Principles
+layout: default
+nav_order: 3
+parent: Architecture
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # OOP Principles
 
 ## Abstraction
@@ -94,4 +102,4 @@ b) Changes made in the public parts of an object must remain compatible with the
 
 c) Larger interfaces increase the complexity of the entire system. Private fields can only be accessed from within the class; public fields can be accessed through any instance of the class
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

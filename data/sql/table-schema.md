@@ -1,3 +1,12 @@
+---
+title: Table Schema
+layout: default
+nav_order: 14
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Table Schema
 
 ## Sysobjects vs Sys.objects
@@ -40,4 +49,4 @@ select * from sys.tables t join sys.schemas s on (t.schema_id = s.schema_id)
 
 [1]: https://social.msdn.microsoft.com/Forums/sqlserver/en-US/a965676e-d4d9-4365-ad0a-58ca26ec4701/differenece-between-sysobjects-and-sysobjects-in-sql-server-2005-?forum=sqlkjmanageability
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

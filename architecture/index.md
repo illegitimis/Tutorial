@@ -1,3 +1,11 @@
+---
+title: Architecture
+layout: minimal
+nav_order: 2
+has_children: true
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # Architecture
 
 > Software design principles, patterns, domain modeling, and diagramming techniques.
@@ -11,4 +19,4 @@
 - [Design Patterns](./design-patterns.md) — **GoF** (Gang of Four) design patterns: creational, structural, and behavioral
 - [UML](./uml.md) — UML class diagrams: relationships, components, and notation
 
-[<<](../README.md) | [home](../README.md)
+[<<](/index.md)

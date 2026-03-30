@@ -1,3 +1,11 @@
+---
+title: Security and Network Security
+layout: default
+nav_order: 12
+parent: Azure
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Security and Network Security
 
 ## Azure Firewall
@@ -136,4 +144,4 @@ You can combine Azure networking and security services for increased layered pro
 7. Q: How can Tailwind Traders most easily implement a deny by default policy so that VMs cannot connect to each other?
    A: **Create a network security group rule** that prevents access from another VM on the same network.
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

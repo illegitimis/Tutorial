@@ -1,3 +1,11 @@
+---
+title: CSS
+layout: default
+nav_order: 2
+parent: JavaScript
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # CSS
 
 ## Todo
@@ -99,4 +107,4 @@
 [41]: https://css-tricks.com/almanac/properties/l/list-style/
 [42]: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

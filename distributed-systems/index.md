@@ -1,3 +1,11 @@
+---
+title: Distributed Systems
+layout: minimal
+nav_order: 6
+has_children: true
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # Distributed Systems
 
 > Microservices architecture, containerization, messaging systems, real-time communication, and cloud services.
@@ -30,4 +38,4 @@
 - **Integration Events** — event-based communication between microservices using an event bus abstraction
 - *JustSaying* — lightweight message bus on top of AWS SNS and SQS
 
-[<<](../README.md) | [home](../README.md)
+[<<](/index.md)

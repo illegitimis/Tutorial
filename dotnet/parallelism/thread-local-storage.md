@@ -1,3 +1,12 @@
+---
+title: Thread Local Storage
+layout: default
+nav_order: 3
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Thread Local Storage
 
 _Static state_ is **isolated** on a _per-application domain_ basis.
@@ -30,4 +39,4 @@ static ThreadLocal<TextWriter> s_log = new ThreadLocal<TextWriter>(() => {
 });
 ```
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

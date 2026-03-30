@@ -1,3 +1,12 @@
+---
+title: Managed Threads
+layout: default
+nav_order: 2
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Managed Threads
 
 In reality, it is always worth keeping in mind that multithreading is most commonly an _illusion_
@@ -25,4 +34,4 @@ This is often referred to as an **asynchronous exception** because it can occur 
 ![native and managed threads coexisting](https://wowwtq.by3302.livefilestore.com/y4m49V0QN666YktnskCe9_14nP7ecAfFBClpxWVoRMimn_qcWjhjkEUVdVlBUum-RdFsTORm6Nvx8cpPjpPaKsXcIXo7jhm12NVHZYEDgOMwRr8Vkp_L20iGpJByekm5pRtFvi4V4cIThv1C0ooL5eRWlSjKQtihjQoECXYE_Mehw-fl55g2Y2vnU3PV00lmdZrWVms2ip_Z4S3FeDFw61lLg?width=400&height=232&cropmode=none)
 ![native and managed threads coexisting](https://1drv.ms/i/s!As0cxZAk26SzjMAdXvDFkmDp2NOBnQ)
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

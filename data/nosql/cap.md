@@ -1,3 +1,12 @@
+---
+title: Cap Theorem
+layout: default
+nav_order: 3
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Cap Theorem
 
 > Computer science [theorem][3] that quantifies the _inevitable trade-offs_. [Eric Brewer’s **CAP theorem**][4] says that if you want _CAP_ you have to settle for two out of three.
@@ -27,4 +36,4 @@ report the system as unavailable: keep C lose A
 [3]: https://www.quora.com/What-Is-CAP-Theorem-1
 [4]: http://www.julianbrowne.com/article/viewer/brewers-cap-theorem
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

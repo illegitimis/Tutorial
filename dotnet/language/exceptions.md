@@ -1,3 +1,12 @@
+---
+title: Exceptions
+layout: default
+nav_order: 6
+parent: "C# Language"
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Exceptions
 
 1) Call stack context From SO [1].
@@ -22,4 +31,4 @@ msdn [4]
 [3]: https://gist.githubusercontent.com/illegitimis/d65b01df24df6df90d4edced289820c9/raw/6265c9c1b3f7e4861adc4ccbde11ef3de600c337/ExceptionCallStackTest.cs
 [4]: https://msdn.microsoft.com/en-us/library/system.exception.data%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

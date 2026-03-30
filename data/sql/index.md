@@ -1,3 +1,12 @@
+---
+title: SQL
+layout: minimal
+nav_order: 2
+has_children: true
+parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # SQL
 
 > Relational database fundamentals, SQL Server patterns, schema management, and platform-specific guides.
@@ -28,4 +37,4 @@ The `scripts/` folder contains sample SQL installation scripts:
 - `instnwnd.sql` — Northwind sample database installation script
 - `instpubs.sql` — pubs sample database installation script
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

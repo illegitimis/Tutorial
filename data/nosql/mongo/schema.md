@@ -1,3 +1,12 @@
+---
+title: Mongo Schema
+layout: default
+nav_order: 9
+parent: NoSQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # Mongo Schema
 
 ## State of the Art
@@ -179,4 +188,4 @@ wiki [29]
 [28]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-nested-sets/
 [29]: https://github.com/illegitimis/Tutorial/wiki
 
-[<<](./index.md) | [home](../../../README.md)
+[<](./index.md) | [<<](/index.md)

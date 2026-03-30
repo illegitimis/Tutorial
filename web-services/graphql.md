@@ -1,3 +1,11 @@
+---
+title: GraphQL
+layout: default
+nav_order: 6
+parent: Web Services
+last_modified_date: 2026-03-29 21:15:03 +00:00
+---
+
 # GraphQL
 
 - big issue: overfetching vs new endpoint
@@ -63,4 +71,4 @@ git | package | doc | examples | desc
 [5]: https://github.com/RolandGuijt/PluralsightGraphQL
 [6]: https://azure.microsoft.com/en-us/resources/videos/build-2019-build-scalable-apis-using-graphql-and-serverless/
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

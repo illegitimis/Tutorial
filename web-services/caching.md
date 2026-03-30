@@ -1,3 +1,11 @@
+---
+title: Caching
+layout: default
+nav_order: 3
+parent: Web Services
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Caching
 
 ## ASP.NET Core Caching
@@ -23,4 +31,4 @@
 [8]: https://www.infoworld.com/article/3230129/application-development/how-to-use-in-memory-caching-in-aspnet-core.html
 [9]: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/primitives/change-tokens
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

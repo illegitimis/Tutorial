@@ -1,3 +1,11 @@
+---
+title: Docker
+layout: default
+nav_order: 3
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Docker
 
 The _Microservices_ architecture introduces the need for _independent deployment_, _scalability_ and _portability_.
@@ -219,4 +227,4 @@ Key players: Datadog, Mesosphere, DCHQ.io, Quay (CoreOS), Portworx, Rancher, Clu
 [8]: https://gist.github.com/g0t4
 [9]: https://gist.github.com/g0t4/0d97a9595c87736a8a72a2bd21afc0d9
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

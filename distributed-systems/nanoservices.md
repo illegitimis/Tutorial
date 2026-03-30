@@ -1,3 +1,11 @@
+---
+title: Nanoservices
+layout: default
+nav_order: 6
+parent: Distributed Systems
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Nanoservices
 
 > Nanoservice is an Anti-pattern where a service is **too fine grained**.
@@ -23,4 +31,4 @@ wiki [1]
 
 [1]: https://github.com/illegitimis/Tutorial/wiki
 
-[<<](./index.md) | [home](../README.md)
+[<](./index.md) | [<<](/index.md)

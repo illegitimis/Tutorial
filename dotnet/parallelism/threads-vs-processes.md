@@ -1,3 +1,12 @@
+---
+title: Threads vs Processes
+layout: default
+nav_order: 5
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Threads vs Processes
 
 Threads are **miniprocesses**.
@@ -42,4 +51,4 @@ Preemptive / time slice / taken away from the processor forcefully by the kernel
 [1]: <https://msdn.microsoft.com/en-us/library/windows/desktop/ms684841(v=vs.85>
 [2]: <https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917(v=vs.85>
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

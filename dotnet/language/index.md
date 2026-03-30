@@ -1,3 +1,12 @@
+---
+title: "C# Language"
+layout: minimal
+nav_order: 3
+has_children: true
+parent: .NET
+last_modified_date: 2026-03-29 20:35:13 +00:00
+---
+
 # C# Language
 
 > Core C# language constructs covering type system features, functional patterns, and performance-oriented collections.
@@ -16,4 +25,4 @@
 - [Managed C++/CLI](./managed-cpp-cli.md) — C++/CLI syntax as the successor to Managed C++ for .NET interop
 - [Rx](./rx.md) — **Reactive Extensions** (Rx.NET): observables, events, and tuple deconstruction
 
-[<<](../index.md) | [home](../../README.md)
+[<](../index.md) | [<<](/index.md)

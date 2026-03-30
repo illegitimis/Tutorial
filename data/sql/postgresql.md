@@ -1,3 +1,12 @@
+---
+title: PostgreSQL
+layout: default
+nav_order: 9
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # PostgreSQL
 
 - `Npgsql` is the .NET data provider for PostgreSQL. releases [1], home [2]
@@ -13,4 +22,4 @@
 [6]: https://en.wikipedia.org/wiki/PostGIS
 [7]: https://en.wikipedia.org/wiki/Spatial_database
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

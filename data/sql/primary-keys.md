@@ -1,3 +1,12 @@
+---
+title: Primary Keys
+layout: default
+nav_order: 10
+parent: SQL
+grand_parent: Data
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # Primary Keys
 
 - INFORMATION_SCHEMA
@@ -21,4 +30,4 @@ SELECT
 FROM sys.objects  
 ```
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)

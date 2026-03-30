@@ -1,3 +1,12 @@
+---
+title: UI Threads
+layout: default
+nav_order: 9
+parent: Parallelism
+grand_parent: .NET
+last_modified_date: 2026-03-29 21:39:07 +00:00
+---
+
 # UI Threads
 
 ## WinForms
@@ -36,4 +45,4 @@ timer.Start();
 }
 ```
 
-[<<](./index.md) | [home](../../README.md)
+[<](./index.md) | [<<](/index.md)
