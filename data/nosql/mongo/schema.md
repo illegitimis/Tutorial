@@ -4,7 +4,7 @@ layout: default
 nav_order: 9
 parent: NoSQL
 grand_parent: Data
-last_modified_date: 2026-03-29 21:15:03 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Mongo Schema
@@ -154,9 +154,6 @@ tree-like structure by storing references to “parent” nodes and an array tha
 5. Model Tree Structures with Nested Sets [28]
 optimizes discovering subtrees at the expense of tree mutability.
 
-|
-|
-wiki [29]
 
 [1]: https://docs.mongodb.com/manual/reference/sql-comparison/
 [2]: https://mssql2mongo.codeplex.com/
@@ -186,6 +183,6 @@ wiki [29]
 [26]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-ancestors-array/
 [27]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-materialized-paths/
 [28]: https://docs.mongodb.com/manual/tutorial/model-tree-structures-with-nested-sets/
-[29]: https://github.com/illegitimis/Tutorial/wiki
+
 
 [<](./index.md) | [<<](/index.md)

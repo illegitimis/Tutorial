@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Jekyll-based documentation site ("Dev Mnemonics") published on GitHub Pages. Contains 212 Markdown files covering software development topics organized into a 4-level hierarchy.
+A Jekyll-based documentation site ("Dev Mnemonics") published on GitHub Pages. Contains 151 Markdown files covering software development topics organized into a 4-level hierarchy.
 
 ## Architecture
 
@@ -12,6 +12,10 @@ A Jekyll-based documentation site ("Dev Mnemonics") published on GitHub Pages. C
 - **Deployment:** Automatic via GitHub Pages on push to `master`
 - **No build step, test suite, or linting pipeline** — markdownlint is configured for editor use
 - **Structure map:** See `STRUCTURE.md` for the full directory tree
+- **Home pages:** `index.md` (JTD site home) and `README.md` (GitHub-facing)
+- **Front matter:** All content pages carry JTD front matter (`title`, `parent`, `nav_order`, etc.)
+- **Mermaid:** Enabled via `_includes/mermaid_config.js` and bundled `assets/js/mermaid.min.js`
+- **Community files:** `CHANGELOG.md`, `CONTRIBUTING.md`, `CONTRIBUTORS.md`, `LICENSE` (CC BY 4.0)
 
 ### Top-Level Categories
 

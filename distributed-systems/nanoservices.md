@@ -3,7 +3,7 @@ title: Nanoservices
 layout: default
 nav_order: 6
 parent: Distributed Systems
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # Nanoservices
@@ -25,10 +25,5 @@ Examples:
 - send notifications to users via SMS througjh a svc, better encapsulate as a package
 - 3-Tier **SOA** anti-pattern: trying to dress up 3-tier architectures of yore in SOA clothing
 
-|
-|
-wiki [1]
-
-[1]: https://github.com/illegitimis/Tutorial/wiki
 
 [<](./index.md) | [<<](/index.md)

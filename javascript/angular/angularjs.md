@@ -4,7 +4,7 @@ layout: default
 nav_order: 4
 parent: Angular
 grand_parent: JavaScript
-last_modified_date: 2026-03-29 21:15:03 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # AngularJS
@@ -47,9 +47,6 @@ One Drive [9]
 + first look on ivy [23], is ivy ready [24] firebase app
 + by telerik, 1 [25], 2 [26], 3 [27]
 
-|
-|
-wiki [28]
 
 [1]: https://github.com/illegitimis/Tutorial/blob/v10/Building.A.Web.App.With.ASP.NET.Core.MVC6.EFCore.And.Angular.md#angularjs
 [2]: https://github.com/illegitimis/Tutorial/blob/v10/AngularFundamentals.md
@@ -78,6 +75,6 @@ wiki [28]
 [25]: https://www.telerik.com/whitepapers/kendo-ui/choosing-the-right-javascript-framework-for-your-next-web-application
 [26]: https://www.telerik.com/whitepapers/kendo-ui/planning-an-angular-application
 [27]: https://www.telerik.com/campaigns/kendo-ui/wp-functional-programming-with-js-cheat-sheet?utm_source=eloqua&utm_campaign=kendo-ui-jquery-whitepaper-funcwithjs-fiddler-web
-[28]: https://github.com/illegitimis/Tutorial/wiki
+
 
 [<](./index.md) | [<<](/index.md)

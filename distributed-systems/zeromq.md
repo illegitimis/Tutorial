@@ -3,153 +3,56 @@ title: ZeroMQ
 layout: default
 nav_order: 9
 parent: Distributed Systems
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # ZeroMQ
 
 ## Table of Contents
 
-- ZeroMQ base [1]
-  - Socket types and NetMQ counterparts [2]s
-  - Socket pairs [3]
-- NetMQ [4]
-  - Sacha barber demos [5]
-  - ZeroMQ and services [6]
+- [ZeroMQ base](#zeromq-base)
+  - [Socket types and NetMQ counterparts](#socket-types-and-netmq-counterparts)
+  - [Socket pairs](#socket-pairs)
+- [NetMQ](#netmq)
+  - [Sacha barber demos](#sacha-barber-demos)
+  - [ZeroMQ and services](#zeromq-and-services)
 
 ## ZeroMQ Base
 
 ### Socket Types and NetMQ Counterparts
 
-<div id="socketTypes">
-
-<table>
-<thead class="hed">
-<tr>
-<th>ZeroMQ pattern</th>
-<th>NetMQ corresponding class</th>
-<th>comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PUB</td>
-<td>PublisherSocket</td>
-<td>used to publish messages</td>
-</tr>
-<tr>
-<td>SUB</td>
-<td>SubscriberSocket</td>
-<td>subscribe to message(s)</td>
-</tr>
-<tr>
-<td>XPUB</td>
-<td>XPublisherSocket</td>
-<td>used to publish messages. <span class="lite">XPUB and XSUB are used where you may have to bridge different networks</span>.</td>
-</tr>
-<tr>
-<td>XSUB</td>
-<td>XSubscriberSocket</td>
-<td>used to subscribe to message(s) where you may have to bridge different networks</td>
-</tr>
-<tr>
-<td>REQ</td>
-<td>RequestSocket</td>
-<td><span class="lite">synchronous blocking socket</span>, that would initiate a request message.</td>
-</tr>
-<tr>
-<td>REP</td>
-<td>ResponseSocket</td>
-<td>synchronous blocking socket, that would provide a response to a message.</td>
-</tr>
-<tr>
-<td>ROUTER</td>
-<td>RouterSocket</td>
-<td>broker socket. <span class="lite">Fully asynchronous</span> (non blocking). tracks every connection. identity frame. <span class="dark">ROUTER is like an asynchronous REP socket</span></td>
-</tr>
-<tr>
-<td>DEALER</td>
-<td>DealerSocket</td>
-<td>Dealer is typically a <span class="lite">worker</span> socket, and doesn’t provide any routing (ie it doesn’t know about the calling sockets identity), but it is fully asynchronous (non blocking). <span class="dark">DEALER is like an asynchronous REQ socket</span>.</td>
-</tr>
-<tr>
-<td>PUSH</td>
-<td>PushSocket</td>
-<td>push messages at worker, within a pipeline pattern</td>
-</tr>
-<tr>
-<td>PULL</td>
-<td>PullSocket</td>
-<td>within a <span class="lite">pipeline</span> pattern, which would pull from a PUSH socket and then do some work.</td>
-</tr>
-<tr>
-<td>PAIR</td>
-<td>PairSocket</td>
-<td>PairSocket</td>
-</tr>
-</tbody>
-</table>
-</div>
+| ZeroMQ pattern | NetMQ corresponding class | comments |
+|---|---|---|
+| PUB | PublisherSocket | used to publish messages |
+| SUB | SubscriberSocket | subscribe to message(s) |
+| XPUB | XPublisherSocket | used to publish messages. _XPUB and XSUB are used where you may have to bridge different networks_. |
+| XSUB | XSubscriberSocket | used to subscribe to message(s) where you may have to bridge different networks |
+| REQ | RequestSocket | _synchronous blocking socket_, that would initiate a request message. |
+| REP | ResponseSocket | synchronous blocking socket, that would provide a response to a message. |
+| ROUTER | RouterSocket | broker socket. _Fully asynchronous_ (non blocking). tracks every connection. identity frame. **ROUTER is like an asynchronous REP socket** |
+| DEALER | DealerSocket | Dealer is typically a _worker_ socket, and doesn't provide any routing (ie it doesn't know about the calling sockets identity), but it is fully asynchronous (non blocking). **DEALER is like an asynchronous REQ socket**. |
+| PUSH | PushSocket | push messages at worker, within a pipeline pattern |
+| PULL | PullSocket | within a _pipeline_ pattern, which would pull from a PUSH socket and then do some work. |
+| PAIR | PairSocket | PairSocket |
 
 ### Socket Pairs
 
-<div id="socketPairs">ROUTER Broker and REQ Workers.
-<table>
-<thead class="hed">
-<tr>
-<th>Standard ZeroMQ Socket Pairs</th>
-<th>comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>PUB and SUB</td>
-<td>Pub/Sub arrangement</td>
-</tr>
-<tr>
-<td>XPUB and XSUB</td>
-<td>Pub/Sub arrangement</td>
-</tr>
-<tr>
-<td>REQ/DEALER and REP/ROUTER</td>
-<td>_In the same way that we can replace REQ with DEALER ….we can replace REP with ROUTER. This gives us an asnchronous server that can talk to multiple REQ clients at the same time._ . Where we use a REQ socket, we can use a DEALER; we just have to read and write the envelope ourselves. Where we use a REP socket, we can stick a ROUTER; we just need to manage the identities ourselves</td>
-</tr>
-<tr>
-<td>REQ client talking to a REP server</td>
-<td>A <span class="dark">standard synchronous request/response</span> arrangement. The REQ client must initiate the message flow</td>
-</tr>
-<tr>
-<td>REQ and ROUTER</td>
-<td>A <span class="lite">standard synchronous request</span> with an <span class="lite">asynchronous server</span> responding, where the router will know how to do the routing back the correct request socket</td>
-</tr>
-<tr>
-<td>DEALER and REP</td>
-<td>An <span class="lite">asynchronous request</span> with a <span class="lite">synchronous server</span> responding. When we use a standard REQ (ie not a DEALER for the client) socket, it does one extra thing for us, which is to include an empty frame. So when we switch to using a Dealer for the client, we need to do that part ourselves, by using <span class="dark">SendMore</span></td>
-</tr>
-<tr>
-<td>DEALER and ROUTER</td>
-<td><span class="lite">An asynchronous request with an asynchronous server responding</span>, where the router will know how to do the routing back the correct request socket. ROUTER Broker and DEALER Workers. 1-to-N use case where one server talks asynchronously to multiple workers. Turn this upside down to get a very useful N-to-1 architecture where various clients talk to a single server, and do this asynchronously</td>
-</tr>
-<tr>
-<td>DEALER and DEALER</td>
-<td>An asynchronous request with an asynchronous server responding (this should be used if the DEALER is talking to one and only one peer).</td>
-</tr>
-<tr>
-<td>ROUTER and ROUTER</td>
-<td>An asynchronous request with an asynchronous server responding. perfect for N-to-N connections, but it’s the most difficult combination to use.</td>
-</tr>
-<tr>
-<td>PUSH and PULL</td>
-<td>Push socket connected to a Pull, which you may see in a <span class="dark">divide and conquer type arrangement</span>.</td>
-</tr>
-<tr>
-<td>PAIR and PAIR</td>
-<td>Pair sockets <span class="lite">should ONLY talk to another pair</span>, it is a well defined pair, Typically you would use this for <span class="dark">connecting two threads in a process</span>.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div>
+ROUTER Broker and REQ Workers.
+
+| Standard ZeroMQ Socket Pairs | comments |
+|---|---|
+| PUB and SUB | Pub/Sub arrangement |
+| XPUB and XSUB | Pub/Sub arrangement |
+| REQ/DEALER and REP/ROUTER | _In the same way that we can replace REQ with DEALER ….we can replace REP with ROUTER. This gives us an asnchronous server that can talk to multiple REQ clients at the same time._ . Where we use a REQ socket, we can use a DEALER; we just have to read and write the envelope ourselves. Where we use a REP socket, we can stick a ROUTER; we just need to manage the identities ourselves |
+| REQ client talking to a REP server | A **standard synchronous request/response** arrangement. The REQ client must initiate the message flow |
+| REQ and ROUTER | A _standard synchronous request_ with an _asynchronous server_ responding, where the router will know how to do the routing back the correct request socket |
+| DEALER and REP | An _asynchronous request_ with a _synchronous server_ responding. When we use a standard REQ (ie not a DEALER for the client) socket, it does one extra thing for us, which is to include an empty frame. So when we switch to using a Dealer for the client, we need to do that part ourselves, by using **SendMore** |
+| DEALER and ROUTER | _An asynchronous request with an asynchronous server responding_, where the router will know how to do the routing back the correct request socket. ROUTER Broker and DEALER Workers. 1-to-N use case where one server talks asynchronously to multiple workers. Turn this upside down to get a very useful N-to-1 architecture where various clients talk to a single server, and do this asynchronously |
+| DEALER and DEALER | An asynchronous request with an asynchronous server responding (this should be used if the DEALER is talking to one and only one peer). |
+| ROUTER and ROUTER | An asynchronous request with an asynchronous server responding. perfect for N-to-N connections, but it's the most difficult combination to use. |
+| PUSH and PULL | Push socket connected to a Pull, which you may see in a **divide and conquer type arrangement**. |
+| PAIR and PAIR | Pair sockets _should ONLY talk to another pair_, it is a well defined pair, Typically you would use this for **connecting two threads in a process**. |
+
 In the request-reply pattern, the message envelope holds the return address for replies. It is how a ŘMQ network with no state can create round-trip request-reply dialogs.
 
 The ŘMQ reply envelope formally consists of zero or more reply addresses, followed by an empty frame (the envelope delimiter), followed by the message body (zero or more frames). The envelope is created by multiple sockets working together in a chain.
@@ -161,7 +64,7 @@ The ŘMQ reply envelope formally consists of zero or more reply addresses, follo
 - 0mq Labs [11]
 - 0mq Messaging Presentation Slides Pdf [12]
 - **(Pieter Hintjens) ZeroMQ: Messaging for Many Applications (ebook)** [13]
-- [**(Pieter Hintjens) ZeroMQ: Messaging for Many Applications (local)**](../../CARTI/0mq/2013.Zeromq.Messaging.For.many.Applications.pdf )
+- [**(Pieter Hintjens) ZeroMQ: Messaging for Many Applications (local)**](../../CARTI/0mq/2013.Zeromq.Messaging.For.many.Applications.pdf)
 
 ## NetMQ
 
@@ -171,91 +74,12 @@ Update: As of 2014 NetMQ is a stable project with a growing community and is in 
 
 January 20th, 2016
 
-<div id="nuget">
-
-<table>
-
-<thead class="hed">
-
-<tr>
-
-<th>Id</th>
-
-<th>Version</th>
-
-<th>Description</th>
-
-<th>Authors</th>
-
-<th>DownloadCount</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>NetMQ</td>
-
-<td>3.3.2.2</td>
-
-<td class="dark">A 100% native C# port of the lightweight high performance messaging library ZeroMQ</td>
-
-<td>NetMQ</td>
-
-<td>36985</td>
-
-</tr>
-
-<tr>
-
-<td>clrzmq</td>
-
-<td>2.2.5</td>
-
-<td>The clrzmq project contains .NET bindings for ŘMQ (ZeroMQ), an open source, high performance transport layer. Includes a compiled version of the native libzmq library. WARNING: This package targets the x86 build platform.</td>
-
-<td>zeromq</td>
-
-<td>25312</td>
-
-</tr>
-
-<tr>
-
-<td>clrzmq-x64</td>
-
-<td>2.2.5</td>
-
-<td>The clrzmq project contains .NET bindings for ŘMQ (ZeroMQ), an open source, high performance transport layer. Includes a compiled version of the native libzmq library. WARNING: This package targets the x64 build platform.</td>
-
-<td>zeromq</td>
-
-<td>10238</td>
-
-</tr>
-
-<tr>
-
-<td>ZeroMQ</td>
-
-<td>4.1.0.17</td>
-
-<td>ZeroMQ CLR namespace</td>
-
-<td>metadings, Pieter Hintjens, Martin Sustrik</td>
-
-<td>7272</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
+| Id | Version | Description | Authors | DownloadCount |
+|---|---|---|---|---|
+| NetMQ | 3.3.2.2 | **A 100% native C# port of the lightweight high performance messaging library ZeroMQ** | NetMQ | 36985 |
+| clrzmq | 2.2.5 | The clrzmq project contains .NET bindings for ŘMQ (ZeroMQ), an open source, high performance transport layer. Includes a compiled version of the native libzmq library. WARNING: This package targets the x86 build platform. | zeromq | 25312 |
+| clrzmq-x64 | 2.2.5 | The clrzmq project contains .NET bindings for ŘMQ (ZeroMQ), an open source, high performance transport layer. Includes a compiled version of the native libzmq library. WARNING: This package targets the x64 build platform. | zeromq | 10238 |
+| ZeroMQ | 4.1.0.17 | ZeroMQ CLR namespace | metadings, Pieter Hintjens, Martin Sustrik | 7272 |
 
 - netmq-asp-net [14]
 - netmq-xpub-xsub [15]
@@ -267,13 +91,13 @@ January 20th, 2016
 ## Sacha Barber Demos
 
 - **All demos on GitHub** [20]
-- zeromq-1-introduction [21] <label class="lite">request response pattern, single client and server, multiple clients and server in a single process, multiple clients Running In Separate Threads and a server</label>
+- zeromq-1-introduction [21] _request response pattern, single client and server, multiple clients and server in a single process, multiple clients Running In Separate Threads and a server_
 - ZeroMQ #2 : The Socket Types [22]
 - ZeroMQ #3 : Socket Options/Identity And SendMore [23]
 - ZeroMQ #4 : Multiple Sockets Polling [24]
 - ZeroMQ #5 : Sending From Multiple Sockets [25]
 - ZeroMQ #6: Divide And Conquer [26]
-- ZeroMQ #7: A Simple Actor Model [27] <label class="lite">ventilator, sink, workers</label>
+- ZeroMQ #7: A Simple Actor Model [27] _ventilator, sink, workers_
 
 ## ZeroMQ and Services
 
@@ -287,14 +111,6 @@ January 20th, 2016
 - brokerless whitepaper zguide [35]
 - NetMQRxDemo Sacha [36]
 
-</div>
-
-[1]: https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#zeromq-base
-[2]: https://github.com/illegitimis/Tutorial/blob/v10/ZeroMQ.md#socket-types-and-netmq-counterpart
-[3]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#socket-pairs
-[4]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#netmq
-[5]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#sacha-barber-demos
-[6]: https://github.com/illegitimis/Tutorial/wiki/ZeroMQ#zeromq-and-services
 [7]: http://zguide.zeromq.org/php:all
 [8]: http://zguide.zeromq.org/cs:hwclient
 [9]: http://zguide.zeromq.org/cs:hwserver

@@ -4,7 +4,7 @@ layout: default
 nav_order: 8
 parent: ASP.NET
 grand_parent: .NET
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-03-30 00:00:00 +00:00
 ---
 
 # OpenID Connect
@@ -47,9 +47,6 @@ OAuth 2.0 _is_ fundamentally ~an authorisation protocol~, _not an authentication
 ![sequence diagram](https://1drv.ms/i/s!As0cxZAk26SzjMAaEByL2Qz0DLP5LA)
 ![sequence diagram](https://g7ucqw.by3302.livefilestore.com/y3mf3_zYz2mPPB2h0Qjk7xv94b29SkaoGo__Xj2UJYS7TmwNCTNfqykyIlZi75yqYTSMpHGYGL6rsLEr6_xo20Yu7ERtYNBojf0sTiDcw_KwNMSpCwxPQxEBFMUU-oFbNDl_HwHmGbonXe5NUmdXKm52ge6QZaIKTxmBsN3iBV9Yjg?width=811&height=801&cropmode=none)
 
-|
-|
-wiki [9]
 
 [1]: http://openid.net/connect/
 [2]: http://openid.net/2014/02/26/the-openid-foundation-launches-the-openid-connect-standard/
@@ -59,6 +56,6 @@ wiki [9]
 [6]: http://openid.net/specs/openid-connect-basic-1_0.html
 [7]: http://openid.net/specs/openid-connect-implicit-1_0.html
 [8]: https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets
-[9]: https://github.com/illegitimis/Tutorial/wiki
+
 
 [<](./index.md) | [<<](/index.md)

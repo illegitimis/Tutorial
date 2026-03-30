@@ -9,6 +9,24 @@ search_exclude: true
 
 ```text
 Tutorial/
+├── .gitattributes
+├── .gitignore
+├── .markdownlint.json
+├── _config.yml
+├── _includes/
+│   └── mermaid_config.js
+├── assets/
+│   └── js/
+│       ├── mermaid.min.js
+│       └── mermaid.min.js.map
+├── CHANGELOG.md
+├── CLAUDE.md
+├── CONTRIBUTING.md
+├── CONTRIBUTORS.md
+├── index.md
+├── LICENSE
+├── README.md
+├── STRUCTURE.md
 ├── architecture/
 │   ├── ddd.md
 │   ├── design-patterns.md
@@ -18,87 +36,16 @@ Tutorial/
 │   ├── solid.md
 │   └── uml.md
 ├── azure/
-│   ├── learn/
-│   │   ├── 114-tour.md
-│   │   ├── 115-account.md
-│   │   ├── 117-kc.md
-│   │   ├── 125A-kc.md
-│   │   ├── 125B-kc.md
-│   │   ├── 133-region.md
-│   │   ├── 136-kc.md
-│   │   ├── 1-lp-az-900.md
-│   │   ├── 218-kc.md
-│   │   ├── 227-kc.md
-│   │   ├── 237-kc.md
-│   │   ├── 249-kc.md
-│   │   ├── 2-lp-az-900.md
-│   │   ├── 317-kc.md
-│   │   ├── 327-kc.md
-│   │   ├── 336-kc.md
-│   │   ├── 347-kc.md
-│   │   ├── 359-kc.md
-│   │   ├── 367-kc.md
-│   │   ├── 3-lp-az-900.md
-│   │   ├── 417-kc.md
-│   │   ├── 428-kc.md
-│   │   ├── 43-Protect-virtual-networks-by-using-Azure-firewall.md
-│   │   ├── 44-Protect-from-DDoS-attacks-by-using-Azure-ddos-protection.md
-│   │   ├── 45-Filter-network-traffic-by-using-nsg.md
-│   │   ├── 46-ex-vm-nsg.md
-│   │   ├── 47-combine-az-svc-nsec.md
-│   │   ├── 48-Knowledge-check.md
-│   │   ├── 49-summary.md
-│   │   ├── 4-lp-az-900.md
-│   │   ├── 511-intro.md
-│   │   ├── 512-auth.md
-│   │   ├── 513-aad.md
-│   │   ├── 514-mfa-ca.md
-│   │   ├── 515-kc.md
-│   │   ├── 516-summary.md
-│   │   ├── 521-intro.md
-│   │   ├── 522-rbac.md
-│   │   ├── 523-rsrc-locks.md
-│   │   ├── 524-ex-del-protect.md
-│   │   ├── 525-tags.md
-│   │   ├── 526--policy.md
-│   │   ├── 527-ex-restrict-geo.md
-│   │   ├── 52B-kc.md
-│   │   ├── 52C-summary.md
-│   │   ├── 531-intro.md
-│   │   ├── 532-compliance-terms.md
-│   │   ├── 538-kc.md
-│   │   ├── 539-summary.md
-│   │   ├── 5-lp-az-900.md
-│   │   ├── 617-kc.md
-│   │   ├── 626-kc.md
-│   │   ├── 6-lp-az-900.md
-│   │   ├── akv.pass.md
-│   │   ├── az900.md
-│   │   ├── az900-kc.md
-│   │   ├── service-models.md
-│   │   ├── smg.md
-│   │   ├── tocm.md
-│   │   ├── vnet.settings.md
-│   │   └── vpn.gateway.fndmnt.md
 │   ├── lectures/
 │   │   ├── hybrid-infrastructure.md
 │   │   └── modernize-dotnet.md
-│   ├── lctrs/
-│   │   ├── hybrid.infra.md
-│   │   └── mdrnz.net.md
-│   ├── pages/
-│   │   ├── app.insight.md
-│   │   └── osi.md
 │   ├── app-insights.md
-│   ├── az.md
 │   ├── az-900-summary.md
 │   ├── cloud-concepts.md
 │   ├── core-services.md
 │   ├── cost-management.md
 │   ├── identity-and-governance.md
 │   ├── index.md
-│   ├── learn.md
-│   ├── lectures.md
 │   ├── legend.md
 │   ├── osi.md
 │   ├── resources.md
