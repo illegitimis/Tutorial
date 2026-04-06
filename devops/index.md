@@ -3,7 +3,7 @@ title: DevOps
 layout: minimal
 nav_order: 9
 has_children: true
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # DevOps
@@ -31,5 +31,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Azure Pipelines](./azure-pipelines.md) — Azure DevOps pipelines: build .NET Core apps, PR triggers, branch policies, and Azure CLI
 - [OS: WSL](./os/wsl.md) — Windows Subsystem for Linux commands, distro management, and `Claude Code` install
 - [GitHub Repository Practices](./github-practices.md) — essential files, governance conventions, **Conventional Commits**, branch strategy, and ADRs
+- [Mermaid](./mermaid/index.md) — `Mermaid` diagrams: flowcharts, sequence diagrams, Gantt charts, subgraphs, and styling
 
 [<<](/index.md)

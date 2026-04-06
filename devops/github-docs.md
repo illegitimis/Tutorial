@@ -3,7 +3,7 @@ title: "GitHub Docs/wiki & Markdown How-to"
 layout: default
 nav_order: 4
 parent: DevOps
-last_modified_date: 2026-03-31 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # GitHub Docs/wiki & Markdown How-to
@@ -62,7 +62,8 @@ git page GitHub page [2] by Adam Pritchard
 
 ## Code Search
 
-Understanding GitHub code search syntax [21]
+Understanding GitHub code search syntax [21] \
+GitHub Code Search Cheat Sheet [27]
 
 ```txt
 path:/(^|\/)Directory\.Build\.props$/ AND org:dotnet
@@ -78,4 +79,18 @@ path:**/*.cs
 
 [21]: https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax
 
+## GitHub Emoji
+
+- Emoji web app search [22]
+- GitHub asset example (Romania) [23]
+- GitHub REST API — emojis [24] [25]
+- Complete list of GitHub Markdown emoji markup [26]
+
 [<](./index.md) | [<<](/index.md)
+
+[22]: https://awes0mem4n.github.io/emojis-github.html
+[23]: https://github.githubassets.com/images/icons/emoji/unicode/1f1f7-1f1f4.png?v8
+[24]: https://docs.github.com/en/rest
+[25]: https://docs.github.com/en/rest/reference/emojis
+[26]: https://gist.github.com/rxaviers/7360908
+[27]: https://karask.com/github-code-search-cheat-sheet

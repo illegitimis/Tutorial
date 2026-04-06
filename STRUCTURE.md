@@ -46,8 +46,11 @@ Tutorial/
 │   │   ├── hybrid-infrastructure.md
 │   │   └── modernize-dotnet.md
 │   ├── app-insights.md
+│   ├── aws.md
+│   ├── az-104.md
 │   ├── az-303.md
 │   ├── az-900-summary.md
+│   ├── az-cert-roadmap.md
 │   ├── cloud-concepts.md
 │   ├── core-services.md
 │   ├── cost-management.md
@@ -75,6 +78,7 @@ Tutorial/
 │   │   ├── document-db-cheat-sheet.md
 │   │   ├── graph-db.md
 │   │   ├── index.md
+│   │   ├── influxdb.md
 │   │   └── m101n.md
 │   ├── sql/
 │   │   ├── scripts/
@@ -100,6 +104,13 @@ Tutorial/
 │   │   └── views.md
 │   └── index.md
 ├── devops/
+│   ├── mermaid/
+│   │   ├── flowcharts.md
+│   │   ├── gantt.md
+│   │   ├── index.md
+│   │   ├── sequence.md
+│   │   ├── style.md
+│   │   └── subgraphs.md
 │   ├── os/
 │   │   ├── virtual-memory.md
 │   │   ├── windows-11-shortcuts.md
@@ -144,11 +155,13 @@ Tutorial/
 │   │   ├── commands.md
 │   │   ├── index.md
 │   │   ├── middleware.md
+│   │   ├── minimal-api.md
 │   │   ├── mvc.md
 │   │   ├── openid-connect.md
 │   │   ├── razor.md
 │   │   ├── spa.md
-│   │   └── web-app-mvc6-efcore-angular.md
+│   │   ├── web-app-mvc6-efcore-angular.md
+│   │   └── yarp.md
 │   ├── data-access/
 │   │   ├── automapper.md
 │   │   ├── ef-core.md
@@ -170,6 +183,7 @@ Tutorial/
 │   ├── parallelism/
 │   │   ├── async-await.md
 │   │   ├── background-foreground-threads.md
+│   │   ├── configure-await.md
 │   │   ├── correlation-manager.md
 │   │   ├── index.md
 │   │   ├── managed-threads.md
@@ -195,6 +209,7 @@ Tutorial/
 │   │   ├── index.md
 │   │   ├── msbuild.md
 │   │   ├── nuget.md
+│   │   ├── static-code-analysis.md
 │   │   └── tfms.md
 │   ├── fwks-libs/
 │   │   ├── index.md

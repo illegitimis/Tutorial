@@ -4,7 +4,7 @@ layout: default
 nav_order: 6
 has_children: true
 parent: .NET
-last_modified_date: 2026-03-30 23:07:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # .NET Build
@@ -19,5 +19,6 @@ last_modified_date: 2026-03-30 23:07:00 +00:00
 - [NuGet](./nuget.md) — `NuGet` package management and local cache CLI commands
 - [.NET CLI](./dotnet-cli.md) — `dotnet` CLI commands, SDK versions, downloads, and developer certificates
 - [EditorConfig](./editorconfig.md) — `.editorconfig` reference and analysis for .NET/C# projects
+- [Static Code Analysis](./static-code-analysis.md) — `Roslyn` analyzers, `StyleCop`, `SonarAnalyzer`, and code-style enforcement
 
 [<](../index.md) | [<<](/index.md)

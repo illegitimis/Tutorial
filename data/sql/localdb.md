@@ -4,7 +4,7 @@ layout: default
 nav_order: 17
 parent: SQL
 grand_parent: Data
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # SQL LocalDB
@@ -40,6 +40,8 @@ netsh advfirewall firewall add rule name = SQLPort dir = in protocol = tcp actio
 netsh advfirewall firewall add rule name = SQLPort dir = in protocol = udp action = allow localport = 1434 remoteip = localsubnet profile = DOMAIN
 ```
 
+SQL Server Express LocalDB v17 [3]
+
 Getting started with SQL Server 2017 Express LocalDB [2]
 
 ```powershell
@@ -61,5 +63,6 @@ AzureStorageEmulator.exe init -sqlinstance . -server MSSQLSERVER
 
 [1]: https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16
 [2]: https://www.mssqltips.com/sqlservertip/5612/getting-started-with-sql-server-2017-express-localdb/
+[3]: https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17
 
 [<](./index.md) | [<<](/index.md)

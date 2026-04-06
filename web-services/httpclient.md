@@ -3,7 +3,7 @@ title: HttpClient
 layout: default
 nav_order: 9
 parent: Web Services
-last_modified_date: 2026-03-29 21:15:03 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # HttpClient
@@ -71,6 +71,8 @@ last_modified_date: 2026-03-29 21:15:03 +00:00
         #endregion
       ```
 
+- C# -- Get and send JSON with `HttpClient` [12], _2025_
+
 - `System.Net.Http` issues
 
     `System.TypeLoadException`: Inheritance security rules violated by type: 'System.Net.Http.WebRequestHandler'. Derived types must either match the security accessibility of the base type or be less accessible. [9]
@@ -114,5 +116,6 @@ dotnet add package System.Net.Http -v 4.4.0-beta-24913-02
 [9]: https://github.com/dotnet/corefx/issues/11100
 [10]: https://github.com/dotnet/corefx/issues/11100#issuecomment-276066197
 [11]: https://github.com/dotnet/corefx/issues/11100#issuecomment-275960251
+[12]: https://makolyte.com/csharp-get-and-send-json-with-httpclient/
 
 [<](./index.md) | [<<](/index.md)

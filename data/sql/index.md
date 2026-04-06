@@ -4,7 +4,7 @@ layout: minimal
 nav_order: 2
 has_children: true
 parent: Data
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # SQL
@@ -38,4 +38,16 @@ The `scripts/` folder contains sample SQL installation scripts:
 - `instnwnd.sql` — Northwind sample database installation script
 - `instpubs.sql` — pubs sample database installation script
 
+## Distributed Transactions
+
+Port Windows/MSDTC distributed transactions support [1] \
+`TransactionScope` distributed transactions exception [2] \
+Implement distributed/promoted transactions in `System.Transactions` [3] \
+Distributed Transactions: .NET Framework vs .NET Core [4]
+
 [<](../index.md) | [<<](/index.md)
+
+[1]: https://github.com/dotnet/runtime/pull/72051
+[2]: https://stackoverflow.com/questions/56328832/transactionscope-throwing-exception-this-platform-does-not-support-distributed-t
+[3]: https://github.com/dotnet/runtime/issues/715
+[4]: https://stackoverflow.com/questions/59135418/distributed-transactions-net-framework-vs-net-core

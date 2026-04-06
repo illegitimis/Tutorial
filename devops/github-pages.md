@@ -3,7 +3,7 @@ title: GitHub Pages
 layout: default
 nav_order: 12
 parent: DevOps
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # GitHub Pages
@@ -101,6 +101,11 @@ last_modified_date: 2026-03-28
 ---
 ```
 
+## MkDocs
+
+`mkdocs-deploy-gh-pages` — GitHub Action to deploy an `MkDocs` site to `GitHub Pages` [12] \
+`MkDocs` deploying your docs [13]
+
 [<](./index.md) | [<<](/index.md)
 
 [1]: https://pappater.github.io/docs/GitHub%20Pages%20and%20Jekyll/
@@ -114,3 +119,5 @@ last_modified_date: 2026-03-28
 [9]: https://just-the-docs.com/docs/navigation/main/
 [10]: https://github.com/illegitimis/Tutorial/blob/master/_config.yml
 [11]: https://github.com/just-the-docs/just-the-docs/blob/main/_config.yml
+[12]: https://github.com/mhausenblas/mkdocs-deploy-gh-pages
+[13]: https://www.mkdocs.org/user-guide/deploying-your-docs/

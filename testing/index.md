@@ -3,7 +3,7 @@ title: Testing
 layout: minimal
 nav_order: 7
 has_children: true
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # Testing
@@ -33,5 +33,16 @@ Key properties of a good unit test: atomic, deterministic, repeatable, order-ind
 - **FluentAssertions** — fluent assertion library for expressive, readable test assertions
 - `Microsoft.AspNetCore.TestHost` — integration testing host for ASP.NET Core applications
 - `OpenCover` — open-source code coverage tool for all .NET frameworks
+
+## FakeItEasy
+
+`FakeItEasy` — the easy mocking library for .NET [1].
+
+- Throwing exceptions [2]
+- `MustHaveHappened` with `A<T>.That.Contains` for collection argument matching [3]
+
+[1]: https://github.com/FakeItEasy/FakeItEasy
+[2]: https://fakeiteasy.github.io/docs/8.3.0/throwing-exceptions/
+[3]: https://stackoverflow.com/questions/47860005/how-to-assert-musthavehappendcollection-that-containsobject-in-fake-it-easy
 
 [<<](/index.md)

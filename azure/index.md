@@ -3,7 +3,7 @@ title: Azure
 layout: minimal
 nav_order: 5
 has_children: true
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # Azure
@@ -36,5 +36,8 @@ AZ-900 Azure Fundamentals exam preparation:
 - [Table Storage](./table-storage.md) — Azure Table storage design patterns, entity sizing, and `Azure.Data.Tables` SDK
 - [AZ-303](./az-303.md) — AZ-303 Azure Architecture Technologies exam resources and architecture reference
 - [Durable Functions](./durable-functions.md) — Azure Durable Functions orchestrator patterns, DTFx backends, and bindings
+- [AZ-104](./az-104.md) — AZ-104 and AZ-305 study guides
+- [AWS](./aws.md) — AWS certification paths and training
+- [Azure Certification Roadmap](./az-cert-roadmap.md) — Mermaid cert path diagram
 
 [<<](/index.md)

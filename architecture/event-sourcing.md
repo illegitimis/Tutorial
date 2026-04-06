@@ -3,7 +3,7 @@ title: Event Sourcing
 layout: default
 nav_order: 9
 parent: Architecture
-last_modified_date: 2026-03-31 00:00:00 +00:00
+last_modified_date: 2026-04-05 00:00:00 +0000
 ---
 
 # Event Sourcing
@@ -54,6 +54,11 @@ _Purpose_: Provide an opinionated, cohesive toolkit for building transactional, 
 
 Usage pattern: `Marten` for persistence and events, `Wolverine` for commands/events and retries, `Lamar` for DI, `Oakton` for operational tooling, `Alba` for high-fidelity tests, `Weasel` for schema evolution.
 
+## Event Sourcing with .NET
+
+`EventSourcing.NetCore` — examples and tutorials of _Event Sourcing_ in .NET [14] \
+Real-World **CQRS**/ES with ASP.NET and `Redis` Part 1 — Overview [15]
+
 [1]: https://github.com/JasperFx/marten/tree/master
 [2]: https://martendb.io/
 [3]: https://github.com/JasperFx/marten/tree/master/docs/src/samples/FreightShipping
@@ -67,5 +72,7 @@ Usage pattern: `Marten` for persistence and events, `Wolverine` for commands/eve
 [11]: https://github.com/JasperFx/marten/blob/master/docs/scenarios/command_handler_workflow.md
 [12]: https://martendb.io/testing/integration.html
 [13]: https://github.com/JasperFx/marten/discussions/3428
+[14]: https://github.com/oskardudycz/EventSourcing.NetCore
+[15]: https://exceptionnotfound.net/real-world-cqrs-es-with-asp-net-and-redis-part-1-overview/
 
 [<](./index.md) | [<<](/index.md)

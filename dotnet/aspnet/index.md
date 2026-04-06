@@ -4,7 +4,7 @@ layout: minimal
 nav_order: 2
 has_children: true
 parent: .NET
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # ASP.NET
@@ -24,6 +24,8 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [Web App (MVC6 + EF Core + Angular)](./web-app-mvc6-efcore-angular.md) — full-stack course: ASP.NET Core MVC 6, `EF Core`, and `Angular`
 - [Auth0](./auth0.md) — `Auth0` identity platform: universal/embedded login, **SSO**, **OAuth 2.0**, and **OIDC** glossary
 - [Single Page Apps](./spa.md) — .NET SPA templates, ASP.NET Core with `Angular`, TypeScript integration, and `Vite`
+- [YARP](./yarp.md) — **YARP** reverse proxy toolkit for .NET, BFF pattern with `.NET Aspire`
+- [Minimal APIs](./minimal-api.md) — lightweight HTTP APIs without controllers, **OpenAPI** specification, and parameter binding
 
 ## CMS Platforms
 

@@ -3,7 +3,7 @@ title: CSS
 layout: default
 nav_order: 2
 parent: JavaScript
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # CSS
@@ -59,6 +59,35 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 - Modern Web Layout with Flexbox and CSS Grid Pluralsight course page [8] by Brian Treese, _Jan 2016_. Explore the modern world of web layout with the Flexible Box Module and CSS Grid Layout.
 - Quick guide to flexbox [40]
 
+## MDN Resources
+
+- CSS first steps — learn CSS module [43] on MDN
+- How CSS works [44] on MDN
+- Styling a biography page — CSS assessment [45] on MDN
+
+## W3C Resources
+
+- W3C learn CSS [46]
+- CSS3 in Style — W3C Talk, 2012 [47]
+
+## Style Stage
+
+`style stage` — a modern CSS showcase [48]; manual (flex) [49]; sweet spooky [50]; StageOS [51]; old book [52]
+
+## CSS-WWW2012 Demos
+
+- Adjacent Sibling Combinator [53]
+- Selector Child [54]
+- Media queries with min-height [55]
+- Multi-column width and count [56]
+- Multi-column gap and rule [57]
+- `column-fill`: balance vs auto [58]
+- Multi-column span [59]
+
+## CSS Units
+
+- CSS Units [60]
+
 ## Almanac
 
 - `list-style` * [41]
@@ -106,5 +135,23 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 [40]: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 [41]: https://css-tricks.com/almanac/properties/l/list-style/
 [42]: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+[43]: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps
+[44]: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works
+[45]: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Styling_a_biography_page
+[46]: https://www.w3.org/Style/CSS/learning
+[47]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/
+[48]: https://stylestage.dev/
+[49]: https://stylestage.dev/styles/manual/#about
+[50]: https://stylestage.dev/styles/sweet-n-sp00ky/#contribute
+[51]: https://stylestage.dev/styles/stageos/
+[52]: https://stylestage.dev/styles/ye-olde-book/
+[53]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/selectors/demo-selector-adjacent-sibling.html
+[54]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/selectors/demo-selector-child.html
+[55]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/media-queries/demo-min-height.html
+[56]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/multicol/demo-width-count.html
+[57]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/multicol/demo-gap-rule.html
+[58]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/multicol/demo-fixed-height.html
+[59]: https://www.w3.org/Talks/2012/0416-CSS-WWW2012/Demos/multicol/demo-span.html
+[60]: https://www.w3schools.com/cssref/css_units.php
 
 [<](./index.md) | [<<](/index.md)

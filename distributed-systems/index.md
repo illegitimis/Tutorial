@@ -3,7 +3,7 @@ title: Distributed Systems
 layout: minimal
 nav_order: 6
 has_children: true
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # Distributed Systems
@@ -41,4 +41,24 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - **Integration Events** — event-based communication between microservices using an event bus abstraction
 - *JustSaying* — lightweight message bus on top of AWS SNS and SQS
 
+## Game Server Resources
+
+`NetCoreServer` — cross-platform UDP/TCP/HTTP server [1d]; HTTP server docs [2d] \
+`Stateless` 3.0 — state machine library for .NET [3d] \
+`Akka.NET` discovery [4d] \
+PoisonousJohn/TanksNetworkingInAzure [5d] \
+`Photon` server framework [6d] [7d] \
+Asynchronous server socket example [8d] \
+Game engine best practices [9d]
+
 [<<](/index.md)
+
+[1d]: https://github.com/chronoxor/NetCoreServer#example-udp-multicast-server
+[2d]: https://chronoxor.github.io/NetCoreServer/#example-http-server
+[3d]: https://www.hanselman.com/blog/stateless-30-a-state-machine-library-for-net-core
+[4d]: https://getakka.net/articles/discovery/index.html
+[5d]: https://github.com/PoisonousJohn/TanksNetworkingInAzure
+[6d]: https://github.com/t13ka/photon_server_framework/tree/master/YourGame.Server/packages
+[7d]: https://doc.photonengine.com/en-us/realtime/current/getting-started/onpremises-or-saas
+[8d]: https://docs.microsoft.com/en-us/dotnet/framework/network-programming/asynchronous-server-socket-example
+[9d]: https://stackoverflow.com/questions/4576982/are-there-best-practices-for-implementing-an-asynchronous-game-engine-loop

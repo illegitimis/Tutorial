@@ -3,7 +3,7 @@ title: Swagger
 layout: default
 nav_order: 11
 parent: Web Services
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # Swagger
@@ -170,4 +170,38 @@ Enriched Web API Documentation using Swagger/OpenAPI in ASP.NET Core [42]
 [41]: https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-8.0&tabs=visual-studio
 [42]: https://www.dotnetnakama.com/blog/enriched-web-api-documentation-using-swagger-openapi-in-asp-dotnet-core/
 
+## OpenAPI Tooling
+
+`OpenAPITools/openapi-generator` — generate API client libraries, server stubs, documentation from **OpenAPI** specs [43] \
+`microsoft/OpenAPI.NET` — **OpenAPI** SDK for .NET: object model, serializers for JSON and YAML [44]
+
+### dotnet-openapi
+
+`dotnet-openapi` global tool [45] \
+`Microsoft.dotnet-openapi` tool [46] \
+.NET **OpenAPI** tool command reference v8 [47], v9 [48]
+
+### OpenAPI Document Generation
+
+Generate **OpenAPI** documents — .NET 8 [49], ASP.NET Core 9 [50] \
+Generate **OpenAPI** specification at build time [51] \
+Generate ASP.NET Core **OpenAPI** Spec at Build Time [52] \
+Add automatic **OpenAPI** client code generation to .NET 6 apps [53] \
+Using **OpenAPI** Auto-Generated Clients in ASP.NET Core [54] \
+Auto-Regenerating API Client for Your **OpenAPI** Project [55]
+
 [<](./index.md) | [<<](/index.md)
+
+[43]: https://github.com/OpenAPITools/openapi-generator
+[44]: https://github.com/microsoft/OpenAPI.NET
+[45]: https://www.nuget.org/packages/Microsoft.dotnet-openapi/8.0.8
+[46]: https://github.com/dotnet/aspnetcore/blob/main/src/Tools/Microsoft.dotnet-openapi/README.md
+[47]: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/openapi-tools?view=aspnetcore-8.0
+[48]: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/openapi-tools?view=aspnetcore-9.0
+[49]: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-8.0&tabs=visual-studio%2Cminimal-apis
+[50]: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-9.0&preserve-view=true&tabs=visual-studio%2Cminimal-apis
+[51]: https://www.meziantou.net/generate-openapi-specification-at-build-time-from-the-code-in-asp-net-core.htm
+[52]: https://khalidabuhakmeh.com/generate-aspnet-core-openapi-spec-at-build-time
+[53]: https://nxk.io/2022/01/03/add-automatic-openapi-client-code-generation-to-net-6-apps-using-dotnet-openapi-nswag-and-service-references/
+[54]: https://markheath.net/post/openapi-autogen-aspnetcore
+[55]: https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/auto-regenerating-api-client-for-your-open-api-project/ba-p/3302390

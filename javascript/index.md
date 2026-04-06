@@ -3,7 +3,7 @@ title: JavaScript
 layout: minimal
 nav_order: 8
 has_children: true
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # JavaScript
@@ -19,5 +19,27 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [Redux](./redux.md) — `Redux` state management in Angular (Pluralsight course notes)
 - [Angular](./angular/index.md) — `Angular` framework: fundamentals, AngularJS, Angular 2, and Angular 4
 - [KnockoutJS](./knockoutjs.md) — `KnockoutJS` MVVM bindings, component loaders, and custom elements
+
+## Angular UI Libraries
+
+7 Best Angular UI Component Libraries [1j] \
+`ngx-ui` — Style and Component Library for Angular [2j] [3j]
+
+## Fluent UI Web Components
+
+Fluent UI Web Components overview [4j] \
+Use Fluent UI Web Components with Angular [5j] \
+Angular + Web Components: a complete guide [6j] \
+Using Web Components in Angular [7j] \
+Using Fluent UI Web Components in Angular [8j]
+
+[1j]: https://angularscript.com/best-ui-component-libraries/
+[2j]: https://swimlane.github.io/ngx-ui/
+[3j]: https://github.com/swimlane/ngx-ui
+[4j]: https://learn.microsoft.com/en-us/fluent-ui/web-components/
+[5j]: https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/angular
+[6j]: https://indepth.dev/posts/1116/angular-web-components-a-complete-guide
+[7j]: https://coryrylan.com/blog/using-web-components-in-angular
+[8j]: https://medium.com/medialesson/using-fluent-ui-web-components-in-angular-59831f09a0e0
 
 [<<](/index.md)

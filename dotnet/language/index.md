@@ -4,7 +4,7 @@ layout: minimal
 nav_order: 3
 has_children: true
 parent: .NET
-last_modified_date: 2026-03-29 20:35:13 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # C# Language
@@ -24,5 +24,16 @@ last_modified_date: 2026-03-29 20:35:13 +00:00
 - [Interfaces](./interfaces.md) — `IComparable`, `IEnumerable`, and interface contract patterns
 - [Managed C++/CLI](./managed-cpp-cli.md) — C++/CLI syntax as the successor to Managed C++ for .NET interop
 - [Rx](./rx.md) — **Reactive Extensions** (Rx.NET): observables, events, and tuple deconstruction
+
+## Notnull Constraint
+
+The **non-null** constraint uses the contextual keyword `notnull`. Triggers a warning if a nullable type is specified for the decorated type parameter.
+
+```cs
+public class EntityDictionary<TKey, TValue> :
+    System.Collections.Generic.Dictionary<TKey, TValue>
+    where TKey : notnull
+    where TValue : EntityBase
+```
 
 [<](../index.md) | [<<](/index.md)

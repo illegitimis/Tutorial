@@ -4,7 +4,7 @@ layout: minimal
 nav_order: 5
 has_children: true
 parent: .NET
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # Parallelism
@@ -25,5 +25,6 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - [CorrelationManager](./correlation-manager.md) — `CorrelationManager`, `ExecutionContext`, `AsyncLocal<T>`, and `System.Diagnostics.Activity`
 - [Thread Synchronization](./thread-synchronization.md) — `Interlocked` operations, `CompareExchange`, memory barriers, and reentrance guards
 - [Async and Await](./async-await.md) — asynchronous programming patterns, deadlock avoidance, async locks, context switching, and **TAP**
+- [ConfigureAwait](./configure-await.md) — `ConfigureAwait(false)`, **SynchronizationContext**, and IL-level awaiter differences
 
 [<](../index.md) | [<<](/index.md)

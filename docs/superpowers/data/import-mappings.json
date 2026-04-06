@@ -329,6 +329,262 @@
       "actions": [
         {"type": "new_file", "target": "devops/github-practices.md", "heading": "# GitHub Repository Practices"}
       ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "ef-core-seed.md",
+      "actions": [
+        {"type": "insert", "target": "dotnet/data-access/ef-core.md", "heading": "## Data Seeding"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "msbuild.md",
+      "actions": [
+        {"type": "insert", "target": "dotnet/build/msbuild.md", "heading": "## Package Dependencies"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "static.code.analysis.txt",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/build/static-code-analysis.md", "heading": "# Static Code Analysis"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "notnull.md",
+      "actions": [
+        {"type": "insert", "target": "dotnet/language/index.md", "heading": "## Notnull Constraint"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "configure-await-false/",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/parallelism/configure-await.md", "heading": "# ConfigureAwait"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "minimal-api.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/aspnet/minimal-api.md", "heading": "# Minimal APIs"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "yarp.md",
+      "actions": [
+        {"type": "new_file", "target": "dotnet/aspnet/yarp.md", "heading": "# YARP"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "architecture.md",
+      "actions": [
+        {"type": "insert", "target": "architecture/index.md", "heading": "## Resources"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "cqrs.md",
+      "actions": [
+        {"type": "insert", "target": "architecture/event-sourcing.md", "heading": "## CQRS Resources"},
+        {"type": "insert", "target": "architecture/event-sourcing.md", "heading": "## Event Sourcing with .NET"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "modular-monolith.md",
+      "actions": [
+        {"type": "insert", "target": "architecture/modular-monolith.md", "heading": "## Additional Resources"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "durable.functions.md",
+      "actions": [
+        {"type": "insert", "target": "azure/durable-functions.md", "heading": "## Official Documentation"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "functions.timers.md",
+      "actions": [
+        {"type": "insert", "target": "azure/durable-functions.md", "heading": "## Timer Triggers"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "az104.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/az-104.md", "heading": "# AZ-104"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "aws.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/aws.md", "heading": "# AWS"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "mermaid/azcert.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/az-cert-roadmap.md", "heading": "# Azure Certification Roadmap"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "xunit.md",
+      "actions": [
+        {"type": "insert", "target": "testing/xunit.md", "heading": "## v3"},
+        {"type": "insert", "target": "testing/xunit.md", "heading": "## Theory"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "FakeItEasy.md",
+      "actions": [
+        {"type": "insert", "target": "testing/index.md", "heading": "FakeItEasy"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "HttpClient.md",
+      "actions": [
+        {"type": "skip_dup", "target": "web-services/httpclient.md", "heading": "## JSON Serialization"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "# restful api.txt",
+      "actions": [
+        {"type": "skip_dup", "target": "web-services/calling-rest-apis.md", "heading": "## API Design Guidelines"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "css.230409.md",
+      "actions": [
+        {"type": "insert", "target": "javascript/css.md", "heading": "## Resources"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "ng.react.md",
+      "actions": [
+        {"type": "insert", "target": "javascript/index.md", "heading": "## Angular UI Libraries"},
+        {"type": "insert", "target": "javascript/index.md", "heading": "## Fluent UI Web Components"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "localdb.md",
+      "actions": [
+        {"type": "skip_dup", "target": "data/sql/localdb.md", "heading": "SQL Server Express LocalDB"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "influx.md",
+      "actions": [
+        {"type": "new_file", "target": "data/nosql/influxdb.md", "heading": "# InfluxDB"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "OTEL.md",
+      "actions": [
+        {"type": "insert", "target": "distributed-systems/distributed-tracing.md", "heading": "## OpenTelemetry"},
+        {"type": "insert", "target": "distributed-systems/distributed-tracing.md", "heading": "## Jaeger"},
+        {"type": "insert", "target": "distributed-systems/distributed-tracing.md", "heading": "## Samples"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "stealth.md",
+      "actions": [
+        {"type": "insert", "target": "distributed-systems/index.md", "heading": "## Game Server Resources"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "emoji.md",
+      "actions": [
+        {"type": "insert", "target": "devops/github-docs.md", "heading": "## GitHub Emoji"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "gh-search.md",
+      "actions": [
+        {"type": "insert", "target": "devops/github-docs.md", "heading": "Code Search Cheat Sheet"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "gh-pages.md",
+      "actions": [
+        {"type": "insert", "target": "devops/github-pages.md", "heading": "## MkDocs"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "travis.md",
+      "actions": [
+        {"type": "insert", "target": "devops/ci-cd.md", "heading": "## Travis CI"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "mermaid.md",
+      "actions": [
+        {"type": "insert", "target": "devops/index.md", "heading": "Mermaid entry"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "mermaid/",
+      "actions": [
+        {"type": "new_file", "target": "devops/mermaid/index.md", "heading": "# Mermaid"},
+        {"type": "new_file", "target": "devops/mermaid/flowcharts.md", "heading": "# Mermaid Flowcharts"},
+        {"type": "new_file", "target": "devops/mermaid/sequence.md", "heading": "# Mermaid Sequence Diagrams"},
+        {"type": "new_file", "target": "devops/mermaid/gantt.md", "heading": "# Mermaid Gantt Charts"},
+        {"type": "new_file", "target": "devops/mermaid/subgraphs.md", "heading": "# Mermaid Subgraphs"},
+        {"type": "new_file", "target": "devops/mermaid/style.md", "heading": "# Mermaid Style"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "mobile.links.todo.md",
+      "actions": [
+        {"type": "insert", "target": "web-services/swagger.md", "heading": "## OpenAPI Tooling"},
+        {"type": "insert", "target": "data/sql/index.md", "heading": "## Distributed Transactions"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "aspire.md",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": "empty file"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "curl.md",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": "empty file"}
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "source": "d12.txt",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": "miscellaneous bookmarks, no structure"}
+      ]
     }
   ]
 }

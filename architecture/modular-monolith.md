@@ -3,7 +3,7 @@ title: Modular Monoliths
 layout: default
 nav_order: 8
 parent: Architecture
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-05 00:00:00 +0000
 ---
 
 # Modular Monoliths
@@ -19,6 +19,18 @@ Norbert Debosz 4 _itnext_ **Easy Modular Monolith**: code [12]; 01 MVP [13]; 02 
 Kamil Grzybek: root [19]; 01 A Primer [20], 02 Architectural Drivers [21], 03 Architecture Enforcement [22], 04 Integration Styles [23], 05 _Domain-Centric Design_ [24]; full **modular monolith** application with _Domain-Driven Design_ approach [25]
 
 _The Reformed Programmer_ 01 Using **Modular Monolith** and _DDD_ Architectures [26]; 02 Using _Clean Architecture_ with a **Modular Monolith** [27]; Evolving Modular Monoliths: 1. An Architecture for .NET [28]; 2. Breaking Up Your App into Multiple Solutions [29]; 3. Passing Data Between Bounded Contexts [30]
+
+## Additional Resources
+
+GitHub monolith topic [31] \
+The Majestic Monolith [32] \
+Majestic Modular Monoliths [33] \
+Towards Modern Development of Cloud Applications [34] \
+_Monolith First_ [35] \
+A Practical Guide to Modular Monoliths with .NET [36] \
+`AdaptiveClient` — library and pattern for creating a scalable, loosely coupled service layer [37] \
+`MediatR.Examples.Lamar` sample [38] \
+Cloud Computing — Building Distributed Applications With .NET Services (MSDN, 2009) [39]
 
 [<](./index.md) | [<<](/index.md)
 
@@ -52,3 +64,12 @@ _The Reformed Programmer_ 01 Using **Modular Monolith** and _DDD_ Architectures 
 [28]: https://www.thereformedprogrammer.net/evolving-modular-monoliths-1-an-architecture-for-net/
 [29]: https://www.thereformedprogrammer.net/evolving-modular-monoliths-2-breaking-up-your-app-into-multiple-solutions/
 [30]: https://www.thereformedprogrammer.net/evolving-modular-monoliths-3-passing-data-between-bounded-contexts/
+[31]: https://github.com/topics/monolith
+[32]: https://signalvnoise.com/svn3/the-majestic-monolith/
+[33]: https://hajdu.tech/post/majestic-modular-monolith/
+[34]: https://dl.acm.org/doi/pdf/10.1145/3593856.3595909
+[35]: https://martinfowler.com/bliki/MonolithFirst.html
+[36]: https://www.reddit.com/r/dotnet/comments/197brd5/a_practical_guide_to_modular_monoliths_with_net/
+[37]: https://github.com/leaderanalytics/adaptiveclient
+[38]: https://github.com/LuckyPennySoftware/MediatR/tree/main/samples/MediatR.Examples.Lamar
+[39]: https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/june/cloud-computing-building-distributed-applications-with-net-services

@@ -3,12 +3,12 @@ title: Durable Functions
 layout: default
 nav_order: 17
 parent: Azure
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # Durable Functions
 
-> Azure Durable Functions: orchestrator patterns, DTFx backends, and bindings.
+> Azure Durable Functions: COAE pattern, application patterns, orchestrator constraints, DTFx backends, bindings, and timer triggers.
 
 ## Resources
 
@@ -18,12 +18,60 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 - SPARK Conference Durable Functions Demo [6]
 - `azure-functions-core-tools` — command line tools for Azure Functions [7]
 - Work with Azure Functions Core Tools [8]
+- `Microsoft.Azure.WebJobs.Extensions.DurableTask` NuGet package [23]
+
+## COAE Pattern
+
+Durable Functions are built around four function types:
+
+- **Client** function — entry point that starts orchestrations
+- **Orchestrator** function — defines the workflow as code
+- **Activity** function — performs a single unit of work
+- **Entity** function — manages durable state (Durable Entities)
+
+## Application Patterns
+
+| Pattern | Description |
+|---------|-------------|
+| **Function Chaining** | a sequence of functions executes in order, output feeds the next |
+| **Fan-Out/Fan-In** | multiple functions execute in parallel, then aggregate results |
+| **Async HTTP APIs** | coordinates long-running operations with external clients via polling |
+| **Monitor** | recurring process that observes and reacts to external state changes |
+| **Human Interaction** | pauses workflow waiting for an external event (approval, etc.) |
+| **Aggregator** (entity) | aggregates event data over time into a single addressable entity |
+
+## Orchestrations
+
+- Orchestrators can call activity functions, other orchestrators (**sub-orchestrations**), wait for external events, and use HTTP and timers
+- Sub-orchestrations support composition and parallel fan-out across child workflows
+
+## Entity Functions
+
+**Durable Entities** provide a state management primitive:
+
+- Addressable by entity ID (entity name + key)
+- Support operation-based access (signal and call)
+- Entities serialize between operations — one operation at a time per entity
+- Two programming models: **function-based** and **class-based**
 
 ## DTFx Backends
 
 - `DurableTask.AzureStorage` — default backend, least expensive
 - `DurableTask.Netherite` — combines Azure Event Hubs with FASTER [9], 10x throughput over Azure Storage
 - `DurableTask.SqlServer` — runs everywhere, multitenant
+
+## Task Hubs
+
+A **task hub** is a logical container for storage resources used by orchestrations and entities:
+
+- Orchestrator and entity instances interact within the same task hub
+- Default backend uses Azure Storage queues, tables, and blobs scoped to a single task hub name
+
+## Instance Management
+
+- Query all instances, query with filters, send events to instances
+- Terminate, rewind, suspend, and resume instances
+- Purge instance history
 
 ## Important Orchestrator Limitations
 
@@ -38,6 +86,19 @@ This requires the orchestrator code to be **deterministic**:
 - Rule #2: Never do I/O directly in the orchestrator function
 - Rule #3: Do not write infinite loops
 - Rule #4: Use the built-in workarounds for rules #1, #2, and #3
+
+### Code Constraints
+
+- No `Thread.Sleep` or `Task.Delay` — use `CreateTimer`
+- No `DateTime.Now` or `DateTime.UtcNow` — use `CurrentUtcDateTime`
+- No random — pass random values from activity functions
+- No environment variables — pass configuration from activity functions
+
+## Versioning
+
+- **Side-by-side** — deploy new version alongside old; route new instances to new code
+- **Slot swap** — deploy to staging slot, then swap
+- Avoid breaking changes to serialized orchestration state
 
 ## Bindings
 
@@ -97,6 +158,31 @@ public static async Task Run(DurableOrchestrationContext ctx)
 }
 ```
 
+## Official Documentation
+
+- What are Durable Functions? [10] — application patterns (chaining, fan-out/fan-in, async HTTP, monitor, human interaction, aggregator)
+- Durable Functions types and features [11]
+- Durable orchestrations [12] — orchestration identity, reliability, history
+- Sub-orchestrations [13]
+- Entity functions [14] — entity ID, operations, access, and coordination
+- Developer's guide to durable entities in .NET [15] — definition, requirements, dependency injection, function-based syntax
+- Bindings for Durable Functions [16] — orchestration, activity, entity triggers and `host.json`
+- Task hubs [17]
+- Manage instances [18] — start, query, terminate, send events, rewind, purge
+- Timers [19] — custom timeout and delay on `IDurableOrchestrationContext`
+- Orchestrator function code constraints [20]
+- Durable Functions versions overview [21]
+- Implement Durable Functions [22] — MS Learn module
+- `Microsoft.Azure.WebJobs.Extensions.DurableTask` [23]
+- Guide for running C# Azure Functions in an isolated process [24]
+
+## Timer Triggers
+
+- Timer trigger for Azure Functions [25]
+- Dynamically set schedule in Azure Function [26]
+- Create a function in the Azure portal that runs on a schedule [27]
+- Azure Functions — Timer Triggers — Configurable Scheduled Expressions [28]
+
 [1]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-monitor?tabs=csharp
 [2]: https://github.com/microsoft/DurableFunctionsMonitor/blob/main/durablefunctionsmonitor.dotnetbackend/Functions/TaskHubNames.cs
 [3]: https://github.com/microsoft/DurableFunctionsMonitor/blob/main/durablefunctionsmonitor.dotnetbackend/setup-and-run.js
@@ -106,5 +192,24 @@ public static async Task Run(DurableOrchestrationContext ctx)
 [7]: https://github.com/Azure/azure-functions-core-tools
 [8]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=v4%2Cwindows%2Ccsharp%2Cportal%2Cbash
 [9]: https://www.microsoft.com/en-us/research/project/faster/
+[10]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp#application-patterns
+[11]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-types-features-overview
+[12]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-orchestrations?tabs=csharp
+[13]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-sub-orchestrations?tabs=csharp
+[14]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-entities?tabs=csharp
+[15]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-dotnet-entities
+[16]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-bindings?tabs=csharp%2C2x-durable-functions
+[17]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-task-hubs
+[18]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-instance-management?tabs=csharp
+[19]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-timers?tabs=csharp
+[20]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-code-constraints?tabs=csharp
+[21]: https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versions
+[22]: https://docs.microsoft.com/en-us/learn/modules/implement-durable-functions/
+[23]: https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask
+[24]: https://docs.microsoft.com/en-us/azure/azure-functions/dotnet-isolated-process-guide
+[25]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=in-process&pivots=programming-language-csharp
+[26]: https://stackoverflow.com/questions/45564848/dynamically-set-schedule-in-azure-function
+[27]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-scheduled-function
+[28]: https://praveenkumarsreeram.com/2020/08/06/azure-functions-timer-triggers-configurable-scheduled-expressions/
 
 [<](./index.md) | [<<](/index.md)

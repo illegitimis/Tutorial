@@ -4,7 +4,7 @@ layout: default
 nav_order: 3
 parent: Data Access
 grand_parent: .NET
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-04-06 00:00:00 +00:00
 ---
 
 # Entity Framework Core
@@ -54,6 +54,61 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 [5]: https://docs.microsoft.com/en-us/dotnet/standard/modern-web-apps-azure-architecture/work-with-data-in-asp-net-core-apps#ef-core-or-micro-orm
 [6]: https://blogs.msdn.microsoft.com/dotnet/2018/02/02/entity-framework-core-2-1-roadmap/
 [7]: https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/read-related-data?view=aspnetcore-2.0
+## Data Seeding
+
+> Custom initialization logic with `UseSeeding` and `UseAsyncSeeding`
+
+Data Seeding [9] \
+The New Way to Seed Your Database in EF Core 9 [10] \
+How to Seed Data with EF Core 9 and `.NET Aspire` [11]
+
+`UseAsyncSeeding` and `UseSeeding` are called as part of `EnsureCreated`, `Migrate`, and `dotnet ef database update`.
+
+### OnConfiguring
+
+```cs
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)=>
+    optionsBuilder
+        .UseSqlServer("YourConnectionString")
+        .UseAsyncSeeding(async (context, _, cancellationToken) =>
+        {
+            if (context.Set<T>().Any()) return;
+            SeedT();
+            await context.SaveChangesAsync(cancellationToken);
+        });
+```
+
+### HasData
+
+> Model-managed data
+
+`HasData` method [12] for seeding via `OnModelCreating` [13] [14] \
+Extension method pattern [15] \
+Taking `EF Core` data seeding to the next level with `Bogus` [16]
+
+### Migrations
+
+Create and Drop APIs [17] — `EnsureCreated`/`EnsureDeleted` alternative to migrations \
+`EF Core` tools reference — .NET CLI [18] \
+Migrations Overview [19] \
+`migrationBuilder.InsertData` for manual migration customization
+
+### Compiled Models
+
+Compiled models [20] — `dotnet ef dbcontext optimize` for startup performance
+
 [8]: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core
+[9]: https://learn.microsoft.com/en-us/ef/core/modeling/data-seeding
+[10]: https://medium.com/@ekondur/the-new-way-to-seed-your-database-in-ef-core-9-a92f483e6ed8
+[11]: https://juliocasal.com/blog/how-to-seed-data-with-ef-core-9-and-net-aspire
+[12]: https://www.learnentityframeworkcore.com/configuration/fluent-api/hasdata-method
+[13]: https://www.ashgrennan.com/post/ef-core-seed-data-strategy/
+[14]: https://github.com/zzzprojects/docs/blob/master/learnentityframeworkcore.com/pages/migrations/seeding.md
+[15]: https://www.tektutorialshub.com/entity-framework-core/ef-core-data-seeding/
+[16]: https://stenbrinke.nl/blog/taking-ef-core-data-seeding-to-the-next-level-with-bogus/
+[17]: https://learn.microsoft.com/en-us/ef/core/managing-schemas/ensure-created
+[18]: https://learn.microsoft.com/en-us/ef/core/cli/dotnet
+[19]: https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli
+[20]: https://learn.microsoft.com/en-us/ef/core/performance/advanced-performance-topics?tabs=with-di%2Cexpression-api-with-constant#compiled-models
 
 [<](./index.md) | [<<](/index.md)

@@ -3,7 +3,7 @@ title: Call a REST API
 layout: default
 nav_order: 4
 parent: Web Services
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-04-06 00:00:00 +0000
 ---
 
 # Call a REST API
@@ -26,6 +26,10 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
   - WebRequest & Json.Linq [9]
 - `Flurl` todo
 
+## API Design Guidelines
+
+- API Style Book — companies sharing **API Design Guidelines** [10]
+
 [1]: http://restsharp.org/
 [2]: https://stackoverflow.com/a/33812542
 [3]: https://github.com/restsharp/RestSharp/wiki/Projects-Using-RestSharp
@@ -35,5 +39,6 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 [7]: https://msdn.microsoft.com/en-us/library/system.net.httpwebrequest.aspx
 [8]: https://msdn.microsoft.com/en-us/library/system.net.httpwebresponse.aspx
 [9]: https://stackoverflow.com/a/30770354
+[10]: http://apistylebook.com/design/guidelines/
 
 [<](./index.md) | [<<](/index.md)
