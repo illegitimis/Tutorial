@@ -9,6 +9,7 @@ All notable changes to this project are documented here.
 
 | Date   | Commit  | Description |
 |--------|---------|-------------|
+| 260406 | pending | import azure-notes: 2 new files (dp-900, az-204), 7 existing files updated; 21 PNGs converted to mermaid/ASCII/tables |
 | 260406 | pending | import 33 notes from _import_notes_: 13 new files, 20 existing files updated across all categories |
 | 260405 | pending | import azure notes: enhance durable-functions, add az-104, aws, az-cert-roadmap |
 | 260330 | pending | import 4 msft-docs/technical notes (1 placed, 3 skipped) |

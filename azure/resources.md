@@ -3,7 +3,7 @@ title: Resources
 layout: default
 nav_order: 11
 parent: Azure
-last_modified_date: 2026-03-30 00:00:00 +00:00
+last_modified_date: 2026-04-05 00:00:00 +00:00
 ---
 
 # Resources
@@ -38,5 +38,24 @@ last_modified_date: 2026-03-30 00:00:00 +00:00
 [7]: https://techcommunity.microsoft.com/t5/educator-developer-blog/azure-charts-visualize-your-cloud-learning-journey/ba-p/1353228
 [8]: https://docs.microsoft.com/en-us/learn/support/catalog-api
 [9]: https://azurecharts.com/home/log
+
+## Documentation
+
+- Azure documentation — build and manage powerful applications [10]
+- Choose an Azure compute service for your application — decision tree [11]
+- Quickstart: Create an Azure SQL Database single database [12]
+
+## Code Samples
+
+- azure-sql-database-samples [13]
+- developer-immersion-data [14]
+- Azure Files pricing — Cloud Shell requires an Azure file share to persist files [15]
+
+[10]: https://docs.microsoft.com/en-us/azure/?product=featured
+[11]: https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree
+[12]: https://docs.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?tabs=azure-portal
+[13]: https://github.com/Azure/azure-sql-database-samples
+[14]: https://github.com/Microsoft/developer-immersion-data
+[15]: https://azure.microsoft.com/en-gb/pricing/details/storage/files/
 
 [<](./index.md) | [<<](/index.md)

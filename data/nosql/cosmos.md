@@ -4,7 +4,7 @@ layout: default
 nav_order: 1
 parent: NoSQL
 grand_parent: Data
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-04-05 00:00:00 +00:00
 ---
 
 # Azure Cosmos DB
@@ -22,6 +22,41 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 - It's _optimized for low-latency database reads and writes_. It does this through the use of [Solid State Disk storage and with "latchless" and "lockless" data structures][8] which, interestingly, bear some resemblance to those used by SQL Server's In-Memory OLTP model, as well.
 - DocumentDB can [determine the schema][3] and index data as documents are inserted, and lets you query against that index. This is possible due to DocumentDB's deep commitment to the JSON data model. **Cosmos DB indexes every column by default**.
 - Cosmos DB supports relational, hierarchical, and spatial querying of JSON documents using SQL without specifying a schema or secondary indexes, JavaScript user defined functions (UDFs), JavaScript operators, and a multitude of built-in functions. The SQL type system, expression evaluation, function invocation (UDFs), and other aspects of DocumentDB mirror that of JavaScript. DocumentDB is a **JSON document database** _capable of executing JavaScript directly in the database engine_, using JavaScript's programming model as the foundation for the query language.
+
+## Serverless and Throughput Provisioning
+
+- `Azure Cosmos DB` supports a **serverless** consumption model [11] for dynamic, sparse request patterns — billing only for consumed capacity
+- **Provisioned throughput** expressed in RU/s (request units per second) — best for steady traffic
+- **Autoscale** — from the configured maximum down to 10% of that value; use when traffic patterns are unpredictable
+- **Serverless** — save billing for unused capacity when requests are dynamic and sparse
+
+### Denormalization Patterns
+
+embed == denormalize. Performance comparison for one-to-many (customers and addresses):
+
+Pattern | Latency
+---|---
+**Embed** (denormalize) | ~3 ms
+**Colocate** (same partition) | ~9 ms
+**Reference** (separate container) | ~12 ms
+
+For many-to-many relationships (products and tags):
+
+Pattern | Latency
+---|---
+Array of tag IDs (separate query per tag) | ~62 ms
+Duplicate tag in each product | Faster reads, use **change feed** to maintain consistency
+
+`Cosmos DB` change feed helps maintain integrity across containers — use it when renaming a tag that is duplicated across many products.
+
+### ARM Templates
+
+Deploy a free-tier Cosmos DB account using ARM templates [12].
+
+### Additional Resources
+
+- Curated list of Azure resources [13]
+- designing-distributed-systems-labs [14]
 
 ## Links
 
@@ -83,5 +118,10 @@ It also provides a thread-safe, multi-process, safe runtime environment with che
 [8]: http://www.zdnet.com/article/inside-cosmos-db/
 [9]: https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D#change-feed-processor
 [10]: https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.ChangeFeedProcessor/?wt.mc_id=azurebg_ENAzureNewsletter_September&mkt_tok=eyJpIjoiTWpNME5UQmlNV0ZpTmpFeCIsInQiOiJHdUJmZ2ZEMnp3XC9sblwvMUpnbTA1OFN3VjVWVnYyNnFXWXdwZ2lSRmVHUksxMlNlOFZaQTFQbGpmOFdNTHBiQkN6blkwemR0Sk1yWmRUVk1oNkFVU0RmZXVNVGxocUVNdElJR3Q2cVNIeDNLU0pJRDVEZVNEYjVneDhEaW44elVreDh3ZUI2Zk5PK25mWldCMGkyekV2Zz09In0%3D
+
+[11]: https://docs.microsoft.com/en-us/azure/cosmos-db/serverless
+[12]: https://docs.microsoft.com/en-gb/azure/cosmos-db/manage-with-templates#free-tier
+[13]: https://github.com/kristofferandreasen/awesome-azure
+[14]: https://github.com/brendandburns/designing-distributed-systems-labs
 
 [<](./index.md) | [<<](/index.md)

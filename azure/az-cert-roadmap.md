@@ -3,7 +3,7 @@ title: Azure Certification Roadmap
 layout: default
 nav_order: 20
 parent: Azure
-last_modified_date: 2026-04-06 00:00:00 +00:00
+last_modified_date: 2026-04-05 00:00:00 +00:00
 ---
 
 # Azure Certification Roadmap
@@ -164,5 +164,12 @@ flowchart LR
         sc100-->csecArch
     end
 ```
+
+## Exam Prep Resources
+
+- itexams.com
+- mindhub
+- whizlabs
+- certbolt
 
 [<](./index.md) | [<<](/index.md)

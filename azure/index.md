@@ -3,7 +3,7 @@ title: Azure
 layout: minimal
 nav_order: 5
 has_children: true
-last_modified_date: 2026-04-06 00:00:00 +0000
+last_modified_date: 2026-04-05 00:00:00 +00:00
 ---
 
 # Azure
@@ -39,5 +39,8 @@ AZ-900 Azure Fundamentals exam preparation:
 - [AZ-104](./az-104.md) — AZ-104 and AZ-305 study guides
 - [AWS](./aws.md) — AWS certification paths and training
 - [Azure Certification Roadmap](./az-cert-roadmap.md) — Mermaid cert path diagram
+- [DP-900 Data Fundamentals](./dp-900.md) — DP-900 course notes: core data concepts, Azure SQL services, NoSQL
+- [AZ-204](./az-204.md) — AZ-204 developer exam: learning paths, Cloud Shell runtimes, App Service deployment
+- [Azure Pipelines](./azure-pipelines.md) — Azure DevOps pipeline configuration and YAML templates
 
 [<<](/index.md)

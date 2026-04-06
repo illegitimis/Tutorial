@@ -3,7 +3,7 @@ title: Security and Network Security
 layout: default
 nav_order: 12
 parent: Azure
-last_modified_date: 2026-03-29 21:15:03 +00:00
+last_modified_date: 2026-04-05 00:00:00 +00:00
 ---
 
 # Security and Network Security
@@ -93,6 +93,16 @@ az keyvault secret show --name <secret> --vault-name <name> --query value --outp
 az keyvault secret list --vault-name <name>
 az keyvault secret list-versions --vault-name <name> --name <secret>
 ```
+
+### RSA Key Generation
+
+Generate an RSA key with size 2048 and retrieve it:
+
+```bash
+az keyvault key show --name <key-name> --vault-name <vault-name> --query value --verbose
+```
+
+The Key Vault API endpoint follows the pattern: `https://<vault-name>.vault.azure.net/keys/<key-name>/<version>`.
 
 ## Defense in Depth
 

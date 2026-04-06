@@ -4,7 +4,7 @@ layout: default
 nav_order: 9
 parent: SQL
 grand_parent: Data
-last_modified_date: 2026-03-29 21:39:07 +00:00
+last_modified_date: 2026-04-05 00:00:00 +00:00
 ---
 
 # PostgreSQL
@@ -21,5 +21,16 @@ last_modified_date: 2026-03-29 21:39:07 +00:00
 [5]: http://postgis.net/
 [6]: https://en.wikipedia.org/wiki/PostGIS
 [7]: https://en.wikipedia.org/wiki/Spatial_database
+
+## Azure Database for PostgreSQL
+
+Build or migrate workloads with confidence and optimized for value:
+
+- **Fully managed and secure** — supports a large variety of Postgres versions with best-in-industry indemnification coverage
+- **Intelligent performance optimization** — improve performance and reduce cost with customized recommendations
+- **Flexible and open** — leverage Microsoft's contributions to the Postgres community and use favorite extensions
+- **High performance scale-out with Hyperscale** — break free from single-node limits and scale out across hundreds of nodes
+
+Deployment options: **Single Server** and **Hyperscale** (Citus).
 
 [<](./index.md) | [<<](/index.md)

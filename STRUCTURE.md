@@ -48,6 +48,7 @@ Tutorial/
 │   ├── app-insights.md
 │   ├── aws.md
 │   ├── az-104.md
+│   ├── az-204.md
 │   ├── az-303.md
 │   ├── az-900-summary.md
 │   ├── az-cert-roadmap.md
@@ -55,6 +56,7 @@ Tutorial/
 │   ├── core-services.md
 │   ├── cost-management.md
 │   ├── dev-box.md
+│   ├── dp-900.md
 │   ├── durable-functions.md
 │   ├── identity-and-governance.md
 │   ├── index.md

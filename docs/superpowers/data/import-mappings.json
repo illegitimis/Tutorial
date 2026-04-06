@@ -585,6 +585,83 @@
       "actions": [
         {"type": "skip_dup", "target": null, "heading": "miscellaneous bookmarks, no structure"}
       ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/01-21.PNG (21 slides)",
+      "actions": [
+        {"type": "new_file", "target": "azure/dp-900.md", "heading": "# DP-900 Azure Data Fundamentals"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/az204.md",
+      "actions": [
+        {"type": "new_file", "target": "azure/az-204.md", "heading": "# AZ-204 Developing Solutions for Microsoft Azure"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/az-303-304.md",
+      "actions": [
+        {"type": "insert", "target": "azure/az-303.md", "heading": "## Certification Exams"},
+        {"type": "insert", "target": "azure/az-303.md", "heading": "## Video Resources"},
+        {"type": "insert", "target": "azure/az-cert-roadmap.md", "heading": "## Exam Prep Resources"},
+        {"type": "insert", "target": "azure/az-204.md", "heading": "## Learning Paths"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/azure.db.md",
+      "actions": [
+        {"type": "insert", "target": "data/nosql/cosmos.md", "heading": "## Serverless and Throughput Provisioning"},
+        {"type": "insert", "target": "data/nosql/cosmos.md", "heading": "### Denormalization Patterns"},
+        {"type": "insert", "target": "data/nosql/cosmos.md", "heading": "### Additional Resources"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/azure.keyvault.md",
+      "actions": [
+        {"type": "insert", "target": "azure/security.md", "heading": "### RSA Key Generation"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/azure.qs.md",
+      "actions": [
+        {"type": "insert", "target": "azure/az-204.md", "heading": "## App Service Deployment via Local Git"},
+        {"type": "insert", "target": "azure/resources.md", "heading": "## Documentation"},
+        {"type": "insert", "target": "azure/resources.md", "heading": "## Code Samples"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/azlrnkc6.md",
+      "actions": [
+        {"type": "skip_dup", "target": "azure/security.md", "heading": "## Knowledge Check Q1"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/azure.bckpi.md",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": "personal credentials/tenant info"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/efsui.pfx",
+      "actions": [
+        {"type": "skip_dup", "target": null, "heading": "certificate file"}
+      ]
+    },
+    {
+      "date": "2026-04-05",
+      "source": "azure-notes/14.postgre.PNG",
+      "actions": [
+        {"type": "insert", "target": "data/sql/postgresql.md", "heading": "## Azure Database for PostgreSQL"}
+      ]
     }
   ]
 }
