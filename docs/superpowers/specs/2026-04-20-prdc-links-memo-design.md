@@ -2,14 +2,14 @@
 
 ## Overview
 
-PRDC (name from `plan26041902.md`) is a **non-interactive** tool that scans the wiki’s Markdown, **classifies** every link destination, **persists** a mergeable ledger to disk, and applies one **content mutation**: `localhost` links are replaced with italic text. Prefer a **standalone Python** implementation, consistent with other repo maintenance scripts under `docs/superpowers/scripts/`.
+PRDC is a **non-interactive** tool that scans the wiki’s Markdown, **classifies** every link destination, **persists** a mergeable ledger to disk, and applies one **content mutation**: `localhost` links are replaced with italic text. Prefer a **standalone Python** implementation, consistent with other repo maintenance scripts under `docs/superpowers/scripts/`.
 
 This document is the **authoritative** description of memo behavior. It **refines** the plan note that `url` is “the same string the parser extracted”: in PRDC, `url` is the **canonical memo key** after the normalization rules below (parser output is an input, not the final key).
 
 ## Goals
 
 - Scan all in-scope wiki Markdown, extract **inline and reference** link destinations (any scheme or relative path the Markdown layer exposes).
-- Classify each extracted link per `plan26041902.md` (including the **url classify** table and non-URL rules).
+- Classify each extracted link per **Appendix A** (non-URL rules and **url classify** table).
 - Maintain `/_memoize/LINKS.json` across runs with **stable merge semantics** and **no prompts**.
 - Rewrite `localhost:[PORT]` links in source Markdown to italics **on every run**, with **no** dry-run mode and **no** separate CLI flag for that behavior (operator intent is “run PRDC = scan + classify + memo + localhost fix”).
 
@@ -27,8 +27,6 @@ This document is the **authoritative** description of memo behavior. It **refine
 
 ### Exclude
 
-Per `plan26041902.md`:
-
 - GitHub / community root files at repository root: at minimum `README.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `CONTRIBUTORS.md`, `LICENSE`, `STRUCTURE.md`, and `plan*.md` scratch plans unless explicitly included later.
 - Agent / Claude meta (e.g. `.claude/`, `CLAUDE.md` if treated as meta).
 - Superpowers docs under `docs/superpowers/` (specs, plans, reports, scripts) unless explicitly re-scoped later.
@@ -42,9 +40,9 @@ Per `plan26041902.md`:
 
 ## Classification
 
-Apply the type → category table in `plan26041902.md` (images → review, mermaid/ascii → diagram, Google/Drive → resource, clear extensions → extension, CI/badge links → **NONE**, programming-language sample extensions → sample, else review unless **url classify** matches).
+Apply the type → category table in **Appendix A** (images → review, mermaid/ascii → diagram, Google/Drive → resource, clear extensions → extension, CI/badge links → **NONE**, programming-language sample extensions → sample, else review unless **url classify** matches).
 
-**url classify** uses the rules in `plan26041902.md` (npm, nuget, blog, pdf/resource, GitHub repo shape, Mongo docs hosts, Wikipedia, Docker Hub, Microsoft / Google doc hosts, O’Reilly, YouTube, gist, SlideShare, Stack Exchange family → mapped categories; **anything else** under web classification path → `review` unless another rule fires first).
+**url classify** uses the rules in **Appendix A** (npm, nuget, blog, pdf/resource, GitHub repo shape, Mongo docs hosts, Wikipedia, Docker Hub, Microsoft / Google doc hosts, O’Reilly, YouTube, gist, SlideShare, Stack Exchange family → mapped categories; **anything else** under web classification path → `review` unless another rule fires first).
 
 **Ordering:** Define a **deterministic** rule order in implementation (e.g. `NONE` and special cases before generic `http` rules) so two runs on the same tree produce the same category for the same canonical `url`.
 
@@ -127,3 +125,49 @@ Exact invocation (`python -m …`, script name, arguments such as repo root defa
 - Exact directory glob list for “wiki content” vs excluded roots (derived from `STRUCTURE.md` / current tree).
 - Precise regex or AST patterns for **nav exclusion** (hub and sibling nav).
 - Parser library choice and version pinning.
+
+---
+
+## Appendix A: Link classification rules
+
+**Non-URL / general type → category**
+
+| type | category |
+|------|----------|
+| urls/hyperlinks or web pages | see **url classify** below |
+| pictures, images | `review` |
+| mermaid diagrams, ascii art | `diagram` |
+| links to google/one drive | `resource` |
+| pdf, docx, file extension is clear/recognizable | `extension` |
+| status badges, git builds, azure build pipeline links | **`NONE`** (omit from JSON) |
+| contains `localhost:[PORT]` | rewrite in source (italic); classify/link handling per implementation plan |
+| ends with recognized programming language code extension (e.g. `.cs`, `.py`) | `sample` |
+| any other links | `review` |
+
+**url classify** (apply to web / `http` / `https` URLs after scheme detection; use first matching rule in implementation’s fixed order; “anything else” → `review`):
+
+| url description | category name |
+|-----------------|----------------|
+| starts with `https://www.npmjs.com/package/` | `npm package` |
+| starts with `https://www.nuget.org/packages` | `nuget package` |
+| host contains `blogspot.` (any TLD) | `blog` |
+| starts with `http://blogs.` | `blog` |
+| path ends with `.pdf` (case-insensitive) | `resource` |
+| matches GitHub repo root URL shape `https://github.com/{author}/{repo}` or `http://github.com/{author}/{repo}` with no extra path segments beyond optional trailing `/` | `github source repository` |
+| host contains `mongodb.github.io` | `technical documentation` |
+| starts with `http://en.wikipedia.org/wiki` | `knowledge article` |
+| Docker Hub image URL shape `https://hub.docker.com/r/` (image path) | `docker image` |
+| starts with `https://learn.microsoft.com` | `knowledge article` |
+| starts with `https://social.technet.microsoft.com` | `knowledge article` |
+| starts with `https://docs.microsoft.com` | `technical documentation` |
+| host contains `msdn.microsoft.com` | `technical documentation` |
+| host contains `technet.microsoft.com` | `technical documentation` |
+| host contains `developers.google.com` | `technical documentation` |
+| starts with `https://learning.oreilly.com` | `book` |
+| starts with `https://www.youtube.com` or `https://youtu.be` | `YT` |
+| starts with `https://gist.github.com` | `gist` |
+| starts with `https://www.slideshare.net` | `lecture` |
+| host contains `codereview.stackexchange.com` | `SO` |
+| host contains `stackoverflow.com` | `SO` |
+| host contains `experts-exchange` | `SO` |
+| anything else (http/https) | `review` |

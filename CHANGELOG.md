@@ -9,7 +9,7 @@ All notable changes to this project are documented here.
 
 | Date   | Commit  | Description |
 |--------|---------|-------------|
-| 260420 | pending | docs: add PRDC links scan, classification, and memo design spec |
+| 260420 | pending | docs: PRDC design (appendix A), implementation plan, remove scratch plan26041902 |
 | 260406 | pending | import azure-notes: 2 new files (dp-900, az-204), 7 existing files updated; 21 PNGs converted to mermaid/ASCII/tables |
 | 260406 | pending | import 33 notes from _import_notes_: 13 new files, 20 existing files updated across all categories |
 | 260405 | pending | import azure notes: enhance durable-functions, add az-104, aws, az-cert-roadmap |
