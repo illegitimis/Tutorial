@@ -45,3 +45,9 @@ todo/aspdotnet-core-signalr-getting-started/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Link catalog build output + memoization (scripts/build_links_catalog.py)
+.cache/
+
+# Git worktrees (superpowers / PRDC isolation)
+.worktrees/
